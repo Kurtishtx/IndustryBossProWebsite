@@ -76,8 +76,8 @@ export default function Home() {
         <div style={{ maxWidth:1200, margin:'0 auto', padding:'0 32px', height:68, display:'flex', alignItems:'center', justifyContent:'space-between' }}>
           <a href="/" style={{ textDecoration:'none', display:'flex', alignItems:'center', gap:10 }}>
             <div style={{ width:36, height:36, borderRadius:8, background:`linear-gradient(135deg, ${S.elec}, #0055a5)`, display:'flex', alignItems:'center', justifyContent:'center', fontSize:18, fontWeight:900, color:'#fff', boxShadow:`0 0 16px ${e('.4')}` }}>I</div>
-            <span style={{ color:'#fff', fontSize:18, fontWeight:800, letterSpacing:'-0.5px' }}>
-              Industry<span style={{ color:S.elec }}>Boss</span>Pro
+            <span style={{ fontSize:18, fontWeight:800, letterSpacing:'-0.5px' }}>
+              <span style={{ color:'#fff' }}>Industry</span><span style={{ color:'#fff' }}>Boss</span><span style={{ color:S.elec }}>Pro</span>
             </span>
           </a>
           <nav style={{ display:'flex', alignItems:'center', gap:32 }}>
@@ -484,7 +484,7 @@ export default function Home() {
             <div style={{ maxWidth:280 }}>
               <div style={{ display:'flex', alignItems:'center', gap:10, marginBottom:14 }}>
                 <div style={{ width:34, height:34, borderRadius:8, background:`linear-gradient(135deg, ${S.elec}, #0055a5)`, display:'flex', alignItems:'center', justifyContent:'center', fontSize:16, fontWeight:900, color:'#fff' }}>I</div>
-                <span style={{ color:'#fff', fontSize:17, fontWeight:800 }}>Industry<span style={{ color:S.elec }}>Boss</span>Pro</span>
+                <span style={{ fontSize:17, fontWeight:800 }}><span style={{ color:'#fff' }}>IndustryBoss</span><span style={{ color:S.elec }}>Pro</span></span>
               </div>
               <p style={{ color:S.muted, fontSize:13, lineHeight:1.7 }}>The all-in-one field service platform built for businesses that run every trade. Snow, landscape, irrigation, lawn care, pest control — one dashboard, one price.</p>
             </div>
