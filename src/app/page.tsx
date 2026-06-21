@@ -75,7 +75,13 @@ export default function Home() {
       <header style={{ position:'sticky', top:0, zIndex:1000, background:'rgba(3,11,21,0.96)', backdropFilter:'blur(12px)', borderBottom:`1px solid ${e('.12')}` }}>
         <div style={{ maxWidth:1200, margin:'0 auto', padding:'0 32px', height:68, display:'flex', alignItems:'center', justifyContent:'space-between' }}>
           <a href="/" style={{ textDecoration:'none', display:'flex', alignItems:'center', gap:10 }}>
-            <div style={{ width:36, height:36, borderRadius:8, background:`linear-gradient(135deg, ${S.elec}, #0055a5)`, display:'flex', alignItems:'center', justifyContent:'center', fontSize:18, fontWeight:900, color:'#fff', boxShadow:`0 0 16px ${e('.4')}` }}>I</div>
+            <div style={{ width:36, height:36, borderRadius:8, background:`linear-gradient(135deg, ${S.elec}, #0055a5)`, display:'flex', alignItems:'center', justifyContent:'center', boxShadow:`0 0 16px ${e('.4')}` }}>
+              <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 13h18M2 13L0 4l5 4 5-7 5 7 5-4-2 9H2z" stroke="white" strokeWidth="1.8" strokeLinejoin="round" strokeLinecap="round" fill="white" fillOpacity="0.15"/>
+                <path d="M2 13L0.5 4.5L5.5 8.5L10 1.5L14.5 8.5L19.5 4.5L18 13H2Z" fill="white"/>
+                <rect x="2" y="13.5" width="16" height="2" rx="1" fill="white"/>
+              </svg>
+            </div>
             <span style={{ fontSize:18, fontWeight:800, letterSpacing:'-0.5px' }}>
               <span style={{ color:'#fff' }}>Industry</span><span style={{ color:'#fff' }}>Boss</span><span style={{ color:S.elec }}>Pro</span>
             </span>
@@ -483,7 +489,12 @@ export default function Home() {
           <div style={{ display:'flex', justifyContent:'space-between', flexWrap:'wrap', gap:40, marginBottom:48 }}>
             <div style={{ maxWidth:280 }}>
               <div style={{ display:'flex', alignItems:'center', gap:10, marginBottom:14 }}>
-                <div style={{ width:34, height:34, borderRadius:8, background:`linear-gradient(135deg, ${S.elec}, #0055a5)`, display:'flex', alignItems:'center', justifyContent:'center', fontSize:16, fontWeight:900, color:'#fff' }}>I</div>
+                <div style={{ width:34, height:34, borderRadius:8, background:`linear-gradient(135deg, ${S.elec}, #0055a5)`, display:'flex', alignItems:'center', justifyContent:'center' }}>
+                  <svg width="18" height="15" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2 13L0.5 4.5L5.5 8.5L10 1.5L14.5 8.5L19.5 4.5L18 13H2Z" fill="white"/>
+                    <rect x="2" y="13.5" width="16" height="2" rx="1" fill="white"/>
+                  </svg>
+                </div>
                 <span style={{ fontSize:17, fontWeight:800 }}><span style={{ color:'#fff' }}>IndustryBoss</span><span style={{ color:S.elec }}>Pro</span></span>
               </div>
               <p style={{ color:S.muted, fontSize:13, lineHeight:1.7 }}>The all-in-one field service platform built for businesses that run every trade. Snow, landscape, irrigation, lawn care, pest control — one dashboard, one price.</p>
