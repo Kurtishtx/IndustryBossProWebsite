@@ -1,9 +1,9 @@
 'use client';
 import { useState } from 'react';
 
-const SUPABASE_URL  = 'https://YOUR_PROJECT.supabase.co'; // TODO: replace with IndustryBossPro Supabase URL
-const SUPABASE_ANON = 'YOUR_ANON_KEY';                    // TODO: replace with IndustryBossPro anon key
-const APP_URL       = 'https://my.industrybosspro.com/dashboard.html';
+const SUPABASE_URL  = process.env.NEXT_PUBLIC_SUPABASE_URL || '';
+const SUPABASE_ANON = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || '';
+const APP_URL       = process.env.NEXT_PUBLIC_APP_URL || 'https://my.industrybosspro.com/dashboard.html';
 
 const e = (c: string) => `rgba(0,184,255,${c})`;
 
@@ -54,8 +54,8 @@ export default function Home() {
       if (signInErr) throw new Error(signInErr.message);
       const uid = signInData.user.id;
       const trialEnd = new Date(Date.now() + 14 * 24 * 60 * 60 * 1000).toISOString();
-      await sb.auth.updateUser({ data: { full_name: form.first + ' ' + form.last } });
-      await sb.from('user_profiles').upsert({ id: uid, email: form.email, role: 'full_access', is_primary_owner: true, tenant_id: null, trial_ends_at: trialEnd }, { onConflict: 'id' });
+      await sb.auth.updateUser({ data: { full_name: form.first + ' ' + form.last, product: 'fieldbosspro' } });
+      await sb.from('user_profiles').upsert({ id: uid, email: form.email, role: 'full_access', is_primary_owner: true, tenant_id: null, trial_ends_at: trialEnd, product: 'fieldbosspro' }, { onConflict: 'id' });
       await sb.from('company_info').insert({ user_id: uid, company_name: form.company, display_name: form.company });
       setStep('done');
       let secs = 4;
@@ -113,7 +113,7 @@ export default function Home() {
             One Platform.<br /><span style={{ color:S.elec }}>Every Industry.</span><br />Zero Compromises.
           </h1>
           <p style={{ color:S.muted, fontSize:'clamp(16px,2vw,20px)', maxWidth:680, margin:'0 auto 52px', lineHeight:1.75 }}>
-            Snow removal, landscaping, irrigation, lawn care, pest control — IndustryBossPro runs them all from a single dashboard. The most powerful pending job board in field service, built for businesses that do it all.
+            Snow removal, pool service, landscaping, irrigation, lawn care, pest control, mosquito control, fence, and mowing — IndustryBossPro runs them all from a single dashboard. The most powerful pending job board in field service, built for businesses that do it all.
           </p>
           <div style={{ display:'flex', gap:16, justifyContent:'center', flexWrap:'wrap', marginBottom:72 }}>
             <button onClick={openModal} style={{ background:S.elec, color:'#fff', padding:'18px 44px', borderRadius:8, fontSize:17, fontWeight:700, border:'none', cursor:'pointer', boxShadow:`0 0 30px ${e('.4')}, 0 4px 20px rgba(0,0,0,.3)`, transition:'transform .15s' }}
@@ -126,7 +126,7 @@ export default function Home() {
             </a>
           </div>
           <div style={{ display:'flex', justifyContent:'center', gap:56, flexWrap:'wrap', paddingTop:56, borderTop:`1px solid ${e('.1')}` }}>
-            {[['$199','Flat Monthly — Everything Included'],['Unlimited','Users, Clients & Properties'],['6+','Industries. One Platform.'],['14 Days','Free Trial, No Card']].map(([v,l]) => (
+            {[['$199','Flat Monthly — Everything Included'],['Unlimited','Users, Clients & Properties'],['9','Industries. One Platform.'],['14 Days','Free Trial, No Card']].map(([v,l]) => (
               <div key={l} style={{ textAlign:'center' }}>
                 <div style={{ color:S.elec, fontSize:34, fontWeight:900, letterSpacing:'-1px' }}>{v}</div>
                 <div style={{ color:S.muted, fontSize:13, marginTop:4 }}>{l}</div>
@@ -140,7 +140,7 @@ export default function Home() {
       <div style={{ background:S.navy3, padding:'32px 40px', borderTop:`1px solid ${e('.08')}`, borderBottom:`1px solid ${e('.08')}` }}>
         <div style={{ maxWidth:1100, margin:'0 auto', display:'flex', alignItems:'center', justifyContent:'center', gap:48, flexWrap:'wrap' }}>
           <span style={{ color:S.muted, fontSize:12, fontWeight:700, letterSpacing:'1.5px', textTransform:'uppercase' }}>Covering Every Industry</span>
-          {[['❄️','Snow & Ice'],['🌿','Landscaping'],['💧','Irrigation'],['🌱','Lawn Care'],['🐛','Pest Control'],['🌳','Tree & Shrub'],['🏡','Property Maintenance']].map(([icon,name]) => (
+          {[['❄️','Snow & Ice'],['🏊','Pool Service'],['🌿','Landscaping'],['💧','Irrigation'],['🌱','Lawn Care'],['🐛','Pest Control'],['🦟','Mosquito Control'],['🏗️','Fence'],['🌾','Mowing']].map(([icon,name]) => (
             <div key={name} style={{ display:'flex', alignItems:'center', gap:8, color:'rgba(232,244,255,0.7)', fontSize:14, fontWeight:600 }}>
               <span>{icon}</span><span>{name}</span>
             </div>
@@ -224,11 +224,14 @@ export default function Home() {
         <div style={{ display:'grid', gridTemplateColumns:'repeat(auto-fill,minmax(280px,1fr))', gap:20, maxWidth:1160, margin:'0 auto' }}>
           {[
             { icon:'❄️', name:'Snow & Ice Management', desc:'Route scheduling, per-push vs seasonal contracts, salt tracking, trigger alerts, event logging, and client snow reports. Run your plow operation like a pro.' },
+            { icon:'🏊', name:'Pool Service', desc:'Route-based pool maintenance scheduling, chemical dose tracking, equipment service history, filter and pump logs, and seasonal opening/closing management.' },
             { icon:'🌿', name:'Landscaping', desc:'Crew scheduling, job site notes, before/after photo documentation, package programs, estimate follow-ups, and automated billing. Scale your landscape operation.' },
             { icon:'💧', name:'Irrigation', desc:'Startup and winterization waiting lists, zone documentation, backflow tracking, service history, and seasonal scheduling. Full irrigation lifecycle managed.' },
             { icon:'🌱', name:'Lawn Care & Treatments', desc:'Sq ft–based waiting lists, chemical application logs, pesticide compliance reports, round tracking, and treatment follow-up programs.' },
             { icon:'🐛', name:'Pest Control', desc:'Service frequency management, chemical logs, technician license tracking, completion alerts, and customer-facing service reports built in.' },
-            { icon:'🌳', name:'Tree & Shrub Care', desc:'Property-level service history, chemical application tracking, seasonal program management, and automatic customer communication.' },
+            { icon:'🦟', name:'Mosquito Control', desc:'Barrier spray route management, season-long subscription billing, re-treatment scheduling, and automated customer reminders for every application.' },
+            { icon:'🏗️', name:'Fence Installation', desc:'Estimate-to-install workflows, material tracking, job phase management, permit documentation, and post-installation follow-up programs.' },
+            { icon:'🌾', name:'Lawn Mowing', desc:'Recurring mowing route optimization, cut frequency management, seasonal start/stop, rain-delay rescheduling, and automated per-cut or monthly billing.' },
           ].map((ind) => (
             <div key={ind.name} style={{ background:S.navy4, border:`1.5px solid ${e('.1')}`, borderRadius:14, padding:'28px 24px', transition:'border-color .2s' }}
               onMouseEnter={el => el.currentTarget.style.borderColor = e('.35')}
