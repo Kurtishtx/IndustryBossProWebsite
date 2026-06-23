@@ -13,7 +13,8 @@ const S = {
 
 interface Props {
   post: BlogPost;
-  prevPost: BlogPost;
+  prevPost?: BlogPost;
+  nextPost?: BlogPost;
   industry: string;
 }
 
@@ -65,6 +66,7 @@ export default function BlogPostTemplate({ post, prevPost, industry }: Props) {
           </p>
 
           {/* Silo chain link — naturally woven in after intro */}
+          {prevPost && (
           <p style={{ fontSize: 15, lineHeight: 1.8, color: S.muted, marginBottom: 40, padding: '16px 20px', background: 'rgba(0,184,255,0.05)', borderLeft: `3px solid ${S.elec}`, borderRadius: '0 8px 8px 0' }}>
             If you&apos;re exploring how to build a stronger {industryLabel.toLowerCase()} operation, our guide on{' '}
             <a href={`/blog/${industry}/${prevPost.slug}`} style={{ color: S.elec, textDecoration: 'none', fontWeight: 600 }}>
@@ -72,6 +74,7 @@ export default function BlogPostTemplate({ post, prevPost, industry }: Props) {
             </a>{' '}
             covers the foundational concepts you&apos;ll want in place first.
           </p>
+          )}
 
           {/* Sections */}
           {post.sections.map((section, i) => (
