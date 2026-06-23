@@ -98,7 +98,7 @@ export const hubPages: HubPageData[] = [
     painPoints: [
       { problem: 'Routes fall apart when it storms at 3am', solution: 'Your crew sees their route on their phone. You see live progress from your couch. No calls, no chaos.' },
       { problem: 'Chemical costs are eating your margins', solution: 'Log every application with material type, quantity, and cost. Know your cost-per-property before you price your next contract.' },
-      { problem: 'Clients call asking where their invoice is', solution: 'Invoices fire automatically when work is done. Clients pay by card or ACH from their phone.' },
+      { problem: 'Clients call asking where their invoice is', solution: 'Invoices fire automatically when work is done. Clients pay by card, check, or cash.' },
     ],
     features: [
       { icon: 'ðŸ—ºï¸', title: 'Route Management', desc: 'Build routes with drag-and-drop, assign crews, and track real-time progress across all properties.' },
@@ -352,7 +352,7 @@ export const hubPages: HubPageData[] = [
       { icon: 'ðŸ“', title: 'Estimates & Proposals', desc: 'Build detailed estimates with line items, photos, and payment terms. Send and collect approval digitally.' },
       { icon: 'ðŸ‘¥', title: 'Crew Management', desc: 'Assign crews to jobs, track time on site, and manage subcontractors from one platform.' },
       { icon: 'ðŸ“‹', title: 'Pending Job Board', desc: 'See all jobs with assigned dates and all work awaiting scheduling on one live board.' },
-      { icon: 'ðŸ’µ', title: 'Invoicing & Payments', desc: 'Generate invoices on job completion. Collect by card, ACH, or check with integrated payment processing.' },
+      { icon: ‘ðŸ’µ’, title: ‘Invoicing & Payments’, desc: ‘Generate invoices on job completion. Collect by card, check, or cash with integrated payment processing.’ },
       { icon: 'ðŸ“¸', title: 'Job Documentation', desc: 'Crews upload before/after photos. Build a visual record of every property you\'ve touched.' },
     ],
     pendingBoard: 'The scheduled panel shows landscape jobs with confirmed dates â€” recurring maintenance visits, scheduled installations, and seasonal cleanups. The waiting list holds approved estimates waiting for scheduling, pending client decisions, and seasonal work queued for the right time.',
@@ -505,7 +505,7 @@ export const hubPages: HubPageData[] = [
       { icon: 'ðŸ”§', title: 'System Records', desc: 'Store system type, zone count, controller brand, and full repair history per property.' },
       { icon: 'ðŸ“‹', title: 'Pending Job Board', desc: 'All startup and winterization requests in the waiting list. Assign dates as your schedule opens up.' },
       { icon: 'ðŸ“', title: 'Repair Estimates', desc: 'Quote repairs on-site and collect approval before parts are ordered. No more surprise invoices.' },
-      { icon: 'ðŸ’µ', title: 'Auto-Invoicing', desc: 'Invoices generate on job completion. Clients pay online with card or ACH.' },
+      { icon: ‘ðŸ’µ’, title: ‘Auto-Invoicing’, desc: ‘Invoices generate on job completion. Clients pay by card, check, or cash.’ },
       { icon: 'ðŸ“Š', title: 'Season Revenue Tracking', desc: 'See startup, repair, and winterization revenue broken out by month and by service type.' },
     ],
     pendingBoard: 'The waiting list fills up in spring (startups) and fall (winterizations) as clients request service. Techs pull from the waiting list to fill open slots on their schedule. The system tracks how many are pending so you know if you\'re keeping up.',

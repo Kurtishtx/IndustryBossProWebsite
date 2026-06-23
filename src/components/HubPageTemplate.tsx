@@ -81,7 +81,7 @@ export default function HubPageTemplate({ page, stateName }: { page: HubPageData
       {/* TRUST BAR */}
       <section style={{ background: S.navy3, borderTop: `1px solid ${S.border}`, borderBottom: `1px solid ${S.border}`, padding: '18px 24px' }}>
         <div style={{ maxWidth: 1100, margin: '0 auto', display: 'flex', justifyContent: 'center', flexWrap: 'wrap', gap: 32 }}>
-          {['9 Industries', '$199/Month Flat', '14-Day Free Trial', 'Unlimited Users', 'No Contracts'].map(t => (
+          {['9 Industries', '$199/Month — 100 Auto Routes Included', 'Calendar & Dispatch Views', 'Live Crew Tracking', '14-Day Free Trial', 'Unlimited Users', 'No Contracts'].map(t => (
             <span key={t} style={{ color: S.elec, fontWeight: 700, fontSize: 13 }}>✓ {t}</span>
           ))}
         </div>
@@ -204,6 +204,39 @@ export default function HubPageTemplate({ page, stateName }: { page: HubPageData
         </div>
       </section>
 
+      {/* PLATFORM POWER FEATURES */}
+      <section style={{ padding: '80px 24px', background: S.navy1 }}>
+        <div style={{ maxWidth: 1100, margin: '0 auto' }}>
+          <div style={{ textAlign: 'center', marginBottom: 48 }}>
+            <div style={{ display: 'inline-block', background: 'rgba(0,184,255,0.12)', border: `1px solid rgba(0,184,255,0.3)`, borderRadius: 20, padding: '4px 14px', fontSize: 12, color: S.elec, fontWeight: 700, letterSpacing: 1, textTransform: 'uppercase', marginBottom: 16 }}>
+              Platform Power
+            </div>
+            <h2 style={{ fontSize: 'clamp(24px,3vw,36px)', fontWeight: 800, color: S.text, marginBottom: 12 }}>
+              Features No Other Field Service Software Has
+            </h2>
+            <p style={{ color: S.muted, fontSize: 16, maxWidth: 620, margin: '0 auto' }}>
+              These aren&apos;t checkboxes. They&apos;re the reason operators switch to IndustryBossPro and never go back.
+            </p>
+          </div>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: 24 }}>
+            {[
+              { icon: '🗓️', title: 'Calendar View', desc: 'See every job across every crew and every service type on one calendar. Filter by crew, industry, or date. Your whole operation at a glance.' },
+              { icon: '🚀', title: 'Dispatch View', desc: 'Live dispatch board showing every crew, their current stop, and real-time job status as they work through the day. No calls to find out where anyone is.' },
+              { icon: '📍', title: 'Live Crew Tracking', desc: 'Every tech and truck on a live map, all day long. Know exactly who is where, which stop they\'re on, and when they complete — from your phone or desk.' },
+              { icon: '🤖', title: 'Auto Route (100 Included)', desc: '100 auto-optimized routes included every month. The system sequences stops by geography to cut drive time and fit more stops per crew per day. +$10 per 100 more.' },
+              { icon: '⭕', title: 'Lasso / Circle-to-Schedule', desc: 'Draw a zone on the map. See every property inside with total square footage by service type. Schedule them all at once. No other software does this.' },
+              { icon: '📋', title: 'Two-Tier Job Board', desc: 'Scheduled jobs with assigned dates on one side. Spray/chemical/maintenance waiting list on the other — grouped by service type with sq ft totals. Your entire workload, always visible.' },
+            ].map((f, i) => (
+              <div key={i} style={{ background: S.navy4, border: `1.5px solid ${S.border}`, borderRadius: 14, padding: 28 }}>
+                <div style={{ fontSize: 32, marginBottom: 12 }}>{f.icon}</div>
+                <div style={{ fontSize: 17, fontWeight: 700, color: S.text, marginBottom: 8 }}>{f.title}</div>
+                <div style={{ color: S.muted, fontSize: 14, lineHeight: 1.7 }}>{f.desc}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* INDUSTRIES TRUST */}
       <section style={{ padding: '60px 24px', background: S.navy3, borderTop: `1px solid ${S.border}` }}>
         <div style={{ maxWidth: 1100, margin: '0 auto', textAlign: 'center' }}>
@@ -227,7 +260,7 @@ export default function HubPageTemplate({ page, stateName }: { page: HubPageData
             <div style={{ fontSize: 15, color: S.elec, fontWeight: 700, marginBottom: 8 }}>IndustryBossPro</div>
             <div style={{ fontSize: 60, fontWeight: 900, color: S.text, lineHeight: 1 }}>$199</div>
             <div style={{ color: S.muted, fontSize: 16, marginBottom: 32 }}>/month · everything included</div>
-            {['Unlimited Users', '14-Day Free Trial', 'All 9 Industries', 'Pending Job Board', 'Chemical Compliance Logging', 'Mobile App for Crews', 'Invoicing & Payments', 'Route Optimization', 'No Setup Fees', 'No Contracts'].map(item => (
+            {['Unlimited Users', '14-Day Free Trial', 'All 9 Industries', 'Pending Job Board', 'Calendar & Dispatch Views', 'Live Crew Tracking', '100 Auto Routes Included', '+$10 per 100 more routes', 'Chemical Compliance Logging', 'Mobile App for Crews', 'Card Payments (Stripe)', 'No Setup Fees', 'No Contracts'].map(item => (
               <div key={item} style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 10, textAlign: 'left' }}>
                 <span style={{ color: S.elec }}>✓</span>
                 <span style={{ color: S.text, fontSize: 14 }}>{item}</span>

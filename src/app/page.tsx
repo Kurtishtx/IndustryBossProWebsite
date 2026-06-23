@@ -77,7 +77,7 @@ export default function Home() {
           <a href="#features" className="btn-ghost">See All Features →</a>
         </div>
         <div className="hero-proof">
-          <div className="proof-item"><div className="proof-val">$199</div><div className="proof-lbl">Flat Monthly — Everything Included</div></div>
+          <div className="proof-item"><div className="proof-val">$199</div><div className="proof-lbl">Flat Monthly — 100 Auto Routes Included</div></div>
           <div className="proof-item"><div className="proof-val">Unlimited</div><div className="proof-lbl">Users, Clients &amp; Properties</div></div>
           <div className="proof-item"><div className="proof-val">9</div><div className="proof-lbl">Industries. One Platform.</div></div>
           <div className="proof-item"><div className="proof-val">14 Days</div><div className="proof-lbl">Free Trial, No Card Required</div></div>
@@ -105,12 +105,12 @@ export default function Home() {
         </p>
         <div className="premium-grid">
           {[
-            ['📋','Pending Job Board','Two-tier system: scheduled jobs with assigned dates AND a chemical/maintenance waiting list. No other software has this.'],
-            ['🗺️','Live Route Maps','Interactive maps with drag-and-drop stop ordering, circle-to-schedule selection, and real-time crew tracking.'],
+            ['📋','Pending Job Board','Two-tier system: scheduled jobs with assigned dates on one side, spray/chemical/maintenance waiting list on the other. No other software has this.'],
+            ['🚀','Calendar + Dispatch Views','Calendar view shows every crew and job on one screen. Dispatch view shows live job status as crews work through their stops in real time.'],
+            ['📍','Live Crew Tracking','Every tech on a live map, all day long. Know who is where, which stop they\'re on, and when they complete. No calls needed.'],
+            ['🤖','Auto Route + Lasso Scheduling','100 auto-optimized routes included. Circle any area on the map to see every property inside and schedule them all at once.'],
             ['🧪','Chemical Compliance Engine','Application logs, technician license tracking, weather conditions, and state-inspector-ready compliance reports.'],
             ['💬','Automated Communication Suite','10+ SMS alert types, two-way texting inbox, estimate and payment follow-up sequences — running without you.'],
-            ['💳','Stripe Payment Processing','Card-on-file, post-service billing, partial payments, and automated payment reminders built in.'],
-            ['👑','Role-Based Access','Owner, Manager, Office, Technician, and Mobile roles with granular permissions across every module.'],
           ].map(([icon,title,desc]) => (
             <div key={title} className="premium-card">
               <div className="premium-card-icon">{icon}</div>
@@ -267,12 +267,16 @@ export default function Home() {
                 ['Per-User Fees','✓ None','$50–$150/user'],
                 ['Covers All Field Service Trades','✓ Yes','No — one trade'],
                 ['Pending Job Board (Two-Tier)','✓ Yes','No'],
+                ['Spray / Chemical Waiting List (Sq Ft)','✓ Yes','No'],
+                ['Calendar View','✓ Yes','Yes'],
+                ['Dispatch View','✓ Yes','Limited'],
+                ['Live Crew Tracking (Map)','✓ Yes','Add-on / Extra'],
+                ['Auto Route (100 included)','✓ Yes','Add-on'],
+                ['Lasso / Circle-to-Schedule Map Tool','✓ Yes','No'],
                 ['Chemical Compliance Reports','✓ Yes','Add-on / Extra'],
-                ['Sq Ft Waiting List','✓ Yes','No'],
-                ['Circle-to-Schedule Map Tool','✓ Yes','No'],
                 ['Automated SMS Alerts (10+ types)','✓ Yes','Limited / Extra'],
                 ['Two-Way SMS Inbox','✓ Yes','Add-on'],
-                ['Stripe Payments Built In','✓ Yes','Yes'],
+                ['Card Payments Built In','✓ Yes','Yes'],
                 ['Mobile App for Field Techs','✓ Yes','Yes'],
                 ['Contracts Required','✓ None','Annual contracts'],
                 ['Setup Time','✓ Same day','Weeks + fee'],
@@ -293,25 +297,26 @@ export default function Home() {
         <div className="centered" style={{ maxWidth:1200, margin:'0 auto' }}>
           <span className="section-label">Full Platform</span>
           <h2 className="section-title">Everything You Need. Nothing You Don&apos;t.</h2>
-          <p className="section-sub" style={{ marginLeft:'auto', marginRight:'auto' }}>Every feature below is included in your $199/month. No tiers, no add-ons, no surprises.</p>
+          <p className="section-sub" style={{ marginLeft:'auto', marginRight:'auto' }}>Every feature below is included in your $199/month. 100 auto routes included, +$10 per 100 more. No tiers, no surprises.</p>
         </div>
         <div className="feat-grid">
           {[
-            ['📋','Pending Job Board','Two-tier system — scheduled with dates and chemical/maintenance waiting list.'],
-            ['🗺️','Live Route Maps','Drag-and-drop stop ordering with real-time map view for every crew.'],
-            ['⭕','Circle-to-Schedule','Draw a zone on the map, see all sq ft and services inside, schedule at once.'],
-            ['🧪','Chemical Compliance','Full application logs, license tracking, weather data, and compliance reports.'],
-            ['📅','Calendar View','See your entire schedule across all crews and services in one calendar.'],
-            ['💬','Two-Way SMS Inbox','Send and receive texts with customers directly in the platform.'],
-            ['🔔','10+ Automated Alerts','Scheduled, completed, skipped, estimate, payment, review — fully automatic.'],
-            ['💰','Estimates & Follow-Ups','Build, send, and auto-follow-up on estimates without leaving the app.'],
-            ['💳','Stripe Payments','Card-on-file, invoices, partial payments, and automated payment reminders.'],
-            ['📱','Mobile App for Techs','Stop list, chemical logging, photos, and status updates from any device.'],
-            ['👥','Employee Management','Time tracking, employee hours, role-based access, and crew assignments.'],
-            ['📦','Service Programs','Multi-treatment packages with renewal alerts and full treatment tracking.'],
-            ['⭐','Review Requests','Automated Google review requests after every completed service.'],
+            ['📋','Pending Job Board','Two-tier system — scheduled jobs with dates on one side, chemical/maintenance waiting list on the other.'],
+            ['🗓️','Calendar View','See every job across every crew and every industry on one calendar. Filter by crew, service type, or date range.'],
+            ['🚀','Dispatch View','Real-time dispatch board showing every crew, their current stop, and job status as it happens.'],
+            ['📍','Live Crew Tracking','See every tech and truck on a live map in real time. Know exactly who is where, all day long.'],
+            ['🤖','Auto Route (100 Included)','100 auto-optimized routes included monthly. System sequences stops by geography automatically. +$10 per 100 more.'],
+            ['⭕','Lasso / Circle-to-Schedule','Draw a zone on the map, see every property and all sq ft inside, schedule them all at once.'],
+            ['🧪','Chemical Compliance','Full application logs, license tracking, weather data, and state-inspector-ready compliance reports.'],
+            ['💬','Two-Way SMS Inbox','Send and receive texts with customers directly in the platform. 10+ automated alert types included.'],
+            ['💰','Estimates & Follow-Ups','Build, send, and auto-follow-up on estimates. Approved estimates convert to jobs automatically.'],
+            ['💳','Card Payments','Card-on-file, post-service billing, partial payments, and automated payment reminders. Card or check/cash.'],
+            ['📱','Mobile App for Techs','Stop list, chemical logging, photos, GPS clock-in, and status updates from any phone.'],
+            ['👥','Employee Management','Time tracking, GPS clock-in, role-based access, and crew assignments.'],
+            ['📦','Service Programs','Multi-treatment packages with renewal alerts and full treatment tracking. Round-based programs built in.'],
+            ['⭐','Review Requests','Automated Google review requests after every completed service — running without you.'],
             ['🔧','Custom Fields','Add any field to any record — fully customizable for your operation.'],
-            ['👑','Role-Based Access','Owner, Manager, Office, Tech, and Mobile roles with granular permissions.'],
+            ['👑','Role-Based Access','Owner, Manager, Office, Tech, and Mobile roles with granular permissions across every module.'],
             ['📊','Admin Dashboard','Full business overview — revenue, jobs, staff, and performance at a glance.'],
           ].map(([icon,title,desc]) => (
             <div key={title} className="feat-card">
@@ -336,7 +341,7 @@ export default function Home() {
           <div className="price-amount"><sup>$</sup>199</div>
           <div className="price-period">per month · cancel anytime · no contracts</div>
           <ul className="price-includes">
-            {['Unlimited Users','Unlimited Clients','Unlimited Properties','All Features Included','All Industries Covered','Pending Job Board','Chemical Compliance','Estimates & Invoices','Stripe Payments','Two-Way SMS','Mobile App','500 SMS/month','+$15/500 extra SMS','Free Onboarding'].map(li => (
+            {['Unlimited Users','Unlimited Clients','Unlimited Properties','All Features Included','All 9 Industries Covered','Pending Job Board','Chemical Compliance','Estimates & Invoices','Card Payments (Stripe)','Two-Way SMS','Mobile App','Calendar & Dispatch Views','Live Crew Tracking','100 Auto Routes Included','+$10 per 100 more routes','500 SMS/month','+$15/500 extra SMS','Free Onboarding'].map(li => (
               <li key={li}>{li}</li>
             ))}
           </ul>
@@ -386,7 +391,7 @@ export default function Home() {
           </div>
           <div style={{ borderTop:'1px solid rgba(0,184,255,.08)', paddingTop:24, display:'flex', justifyContent:'space-between', flexWrap:'wrap', gap:12 }}>
             <p style={{ color:'rgba(232,244,255,.3)', fontSize:13 }}>© {new Date().getFullYear()} IndustryBossPro. All rights reserved.</p>
-            <p style={{ color:'rgba(232,244,255,.3)', fontSize:13 }}>$199/month · Everything Included · No Contracts</p>
+            <p style={{ color:'rgba(232,244,255,.3)', fontSize:13 }}>$199/month · 100 Auto Routes Included · No Contracts</p>
           </div>
         </div>
       </footer>
