@@ -1,5 +1,7 @@
 import type { Metadata } from 'next';
 import { snowPosts } from '../../lib/blog-snow-data';
+import { snowPlowingPosts, iceManagementPosts, snowSchedulingPosts } from '../../lib/blog-snow-sub-data';
+import { poolServicePosts, poolCleaningPosts, poolMaintenancePosts, poolRoutePosts } from '../../lib/blog-pool-data';
 
 export const metadata: Metadata = {
   title: 'Field Service Business Blog | IndustryBossPro',
@@ -14,6 +16,13 @@ const S = {
 
 const silos = [
   { industry: 'snow-removal', label: 'Snow Removal', posts: snowPosts, hubSlug: 'snow-removal-software' },
+  { industry: 'snow-plowing', label: 'Snow Plowing', posts: snowPlowingPosts, hubSlug: 'snow-plowing-software' },
+  { industry: 'ice-management', label: 'Ice Management', posts: iceManagementPosts, hubSlug: 'ice-management-software' },
+  { industry: 'snow-removal-scheduling', label: 'Snow Removal Scheduling', posts: snowSchedulingPosts, hubSlug: 'snow-removal-scheduling-software' },
+  { industry: 'pool-service', label: 'Pool Service', posts: poolServicePosts, hubSlug: 'pool-service-software' },
+  { industry: 'pool-cleaning', label: 'Pool Cleaning', posts: poolCleaningPosts, hubSlug: 'pool-cleaning-software' },
+  { industry: 'pool-maintenance', label: 'Pool Maintenance', posts: poolMaintenancePosts, hubSlug: 'pool-maintenance-software' },
+  { industry: 'pool-route', label: 'Pool Route', posts: poolRoutePosts, hubSlug: 'pool-route-software' },
 ];
 
 export default function BlogIndex() {
