@@ -340,6 +340,9 @@ export default function Home() {
           <div style={{ fontSize:13, fontWeight:700, color:'rgba(232,244,255,.5)', textTransform:'uppercase', letterSpacing:1, marginBottom:10 }}>IndustryBossPro</div>
           <div className="price-amount"><sup>$</sup>199</div>
           <div className="price-period">per month · cancel anytime · no contracts</div>
+          <div style={{ background: 'rgba(0,184,255,0.1)', border: '1px solid rgba(0,184,255,0.3)', borderRadius: 8, padding: '8px 16px', marginBottom: 16, fontSize: 14, color: '#00b8ff', fontWeight: 700 }}>
+            100 Auto Routes Included · +$10 per 100 More
+          </div>
           <ul className="price-includes">
             {['Unlimited Users','Unlimited Clients','Unlimited Properties','All Features Included','All 9 Industries Covered','Pending Job Board','Chemical Compliance','Estimates & Invoices','Card Payments (Stripe)','Two-Way SMS','Mobile App','Calendar & Dispatch Views','Live Crew Tracking','100 Auto Routes Included','+$10 per 100 more routes','500 SMS/month','+$15/500 extra SMS','Free Onboarding'].map(li => (
               <li key={li}>{li}</li>

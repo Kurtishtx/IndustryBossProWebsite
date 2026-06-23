@@ -259,7 +259,10 @@ export default function HubPageTemplate({ page, stateName }: { page: HubPageData
           <div style={{ background: S.navy4, border: `2px solid ${S.elec}`, borderRadius: 20, padding: '40px 36px', boxShadow: `0 0 60px rgba(0,184,255,0.15)`, textAlign: 'center' }}>
             <div style={{ fontSize: 15, color: S.elec, fontWeight: 700, marginBottom: 8 }}>IndustryBossPro</div>
             <div style={{ fontSize: 60, fontWeight: 900, color: S.text, lineHeight: 1 }}>$199</div>
-            <div style={{ color: S.muted, fontSize: 16, marginBottom: 32 }}>/month · everything included</div>
+            <div style={{ color: S.muted, fontSize: 16, marginBottom: 12 }}>/month · everything included</div>
+            <div style={{ background: 'rgba(0,184,255,0.1)', border: '1px solid rgba(0,184,255,0.3)', borderRadius: 8, padding: '8px 16px', marginBottom: 24, fontSize: 13, color: S.elec, fontWeight: 700 }}>
+              100 Auto Routes Included · +$10 per 100 More
+            </div>
             {['Unlimited Users', '14-Day Free Trial', 'All 9 Industries', 'Pending Job Board', 'Calendar & Dispatch Views', 'Live Crew Tracking', '100 Auto Routes Included', '+$10 per 100 more routes', 'Chemical Compliance Logging', 'Mobile App for Crews', 'Card Payments (Stripe)', 'No Setup Fees', 'No Contracts'].map(item => (
               <div key={item} style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 10, textAlign: 'left' }}>
                 <span style={{ color: S.elec }}>✓</span>
