@@ -1,4 +1,4 @@
-﻿import type { BlogPost } from './blog-snow-data';
+import type { BlogPost } from './blog-snow-data';
 
 export const snowPlowingPosts: BlogPost[] = [
   {
