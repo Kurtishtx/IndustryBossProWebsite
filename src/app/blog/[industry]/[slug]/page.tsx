@@ -2,9 +2,54 @@ import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 import BlogPostTemplate from '../../../../components/BlogPostTemplate';
 import { snowPosts } from '../../../../lib/blog-snow-data';
+import { snowPlowingPosts, iceManagementPosts, snowSchedulingPosts } from '../../../../lib/blog-snow-sub-data';
+import { poolServicePosts, poolCleaningPosts, poolMaintenancePosts, poolRoutePosts } from '../../../../lib/blog-pool-data';
+import { landscapingPosts, landscapeBusinessPosts, landscapeSchedulingPosts, lawnLandscapePosts, landscapeMaintenancePosts } from '../../../../lib/blog-landscaping-data';
+import { irrigationPosts, sprinklerSystemPosts, irrigationBusinessPosts, irrigationSchedulingPosts } from '../../../../lib/blog-irrigation-data';
+import { lawnCarePosts, lawnChemicalPosts, fertilizerPosts, weedControlPosts, lawnTreatmentPosts } from '../../../../lib/blog-lawn-care-data';
+import { pestControlPosts, exterminatorPosts, pestManagementPosts, pestSchedulingPosts } from '../../../../lib/blog-pest-data';
+import { mosquitoControlPosts, mosquitoSprayPosts, mosquitoTreatmentPosts, mosquitoBusinessPosts } from '../../../../lib/blog-mosquito-data';
+import { fenceCompanyPosts, fenceInstallationPosts, fenceBusinessPosts } from '../../../../lib/blog-fence-data';
+import { lawnMowingPosts, mowingBusinessPosts, grassCuttingPosts, lawnMowingSchedulingPosts } from '../../../../lib/blog-mowing-data';
 
 const SILO_DATA: Record<string, typeof snowPosts> = {
   'snow-removal': snowPosts,
+  'snow-plowing': snowPlowingPosts,
+  'ice-management': iceManagementPosts,
+  'snow-removal-scheduling': snowSchedulingPosts,
+  'pool-service': poolServicePosts,
+  'pool-cleaning': poolCleaningPosts,
+  'pool-maintenance': poolMaintenancePosts,
+  'pool-route': poolRoutePosts,
+  'landscaping': landscapingPosts,
+  'landscape-business': landscapeBusinessPosts,
+  'landscape-scheduling': landscapeSchedulingPosts,
+  'lawn-landscape': lawnLandscapePosts,
+  'landscape-maintenance': landscapeMaintenancePosts,
+  'irrigation': irrigationPosts,
+  'sprinkler-system': sprinklerSystemPosts,
+  'irrigation-business': irrigationBusinessPosts,
+  'irrigation-scheduling': irrigationSchedulingPosts,
+  'lawn-care': lawnCarePosts,
+  'lawn-chemical-application': lawnChemicalPosts,
+  'fertilizer': fertilizerPosts,
+  'weed-control': weedControlPosts,
+  'lawn-treatment': lawnTreatmentPosts,
+  'pest-control': pestControlPosts,
+  'exterminator': exterminatorPosts,
+  'pest-management': pestManagementPosts,
+  'pest-control-scheduling': pestSchedulingPosts,
+  'mosquito-control': mosquitoControlPosts,
+  'mosquito-spray': mosquitoSprayPosts,
+  'mosquito-treatment': mosquitoTreatmentPosts,
+  'mosquito-business': mosquitoBusinessPosts,
+  'fence-company': fenceCompanyPosts,
+  'fence-installation': fenceInstallationPosts,
+  'fence-business': fenceBusinessPosts,
+  'lawn-mowing': lawnMowingPosts,
+  'mowing-business': mowingBusinessPosts,
+  'grass-cutting': grassCuttingPosts,
+  'lawn-mowing-scheduling': lawnMowingSchedulingPosts,
 };
 
 export async function generateStaticParams() {

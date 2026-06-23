@@ -26,6 +26,11 @@ export default function HubPageTemplate({ page, stateName }: { page: HubPageData
   const h1 = stateName
     ? `${page.industry} Software${geoSuffix} — Run Your Routes, Get Paid, Grow Faster`
     : page.h1;
+  const keyword = page.slug
+    .replace(/-software$/, '')
+    .split('-')
+    .map((w: string) => w.charAt(0).toUpperCase() + w.slice(1))
+    .join(' ') + ' Software';
 
   return (
     <div style={{ background: S.navy1, minHeight: '100vh', color: S.text, fontFamily: "'Inter','Segoe UI',Arial,sans-serif" }}>
@@ -164,6 +169,18 @@ export default function HubPageTemplate({ page, stateName }: { page: HubPageData
               </div>
             ))}
           </div>
+          {page.blogSiloIndustry && page.blog1Slug && (
+            <p style={{ color: S.muted, fontSize: 15, textAlign: 'center', marginTop: 48, lineHeight: 1.8 }}>
+              Not sure what to look for? Our in-depth{' '}
+              <a
+                href={`/blog/${page.blogSiloIndustry}/${page.blog1Slug}`}
+                style={{ color: S.elec, fontWeight: 700, textDecoration: 'none' }}
+              >
+                {keyword} guide
+              </a>
+              {' '}walks you through everything — from choosing the right platform to getting your crew live in the field.
+            </p>
+          )}
         </div>
       </section>
 
@@ -244,20 +261,20 @@ export default function HubPageTemplate({ page, stateName }: { page: HubPageData
         <section style={{ background: S.navy3, padding: '64px 40px', borderTop: `1px solid ${S.border}` }}>
           <div style={{ maxWidth: 900, margin: '0 auto', display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 32, flexWrap: 'wrap' }}>
             <div>
-              <div style={{ fontSize: 11, fontWeight: 700, color: S.elec, letterSpacing: '1.5px', textTransform: 'uppercase', marginBottom: 10 }}>From Our Blog</div>
+              <div style={{ fontSize: 11, fontWeight: 700, color: S.elec, letterSpacing: '1.5px', textTransform: 'uppercase', marginBottom: 10 }}>Free Resource</div>
               <h3 style={{ fontSize: 22, fontWeight: 800, color: '#fff', marginBottom: 10 }}>
-                30-Part {page.industry} Guide Series
+                The Complete {keyword} Guide
               </h3>
               <p style={{ color: S.muted, fontSize: 15, maxWidth: 540 }}>
-                From pricing to crew management to software setup — our complete guide series covers everything you need to run a more profitable {page.industry.toLowerCase()} operation.
+                30 in-depth articles covering pricing, routing, crew management, billing, and scaling — everything a {page.industry.toLowerCase()} business owner needs to run a tighter operation.
               </p>
             </div>
             <div style={{ display: 'flex', flexDirection: 'column', gap: 12, flexShrink: 0 }}>
               <a href={`/blog/${page.blogSiloIndustry}/${page.blog1Slug}`} style={{ display: 'inline-block', background: S.elec, color: S.navy1, borderRadius: 8, padding: '13px 28px', fontSize: 14, fontWeight: 800, textDecoration: 'none', whiteSpace: 'nowrap' }}>
-                Start With the Complete Guide →
+                Read the {keyword} Guide →
               </a>
               <a href={`/blog/${page.blogSiloIndustry}`} style={{ display: 'inline-block', color: S.elec, fontSize: 13, fontWeight: 600, textDecoration: 'none', textAlign: 'center' }}>
-                View all 30 articles →
+                Browse all 30 articles →
               </a>
             </div>
           </div>

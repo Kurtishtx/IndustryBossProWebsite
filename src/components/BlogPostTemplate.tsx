@@ -79,28 +79,23 @@ export default function BlogPostTemplate({ post, prevPost, industry }: Props) {
               <h2 style={{ fontSize: 'clamp(20px,2.5vw,26px)', fontWeight: 800, color: '#fff', marginBottom: 16, lineHeight: 1.25, letterSpacing: '-0.3px' }}>
                 {section.h2}
               </h2>
-              <p style={{ fontSize: 16, lineHeight: 1.85, color: S.muted }}>
-                {/* Hub link woven naturally into section 2 */}
-                {i === 1 ? (
-                  <>
-                    {section.content.replace(
-                      post.hubKeyword,
-                      `[HUB_LINK]`
-                    ).split('[HUB_LINK]').map((part, j, arr) =>
-                      j < arr.length - 1 ? (
-                        <span key={j}>
-                          {part}
-                          <a href={`/${post.hubSlug}`} style={{ color: S.elec, textDecoration: 'none', fontWeight: 600 }}>
-                            {post.hubKeyword}
-                          </a>
-                        </span>
-                      ) : <span key={j}>{part}</span>
-                    )}
-                  </>
-                ) : section.content}
-              </p>
+              {section.content.split('\n\n').map((para, pi) => (
+                <p key={pi} style={{ fontSize: 16, lineHeight: 1.85, color: S.muted, marginBottom: 16 }}>
+                  {para}
+                </p>
+              ))}
             </div>
           ))}
+
+          {/* Hub page link — always shown */}
+          <div style={{ margin: '40px 0', padding: '20px 24px', background: 'rgba(0,184,255,0.06)', border: `1px solid ${S.border}`, borderRadius: 12 }}>
+            <p style={{ color: S.muted, fontSize: 15, marginBottom: 10 }}>
+              Looking for software built specifically for {industryLabel.toLowerCase()} businesses?
+            </p>
+            <a href={`/${post.hubSlug}`} style={{ color: S.elec, fontSize: 15, fontWeight: 700, textDecoration: 'none' }}>
+              Explore {post.hubKeyword.charAt(0).toUpperCase() + post.hubKeyword.slice(1)} →
+            </a>
+          </div>
 
           {/* Bottom CTA */}
           <div style={{ background: `linear-gradient(135deg, ${S.navy4}, #0d1f3c)`, border: `1px solid ${S.border}`, borderRadius: 16, padding: '36px 32px', marginTop: 16, textAlign: 'center' }}>

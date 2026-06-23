@@ -1,10 +1,59 @@
 import { MetadataRoute } from 'next';
-import { hubPages, getMainHubs } from '../lib/hub-data';
+import { hubPages } from '../lib/hub-data';
 import { vsPages } from '../lib/vs-data';
 import { featurePages } from '../lib/feature-data';
 import { snowPosts } from '../lib/blog-snow-data';
+import { snowPlowingPosts, iceManagementPosts, snowSchedulingPosts } from '../lib/blog-snow-sub-data';
+import { poolServicePosts, poolCleaningPosts, poolMaintenancePosts, poolRoutePosts } from '../lib/blog-pool-data';
+import { landscapingPosts, landscapeBusinessPosts, landscapeSchedulingPosts, lawnLandscapePosts, landscapeMaintenancePosts } from '../lib/blog-landscaping-data';
+import { irrigationPosts, sprinklerSystemPosts, irrigationBusinessPosts, irrigationSchedulingPosts } from '../lib/blog-irrigation-data';
+import { lawnCarePosts, lawnChemicalPosts, fertilizerPosts, weedControlPosts, lawnTreatmentPosts } from '../lib/blog-lawn-care-data';
+import { pestControlPosts, exterminatorPosts, pestManagementPosts, pestSchedulingPosts } from '../lib/blog-pest-data';
+import { mosquitoControlPosts, mosquitoSprayPosts, mosquitoTreatmentPosts, mosquitoBusinessPosts } from '../lib/blog-mosquito-data';
+import { fenceCompanyPosts, fenceInstallationPosts, fenceBusinessPosts } from '../lib/blog-fence-data';
+import { lawnMowingPosts, mowingBusinessPosts, grassCuttingPosts, lawnMowingSchedulingPosts } from '../lib/blog-mowing-data';
 
 const BASE = 'https://industrybosspro.com';
+
+const SILOS: { industry: string; posts: { slug: string; date: string }[] }[] = [
+  { industry: 'snow-removal', posts: snowPosts },
+  { industry: 'snow-plowing', posts: snowPlowingPosts },
+  { industry: 'ice-management', posts: iceManagementPosts },
+  { industry: 'snow-removal-scheduling', posts: snowSchedulingPosts },
+  { industry: 'pool-service', posts: poolServicePosts },
+  { industry: 'pool-cleaning', posts: poolCleaningPosts },
+  { industry: 'pool-maintenance', posts: poolMaintenancePosts },
+  { industry: 'pool-route', posts: poolRoutePosts },
+  { industry: 'landscaping', posts: landscapingPosts },
+  { industry: 'landscape-business', posts: landscapeBusinessPosts },
+  { industry: 'landscape-scheduling', posts: landscapeSchedulingPosts },
+  { industry: 'lawn-landscape', posts: lawnLandscapePosts },
+  { industry: 'landscape-maintenance', posts: landscapeMaintenancePosts },
+  { industry: 'irrigation', posts: irrigationPosts },
+  { industry: 'sprinkler-system', posts: sprinklerSystemPosts },
+  { industry: 'irrigation-business', posts: irrigationBusinessPosts },
+  { industry: 'irrigation-scheduling', posts: irrigationSchedulingPosts },
+  { industry: 'lawn-care', posts: lawnCarePosts },
+  { industry: 'lawn-chemical-application', posts: lawnChemicalPosts },
+  { industry: 'fertilizer', posts: fertilizerPosts },
+  { industry: 'weed-control', posts: weedControlPosts },
+  { industry: 'lawn-treatment', posts: lawnTreatmentPosts },
+  { industry: 'pest-control', posts: pestControlPosts },
+  { industry: 'exterminator', posts: exterminatorPosts },
+  { industry: 'pest-management', posts: pestManagementPosts },
+  { industry: 'pest-control-scheduling', posts: pestSchedulingPosts },
+  { industry: 'mosquito-control', posts: mosquitoControlPosts },
+  { industry: 'mosquito-spray', posts: mosquitoSprayPosts },
+  { industry: 'mosquito-treatment', posts: mosquitoTreatmentPosts },
+  { industry: 'mosquito-business', posts: mosquitoBusinessPosts },
+  { industry: 'fence-company', posts: fenceCompanyPosts },
+  { industry: 'fence-installation', posts: fenceInstallationPosts },
+  { industry: 'fence-business', posts: fenceBusinessPosts },
+  { industry: 'lawn-mowing', posts: lawnMowingPosts },
+  { industry: 'mowing-business', posts: mowingBusinessPosts },
+  { industry: 'grass-cutting', posts: grassCuttingPosts },
+  { industry: 'lawn-mowing-scheduling', posts: lawnMowingSchedulingPosts },
+];
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const urls: MetadataRoute.Sitemap = [
@@ -20,13 +69,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     urls.push({ url: `${BASE}/${page.slug}`, lastModified: new Date(), changeFrequency: 'weekly', priority: page.isMain ? 0.9 : 0.8 });
   }
 
-  // State sub-pages
-  for (const hub of getMainHubs()) {
-    for (const state of (hub.states || [])) {
-      urls.push({ url: `${BASE}/${hub.slug}/${state.slug}`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 });
-    }
-  }
-
   // VS pages
   for (const page of vsPages) {
     urls.push({ url: `${BASE}/vs/${page.slug}`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 });
@@ -37,11 +79,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     urls.push({ url: `${BASE}/features/${page.slug}`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 });
   }
 
-  // Blog pages
+  // Blog index
   urls.push({ url: `${BASE}/blog`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.8 });
-  urls.push({ url: `${BASE}/blog/snow-removal`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.8 });
-  for (const post of snowPosts) {
-    urls.push({ url: `${BASE}/blog/snow-removal/${post.slug}`, lastModified: new Date(post.date), changeFrequency: 'monthly', priority: 0.7 });
+
+  // All blog silos
+  for (const silo of SILOS) {
+    urls.push({ url: `${BASE}/blog/${silo.industry}`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.75 });
+    for (const post of silo.posts) {
+      urls.push({ url: `${BASE}/blog/${silo.industry}/${post.slug}`, lastModified: new Date(post.date), changeFrequency: 'monthly', priority: 0.7 });
+    }
   }
 
   return urls;
