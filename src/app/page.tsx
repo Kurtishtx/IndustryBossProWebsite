@@ -297,7 +297,7 @@ export default function Home() {
         <div className="centered" style={{ maxWidth:1200, margin:'0 auto' }}>
           <span className="section-label">Full Platform</span>
           <h2 className="section-title">Everything You Need. Nothing You Don&apos;t.</h2>
-          <p className="section-sub" style={{ marginLeft:'auto', marginRight:'auto' }}>Every feature below is included in your $199/month. 100 auto routes included, +$10 per 100 more. No tiers, no surprises.</p>
+          <p className="section-sub" style={{ marginLeft:'auto', marginRight:'auto' }}>Every feature below is included in your $199/month. 100 auto routes included, +$10 per 300 more. No tiers, no surprises.</p>
         </div>
         <div className="feat-grid">
           {[
@@ -305,7 +305,7 @@ export default function Home() {
             ['🗓️','Calendar View','See every job across every crew and every industry on one calendar. Filter by crew, service type, or date range.'],
             ['🚀','Dispatch View','Real-time dispatch board showing every crew, their current stop, and job status as it happens.'],
             ['📍','Live Crew Tracking','See every tech and truck on a live map in real time. Know exactly who is where, all day long.'],
-            ['🤖','Auto Route (100 Included)','100 auto-optimized routes included monthly. System sequences stops by geography automatically. +$10 per 100 more.'],
+            ['🤖','Auto Route (100 Included)','100 auto-optimized routes included monthly. System sequences stops by geography automatically. +$10 per 300 more.'],
             ['⭕','Lasso / Circle-to-Schedule','Draw a zone on the map, see every property and all sq ft inside, schedule them all at once.'],
             ['🧪','Chemical Compliance','Full application logs, license tracking, weather data, and state-inspector-ready compliance reports.'],
             ['💬','Two-Way SMS Inbox','Send and receive texts with customers directly in the platform. 10+ automated alert types included.'],
@@ -341,10 +341,10 @@ export default function Home() {
           <div className="price-amount"><sup>$</sup>199</div>
           <div className="price-period">per month · cancel anytime · no contracts</div>
           <div style={{ background: 'rgba(0,184,255,0.1)', border: '1px solid rgba(0,184,255,0.3)', borderRadius: 8, padding: '8px 16px', marginBottom: 16, fontSize: 14, color: '#00b8ff', fontWeight: 700 }}>
-            100 Auto Routes Included · +$10 per 100 More
+            100 Auto Routes Included · +$10 per 300 More
           </div>
           <ul className="price-includes">
-            {['Unlimited Users','Unlimited Clients','Unlimited Properties','All Features Included','All 9 Industries Covered','Pending Job Board','Chemical Compliance','Estimates & Invoices','Card Payments (Stripe)','Two-Way SMS','Mobile App','Calendar & Dispatch Views','Live Crew Tracking','100 Auto Routes Included','+$10 per 100 more routes','500 SMS/month','+$15/500 extra SMS','Free Onboarding'].map(li => (
+            {['Unlimited Users','Unlimited Clients','Unlimited Properties','All Features Included','All 9 Industries Covered','Pending Job Board','Chemical Compliance','Estimates & Invoices','Card Payments (Stripe)','Two-Way SMS','Mobile App','Calendar & Dispatch Views','Live Crew Tracking','100 Auto Routes Included','+$10 per 300 more','500 SMS/month Included','+$10 per 250 more SMS','Free Onboarding'].map(li => (
               <li key={li}>{li}</li>
             ))}
           </ul>
