@@ -268,7 +268,7 @@ export default function Home() {
                 ['Covers All Field Service Trades','✓ Yes','No — one trade'],
                 ['Pending Job Board (Two-Tier)','✓ Yes','No'],
                 ['Spray / Chemical Waiting List (Sq Ft)','✓ Yes','No'],
-                ['Calendar View','✓ Yes','Yes'],
+                ['List View','✓ Yes','No'],
                 ['Dispatch View','✓ Yes','Limited'],
                 ['Live Crew Tracking (Map)','✓ Yes','Add-on / Extra'],
                 ['Auto Route (300 Included)','✓ Yes','Add-on'],
