@@ -42,7 +42,7 @@ export default function BlogPostTemplate({ post, prevPost, industry }: Props) {
             <span style={{ color: S.muted, fontSize: 13 }}>›</span>
             <span style={{ color: S.elec, fontSize: 13, fontWeight: 600 }}>{post.title}</span>
           </div>
-          <div style={{ display: 'inline-block', background: 'rgba(0,184,255,0.1)', border: `1px solid rgba(0,184,255,0.3)`, color: S.elec, fontSize: 11, fontWeight: 700, letterSpacing: '1.5px', textTransform: 'uppercase', padding: '5px 14px', borderRadius: 20, marginBottom: 20 }}>
+          <div style={{ display: 'inline-block', background: 'rgba(196,125,10,0.1)', border: `1px solid rgba(196,125,10,0.3)`, color: S.elec, fontSize: 11, fontWeight: 700, letterSpacing: '1.5px', textTransform: 'uppercase', padding: '5px 14px', borderRadius: 20, marginBottom: 20 }}>
             {industryLabel}
           </div>
           <h1 style={{ fontSize: 'clamp(26px,4vw,44px)', fontWeight: 900, lineHeight: 1.1, color: '#fff', marginBottom: 20, letterSpacing: '-0.5px' }}>
@@ -67,7 +67,7 @@ export default function BlogPostTemplate({ post, prevPost, industry }: Props) {
 
           {/* Silo chain link — naturally woven in after intro */}
           {prevPost && (
-          <p style={{ fontSize: 15, lineHeight: 1.8, color: S.muted, marginBottom: 40, padding: '16px 20px', background: 'rgba(0,184,255,0.05)', borderLeft: `3px solid ${S.elec}`, borderRadius: '0 8px 8px 0' }}>
+          <p style={{ fontSize: 15, lineHeight: 1.8, color: S.muted, marginBottom: 40, padding: '16px 20px', background: 'rgba(196,125,10,0.05)', borderLeft: `3px solid ${S.elec}`, borderRadius: '0 8px 8px 0' }}>
             If you&apos;re exploring how to build a stronger {industryLabel.toLowerCase()} operation, our guide on{' '}
             <a href={`/blog/${industry}/${prevPost.slug}`} style={{ color: S.elec, textDecoration: 'none', fontWeight: 600 }}>
               {prevPost.title}
@@ -91,7 +91,7 @@ export default function BlogPostTemplate({ post, prevPost, industry }: Props) {
           ))}
 
           {/* Hub page link — always shown */}
-          <div style={{ margin: '40px 0', padding: '20px 24px', background: 'rgba(0,184,255,0.06)', border: `1px solid ${S.border}`, borderRadius: 12 }}>
+          <div style={{ margin: '40px 0', padding: '20px 24px', background: 'rgba(196,125,10,0.06)', border: `1px solid ${S.border}`, borderRadius: 12 }}>
             <p style={{ color: S.muted, fontSize: 15, marginBottom: 10 }}>
               Looking for software built specifically for {industryLabel.toLowerCase()} businesses?
             </p>
@@ -144,7 +144,7 @@ export default function BlogPostTemplate({ post, prevPost, industry }: Props) {
             </p>
             <a
               href={`/${post.hubSlug}`}
-              style={{ display: 'block', background: 'rgba(0,184,255,0.08)', border: `1px solid ${S.border}`, borderRadius: 8, padding: '12px 16px', color: S.elec, fontSize: 14, fontWeight: 600, textDecoration: 'none' }}
+              style={{ display: 'block', background: 'rgba(196,125,10,0.08)', border: `1px solid ${S.border}`, borderRadius: 8, padding: '12px 16px', color: S.elec, fontSize: 14, fontWeight: 600, textDecoration: 'none' }}
             >
               {industryLabel} Software →
             </a>

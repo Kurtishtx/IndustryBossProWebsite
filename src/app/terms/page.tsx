@@ -6,8 +6,8 @@ export const metadata: Metadata = {
 };
 
 const S = {
-  navy1: '#030b15', navy4: '#0a1628', elec: '#00b8ff',
-  muted: 'rgba(232,244,255,0.6)', border: 'rgba(0,184,255,0.15)', text: '#e8f4ff',
+  navy1: '#1e1208', navy4: '#2a1a0a', elec: '#c47d0a',
+  muted: 'rgba(245,236,224,0.6)', border: 'rgba(196,125,10,0.15)', text: '#f5ece0',
 };
 
 export default function Terms() {

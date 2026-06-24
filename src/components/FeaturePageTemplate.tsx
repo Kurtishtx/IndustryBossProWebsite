@@ -18,9 +18,9 @@ export default function FeaturePageTemplate({ page }: { page: FeaturePageData })
       <TrialModal open={modal} onClose={() => setModal(false)} />
 
       {/* HERO */}
-      <section style={{ paddingTop: 120, paddingBottom: 80, background: '#050e1e', textAlign: 'center' }}>
+      <section style={{ paddingTop: 120, paddingBottom: 80, background: S.navy1, textAlign: 'center' }}>
         <div style={{ maxWidth: 860, margin: '0 auto', padding: '0 24px' }}>
-          <div style={{ display: 'inline-block', background: 'rgba(0,184,255,0.1)', border: '1px solid rgba(0,184,255,0.3)', borderRadius: 20, padding: '4px 14px', fontSize: 13, color: S.elec, fontWeight: 600, marginBottom: 20 }}>
+          <div style={{ display: 'inline-block', background: 'rgba(196,125,10,0.1)', border: '1px solid rgba(196,125,10,0.3)', borderRadius: 20, padding: '4px 14px', fontSize: 13, color: S.elec, fontWeight: 600, marginBottom: 20 }}>
             Feature Deep Dive
           </div>
           <h1 style={{ fontSize: 'clamp(26px, 4.5vw, 50px)', fontWeight: 900, color: S.text, lineHeight: 1.1, marginBottom: 20, letterSpacing: '-1px' }}>{page.h1}</h1>
@@ -61,7 +61,7 @@ export default function FeaturePageTemplate({ page }: { page: FeaturePageData })
           <p style={{ color: S.muted, marginBottom: 28, fontSize: 15 }}>One platform. One price. Every industry.</p>
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: 10, justifyContent: 'center' }}>
             {page.industries.map(ind => (
-              <span key={ind} style={{ background: 'rgba(0,184,255,0.08)', border: `1px solid ${S.border}`, borderRadius: 20, padding: '7px 16px', fontSize: 13, color: S.elec, fontWeight: 600 }}>{ind}</span>
+              <span key={ind} style={{ background: 'rgba(196,125,10,0.08)', border: `1px solid ${S.border}`, borderRadius: 20, padding: '7px 16px', fontSize: 13, color: S.elec, fontWeight: 600 }}>{ind}</span>
             ))}
           </div>
         </div>
@@ -72,7 +72,7 @@ export default function FeaturePageTemplate({ page }: { page: FeaturePageData })
         <div style={{ maxWidth: 480, margin: '0 auto' }}>
           <h2 style={{ fontSize: 30, fontWeight: 800, color: S.text, marginBottom: 8 }}>Everything Included at $199/Month</h2>
           <p style={{ color: S.muted, marginBottom: 36 }}>No feature tiers. No per-user fees. No surprises.</p>
-          <div style={{ background: S.navy4, border: `2px solid ${S.elec}`, borderRadius: 20, padding: '36px 32px', boxShadow: '0 0 60px rgba(0,184,255,0.12)' }}>
+          <div style={{ background: S.navy4, border: `2px solid ${S.elec}`, borderRadius: 20, padding: '36px 32px', boxShadow: '0 0 60px rgba(196,125,10,0.12)' }}>
             <div style={{ fontSize: 56, fontWeight: 900, color: S.text, lineHeight: 1 }}>$199</div>
             <div style={{ color: S.muted, fontSize: 15, marginBottom: 28 }}>/month · cancel anytime</div>
             <button onClick={() => setModal(true)} style={{ width: '100%', background: S.elec, color: '#fff', border: 'none', borderRadius: 10, padding: '15px', fontSize: 16, fontWeight: 800, cursor: 'pointer' }}>

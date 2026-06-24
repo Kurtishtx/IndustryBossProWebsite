@@ -6,11 +6,11 @@ import SiteFooter from '../../components/SiteFooter';
 import TrialModal from '../../components/TrialModal';
 
 const S = {
-  navy1: '#030b15', navy2: '#050e1e', navy4: '#0a1628',
-  elec: '#00b8ff', text: '#e8f4ff', muted: 'rgba(232,244,255,0.65)',
-  border: 'rgba(0,184,255,0.15)',
+  navy1: '#1e1208', navy2: '#1e1208', navy4: '#2a1a0a',
+  elec: '#c47d0a', text: '#f5ece0', muted: 'rgba(245,236,224,0.65)',
+  border: 'rgba(196,125,10,0.15)',
 };
-const e = (a: string) => `rgba(0,184,255,${a})`;
+const e = (a: string) => `rgba(196,125,10,${a})`;
 
 const FEATURES = [
   {
@@ -79,7 +79,7 @@ export default function FeaturesPage() {
 
       <div style={{ paddingTop: 66 }}>
         {/* Hero */}
-        <div style={{ background: `linear-gradient(160deg, #030b15, #060f1f)`, padding: '90px 24px 70px', textAlign: 'center', borderBottom: `1px solid ${S.border}` }}>
+        <div style={{ background: `linear-gradient(160deg, #1e1208, #241508)`, padding: '90px 24px 70px', textAlign: 'center', borderBottom: `1px solid ${S.border}` }}>
           <div style={{ display: 'inline-block', background: e('.1'), border: `1px solid ${e('.3')}`, color: S.elec, fontSize: 11, fontWeight: 700, letterSpacing: '1.5px', textTransform: 'uppercase', padding: '5px 14px', borderRadius: 20, marginBottom: 20 }}>
             Every Feature Included
           </div>
@@ -89,7 +89,7 @@ export default function FeaturesPage() {
           <p style={{ color: S.muted, fontSize: 18, maxWidth: 580, margin: '0 auto 36px' }}>
             Scheduling, routing, invoicing, payments, CRM, mobile app, SMS, chemical compliance — all included at $199/month. No add-ons.
           </p>
-          <button onClick={() => setModalOpen(true)} style={{ background: S.elec, color: '#030b15', border: 'none', borderRadius: 10, padding: '14px 36px', fontSize: 16, fontWeight: 700, cursor: 'pointer' }}>
+          <button onClick={() => setModalOpen(true)} style={{ background: S.elec, color: '#fff', border: 'none', borderRadius: 10, padding: '14px 36px', fontSize: 16, fontWeight: 700, cursor: 'pointer' }}>
             Start Free Trial
           </button>
         </div>
@@ -138,7 +138,7 @@ export default function FeaturesPage() {
             All of This for $199/Month
           </h2>
           <p style={{ color: S.muted, fontSize: 17, marginBottom: 32 }}>No credit card. No contracts. 14-day free trial.</p>
-          <button onClick={() => setModalOpen(true)} style={{ background: S.elec, color: '#030b15', padding: '16px 48px', borderRadius: 10, fontSize: 17, fontWeight: 700, border: 'none', cursor: 'pointer' }}>
+          <button onClick={() => setModalOpen(true)} style={{ background: S.elec, color: '#fff', padding: '16px 48px', borderRadius: 10, fontSize: 17, fontWeight: 700, border: 'none', cursor: 'pointer' }}>
             Start Free Trial
           </button>
         </div>

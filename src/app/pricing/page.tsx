@@ -5,11 +5,11 @@ import SiteFooter from '../../components/SiteFooter';
 import TrialModal from '../../components/TrialModal';
 
 const S = {
-  navy1: '#030b15', navy2: '#050e1e', navy3: '#071425', navy4: '#0a1628',
-  elec: '#00b8ff', text: '#e8f4ff', muted: 'rgba(232,244,255,0.65)',
-  border: 'rgba(0,184,255,0.15)',
+  navy1: '#1e1208', navy2: '#1e1208', navy3: '#241508', navy4: '#2a1a0a',
+  elec: '#c47d0a', text: '#f5ece0', muted: 'rgba(245,236,224,0.65)',
+  border: 'rgba(196,125,10,0.15)',
 };
-const e = (a: string) => `rgba(0,184,255,${a})`;
+const e = (a: string) => `rgba(196,125,10,${a})`;
 
 const INCLUDED = [
   'Unlimited Users', 'Unlimited Clients', 'Unlimited Properties',
@@ -50,7 +50,7 @@ export default function PricingPage() {
 
       {/* Hero */}
       <div style={{ paddingTop: 66 }}>
-        <div style={{ background: `linear-gradient(160deg, #030b15, #060f1f)`, padding: '90px 24px 70px', textAlign: 'center', borderBottom: `1px solid ${S.border}` }}>
+        <div style={{ background: `linear-gradient(160deg, #1e1208, #241508)`, padding: '90px 24px 70px', textAlign: 'center', borderBottom: `1px solid ${S.border}` }}>
           <div style={{ display: 'inline-block', background: e('.1'), border: `1px solid ${e('.3')}`, color: S.elec, fontSize: 11, fontWeight: 700, letterSpacing: '1.5px', textTransform: 'uppercase', padding: '5px 14px', borderRadius: 20, marginBottom: 20 }}>
             Simple Pricing
           </div>
@@ -66,7 +66,7 @@ export default function PricingPage() {
       {/* Pricing Card */}
       <div style={{ maxWidth: 620, margin: '0 auto', padding: '80px 24px 0' }}>
         <div style={{ background: S.navy4, border: `3px solid ${S.elec}`, borderRadius: 20, padding: '52px 48px', position: 'relative', boxShadow: `0 0 60px ${e('.2')}, 0 0 0 8px ${e('.06')}` }}>
-          <div style={{ position: 'absolute', top: -16, left: '50%', transform: 'translateX(-50%)', background: S.elec, color: '#030b15', fontSize: 11, fontWeight: 700, letterSpacing: '1px', textTransform: 'uppercase', padding: '6px 22px', borderRadius: 20, whiteSpace: 'nowrap', boxShadow: `0 0 20px ${e('.5')}` }}>
+          <div style={{ position: 'absolute', top: -16, left: '50%', transform: 'translateX(-50%)', background: S.elec, color: '#fff', fontSize: 11, fontWeight: 700, letterSpacing: '1px', textTransform: 'uppercase', padding: '6px 22px', borderRadius: 20, whiteSpace: 'nowrap', boxShadow: `0 0 20px ${e('.5')}` }}>
             Everything Included â€” No Tiers
           </div>
           <div style={{ fontSize: 12, fontWeight: 700, color: S.muted, textTransform: 'uppercase', letterSpacing: '1px', marginBottom: 10 }}>IndustryBossPro</div>
@@ -81,7 +81,7 @@ export default function PricingPage() {
               </li>
             ))}
           </ul>
-          <button onClick={() => setModalOpen(true)} style={{ width: '100%', background: S.elec, color: '#030b15', border: 'none', borderRadius: 10, padding: '18px', fontSize: 17, fontWeight: 700, cursor: 'pointer', boxShadow: `0 0 30px ${e('.4')}` }}>
+          <button onClick={() => setModalOpen(true)} style={{ width: '100%', background: S.elec, color: '#fff', border: 'none', borderRadius: 10, padding: '18px', fontSize: 17, fontWeight: 700, cursor: 'pointer', boxShadow: `0 0 30px ${e('.4')}` }}>
             Start Your 14-Day Free Trial
           </button>
           <p style={{ textAlign: 'center', color: S.muted, fontSize: 13, marginTop: 14 }}>No credit card required. No contracts.</p>
@@ -102,10 +102,10 @@ export default function PricingPage() {
             <span style={{ color: S.muted }}>Other Platforms</span>
           </div>
           {COMPARE.map((row, i) => (
-            <div key={row.feature} style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', padding: '14px 24px', borderTop: `1px solid ${S.border}`, background: i % 2 === 0 ? 'transparent' : 'rgba(0,184,255,0.02)' }}>
+            <div key={row.feature} style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', padding: '14px 24px', borderTop: `1px solid ${S.border}`, background: i % 2 === 0 ? 'transparent' : 'rgba(196,125,10,0.02)' }}>
               <span style={{ color: S.muted, fontSize: 14, fontWeight: 600 }}>{row.feature}</span>
               <span style={{ color: S.elec, fontSize: 14, fontWeight: 700 }}>{row.us}</span>
-              <span style={{ color: 'rgba(232,244,255,0.35)', fontSize: 14 }}>{row.them}</span>
+              <span style={{ color: 'rgba(245,236,224,0.35)', fontSize: 14 }}>{row.them}</span>
             </div>
           ))}
         </div>
@@ -129,14 +129,14 @@ export default function PricingPage() {
       </div>
 
       {/* CTA */}
-      <div style={{ background: `linear-gradient(135deg, ${S.navy1} 0%, #040f1f 100%)`, textAlign: 'center', padding: '80px 24px 100px' }}>
+      <div style={{ background: `linear-gradient(135deg, ${S.navy1} 0%, #3d2510 100%)`, textAlign: 'center', padding: '80px 24px 100px' }}>
         <h2 style={{ color: '#fff', fontSize: 'clamp(26px,4vw,44px)', fontWeight: 900, marginBottom: 16, lineHeight: 1.1 }}>
           Try It Free â€” No Card Required
         </h2>
         <p style={{ color: S.muted, fontSize: 17, marginBottom: 36, maxWidth: 480, margin: '0 auto 36px' }}>
           14 days, full access, cancel anytime.
         </p>
-        <button onClick={() => setModalOpen(true)} style={{ background: S.elec, color: '#030b15', padding: '18px 52px', borderRadius: 10, fontSize: 17, fontWeight: 700, border: 'none', cursor: 'pointer' }}>
+        <button onClick={() => setModalOpen(true)} style={{ background: S.elec, color: '#fff', padding: '18px 52px', borderRadius: 10, fontSize: 17, fontWeight: 700, border: 'none', cursor: 'pointer' }}>
           Start Free Trial
         </button>
       </div>

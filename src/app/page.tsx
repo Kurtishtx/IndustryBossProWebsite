@@ -340,7 +340,7 @@ export default function Home() {
           <div style={{ fontSize:13, fontWeight:700, color:'rgba(245,236,224,.5)', textTransform:'uppercase', letterSpacing:1, marginBottom:10 }}>IndustryBossPro</div>
           <div className="price-amount"><sup>$</sup>199</div>
           <div className="price-period">per month Â· cancel anytime Â· no contracts</div>
-          <div style={{ background: 'rgba(0,184,255,0.1)', border: '1px solid rgba(0,184,255,0.3)', borderRadius: 8, padding: '8px 16px', marginBottom: 16, fontSize: 14, color: '#00b8ff', fontWeight: 700 }}>
+          <div style={{ background: 'rgba(196,125,10,0.1)', border: '1px solid rgba(196,125,10,0.3)', borderRadius: 8, padding: '8px 16px', marginBottom: 16, fontSize: 14, color: '#c47d0a', fontWeight: 700 }}>
             300 Auto Routes Included Â· +$10 per 300 More
           </div>
           <ul className="price-includes">
@@ -453,7 +453,7 @@ export default function Home() {
               ))}
               <div style={{ marginBottom:20, display:'flex', alignItems:'flex-start', gap:10 }}>
                 <input type="checkbox" id="ibp-agree" checked={form.agree} onChange={f('agree')} style={{ width:16, height:16, accentColor:'#c47d0a', cursor:'pointer', flexShrink:0, marginTop:3 }} />
-                <label htmlFor="ibp-agree" style={{ fontSize:13, color:'rgba(232,244,255,.55)', cursor:'pointer', lineHeight:1.5 }}>
+                <label htmlFor="ibp-agree" style={{ fontSize:13, color:'rgba(245,236,224,.55)', cursor:'pointer', lineHeight:1.5 }}>
                   I agree to the <a href="/terms" style={{ color:'#c47d0a' }}>Terms of Service</a> and <a href="/privacy" style={{ color:'#c47d0a' }}>Privacy Policy</a>
                 </label>
               </div>

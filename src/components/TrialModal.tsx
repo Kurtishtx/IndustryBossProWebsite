@@ -7,9 +7,9 @@ const SUPABASE_ANON = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || '';
 const APP_URL = process.env.NEXT_PUBLIC_APP_URL || 'https://my.industrybosspro.com/dashboard.html';
 
 const S = {
-  navy1: '#030b15', navy4: '#0a1628', navy5: '#0d1f3c',
-  elec: '#00b8ff', border: 'rgba(0,184,255,0.2)', text: '#e8f4ff',
-  muted: 'rgba(232,244,255,0.55)',
+  navy1: '#1e1208', navy4: '#2a1a0a', navy5: '#3d2510',
+  elec: '#c47d0a', border: 'rgba(196,125,10,0.2)', text: '#f5ece0',
+  muted: 'rgba(245,236,224,0.55)',
 };
 
 type Step = 'info' | 'pass' | 'done';
@@ -69,7 +69,7 @@ export default function TrialModal({ open, onClose }: { open: boolean; onClose: 
   if (!open) return null;
 
   const inp: React.CSSProperties = {
-    width: '100%', background: 'rgba(0,184,255,0.06)', border: `1px solid ${S.border}`,
+    width: '100%', background: 'rgba(196,125,10,0.06)', border: `1px solid ${S.border}`,
     borderRadius: 8, padding: '12px 14px', color: S.text, fontSize: 15, outline: 'none', boxSizing: 'border-box',
   };
 
@@ -90,7 +90,7 @@ export default function TrialModal({ open, onClose }: { open: boolean; onClose: 
             <input style={{ ...inp, marginBottom: 12 }} placeholder="Company name" value={form.company} onChange={f('company')} />
             <input style={{ ...inp, marginBottom: 20 }} placeholder="Work email" type="email" value={form.email} onChange={f('email')} />
             {err && <div style={{ color: '#ff6b6b', fontSize: 13, marginBottom: 12 }}>{err}</div>}
-            <button type="submit" style={{ width: '100%', background: S.elec, color: S.navy1, border: 'none', borderRadius: 10, padding: '14px', fontSize: 16, fontWeight: 800, cursor: 'pointer' }}>
+            <button type="submit" style={{ width: '100%', background: S.elec, color: '#fff', border: 'none', borderRadius: 10, padding: '14px', fontSize: 16, fontWeight: 800, cursor: 'pointer' }}>
               Continue →
             </button>
           </form>
@@ -107,7 +107,7 @@ export default function TrialModal({ open, onClose }: { open: boolean; onClose: 
               I agree to the <Link href="/terms" style={{ color: S.elec }}>Terms</Link> and <Link href="/privacy" style={{ color: S.elec }}>Privacy Policy</Link>
             </label>
             {err && <div style={{ color: '#ff6b6b', fontSize: 13, marginBottom: 12 }}>{err}</div>}
-            <button type="submit" disabled={loading} style={{ width: '100%', background: loading ? 'rgba(0,184,255,0.4)' : S.elec, color: S.navy1, border: 'none', borderRadius: 10, padding: '14px', fontSize: 16, fontWeight: 800, cursor: loading ? 'default' : 'pointer' }}>
+            <button type="submit" disabled={loading} style={{ width: '100%', background: loading ? 'rgba(196,125,10,0.4)' : S.elec, color: '#fff', border: 'none', borderRadius: 10, padding: '14px', fontSize: 16, fontWeight: 800, cursor: loading ? 'default' : 'pointer' }}>
               {loading ? 'Creating Account...' : 'Start Free Trial'}
             </button>
           </form>
@@ -118,7 +118,7 @@ export default function TrialModal({ open, onClose }: { open: boolean; onClose: 
             <div style={{ fontSize: 48, marginBottom: 16 }}>🎉</div>
             <div style={{ fontSize: 22, fontWeight: 800, color: S.text, marginBottom: 8 }}>You're in, {form.first}!</div>
             <div style={{ color: S.muted, fontSize: 15, marginBottom: 24 }}>Your 14-day free trial is active. Redirecting to your dashboard in <strong style={{ color: S.elec }}>{countdown}s</strong>…</div>
-            <button onClick={() => { window.location.href = APP_URL; }} style={{ background: S.elec, color: S.navy1, border: 'none', borderRadius: 10, padding: '14px 32px', fontSize: 16, fontWeight: 800, cursor: 'pointer' }}>
+            <button onClick={() => { window.location.href = APP_URL; }} style={{ background: S.elec, color: '#fff', border: 'none', borderRadius: 10, padding: '14px 32px', fontSize: 16, fontWeight: 800, cursor: 'pointer' }}>
               Go to Dashboard Now
             </button>
           </div>

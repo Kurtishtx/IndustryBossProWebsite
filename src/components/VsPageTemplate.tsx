@@ -18,9 +18,9 @@ export default function VsPageTemplate({ page }: { page: VsPageData }) {
       <TrialModal open={modal} onClose={() => setModal(false)} />
 
       {/* HERO */}
-      <section style={{ paddingTop: 120, paddingBottom: 72, background: '#050e1e', textAlign: 'center' }}>
+      <section style={{ paddingTop: 120, paddingBottom: 72, background: S.navy1, textAlign: 'center' }}>
         <div style={{ maxWidth: 800, margin: '0 auto', padding: '0 24px' }}>
-          <div style={{ display: 'inline-block', background: 'rgba(0,184,255,0.1)', border: '1px solid rgba(0,184,255,0.3)', borderRadius: 20, padding: '4px 14px', fontSize: 13, color: S.elec, fontWeight: 600, marginBottom: 20 }}>
+          <div style={{ display: 'inline-block', background: 'rgba(196,125,10,0.1)', border: '1px solid rgba(196,125,10,0.3)', borderRadius: 20, padding: '4px 14px', fontSize: 13, color: S.elec, fontWeight: 600, marginBottom: 20 }}>
             Comparison
           </div>
           <h1 style={{ fontSize: 'clamp(26px, 4vw, 46px)', fontWeight: 900, color: S.text, lineHeight: 1.1, marginBottom: 16, letterSpacing: '-1px' }}>{page.h1}</h1>
