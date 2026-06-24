@@ -169,18 +169,6 @@ export default function HubPageTemplate({ page, stateName }: { page: HubPageData
               </div>
             ))}
           </div>
-          {page.blogSiloIndustry && page.blog1Slug && (
-            <p style={{ color: S.muted, fontSize: 15, textAlign: 'center', marginTop: 48, lineHeight: 1.8 }}>
-              Not sure what to look for? Our in-depth{' '}
-              <a
-                href={`/blog/${page.blogSiloIndustry}/${page.blog1Slug}`}
-                style={{ color: S.elec, fontWeight: 700, textDecoration: 'none' }}
-              >
-                {keyword} guide
-              </a>
-              {' '}walks you through everything — from choosing the right platform to getting your crew live in the field.
-            </p>
-          )}
         </div>
       </section>
 
