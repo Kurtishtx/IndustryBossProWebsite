@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { snowPosts } from '../../lib/blog-snow-data';
 import { snowPlowingPosts, iceManagementPosts, snowSchedulingPosts } from '../../lib/blog-snow-sub-data';
 import { poolServicePosts, poolCleaningPosts, poolMaintenancePosts, poolRoutePosts } from '../../lib/blog-pool-data';
+import { landscapingPosts, landscapeBusinessPosts, landscapeSchedulingPosts, lawnLandscapePosts, landscapeMaintenancePosts } from '../../lib/blog-landscaping-data';
 
 export const metadata: Metadata = {
   title: 'Field Service Business Blog | IndustryBossPro',
@@ -23,6 +24,11 @@ const silos = [
   { industry: 'pool-cleaning', label: 'Pool Cleaning', posts: poolCleaningPosts, hubSlug: 'pool-cleaning-software' },
   { industry: 'pool-maintenance', label: 'Pool Maintenance', posts: poolMaintenancePosts, hubSlug: 'pool-maintenance-software' },
   { industry: 'pool-route', label: 'Pool Route', posts: poolRoutePosts, hubSlug: 'pool-route-software' },
+  { industry: 'landscaping', label: 'Landscaping Software', posts: landscapingPosts, hubSlug: 'landscaping-software' },
+  { industry: 'landscape-business', label: 'Landscape Business', posts: landscapeBusinessPosts, hubSlug: 'landscape-business-software' },
+  { industry: 'landscape-scheduling', label: 'Landscape Scheduling', posts: landscapeSchedulingPosts, hubSlug: 'landscape-scheduling-software' },
+  { industry: 'lawn-landscape', label: 'Lawn & Landscape', posts: lawnLandscapePosts, hubSlug: 'lawn-landscape-software' },
+  { industry: 'landscape-maintenance', label: 'Landscape Maintenance', posts: landscapeMaintenancePosts, hubSlug: 'landscape-maintenance-software' },
 ];
 
 export default function BlogIndex() {

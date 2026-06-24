@@ -5,6 +5,7 @@ import { featurePages } from '../lib/feature-data';
 import { snowPosts } from '../lib/blog-snow-data';
 import { snowPlowingPosts, iceManagementPosts, snowSchedulingPosts } from '../lib/blog-snow-sub-data';
 import { poolServicePosts, poolCleaningPosts, poolMaintenancePosts, poolRoutePosts } from '../lib/blog-pool-data';
+import { landscapingPosts, landscapeBusinessPosts, landscapeSchedulingPosts, lawnLandscapePosts, landscapeMaintenancePosts } from '../lib/blog-landscaping-data';
 
 const BASE = 'https://industrybosspro.com';
 
@@ -17,6 +18,11 @@ const SILOS: { industry: string; posts: { slug: string; date: string }[] }[] = [
   { industry: 'pool-cleaning', posts: poolCleaningPosts },
   { industry: 'pool-maintenance', posts: poolMaintenancePosts },
   { industry: 'pool-route', posts: poolRoutePosts },
+  { industry: 'landscaping', posts: landscapingPosts },
+  { industry: 'landscape-business', posts: landscapeBusinessPosts },
+  { industry: 'landscape-scheduling', posts: landscapeSchedulingPosts },
+  { industry: 'lawn-landscape', posts: lawnLandscapePosts },
+  { industry: 'landscape-maintenance', posts: landscapeMaintenancePosts },
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
