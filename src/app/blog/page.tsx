@@ -3,6 +3,12 @@ import { snowPosts } from '../../lib/blog-snow-data';
 import { snowPlowingPosts, iceManagementPosts, snowSchedulingPosts } from '../../lib/blog-snow-sub-data';
 import { poolServicePosts, poolCleaningPosts, poolMaintenancePosts, poolRoutePosts } from '../../lib/blog-pool-data';
 import { landscapingPosts, landscapeBusinessPosts, landscapeSchedulingPosts, lawnLandscapePosts, landscapeMaintenancePosts } from '../../lib/blog-landscaping-data';
+import { lawnCarePosts, lawnChemicalPosts, fertilizerPosts, weedControlPosts, lawnTreatmentPosts } from '../../lib/blog-lawn-care-data';
+import { irrigationPosts, sprinklerSystemPosts, irrigationBusinessPosts, irrigationSchedulingPosts } from '../../lib/blog-irrigation-data';
+import { pestControlPosts, exterminatorPosts, pestManagementPosts, pestSchedulingPosts } from '../../lib/blog-pest-data';
+import { mosquitoControlPosts, mosquitoSprayPosts, mosquitoTreatmentPosts, mosquitoBusinessPosts } from '../../lib/blog-mosquito-data';
+import { fenceCompanyPosts, fenceInstallationPosts, fenceBusinessPosts } from '../../lib/blog-fence-data';
+import { lawnMowingPosts, mowingBusinessPosts, grassCuttingPosts, lawnMowingSchedulingPosts } from '../../lib/blog-mowing-data';
 
 export const metadata: Metadata = {
   title: 'Field Service Business Blog | IndustryBossPro',
@@ -29,6 +35,30 @@ const silos = [
   { industry: 'landscape-scheduling', label: 'Landscape Scheduling', posts: landscapeSchedulingPosts, hubSlug: 'landscape-scheduling-software' },
   { industry: 'lawn-landscape', label: 'Lawn & Landscape', posts: lawnLandscapePosts, hubSlug: 'lawn-landscape-software' },
   { industry: 'landscape-maintenance', label: 'Landscape Maintenance', posts: landscapeMaintenancePosts, hubSlug: 'landscape-maintenance-software' },
+  { industry: 'lawn-care', label: 'Lawn Care Software', posts: lawnCarePosts, hubSlug: 'lawn-care-software' },
+  { industry: 'lawn-chemical-application', label: 'Lawn Chemical Application', posts: lawnChemicalPosts, hubSlug: 'lawn-chemical-application-software' },
+  { industry: 'fertilizer', label: 'Fertilizer Programs', posts: fertilizerPosts, hubSlug: 'fertilizer-software' },
+  { industry: 'weed-control', label: 'Weed Control', posts: weedControlPosts, hubSlug: 'weed-control-software' },
+  { industry: 'lawn-treatment', label: 'Lawn Treatment', posts: lawnTreatmentPosts, hubSlug: 'lawn-treatment-software' },
+  { industry: 'irrigation', label: 'Irrigation Software', posts: irrigationPosts, hubSlug: 'irrigation-software' },
+  { industry: 'sprinkler-system', label: 'Sprinkler System Software', posts: sprinklerSystemPosts, hubSlug: 'sprinkler-system-software' },
+  { industry: 'irrigation-business', label: 'Irrigation Business', posts: irrigationBusinessPosts, hubSlug: 'irrigation-business-software' },
+  { industry: 'irrigation-scheduling', label: 'Irrigation Scheduling', posts: irrigationSchedulingPosts, hubSlug: 'irrigation-scheduling-software' },
+  { industry: 'pest-control', label: 'Pest Control Software', posts: pestControlPosts, hubSlug: 'pest-control-software' },
+  { industry: 'exterminator', label: 'Exterminator Software', posts: exterminatorPosts, hubSlug: 'exterminator-software' },
+  { industry: 'pest-management', label: 'Pest Management', posts: pestManagementPosts, hubSlug: 'pest-management-software' },
+  { industry: 'pest-control-scheduling', label: 'Pest Control Scheduling', posts: pestSchedulingPosts, hubSlug: 'pest-control-scheduling-software' },
+  { industry: 'mosquito-control', label: 'Mosquito Control Software', posts: mosquitoControlPosts, hubSlug: 'mosquito-control-software' },
+  { industry: 'mosquito-spray', label: 'Mosquito Spray Software', posts: mosquitoSprayPosts, hubSlug: 'mosquito-spray-software' },
+  { industry: 'mosquito-treatment', label: 'Mosquito Treatment', posts: mosquitoTreatmentPosts, hubSlug: 'mosquito-treatment-software' },
+  { industry: 'mosquito-business', label: 'Mosquito Business', posts: mosquitoBusinessPosts, hubSlug: 'mosquito-business-software' },
+  { industry: 'fence-company', label: 'Fence Company Software', posts: fenceCompanyPosts, hubSlug: 'fence-company-software' },
+  { industry: 'fence-installation', label: 'Fence Installation', posts: fenceInstallationPosts, hubSlug: 'fence-installation-software' },
+  { industry: 'fence-business', label: 'Fence Business Management', posts: fenceBusinessPosts, hubSlug: 'fence-business-management-software' },
+  { industry: 'lawn-mowing', label: 'Lawn Mowing Software', posts: lawnMowingPosts, hubSlug: 'lawn-mowing-software' },
+  { industry: 'mowing-business', label: 'Mowing Business Software', posts: mowingBusinessPosts, hubSlug: 'mowing-business-software' },
+  { industry: 'grass-cutting', label: 'Grass Cutting Software', posts: grassCuttingPosts, hubSlug: 'grass-cutting-software' },
+  { industry: 'lawn-mowing-scheduling', label: 'Lawn Mowing Scheduling', posts: lawnMowingSchedulingPosts, hubSlug: 'lawn-mowing-scheduling-software' },
 ];
 
 export default function BlogIndex() {
