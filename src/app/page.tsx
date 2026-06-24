@@ -268,6 +268,7 @@ export default function Home() {
                 ['Covers All Field Service Trades','✓ Yes','No — one trade'],
                 ['Pending Job Board (Two-Tier)','✓ Yes','No'],
                 ['Spray / Chemical Waiting List (Sq Ft)','✓ Yes','No'],
+                ['Calendar View','✓ Yes','Yes'],
                 ['List View','✓ Yes','No'],
                 ['Dispatch View','✓ Yes','Limited'],
                 ['Live Crew Tracking (Map)','✓ Yes','Add-on / Extra'],
@@ -302,6 +303,7 @@ export default function Home() {
         <div className="feat-grid">
           {[
             ['📋','Pending Job Board','Two-tier system — scheduled jobs with dates on one side, chemical/maintenance waiting list on the other.'],
+            ['🗓️','Calendar View','See every job across every crew and every industry on one calendar. Filter by crew, service type, or date range.'],
             ['📝','List View','All jobs listed in order for the day. Map above shows the full route so crews know exactly where they\'re going before they leave.'],
             ['🚀','Dispatch View','Real-time dispatch board showing every crew, their current stop, and job status as it happens.'],
             ['📍','Live Crew Tracking','See every tech and truck on a live map in real time. Know exactly who is where, all day long.'],
