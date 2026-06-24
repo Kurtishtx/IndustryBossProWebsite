@@ -15,10 +15,11 @@ const INCLUDED = [
   'Unlimited Users', 'Unlimited Clients', 'Unlimited Properties',
   'All Features Included', 'All 9 Industries Covered', 'Pending Job Board',
   'Calendar & Dispatch Views', 'Live Crew Tracking',
-  '100 Auto Routes Included', '+$10 per 300 more',
-  'Chemical Compliance Logging', 'Estimates & Invoices', 'Card Payments (Stripe)',
-  'Two-Way SMS', 'Mobile App for Techs', '500 SMS/month included',
-  '+$10 per 250 more SMS', 'Free Onboarding Call',
+  'Chemical Compliance Logging', 'Estimates & Invoices',
+  '100 Auto Routes Included', '500 SMS/month included',
+  '+$10 per 300 more', '+$10 per 250 more SMS',
+  'Card Payments (Stripe)', 'Mobile App for Techs',
+  'Two-Way SMS', 'Free Onboarding Call',
 ];
 
 const COMPARE = [

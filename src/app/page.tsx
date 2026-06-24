@@ -344,7 +344,7 @@ export default function Home() {
             100 Auto Routes Included · +$10 per 300 More
           </div>
           <ul className="price-includes">
-            {['Unlimited Users','Unlimited Clients','Unlimited Properties','All Features Included','All 9 Industries Covered','Pending Job Board','Chemical Compliance','Estimates & Invoices','Card Payments (Stripe)','Two-Way SMS','Mobile App','Calendar & Dispatch Views','Live Crew Tracking','100 Auto Routes Included','+$10 per 300 more','500 SMS/month Included','+$10 per 250 more SMS','Free Onboarding'].map(li => (
+            {['Unlimited Users','Unlimited Clients','Unlimited Properties','All Features Included','All 9 Industries Covered','Pending Job Board','Chemical Compliance','Estimates & Invoices','Card Payments (Stripe)','Two-Way SMS','Mobile App','Live Crew Tracking','100 Auto Routes Included','500 SMS/month Included','+$10 per 300 more','+$10 per 250 more SMS','Calendar & Dispatch Views','Free Onboarding'].map(li => (
               <li key={li}>{li}</li>
             ))}
           </ul>
