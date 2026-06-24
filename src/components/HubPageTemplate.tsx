@@ -273,7 +273,7 @@ export default function HubPageTemplate({ page, stateName }: { page: HubPageData
             <div style={{ fontSize: 60, fontWeight: 900, color: S.text, lineHeight: 1 }}>$199</div>
             <div style={{ color: S.muted, fontSize: 16, marginBottom: 12 }}>/month · everything included</div>
 
-            {['Unlimited Users', '14-Day Free Trial', 'All 9 Industries', 'Pending Job Board', 'Chemical Compliance Logging', 'Mobile App for Crews', 'Card Payments (Stripe)', 'Calendar & Dispatch Views', 'Live Crew Tracking', 'Sq Ft Waiting List', '100 Auto Routes Included', '500 SMS/month Included', '+$10 per 300 more', '+$10 per 250 more SMS', 'No Contracts'].map(item => (
+            {['Unlimited Users', '14-Day Free Trial', 'All 9 Industries', 'Pending Job Board', 'Chemical Compliance Logging', 'Mobile App for Crews', 'Card Payments (Stripe)', 'Calendar & Dispatch Views', 'Live Crew Tracking', 'Waiting List (Spray Applications)', '100 Auto Routes Included', '500 SMS/month Included', '+$10 per 300 more', '+$10 per 250 more SMS', 'No Contracts'].map(item => (
               <div key={item} style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 10, textAlign: 'left' }}>
                 <span style={{ color: S.elec }}>✓</span>
                 <span style={{ color: S.text, fontSize: 14 }}>{item}</span>
