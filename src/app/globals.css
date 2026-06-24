@@ -167,6 +167,7 @@ section { padding: 96px 40px; }
   .trust-bar { padding: 20px 16px; }
   .trust-inner { gap: 16px; }
   .row, .row.reverse { flex-direction: column; }
+  .feat-grid { grid-template-columns: repeat(2, 1fr); }
   .price-includes { grid-template-columns: 1fr; }
   .price-card { padding: 40px 24px; }
   .vs-table th.other-col, .vs-table td.other-col { display: none; }

@@ -302,10 +302,10 @@ export default function Home() {
         <div className="feat-grid">
           {[
             ['📋','Pending Job Board','Two-tier system — scheduled jobs with dates on one side, chemical/maintenance waiting list on the other.'],
-            ['🗓️','Calendar View','See every job across every crew and every industry on one calendar. Filter by crew, service type, or date range.'],
+            ['📝','List View','All jobs listed in order for the day. Map above shows the full route so crews know exactly where they\'re going before they leave.'],
             ['🚀','Dispatch View','Real-time dispatch board showing every crew, their current stop, and job status as it happens.'],
             ['📍','Live Crew Tracking','See every tech and truck on a live map in real time. Know exactly who is where, all day long.'],
-            ['🤖','Auto Route (300 Included)','300 auto-optimized routes included monthly. System sequences stops by geography automatically. +$10 per 300 more.'],
+            ['🤖','Auto Route','System sequences stops by geography automatically, cutting drive time and fitting more stops per crew per day.'],
             ['⭕','Lasso / Circle-to-Schedule','Draw a zone on the map, see every property and all sq ft inside, schedule them all at once.'],
             ['🧪','Chemical Compliance','Full application logs, license tracking, weather data, and state-inspector-ready compliance reports.'],
             ['💬','Two-Way SMS Inbox','Send and receive texts with customers directly in the platform. 10+ automated alert types included.'],
@@ -314,6 +314,8 @@ export default function Home() {
             ['📱','Mobile App for Techs','Stop list, chemical logging, photos, GPS clock-in, and status updates from any phone.'],
             ['👥','Employee Management','Time tracking, GPS clock-in, role-based access, and crew assignments.'],
             ['📦','Service Programs','Multi-treatment packages with renewal alerts and full treatment tracking. Round-based programs built in.'],
+            ['🔔','Night Before Alerts','Automated SMS to customers the evening before their service. They know you\'re coming without you having to call.'],
+            ['📍','On-Property Alerts','Customer gets a text the moment your tech arrives at their property. No guessing, no missed appointments.'],
             ['⭐','Review Requests','Automated Google review requests after every completed service — running without you.'],
             ['🔧','Custom Fields','Add any field to any record — fully customizable for your operation.'],
             ['👑','Role-Based Access','Owner, Manager, Office, Tech, and Mobile roles with granular permissions across every module.'],
