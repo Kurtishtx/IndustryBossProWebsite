@@ -100,25 +100,9 @@ export default function Home() {
         <h2 className="section-title" style={{ maxWidth:860, margin:'0 auto 20px' }}>
           Affordable Doesn&apos;t Mean Cheap.<br /><span style={{ color:'#c47d0a' }}>This Is Enterprise-Grade Software.</span>
         </h2>
-        <p style={{ color:'rgba(245,236,224,.65)', fontSize:17, maxWidth:700, margin:'0 auto 52px', lineHeight:1.8 }}>
+        <p style={{ color:'rgba(245,236,224,.65)', fontSize:17, maxWidth:700, margin:'0 auto 0', lineHeight:1.8 }}>
           We built what the enterprise platforms couldn&apos;t — one platform for every field service trade. Route intelligence, chemical compliance, automated billing, role-based access, and a mobile app — priced for real businesses.
         </p>
-        <div className="premium-grid">
-          {[
-            ['📋','Pending Job Board','Two-tier system: scheduled jobs with assigned dates on one side, spray/chemical/maintenance waiting list on the other. No other software has this.'],
-            ['🚀','Calendar + Dispatch Views','Calendar view shows every crew and job on one screen. Dispatch view shows live job status as crews work through their stops in real time.'],
-            ['📍','Live Crew Tracking','Every tech on a live map, all day long. Know who is where, which stop they\'re on, and when they complete. No calls needed.'],
-            ['🤖','Auto Route + Lasso Scheduling','300 auto-optimized routes included. Circle any area on the map to see every property inside and schedule them all at once.'],
-            ['🧪','Chemical Compliance Engine','Application logs, technician license tracking, weather conditions, and state-inspector-ready compliance reports.'],
-            ['💬','Automated Communication Suite','10+ SMS alert types, two-way texting inbox, estimate and payment follow-up sequences — running without you.'],
-          ].map(([icon,title,desc]) => (
-            <div key={title} className="premium-card">
-              <div className="premium-card-icon">{icon}</div>
-              <h4>{title}</h4>
-              <p>{desc}</p>
-            </div>
-          ))}
-        </div>
       </div>
 
       {/* PENDING JOB BOARD */}
