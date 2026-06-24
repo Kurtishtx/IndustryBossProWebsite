@@ -602,7 +602,6 @@ export const landscapingPosts: BlogPost[] = [
     industry: 'landscaping'
   }
 ];
-];
 
 export const landscapeBusinessPosts: BlogPost[] = [
   {
@@ -1480,7 +1479,6 @@ export const landscapeBusinessPosts: BlogPost[] = [
     hubKeyword: 'landscape business software',
     industry: 'landscape-business'
   }
-];
 ];
 
 export const landscapeSchedulingPosts: BlogPost[] = [
@@ -2360,7 +2358,6 @@ export const landscapeSchedulingPosts: BlogPost[] = [
     industry: 'landscape-scheduling',
   },
 ];
-];
 
 export const lawnLandscapePosts: BlogPost[] = [
   {
@@ -3239,7 +3236,6 @@ export const lawnLandscapePosts: BlogPost[] = [
     industry: 'lawn-landscape'
   }
 ];
-];
 
 export const landscapeMaintenancePosts: BlogPost[] = [
   {
@@ -4117,5 +4113,4 @@ export const landscapeMaintenancePosts: BlogPost[] = [
     hubKeyword: 'landscape maintenance software',
     industry: 'landscape-maintenance'
   },
-];
 ];
