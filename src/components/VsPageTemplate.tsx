@@ -6,8 +6,8 @@ import TrialModal from './TrialModal';
 import type { VsPageData } from '../lib/vs-data';
 
 const S = {
-  navy1: '#030b15', navy2: '#050e1e', navy3: '#071224', navy4: '#0a1628',
-  elec: '#00b8ff', muted: 'rgba(232,244,255,0.55)', border: 'rgba(0,184,255,0.18)', text: '#e8f4ff',
+  navy1: '#1e1208', navy2: '#1e1208', navy3: '#241508', navy4: '#2a1a0a',
+  elec: '#c47d0a', muted: 'rgba(245,236,224,0.55)', border: 'rgba(196,125,10,0.18)', text: '#f5ece0',
 };
 
 export default function VsPageTemplate({ page }: { page: VsPageData }) {
@@ -25,7 +25,7 @@ export default function VsPageTemplate({ page }: { page: VsPageData }) {
           </div>
           <h1 style={{ fontSize: 'clamp(26px, 4vw, 46px)', fontWeight: 900, color: S.text, lineHeight: 1.1, marginBottom: 16, letterSpacing: '-1px' }}>{page.h1}</h1>
           <p style={{ color: S.muted, fontSize: 17, lineHeight: 1.6, marginBottom: 36 }}>{page.subtitle}</p>
-          <button onClick={() => setModal(true)} style={{ background: S.elec, color: S.navy1, border: 'none', borderRadius: 10, padding: '14px 36px', fontSize: 16, fontWeight: 800, cursor: 'pointer' }}>
+          <button onClick={() => setModal(true)} style={{ background: S.elec, color: '#fff', border: 'none', borderRadius: 10, padding: '14px 36px', fontSize: 16, fontWeight: 800, cursor: 'pointer' }}>
             Try IndustryBossPro Free for 14 Days
           </button>
         </div>
@@ -99,7 +99,7 @@ export default function VsPageTemplate({ page }: { page: VsPageData }) {
         <div style={{ maxWidth: 800, margin: '0 auto', textAlign: 'center' }}>
           <h2 style={{ fontSize: 28, fontWeight: 800, color: S.text, marginBottom: 20 }}>The Bottom Line</h2>
           <p style={{ color: S.muted, fontSize: 16, lineHeight: 1.8, marginBottom: 40 }}>{page.bottomLine}</p>
-          <button onClick={() => setModal(true)} style={{ background: S.elec, color: S.navy1, border: 'none', borderRadius: 10, padding: '16px 40px', fontSize: 17, fontWeight: 800, cursor: 'pointer' }}>
+          <button onClick={() => setModal(true)} style={{ background: S.elec, color: '#fff', border: 'none', borderRadius: 10, padding: '16px 40px', fontSize: 17, fontWeight: 800, cursor: 'pointer' }}>
             Start Your Free 14-Day Trial
           </button>
           <p style={{ color: S.muted, fontSize: 13, marginTop: 12 }}>$199/month after trial · No credit card required · Cancel anytime</p>

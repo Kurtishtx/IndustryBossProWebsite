@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-const S = { navy2: '#050e1e', elec: '#00b8ff', muted: 'rgba(232,244,255,0.5)', border: 'rgba(0,184,255,0.15)', text: '#e8f4ff' };
+const S = { navy2: '#1e1208', elec: '#c47d0a', muted: 'rgba(245,236,224,0.5)', border: 'rgba(196,125,10,0.15)', text: '#f5ece0' };
 
 const INDUSTRIES = [
   { label: 'Snow Removal Software', href: '/snow-removal-software' },
@@ -43,7 +43,7 @@ export default function SiteFooter({ onOpenModal }: { onOpenModal: () => void })
               All-in-one field service software for snow, landscaping, irrigation, lawn care, pest control, mosquito, pool, fence, and mowing. $199/month, everything included.
             </p>
             <button onClick={onOpenModal} style={{
-              background: S.elec, color: '#030b15', border: 'none', borderRadius: 8,
+              background: S.elec, color: '#fff', border: 'none', borderRadius: 8,
               padding: '10px 20px', fontSize: 14, fontWeight: 700, cursor: 'pointer',
             }}>
               Start Free Trial

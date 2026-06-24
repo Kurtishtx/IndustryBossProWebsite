@@ -6,9 +6,9 @@ import SiteFooter from './SiteFooter';
 import TrialModal from './TrialModal';
 
 const S = {
-  navy1: '#030b15', navy2: '#050e1e', navy3: '#071224', navy4: '#0a1628',
-  elec: '#00b8ff', text: '#e8f4ff', muted: 'rgba(232,244,255,0.65)',
-  border: 'rgba(0,184,255,0.15)',
+  navy1: '#1e1208', navy2: '#1e1208', navy3: '#241508', navy4: '#2a1a0a',
+  elec: '#c47d0a', text: '#f5ece0', muted: 'rgba(245,236,224,0.65)',
+  border: 'rgba(196,125,10,0.15)',
 };
 
 interface Props {
@@ -33,7 +33,7 @@ export default function BlogPostTemplate({ post, prevPost, industry }: Props) {
       <TrialModal open={modal} onClose={() => setModal(false)} />
 
       {/* ── HERO ── */}
-      <div style={{ background: `linear-gradient(160deg, #030b15 0%, #040d1a 60%, #060f1f 100%)`, padding: '64px 24px 48px', borderBottom: `1px solid ${S.border}` }}>
+      <div style={{ background: `linear-gradient(160deg, #1e1208 0%, #241508 60%, #2a1a0a 100%)`, padding: '64px 24px 48px', borderBottom: `1px solid ${S.border}` }}>
         <div style={{ maxWidth: 800, margin: '0 auto' }}>
           <div style={{ display: 'flex', gap: 12, alignItems: 'center', marginBottom: 20, flexWrap: 'wrap' }}>
             <a href="/blog" style={{ color: S.muted, fontSize: 13, textDecoration: 'none' }}>Blog</a>
@@ -101,7 +101,7 @@ export default function BlogPostTemplate({ post, prevPost, industry }: Props) {
           </div>
 
           {/* Bottom CTA */}
-          <div style={{ background: `linear-gradient(135deg, ${S.navy4}, #0d1f3c)`, border: `1px solid ${S.border}`, borderRadius: 16, padding: '36px 32px', marginTop: 16, textAlign: 'center' }}>
+          <div style={{ background: `linear-gradient(135deg, ${S.navy4}, #3d2510)`, border: `1px solid ${S.border}`, borderRadius: 16, padding: '36px 32px', marginTop: 16, textAlign: 'center' }}>
             <h3 style={{ fontSize: 22, fontWeight: 800, color: '#fff', marginBottom: 12 }}>
               Ready to Run a Tighter {industryLabel} Operation?
             </h3>
@@ -110,7 +110,7 @@ export default function BlogPostTemplate({ post, prevPost, industry }: Props) {
             </p>
             <button
               onClick={() => setModal(true)}
-              style={{ background: S.elec, color: '#030b15', border: 'none', borderRadius: 8, padding: '14px 32px', fontSize: 16, fontWeight: 800, cursor: 'pointer' }}
+              style={{ background: S.elec, color: '#fff', border: 'none', borderRadius: 8, padding: '14px 32px', fontSize: 16, fontWeight: 800, cursor: 'pointer' }}
             >
               Start Your 14-Day Free Trial
             </button>
@@ -130,7 +130,7 @@ export default function BlogPostTemplate({ post, prevPost, industry }: Props) {
             </p>
             <button
               onClick={() => setModal(true)}
-              style={{ width: '100%', background: S.elec, color: '#030b15', border: 'none', borderRadius: 8, padding: '12px', fontSize: 14, fontWeight: 800, cursor: 'pointer' }}
+              style={{ width: '100%', background: S.elec, color: '#fff', border: 'none', borderRadius: 8, padding: '12px', fontSize: 14, fontWeight: 800, cursor: 'pointer' }}
             >
               Start Free Trial
             </button>

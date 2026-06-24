@@ -6,8 +6,8 @@ import TrialModal from './TrialModal';
 import type { FeaturePageData } from '../lib/feature-data';
 
 const S = {
-  navy1: '#030b15', navy2: '#050e1e', navy3: '#071224', navy4: '#0a1628',
-  elec: '#00b8ff', muted: 'rgba(232,244,255,0.55)', border: 'rgba(0,184,255,0.18)', text: '#e8f4ff',
+  navy1: '#1e1208', navy2: '#1e1208', navy3: '#241508', navy4: '#2a1a0a',
+  elec: '#c47d0a', muted: 'rgba(245,236,224,0.55)', border: 'rgba(196,125,10,0.18)', text: '#f5ece0',
 };
 
 export default function FeaturePageTemplate({ page }: { page: FeaturePageData }) {
@@ -32,7 +32,7 @@ export default function FeaturePageTemplate({ page }: { page: FeaturePageData })
               </li>
             ))}
           </ul>
-          <button onClick={() => setModal(true)} style={{ background: S.elec, color: S.navy1, border: 'none', borderRadius: 10, padding: '15px 40px', fontSize: 17, fontWeight: 800, cursor: 'pointer' }}>
+          <button onClick={() => setModal(true)} style={{ background: S.elec, color: '#fff', border: 'none', borderRadius: 10, padding: '15px 40px', fontSize: 17, fontWeight: 800, cursor: 'pointer' }}>
             Start 14-Day Free Trial
           </button>
           <p style={{ color: S.muted, fontSize: 13, marginTop: 14 }}>$199/month · Everything included · No credit card required</p>
@@ -75,7 +75,7 @@ export default function FeaturePageTemplate({ page }: { page: FeaturePageData })
           <div style={{ background: S.navy4, border: `2px solid ${S.elec}`, borderRadius: 20, padding: '36px 32px', boxShadow: '0 0 60px rgba(0,184,255,0.12)' }}>
             <div style={{ fontSize: 56, fontWeight: 900, color: S.text, lineHeight: 1 }}>$199</div>
             <div style={{ color: S.muted, fontSize: 15, marginBottom: 28 }}>/month · cancel anytime</div>
-            <button onClick={() => setModal(true)} style={{ width: '100%', background: S.elec, color: S.navy1, border: 'none', borderRadius: 10, padding: '15px', fontSize: 16, fontWeight: 800, cursor: 'pointer' }}>
+            <button onClick={() => setModal(true)} style={{ width: '100%', background: S.elec, color: '#fff', border: 'none', borderRadius: 10, padding: '15px', fontSize: 16, fontWeight: 800, cursor: 'pointer' }}>
               Start Free Trial — No Card Required
             </button>
           </div>

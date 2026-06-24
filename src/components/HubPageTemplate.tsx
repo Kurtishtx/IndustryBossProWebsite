@@ -6,9 +6,9 @@ import TrialModal from './TrialModal';
 import type { HubPageData } from '../lib/hub-data';
 
 const S = {
-  navy1: '#030b15', navy2: '#050e1e', navy3: '#071224', navy4: '#0a1628', navy5: '#0d1f3c',
-  elec: '#00b8ff', elecDark: '#0094d0', muted: 'rgba(232,244,255,0.55)',
-  border: 'rgba(0,184,255,0.18)', text: '#e8f4ff',
+  navy1: '#1e1208', navy2: '#1e1208', navy3: '#241508', navy4: '#2a1a0a', navy5: '#3d2510',
+  elec: '#c47d0a', elecDark: '#a86808', muted: 'rgba(245,236,224,0.55)',
+  border: 'rgba(196,125,10,0.18)', text: '#f5ece0',
 };
 
 const INDUSTRIES = ['Snow & Ice Management','Pool Service','Landscaping','Irrigation','Lawn Care Chemicals','Pest Control','Mosquito Control','Fence','Mowing'];
@@ -38,7 +38,7 @@ export default function HubPageTemplate({ page, stateName }: { page: HubPageData
       <TrialModal open={modal} onClose={() => setModal(false)} />
 
       {/* HERO */}
-      <section style={{ paddingTop: 120, paddingBottom: 80, background: `linear-gradient(180deg, #050e1e 0%, #030b15 100%)` }}>
+      <section style={{ paddingTop: 120, paddingBottom: 80, background: `linear-gradient(180deg, #1e1208 0%, #241508 100%)` }}>
         <div style={{ maxWidth: 900, margin: '0 auto', padding: '0 24px', textAlign: 'center' }}>
           {stateName && (
             <div style={{ display: 'inline-block', background: 'rgba(0,184,255,0.12)', border: `1px solid rgba(0,184,255,0.3)`, borderRadius: 20, padding: '4px 14px', fontSize: 13, color: S.elec, fontWeight: 600, marginBottom: 20 }}>
@@ -67,7 +67,7 @@ export default function HubPageTemplate({ page, stateName }: { page: HubPageData
             ))}
           </ul>
           <div style={{ display: 'flex', gap: 16, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <button onClick={() => setModal(true)} style={{ background: S.elec, color: S.navy1, border: 'none', borderRadius: 10, padding: '16px 36px', fontSize: 17, fontWeight: 800, cursor: 'pointer' }}>
+            <button onClick={() => setModal(true)} style={{ background: S.elec, color: '#fff', border: 'none', borderRadius: 10, padding: '16px 36px', fontSize: 17, fontWeight: 800, cursor: 'pointer' }}>
               Start 14-Day Free Trial
             </button>
             <a href="/#pricing" style={{ background: 'transparent', color: S.elec, border: `2px solid ${S.elec}`, borderRadius: 10, padding: '14px 28px', fontSize: 16, fontWeight: 700, textDecoration: 'none', display: 'inline-block' }}>
@@ -279,7 +279,7 @@ export default function HubPageTemplate({ page, stateName }: { page: HubPageData
                 <span style={{ color: S.text, fontSize: 14 }}>{item}</span>
               </div>
             ))}
-            <button onClick={() => setModal(true)} style={{ width: '100%', background: S.elec, color: S.navy1, border: 'none', borderRadius: 10, padding: '16px', fontSize: 17, fontWeight: 800, cursor: 'pointer', marginTop: 24 }}>
+            <button onClick={() => setModal(true)} style={{ width: '100%', background: S.elec, color: '#fff', border: 'none', borderRadius: 10, padding: '16px', fontSize: 17, fontWeight: 800, cursor: 'pointer', marginTop: 24 }}>
               Start Free Trial â€” No Card Required
             </button>
           </div>
@@ -287,7 +287,7 @@ export default function HubPageTemplate({ page, stateName }: { page: HubPageData
       </section>
 
       {/* CTA BAND */}
-      <section style={{ padding: '80px 24px', background: `linear-gradient(135deg, #071224 0%, #050e1e 100%)`, borderTop: `1px solid ${S.border}`, textAlign: 'center' }}>
+      <section style={{ padding: '80px 24px', background: `linear-gradient(135deg, #241508 0%, #1e1208 100%)`, borderTop: `1px solid ${S.border}`, textAlign: 'center' }}>
         <div style={{ maxWidth: 700, margin: '0 auto' }}>
           <h2 style={{ fontSize: 'clamp(26px, 4vw, 40px)', fontWeight: 900, color: S.text, marginBottom: 16, letterSpacing: '-0.5px' }}>
             Ready to Stop Managing Your Business on Paper?
@@ -316,7 +316,7 @@ export default function HubPageTemplate({ page, stateName }: { page: HubPageData
               </p>
             </div>
             <div style={{ display: 'flex', flexDirection: 'column', gap: 12, flexShrink: 0 }}>
-              <a href={`/blog/${page.blogSiloIndustry}/${page.blog1Slug}`} style={{ display: 'inline-block', background: S.elec, color: S.navy1, borderRadius: 8, padding: '13px 28px', fontSize: 14, fontWeight: 800, textDecoration: 'none', whiteSpace: 'nowrap' }}>
+              <a href={`/blog/${page.blogSiloIndustry}/${page.blog1Slug}`} style={{ display: 'inline-block', background: S.elec, color: '#fff', borderRadius: 8, padding: '13px 28px', fontSize: 14, fontWeight: 800, textDecoration: 'none', whiteSpace: 'nowrap' }}>
                 Read the {keyword} Guide â†’
               </a>
               <a href={`/blog/${page.blogSiloIndustry}`} style={{ display: 'inline-block', color: S.elec, fontSize: 13, fontWeight: 600, textDecoration: 'none', textAlign: 'center' }}>
