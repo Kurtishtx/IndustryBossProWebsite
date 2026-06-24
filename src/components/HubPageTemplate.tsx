@@ -218,14 +218,26 @@ export default function HubPageTemplate({ page, stateName }: { page: HubPageData
               These aren&apos;t checkboxes. They&apos;re the reason operators switch to IndustryBossPro and never go back.
             </p>
           </div>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: 24 }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: 24 }}>
             {[
-              { icon: '🗓️', title: 'Calendar View', desc: 'See every job across every crew and every service type on one calendar. Filter by crew, industry, or date. Your whole operation at a glance.' },
-              { icon: '🚀', title: 'Dispatch View', desc: 'Live dispatch board showing every crew, their current stop, and real-time job status as they work through the day. No calls to find out where anyone is.' },
-              { icon: '📍', title: 'Live Crew Tracking', desc: 'Every tech and truck on a live map, all day long. Know exactly who is where, which stop they\'re on, and when they complete — from your phone or desk.' },
-              { icon: '🤖', title: 'Auto Route (100 Included)', desc: '100 auto-optimized routes included every month. The system sequences stops by geography to cut drive time and fit more stops per crew per day. +$10 per 100 more.' },
-              { icon: '⭕', title: 'Lasso / Circle-to-Schedule', desc: 'Draw a zone on the map. See every property inside with total square footage by service type. Schedule them all at once. No other software does this.' },
-              { icon: '📋', title: 'Two-Tier Job Board', desc: 'Scheduled jobs with assigned dates on one side. Spray/chemical/maintenance waiting list on the other — grouped by service type with sq ft totals. Your entire workload, always visible.' },
+              { icon: '🗓️', title: 'Calendar View', desc: 'See every job across every crew and every service type on one calendar. Filter by crew, industry, or date. Your whole operation at a glance — no more digging through spreadsheets.' },
+              { icon: '🚀', title: 'Dispatch View', desc: 'Live dispatch board showing every crew, their current stop, and real-time job status as they work through the day. Know who finished, who is behind, and who needs help — without making a single call.' },
+              { icon: '📍', title: 'Live Crew Tracking', desc: 'Every tech and truck on a live map, all day long. Know exactly who is where, which stop they\'re on, and when they complete — from your phone or desk. No GPS hardware to buy.' },
+              { icon: '🤖', title: 'Auto Route (100 Included)', desc: '100 auto-optimized routes included every month. The system sequences stops by geography to cut drive time and fit more stops per crew per day. More stops = more revenue. +$10 per 100 more routes.' },
+              { icon: '⭕', title: 'Lasso / Circle-to-Schedule', desc: 'Draw a circle on the map. See every property inside — with square footage totals by service type. Schedule them all in one click. No other software in the industry does this.' },
+              { icon: '📋', title: 'Two-Tier Job Board', desc: 'Scheduled jobs with assigned dates on one side. Unassigned spray/chemical/maintenance waiting list on the other — grouped by service type with sq ft totals. Your entire backlog, always visible.' },
+              { icon: '🧪', title: 'Chemical Compliance Engine', desc: 'EPA-compliant application logs built into every job. Track chemical name, rate, target pest, technician license, wind speed, and weather conditions. State-inspector-ready reports in one click.' },
+              { icon: '💬', title: 'Automated SMS Suite', desc: '10+ SMS alert types run automatically — appointment reminders, on-my-way notifications, job completion confirmations, estimate follow-ups, and payment reminders. Two-way texting inbox included. 500 SMS/month free.' },
+              { icon: '📱', title: 'Crew Mobile App', desc: 'Techs see their full day on their phone — stop list, property notes, gate codes, equipment details, and navigation. They check in, log materials, upload photos, and check out. No clipboard needed.' },
+              { icon: '📸', title: 'Before & After Photos', desc: 'Crews upload photos at job start and completion. Build a visual record of every property over time. Protect yourself from disputes, prove the work was done, and wow clients with documentation.' },
+              { icon: '💵', title: 'Auto-Invoicing', desc: 'Invoices fire automatically on job completion. Set payment terms, send by email or SMS, and collect by card on file. Money moves without you touching it. End-of-month billing runs are gone.' },
+              { icon: '💳', title: 'Card Payments Built In', desc: 'Clients pay online by card through Stripe — no third-party app needed. Store cards on file for automatic billing. Accept check or cash and log it manually. Every payment tracked in one place.' },
+              { icon: '📊', title: 'Estimates & Proposals', desc: 'Build and send professional estimates from your phone or desk. Clients approve online. Approved estimates convert to jobs automatically — no re-entry, no lost paperwork.' },
+              { icon: '🗺️', title: 'Driver Route App', desc: 'Push optimized routes to driver phones with one tap. They follow turn-by-turn navigation stop to stop. You see their progress live. No more printed route sheets or missed stops.' },
+              { icon: '🔬', title: 'Inventory & Materials Tracking', desc: 'Track chemical inventory, salt, and supply stock across trucks and storage locations. Log what was used on each job. Get low-stock alerts before you run out mid-week.' },
+              { icon: '📂', title: 'Full Service History', desc: 'Every job ever completed is logged per property — tech name, date, time in/out, materials used, photos, and notes. Pull the history for any client in seconds. Disputes are dead.' },
+              { icon: '📅', title: 'Recurring & One-Time Scheduling', desc: 'Set up weekly, bi-weekly, monthly, or custom recurring schedules. Add one-time jobs. Mix service types per property. The schedule builds itself — you just approve and dispatch.' },
+              { icon: '👥', title: 'Unlimited Users — No Extra Cost', desc: 'Add every tech, manager, and office staff member at no extra charge. Everyone has a role with the right level of access. No per-seat pricing. Scale your crew without scaling your bill.' },
             ].map((f, i) => (
               <div key={i} style={{ background: S.navy4, border: `1.5px solid ${S.border}`, borderRadius: 14, padding: 28 }}>
                 <div style={{ fontSize: 32, marginBottom: 12 }}>{f.icon}</div>
