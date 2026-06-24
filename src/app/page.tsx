@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 import { useState } from 'react';
 import SiteHeader from '../components/SiteHeader';
 
@@ -67,17 +67,17 @@ export default function Home() {
 
       {/* HERO */}
       <div className="hero">
-        <div className="hero-badge">Built for Every Field Service Industry · Since Day One</div>
+        <div className="hero-badge">Built for Every Field Service Industry Â· Since Day One</div>
         <h1>One Platform.<br /><span>Every Industry.</span><br />Zero Compromises.</h1>
         <div className="hero-sub">
-          Snow removal, pool service, landscaping, irrigation, lawn care, pest control, mosquito control, fence, and mowing — IndustryBossPro runs them all from a single dashboard. The most powerful pending job board in field service.
+          Snow removal, pool service, landscaping, irrigation, lawn care, pest control, mosquito control, fence, and mowing â€” IndustryBossPro runs them all from a single dashboard. The most powerful pending job board in field service.
         </div>
         <div className="hero-btns">
-          <button onClick={openModal} className="btn-primary">Start Free — 14 Days, No Card</button>
-          <a href="#features" className="btn-ghost">See All Features →</a>
+          <button onClick={openModal} className="btn-primary">Start Free â€” 14 Days, No Card</button>
+          <a href="#features" className="btn-ghost">See All Features â†’</a>
         </div>
         <div className="hero-proof">
-          <div className="proof-item"><div className="proof-val">$199</div><div className="proof-lbl">Flat Monthly — 100 Auto Routes Included</div></div>
+          <div className="proof-item"><div className="proof-val">$199</div><div className="proof-lbl">Flat Monthly â€” 300 Auto Routes Included</div></div>
           <div className="proof-item"><div className="proof-val">Unlimited</div><div className="proof-lbl">Users, Clients &amp; Properties</div></div>
           <div className="proof-item"><div className="proof-val">9</div><div className="proof-lbl">Industries. One Platform.</div></div>
           <div className="proof-item"><div className="proof-val">14 Days</div><div className="proof-lbl">Free Trial, No Card Required</div></div>
@@ -88,7 +88,7 @@ export default function Home() {
       <div className="trust-bar">
         <div className="trust-inner">
           <span className="trust-label">All Industries Covered</span>
-          {[['❄️','Snow & Ice'],['🏊','Pool Service'],['🌿','Landscaping'],['💧','Irrigation'],['🌱','Lawn Care'],['🐛','Pest Control'],['🦟','Mosquito Control'],['🏗️','Fence'],['🌾','Mowing']].map(([icon,name]) => (
+          {[['â„ï¸','Snow & Ice'],['ðŸŠ','Pool Service'],['ðŸŒ¿','Landscaping'],['ðŸ’§','Irrigation'],['ðŸŒ±','Lawn Care'],['ðŸ›','Pest Control'],['ðŸ¦Ÿ','Mosquito Control'],['ðŸ—ï¸','Fence'],['ðŸŒ¾','Mowing']].map(([icon,name]) => (
             <div key={name} className="trust-item"><span>{icon}</span><span>{name}</span></div>
           ))}
         </div>
@@ -101,16 +101,16 @@ export default function Home() {
           Affordable Doesn&apos;t Mean Cheap.<br /><span style={{ color:'#00b8ff' }}>This Is Enterprise-Grade Software.</span>
         </h2>
         <p style={{ color:'rgba(232,244,255,.65)', fontSize:17, maxWidth:700, margin:'0 auto 52px', lineHeight:1.8 }}>
-          We built what the enterprise platforms couldn&apos;t — one platform for every field service trade. Route intelligence, chemical compliance, automated billing, role-based access, and a mobile app — priced for real businesses.
+          We built what the enterprise platforms couldn&apos;t â€” one platform for every field service trade. Route intelligence, chemical compliance, automated billing, role-based access, and a mobile app â€” priced for real businesses.
         </p>
         <div className="premium-grid">
           {[
-            ['📋','Pending Job Board','Two-tier system: scheduled jobs with assigned dates on one side, spray/chemical/maintenance waiting list on the other. No other software has this.'],
-            ['🚀','Calendar + Dispatch Views','Calendar view shows every crew and job on one screen. Dispatch view shows live job status as crews work through their stops in real time.'],
-            ['📍','Live Crew Tracking','Every tech on a live map, all day long. Know who is where, which stop they\'re on, and when they complete. No calls needed.'],
-            ['🤖','Auto Route + Lasso Scheduling','100 auto-optimized routes included. Circle any area on the map to see every property inside and schedule them all at once.'],
-            ['🧪','Chemical Compliance Engine','Application logs, technician license tracking, weather conditions, and state-inspector-ready compliance reports.'],
-            ['💬','Automated Communication Suite','10+ SMS alert types, two-way texting inbox, estimate and payment follow-up sequences — running without you.'],
+            ['ðŸ“‹','Pending Job Board','Two-tier system: scheduled jobs with assigned dates on one side, spray/chemical/maintenance waiting list on the other. No other software has this.'],
+            ['ðŸš€','Calendar + Dispatch Views','Calendar view shows every crew and job on one screen. Dispatch view shows live job status as crews work through their stops in real time.'],
+            ['ðŸ“','Live Crew Tracking','Every tech on a live map, all day long. Know who is where, which stop they\'re on, and when they complete. No calls needed.'],
+            ['ðŸ¤–','Auto Route + Lasso Scheduling','300 auto-optimized routes included. Circle any area on the map to see every property inside and schedule them all at once.'],
+            ['ðŸ§ª','Chemical Compliance Engine','Application logs, technician license tracking, weather conditions, and state-inspector-ready compliance reports.'],
+            ['ðŸ’¬','Automated Communication Suite','10+ SMS alert types, two-way texting inbox, estimate and payment follow-up sequences â€” running without you.'],
           ].map(([icon,title,desc]) => (
             <div key={title} className="premium-card">
               <div className="premium-card-icon">{icon}</div>
@@ -127,7 +127,7 @@ export default function Home() {
           <div className="row-text">
             <span className="section-label">The Feature That Changes Everything</span>
             <h2 className="section-title">The Pending Job Board.<br />Your Business Brain.</h2>
-            <p style={{ color:'rgba(232,244,255,.6)', fontSize:16, lineHeight:1.8, marginBottom:8 }}>No other field service software has this. A two-tier job system that separates scheduled work with assigned dates from your chemical &amp; maintenance waiting list — so you always know exactly what&apos;s ready and what&apos;s waiting.</p>
+            <p style={{ color:'rgba(232,244,255,.6)', fontSize:16, lineHeight:1.8, marginBottom:8 }}>No other field service software has this. A two-tier job system that separates scheduled work with assigned dates from your chemical &amp; maintenance waiting list â€” so you always know exactly what&apos;s ready and what&apos;s waiting.</p>
             <ul className="check-list">
               <li>Scheduled board: jobs with assigned dates, tech, and crew</li>
               <li>Waiting list: chemical treatments grouped by service type with sq ft totals</li>
@@ -138,12 +138,12 @@ export default function Home() {
             </ul>
           </div>
           <div className="row-visual">
-            <div style={{ color:'rgba(232,244,255,.45)', fontSize:11, textTransform:'uppercase', letterSpacing:1, marginBottom:14 }}>Waiting List — By Service Type</div>
+            <div style={{ color:'rgba(232,244,255,.45)', fontSize:11, textTransform:'uppercase', letterSpacing:1, marginBottom:14 }}>Waiting List â€” By Service Type</div>
             {[
-              { label:'Lawn Care 4', sub:'47 properties waiting', badge:'384,200 ft²', cls:'green' },
-              { label:'Mosquito Barrier', sub:'31 properties waiting', badge:'246,500 ft²', cls:'' },
-              { label:'Pest Control', sub:'22 properties waiting', badge:'118,000 ft²', cls:'purple' },
-              { label:'Irrigation Startup', sub:'15 properties waiting', badge:'42,300 ft²', cls:'green' },
+              { label:'Lawn Care 4', sub:'47 properties waiting', badge:'384,200 ftÂ²', cls:'green' },
+              { label:'Mosquito Barrier', sub:'31 properties waiting', badge:'246,500 ftÂ²', cls:'' },
+              { label:'Pest Control', sub:'22 properties waiting', badge:'118,000 ftÂ²', cls:'purple' },
+              { label:'Irrigation Startup', sub:'15 properties waiting', badge:'42,300 ftÂ²', cls:'green' },
             ].map(item => (
               <div key={item.label} className="mock-item">
                 <div><div className="mock-label">{item.label}</div><div className="mock-sub">{item.sub}</div></div>
@@ -163,19 +163,19 @@ export default function Home() {
         <div className="centered" style={{ maxWidth:1200, margin:'0 auto' }}>
           <span className="section-label">Built for Your Industry</span>
           <h2 className="section-title">One Software. Every Season. Every Service.</h2>
-          <p className="section-sub">Every industry below is fully supported — not just partially. Scheduling, billing, compliance, and mobile app built for each trade.</p>
+          <p className="section-sub">Every industry below is fully supported â€” not just partially. Scheduling, billing, compliance, and mobile app built for each trade.</p>
         </div>
         <div className="industry-grid">
           {[
-            ['❄️','Snow & Ice Management','Route scheduling, per-push vs seasonal contracts, salt tracking, trigger alerts, event logging, and client snow reports.'],
-            ['🏊','Pool Service','Route-based pool maintenance, chemical dose tracking, equipment service history, filter logs, and seasonal opening/closing.'],
-            ['🌿','Landscaping','Crew scheduling, job site notes, photo documentation, package programs, estimate follow-ups, and automated billing.'],
-            ['💧','Irrigation','Startup and winterization waiting lists, zone documentation, backflow tracking, service history, and seasonal scheduling.'],
-            ['🌱','Lawn Care & Treatments','Sq ft waiting lists, chemical application logs, pesticide compliance reports, round tracking, and treatment follow-up.'],
-            ['🐛','Pest Control','Service frequency management, chemical logs, technician license tracking, completion alerts, and customer service reports.'],
-            ['🦟','Mosquito Control','Barrier spray route management, season-long subscription billing, re-treatment scheduling, and automated reminders.'],
-            ['🏗️','Fence Installation','Estimate-to-install workflows, material tracking, job phase management, permit documentation, and follow-up programs.'],
-            ['🌾','Lawn Mowing','Recurring mowing routes, cut frequency management, seasonal start/stop, rain-delay rescheduling, and automated billing.'],
+            ['â„ï¸','Snow & Ice Management','Route scheduling, per-push vs seasonal contracts, salt tracking, trigger alerts, event logging, and client snow reports.'],
+            ['ðŸŠ','Pool Service','Route-based pool maintenance, chemical dose tracking, equipment service history, filter logs, and seasonal opening/closing.'],
+            ['ðŸŒ¿','Landscaping','Crew scheduling, job site notes, photo documentation, package programs, estimate follow-ups, and automated billing.'],
+            ['ðŸ’§','Irrigation','Startup and winterization waiting lists, zone documentation, backflow tracking, service history, and seasonal scheduling.'],
+            ['ðŸŒ±','Lawn Care & Treatments','Sq ft waiting lists, chemical application logs, pesticide compliance reports, round tracking, and treatment follow-up.'],
+            ['ðŸ›','Pest Control','Service frequency management, chemical logs, technician license tracking, completion alerts, and customer service reports.'],
+            ['ðŸ¦Ÿ','Mosquito Control','Barrier spray route management, season-long subscription billing, re-treatment scheduling, and automated reminders.'],
+            ['ðŸ—ï¸','Fence Installation','Estimate-to-install workflows, material tracking, job phase management, permit documentation, and follow-up programs.'],
+            ['ðŸŒ¾','Lawn Mowing','Recurring mowing routes, cut frequency management, seasonal start/stop, rain-delay rescheduling, and automated billing.'],
           ].map(([icon,name,desc]) => (
             <div key={name} className="industry-card">
               <div style={{ fontSize:36, marginBottom:14 }}>{icon}</div>
@@ -198,7 +198,7 @@ export default function Home() {
             ['01','Set Up in One Afternoon','Add your services, import your clients, configure your alerts. Most businesses are scheduling live jobs on day one. No implementation fee, no onboarding call needed.'],
             ['02','One Board Runs Your Day','The Pending Job Board shows your scheduled jobs and your waiting list side by side. Your crew gets their stops on their phone. No switching between 6 apps.'],
             ['03','Techs Learn It in Minutes','The mobile view is built for people in trucks. Big buttons, clear stops, one tap to mark complete, log chemicals, or skip. No manual required.'],
-            ['04','Automation Does the Rest','Set your alert templates once. IndustryBossPro texts your customers, follows up on estimates, chases invoices, and requests reviews — automatically, every time.'],
+            ['04','Automation Does the Rest','Set your alert templates once. IndustryBossPro texts your customers, follows up on estimates, chases invoices, and requests reviews â€” automatically, every time.'],
           ].map(([num,title,desc]) => (
             <div key={title} className="simple-card">
               <div className="simple-num">{num}</div>
@@ -215,7 +215,7 @@ export default function Home() {
           <div className="row-text">
             <span className="section-label">Scheduling Intelligence</span>
             <h2 className="section-title">Know Exactly What You Have Waiting Before You Book a Single Stop</h2>
-            <p style={{ color:'rgba(232,244,255,.6)', fontSize:16, lineHeight:1.8 }}>The waiting list is the feature that changes how you run your day. Instead of scheduling on gut feel, you see the exact sq ft waiting for every service type — so you know your chemical needs before you make a single call or mix a single gallon.</p>
+            <p style={{ color:'rgba(232,244,255,.6)', fontSize:16, lineHeight:1.8 }}>The waiting list is the feature that changes how you run your day. Instead of scheduling on gut feel, you see the exact sq ft waiting for every service type â€” so you know your chemical needs before you make a single call or mix a single gallon.</p>
             <ul className="check-list">
               <li>Waiting list grouped by service type with sq ft totals</li>
               <li>Schedule directly from the list or from the map</li>
@@ -226,12 +226,12 @@ export default function Home() {
             </ul>
           </div>
           <div className="row-visual">
-            <div style={{ color:'rgba(232,244,255,.45)', fontSize:11, textTransform:'uppercase', letterSpacing:1, marginBottom:14 }}>Scheduled Board — Today</div>
+            <div style={{ color:'rgba(232,244,255,.45)', fontSize:11, textTransform:'uppercase', letterSpacing:1, marginBottom:14 }}>Scheduled Board â€” Today</div>
             {[
-              { label:'Snow Removal — Route A', sub:'Mike T. · 8 stops · 6am', badge:'Scheduled' },
-              { label:'Lawn Mowing — Crew 2', sub:'4 stops · 8am start', badge:'Scheduled' },
-              { label:'Pest Control — Davis', sub:'Tech: Sarah · 10am', badge:'Scheduled' },
-              { label:'Pool Service — Route B', sub:'3 pools · PM route', badge:'Scheduled' },
+              { label:'Snow Removal â€” Route A', sub:'Mike T. Â· 8 stops Â· 6am', badge:'Scheduled' },
+              { label:'Lawn Mowing â€” Crew 2', sub:'4 stops Â· 8am start', badge:'Scheduled' },
+              { label:'Pest Control â€” Davis', sub:'Tech: Sarah Â· 10am', badge:'Scheduled' },
+              { label:'Pool Service â€” Route B', sub:'3 pools Â· PM route', badge:'Scheduled' },
             ].map(item => (
               <div key={item.label} className="mock-item">
                 <div><div className="mock-label">{item.label}</div><div className="mock-sub">{item.sub}</div></div>
@@ -251,7 +251,7 @@ export default function Home() {
           <div className="centered" style={{ marginBottom:48 }}>
             <span className="section-label">How We Compare</span>
             <h2 className="section-title">Everything the Big Platforms Have.<br />None of the Price.</h2>
-            <p className="section-sub" style={{ marginLeft:'auto', marginRight:'auto' }}>IndustryBossPro does everything ServiceTitan and Jobber do — and adds features they don&apos;t have — at a fraction of the cost. And it covers every field service trade, not just one.</p>
+            <p className="section-sub" style={{ marginLeft:'auto', marginRight:'auto' }}>IndustryBossPro does everything ServiceTitan and Jobber do â€” and adds features they don&apos;t have â€” at a fraction of the cost. And it covers every field service trade, not just one.</p>
           </div>
           <table className="vs-table">
             <thead>
@@ -263,23 +263,23 @@ export default function Home() {
             </thead>
             <tbody>
               {[
-                ['Monthly Price','$199 flat','$400–$800+'],
-                ['Per-User Fees','✓ None','$50–$150/user'],
-                ['Covers All Field Service Trades','✓ Yes','No — one trade'],
-                ['Pending Job Board (Two-Tier)','✓ Yes','No'],
-                ['Spray / Chemical Waiting List (Sq Ft)','✓ Yes','No'],
-                ['Calendar View','✓ Yes','Yes'],
-                ['Dispatch View','✓ Yes','Limited'],
-                ['Live Crew Tracking (Map)','✓ Yes','Add-on / Extra'],
-                ['Auto Route (100 included)','✓ Yes','Add-on'],
-                ['Lasso / Circle-to-Schedule Map Tool','✓ Yes','No'],
-                ['Chemical Compliance Reports','✓ Yes','Add-on / Extra'],
-                ['Automated SMS Alerts (10+ types)','✓ Yes','Limited / Extra'],
-                ['Two-Way SMS Inbox','✓ Yes','Add-on'],
-                ['Card Payments Built In','✓ Yes','Yes'],
-                ['Mobile App for Field Techs','✓ Yes','Yes'],
-                ['Contracts Required','✓ None','Annual contracts'],
-                ['Setup Time','✓ Same day','Weeks + fee'],
+                ['Monthly Price','$199 flat','$400â€“$800+'],
+                ['Per-User Fees','âœ“ None','$50â€“$150/user'],
+                ['Covers All Field Service Trades','âœ“ Yes','No â€” one trade'],
+                ['Pending Job Board (Two-Tier)','âœ“ Yes','No'],
+                ['Spray / Chemical Waiting List (Sq Ft)','âœ“ Yes','No'],
+                ['Calendar View','âœ“ Yes','Yes'],
+                ['Dispatch View','âœ“ Yes','Limited'],
+                ['Live Crew Tracking (Map)','âœ“ Yes','Add-on / Extra'],
+                ['Auto Route (300 Included)','âœ“ Yes','Add-on'],
+                ['Lasso / Circle-to-Schedule Map Tool','âœ“ Yes','No'],
+                ['Chemical Compliance Reports','âœ“ Yes','Add-on / Extra'],
+                ['Automated SMS Alerts (10+ types)','âœ“ Yes','Limited / Extra'],
+                ['Two-Way SMS Inbox','âœ“ Yes','Add-on'],
+                ['Card Payments Built In','âœ“ Yes','Yes'],
+                ['Mobile App for Field Techs','âœ“ Yes','Yes'],
+                ['Contracts Required','âœ“ None','Annual contracts'],
+                ['Setup Time','âœ“ Same day','Weeks + fee'],
               ].map(([feat,ibp,comp]) => (
                 <tr key={feat}>
                   <td>{feat}</td>
@@ -297,27 +297,27 @@ export default function Home() {
         <div className="centered" style={{ maxWidth:1200, margin:'0 auto' }}>
           <span className="section-label">Full Platform</span>
           <h2 className="section-title">Everything You Need. Nothing You Don&apos;t.</h2>
-          <p className="section-sub" style={{ marginLeft:'auto', marginRight:'auto' }}>Every feature below is included in your $199/month. 100 auto routes included, +$10 per 300 more. No tiers, no surprises.</p>
+          <p className="section-sub" style={{ marginLeft:'auto', marginRight:'auto' }}>Every feature below is included in your $199/month. 300 Auto Routes Included, +$10 per 300 more. No tiers, no surprises.</p>
         </div>
         <div className="feat-grid">
           {[
-            ['📋','Pending Job Board','Two-tier system — scheduled jobs with dates on one side, chemical/maintenance waiting list on the other.'],
-            ['🗓️','Calendar View','See every job across every crew and every industry on one calendar. Filter by crew, service type, or date range.'],
-            ['🚀','Dispatch View','Real-time dispatch board showing every crew, their current stop, and job status as it happens.'],
-            ['📍','Live Crew Tracking','See every tech and truck on a live map in real time. Know exactly who is where, all day long.'],
-            ['🤖','Auto Route (100 Included)','100 auto-optimized routes included monthly. System sequences stops by geography automatically. +$10 per 300 more.'],
-            ['⭕','Lasso / Circle-to-Schedule','Draw a zone on the map, see every property and all sq ft inside, schedule them all at once.'],
-            ['🧪','Chemical Compliance','Full application logs, license tracking, weather data, and state-inspector-ready compliance reports.'],
-            ['💬','Two-Way SMS Inbox','Send and receive texts with customers directly in the platform. 10+ automated alert types included.'],
-            ['💰','Estimates & Follow-Ups','Build, send, and auto-follow-up on estimates. Approved estimates convert to jobs automatically.'],
-            ['💳','Card Payments','Card-on-file, post-service billing, partial payments, and automated payment reminders. Card or check/cash.'],
-            ['📱','Mobile App for Techs','Stop list, chemical logging, photos, GPS clock-in, and status updates from any phone.'],
-            ['👥','Employee Management','Time tracking, GPS clock-in, role-based access, and crew assignments.'],
-            ['📦','Service Programs','Multi-treatment packages with renewal alerts and full treatment tracking. Round-based programs built in.'],
-            ['⭐','Review Requests','Automated Google review requests after every completed service — running without you.'],
-            ['🔧','Custom Fields','Add any field to any record — fully customizable for your operation.'],
-            ['👑','Role-Based Access','Owner, Manager, Office, Tech, and Mobile roles with granular permissions across every module.'],
-            ['📊','Admin Dashboard','Full business overview — revenue, jobs, staff, and performance at a glance.'],
+            ['ðŸ“‹','Pending Job Board','Two-tier system â€” scheduled jobs with dates on one side, chemical/maintenance waiting list on the other.'],
+            ['ðŸ—“ï¸','Calendar View','See every job across every crew and every industry on one calendar. Filter by crew, service type, or date range.'],
+            ['ðŸš€','Dispatch View','Real-time dispatch board showing every crew, their current stop, and job status as it happens.'],
+            ['ðŸ“','Live Crew Tracking','See every tech and truck on a live map in real time. Know exactly who is where, all day long.'],
+            ['ðŸ¤–','Auto Route (300 Included)','300 auto-optimized routes included monthly. System sequences stops by geography automatically. +$10 per 300 more.'],
+            ['â­•','Lasso / Circle-to-Schedule','Draw a zone on the map, see every property and all sq ft inside, schedule them all at once.'],
+            ['ðŸ§ª','Chemical Compliance','Full application logs, license tracking, weather data, and state-inspector-ready compliance reports.'],
+            ['ðŸ’¬','Two-Way SMS Inbox','Send and receive texts with customers directly in the platform. 10+ automated alert types included.'],
+            ['ðŸ’°','Estimates & Follow-Ups','Build, send, and auto-follow-up on estimates. Approved estimates convert to jobs automatically.'],
+            ['ðŸ’³','Card Payments','Card-on-file, post-service billing, partial payments, and automated payment reminders. Card or check/cash.'],
+            ['ðŸ“±','Mobile App for Techs','Stop list, chemical logging, photos, GPS clock-in, and status updates from any phone.'],
+            ['ðŸ‘¥','Employee Management','Time tracking, GPS clock-in, role-based access, and crew assignments.'],
+            ['ðŸ“¦','Service Programs','Multi-treatment packages with renewal alerts and full treatment tracking. Round-based programs built in.'],
+            ['â­','Review Requests','Automated Google review requests after every completed service â€” running without you.'],
+            ['ðŸ”§','Custom Fields','Add any field to any record â€” fully customizable for your operation.'],
+            ['ðŸ‘‘','Role-Based Access','Owner, Manager, Office, Tech, and Mobile roles with granular permissions across every module.'],
+            ['ðŸ“Š','Admin Dashboard','Full business overview â€” revenue, jobs, staff, and performance at a glance.'],
           ].map(([icon,title,desc]) => (
             <div key={title} className="feat-card">
               <span className="feat-icon">{icon}</span>
@@ -336,15 +336,15 @@ export default function Home() {
           <p className="section-sub" style={{ marginLeft:'auto', marginRight:'auto' }}>We were paying $600/month for software that covered one trade and still didn&apos;t fit the way we worked. We built the pricing we always wished existed.</p>
         </div>
         <div className="price-card">
-          <div className="price-badge">Everything Included — No Tiers</div>
+          <div className="price-badge">Everything Included â€” No Tiers</div>
           <div style={{ fontSize:13, fontWeight:700, color:'rgba(232,244,255,.5)', textTransform:'uppercase', letterSpacing:1, marginBottom:10 }}>IndustryBossPro</div>
           <div className="price-amount"><sup>$</sup>199</div>
-          <div className="price-period">per month · cancel anytime · no contracts</div>
+          <div className="price-period">per month Â· cancel anytime Â· no contracts</div>
           <div style={{ background: 'rgba(0,184,255,0.1)', border: '1px solid rgba(0,184,255,0.3)', borderRadius: 8, padding: '8px 16px', marginBottom: 16, fontSize: 14, color: '#00b8ff', fontWeight: 700 }}>
-            100 Auto Routes Included · +$10 per 300 More
+            300 Auto Routes Included Â· +$10 per 300 More
           </div>
           <ul className="price-includes">
-            {['Unlimited Users','Unlimited Clients','Unlimited Properties','Waiting List (Spray Applications)','All 9 Industries Covered','Pending Job Board','Chemical Compliance','Estimates & Invoices','Card Payments (Stripe)','Two-Way SMS','Mobile App','Live Crew Tracking','100 Auto Routes Included','500 SMS/month Included','+$10 per 300 more','+$10 per 250 more SMS','Calendar & Dispatch Views','Free Onboarding'].map(li => (
+            {['Unlimited Users','Unlimited Clients','Unlimited Properties','Waiting List (Spray Applications)','All 9 Industries Covered','Pending Job Board','Chemical Compliance','Estimates & Invoices','Card Payments (Stripe)','Two-Way SMS','Mobile App','Live Crew Tracking','300 Auto Routes Included','500 SMS/month Included','+$10 per 300 more','+$10 per 250 more SMS','Calendar & Dispatch Views','Free Onboarding'].map(li => (
               <li key={li}>{li}</li>
             ))}
           </ul>
@@ -358,9 +358,9 @@ export default function Home() {
       {/* CTA */}
       <div className="cta-band">
         <h2>Stop Duct-Taping Together<br /><span style={{ color:'#00b8ff' }}>Five Different Software Tools.</span></h2>
-        <p>IndustryBossPro is built for businesses that do it all — snow, landscape, irrigation, lawn, pest, and everything in between. One platform. One price. Try it free for 14 days.</p>
+        <p>IndustryBossPro is built for businesses that do it all â€” snow, landscape, irrigation, lawn, pest, and everything in between. One platform. One price. Try it free for 14 days.</p>
         <div className="hero-btns" style={{ justifyContent:'center' }}>
-          <button onClick={openModal} className="btn-primary" style={{ fontSize:17, padding:'18px 48px' }}>Start Free — No Card Required</button>
+          <button onClick={openModal} className="btn-primary" style={{ fontSize:17, padding:'18px 48px' }}>Start Free â€” No Card Required</button>
         </div>
       </div>
 
@@ -372,7 +372,7 @@ export default function Home() {
               <div style={{ display:'flex', alignItems:'center', gap:10, marginBottom:14 }}>
                 <span style={{ fontSize:17, fontWeight:800, color:'#e8f4ff' }}>IndustryBoss<span style={{ color:'#00b8ff' }}>Pro</span></span>
               </div>
-              <p style={{ color:'rgba(232,244,255,.5)', fontSize:13, lineHeight:1.7 }}>The all-in-one field service platform built for businesses that run every trade. Snow, landscape, irrigation, lawn care, pest control — one dashboard, one price.</p>
+              <p style={{ color:'rgba(232,244,255,.5)', fontSize:13, lineHeight:1.7 }}>The all-in-one field service platform built for businesses that run every trade. Snow, landscape, irrigation, lawn care, pest control â€” one dashboard, one price.</p>
             </div>
             {[
               { title:'Product', links:[{label:'Features',href:'#'},{label:'Industries',href:'#'},{label:'Pricing',href:'#'},{label:'Login',href:'#'},{label:'Start Free Trial',href:'#'}] },
@@ -393,8 +393,8 @@ export default function Home() {
             ))}
           </div>
           <div style={{ borderTop:'1px solid rgba(0,184,255,.08)', paddingTop:24, display:'flex', justifyContent:'space-between', flexWrap:'wrap', gap:12 }}>
-            <p style={{ color:'rgba(232,244,255,.3)', fontSize:13 }}>© {new Date().getFullYear()} IndustryBossPro. All rights reserved.</p>
-            <p style={{ color:'rgba(232,244,255,.3)', fontSize:13 }}>$199/month · 100 Auto Routes Included · No Contracts</p>
+            <p style={{ color:'rgba(232,244,255,.3)', fontSize:13 }}>Â© {new Date().getFullYear()} IndustryBossPro. All rights reserved.</p>
+            <p style={{ color:'rgba(232,244,255,.3)', fontSize:13 }}>$199/month Â· 300 Auto Routes Included Â· No Contracts</p>
           </div>
         </div>
       </footer>
@@ -408,7 +408,7 @@ export default function Home() {
           <div style={{ background:'linear-gradient(135deg,#030b15,#050e1e)', padding:'28px 28px 22px', position:'relative', borderBottom:'1px solid rgba(0,184,255,.15)' }}>
             <div style={{ color:'#fff', fontSize:20, fontWeight:800, paddingRight:36 }}>Start Your 14-Day Free Trial</div>
             <div style={{ color:'rgba(232,244,255,.6)', fontSize:13, marginTop:5 }}>No credit card required. Full access. Cancel anytime.</div>
-            <button onClick={closeModal} style={{ position:'absolute', top:16, right:16, background:'rgba(255,255,255,.1)', border:'none', color:'#fff', width:32, height:32, borderRadius:'50%', cursor:'pointer', fontSize:20, display:'flex', alignItems:'center', justifyContent:'center' }}>×</button>
+            <button onClick={closeModal} style={{ position:'absolute', top:16, right:16, background:'rgba(255,255,255,.1)', border:'none', color:'#fff', width:32, height:32, borderRadius:'50%', cursor:'pointer', fontSize:20, display:'flex', alignItems:'center', justifyContent:'center' }}>Ã—</button>
           </div>
 
           {step === 'info' && (
@@ -430,7 +430,7 @@ export default function Home() {
                 <label style={{ fontSize:11, fontWeight:700, color:'rgba(232,244,255,.5)', textTransform:'uppercase', letterSpacing:'.5px', display:'block', marginBottom:5 }}>Email Address</label>
                 <input type="email" value={form.email} onChange={f('email')} placeholder="you@yourcompany.com" style={{ width:'100%', background:'#0a1628', border:'1px solid rgba(0,184,255,.2)', borderRadius:6, padding:'10px 12px', fontSize:14, color:'#e8f4ff', fontFamily:'inherit' }} />
               </div>
-              <button onClick={nextStep} className="btn-primary" style={{ width:'100%', fontSize:15, padding:13 }}>Next: Create Password →</button>
+              <button onClick={nextStep} className="btn-primary" style={{ width:'100%', fontSize:15, padding:13 }}>Next: Create Password â†’</button>
             </div>
           )}
 
@@ -438,7 +438,7 @@ export default function Home() {
             <div style={{ padding:'24px 28px' }}>
               {err && <div style={{ background:'rgba(239,68,68,.1)', border:'1px solid rgba(239,68,68,.3)', color:'#fca5a5', borderRadius:6, padding:'10px 12px', fontSize:13, marginBottom:14 }}>{err}</div>}
               <div style={{ background:'rgba(74,222,128,.08)', border:'1px solid rgba(74,222,128,.25)', borderRadius:6, padding:'10px 14px', marginBottom:16 }}>
-                <div style={{ fontSize:12, color:'#4ade80', fontWeight:700 }}>14-Day Free Trial — No Credit Card Required</div>
+                <div style={{ fontSize:12, color:'#4ade80', fontWeight:700 }}>14-Day Free Trial â€” No Credit Card Required</div>
                 <div style={{ fontSize:12, color:'rgba(232,244,255,.5)', marginTop:2 }}>Full access to every feature. $199/month after trial.</div>
               </div>
               <div style={{ marginBottom:14 }}>
@@ -458,18 +458,18 @@ export default function Home() {
                 </label>
               </div>
               <button onClick={createAccount} disabled={loading} className="btn-primary" style={{ width:'100%', fontSize:15, padding:13, opacity: loading ? 0.7 : 1 }}>
-                {loading ? 'Creating your account…' : 'Create My Account'}
+                {loading ? 'Creating your accountâ€¦' : 'Create My Account'}
               </button>
-              <button onClick={() => { setStep('info'); setErr(''); }} style={{ width:'100%', background:'none', border:'none', color:'rgba(232,244,255,.5)', fontSize:13, cursor:'pointer', marginTop:10, padding:6, fontFamily:'inherit', textDecoration:'underline' }}>← Back</button>
+              <button onClick={() => { setStep('info'); setErr(''); }} style={{ width:'100%', background:'none', border:'none', color:'rgba(232,244,255,.5)', fontSize:13, cursor:'pointer', marginTop:10, padding:6, fontFamily:'inherit', textDecoration:'underline' }}>â† Back</button>
             </div>
           )}
 
           {step === 'done' && (
             <div style={{ padding:'52px 28px', textAlign:'center' }}>
-              <div style={{ width:70, height:70, background:'#16a34a', borderRadius:'50%', display:'inline-flex', alignItems:'center', justifyContent:'center', fontSize:32, color:'#fff', marginBottom:18 }}>✓</div>
+              <div style={{ width:70, height:70, background:'#16a34a', borderRadius:'50%', display:'inline-flex', alignItems:'center', justifyContent:'center', fontSize:32, color:'#fff', marginBottom:18 }}>âœ“</div>
               <div style={{ fontSize:24, fontWeight:800, color:'#fff', marginBottom:12 }}>You&apos;re In!</div>
-              <div style={{ fontSize:15, color:'rgba(232,244,255,.6)', lineHeight:1.7 }}>Your 14-day free trial has started.<br />Taking you to your dashboard…</div>
-              <div style={{ fontSize:12, color:'rgba(232,244,255,.3)', marginTop:10 }}>Redirecting in {countdown} second{countdown !== 1 ? 's' : ''}…</div>
+              <div style={{ fontSize:15, color:'rgba(232,244,255,.6)', lineHeight:1.7 }}>Your 14-day free trial has started.<br />Taking you to your dashboardâ€¦</div>
+              <div style={{ fontSize:12, color:'rgba(232,244,255,.3)', marginTop:10 }}>Redirecting in {countdown} second{countdown !== 1 ? 's' : ''}â€¦</div>
             </div>
           )}
         </div>

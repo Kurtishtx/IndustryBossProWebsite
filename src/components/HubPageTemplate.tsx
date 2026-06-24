@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 import { useState } from 'react';
 import SiteHeader from './SiteHeader';
 import SiteFooter from './SiteFooter';
@@ -16,7 +16,7 @@ const INDUSTRIES = ['Snow & Ice Management','Pool Service','Landscaping','Irriga
 const HOW_STEPS = [
   { n: '1', title: 'Add Your Clients & Properties', body: 'Import or add your client list with property details, notes, and service history. Up and running in under an hour.' },
   { n: '2', title: 'Build Your Schedules & Routes', body: 'Set up recurring schedules, one-time jobs, and seasonal work. Routes optimize automatically.' },
-  { n: '3', title: 'Deploy Your Crew', body: 'Crews see their full day on their phone — stops, notes, and navigation. You see progress in real time.' },
+  { n: '3', title: 'Deploy Your Crew', body: 'Crews see their full day on their phone â€” stops, notes, and navigation. You see progress in real time.' },
   { n: '4', title: 'Get Paid Automatically', body: 'Invoices fire on job completion. Clients pay by card on file. Money moves without you touching it.' },
 ];
 
@@ -24,7 +24,7 @@ export default function HubPageTemplate({ page, stateName }: { page: HubPageData
   const [modal, setModal] = useState(false);
   const geoSuffix = stateName ? ` in ${stateName}` : '';
   const h1 = stateName
-    ? `${page.industry} Software${geoSuffix} — Run Your Routes, Get Paid, Grow Faster`
+    ? `${page.industry} Software${geoSuffix} â€” Run Your Routes, Get Paid, Grow Faster`
     : page.h1;
   const keyword = page.slug
     .replace(/-software$/, '')
@@ -42,7 +42,7 @@ export default function HubPageTemplate({ page, stateName }: { page: HubPageData
         <div style={{ maxWidth: 900, margin: '0 auto', padding: '0 24px', textAlign: 'center' }}>
           {stateName && (
             <div style={{ display: 'inline-block', background: 'rgba(0,184,255,0.12)', border: `1px solid rgba(0,184,255,0.3)`, borderRadius: 20, padding: '4px 14px', fontSize: 13, color: S.elec, fontWeight: 600, marginBottom: 20 }}>
-              {page.industry} · {stateName}
+              {page.industry} Â· {stateName}
             </div>
           )}
           {!stateName && (
@@ -55,13 +55,13 @@ export default function HubPageTemplate({ page, stateName }: { page: HubPageData
           </h1>
           <p style={{ fontSize: 18, color: S.muted, lineHeight: 1.6, marginBottom: 36, maxWidth: 700, margin: '0 auto 36px' }}>
             {stateName
-              ? `IndustryBossPro gives ${page.industry.toLowerCase()} businesses${geoSuffix} the tools to manage schedules, track work, invoice clients, and grow — all for $199/month.`
+              ? `IndustryBossPro gives ${page.industry.toLowerCase()} businesses${geoSuffix} the tools to manage schedules, track work, invoice clients, and grow â€” all for $199/month.`
               : page.subtitle}
           </p>
           <ul style={{ listStyle: 'none', padding: 0, margin: '0 auto 40px', maxWidth: 600, display: 'flex', flexDirection: 'column', gap: 10 }}>
             {page.heroPoints.map((pt, i) => (
               <li key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: 10, color: S.text, fontSize: 15, textAlign: 'left' }}>
-                <span style={{ color: S.elec, fontSize: 18, lineHeight: 1, flexShrink: 0 }}>✓</span>
+                <span style={{ color: S.elec, fontSize: 18, lineHeight: 1, flexShrink: 0 }}>âœ“</span>
                 {pt}
               </li>
             ))}
@@ -71,18 +71,18 @@ export default function HubPageTemplate({ page, stateName }: { page: HubPageData
               Start 14-Day Free Trial
             </button>
             <a href="/#pricing" style={{ background: 'transparent', color: S.elec, border: `2px solid ${S.elec}`, borderRadius: 10, padding: '14px 28px', fontSize: 16, fontWeight: 700, textDecoration: 'none', display: 'inline-block' }}>
-              See Pricing →
+              See Pricing â†’
             </a>
           </div>
-          <p style={{ color: S.muted, fontSize: 13, marginTop: 16 }}>No credit card required · $199/month after trial · Cancel anytime</p>
+          <p style={{ color: S.muted, fontSize: 13, marginTop: 16 }}>No credit card required Â· $199/month after trial Â· Cancel anytime</p>
         </div>
       </section>
 
       {/* TRUST BAR */}
       <section style={{ background: S.navy3, borderTop: `1px solid ${S.border}`, borderBottom: `1px solid ${S.border}`, padding: '18px 24px' }}>
         <div style={{ maxWidth: 1100, margin: '0 auto', display: 'flex', justifyContent: 'center', flexWrap: 'wrap', gap: 32 }}>
-          {['9 Industries', '$199/Month — 100 Auto Routes Included', 'Calendar & Dispatch Views', 'Live Crew Tracking', '14-Day Free Trial', 'Unlimited Users', 'No Contracts'].map(t => (
-            <span key={t} style={{ color: S.elec, fontWeight: 700, fontSize: 13 }}>✓ {t}</span>
+          {['9 Industries', '$199/Month â€” 300 Auto Routes Included', 'Calendar & Dispatch Views', 'Live Crew Tracking', '14-Day Free Trial', 'Unlimited Users', 'No Contracts'].map(t => (
+            <span key={t} style={{ color: S.elec, fontWeight: 700, fontSize: 13 }}>âœ“ {t}</span>
           ))}
         </div>
       </section>
@@ -96,9 +96,9 @@ export default function HubPageTemplate({ page, stateName }: { page: HubPageData
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: 24 }}>
             {page.painPoints.map((pp, i) => (
               <div key={i} style={{ background: S.navy4, border: `1px solid ${S.border}`, borderRadius: 12, padding: 28 }}>
-                <div style={{ color: '#ff6b6b', fontSize: 15, fontWeight: 700, marginBottom: 10 }}>❌ {pp.problem}</div>
+                <div style={{ color: '#ff6b6b', fontSize: 15, fontWeight: 700, marginBottom: 10 }}>âŒ {pp.problem}</div>
                 <div style={{ width: 32, height: 2, background: S.elec, marginBottom: 10 }} />
-                <div style={{ color: S.elec, fontSize: 13, fontWeight: 700, marginBottom: 8 }}>✓ With IndustryBossPro:</div>
+                <div style={{ color: S.elec, fontSize: 13, fontWeight: 700, marginBottom: 8 }}>âœ“ With IndustryBossPro:</div>
                 <div style={{ color: S.muted, fontSize: 14, lineHeight: 1.6 }}>{pp.solution}</div>
               </div>
             ))}
@@ -129,16 +129,16 @@ export default function HubPageTemplate({ page, stateName }: { page: HubPageData
             </div>
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', minHeight: 220 }}>
               <div style={{ padding: '16px', borderRight: `1px solid ${S.border}` }}>
-                <div style={{ fontSize: 11, fontWeight: 700, color: '#34d399', letterSpacing: 1, textTransform: 'uppercase', marginBottom: 12 }}>Scheduled — Assigned Date</div>
+                <div style={{ fontSize: 11, fontWeight: 700, color: '#34d399', letterSpacing: 1, textTransform: 'uppercase', marginBottom: 12 }}>Scheduled â€” Assigned Date</div>
                 {['Mon Jun 23', 'Tue Jun 24', 'Wed Jun 25'].map((d, i) => (
                   <div key={i} style={{ background: 'rgba(52,211,153,0.08)', border: '1px solid rgba(52,211,153,0.2)', borderRadius: 6, padding: '8px 10px', marginBottom: 8, fontSize: 12 }}>
                     <div style={{ color: '#34d399', fontWeight: 600 }}>{d}</div>
-                    <div style={{ color: S.muted }}>Client {i + 1} · {page.industry.split(' ')[0]} Service</div>
+                    <div style={{ color: S.muted }}>Client {i + 1} Â· {page.industry.split(' ')[0]} Service</div>
                   </div>
                 ))}
               </div>
               <div style={{ padding: '16px' }}>
-                <div style={{ fontSize: 11, fontWeight: 700, color: S.elec, letterSpacing: 1, textTransform: 'uppercase', marginBottom: 12 }}>Waiting List — No Date</div>
+                <div style={{ fontSize: 11, fontWeight: 700, color: S.elec, letterSpacing: 1, textTransform: 'uppercase', marginBottom: 12 }}>Waiting List â€” No Date</div>
                 {['Client A', 'Client B', 'Client C'].map((c, i) => (
                   <div key={i} style={{ background: 'rgba(0,184,255,0.08)', border: '1px solid rgba(0,184,255,0.2)', borderRadius: 6, padding: '8px 10px', marginBottom: 8, fontSize: 12 }}>
                     <div style={{ color: S.elec, fontWeight: 600 }}>{c}</div>
@@ -178,7 +178,7 @@ export default function HubPageTemplate({ page, stateName }: { page: HubPageData
               >
                 {keyword} guide
               </a>
-              {' '}walks you through everything — from choosing the right platform to getting your crew live in the field.
+              {' '}walks you through everything â€” from choosing the right platform to getting your crew live in the field.
             </p>
           )}
         </div>
@@ -220,24 +220,24 @@ export default function HubPageTemplate({ page, stateName }: { page: HubPageData
           </div>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: 24 }}>
             {[
-              { icon: '🗓️', title: 'Calendar View', desc: 'See every job across every crew and every service type on one calendar. Filter by crew, industry, or date. Your whole operation at a glance — no more digging through spreadsheets.' },
-              { icon: '🚀', title: 'Dispatch View', desc: 'Live dispatch board showing every crew, their current stop, and real-time job status as they work through the day. Know who finished, who is behind, and who needs help — without making a single call.' },
-              { icon: '📍', title: 'Live Crew Tracking', desc: 'Every tech and truck on a live map, all day long. Know exactly who is where, which stop they\'re on, and when they complete — from your phone or desk. No GPS hardware to buy.' },
-              { icon: '🤖', title: 'Auto Route (100 Included)', desc: '100 auto-optimized routes included every month. The system sequences stops by geography to cut drive time and fit more stops per crew per day. More stops = more revenue. +$10 per 300 more.' },
-              { icon: '⭕', title: 'Lasso / Circle-to-Schedule', desc: 'Draw a circle on the map. See every property inside — with square footage totals by service type. Schedule them all in one click. No other software in the industry does this.' },
-              { icon: '📋', title: 'Two-Tier Job Board', desc: 'Scheduled jobs with assigned dates on one side. Unassigned spray/chemical/maintenance waiting list on the other — grouped by service type with sq ft totals. Your entire backlog, always visible.' },
-              { icon: '🧪', title: 'Chemical Compliance Engine', desc: 'EPA-compliant application logs built into every job. Track chemical name, rate, target pest, technician license, wind speed, and weather conditions. State-inspector-ready reports in one click.' },
-              { icon: '💬', title: 'Automated SMS Suite', desc: '10+ SMS alert types run automatically — appointment reminders, on-my-way notifications, job completion confirmations, estimate follow-ups, and payment reminders. Two-way texting inbox included. 500 SMS/month included, +$10 per 250 more.' },
-              { icon: '📱', title: 'Crew Mobile App', desc: 'Techs see their full day on their phone — stop list, property notes, gate codes, equipment details, and navigation. They check in, log materials, upload photos, and check out. No clipboard needed.' },
-              { icon: '📸', title: 'Before & After Photos', desc: 'Crews upload photos at job start and completion. Build a visual record of every property over time. Protect yourself from disputes, prove the work was done, and wow clients with documentation.' },
-              { icon: '💵', title: 'Auto-Invoicing', desc: 'Invoices fire automatically on job completion. Set payment terms, send by email or SMS, and collect by card on file. Money moves without you touching it. End-of-month billing runs are gone.' },
-              { icon: '💳', title: 'Card Payments Built In', desc: 'Clients pay online by card through Stripe — no third-party app needed. Store cards on file for automatic billing. Accept check or cash and log it manually. Every payment tracked in one place.' },
-              { icon: '📊', title: 'Estimates & Proposals', desc: 'Build and send professional estimates from your phone or desk. Clients approve online. Approved estimates convert to jobs automatically — no re-entry, no lost paperwork.' },
-              { icon: '🗺️', title: 'Driver Route App', desc: 'Push optimized routes to driver phones with one tap. They follow turn-by-turn navigation stop to stop. You see their progress live. No more printed route sheets or missed stops.' },
-              { icon: '🔬', title: 'Inventory & Materials Tracking', desc: 'Track chemical inventory, salt, and supply stock across trucks and storage locations. Log what was used on each job. Get low-stock alerts before you run out mid-week.' },
-              { icon: '📂', title: 'Full Service History', desc: 'Every job ever completed is logged per property — tech name, date, time in/out, materials used, photos, and notes. Pull the history for any client in seconds. Disputes are dead.' },
-              { icon: '📅', title: 'Recurring & One-Time Scheduling', desc: 'Set up weekly, bi-weekly, monthly, or custom recurring schedules. Add one-time jobs. Mix service types per property. The schedule builds itself — you just approve and dispatch.' },
-              { icon: '👥', title: 'Unlimited Users — No Extra Cost', desc: 'Add every tech, manager, and office staff member at no extra charge. Everyone has a role with the right level of access. No per-seat pricing. Scale your crew without scaling your bill.' },
+              { icon: 'ðŸ—“ï¸', title: 'Calendar View', desc: 'See every job across every crew and every service type on one calendar. Filter by crew, industry, or date. Your whole operation at a glance â€” no more digging through spreadsheets.' },
+              { icon: 'ðŸš€', title: 'Dispatch View', desc: 'Live dispatch board showing every crew, their current stop, and real-time job status as they work through the day. Know who finished, who is behind, and who needs help â€” without making a single call.' },
+              { icon: 'ðŸ“', title: 'Live Crew Tracking', desc: 'Every tech and truck on a live map, all day long. Know exactly who is where, which stop they\'re on, and when they complete â€” from your phone or desk. No GPS hardware to buy.' },
+              { icon: 'ðŸ¤–', title: 'Auto Route (300 Included)', desc: '300 auto-optimized routes included every month. The system sequences stops by geography to cut drive time and fit more stops per crew per day. More stops = more revenue. +$10 per 300 more.' },
+              { icon: 'â­•', title: 'Lasso / Circle-to-Schedule', desc: 'Draw a circle on the map. See every property inside â€” with square footage totals by service type. Schedule them all in one click. No other software in the industry does this.' },
+              { icon: 'ðŸ“‹', title: 'Two-Tier Job Board', desc: 'Scheduled jobs with assigned dates on one side. Unassigned spray/chemical/maintenance waiting list on the other â€” grouped by service type with sq ft totals. Your entire backlog, always visible.' },
+              { icon: 'ðŸ§ª', title: 'Chemical Compliance Engine', desc: 'EPA-compliant application logs built into every job. Track chemical name, rate, target pest, technician license, wind speed, and weather conditions. State-inspector-ready reports in one click.' },
+              { icon: 'ðŸ’¬', title: 'Automated SMS Suite', desc: '10+ SMS alert types run automatically â€” appointment reminders, on-my-way notifications, job completion confirmations, estimate follow-ups, and payment reminders. Two-way texting inbox included. 500 SMS/month included, +$10 per 250 more.' },
+              { icon: 'ðŸ“±', title: 'Crew Mobile App', desc: 'Techs see their full day on their phone â€” stop list, property notes, gate codes, equipment details, and navigation. They check in, log materials, upload photos, and check out. No clipboard needed.' },
+              { icon: 'ðŸ“¸', title: 'Before & After Photos', desc: 'Crews upload photos at job start and completion. Build a visual record of every property over time. Protect yourself from disputes, prove the work was done, and wow clients with documentation.' },
+              { icon: 'ðŸ’µ', title: 'Auto-Invoicing', desc: 'Invoices fire automatically on job completion. Set payment terms, send by email or SMS, and collect by card on file. Money moves without you touching it. End-of-month billing runs are gone.' },
+              { icon: 'ðŸ’³', title: 'Card Payments Built In', desc: 'Clients pay online by card through Stripe â€” no third-party app needed. Store cards on file for automatic billing. Accept check or cash and log it manually. Every payment tracked in one place.' },
+              { icon: 'ðŸ“Š', title: 'Estimates & Proposals', desc: 'Build and send professional estimates from your phone or desk. Clients approve online. Approved estimates convert to jobs automatically â€” no re-entry, no lost paperwork.' },
+              { icon: 'ðŸ—ºï¸', title: 'Driver Route App', desc: 'Push optimized routes to driver phones with one tap. They follow turn-by-turn navigation stop to stop. You see their progress live. No more printed route sheets or missed stops.' },
+              { icon: 'ðŸ”¬', title: 'Inventory & Materials Tracking', desc: 'Track chemical inventory, salt, and supply stock across trucks and storage locations. Log what was used on each job. Get low-stock alerts before you run out mid-week.' },
+              { icon: 'ðŸ“‚', title: 'Full Service History', desc: 'Every job ever completed is logged per property â€” tech name, date, time in/out, materials used, photos, and notes. Pull the history for any client in seconds. Disputes are dead.' },
+              { icon: 'ðŸ“…', title: 'Recurring & One-Time Scheduling', desc: 'Set up weekly, bi-weekly, monthly, or custom recurring schedules. Add one-time jobs. Mix service types per property. The schedule builds itself â€” you just approve and dispatch.' },
+              { icon: 'ðŸ‘¥', title: 'Unlimited Users â€” No Extra Cost', desc: 'Add every tech, manager, and office staff member at no extra charge. Everyone has a role with the right level of access. No per-seat pricing. Scale your crew without scaling your bill.' },
             ].map((f, i) => (
               <div key={i} style={{ background: S.navy4, border: `1.5px solid ${S.border}`, borderRadius: 14, padding: 28 }}>
                 <div style={{ fontSize: 32, marginBottom: 12 }}>{f.icon}</div>
@@ -271,16 +271,16 @@ export default function HubPageTemplate({ page, stateName }: { page: HubPageData
           <div style={{ background: S.navy4, border: `2px solid ${S.elec}`, borderRadius: 20, padding: '40px 36px', boxShadow: `0 0 60px rgba(0,184,255,0.15)`, textAlign: 'center' }}>
             <div style={{ fontSize: 15, color: S.elec, fontWeight: 700, marginBottom: 8 }}>IndustryBossPro</div>
             <div style={{ fontSize: 60, fontWeight: 900, color: S.text, lineHeight: 1 }}>$199</div>
-            <div style={{ color: S.muted, fontSize: 16, marginBottom: 12 }}>/month · everything included</div>
+            <div style={{ color: S.muted, fontSize: 16, marginBottom: 12 }}>/month Â· everything included</div>
 
-            {['Unlimited Users', '14-Day Free Trial', 'All 9 Industries', 'Pending Job Board', 'Chemical Compliance Logging', 'Mobile App for Crews', 'Card Payments (Stripe)', 'Calendar & Dispatch Views', 'Live Crew Tracking', 'Waiting List (Spray Applications)', '100 Auto Routes Included', '500 SMS/month Included', '+$10 per 300 more', '+$10 per 250 more SMS', 'No Contracts'].map(item => (
+            {['Unlimited Users', '14-Day Free Trial', 'All 9 Industries', 'Pending Job Board', 'Chemical Compliance Logging', 'Mobile App for Crews', 'Card Payments (Stripe)', 'Calendar & Dispatch Views', 'Live Crew Tracking', 'Waiting List (Spray Applications)', '300 Auto Routes Included', '500 SMS/month Included', '+$10 per 300 more', '+$10 per 250 more SMS', 'No Contracts'].map(item => (
               <div key={item} style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 10, textAlign: 'left' }}>
-                <span style={{ color: S.elec }}>✓</span>
+                <span style={{ color: S.elec }}>âœ“</span>
                 <span style={{ color: S.text, fontSize: 14 }}>{item}</span>
               </div>
             ))}
             <button onClick={() => setModal(true)} style={{ width: '100%', background: S.elec, color: S.navy1, border: 'none', borderRadius: 10, padding: '16px', fontSize: 17, fontWeight: 800, cursor: 'pointer', marginTop: 24 }}>
-              Start Free Trial — No Card Required
+              Start Free Trial â€” No Card Required
             </button>
           </div>
         </div>
@@ -298,11 +298,11 @@ export default function HubPageTemplate({ page, stateName }: { page: HubPageData
           <button onClick={() => setModal(true)} style={{ background: S.elec, color: S.navy1, border: 'none', borderRadius: 12, padding: '18px 48px', fontSize: 18, fontWeight: 800, cursor: 'pointer' }}>
             Start Your Free Trial Today
           </button>
-          <p style={{ color: S.muted, fontSize: 13, marginTop: 16 }}>$199/month after trial · Cancel anytime · Unlimited users</p>
+          <p style={{ color: S.muted, fontSize: 13, marginTop: 16 }}>$199/month after trial Â· Cancel anytime Â· Unlimited users</p>
         </div>
       </section>
 
-      {/* ── BLOG SILO LINK ── */}
+      {/* â”€â”€ BLOG SILO LINK â”€â”€ */}
       {page.blogSiloIndustry && page.blog1Slug && (
         <section style={{ background: S.navy3, padding: '64px 40px', borderTop: `1px solid ${S.border}` }}>
           <div style={{ maxWidth: 900, margin: '0 auto', display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 32, flexWrap: 'wrap' }}>
@@ -312,15 +312,15 @@ export default function HubPageTemplate({ page, stateName }: { page: HubPageData
                 The Complete {keyword} Guide
               </h3>
               <p style={{ color: S.muted, fontSize: 15, maxWidth: 540 }}>
-                30 in-depth articles covering pricing, routing, crew management, billing, and scaling — everything a {page.industry.toLowerCase()} business owner needs to run a tighter operation.
+                30 in-depth articles covering pricing, routing, crew management, billing, and scaling â€” everything a {page.industry.toLowerCase()} business owner needs to run a tighter operation.
               </p>
             </div>
             <div style={{ display: 'flex', flexDirection: 'column', gap: 12, flexShrink: 0 }}>
               <a href={`/blog/${page.blogSiloIndustry}/${page.blog1Slug}`} style={{ display: 'inline-block', background: S.elec, color: S.navy1, borderRadius: 8, padding: '13px 28px', fontSize: 14, fontWeight: 800, textDecoration: 'none', whiteSpace: 'nowrap' }}>
-                Read the {keyword} Guide →
+                Read the {keyword} Guide â†’
               </a>
               <a href={`/blog/${page.blogSiloIndustry}`} style={{ display: 'inline-block', color: S.elec, fontSize: 13, fontWeight: 600, textDecoration: 'none', textAlign: 'center' }}>
-                Browse all 30 articles →
+                Browse all 30 articles â†’
               </a>
             </div>
           </div>
