@@ -77,7 +77,7 @@ export default function Home() {
           <a href="#features" className="btn-ghost">See All Features →</a>
         </div>
         <div className="hero-proof">
-          <div className="proof-item"><div className="proof-val">$199</div><div className="proof-lbl">Flat Monthly — 300 Auto Routes Included</div></div>
+          <div className="proof-item"><div className="proof-val">$199</div><div className="proof-lbl">Flat Monthly</div></div>
           <div className="proof-item"><div className="proof-val">Unlimited</div><div className="proof-lbl">Users, Clients &amp; Properties</div></div>
           <div className="proof-item"><div className="proof-val">9</div><div className="proof-lbl">Industries. One Platform.</div></div>
           <div className="proof-item"><div className="proof-val">14 Days</div><div className="proof-lbl">Free Trial, No Card Required</div></div>
