@@ -12,6 +12,7 @@ const INDUSTRIES = [
   { label: 'Mosquito Control Software', href: '/mosquito-control-software' },
   { label: 'Fence Company Software', href: '/fence-company-software' },
   { label: 'Lawn Mowing Software', href: '/lawn-mowing-software' },
+  { label: 'Pet Waste Removal Software', href: '/pet-waste-removal-software' },
 ];
 
 const FEATURES = [
@@ -40,7 +41,7 @@ export default function SiteFooter({ onOpenModal }: { onOpenModal: () => void })
               IndustryBoss<span style={{ color: S.elec }}>Pro</span>
             </div>
             <p style={{ color: S.muted, fontSize: 14, lineHeight: 1.6, marginBottom: 20 }}>
-              All-in-one field service software for snow, landscaping, irrigation, lawn care, pest control, mosquito, pool, fence, and mowing. $199/month, everything included.
+              All-in-one field service software for snow, landscaping, irrigation, lawn care, pest control, mosquito, pool, fence, mowing, and pet waste removal. $199/month, everything included.
             </p>
             <button onClick={onOpenModal} style={{
               background: S.elec, color: '#fff', border: 'none', borderRadius: 8,

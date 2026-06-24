@@ -12,6 +12,7 @@ const INDUSTRIES = [
   { label: 'Mosquito Control Software', href: '/mosquito-control-software' },
   { label: 'Fence Company Software', href: '/fence-company-software' },
   { label: 'Lawn Mowing Software', href: '/lawn-mowing-software' },
+  { label: 'Pet Waste Removal Software', href: '/pet-waste-removal-software' },
 ];
 
 const COMPARE = [

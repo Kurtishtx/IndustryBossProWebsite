@@ -119,7 +119,7 @@ export default function PricingPage() {
           { q: 'What happens after the 14-day trial?', a: 'You\'re billed $199/month, month-to-month. Cancel anytime before the trial ends and you won\'t be charged.' },
           { q: 'How many users can I add?', a: 'Unlimited. Add your whole crew — techs, office staff, managers — at no extra cost.' },
           { q: 'Do I need a credit card to start?', a: 'No. Enter your name, email, and company. You get full access for 14 days before any billing info is needed.' },
-          { q: 'What industries are supported?', a: 'Snow removal, pool service, landscaping, irrigation, lawn care, pest control, mosquito control, fence, and lawn mowing — all on one platform.' },
+          { q: 'What industries are supported?', a: 'Snow removal, pool service, landscaping, irrigation, lawn care, pest control, mosquito control, fence, lawn mowing, and pet waste removal — all on one platform.' },
         ].map(item => (
           <div key={item.q} style={{ marginBottom: 20, background: S.navy4, border: `1px solid ${S.border}`, borderRadius: 12, padding: '22px 24px' }}>
             <div style={{ color: '#fff', fontSize: 15, fontWeight: 700, marginBottom: 8 }}>{item.q}</div>
