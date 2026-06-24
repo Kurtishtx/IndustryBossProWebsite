@@ -381,7 +381,7 @@ export default function Home() {
           </div>
           <div style={{ borderTop:'1px solid rgba(196,125,10,.08)', paddingTop:24, display:'flex', justifyContent:'space-between', flexWrap:'wrap', gap:12 }}>
             <p style={{ color:'rgba(245,236,224,.3)', fontSize:13 }}>© {new Date().getFullYear()} IndustryBossPro. All rights reserved.</p>
-            <p style={{ color:'rgba(245,236,224,.3)', fontSize:13 }}>$199/month · 300 Auto Routes Included · No Contracts</p>
+            <p style={{ color:'rgba(245,236,224,.3)', fontSize:13 }}>$199/month · No Contracts</p>
           </div>
         </div>
       </footer>
