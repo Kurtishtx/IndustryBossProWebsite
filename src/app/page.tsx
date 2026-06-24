@@ -88,7 +88,7 @@ export default function Home() {
       <div className="trust-bar">
         <div className="trust-inner">
           <span className="trust-label">All Industries Covered</span>
-          {[['❄️','Snow & Ice'],['🏊','Pool Service'],['🌿','Landscaping'],['💧','Irrigation'],['🌱','Lawn Care'],['🐛','Pest Control'],['🦟','Mosquito Control'],['🏗️','Fence'],['🌾','Mowing']].map(([icon,name]) => (
+          {[['❄️','Snow & Ice'],['🏊','Pool Service'],['🌿','Landscaping'],['💧','Irrigation'],['🌱','Lawn Care'],['🐛','Pest Control'],['🦟','Mosquito Control'],['🏗️','Fence'],['🌾','Mowing'],['💩','Pet Waste']].map(([icon,name]) => (
             <div key={name} className="trust-item"><span>{icon}</span><span>{name}</span></div>
           ))}
         </div>
@@ -160,6 +160,7 @@ export default function Home() {
             ['🦟','Mosquito Control','Barrier spray route management, season-long subscription billing, re-treatment scheduling, and automated reminders.'],
             ['🏗️','Fence Installation','Estimate-to-install workflows, material tracking, job phase management, permit documentation, and follow-up programs.'],
             ['🌾','Lawn Mowing','Recurring mowing routes, cut frequency management, seasonal start/stop, rain-delay rescheduling, and automated billing.'],
+            ['💩','Pet Waste Removal','Weekly and bi-weekly recurring routes, auto-billing, on-property arrival alerts, night-before reminders, and customer communication — all automated.'],
           ].map(([icon,name,desc]) => (
             <div key={name} className="industry-card">
               <div style={{ fontSize:36, marginBottom:14 }}>{icon}</div>
