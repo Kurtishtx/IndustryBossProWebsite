@@ -13,7 +13,7 @@ const e = (a: string) => `rgba(0,184,255,${a})`;
 
 const INCLUDED = [
   'Unlimited Users', 'Unlimited Clients', 'Unlimited Properties',
-  'All Features Included', 'All 9 Industries Covered', 'Pending Job Board',
+  'Sq Ft Waiting List', 'All 9 Industries Covered', 'Pending Job Board',
   'Calendar & Dispatch Views', 'Live Crew Tracking',
   'Chemical Compliance Logging', 'Estimates & Invoices',
   '100 Auto Routes Included', '500 SMS/month included',
