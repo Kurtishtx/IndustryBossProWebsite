@@ -29,12 +29,12 @@ export const featurePages: FeaturePageData[] = [
       { icon: '🔔', title: 'Automated Client Reminders', body: 'Clients receive automated reminders 24 hours before their appointment. Self-rescheduling links let clients move their appointment without calling you. No-shows drop significantly.' },
       { icon: '📊', title: 'Schedule Performance Analytics', body: 'Track on-time arrival rates, jobs completed per day per crew, and schedule efficiency over time. See which days and routes are most productive — and which need adjustment.' },
     ],
-    industries: ['Snow & Ice Management', 'Pool Service', 'Landscaping', 'Irrigation', 'Lawn Care Chemicals', 'Pest Control', 'Mosquito Control', 'Fence', 'Mowing'],
+    industries: ['Snow & Ice Management', 'Pool Service', 'Landscaping', 'Irrigation', 'Lawn Care Chemicals', 'Pest Control', 'Mosquito Control', 'Fence', 'Mowing', 'Pet Waste Removal'],
   },
   {
     slug: 'service-route-optimization-software',
     h1: 'Service Route Optimization Software That Puts More Stops Per Day in Every Crew',
-    subtitle: 'Cut drive time, increase stops per hour, and run more efficient routes across all 9 of your field service industries.',
+    subtitle: 'Cut drive time, increase stops per hour, and run more efficient routes across all 10 of your field service industries.',
     metaTitle: 'Service Route Optimization Software | IndustryBossPro',
     metaDesc: 'Service route optimization software for field service businesses. Group stops geographically, cut drive time, maximize stops per crew per day. $199/mo.',
     heroPoints: [
@@ -71,7 +71,7 @@ export const featurePages: FeaturePageData[] = [
       { icon: '📊', title: 'Accounts Receivable Dashboard', body: 'See all outstanding invoices, payment status, and overdue accounts in one view. Send payment reminders with one click. Know your cash position without opening a spreadsheet.' },
       { icon: '📱', title: 'Field Invoicing', body: 'Crew leaders can generate and collect payment on-site before leaving the property. Collect signatures and same-day payment from the job site with no back-office delay.' },
     ],
-    industries: ['Snow & Ice Management', 'Pool Service', 'Landscaping', 'Irrigation', 'Lawn Care Chemicals', 'Pest Control', 'Mosquito Control', 'Fence', 'Mowing'],
+    industries: ['Snow & Ice Management', 'Pool Service', 'Landscaping', 'Irrigation', 'Lawn Care Chemicals', 'Pest Control', 'Mosquito Control', 'Fence', 'Mowing', 'Pet Waste Removal'],
   },
   {
     slug: 'customer-management-field-service',
@@ -92,7 +92,7 @@ export const featurePages: FeaturePageData[] = [
       { icon: '📱', title: 'Client Self-Service Portal', body: 'Clients can view their service history, upcoming appointments, and invoices through a branded client portal. They can also submit service requests, pay invoices, and update their information — without calling you.' },
       { icon: '🔔', title: 'Automated Communication', body: 'Appointment reminders, service completion notifications, invoice reminders, and renewal offers all fire automatically based on your settings. Clients stay informed without your team making calls.' },
     ],
-    industries: ['Snow & Ice Management', 'Pool Service', 'Landscaping', 'Irrigation', 'Lawn Care Chemicals', 'Pest Control', 'Mosquito Control', 'Fence', 'Mowing'],
+    industries: ['Snow & Ice Management', 'Pool Service', 'Landscaping', 'Irrigation', 'Lawn Care Chemicals', 'Pest Control', 'Mosquito Control', 'Fence', 'Mowing', 'Pet Waste Removal'],
   },
   {
     slug: 'field-service-estimates-quoting',
@@ -134,7 +134,7 @@ export const featurePages: FeaturePageData[] = [
       { icon: '🌾', title: 'Industry Examples', body: 'For mowing: waiting list holds new client add-ons and one-time requests. For snow: waiting list holds all properties pending their storm date. For lawn chemicals: waiting list holds every property due for their next application round. Same concept, every industry.' },
       { icon: '📊', title: 'Workload Visibility', body: 'The pending board gives you a complete picture of your business workload — not just what\'s scheduled, but what\'s coming. You can plan crew capacity, quote new clients with realistic timelines, and know exactly how much work you have before you sell the next job.' },
     ],
-    industries: ['Snow & Ice Management', 'Pool Service', 'Landscaping', 'Irrigation', 'Lawn Care Chemicals', 'Pest Control', 'Mosquito Control', 'Fence', 'Mowing'],
+    industries: ['Snow & Ice Management', 'Pool Service', 'Landscaping', 'Irrigation', 'Lawn Care Chemicals', 'Pest Control', 'Mosquito Control', 'Fence', 'Mowing', 'Pet Waste Removal'],
   },
   {
     slug: 'field-service-mobile-app',
@@ -155,7 +155,7 @@ export const featurePages: FeaturePageData[] = [
       { icon: '💳', title: 'On-Site Payment Collection', body: 'Collect card payment, capture signatures, and generate a receipt before leaving the property. Funds clear faster and you don\'t have to chase clients for payment days later.' },
       { icon: '🔔', title: 'Real-Time Job Updates', body: 'When a job is reassigned, rescheduled, or updated in the office, the crew sees it on their phone immediately. No calls, no confusion about last-minute changes.' },
     ],
-    industries: ['Snow & Ice Management', 'Pool Service', 'Landscaping', 'Irrigation', 'Lawn Care Chemicals', 'Pest Control', 'Mosquito Control', 'Fence', 'Mowing'],
+    industries: ['Snow & Ice Management', 'Pool Service', 'Landscaping', 'Irrigation', 'Lawn Care Chemicals', 'Pest Control', 'Mosquito Control', 'Fence', 'Mowing', 'Pet Waste Removal'],
   },
   {
     slug: 'field-service-payment-processing',
@@ -176,7 +176,7 @@ export const featurePages: FeaturePageData[] = [
       { icon: '📋', title: 'Flexible Billing Options', body: 'Per-visit billing, monthly billing cycles, prepaid seasonal packages, milestone billing for installations — all supported. Bill the way your business and your clients want to operate.' },
       { icon: '📄', title: 'Receipts & Statements', body: 'Clients receive automatic receipts on payment. Pull client payment history and account statements on demand. Clean records for your clients and clean books for your business.' },
     ],
-    industries: ['Snow & Ice Management', 'Pool Service', 'Landscaping', 'Irrigation', 'Lawn Care Chemicals', 'Pest Control', 'Mosquito Control', 'Fence', 'Mowing'],
+    industries: ['Snow & Ice Management', 'Pool Service', 'Landscaping', 'Irrigation', 'Lawn Care Chemicals', 'Pest Control', 'Mosquito Control', 'Fence', 'Mowing', 'Pet Waste Removal'],
   },
   {
     slug: 'field-service-crm-software',
@@ -197,7 +197,7 @@ export const featurePages: FeaturePageData[] = [
       { icon: '👥', title: 'Referral Tracking', body: 'Track where new clients are coming from. See which existing clients generate the most referrals. Reward your best referrers and build a referral program with real data behind it.' },
       { icon: '📈', title: 'Client Lifetime Value', body: 'See average client lifetime value by service type, by acquisition channel, and by market area. Know which clients are worth fighting for and which relationships to let go.' },
     ],
-    industries: ['Snow & Ice Management', 'Pool Service', 'Landscaping', 'Irrigation', 'Lawn Care Chemicals', 'Pest Control', 'Mosquito Control', 'Fence', 'Mowing'],
+    industries: ['Snow & Ice Management', 'Pool Service', 'Landscaping', 'Irrigation', 'Lawn Care Chemicals', 'Pest Control', 'Mosquito Control', 'Fence', 'Mowing', 'Pet Waste Removal'],
   },
   {
     slug: 'service-contract-management-software',
@@ -239,28 +239,28 @@ export const featurePages: FeaturePageData[] = [
       { icon: '📈', title: 'Growth Metrics', body: 'New clients acquired per month, revenue per client over time, estimate close rate trends, and referral tracking. Understand what\'s driving growth and where to invest next.' },
       { icon: '🗺️', title: 'Geographic Revenue Heat Map', body: 'See revenue density by neighborhood, zip code, or service territory. Find your most profitable areas and target expansion or marketing effort where it will have the most impact.' },
     ],
-    industries: ['Snow & Ice Management', 'Pool Service', 'Landscaping', 'Irrigation', 'Lawn Care Chemicals', 'Pest Control', 'Mosquito Control', 'Fence', 'Mowing'],
+    industries: ['Snow & Ice Management', 'Pool Service', 'Landscaping', 'Irrigation', 'Lawn Care Chemicals', 'Pest Control', 'Mosquito Control', 'Fence', 'Mowing', 'Pet Waste Removal'],
   },
   {
     slug: 'multi-industry-field-service-software',
     h1: 'Multi-Industry Field Service Software — One Platform for Every Service Your Company Offers',
-    subtitle: 'Snow removal, lawn care, pest control, pool service, irrigation, mosquito, mowing, landscaping, and fence — all in one platform at one flat price.',
+    subtitle: 'Snow removal, lawn care, pest control, pool service, irrigation, mosquito, mowing, landscaping, fence, and pet waste removal — all in one platform at one flat price.',
     metaTitle: 'Multi-Industry Field Service Software | IndustryBossPro',
-    metaDesc: 'Multi-industry field service software for companies offering snow, lawn care, pest, pool, irrigation, mosquito, mowing, fence, and landscaping. $199/mo flat.',
+    metaDesc: 'Multi-industry field service software for companies offering snow, lawn care, pest, pool, irrigation, mosquito, mowing, fence, landscaping, and pet waste removal. $199/mo flat.',
     heroPoints: [
-      'Manage all 9 field service industries from one login',
+      'Manage all 10 field service industries from one login',
       'One client record for clients across multiple service lines',
       'One flat price — no matter how many services you offer',
     ],
     sections: [
-      { icon: '🌐', title: 'All 9 Industries in One Platform', body: 'IndustryBossPro is built to support snow removal, pool service, landscaping, irrigation, lawn care chemicals, pest control, mosquito control, fence, and mowing — with industry-specific workflows for each. Companies that offer multiple services don\'t need multiple platforms.' },
+      { icon: '🌐', title: 'All 10 Industries in One Platform', body: 'IndustryBossPro is built to support snow removal, pool service, landscaping, irrigation, lawn care chemicals, pest control, mosquito control, fence, mowing, and pet waste removal — with industry-specific workflows for each. Companies that offer multiple services don\'t need multiple platforms.' },
       { icon: '👤', title: 'Unified Client Records', body: 'A client who uses you for mowing AND pest control has one record, one invoice history, and one communication thread. They see all their services in one client portal. You manage them from one account without duplication.' },
       { icon: '📋', title: 'Service-Specific Pending Boards', body: 'The pending job board can be filtered by service type. See your full mowing waiting list, or your full mosquito spray schedule, or everything across all industries at once — your choice.' },
       { icon: '💵', title: 'Bundled Service Billing', body: 'Bill multiple services on one invoice or separate by service type. Create service bundles that clients pay monthly — mowing + chemicals + pest all on one recurring invoice.' },
       { icon: '🔄', title: 'Cross-Sell Automation', body: 'Existing clients are your best growth opportunity. Automated cross-sell sequences offer pest control to lawn clients, irrigation to landscape clients, and mosquito to lawn chemical clients — all at the right time.' },
-      { icon: '💰', title: 'Flat $199/Month — Everything Included', body: 'One price covers all 9 industries, unlimited users, and every feature in the platform. Whether you offer one service or all nine, the price never changes. Grow your service offerings without growing your software bill.' },
+      { icon: '💰', title: 'Flat $199/Month — Everything Included', body: 'One price covers all 10 industries, unlimited users, and every feature in the platform. Whether you offer one service or all ten, the price never changes. Grow your service offerings without growing your software bill.' },
     ],
-    industries: ['Snow & Ice Management', 'Pool Service', 'Landscaping', 'Irrigation', 'Lawn Care Chemicals', 'Pest Control', 'Mosquito Control', 'Fence', 'Mowing'],
+    industries: ['Snow & Ice Management', 'Pool Service', 'Landscaping', 'Irrigation', 'Lawn Care Chemicals', 'Pest Control', 'Mosquito Control', 'Fence', 'Mowing', 'Pet Waste Removal'],
   },
 ];
 

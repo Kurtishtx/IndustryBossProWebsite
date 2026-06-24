@@ -70,7 +70,7 @@ export default function Home() {
         <div className="hero-badge">Built for Every Field Service Industry · Since Day One</div>
         <h1>One Platform.<br /><span>Every Industry.</span><br />Zero Compromises.</h1>
         <div className="hero-sub">
-          Snow removal, pool service, landscaping, irrigation, lawn care, pest control, mosquito control, fence, and mowing — IndustryBossPro runs them all from a single dashboard. The most powerful pending job board in field service.
+          Snow removal, pool service, landscaping, irrigation, lawn care, pest control, mosquito control, fence, mowing, and pet waste removal — IndustryBossPro runs them all from a single dashboard. The most powerful pending job board in field service.
         </div>
         <div className="hero-btns">
           <button onClick={openModal} className="btn-primary">Start Free — 14 Days, No Card</button>

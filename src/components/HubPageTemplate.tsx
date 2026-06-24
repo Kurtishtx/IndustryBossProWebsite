@@ -11,7 +11,7 @@ const S = {
   border: 'rgba(196,125,10,0.18)', text: '#f5ece0',
 };
 
-const INDUSTRIES = ['Snow & Ice Management','Pool Service','Landscaping','Irrigation','Lawn Care Chemicals','Pest Control','Mosquito Control','Fence','Mowing'];
+const INDUSTRIES = ['Snow & Ice Management','Pool Service','Landscaping','Irrigation','Lawn Care Chemicals','Pest Control','Mosquito Control','Fence','Mowing','Pet Waste Removal'];
 
 const HOW_STEPS = [
   { n: '1', title: 'Add Your Clients & Properties', body: 'Import or add your client list with property details, notes, and service history. Up and running in under an hour.' },

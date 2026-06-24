@@ -24,7 +24,7 @@ export const vsPages: VsPageData[] = [
     ourWins: [
       { title: '$199 flat vs Jobber\'s tiered pricing', desc: 'Jobber charges $49–$349/month based on features and user count. IndustryBossPro is $199/month — everything included, unlimited users.' },
       { title: 'Pending Job Board built for field service', desc: 'Our split-panel board (scheduled jobs vs waiting-list jobs) is purpose-built for operators running recurring routes with seasonal and on-demand work.' },
-      { title: 'Built for 9 specific industries', desc: 'IndustryBossPro is tailored for snow, pool, landscaping, irrigation, lawn chemicals, pest control, mosquito, fence, and mowing — with industry-specific workflows in each.' },
+      { title: 'Built for 10 specific industries', desc: 'IndustryBossPro is tailored for snow, pool, landscaping, irrigation, lawn chemicals, pest control, mosquito, fence, mowing, and pet waste removal — with industry-specific workflows in each.' },
       { title: 'Chemical & compliance tracking included', desc: 'EPA-compliant application logging is built in for lawn chemical, pest, and mosquito companies. Jobber doesn\'t offer this.' },
     ],
     theirWins: [
@@ -337,10 +337,10 @@ export const vsPages: VsPageData[] = [
     metaTitle: 'IndustryBossPro vs Kickserv | Field Service Software Comparison',
     metaDesc: 'Compare IndustryBossPro vs Kickserv for field service scheduling, invoicing, and team management.',
     h1: 'IndustryBossPro vs Kickserv: Comparing Field Service Platforms',
-    subtitle: 'Kickserv is a solid generalist platform. IndustryBossPro is purpose-built for 9 outdoor service industries.',
+    subtitle: 'Kickserv is a solid generalist platform. IndustryBossPro is purpose-built for 10 outdoor service industries.',
     competitorDesc: 'Kickserv is a field service management platform offering scheduling, CRM, invoicing, and mobile features for service businesses. It\'s a solid generalist option with accessible pricing.',
     ourWins: [
-      { title: 'Industry-specific workflows', desc: 'Kickserv is generalist software. IndustryBossPro is built specifically for snow, landscaping, pest, pool, mosquito, irrigation, fence, mowing, and lawn chemicals.' },
+      { title: 'Industry-specific workflows', desc: 'Kickserv is generalist software. IndustryBossPro is built specifically for snow, landscaping, pest, pool, mosquito, irrigation, fence, mowing, lawn chemicals, and pet waste removal.' },
       { title: 'Pending Job Board with waiting list', desc: 'Our waiting-list feature for managing seasonal demand is unique — Kickserv has a standard job board.' },
       { title: 'Chemical compliance logging', desc: 'Built-in EPA-compliant application records for licensed applicators. Kickserv doesn\'t offer this.' },
     ],
