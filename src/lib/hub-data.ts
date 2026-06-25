@@ -571,7 +571,7 @@ export const hubPages: HubPageData[] = [
     ],
     pendingBoard: 'New leads and submitted estimates waiting on decisions sit in the waiting list. Approved projects move to the scheduled panel with phase start dates and crew assignments.',
     blogSiloIndustry: 'irrigation-business',
-    blog1Slug: 'irrigation-business-software-guide',
+    blog1Slug: 'irrigation-business-software-complete-guide',
   },
   {
     slug: 'irrigation-scheduling-software',
@@ -601,7 +601,7 @@ export const hubPages: HubPageData[] = [
     ],
     pendingBoard: 'This IS the pending job board in action. Every service request that comes in lands on the waiting list. As crew slots open up, they get assigned dates and move to the scheduled panel. It\'s the system that makes seasonal volume manageable.',
     blogSiloIndustry: 'irrigation-scheduling',
-    blog1Slug: 'irrigation-scheduling-software-guide',
+    blog1Slug: 'irrigation-scheduling-software-complete-guide',
   },
 
   // â”€â”€â”€ LAWN CARE CHEMICALS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
@@ -817,7 +817,7 @@ export const hubPages: HubPageData[] = [
     ],
     pendingBoard: 'Follow-up treatments waiting on pest pressure assessment sit in the waiting list. Scheduled retreatments and new service contracts with confirmed dates are in the scheduled panel.',
     blogSiloIndustry: 'exterminator',
-    blog1Slug: 'exterminator-software-guide',
+    blog1Slug: 'exterminator-software-complete-guide',
   },
   {
     slug: 'pest-management-software',
@@ -877,7 +877,7 @@ export const hubPages: HubPageData[] = [
     ],
     pendingBoard: 'New service requests, call-ins, and initial inspections sit in the waiting list until assigned to a tech\'s route day. Confirmed visits with assigned dates and techs are in the scheduled panel.',
     blogSiloIndustry: 'pest-control-scheduling',
-    blog1Slug: 'pest-control-scheduling-software-guide',
+    blog1Slug: 'pest-control-scheduling-software-complete-guide',
   },
 
   // â”€â”€â”€ MOSQUITO CONTROL â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
