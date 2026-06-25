@@ -940,7 +940,7 @@ export const hubPages: HubPageData[] = [
     ],
     pendingBoard: 'The waiting list shows every property whose 21-day treatment window has opened. Schedulers build the next route day by assigning properties from the waiting list to available tech slots.',
     blogSiloIndustry: 'mosquito-spray',
-    blog1Slug: 'mosquito-spray-software-guide',
+    blog1Slug: 'complete-guide-to-mosquito-spray-software',
   },
   {
     slug: 'mosquito-treatment-software',
@@ -970,7 +970,7 @@ export const hubPages: HubPageData[] = [
     ],
     pendingBoard: 'The waiting list separates barrier spray properties and In2Care service visits by their respective service intervals. Both surfaces are managed from the same pending board with treatment type clearly labeled.',
     blogSiloIndustry: 'mosquito-treatment',
-    blog1Slug: 'mosquito-treatment-software-guide',
+    blog1Slug: 'complete-guide-to-mosquito-treatment-software',
   },
   {
     slug: 'mosquito-business-software',
@@ -1000,7 +1000,7 @@ export const hubPages: HubPageData[] = [
     ],
     pendingBoard: 'New program sign-ups and client requests go directly to the waiting list during peak season. As you grow your team and add capacity, you pull from the waiting list to fill schedules without ever overbooking.',
     blogSiloIndustry: 'mosquito-business',
-    blog1Slug: 'mosquito-business-software-guide',
+    blog1Slug: 'complete-guide-to-mosquito-business-software',
   },
 
   // â”€â”€â”€ FENCE â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
@@ -1156,7 +1156,7 @@ export const hubPages: HubPageData[] = [
     ],
     pendingBoard: 'New client requests and one-time jobs sit in the waiting list until you assign them to a crew and route day. Once scheduled, they appear in the confirmed panel and your crew sees them automatically.',
     blogSiloIndustry: 'mowing-business',
-    blog1Slug: 'mowing-business-software-guide',
+    blog1Slug: 'mowing-business-software-complete-guide',
   },
   {
     slug: 'grass-cutting-software',
@@ -1216,7 +1216,7 @@ export const hubPages: HubPageData[] = [
     ],
     pendingBoard: 'The waiting list is your fill-in bench. New clients, one-time requests, and cancelled-slot replacements all sit here. When a spot opens on a route day, pull the nearest waiting-list property and fill it in seconds.',
     blogSiloIndustry: 'lawn-mowing-scheduling',
-    blog1Slug: 'lawn-mowing-scheduling-software-guide',
+    blog1Slug: 'lawn-mowing-scheduling-software-complete-guide',
   },
 ];
 
