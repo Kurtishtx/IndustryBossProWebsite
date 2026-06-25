@@ -135,20 +135,6 @@ export default function BlogPostTemplate({ post, prevPost, industry }: Props) {
               Start Free Trial
             </button>
           </div>
-
-          {/* Hub page link */}
-          <div style={{ background: S.navy4, border: `1px solid ${S.border}`, borderRadius: 14, padding: '24px' }}>
-            <div style={{ fontSize: 12, fontWeight: 700, color: S.elec, letterSpacing: '1px', textTransform: 'uppercase', marginBottom: 10 }}>Related</div>
-            <p style={{ color: S.muted, fontSize: 13, marginBottom: 14, lineHeight: 1.6 }}>
-              Explore all the tools built for {industryLabel.toLowerCase()} businesses:
-            </p>
-            <a
-              href={`/${post.hubSlug}`}
-              style={{ display: 'block', background: 'rgba(196,125,10,0.08)', border: `1px solid ${S.border}`, borderRadius: 8, padding: '12px 16px', color: S.elec, fontSize: 14, fontWeight: 600, textDecoration: 'none' }}
-            >
-              {industryLabel} Software →
-            </a>
-          </div>
         </aside>
       </div>
 
