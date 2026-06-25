@@ -16,7 +16,7 @@ export default function VsPageTemplate({ page }: { page: VsPageData }) {
     <div style={{ background: S.navy1, minHeight: '100vh', color: S.text, fontFamily: "'Inter','Segoe UI',Arial,sans-serif" }}>
       <SiteHeader onOpenModal={() => setModal(true)} />
       <TrialModal open={modal} onClose={() => setModal(false)} />
-
+      <main>
       {/* HERO */}
       <section style={{ paddingTop: 120, paddingBottom: 72, background: S.navy1, textAlign: 'center' }}>
         <div style={{ maxWidth: 800, margin: '0 auto', padding: '0 24px' }}>
@@ -106,6 +106,7 @@ export default function VsPageTemplate({ page }: { page: VsPageData }) {
         </div>
       </section>
 
+      </main>
       <SiteFooter onOpenModal={() => setModal(true)} />
     </div>
   );

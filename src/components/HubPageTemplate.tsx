@@ -36,7 +36,7 @@ export default function HubPageTemplate({ page, stateName }: { page: HubPageData
     <div style={{ background: S.navy1, minHeight: '100vh', color: S.text, fontFamily: "'Inter','Segoe UI',Arial,sans-serif" }}>
       <SiteHeader onOpenModal={() => setModal(true)} />
       <TrialModal open={modal} onClose={() => setModal(false)} />
-
+      <main>
       {/* HERO */}
       <section style={{ paddingTop: 120, paddingBottom: 80, background: `linear-gradient(180deg, #1e1208 0%, #241508 100%)` }}>
         <div style={{ maxWidth: 900, margin: '0 auto', padding: '0 24px', textAlign: 'center' }}>
@@ -315,6 +315,7 @@ export default function HubPageTemplate({ page, stateName }: { page: HubPageData
         </section>
       )}
 
+      </main>
       <SiteFooter onOpenModal={() => setModal(true)} />
     </div>
   );

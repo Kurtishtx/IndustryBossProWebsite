@@ -31,7 +31,7 @@ export default function BlogPostTemplate({ post, prevPost, industry }: Props) {
     <div style={{ background: S.navy1, minHeight: '100vh', color: S.text, fontFamily: "'Inter','Segoe UI',Arial,sans-serif" }}>
       <SiteHeader onOpenModal={() => setModal(true)} />
       <TrialModal open={modal} onClose={() => setModal(false)} />
-
+      <main>
       {/* ── HERO ── */}
       <div style={{ background: `linear-gradient(160deg, #1e1208 0%, #241508 60%, #2a1a0a 100%)`, padding: '64px 24px 48px', borderBottom: `1px solid ${S.border}` }}>
         <div style={{ maxWidth: 800, margin: '0 auto' }}>
@@ -152,6 +152,7 @@ export default function BlogPostTemplate({ post, prevPost, industry }: Props) {
         </aside>
       </div>
 
+      </main>
       <SiteFooter onOpenModal={() => setModal(true)} />
     </div>
   );

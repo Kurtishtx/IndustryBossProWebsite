@@ -42,7 +42,8 @@ export default function Home() {
       });
       const result = await res.json();
       if (result.error) throw new Error(result.error);
-      const sb = (window as any).supabase.createClient(SUPABASE_URL, SUPABASE_ANON);
+      const { createClient } = await import('@supabase/supabase-js');
+      const sb = createClient(SUPABASE_URL, SUPABASE_ANON);
       const { data: signInData, error: signInErr } = await sb.auth.signInWithPassword({ email: form.email, password: form.password });
       if (signInErr) throw new Error(signInErr.message);
       const uid = signInData.user.id;
@@ -65,6 +66,7 @@ export default function Home() {
     <>
       <SiteHeader onOpenModal={openModal} />
 
+      <main>
       {/* HERO */}
       <div className="hero">
         <div className="hero-badge">Built for Every Field Service Industry · Since Day One</div>
@@ -111,7 +113,7 @@ export default function Home() {
           <div className="row-text">
             <span className="section-label">The Feature That Changes Everything</span>
             <h2 className="section-title">The Pending Job Board.<br />Your Business Brain.</h2>
-            <p style={{ color:'rgba(245,236,224,.6)', fontSize:16, lineHeight:1.8, marginBottom:8 }}>No other field service software has this. A two-tier job system that separates scheduled work with assigned dates from your chemical &amp; maintenance waiting list — so you always know exactly what&apos;s ready and what&apos;s waiting.</p>
+            <p style={{ color:'rgba(245,236,224,.72)', fontSize:16, lineHeight:1.8, marginBottom:8 }}>No other field service software has this. A two-tier job system that separates scheduled work with assigned dates from your chemical &amp; maintenance waiting list — so you always know exactly what&apos;s ready and what&apos;s waiting.</p>
             <ul className="check-list">
               <li>Scheduled board: jobs with assigned dates, tech, and crew</li>
               <li>Waiting list: chemical treatments grouped by service type with sq ft totals</li>
@@ -122,7 +124,7 @@ export default function Home() {
             </ul>
           </div>
           <div className="row-visual">
-            <div style={{ color:'rgba(245,236,224,.45)', fontSize:11, textTransform:'uppercase', letterSpacing:1, marginBottom:14 }}>Waiting List — By Service Type</div>
+            <div style={{ color:'rgba(245,236,224,.65)', fontSize:11, textTransform:'uppercase', letterSpacing:1, marginBottom:14 }}>Waiting List — By Service Type</div>
             {[
               { label:'Lawn Care 4', sub:'47 properties waiting', badge:'384,200 ft²', cls:'green' },
               { label:'Mosquito Barrier', sub:'31 properties waiting', badge:'246,500 ft²', cls:'' },
@@ -136,7 +138,7 @@ export default function Home() {
             ))}
             <div style={{ marginTop:14, background:'rgba(196,125,10,.06)', borderRadius:8, padding:'14px', textAlign:'center' }}>
               <div style={{ color:'#c47d0a', fontSize:15, fontWeight:700 }}>Know before you dial. Know before you mix.</div>
-              <div style={{ color:'rgba(245,236,224,.38)', fontSize:12, marginTop:4 }}>No other software shows you this.</div>
+              <div style={{ color:'rgba(245,236,224,.65)', fontSize:12, marginTop:4 }}>No other software shows you this.</div>
             </div>
           </div>
         </div>
@@ -200,7 +202,7 @@ export default function Home() {
           <div className="row-text">
             <span className="section-label">Scheduling Intelligence</span>
             <h2 className="section-title">Know Exactly What You Have Waiting Before You Book a Single Stop</h2>
-            <p style={{ color:'rgba(245,236,224,.6)', fontSize:16, lineHeight:1.8 }}>The waiting list is the feature that changes how you run your day. Instead of scheduling on gut feel, you see the exact sq ft waiting for every service type — so you know your chemical needs before you make a single call or mix a single gallon.</p>
+            <p style={{ color:'rgba(245,236,224,.72)', fontSize:16, lineHeight:1.8 }}>The waiting list is the feature that changes how you run your day. Instead of scheduling on gut feel, you see the exact sq ft waiting for every service type — so you know your chemical needs before you make a single call or mix a single gallon.</p>
             <ul className="check-list">
               <li>Waiting list grouped by service type with sq ft totals</li>
               <li>Schedule directly from the list or from the map</li>
@@ -211,7 +213,7 @@ export default function Home() {
             </ul>
           </div>
           <div className="row-visual">
-            <div style={{ color:'rgba(245,236,224,.45)', fontSize:11, textTransform:'uppercase', letterSpacing:1, marginBottom:14 }}>Scheduled Board — Today</div>
+            <div style={{ color:'rgba(245,236,224,.65)', fontSize:11, textTransform:'uppercase', letterSpacing:1, marginBottom:14 }}>Scheduled Board — Today</div>
             {[
               { label:'Snow Removal — Route A', sub:'Mike T. · 8 stops · 6am', badge:'Scheduled' },
               { label:'Lawn Mowing — Crew 2', sub:'4 stops · 8am start', badge:'Scheduled' },
@@ -326,7 +328,7 @@ export default function Home() {
         </div>
         <div className="price-card">
           <div className="price-badge">Everything Included — No Tiers</div>
-          <div style={{ fontSize:13, fontWeight:700, color:'rgba(245,236,224,.5)', textTransform:'uppercase', letterSpacing:1, marginBottom:10 }}>IndustryBossPro</div>
+          <div style={{ fontSize:13, fontWeight:700, color:'rgba(245,236,224,.70)', textTransform:'uppercase', letterSpacing:1, marginBottom:10 }}>IndustryBossPro</div>
           <div className="price-amount"><sup>$</sup>199</div>
           <div className="price-period">per month · cancel anytime · no contracts</div>
 
@@ -338,7 +340,7 @@ export default function Home() {
           <button onClick={openModal} className="btn-primary" style={{ width:'100%', fontSize:16, padding:16 }}>
             Start Your 14-Day Free Trial
           </button>
-          <p style={{ textAlign:'center', color:'rgba(245,236,224,.4)', fontSize:13, marginTop:14 }}>No credit card required. No contracts.</p>
+          <p style={{ textAlign:'center', color:'rgba(245,236,224,.65)', fontSize:13, marginTop:14 }}>No credit card required. No contracts.</p>
         </div>
       </section>
 
@@ -351,6 +353,8 @@ export default function Home() {
         </div>
       </div>
 
+      </main>
+
       {/* FOOTER */}
       <footer className="site-footer">
         <div className="footer-inner">
@@ -359,7 +363,7 @@ export default function Home() {
               <div style={{ display:'flex', alignItems:'center', gap:10, marginBottom:14 }}>
                 <span style={{ fontSize:17, fontWeight:800, color:'#f5ece0' }}>IndustryBoss<span style={{ color:'#c47d0a' }}>Pro</span></span>
               </div>
-              <p style={{ color:'rgba(245,236,224,.5)', fontSize:13, lineHeight:1.7 }}>The all-in-one field service platform built for businesses that run every trade. Snow, landscape, irrigation, lawn care, pest control — one dashboard, one price.</p>
+              <p style={{ color:'rgba(245,236,224,.70)', fontSize:13, lineHeight:1.7 }}>The all-in-one field service platform built for businesses that run every trade. Snow, landscape, irrigation, lawn care, pest control — one dashboard, one price.</p>
             </div>
             {[
               { title:'Product', links:[{label:'Features',href:'#'},{label:'Industries',href:'#'},{label:'Pricing',href:'#'},{label:'Login',href:'#'},{label:'Start Free Trial',href:'#'}] },
@@ -368,11 +372,11 @@ export default function Home() {
               { title:'Blog', links:[{label:'All Articles',href:'/blog'},{label:'Snow Removal',href:'/blog/snow-removal'},{label:'Landscaping',href:'/blog/landscaping'},{label:'Irrigation',href:'/blog/irrigation'},{label:'Lawn Care',href:'/blog/lawn-care'}] },
             ].map(col => (
               <div key={col.title}>
-                <h4 style={{ color:'#fff', fontSize:13, fontWeight:700, textTransform:'uppercase', letterSpacing:1, marginBottom:16 }}>{col.title}</h4>
+                <h3 style={{ color:'#fff', fontSize:13, fontWeight:700, textTransform:'uppercase', letterSpacing:1, marginBottom:16 }}>{col.title}</h3>
                 <ul style={{ listStyle:'none' }}>
                   {col.links.map(link => (
                     <li key={link.label} style={{ marginBottom:10 }}>
-                      <a href={link.href} style={{ color:'rgba(245,236,224,.5)', fontSize:14, textDecoration:'none' }}>{link.label}</a>
+                      <a href={link.href} style={{ color:'rgba(245,236,224,.70)', fontSize:14, textDecoration:'none' }}>{link.label}</a>
                     </li>
                   ))}
                 </ul>
@@ -380,7 +384,7 @@ export default function Home() {
             ))}
           </div>
           <div style={{ borderTop:'1px solid rgba(196,125,10,.08)', paddingTop:24, display:'flex', justifyContent:'space-between', flexWrap:'wrap', gap:12 }}>
-            <p style={{ color:'rgba(245,236,224,.3)', fontSize:13 }}>© {new Date().getFullYear()} IndustryBossPro. All rights reserved.</p>
+            <p style={{ color:'rgba(245,236,224,.70)', fontSize:13 }}>© {new Date().getFullYear()} IndustryBossPro. All rights reserved.</p>
           </div>
         </div>
       </footer>
@@ -393,7 +397,7 @@ export default function Home() {
         <div style={{ position:'fixed', top:'50%', left:'50%', transform:'translate(-50%,-50%)', zIndex:99999, width:440, maxWidth:'calc(100vw - 24px)', background:'#241508', borderRadius:14, border:'3px solid #c47d0a', boxShadow:'0 0 0 4px rgba(196,125,10,.2), 0 16px 60px rgba(0,0,0,.6)', maxHeight:'calc(100vh - 40px)', overflowY:'auto' }}>
           <div style={{ background:'linear-gradient(135deg,#1e1208,#241508)', padding:'28px 28px 22px', position:'relative', borderBottom:'1px solid rgba(196,125,10,.15)' }}>
             <div style={{ color:'#fff', fontSize:20, fontWeight:800, paddingRight:36 }}>Start Your 14-Day Free Trial</div>
-            <div style={{ color:'rgba(245,236,224,.6)', fontSize:13, marginTop:5 }}>No credit card required. Full access. Cancel anytime.</div>
+            <div style={{ color:'rgba(245,236,224,.72)', fontSize:13, marginTop:5 }}>No credit card required. Full access. Cancel anytime.</div>
             <button onClick={closeModal} style={{ position:'absolute', top:16, right:16, background:'rgba(255,255,255,.1)', border:'none', color:'#fff', width:32, height:32, borderRadius:'50%', cursor:'pointer', fontSize:20, display:'flex', alignItems:'center', justifyContent:'center' }}>×</button>
           </div>
 
@@ -403,17 +407,17 @@ export default function Home() {
               <div style={{ display:'flex', gap:12, marginBottom:14 }}>
                 {(['first','last'] as const).map((k,i) => (
                   <div key={k} style={{ flex:1 }}>
-                    <label style={{ fontSize:11, fontWeight:700, color:'rgba(245,236,224,.5)', textTransform:'uppercase', letterSpacing:'.5px', display:'block', marginBottom:5 }}>{i===0?'First Name':'Last Name'}</label>
+                    <label style={{ fontSize:11, fontWeight:700, color:'rgba(245,236,224,.70)', textTransform:'uppercase', letterSpacing:'.5px', display:'block', marginBottom:5 }}>{i===0?'First Name':'Last Name'}</label>
                     <input type="text" value={form[k]} onChange={f(k)} placeholder={i===0?'John':'Smith'} style={{ width:'100%', background:'#2a1a0a', border:'1px solid rgba(196,125,10,.2)', borderRadius:6, padding:'10px 12px', fontSize:14, color:'#f5ece0', fontFamily:'inherit' }} />
                   </div>
                 ))}
               </div>
               <div style={{ marginBottom:14 }}>
-                <label style={{ fontSize:11, fontWeight:700, color:'rgba(245,236,224,.5)', textTransform:'uppercase', letterSpacing:'.5px', display:'block', marginBottom:5 }}>Company Name</label>
+                <label style={{ fontSize:11, fontWeight:700, color:'rgba(245,236,224,.70)', textTransform:'uppercase', letterSpacing:'.5px', display:'block', marginBottom:5 }}>Company Name</label>
                 <input type="text" value={form.company} onChange={f('company')} placeholder="Smith Landscaping Co." style={{ width:'100%', background:'#2a1a0a', border:'1px solid rgba(196,125,10,.2)', borderRadius:6, padding:'10px 12px', fontSize:14, color:'#f5ece0', fontFamily:'inherit' }} />
               </div>
               <div style={{ marginBottom:22 }}>
-                <label style={{ fontSize:11, fontWeight:700, color:'rgba(245,236,224,.5)', textTransform:'uppercase', letterSpacing:'.5px', display:'block', marginBottom:5 }}>Email Address</label>
+                <label style={{ fontSize:11, fontWeight:700, color:'rgba(245,236,224,.70)', textTransform:'uppercase', letterSpacing:'.5px', display:'block', marginBottom:5 }}>Email Address</label>
                 <input type="email" value={form.email} onChange={f('email')} placeholder="you@yourcompany.com" style={{ width:'100%', background:'#2a1a0a', border:'1px solid rgba(196,125,10,.2)', borderRadius:6, padding:'10px 12px', fontSize:14, color:'#f5ece0', fontFamily:'inherit' }} />
               </div>
               <button onClick={nextStep} className="btn-primary" style={{ width:'100%', fontSize:15, padding:13 }}>Next: Create Password →</button>
@@ -425,28 +429,28 @@ export default function Home() {
               {err && <div style={{ background:'rgba(239,68,68,.1)', border:'1px solid rgba(239,68,68,.3)', color:'#fca5a5', borderRadius:6, padding:'10px 12px', fontSize:13, marginBottom:14 }}>{err}</div>}
               <div style={{ background:'rgba(74,222,128,.08)', border:'1px solid rgba(74,222,128,.25)', borderRadius:6, padding:'10px 14px', marginBottom:16 }}>
                 <div style={{ fontSize:12, color:'#4ade80', fontWeight:700 }}>14-Day Free Trial — No Credit Card Required</div>
-                <div style={{ fontSize:12, color:'rgba(245,236,224,.5)', marginTop:2 }}>Full access to every feature. $199/month after trial.</div>
+                <div style={{ fontSize:12, color:'rgba(245,236,224,.70)', marginTop:2 }}>Full access to every feature. $199/month after trial.</div>
               </div>
               <div style={{ marginBottom:14 }}>
-                <label style={{ fontSize:11, fontWeight:700, color:'rgba(245,236,224,.5)', textTransform:'uppercase', letterSpacing:'.5px', display:'block', marginBottom:5 }}>Login Email</label>
-                <input type="email" value={form.email} readOnly style={{ width:'100%', background:'rgba(255,255,255,.05)', border:'1px solid rgba(196,125,10,.15)', borderRadius:6, padding:'10px 12px', fontSize:14, color:'rgba(245,236,224,.5)', fontFamily:'inherit' }} />
+                <label style={{ fontSize:11, fontWeight:700, color:'rgba(245,236,224,.70)', textTransform:'uppercase', letterSpacing:'.5px', display:'block', marginBottom:5 }}>Login Email</label>
+                <input type="email" value={form.email} readOnly style={{ width:'100%', background:'rgba(255,255,255,.05)', border:'1px solid rgba(196,125,10,.15)', borderRadius:6, padding:'10px 12px', fontSize:14, color:'rgba(245,236,224,.70)', fontFamily:'inherit' }} />
               </div>
               {(['password','confirm'] as const).map((k,i) => (
                 <div key={k} style={{ marginBottom:14 }}>
-                  <label style={{ fontSize:11, fontWeight:700, color:'rgba(245,236,224,.5)', textTransform:'uppercase', letterSpacing:'.5px', display:'block', marginBottom:5 }}>{i===0?'Password':'Confirm Password'}</label>
+                  <label style={{ fontSize:11, fontWeight:700, color:'rgba(245,236,224,.70)', textTransform:'uppercase', letterSpacing:'.5px', display:'block', marginBottom:5 }}>{i===0?'Password':'Confirm Password'}</label>
                   <input type="password" value={form[k]} onChange={f(k)} placeholder={i===0?'At least 8 characters':'Repeat password'} style={{ width:'100%', background:'#2a1a0a', border:'1px solid rgba(196,125,10,.2)', borderRadius:6, padding:'10px 12px', fontSize:14, color:'#f5ece0', fontFamily:'inherit' }} />
                 </div>
               ))}
               <div style={{ marginBottom:20, display:'flex', alignItems:'flex-start', gap:10 }}>
                 <input type="checkbox" id="ibp-agree" checked={form.agree} onChange={f('agree')} style={{ width:16, height:16, accentColor:'#c47d0a', cursor:'pointer', flexShrink:0, marginTop:3 }} />
-                <label htmlFor="ibp-agree" style={{ fontSize:13, color:'rgba(245,236,224,.55)', cursor:'pointer', lineHeight:1.5 }}>
+                <label htmlFor="ibp-agree" style={{ fontSize:13, color:'rgba(245,236,224,.70)', cursor:'pointer', lineHeight:1.5 }}>
                   I agree to the <a href="/terms" style={{ color:'#c47d0a' }}>Terms of Service</a> and <a href="/privacy" style={{ color:'#c47d0a' }}>Privacy Policy</a>
                 </label>
               </div>
               <button onClick={createAccount} disabled={loading} className="btn-primary" style={{ width:'100%', fontSize:15, padding:13, opacity: loading ? 0.7 : 1 }}>
                 {loading ? 'Creating your account…' : 'Create My Account'}
               </button>
-              <button onClick={() => { setStep('info'); setErr(''); }} style={{ width:'100%', background:'none', border:'none', color:'rgba(245,236,224,.5)', fontSize:13, cursor:'pointer', marginTop:10, padding:6, fontFamily:'inherit', textDecoration:'underline' }}>← Back</button>
+              <button onClick={() => { setStep('info'); setErr(''); }} style={{ width:'100%', background:'none', border:'none', color:'rgba(245,236,224,.70)', fontSize:13, cursor:'pointer', marginTop:10, padding:6, fontFamily:'inherit', textDecoration:'underline' }}>← Back</button>
             </div>
           )}
 
@@ -454,8 +458,8 @@ export default function Home() {
             <div style={{ padding:'52px 28px', textAlign:'center' }}>
               <div style={{ width:70, height:70, background:'#16a34a', borderRadius:'50%', display:'inline-flex', alignItems:'center', justifyContent:'center', fontSize:32, color:'#fff', marginBottom:18 }}>✓</div>
               <div style={{ fontSize:24, fontWeight:800, color:'#fff', marginBottom:12 }}>You&apos;re In!</div>
-              <div style={{ fontSize:15, color:'rgba(245,236,224,.6)', lineHeight:1.7 }}>Your 14-day free trial has started.<br />Taking you to your dashboard…</div>
-              <div style={{ fontSize:12, color:'rgba(245,236,224,.3)', marginTop:10 }}>Redirecting in {countdown} second{countdown !== 1 ? 's' : ''}…</div>
+              <div style={{ fontSize:15, color:'rgba(245,236,224,.72)', lineHeight:1.7 }}>Your 14-day free trial has started.<br />Taking you to your dashboard…</div>
+              <div style={{ fontSize:12, color:'rgba(245,236,224,.70)', marginTop:10 }}>Redirecting in {countdown} second{countdown !== 1 ? 's' : ''}…</div>
             </div>
           )}
         </div>
