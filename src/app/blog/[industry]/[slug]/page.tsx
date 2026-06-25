@@ -82,7 +82,8 @@ export default async function BlogPostPage(
   const postIndex = posts.findIndex(p => p.slug === slug);
   const post = posts[postIndex];
   if (!post) notFound();
-  const prevPost = postIndex > 0 ? posts[postIndex - 1] : undefined;
-  const nextPost = postIndex < posts.length - 1 ? posts[postIndex + 1] : undefined;
+  // Wrap-around silo chain: blog N links to blog N-1, and blog 1 links to the last blog.
+  const prevPost = posts.length > 1 ? posts[(postIndex - 1 + posts.length) % posts.length] : undefined;
+  const nextPost = posts.length > 1 ? posts[(postIndex + 1) % posts.length] : undefined;
   return <BlogPostTemplate post={post} industry={industry} prevPost={prevPost} nextPost={nextPost} />;
 }
