@@ -6,6 +6,12 @@ import { snowPosts } from '../lib/blog-snow-data';
 import { snowPlowingPosts, iceManagementPosts, snowSchedulingPosts } from '../lib/blog-snow-sub-data';
 import { poolServicePosts, poolCleaningPosts, poolMaintenancePosts, poolRoutePosts } from '../lib/blog-pool-data';
 import { landscapingPosts, landscapeBusinessPosts, landscapeSchedulingPosts, lawnLandscapePosts, landscapeMaintenancePosts } from '../lib/blog-landscaping-data';
+import { lawnCarePosts, lawnChemicalPosts, fertilizerPosts, weedControlPosts, lawnTreatmentPosts } from '../lib/blog-lawn-care-data';
+import { irrigationPosts, sprinklerSystemPosts, irrigationBusinessPosts, irrigationSchedulingPosts } from '../lib/blog-irrigation-data';
+import { pestControlPosts, exterminatorPosts, pestManagementPosts, pestSchedulingPosts } from '../lib/blog-pest-data';
+import { mosquitoControlPosts, mosquitoSprayPosts, mosquitoTreatmentPosts, mosquitoBusinessPosts } from '../lib/blog-mosquito-data';
+import { fenceCompanyPosts, fenceInstallationPosts, fenceBusinessPosts } from '../lib/blog-fence-data';
+import { lawnMowingPosts, mowingBusinessPosts, grassCuttingPosts, lawnMowingSchedulingPosts } from '../lib/blog-mowing-data';
 
 const BASE = 'https://industrybosspro.com';
 
@@ -23,6 +29,30 @@ const SILOS: { industry: string; posts: { slug: string; date: string }[] }[] = [
   { industry: 'landscape-scheduling', posts: landscapeSchedulingPosts },
   { industry: 'lawn-landscape', posts: lawnLandscapePosts },
   { industry: 'landscape-maintenance', posts: landscapeMaintenancePosts },
+  { industry: 'lawn-care', posts: lawnCarePosts },
+  { industry: 'lawn-chemical-application', posts: lawnChemicalPosts },
+  { industry: 'fertilizer', posts: fertilizerPosts },
+  { industry: 'weed-control', posts: weedControlPosts },
+  { industry: 'lawn-treatment', posts: lawnTreatmentPosts },
+  { industry: 'irrigation', posts: irrigationPosts },
+  { industry: 'sprinkler-system', posts: sprinklerSystemPosts },
+  { industry: 'irrigation-business', posts: irrigationBusinessPosts },
+  { industry: 'irrigation-scheduling', posts: irrigationSchedulingPosts },
+  { industry: 'pest-control', posts: pestControlPosts },
+  { industry: 'exterminator', posts: exterminatorPosts },
+  { industry: 'pest-management', posts: pestManagementPosts },
+  { industry: 'pest-control-scheduling', posts: pestSchedulingPosts },
+  { industry: 'mosquito-control', posts: mosquitoControlPosts },
+  { industry: 'mosquito-spray', posts: mosquitoSprayPosts },
+  { industry: 'mosquito-treatment', posts: mosquitoTreatmentPosts },
+  { industry: 'mosquito-business', posts: mosquitoBusinessPosts },
+  { industry: 'fence-company', posts: fenceCompanyPosts },
+  { industry: 'fence-installation', posts: fenceInstallationPosts },
+  { industry: 'fence-business', posts: fenceBusinessPosts },
+  { industry: 'lawn-mowing', posts: lawnMowingPosts },
+  { industry: 'mowing-business', posts: mowingBusinessPosts },
+  { industry: 'grass-cutting', posts: grassCuttingPosts },
+  { industry: 'lawn-mowing-scheduling', posts: lawnMowingSchedulingPosts },
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
