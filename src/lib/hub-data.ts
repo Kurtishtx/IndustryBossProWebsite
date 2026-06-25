@@ -909,7 +909,7 @@ export const hubPages: HubPageData[] = [
     ],
     pendingBoard: 'After each mosquito treatment, properties automatically return to the waiting list when their 21-day interval is reached. Techs and schedulers build each route day by assigning properties from the waiting list to available slots.',
     blogSiloIndustry: 'mosquito-control',
-    blog1Slug: 'mosquito-control-software-complete-guide',
+    blog1Slug: 'complete-guide-to-mosquito-control-software',
     states: MOSQUITO_STATES,
   },
   {
@@ -1186,7 +1186,7 @@ export const hubPages: HubPageData[] = [
     ],
     pendingBoard: 'One-time cut requests and overflow clients sit in the waiting list. As route capacity opens (due to cancellations or added crew days), pull from the waiting list to fill the day and maximize revenue.',
     blogSiloIndustry: 'grass-cutting',
-    blog1Slug: 'grass-cutting-software-guide',
+    blog1Slug: 'grass-cutting-software-complete-guide',
   },
   {
     slug: 'lawn-mowing-scheduling-software',
