@@ -541,7 +541,7 @@ export const hubPages: HubPageData[] = [
     ],
     pendingBoard: 'Repair requests and new installation leads sit in the waiting list until a date is assigned. Confirmed jobs appear in the scheduled panel with tech assignment and all system details attached.',
     blogSiloIndustry: 'sprinkler-system',
-    blog1Slug: 'sprinkler-system-software-guide',
+    blog1Slug: 'sprinkler-system-software-complete-guide',
   },
   {
     slug: 'irrigation-business-software',
@@ -847,7 +847,7 @@ export const hubPages: HubPageData[] = [
     ],
     pendingBoard: 'Commercial accounts with multiple service locations each maintain their own scheduled and waiting panels. The waiting list shows sites due for service, emergency call-ins, and follow-up inspections awaiting scheduling.',
     blogSiloIndustry: 'pest-management',
-    blog1Slug: 'pest-management-software-guide',
+    blog1Slug: 'pest-management-software-complete-guide',
   },
   {
     slug: 'pest-control-scheduling-software',
