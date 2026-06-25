@@ -20,7 +20,7 @@
 html, body { overflow-x: hidden; max-width: 100%; }
 html { scroll-behavior: smooth; }
 body {
-  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  font-family: var(--font-inter), 'Segoe UI', Arial, sans-serif;
   background: var(--navy-1);
   color: var(--text);
   line-height: 1.6;
