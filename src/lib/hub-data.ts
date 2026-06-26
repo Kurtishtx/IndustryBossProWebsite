@@ -234,7 +234,7 @@ export const hubPages: HubPageData[] = [
     ],
     pendingBoard: 'The scheduled panel shows all pool stops with assigned service dates on your recurring route. The waiting list holds one-time service calls, equipment repairs, and green pool treatments waiting for a scheduled date.',
     blogSiloIndustry: 'pool-service',
-    blog1Slug: 'starting-pool-service-business-guide',
+    blog1Slug: 'pool-service-software-complete-guide',
     states: POOL_STATES,
   },
   {
