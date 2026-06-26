@@ -64,6 +64,7 @@ export default function SiteHeader({ onOpenModal }: { onOpenModal: () => void })
           </div>
 
           <div className="navbar-links">
+            <Link href="/">Home</Link>
             <div className="nav-dropdown">
               <span className="nav-dropdown-trigger">Industries ▾</span>
               <div className="nav-dropdown-menu">
@@ -86,6 +87,7 @@ export default function SiteHeader({ onOpenModal }: { onOpenModal: () => void })
             </div>
             <Link href="/features">Features</Link>
             <Link href="/pricing">Pricing</Link>
+            <Link href="/blog">Blog</Link>
             <a href="https://my.industrybosspro.com" target="_blank" rel="noreferrer">Log In</a>
             <button className="navbar-cta" onClick={onOpenModal}>
               Start Free Trial
@@ -102,6 +104,7 @@ export default function SiteHeader({ onOpenModal }: { onOpenModal: () => void })
 
       {open && (
         <div className="nav-mobile-menu">
+          <Link href="/" className="nav-mobile-link" onClick={() => toggleMenu(false)}>Home</Link>
           <div className="nav-mobile-section">
             <div className="nav-mobile-group-trigger" onClick={() => setIndustriesOpen(!industriesOpen)}>
               Industries {industriesOpen ? '▴' : '▾'}
@@ -120,6 +123,7 @@ export default function SiteHeader({ onOpenModal }: { onOpenModal: () => void })
           </div>
           <Link href="/features" className="nav-mobile-link" onClick={() => toggleMenu(false)}>Features</Link>
           <Link href="/pricing" className="nav-mobile-link" onClick={() => toggleMenu(false)}>Pricing</Link>
+          <Link href="/blog" className="nav-mobile-link" onClick={() => toggleMenu(false)}>Blog</Link>
           <a href="https://my.industrybosspro.com" target="_blank" rel="noreferrer" className="nav-mobile-link" onClick={() => toggleMenu(false)}>Log In</a>
           <button className="nav-mobile-cta" onClick={() => { toggleMenu(false); onOpenModal(); }}>
             Start Free Trial
