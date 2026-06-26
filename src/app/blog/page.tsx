@@ -1,5 +1,7 @@
 import type { Metadata } from 'next';
 import { poolServicePosts } from '../../lib/blog-pool-data';
+import { fertilizerPosts } from '../../lib/blog-lawn-care-data';
+import { snowPlowingPosts } from '../../lib/blog-snow-sub-data';
 import { lawnChemicalPosts } from '../../lib/blog-lawn-care-data';
 import { lawnTreatmentPosts } from '../../lib/blog-lawn-care-data';
 import { snowPosts } from '../../lib/blog-snow-data';
@@ -23,6 +25,8 @@ const S = {
 
 const silos = [
   { industry: 'pool-service', label: 'Pool Service', posts: poolServicePosts, hubSlug: 'pool-service-software' },
+  { industry: 'fertilizer', label: 'Fertilizer Programs', posts: fertilizerPosts, hubSlug: 'fertilizer-software' },
+  { industry: 'snow-plowing', label: 'Snow Plowing', posts: snowPlowingPosts, hubSlug: 'snow-plowing-software' },
   { industry: 'lawn-chemical-application', label: 'Lawn Chemical Application', posts: lawnChemicalPosts, hubSlug: 'lawn-chemical-application-software' },
   { industry: 'lawn-treatment', label: 'Lawn Treatment', posts: lawnTreatmentPosts, hubSlug: 'lawn-treatment-software' },
   { industry: 'snow-removal', label: 'Snow Removal', posts: snowPosts, hubSlug: 'snow-removal-software' },
