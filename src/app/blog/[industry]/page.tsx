@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 import { poolServicePosts } from '../../../lib/blog-pool-data';
+import { lawnChemicalPosts } from '../../../lib/blog-lawn-care-data';
 import { lawnTreatmentPosts } from '../../../lib/blog-lawn-care-data';
 import { snowPosts } from '../../../lib/blog-snow-data';
 import { lawnCarePosts } from '../../../lib/blog-lawn-care-data';
@@ -12,6 +13,7 @@ import { lawnMowingPosts, mowingBusinessPosts, grassCuttingPosts, lawnMowingSche
 
 const SILO_DATA: Record<string, typeof poolServicePosts> = {
   'pool-service': poolServicePosts,
+  'lawn-chemical-application': lawnChemicalPosts,
   'lawn-treatment': lawnTreatmentPosts,
   'snow-removal': snowPosts,
   'lawn-care': lawnCarePosts,
@@ -38,6 +40,7 @@ const SILO_DATA: Record<string, typeof poolServicePosts> = {
 
 const SILO_META: Record<string, { title: string; description: string; hubSlug: string }> = {
   'pool-service': { title: 'Pool Service Business Tips & Guides', description: 'Guides for pool service operators covering route management, billing, retention, and software.', hubSlug: 'pool-service-software' },
+  'lawn-chemical-application': { title: 'Lawn Chemical Application Software Tips & Guides', description: 'Guides for licensed applicators on records, compliance, scheduling, billing, and software.', hubSlug: 'lawn-chemical-application-software' },
   'lawn-treatment': { title: 'Lawn Treatment Software Tips & Guides', description: 'Guides for lawn treatment companies on program scheduling, billing, renewals, and software.', hubSlug: 'lawn-treatment-software' },
   'snow-removal': { title: 'Snow Removal Software Tips & Guides', description: 'Guides for snow removal businesses on dispatch, routing, billing, salt tracking, and software.', hubSlug: 'snow-removal-software' },
   'lawn-care': { title: 'Lawn Care Business Tips & Guides', description: 'Guides for lawn care business owners on routes, chemical programs, billing, and software.', hubSlug: 'lawn-care-software' },

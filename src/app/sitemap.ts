@@ -3,6 +3,7 @@ import { hubPages } from '../lib/hub-data';
 import { vsPages } from '../lib/vs-data';
 import { featurePages } from '../lib/feature-data';
 import { poolServicePosts } from '../lib/blog-pool-data';
+import { lawnChemicalPosts } from '../lib/blog-lawn-care-data';
 import { lawnTreatmentPosts } from '../lib/blog-lawn-care-data';
 import { snowPosts } from '../lib/blog-snow-data';
 import { lawnCarePosts } from '../lib/blog-lawn-care-data';
@@ -16,6 +17,7 @@ const BASE = 'https://industrybosspro.com';
 
 const SILOS: { industry: string; posts: { slug: string; date: string }[] }[] = [
   { industry: 'pool-service', posts: poolServicePosts },
+  { industry: 'lawn-chemical-application', posts: lawnChemicalPosts },
   { industry: 'lawn-treatment', posts: lawnTreatmentPosts },
   { industry: 'snow-removal', posts: snowPosts },
   { industry: 'lawn-care', posts: lawnCarePosts },
