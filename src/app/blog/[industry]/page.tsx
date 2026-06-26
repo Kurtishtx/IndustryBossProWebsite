@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 import { poolServicePosts } from '../../../lib/blog-pool-data';
+import { snowPosts } from '../../../lib/blog-snow-data';
 import { lawnCarePosts } from '../../../lib/blog-lawn-care-data';
 import { irrigationPosts, sprinklerSystemPosts, irrigationBusinessPosts, irrigationSchedulingPosts } from '../../../lib/blog-irrigation-data';
 import { pestControlPosts, exterminatorPosts, pestManagementPosts, pestSchedulingPosts } from '../../../lib/blog-pest-data';
@@ -10,6 +11,7 @@ import { lawnMowingPosts, mowingBusinessPosts, grassCuttingPosts, lawnMowingSche
 
 const SILO_DATA: Record<string, typeof poolServicePosts> = {
   'pool-service': poolServicePosts,
+  'snow-removal': snowPosts,
   'lawn-care': lawnCarePosts,
   'irrigation': irrigationPosts,
   'sprinkler-system': sprinklerSystemPosts,
@@ -34,6 +36,7 @@ const SILO_DATA: Record<string, typeof poolServicePosts> = {
 
 const SILO_META: Record<string, { title: string; description: string; hubSlug: string }> = {
   'pool-service': { title: 'Pool Service Business Tips & Guides', description: 'Guides for pool service operators covering route management, billing, retention, and software.', hubSlug: 'pool-service-software' },
+  'snow-removal': { title: 'Snow Removal Software Tips & Guides', description: 'Guides for snow removal businesses on dispatch, routing, billing, salt tracking, and software.', hubSlug: 'snow-removal-software' },
   'lawn-care': { title: 'Lawn Care Business Tips & Guides', description: 'Guides for lawn care business owners on routes, chemical programs, billing, and software.', hubSlug: 'lawn-care-software' },
   'irrigation': { title: 'Irrigation Business Tips & Guides', description: 'Guides for irrigation contractors on scheduling, winterization, backflow, and software.', hubSlug: 'irrigation-software' },
   'sprinkler-system': { title: 'Sprinkler System Business Tips & Guides', description: 'Guides for sprinkler system installers and service companies on operations and software.', hubSlug: 'sprinkler-system-software' },

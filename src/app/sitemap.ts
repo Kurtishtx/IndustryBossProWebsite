@@ -3,6 +3,7 @@ import { hubPages } from '../lib/hub-data';
 import { vsPages } from '../lib/vs-data';
 import { featurePages } from '../lib/feature-data';
 import { poolServicePosts } from '../lib/blog-pool-data';
+import { snowPosts } from '../lib/blog-snow-data';
 import { lawnCarePosts } from '../lib/blog-lawn-care-data';
 import { irrigationPosts, sprinklerSystemPosts, irrigationBusinessPosts, irrigationSchedulingPosts } from '../lib/blog-irrigation-data';
 import { pestControlPosts, exterminatorPosts, pestManagementPosts, pestSchedulingPosts } from '../lib/blog-pest-data';
@@ -14,6 +15,7 @@ const BASE = 'https://industrybosspro.com';
 
 const SILOS: { industry: string; posts: { slug: string; date: string }[] }[] = [
   { industry: 'pool-service', posts: poolServicePosts },
+  { industry: 'snow-removal', posts: snowPosts },
   { industry: 'lawn-care', posts: lawnCarePosts },
   { industry: 'irrigation', posts: irrigationPosts },
   { industry: 'sprinkler-system', posts: sprinklerSystemPosts },
