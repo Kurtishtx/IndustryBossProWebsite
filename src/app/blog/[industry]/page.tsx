@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 import { poolServicePosts } from '../../../lib/blog-pool-data';
+import { landscapeBusinessPosts } from '../../../lib/blog-landscaping-data';
 import { landscapingPosts } from '../../../lib/blog-landscaping-data';
 import { landscapeSchedulingPosts } from '../../../lib/blog-landscaping-data';
 import { iceManagementPosts } from '../../../lib/blog-snow-sub-data';
@@ -22,6 +23,7 @@ import { lawnMowingPosts, mowingBusinessPosts, grassCuttingPosts, lawnMowingSche
 
 const SILO_DATA: Record<string, typeof poolServicePosts> = {
   'pool-service': poolServicePosts,
+  'landscape-business': landscapeBusinessPosts,
   'landscaping': landscapingPosts,
   'landscape-scheduling': landscapeSchedulingPosts,
   'ice-management': iceManagementPosts,
@@ -58,6 +60,7 @@ const SILO_DATA: Record<string, typeof poolServicePosts> = {
 
 const SILO_META: Record<string, { title: string; description: string; hubSlug: string }> = {
   'pool-service': { title: 'Pool Service Business Tips & Guides', description: 'Guides for pool service operators covering route management, billing, retention, and software.', hubSlug: 'pool-service-software' },
+  'landscape-business': { title: 'Landscape Business Software Tips & Guides', description: 'Guides for landscape business owners on CRM, estimating, job costing, financials, and software.', hubSlug: 'landscape-business-software' },
   'landscaping': { title: 'Landscaping Software Tips & Guides', description: 'Guides for landscaping businesses on estimating, scheduling, crews, job costing, billing, and software.', hubSlug: 'landscaping-software' },
   'landscape-scheduling': { title: 'Landscape Scheduling Software Tips & Guides', description: 'Guides for landscape companies on crew scheduling, recurring visits, dispatch, and software.', hubSlug: 'landscape-scheduling-software' },
   'ice-management': { title: 'Ice Management Software Tips & Guides', description: 'Guides for ice management companies on deicing logs, anti-icing scheduling, liability records, and software.', hubSlug: 'ice-management-software' },
