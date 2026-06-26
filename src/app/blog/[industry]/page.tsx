@@ -1,35 +1,16 @@
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
-import { snowPosts } from '../../../lib/blog-snow-data';
-import { snowPlowingPosts, iceManagementPosts, snowSchedulingPosts } from '../../../lib/blog-snow-sub-data';
-import { poolServicePosts, poolCleaningPosts, poolMaintenancePosts, poolRoutePosts } from '../../../lib/blog-pool-data';
-import { landscapingPosts, landscapeBusinessPosts, landscapeSchedulingPosts, lawnLandscapePosts, landscapeMaintenancePosts } from '../../../lib/blog-landscaping-data';
-import { lawnCarePosts, lawnChemicalPosts, fertilizerPosts, weedControlPosts, lawnTreatmentPosts } from '../../../lib/blog-lawn-care-data';
+import { poolServicePosts } from '../../../lib/blog-pool-data';
+import { lawnCarePosts } from '../../../lib/blog-lawn-care-data';
 import { irrigationPosts, sprinklerSystemPosts, irrigationBusinessPosts, irrigationSchedulingPosts } from '../../../lib/blog-irrigation-data';
 import { pestControlPosts, exterminatorPosts, pestManagementPosts, pestSchedulingPosts } from '../../../lib/blog-pest-data';
 import { mosquitoControlPosts, mosquitoSprayPosts, mosquitoTreatmentPosts, mosquitoBusinessPosts } from '../../../lib/blog-mosquito-data';
 import { fenceCompanyPosts, fenceInstallationPosts, fenceBusinessPosts } from '../../../lib/blog-fence-data';
 import { lawnMowingPosts, mowingBusinessPosts, grassCuttingPosts, lawnMowingSchedulingPosts } from '../../../lib/blog-mowing-data';
 
-const SILO_DATA: Record<string, typeof snowPosts> = {
-  'snow-removal': snowPosts,
-  'snow-plowing': snowPlowingPosts,
-  'ice-management': iceManagementPosts,
-  'snow-removal-scheduling': snowSchedulingPosts,
+const SILO_DATA: Record<string, typeof poolServicePosts> = {
   'pool-service': poolServicePosts,
-  'pool-cleaning': poolCleaningPosts,
-  'pool-maintenance': poolMaintenancePosts,
-  'pool-route': poolRoutePosts,
-  'landscaping': landscapingPosts,
-  'landscape-business': landscapeBusinessPosts,
-  'landscape-scheduling': landscapeSchedulingPosts,
-  'lawn-landscape': lawnLandscapePosts,
-  'landscape-maintenance': landscapeMaintenancePosts,
   'lawn-care': lawnCarePosts,
-  'lawn-chemical-application': lawnChemicalPosts,
-  'fertilizer': fertilizerPosts,
-  'weed-control': weedControlPosts,
-  'lawn-treatment': lawnTreatmentPosts,
   'irrigation': irrigationPosts,
   'sprinkler-system': sprinklerSystemPosts,
   'irrigation-business': irrigationBusinessPosts,
@@ -52,24 +33,8 @@ const SILO_DATA: Record<string, typeof snowPosts> = {
 };
 
 const SILO_META: Record<string, { title: string; description: string; hubSlug: string }> = {
-  'snow-removal': { title: 'Snow Removal Business Tips & Guides', description: '30 in-depth guides for snow removal business owners covering pricing, routing, dispatching, crews, and software.', hubSlug: 'snow-removal-software' },
-  'snow-plowing': { title: 'Snow Plowing Business Tips & Guides', description: 'Guides for snow plowing operators covering fleet management, route optimization, contracts, and software.', hubSlug: 'snow-plowing-software' },
-  'ice-management': { title: 'Ice Management Business Tips & Guides', description: 'Guides for ice management operators covering liquid application, salt tracking, contracts, and compliance.', hubSlug: 'ice-management-software' },
-  'snow-removal-scheduling': { title: 'Snow Removal Scheduling Tips & Guides', description: 'Guides for snow removal companies on trigger-based dispatch, storm scheduling, and crew management.', hubSlug: 'snow-removal-scheduling-software' },
   'pool-service': { title: 'Pool Service Business Tips & Guides', description: 'Guides for pool service operators covering route management, billing, retention, and software.', hubSlug: 'pool-service-software' },
-  'pool-cleaning': { title: 'Pool Cleaning Business Tips & Guides', description: 'Guides for pool cleaning companies on chemical tracking, scheduling, reporting, and crew management.', hubSlug: 'pool-cleaning-software' },
-  'pool-maintenance': { title: 'Pool Maintenance Business Tips & Guides', description: 'Guides for pool maintenance operators covering seasonal scheduling, repairs, upsells, and contracts.', hubSlug: 'pool-maintenance-software' },
-  'pool-route': { title: 'Pool Route Business Tips & Guides', description: 'Guides on building, optimizing, buying, and managing pool service routes profitably.', hubSlug: 'pool-route-software' },
-  'landscaping': { title: 'Landscaping Business Tips & Guides', description: 'Guides for landscaping business owners covering crew management, scheduling, estimating, and software.', hubSlug: 'landscaping-software' },
-  'landscape-business': { title: 'Landscape Business Tips & Guides', description: 'Guides on growing, managing, and scaling a landscape business profitably.', hubSlug: 'landscape-business-software' },
-  'landscape-scheduling': { title: 'Landscape Scheduling Tips & Guides', description: 'Guides on scheduling landscape crews, managing jobs, and optimizing dispatch.', hubSlug: 'landscape-scheduling-software' },
-  'lawn-landscape': { title: 'Lawn & Landscape Business Tips & Guides', description: 'Guides for lawn and landscape operators on routes, crews, billing, and growth.', hubSlug: 'lawn-and-landscape-software' },
-  'landscape-maintenance': { title: 'Landscape Maintenance Tips & Guides', description: 'Guides on running recurring landscape maintenance programs and retaining clients.', hubSlug: 'landscape-maintenance-software' },
   'lawn-care': { title: 'Lawn Care Business Tips & Guides', description: 'Guides for lawn care business owners on routes, chemical programs, billing, and software.', hubSlug: 'lawn-care-software' },
-  'lawn-chemical-application': { title: 'Lawn Chemical Application Tips & Guides', description: 'Guides for licensed chemical applicators on records, compliance, scheduling, and software.', hubSlug: 'lawn-chemical-application-software' },
-  'fertilizer': { title: 'Fertilizer Program Tips & Guides', description: 'Guides on building, pricing, and managing lawn fertilization programs profitably.', hubSlug: 'fertilizer-software' },
-  'weed-control': { title: 'Weed Control Business Tips & Guides', description: 'Guides for weed control operators on programs, scheduling, compliance, and software.', hubSlug: 'weed-control-software' },
-  'lawn-treatment': { title: 'Lawn Treatment Business Tips & Guides', description: 'Guides for lawn treatment companies on full-service programs, billing, and retention.', hubSlug: 'lawn-treatment-software' },
   'irrigation': { title: 'Irrigation Business Tips & Guides', description: 'Guides for irrigation contractors on scheduling, winterization, backflow, and software.', hubSlug: 'irrigation-software' },
   'sprinkler-system': { title: 'Sprinkler System Business Tips & Guides', description: 'Guides for sprinkler system installers and service companies on operations and software.', hubSlug: 'sprinkler-system-software' },
   'irrigation-business': { title: 'Irrigation Business Tips & Guides', description: 'Guides on growing and managing an irrigation business profitably.', hubSlug: 'irrigation-business-software' },

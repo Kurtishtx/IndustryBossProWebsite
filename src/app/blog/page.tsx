@@ -1,9 +1,6 @@
 import type { Metadata } from 'next';
-import { snowPosts } from '../../lib/blog-snow-data';
-import { snowPlowingPosts, iceManagementPosts, snowSchedulingPosts } from '../../lib/blog-snow-sub-data';
-import { poolServicePosts, poolCleaningPosts, poolMaintenancePosts, poolRoutePosts } from '../../lib/blog-pool-data';
-import { landscapingPosts, landscapeBusinessPosts, landscapeSchedulingPosts, lawnLandscapePosts, landscapeMaintenancePosts } from '../../lib/blog-landscaping-data';
-import { lawnCarePosts, lawnChemicalPosts, fertilizerPosts, weedControlPosts, lawnTreatmentPosts } from '../../lib/blog-lawn-care-data';
+import { poolServicePosts } from '../../lib/blog-pool-data';
+import { lawnCarePosts } from '../../lib/blog-lawn-care-data';
 import { irrigationPosts, sprinklerSystemPosts, irrigationBusinessPosts, irrigationSchedulingPosts } from '../../lib/blog-irrigation-data';
 import { pestControlPosts, exterminatorPosts, pestManagementPosts, pestSchedulingPosts } from '../../lib/blog-pest-data';
 import { mosquitoControlPosts, mosquitoSprayPosts, mosquitoTreatmentPosts, mosquitoBusinessPosts } from '../../lib/blog-mosquito-data';
@@ -22,24 +19,8 @@ const S = {
 };
 
 const silos = [
-  { industry: 'snow-removal', label: 'Snow Removal', posts: snowPosts, hubSlug: 'snow-removal-software' },
-  { industry: 'snow-plowing', label: 'Snow Plowing', posts: snowPlowingPosts, hubSlug: 'snow-plowing-software' },
-  { industry: 'ice-management', label: 'Ice Management', posts: iceManagementPosts, hubSlug: 'ice-management-software' },
-  { industry: 'snow-removal-scheduling', label: 'Snow Removal Scheduling', posts: snowSchedulingPosts, hubSlug: 'snow-removal-scheduling-software' },
   { industry: 'pool-service', label: 'Pool Service', posts: poolServicePosts, hubSlug: 'pool-service-software' },
-  { industry: 'pool-cleaning', label: 'Pool Cleaning', posts: poolCleaningPosts, hubSlug: 'pool-cleaning-software' },
-  { industry: 'pool-maintenance', label: 'Pool Maintenance', posts: poolMaintenancePosts, hubSlug: 'pool-maintenance-software' },
-  { industry: 'pool-route', label: 'Pool Route', posts: poolRoutePosts, hubSlug: 'pool-route-software' },
-  { industry: 'landscaping', label: 'Landscaping Software', posts: landscapingPosts, hubSlug: 'landscaping-software' },
-  { industry: 'landscape-business', label: 'Landscape Business', posts: landscapeBusinessPosts, hubSlug: 'landscape-business-software' },
-  { industry: 'landscape-scheduling', label: 'Landscape Scheduling', posts: landscapeSchedulingPosts, hubSlug: 'landscape-scheduling-software' },
-  { industry: 'lawn-landscape', label: 'Lawn & Landscape', posts: lawnLandscapePosts, hubSlug: 'lawn-landscape-software' },
-  { industry: 'landscape-maintenance', label: 'Landscape Maintenance', posts: landscapeMaintenancePosts, hubSlug: 'landscape-maintenance-software' },
   { industry: 'lawn-care', label: 'Lawn Care Software', posts: lawnCarePosts, hubSlug: 'lawn-care-software' },
-  { industry: 'lawn-chemical-application', label: 'Lawn Chemical Application', posts: lawnChemicalPosts, hubSlug: 'lawn-chemical-application-software' },
-  { industry: 'fertilizer', label: 'Fertilizer Programs', posts: fertilizerPosts, hubSlug: 'fertilizer-software' },
-  { industry: 'weed-control', label: 'Weed Control', posts: weedControlPosts, hubSlug: 'weed-control-software' },
-  { industry: 'lawn-treatment', label: 'Lawn Treatment', posts: lawnTreatmentPosts, hubSlug: 'lawn-treatment-software' },
   { industry: 'irrigation', label: 'Irrigation Software', posts: irrigationPosts, hubSlug: 'irrigation-software' },
   { industry: 'sprinkler-system', label: 'Sprinkler System Software', posts: sprinklerSystemPosts, hubSlug: 'sprinkler-system-software' },
   { industry: 'irrigation-business', label: 'Irrigation Business', posts: irrigationBusinessPosts, hubSlug: 'irrigation-business-software' },
