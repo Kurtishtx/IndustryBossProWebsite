@@ -2,6 +2,7 @@ import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 import BlogPostTemplate from '../../../../components/BlogPostTemplate';
 import { poolServicePosts } from '../../../../lib/blog-pool-data';
+import { snowSchedulingPosts } from '../../../../lib/blog-snow-sub-data';
 import { poolRoutePosts } from '../../../../lib/blog-pool-data';
 import { landscapeBusinessPosts } from '../../../../lib/blog-landscaping-data';
 import { landscapingPosts } from '../../../../lib/blog-landscaping-data';
@@ -25,6 +26,7 @@ import { lawnMowingPosts, mowingBusinessPosts, grassCuttingPosts, lawnMowingSche
 
 const SILO_DATA: Record<string, typeof poolServicePosts> = {
   'pool-service': poolServicePosts,
+  'snow-removal-scheduling': snowSchedulingPosts,
   'pool-route': poolRoutePosts,
   'landscape-business': landscapeBusinessPosts,
   'landscaping': landscapingPosts,
