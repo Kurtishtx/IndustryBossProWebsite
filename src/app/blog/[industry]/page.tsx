@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 import { poolServicePosts } from '../../../lib/blog-pool-data';
+import { landscapeMaintenancePosts } from '../../../lib/blog-landscaping-data';
 import { fertilizerPosts } from '../../../lib/blog-lawn-care-data';
 import { snowPlowingPosts } from '../../../lib/blog-snow-sub-data';
 import { lawnChemicalPosts } from '../../../lib/blog-lawn-care-data';
@@ -15,6 +16,7 @@ import { lawnMowingPosts, mowingBusinessPosts, grassCuttingPosts, lawnMowingSche
 
 const SILO_DATA: Record<string, typeof poolServicePosts> = {
   'pool-service': poolServicePosts,
+  'landscape-maintenance': landscapeMaintenancePosts,
   'fertilizer': fertilizerPosts,
   'snow-plowing': snowPlowingPosts,
   'lawn-chemical-application': lawnChemicalPosts,
@@ -44,6 +46,7 @@ const SILO_DATA: Record<string, typeof poolServicePosts> = {
 
 const SILO_META: Record<string, { title: string; description: string; hubSlug: string }> = {
   'pool-service': { title: 'Pool Service Business Tips & Guides', description: 'Guides for pool service operators covering route management, billing, retention, and software.', hubSlug: 'pool-service-software' },
+  'landscape-maintenance': { title: 'Landscape Maintenance Software Tips & Guides', description: 'Guides for landscape maintenance companies on recurring contracts, scheduling, billing, and software.', hubSlug: 'landscape-maintenance-software' },
   'fertilizer': { title: 'Fertilizer Software Tips & Guides', description: 'Guides for lawn fertilization companies on programs, scheduling, billing, renewals, and software.', hubSlug: 'fertilizer-software' },
   'snow-plowing': { title: 'Snow Plowing Software Tips & Guides', description: 'Guides for snow plowing contractors on dispatch, routing, fleet tracking, billing, and software.', hubSlug: 'snow-plowing-software' },
   'lawn-chemical-application': { title: 'Lawn Chemical Application Software Tips & Guides', description: 'Guides for licensed applicators on records, compliance, scheduling, billing, and software.', hubSlug: 'lawn-chemical-application-software' },
