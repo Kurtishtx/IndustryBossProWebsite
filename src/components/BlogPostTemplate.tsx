@@ -11,6 +11,26 @@ const S = {
   border: 'rgba(196,125,10,0.15)',
 };
 
+// Renders markdown-style [anchor](/url) links inside body prose as real links.
+function renderInline(text: string) {
+  const rx = /\[([^\]]+)\]\(([^)]+)\)/g;
+  const out: (string | React.ReactNode)[] = [];
+  let last = 0;
+  let key = 0;
+  let m: RegExpExecArray | null;
+  while ((m = rx.exec(text)) !== null) {
+    if (m.index > last) out.push(text.slice(last, m.index));
+    out.push(
+      <a key={key++} href={m[2]} style={{ color: S.elec, textDecoration: 'none', fontWeight: 600 }}>
+        {m[1]}
+      </a>
+    );
+    last = m.index + m[0].length;
+  }
+  if (last < text.length) out.push(text.slice(last));
+  return out;
+}
+
 interface Props {
   post: BlogPost;
   prevPost?: BlogPost;
@@ -18,7 +38,7 @@ interface Props {
   industry: string;
 }
 
-export default function BlogPostTemplate({ post, prevPost, industry }: Props) {
+export default function BlogPostTemplate({ post, industry }: Props) {
   const [modal, setModal] = useState(false);
 
   const industryLabel = industry
@@ -62,19 +82,8 @@ export default function BlogPostTemplate({ post, prevPost, industry }: Props) {
         <article>
           {/* Intro */}
           <p style={{ fontSize: 18, lineHeight: 1.85, color: S.text, marginBottom: 32, fontWeight: 400 }}>
-            {post.intro}
+            {renderInline(post.intro)}
           </p>
-
-          {/* Silo chain link — naturally woven in after intro */}
-          {prevPost && (
-          <p style={{ fontSize: 15, lineHeight: 1.8, color: S.muted, marginBottom: 40, padding: '16px 20px', background: 'rgba(196,125,10,0.05)', borderLeft: `3px solid ${S.elec}`, borderRadius: '0 8px 8px 0' }}>
-            If you&apos;re exploring how to build a stronger {industryLabel.toLowerCase()} operation, our guide on{' '}
-            <a href={`/blog/${industry}/${prevPost.slug}`} style={{ color: S.elec, textDecoration: 'none', fontWeight: 600 }}>
-              {prevPost.title}
-            </a>{' '}
-            covers the foundational concepts you&apos;ll want in place first.
-          </p>
-          )}
 
           {/* Sections */}
           {post.sections.map((section, i) => (
@@ -84,21 +93,11 @@ export default function BlogPostTemplate({ post, prevPost, industry }: Props) {
               </h2>
               {section.content.split('\n\n').map((para, pi) => (
                 <p key={pi} style={{ fontSize: 16, lineHeight: 1.85, color: S.muted, marginBottom: 16 }}>
-                  {para}
+                  {renderInline(para)}
                 </p>
               ))}
             </div>
           ))}
-
-          {/* Hub page link — always shown */}
-          <div style={{ margin: '40px 0', padding: '20px 24px', background: 'rgba(196,125,10,0.06)', border: `1px solid ${S.border}`, borderRadius: 12 }}>
-            <p style={{ color: S.muted, fontSize: 15, marginBottom: 10 }}>
-              Looking for software built specifically for {industryLabel.toLowerCase()} businesses?
-            </p>
-            <a href={`/${post.hubSlug}`} style={{ color: S.elec, fontSize: 15, fontWeight: 700, textDecoration: 'none' }}>
-              Explore {post.hubKeyword.charAt(0).toUpperCase() + post.hubKeyword.slice(1)} →
-            </a>
-          </div>
 
           {/* Bottom CTA */}
           <div style={{ background: `linear-gradient(135deg, ${S.navy4}, #3d2510)`, border: `1px solid ${S.border}`, borderRadius: 16, padding: '36px 32px', marginTop: 16, textAlign: 'center' }}>
