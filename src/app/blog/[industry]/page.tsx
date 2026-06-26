@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 import { poolServicePosts } from '../../../lib/blog-pool-data';
+import { landscapeSchedulingPosts } from '../../../lib/blog-landscaping-data';
 import { iceManagementPosts } from '../../../lib/blog-snow-sub-data';
 import { weedControlPosts } from '../../../lib/blog-lawn-care-data';
 import { poolCleaningPosts } from '../../../lib/blog-pool-data';
@@ -20,6 +21,7 @@ import { lawnMowingPosts, mowingBusinessPosts, grassCuttingPosts, lawnMowingSche
 
 const SILO_DATA: Record<string, typeof poolServicePosts> = {
   'pool-service': poolServicePosts,
+  'landscape-scheduling': landscapeSchedulingPosts,
   'ice-management': iceManagementPosts,
   'weed-control': weedControlPosts,
   'pool-cleaning': poolCleaningPosts,
@@ -54,6 +56,7 @@ const SILO_DATA: Record<string, typeof poolServicePosts> = {
 
 const SILO_META: Record<string, { title: string; description: string; hubSlug: string }> = {
   'pool-service': { title: 'Pool Service Business Tips & Guides', description: 'Guides for pool service operators covering route management, billing, retention, and software.', hubSlug: 'pool-service-software' },
+  'landscape-scheduling': { title: 'Landscape Scheduling Software Tips & Guides', description: 'Guides for landscape companies on crew scheduling, recurring visits, dispatch, and software.', hubSlug: 'landscape-scheduling-software' },
   'ice-management': { title: 'Ice Management Software Tips & Guides', description: 'Guides for ice management companies on deicing logs, anti-icing scheduling, liability records, and software.', hubSlug: 'ice-management-software' },
   'weed-control': { title: 'Weed Control Software Tips & Guides', description: 'Guides for weed control businesses on treatment scheduling, application records, billing, and software.', hubSlug: 'weed-control-software' },
   'pool-cleaning': { title: 'Pool Cleaning Software Tips & Guides', description: 'Guides for pool cleaning businesses on routes, chemical logging, scheduling, billing, and software.', hubSlug: 'pool-cleaning-software' },
