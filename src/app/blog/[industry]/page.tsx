@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 import { poolServicePosts } from '../../../lib/blog-pool-data';
+import { poolCleaningPosts } from '../../../lib/blog-pool-data';
 import { poolMaintenancePosts } from '../../../lib/blog-pool-data';
 import { landscapeMaintenancePosts } from '../../../lib/blog-landscaping-data';
 import { fertilizerPosts } from '../../../lib/blog-lawn-care-data';
@@ -17,6 +18,7 @@ import { lawnMowingPosts, mowingBusinessPosts, grassCuttingPosts, lawnMowingSche
 
 const SILO_DATA: Record<string, typeof poolServicePosts> = {
   'pool-service': poolServicePosts,
+  'pool-cleaning': poolCleaningPosts,
   'pool-maintenance': poolMaintenancePosts,
   'landscape-maintenance': landscapeMaintenancePosts,
   'fertilizer': fertilizerPosts,
@@ -48,6 +50,7 @@ const SILO_DATA: Record<string, typeof poolServicePosts> = {
 
 const SILO_META: Record<string, { title: string; description: string; hubSlug: string }> = {
   'pool-service': { title: 'Pool Service Business Tips & Guides', description: 'Guides for pool service operators covering route management, billing, retention, and software.', hubSlug: 'pool-service-software' },
+  'pool-cleaning': { title: 'Pool Cleaning Software Tips & Guides', description: 'Guides for pool cleaning businesses on routes, chemical logging, scheduling, billing, and software.', hubSlug: 'pool-cleaning-software' },
   'pool-maintenance': { title: 'Pool Maintenance Software Tips & Guides', description: 'Guides for pool maintenance companies on seasonal scheduling, repairs, contracts, and software.', hubSlug: 'pool-maintenance-software' },
   'landscape-maintenance': { title: 'Landscape Maintenance Software Tips & Guides', description: 'Guides for landscape maintenance companies on recurring contracts, scheduling, billing, and software.', hubSlug: 'landscape-maintenance-software' },
   'fertilizer': { title: 'Fertilizer Software Tips & Guides', description: 'Guides for lawn fertilization companies on programs, scheduling, billing, renewals, and software.', hubSlug: 'fertilizer-software' },
