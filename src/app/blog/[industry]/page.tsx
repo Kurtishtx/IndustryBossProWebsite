@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 import { poolServicePosts } from '../../../lib/blog-pool-data';
+import { lawnLandscapePosts } from '../../../lib/blog-landscaping-data';
 import { snowSchedulingPosts } from '../../../lib/blog-snow-sub-data';
 import { poolRoutePosts } from '../../../lib/blog-pool-data';
 import { landscapeBusinessPosts } from '../../../lib/blog-landscaping-data';
@@ -25,6 +26,7 @@ import { lawnMowingPosts, mowingBusinessPosts, grassCuttingPosts, lawnMowingSche
 
 const SILO_DATA: Record<string, typeof poolServicePosts> = {
   'pool-service': poolServicePosts,
+  'lawn-landscape': lawnLandscapePosts,
   'snow-removal-scheduling': snowSchedulingPosts,
   'pool-route': poolRoutePosts,
   'landscape-business': landscapeBusinessPosts,
@@ -64,6 +66,7 @@ const SILO_DATA: Record<string, typeof poolServicePosts> = {
 
 const SILO_META: Record<string, { title: string; description: string; hubSlug: string }> = {
   'pool-service': { title: 'Pool Service Business Tips & Guides', description: 'Guides for pool service operators covering route management, billing, retention, and software.', hubSlug: 'pool-service-software' },
+  'lawn-landscape': { title: 'Lawn and Landscape Software Tips & Guides', description: 'Guides for lawn and landscape operators on combined service management, routes, billing, and software.', hubSlug: 'lawn-and-landscape-software' },
   'snow-removal-scheduling': { title: 'Snow Removal Scheduling Software Tips & Guides', description: 'Guides for snow removal companies on trigger-based scheduling, storm dispatch, crews, and software.', hubSlug: 'snow-removal-scheduling-software' },
   'pool-route': { title: 'Pool Route Software Tips & Guides', description: 'Guides for pool route operators on route optimization, density, billing, GPS tracking, and software.', hubSlug: 'pool-route-software' },
   'landscape-business': { title: 'Landscape Business Software Tips & Guides', description: 'Guides for landscape business owners on CRM, estimating, job costing, financials, and software.', hubSlug: 'landscape-business-software' },
