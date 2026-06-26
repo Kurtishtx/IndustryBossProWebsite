@@ -142,7 +142,7 @@ export const hubPages: HubPageData[] = [
     ],
     pendingBoard: 'The waiting list shows properties that need plowing but haven\'t been assigned to a route for the current event â€” overflow accounts, add-on clients, or new properties pending setup.',
     blogSiloIndustry: 'snow-plowing',
-    blog1Slug: 'how-to-price-snow-plowing-contracts',
+    blog1Slug: 'snow-plowing-software-complete-guide',
   },
   {
     slug: 'ice-management-software',
@@ -172,7 +172,7 @@ export const hubPages: HubPageData[] = [
     ],
     pendingBoard: 'The waiting list shows properties that need ice treatment but are waiting on weather conditions or client approval before an application date is assigned.',
     blogSiloIndustry: 'ice-management',
-    blog1Slug: 'ice-management-pricing-salt-application',
+    blog1Slug: 'ice-management-software-complete-guide',
   },
   {
     slug: 'snow-removal-scheduling-software',
@@ -202,7 +202,7 @@ export const hubPages: HubPageData[] = [
     ],
     pendingBoard: 'The scheduled panel shows all properties with assigned storm dates or recurring maintenance visits. The waiting list holds properties pending client approval, new add-ons, or those waiting for the next qualifying storm event.',
     blogSiloIndustry: 'snow-removal-scheduling',
-    blog1Slug: 'snow-removal-dispatch-during-storms',
+    blog1Slug: 'snow-removal-scheduling-software-complete-guide',
   },
 
   // â”€â”€â”€ POOL SERVICE â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
@@ -265,7 +265,7 @@ export const hubPages: HubPageData[] = [
     ],
     pendingBoard: 'The waiting list holds pools flagged for follow-up cleaning, green pool treatments, or client-requested one-time deep cleans that need a scheduled date before they go on the route.',
     blogSiloIndustry: 'pool-cleaning',
-    blog1Slug: 'pool-cleaning-one-time-vs-recurring-pricing',
+    blog1Slug: 'pool-cleaning-software-complete-guide',
   },
   {
     slug: 'pool-maintenance-software',
@@ -295,7 +295,7 @@ export const hubPages: HubPageData[] = [
     ],
     pendingBoard: 'Repair estimates waiting on client approval sit in the waiting list. Once approved, they automatically move to the scheduled panel with an assigned date. You always know what\'s pending vs confirmed.',
     blogSiloIndustry: 'pool-maintenance',
-    blog1Slug: 'pool-maintenance-schedule-year-round',
+    blog1Slug: 'pool-maintenance-software-complete-guide',
   },
   {
     slug: 'pool-route-software',
@@ -325,7 +325,7 @@ export const hubPages: HubPageData[] = [
     ],
     pendingBoard: 'New accounts waiting to be onboarded or assigned to a route sit in the waiting list until route assignment is complete. The scheduled panel shows all active route stops confirmed for their recurring service day.',
     blogSiloIndustry: 'pool-route',
-    blog1Slug: 'buying-a-pool-route-what-to-evaluate',
+    blog1Slug: 'pool-route-software-complete-guide',
   },
 
   // â”€â”€â”€ LANDSCAPING â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
@@ -388,7 +388,7 @@ export const hubPages: HubPageData[] = [
     ],
     pendingBoard: 'New leads and submitted estimates waiting on client decisions sit in the waiting list. Once approved, they automatically move to the scheduled panel with a start date.',
     blogSiloIndustry: 'landscape-business',
-    blog1Slug: 'landscape-business-software-guide',
+    blog1Slug: 'landscape-business-software-complete-guide',
   },
   {
     slug: 'landscape-scheduling-software',
@@ -418,7 +418,7 @@ export const hubPages: HubPageData[] = [
     ],
     pendingBoard: 'Jobs waiting for scheduling â€” approved estimates, seasonal work, or new client onboarding â€” sit in the waiting list until a date is assigned. Once scheduled, they appear in the confirmed panel with crew assignments.',
     blogSiloIndustry: 'landscape-scheduling',
-    blog1Slug: 'landscape-scheduling-software-guide',
+    blog1Slug: 'landscape-scheduling-software-complete-guide',
   },
   {
     slug: 'lawn-and-landscape-software',
@@ -448,7 +448,7 @@ export const hubPages: HubPageData[] = [
     ],
     pendingBoard: 'The waiting list organizes pending work by service type â€” mowing add-ons, landscape estimates awaiting approval, and chemical program starts waiting for the right season. The scheduled panel shows all confirmed service visits across every service type.',
     blogSiloIndustry: 'lawn-landscape',
-    blog1Slug: 'lawn-landscape-software-guide',
+    blog1Slug: 'lawn-and-landscape-software-complete-guide',
   },
   {
     slug: 'landscape-maintenance-software',
@@ -478,7 +478,7 @@ export const hubPages: HubPageData[] = [
     ],
     pendingBoard: 'New maintenance contract proposals waiting on client signatures sit in the waiting list. Active contracts with upcoming visit dates are in the scheduled panel. You always know what\'s confirmed vs pending.',
     blogSiloIndustry: 'landscape-maintenance',
-    blog1Slug: 'landscape-maintenance-software-guide',
+    blog1Slug: 'landscape-maintenance-software-complete-guide',
   },
 
   // â”€â”€â”€ IRRIGATION â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
@@ -664,7 +664,7 @@ export const hubPages: HubPageData[] = [
     ],
     pendingBoard: 'Properties scheduled for chemical applications appear in the scheduled panel by application date. Properties whose treatment interval has elapsed and are ready for re-treatment surface in the waiting list for round assignment.',
     blogSiloIndustry: 'lawn-chemical-application',
-    blog1Slug: 'lawn-chemical-application-software-guide',
+    blog1Slug: 'lawn-chemical-application-software-complete-guide',
   },
   {
     slug: 'fertilizer-software',
@@ -694,7 +694,7 @@ export const hubPages: HubPageData[] = [
     ],
     pendingBoard: 'After each round is applied, properties automatically appear on the waiting list when the interval for their next round is reached. Build out the next round\'s routes by pulling from the waiting list into scheduled route days.',
     blogSiloIndustry: 'fertilizer',
-    blog1Slug: 'fertilizer-software-guide',
+    blog1Slug: 'fertilizer-software-complete-guide',
   },
   {
     slug: 'weed-control-software',
@@ -724,7 +724,7 @@ export const hubPages: HubPageData[] = [
     ],
     pendingBoard: 'The waiting list fills with properties due for scheduled herbicide rounds AND properties flagged for re-treatment after an unsuccessful application. Both sit alongside each other so nothing gets missed when building the next route day.',
     blogSiloIndustry: 'weed-control',
-    blog1Slug: 'weed-control-software-guide',
+    blog1Slug: 'weed-control-software-complete-guide',
   },
   {
     slug: 'lawn-treatment-software',
@@ -754,7 +754,7 @@ export const hubPages: HubPageData[] = [
     ],
     pendingBoard: 'The waiting list shows every treatment that\'s due to be scheduled across all programs and rounds. The scheduled panel shows confirmed treatment visits. You can see your entire workload for the next 30 days at a glance.',
     blogSiloIndustry: 'lawn-treatment',
-    blog1Slug: 'lawn-treatment-software-guide',
+    blog1Slug: 'lawn-treatment-software-complete-guide',
   },
 
   // â”€â”€â”€ PEST CONTROL â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
