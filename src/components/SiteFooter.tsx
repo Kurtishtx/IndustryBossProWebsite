@@ -77,6 +77,12 @@ export default function SiteFooter({ onOpenModal }: { onOpenModal: () => void })
           <div>
             <div style={{ fontSize: 12, fontWeight: 700, color: S.elec, letterSpacing: 1.5, textTransform: 'uppercase', marginBottom: 16 }}>BossPro Family</div>
             <a href="https://spraybosspro.com" style={{ display: 'block', color: S.muted, fontSize: 13, textDecoration: 'none', marginBottom: 8, lineHeight: 1.4 }}>SprayBossPro — Spray &amp; Lawn Treatment Software</a>
+            <a href="https://landscapebosspro.com" style={{ display: 'block', color: S.muted, fontSize: 13, textDecoration: 'none', marginBottom: 8, lineHeight: 1.4 }}>LandscapeBossPro — Landscaping Software</a>
+            <a href="https://mowbosspro.com" style={{ display: 'block', color: S.muted, fontSize: 13, textDecoration: 'none', marginBottom: 8, lineHeight: 1.4 }}>MowBossPro — Lawn Mowing Software</a>
+            <a href="https://poolbosspro.com" style={{ display: 'block', color: S.muted, fontSize: 13, textDecoration: 'none', marginBottom: 8, lineHeight: 1.4 }}>PoolBossPro — Pool Service Software</a>
+            <a href="https://fencebosspro.com" style={{ display: 'block', color: S.muted, fontSize: 13, textDecoration: 'none', marginBottom: 8, lineHeight: 1.4 }}>FenceBossPro — Fence Contractor Software</a>
+            <a href="https://irrigationbosspro.com" style={{ display: 'block', color: S.muted, fontSize: 13, textDecoration: 'none', marginBottom: 8, lineHeight: 1.4 }}>IrrigationBossPro — Irrigation Software</a>
+            <a href="https://poopbosspro.com" style={{ display: 'block', color: S.muted, fontSize: 13, textDecoration: 'none', marginBottom: 8, lineHeight: 1.4 }}>PoopBossPro — Dog Waste Removal Software</a>
           </div>
         </div>
         <div style={{ borderTop: `1px solid ${S.border}`, paddingTop: 24, display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: 12 }}>

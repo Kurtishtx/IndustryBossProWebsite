@@ -317,7 +317,7 @@ export default function Home() {
               { title:'Industries', links:[{label:'Snow & Ice',href:'#'},{label:'Landscaping',href:'#'},{label:'Irrigation',href:'#'},{label:'Lawn Care',href:'#'},{label:'Pest Control',href:'#'}] },
               { title:'Company', links:[{label:'Terms of Service',href:'#'},{label:'Privacy Policy',href:'#'},{label:'Contact Us',href:'#'}] },
               { title:'Blog', links:[{label:'All Articles',href:'/blog'},{label:'Snow Removal',href:'/blog/snow-removal'},{label:'Landscaping',href:'/blog/landscaping'},{label:'Irrigation',href:'/blog/irrigation'},{label:'Lawn Care',href:'/blog/lawn-care'}] },
-              { title:'BossPro Family', links:[{label:'SprayBossPro',href:'https://spraybosspro.com'}] },
+              { title:'BossPro Family', links:[{label:'SprayBossPro',href:'https://spraybosspro.com'},{label:'LandscapeBossPro',href:'https://landscapebosspro.com'},{label:'MowBossPro',href:'https://mowbosspro.com'},{label:'PoolBossPro',href:'https://poolbosspro.com'},{label:'FenceBossPro',href:'https://fencebosspro.com'},{label:'IrrigationBossPro',href:'https://irrigationbosspro.com'},{label:'PoopBossPro',href:'https://poopbosspro.com'}] },
             ].map(col => (
               <div key={col.title}>
                 <h3 style={{ color:'#fff', fontSize:13, fontWeight:700, textTransform:'uppercase', letterSpacing:1, marginBottom:16 }}>{col.title}</h3>
