@@ -25,10 +25,10 @@ export default function Privacy() {
           { title: '5. Client Data', body: 'Data you enter about your clients (customer information, service records) remains your property. We process this data only on your behalf to provide the Service. We do not use your client data for any other purpose.' },
           { title: '6. Cookies', body: 'We use cookies to maintain your session and improve your experience. You can control cookie settings through your browser. Disabling cookies may affect Service functionality.' },
           { title: '7. Data Retention', body: 'We retain your account data for as long as your account is active. Upon account cancellation, data is retained for 90 days before deletion, giving you time to export your records.' },
-          { title: '8. Your Rights', body: 'You have the right to access, correct, or delete your personal data. You may export your data at any time from your account settings. To exercise these rights, contact us at privacy@industrybosspro.com.' },
+          { title: '8. Your Rights', body: 'You have the right to access, correct, or delete your personal data. You may export your data at any time from your account settings. To exercise these rights, contact us at Support@bossprohq.com.' },
           { title: '9. Children\'s Privacy', body: 'The Service is not directed at individuals under 18 years of age. We do not knowingly collect personal information from minors.' },
           { title: '10. Changes to This Policy', body: 'We may update this Privacy Policy periodically. We will notify you of material changes by email or through the Service. Continued use after changes constitutes acceptance of the updated policy.' },
-          { title: '11. Contact', body: 'For privacy-related questions or requests, contact us at privacy@industrybosspro.com.' },
+          { title: '11. Contact', body: 'For privacy-related questions or requests, contact us at Support@bossprohq.com.' },
         ].map((section, i) => (
           <div key={i} style={{ marginBottom: 36, paddingBottom: 36, borderBottom: i < 10 ? `1px solid ${S.border}` : 'none' }}>
             <h2 style={{ fontSize: 20, fontWeight: 700, color: S.elec, marginBottom: 12 }}>{section.title}</h2>

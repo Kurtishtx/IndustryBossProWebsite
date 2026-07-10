@@ -28,7 +28,7 @@ export default function Terms() {
           { title: '8. Intellectual Property', body: 'All content, features, and functionality of the Service are owned by IndustryBossPro and are protected by intellectual property laws. You may not copy, modify, or distribute any part of the Service without written permission.' },
           { title: '9. Limitation of Liability', body: 'IndustryBossPro shall not be liable for any indirect, incidental, special, or consequential damages arising from your use of the Service. Our total liability shall not exceed the amount paid by you in the 12 months preceding the claim.' },
           { title: '10. Changes to Terms', body: 'We reserve the right to modify these terms at any time. We will notify you of significant changes by email or through the Service. Continued use after changes constitutes acceptance of the new terms.' },
-          { title: '11. Contact', body: 'For questions about these Terms, contact us at support@industrybosspro.com.' },
+          { title: '11. Contact', body: 'For questions about these Terms, contact us at Support@bossprohq.com.' },
         ].map((section, i) => (
           <div key={i} style={{ marginBottom: 36, paddingBottom: 36, borderBottom: i < 10 ? `1px solid ${S.border}` : 'none' }}>
             <h2 style={{ fontSize: 20, fontWeight: 700, color: S.elec, marginBottom: 12 }}>{section.title}</h2>

@@ -313,9 +313,9 @@ export default function Home() {
               <p style={{ color:'rgba(245,236,224,.70)', fontSize:13, lineHeight:1.7 }}>The all-in-one field service platform built for businesses that run every trade. Snow, landscape, irrigation, lawn care, pest control — one dashboard, one price.</p>
             </div>
             {[
-              { title:'Product', links:[{label:'Features',href:'#'},{label:'Industries',href:'#'},{label:'Pricing',href:'#'},{label:'Login',href:'#'},{label:'Start Free Trial',href:'#'}] },
-              { title:'Industries', links:[{label:'Snow & Ice',href:'#'},{label:'Landscaping',href:'#'},{label:'Irrigation',href:'#'},{label:'Lawn Care',href:'#'},{label:'Pest Control',href:'#'}] },
-              { title:'Company', links:[{label:'Terms of Service',href:'#'},{label:'Privacy Policy',href:'#'},{label:'Contact Us',href:'#'}] },
+              { title:'Product', links:[{label:'Features',href:'/features'},{label:'BossPro Family',href:'/bosspro-family'},{label:'Pricing',href:'/pricing'},{label:'Login',href:'https://my.industrybosspro.com'},{label:'Start Free Trial',href:'/pricing'}] },
+              { title:'Industries', links:[{label:'Snow & Ice',href:'/snow-removal-software'},{label:'Landscaping',href:'/landscaping-software'},{label:'Irrigation',href:'/irrigation-software'},{label:'Lawn Care',href:'/lawn-care-software'},{label:'Pest Control',href:'/pest-control-software'}] },
+              { title:'Company', links:[{label:'Terms of Service',href:'/terms'},{label:'Privacy Policy',href:'/privacy'},{label:'Contact Us',href:'mailto:Support@bossprohq.com'}] },
               { title:'Blog', links:[{label:'All Articles',href:'/blog'},{label:'Snow Removal',href:'/blog/snow-removal'},{label:'Landscaping',href:'/blog/landscaping'},{label:'Irrigation',href:'/blog/irrigation'},{label:'Lawn Care',href:'/blog/lawn-care'}] },
               { title:'BossPro Family', links:[{label:'SprayBossPro',href:'https://spraybosspro.com'},{label:'LandscapeBossPro',href:'https://landscapebosspro.com'},{label:'MowBossPro',href:'https://mowbosspro.com'},{label:'PoolBossPro',href:'https://poolbosspro.com'},{label:'FenceBossPro',href:'https://fencebosspro.com'},{label:'IrrigationBossPro',href:'https://irrigationbosspro.com'},{label:'PoopBossPro',href:'https://poopbosspro.com'}] },
             ].map(col => (
