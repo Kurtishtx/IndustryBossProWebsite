@@ -98,5 +98,42 @@ export default async function BlogPostPage(
   // Wrap-around silo chain: blog N links to blog N-1, and blog 1 links to the last blog.
   const prevPost = posts.length > 1 ? posts[(postIndex - 1 + posts.length) % posts.length] : undefined;
   const nextPost = posts.length > 1 ? posts[(postIndex + 1) % posts.length] : undefined;
-  return <BlogPostTemplate post={post} industry={industry} prevPost={prevPost} nextPost={nextPost} />;
+
+  const url = `https://industrybosspro.com/blog/${industry}/${slug}`;
+  const industryLabel = industry.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'BlogPosting',
+        headline: post.title,
+        description: post.description,
+        datePublished: post.date,
+        dateModified: post.date,
+        author: { '@type': 'Organization', name: 'IndustryBossPro', url: 'https://industrybosspro.com' },
+        publisher: {
+          '@type': 'Organization',
+          name: 'IndustryBossPro',
+          logo: { '@type': 'ImageObject', url: 'https://industrybosspro.com/icon.svg' },
+        },
+        mainEntityOfPage: { '@type': 'WebPage', '@id': url },
+        about: post.hubKeyword,
+      },
+      {
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'Blog', item: 'https://industrybosspro.com/blog' },
+          { '@type': 'ListItem', position: 2, name: industryLabel, item: `https://industrybosspro.com/blog/${industry}` },
+          { '@type': 'ListItem', position: 3, name: post.title, item: url },
+        ],
+      },
+    ],
+  };
+
+  return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <BlogPostTemplate post={post} industry={industry} prevPost={prevPost} nextPost={nextPost} />
+    </>
+  );
 }

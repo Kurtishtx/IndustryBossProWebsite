@@ -28,5 +28,18 @@ export default async function HubPage({ params }: { params: Promise<{ slug: stri
   const { slug } = await params;
   const page = getHubPage(slug);
   if (!page) notFound();
-  return <HubPageTemplate page={page} />;
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://industrybosspro.com' },
+      { '@type': 'ListItem', position: 2, name: page.industry, item: `https://industrybosspro.com/${slug}` },
+    ],
+  };
+  return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <HubPageTemplate page={page} />
+    </>
+  );
 }
