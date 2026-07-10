@@ -33,6 +33,7 @@ const orgLd = {
       description: 'All-in-one field service management software for the trades — scheduling, routing, invoicing, payments, CRM, and a crew mobile app. $199/month, everything included.',
       contactPoint: {
         '@type': 'ContactPoint',
+        telephone: '+1-682-899-7304',
         email: 'Support@bossprohq.com',
         contactType: 'customer support',
       },

@@ -49,6 +49,10 @@ export default function SiteFooter({ onOpenModal }: { onOpenModal: () => void })
             }}>
               Start Free Trial
             </button>
+            <div style={{ marginTop: 18 }}>
+              <a href="tel:+16828997304" style={{ display: 'block', color: S.elec, fontSize: 16, fontWeight: 800, textDecoration: 'none', marginBottom: 6 }}>&#9742;&nbsp;(682) 899-7304</a>
+              <a href="mailto:Support@bossprohq.com" style={{ display: 'block', color: S.muted, fontSize: 13, textDecoration: 'none' }}>Support@bossprohq.com</a>
+            </div>
           </div>
           <div>
             <div style={{ fontSize: 12, fontWeight: 700, color: S.elec, letterSpacing: 1.5, textTransform: 'uppercase', marginBottom: 16 }}>Industries</div>

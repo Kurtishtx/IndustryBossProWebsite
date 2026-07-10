@@ -311,6 +311,7 @@ export default function Home() {
                 <span style={{ fontSize:17, fontWeight:800, color:'#f5ece0' }}>IndustryBoss<span style={{ color:'#c47d0a' }}>Pro</span></span>
               </div>
               <p style={{ color:'rgba(245,236,224,.70)', fontSize:13, lineHeight:1.7 }}>The all-in-one field service platform built for businesses that run every trade. Snow, landscape, irrigation, lawn care, pest control — one dashboard, one price.</p>
+              <a href="tel:+16828997304" style={{ display:'inline-block', marginTop:16, color:'#c47d0a', fontSize:16, fontWeight:800, textDecoration:'none' }}>&#9742;&nbsp;(682) 899-7304</a>
             </div>
             {[
               { title:'Product', links:[{label:'Features',href:'/features'},{label:'BossPro Family',href:'/bosspro-family'},{label:'Pricing',href:'/pricing'},{label:'Login',href:'https://my.industrybosspro.com'},{label:'Start Free Trial',href:'/pricing'}] },
