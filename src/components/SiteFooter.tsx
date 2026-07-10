@@ -75,7 +75,7 @@ export default function SiteFooter({ onOpenModal }: { onOpenModal: () => void })
             <Link href="/privacy" style={{ display: 'block', color: S.muted, fontSize: 13, textDecoration: 'none', marginBottom: 8 }}>Privacy Policy</Link>
           </div>
           <div>
-            <div style={{ fontSize: 12, fontWeight: 700, color: S.elec, letterSpacing: 1.5, textTransform: 'uppercase', marginBottom: 16 }}>BossPro Family</div>
+            <Link href="/bosspro-family" style={{ display: 'block', fontSize: 12, fontWeight: 700, color: S.elec, letterSpacing: 1.5, textTransform: 'uppercase', marginBottom: 16, textDecoration: 'none' }}>BossPro Family →</Link>
             <a href="https://spraybosspro.com" style={{ display: 'block', color: S.muted, fontSize: 13, textDecoration: 'none', marginBottom: 8, lineHeight: 1.4 }}>SprayBossPro — Spray &amp; Lawn Treatment Software</a>
             <a href="https://landscapebosspro.com" style={{ display: 'block', color: S.muted, fontSize: 13, textDecoration: 'none', marginBottom: 8, lineHeight: 1.4 }}>LandscapeBossPro — Landscaping Software</a>
             <a href="https://mowbosspro.com" style={{ display: 'block', color: S.muted, fontSize: 13, textDecoration: 'none', marginBottom: 8, lineHeight: 1.4 }}>MowBossPro — Lawn Mowing Software</a>

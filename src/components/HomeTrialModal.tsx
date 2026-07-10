@@ -47,11 +47,13 @@ export default function HomeTrialModal({ onClose }: { onClose: () => void }) {
       await sb.auth.updateUser({ data: { full_name: form.first + ' ' + form.last, product: 'fieldbosspro' } });
       await sb.from('user_profiles').upsert({ id: uid, email: form.email, role: 'full_access', is_primary_owner: true, tenant_id: null, trial_ends_at: trialEnd, product: 'fieldbosspro' }, { onConflict: 'id' });
       await sb.from('company_info').insert({ user_id: uid, company_name: form.company, display_name: form.company });
+      await sb.from('platform_accounts').insert({ user_id: uid, email: form.email, plan: 'Monthly Subscription', monthly_amount: 199, trial_ends_at: trialEnd, active: false });
+      const _ho = signInData.session ? ('#access_token=' + encodeURIComponent(signInData.session.access_token) + '&refresh_token=' + encodeURIComponent(signInData.session.refresh_token)) : '';
       setStep('done');
       let secs = 4;
       const iv = setInterval(() => {
         secs--; setCountdown(secs);
-        if (secs <= 0) { clearInterval(iv); window.location.href = APP_URL; }
+        if (secs <= 0) { clearInterval(iv); window.location.href = APP_URL + _ho; }
       }, 1000);
     } catch(e: any) {
       setErr(e.message || 'Something went wrong. Please try again.');
