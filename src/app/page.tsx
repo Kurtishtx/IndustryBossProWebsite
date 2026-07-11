@@ -14,8 +14,15 @@ export default function Home() {
       <SiteHeader onOpenModal={openModal} />
 
       <main>
+      {/* MOCKUP IMAGE */}
+      <div style={{ background: 'linear-gradient(135deg, #1e1208 0%, #241508 55%, #2a1a0a 100%)', padding: '96px 24px 0', textAlign: 'center' }}>
+        <div style={{ maxWidth: 1080, margin: '0 auto' }}>
+          <img src="/dashboard-mockup.webp" width={1400} height={933} fetchPriority="high" decoding="async" alt="IndustryBossPro field service software on a laptop and phone — the Waiting List with map-based route building on desktop and the crew mobile app" style={{ width: '100%', height: 'auto', borderRadius: '16px', boxShadow: '0 32px 80px rgba(0,0,0,.5)', display: 'block' }} />
+        </div>
+      </div>
+
       {/* HERO */}
-      <div className="hero">
+      <div className="hero" style={{ paddingTop: 52 }}>
         <div className="hero-badge">Built for Every Field Service Industry · Since Day One</div>
         <h1>One Platform.<br /><span>Every Industry.</span><br />Zero Compromises.</h1>
         <div className="hero-sub">
