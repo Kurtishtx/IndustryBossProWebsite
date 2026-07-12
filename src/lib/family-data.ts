@@ -89,6 +89,6 @@ export const familyApps: FamilyApp[] = [
     desc: 'Build weekly scooping routes, let crews mark yards done with a photo from their phone, and bill subscriptions automatically every month. Add and slot new accounts into the nearest route instantly as you grow.',
     hubHref: '/pet-waste-removal-software',
     hubLabel: 'Pet Waste Removal Software on IndustryBossPro',
-    accent: '#8a5a2a',
+    accent: '#9b59b6',
   },
 ];
