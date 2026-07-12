@@ -6,9 +6,9 @@ import SiteFooter from './SiteFooter';
 import TrialModal from './TrialModal';
 
 const S = {
-  navy1: '#1e1208', navy2: '#1e1208', navy3: '#241508', navy4: '#2a1a0a',
-  elec: '#c47d0a', text: '#f5ece0', muted: 'rgba(245,236,224,0.65)',
-  border: 'rgba(196,125,10,0.15)',
+  navy1: '#0a0a0a', navy2: '#0a0a0a', navy3: '#111111', navy4: '#1a1a1a',
+  elec: '#ff6a00', text: '#f5f5f5', muted: 'rgba(245,245,245,0.65)',
+  border: 'rgba(255,106,0,0.15)',
 };
 
 // Renders markdown-style [anchor](/url) links inside body prose as real links.
@@ -53,7 +53,7 @@ export default function BlogPostTemplate({ post, industry }: Props) {
       <TrialModal open={modal} onClose={() => setModal(false)} />
       <main>
       {/* ── HERO ── */}
-      <div style={{ background: `linear-gradient(160deg, #1e1208 0%, #241508 60%, #2a1a0a 100%)`, padding: '64px 24px 48px', borderBottom: `1px solid ${S.border}` }}>
+      <div style={{ background: `linear-gradient(160deg, #0a0a0a 0%, #111111 60%, #1a1a1a 100%)`, padding: '64px 24px 48px', borderBottom: `1px solid ${S.border}` }}>
         <div style={{ maxWidth: 800, margin: '0 auto' }}>
           <div style={{ display: 'flex', gap: 12, alignItems: 'center', marginBottom: 20, flexWrap: 'wrap' }}>
             <a href="/blog" style={{ color: S.muted, fontSize: 13, textDecoration: 'none' }}>Blog</a>
@@ -62,7 +62,7 @@ export default function BlogPostTemplate({ post, industry }: Props) {
             <span style={{ color: S.muted, fontSize: 13 }}>›</span>
             <span style={{ color: S.elec, fontSize: 13, fontWeight: 600 }}>{post.title}</span>
           </div>
-          <div style={{ display: 'inline-block', background: 'rgba(196,125,10,0.1)', border: `1px solid rgba(196,125,10,0.3)`, color: S.elec, fontSize: 11, fontWeight: 700, letterSpacing: '1.5px', textTransform: 'uppercase', padding: '5px 14px', borderRadius: 20, marginBottom: 20 }}>
+          <div style={{ display: 'inline-block', background: 'rgba(255,106,0,0.1)', border: `1px solid rgba(255,106,0,0.3)`, color: S.elec, fontSize: 11, fontWeight: 700, letterSpacing: '1.5px', textTransform: 'uppercase', padding: '5px 14px', borderRadius: 20, marginBottom: 20 }}>
             {industryLabel}
           </div>
           <h1 style={{ fontSize: 'clamp(26px,4vw,44px)', fontWeight: 900, lineHeight: 1.1, color: '#fff', marginBottom: 20, letterSpacing: '-0.5px' }}>
@@ -100,7 +100,7 @@ export default function BlogPostTemplate({ post, industry }: Props) {
           ))}
 
           {/* Bottom CTA */}
-          <div style={{ background: `linear-gradient(135deg, ${S.navy4}, #3d2510)`, border: `1px solid ${S.border}`, borderRadius: 16, padding: '36px 32px', marginTop: 16, textAlign: 'center' }}>
+          <div style={{ background: `linear-gradient(135deg, ${S.navy4}, #1a1a1a)`, border: `1px solid ${S.border}`, borderRadius: 16, padding: '36px 32px', marginTop: 16, textAlign: 'center' }}>
             <h3 style={{ fontSize: 22, fontWeight: 800, color: '#fff', marginBottom: 12 }}>
               Ready to Run a Tighter {industryLabel} Operation?
             </h3>

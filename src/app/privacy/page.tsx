@@ -6,8 +6,8 @@ export const metadata: Metadata = {
 };
 
 const S = {
-  navy1: '#1e1208', elec: '#c47d0a',
-  muted: 'rgba(245,236,224,0.6)', border: 'rgba(196,125,10,0.15)', text: '#f5ece0',
+  navy1: '#0a0a0a', elec: '#ff6a00',
+  muted: 'rgba(245,245,245,0.6)', border: 'rgba(255,106,0,0.15)', text: '#f5f5f5',
 };
 
 export default function Privacy() {

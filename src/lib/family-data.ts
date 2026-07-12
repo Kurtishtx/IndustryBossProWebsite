@@ -67,7 +67,7 @@ export const familyApps: FamilyApp[] = [
     desc: 'Quote installs with materials and labor, send professional estimates clients sign digitally, and schedule crews by job phase. Track every project from lead to invoice so nothing sits half-finished and nothing goes unbilled.',
     hubHref: '/fence-company-software',
     hubLabel: 'Fence Company Software on IndustryBossPro',
-    accent: '#c47d0a',
+    accent: '#ff6a00',
   },
   {
     name: 'IrrigationBossPro',

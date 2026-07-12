@@ -15,7 +15,7 @@ export default function Home() {
 
       <main>
       {/* MOCKUP IMAGE */}
-      <div style={{ background: 'linear-gradient(135deg, #1e1208 0%, #241508 55%, #2a1a0a 100%)', padding: '96px 24px 0', textAlign: 'center' }}>
+      <div style={{ background: 'linear-gradient(135deg, #0a0a0a 0%, #111111 55%, #1a1a1a 100%)', padding: '96px 24px 0', textAlign: 'center' }}>
         <div style={{ maxWidth: 1080, margin: '0 auto' }}>
           <img src="/dashboard-mockup.webp" width={1400} height={933} fetchPriority="high" decoding="async" alt="IndustryBossPro field service software on a laptop and phone — the Waiting List with map-based route building on desktop and the crew mobile app" style={{ width: '100%', height: 'auto', borderRadius: '16px', boxShadow: '0 32px 80px rgba(0,0,0,.5)', display: 'block' }} />
         </div>
@@ -54,9 +54,9 @@ export default function Home() {
       <div className="premium-band">
         <span className="section-label">Enterprise Power</span>
         <h2 className="section-title" style={{ maxWidth:860, margin:'0 auto 20px' }}>
-          Affordable Doesn&apos;t Mean Cheap.<br /><span style={{ color:'#c47d0a' }}>This Is Enterprise-Grade Software.</span>
+          Affordable Doesn&apos;t Mean Cheap.<br /><span style={{ color:'#ff6a00' }}>This Is Enterprise-Grade Software.</span>
         </h2>
-        <p style={{ color:'rgba(245,236,224,.65)', fontSize:17, maxWidth:700, margin:'0 auto 0', lineHeight:1.8 }}>
+        <p style={{ color:'rgba(245,245,245,.65)', fontSize:17, maxWidth:700, margin:'0 auto 0', lineHeight:1.8 }}>
           We built what the enterprise platforms couldn&apos;t — one platform for every field service trade. Route intelligence, chemical compliance, automated billing, role-based access, and a mobile app — priced for real businesses.
         </p>
       </div>
@@ -67,7 +67,7 @@ export default function Home() {
           <div className="row-text">
             <span className="section-label">The Feature That Changes Everything</span>
             <h2 className="section-title">The Pending Job Board.<br />Your Business Brain.</h2>
-            <p style={{ color:'rgba(245,236,224,.72)', fontSize:16, lineHeight:1.8, marginBottom:8 }}>No other field service software has this. A two-tier job system that separates scheduled work with assigned dates from your chemical &amp; maintenance waiting list — so you always know exactly what&apos;s ready and what&apos;s waiting.</p>
+            <p style={{ color:'rgba(245,245,245,.72)', fontSize:16, lineHeight:1.8, marginBottom:8 }}>No other field service software has this. A two-tier job system that separates scheduled work with assigned dates from your chemical &amp; maintenance waiting list — so you always know exactly what&apos;s ready and what&apos;s waiting.</p>
             <ul className="check-list">
               <li>Scheduled board: jobs with assigned dates, tech, and crew</li>
               <li>Waiting list: chemical treatments grouped by service type with sq ft totals</li>
@@ -78,7 +78,7 @@ export default function Home() {
             </ul>
           </div>
           <div className="row-visual">
-            <div style={{ color:'rgba(245,236,224,.65)', fontSize:11, textTransform:'uppercase', letterSpacing:1, marginBottom:14 }}>Waiting List — By Service Type</div>
+            <div style={{ color:'rgba(245,245,245,.65)', fontSize:11, textTransform:'uppercase', letterSpacing:1, marginBottom:14 }}>Waiting List — By Service Type</div>
             {[
               { label:'Lawn Care 4', sub:'47 properties waiting', badge:'384,200 ft²', cls:'green' },
               { label:'Mosquito Barrier', sub:'31 properties waiting', badge:'246,500 ft²', cls:'' },
@@ -90,16 +90,16 @@ export default function Home() {
                 <div className={`mock-badge ${item.cls}`}>{item.badge}</div>
               </div>
             ))}
-            <div style={{ marginTop:14, background:'rgba(196,125,10,.06)', borderRadius:8, padding:'14px', textAlign:'center' }}>
-              <div style={{ color:'#c47d0a', fontSize:15, fontWeight:700 }}>Know before you dial. Know before you mix.</div>
-              <div style={{ color:'rgba(245,236,224,.65)', fontSize:12, marginTop:4 }}>No other software shows you this.</div>
+            <div style={{ marginTop:14, background:'rgba(255,106,0,.06)', borderRadius:8, padding:'14px', textAlign:'center' }}>
+              <div style={{ color:'#ff6a00', fontSize:15, fontWeight:700 }}>Know before you dial. Know before you mix.</div>
+              <div style={{ color:'rgba(245,245,245,.65)', fontSize:12, marginTop:4 }}>No other software shows you this.</div>
             </div>
           </div>
         </div>
       </section>
 
       {/* INDUSTRIES */}
-      <section id="industries" style={{ background:'#1e1208' }}>
+      <section id="industries" style={{ background:'#0a0a0a' }}>
         <div className="centered" style={{ maxWidth:1200, margin:'0 auto' }}>
           <span className="section-label">Built for Your Industry</span>
           <h2 className="section-title">One Software. Every Season. Every Service.</h2>
@@ -128,7 +128,7 @@ export default function Home() {
       </section>
 
       {/* HOW IT WORKS */}
-      <section style={{ background:'#241508' }}>
+      <section style={{ background:'#111111' }}>
         <div className="centered" style={{ maxWidth:1100, margin:'0 auto' }}>
           <span className="section-label">Built Different</span>
           <h2 className="section-title">Powerful Software. Simple on Day One.</h2>
@@ -156,7 +156,7 @@ export default function Home() {
           <div className="row-text">
             <span className="section-label">Scheduling Intelligence</span>
             <h2 className="section-title">Know Exactly What You Have Waiting Before You Book a Single Stop</h2>
-            <p style={{ color:'rgba(245,236,224,.72)', fontSize:16, lineHeight:1.8 }}>The waiting list is the feature that changes how you run your day. Instead of scheduling on gut feel, you see the exact sq ft waiting for every service type — so you know your chemical needs before you make a single call or mix a single gallon.</p>
+            <p style={{ color:'rgba(245,245,245,.72)', fontSize:16, lineHeight:1.8 }}>The waiting list is the feature that changes how you run your day. Instead of scheduling on gut feel, you see the exact sq ft waiting for every service type — so you know your chemical needs before you make a single call or mix a single gallon.</p>
             <ul className="check-list">
               <li>Waiting list grouped by service type with sq ft totals</li>
               <li>Schedule directly from the list or from the map</li>
@@ -167,7 +167,7 @@ export default function Home() {
             </ul>
           </div>
           <div className="row-visual">
-            <div style={{ color:'rgba(245,236,224,.65)', fontSize:11, textTransform:'uppercase', letterSpacing:1, marginBottom:14 }}>Scheduled Board — Today</div>
+            <div style={{ color:'rgba(245,245,245,.65)', fontSize:11, textTransform:'uppercase', letterSpacing:1, marginBottom:14 }}>Scheduled Board — Today</div>
             {[
               { label:'Snow Removal — Route A', sub:'Mike T. · 8 stops · 6am', badge:'Scheduled' },
               { label:'Lawn Mowing — Crew 2', sub:'4 stops · 8am start', badge:'Scheduled' },
@@ -179,8 +179,8 @@ export default function Home() {
                 <div className="mock-badge green">{item.badge}</div>
               </div>
             ))}
-            <div style={{ marginTop:14, background:'rgba(196,125,10,.06)', borderRadius:8, padding:'14px', textAlign:'center' }}>
-              <div style={{ color:'#c47d0a', fontSize:14, fontWeight:700 }}>Every crew. Every industry. One board.</div>
+            <div style={{ marginTop:14, background:'rgba(255,106,0,.06)', borderRadius:8, padding:'14px', textAlign:'center' }}>
+              <div style={{ color:'#ff6a00', fontSize:14, fontWeight:700 }}>Every crew. Every industry. One board.</div>
             </div>
           </div>
         </div>
@@ -274,7 +274,7 @@ export default function Home() {
       </section>
 
       {/* PRICING */}
-      <section id="pricing" style={{ background:'#1e1208' }}>
+      <section id="pricing" style={{ background:'#0a0a0a' }}>
         <div className="centered" style={{ maxWidth:580, margin:'0 auto 48px' }}>
           <span className="section-label">Pricing</span>
           <h2 className="section-title">One Price. Everything.</h2>
@@ -282,7 +282,7 @@ export default function Home() {
         </div>
         <div className="price-card">
           <div className="price-badge">Everything Included — No Tiers</div>
-          <div style={{ fontSize:13, fontWeight:700, color:'rgba(245,236,224,.70)', textTransform:'uppercase', letterSpacing:1, marginBottom:10 }}>IndustryBossPro</div>
+          <div style={{ fontSize:13, fontWeight:700, color:'rgba(245,245,245,.70)', textTransform:'uppercase', letterSpacing:1, marginBottom:10 }}>IndustryBossPro</div>
           <div className="price-amount"><sup>$</sup>199</div>
           <div className="price-period">per month · cancel anytime · no contracts</div>
 
@@ -294,13 +294,13 @@ export default function Home() {
           <button onClick={openModal} className="btn-primary" style={{ width:'100%', fontSize:16, padding:16 }}>
             Start Your 14-Day Free Trial
           </button>
-          <p style={{ textAlign:'center', color:'rgba(245,236,224,.65)', fontSize:13, marginTop:14 }}>No credit card required. No contracts.</p>
+          <p style={{ textAlign:'center', color:'rgba(245,245,245,.65)', fontSize:13, marginTop:14 }}>No credit card required. No contracts.</p>
         </div>
       </section>
 
       {/* CTA */}
       <div className="cta-band">
-        <h2>Stop Duct-Taping Together<br /><span style={{ color:'#c47d0a' }}>Five Different Software Tools.</span></h2>
+        <h2>Stop Duct-Taping Together<br /><span style={{ color:'#ff6a00' }}>Five Different Software Tools.</span></h2>
         <p>IndustryBossPro is built for businesses that do it all — snow, landscape, irrigation, lawn, pest, and everything in between. One platform. One price. Try it free for 14 days.</p>
         <div className="hero-btns" style={{ justifyContent:'center' }}>
           <button onClick={openModal} className="btn-primary" style={{ fontSize:17, padding:'18px 48px' }}>Start Free — No Card Required</button>
@@ -315,10 +315,10 @@ export default function Home() {
           <div className="footer-cols">
             <div style={{ maxWidth:280 }}>
               <div style={{ display:'flex', alignItems:'center', gap:10, marginBottom:14 }}>
-                <span style={{ fontSize:17, fontWeight:800, color:'#f5ece0' }}>IndustryBoss<span style={{ color:'#c47d0a' }}>Pro</span></span>
+                <span style={{ fontSize:17, fontWeight:800, color:'#f5f5f5' }}>IndustryBoss<span style={{ color:'#ff6a00' }}>Pro</span></span>
               </div>
-              <p style={{ color:'rgba(245,236,224,.70)', fontSize:13, lineHeight:1.7 }}>The all-in-one field service platform built for businesses that run every trade. Snow, landscape, irrigation, lawn care, pest control — one dashboard, one price.</p>
-              <a href="tel:+16828997304" style={{ display:'inline-block', marginTop:16, color:'#c47d0a', fontSize:16, fontWeight:800, textDecoration:'none' }}>&#9742;&nbsp;(682) 899-7304</a>
+              <p style={{ color:'rgba(245,245,245,.70)', fontSize:13, lineHeight:1.7 }}>The all-in-one field service platform built for businesses that run every trade. Snow, landscape, irrigation, lawn care, pest control — one dashboard, one price.</p>
+              <a href="tel:+16828997304" style={{ display:'inline-block', marginTop:16, color:'#ff6a00', fontSize:16, fontWeight:800, textDecoration:'none' }}>&#9742;&nbsp;(682) 899-7304</a>
             </div>
             {[
               { title:'Product', links:[{label:'Features',href:'/features'},{label:'BossPro Family',href:'/bosspro-family'},{label:'Pricing',href:'/pricing'},{label:'Login',href:'https://my.industrybosspro.com'},{label:'Start Free Trial',href:'/pricing'}] },
@@ -332,15 +332,15 @@ export default function Home() {
                 <ul style={{ listStyle:'none' }}>
                   {col.links.map(link => (
                     <li key={link.label} style={{ marginBottom:10 }}>
-                      <a href={link.href} style={{ color:'rgba(245,236,224,.70)', fontSize:14, textDecoration:'none' }}>{link.label}</a>
+                      <a href={link.href} style={{ color:'rgba(245,245,245,.70)', fontSize:14, textDecoration:'none' }}>{link.label}</a>
                     </li>
                   ))}
                 </ul>
               </div>
             ))}
           </div>
-          <div style={{ borderTop:'1px solid rgba(196,125,10,.08)', paddingTop:24, display:'flex', justifyContent:'space-between', flexWrap:'wrap', gap:12 }}>
-            <p style={{ color:'rgba(245,236,224,.70)', fontSize:13 }}>© {new Date().getFullYear()} IndustryBossPro. All rights reserved.</p>
+          <div style={{ borderTop:'1px solid rgba(255,106,0,.08)', paddingTop:24, display:'flex', justifyContent:'space-between', flexWrap:'wrap', gap:12 }}>
+            <p style={{ color:'rgba(245,245,245,.70)', fontSize:13 }}>© {new Date().getFullYear()} IndustryBossPro. All rights reserved.</p>
           </div>
         </div>
       </footer>

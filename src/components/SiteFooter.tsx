@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-const S = { navy2: '#1e1208', elec: '#c47d0a', muted: 'rgba(245,236,224,0.5)', border: 'rgba(196,125,10,0.15)', text: '#f5ece0' };
+const S = { navy2: '#0a0a0a', elec: '#ff6a00', muted: 'rgba(245,245,245,0.5)', border: 'rgba(255,106,0,0.15)', text: '#f5f5f5' };
 
 const INDUSTRIES = [
   { label: 'Snow Removal Software', href: '/snow-removal-software' },

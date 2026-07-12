@@ -33,9 +33,9 @@ export const metadata: Metadata = {
 };
 
 const S = {
-  navy1: '#1e1208', navy2: '#1e1208', navy4: '#2a1a0a',
-  elec: '#c47d0a', text: '#f5ece0', muted: 'rgba(245,236,224,0.65)',
-  border: 'rgba(196,125,10,0.15)',
+  navy1: '#0a0a0a', navy2: '#0a0a0a', navy4: '#1a1a1a',
+  elec: '#ff6a00', text: '#f5f5f5', muted: 'rgba(245,245,245,0.65)',
+  border: 'rgba(255,106,0,0.15)',
 };
 
 const silos = [
@@ -85,8 +85,8 @@ const silos = [
 export default function BlogIndex() {
   return (
     <div style={{ background: S.navy1, minHeight: '100vh', color: S.text, fontFamily: "'Inter','Segoe UI',Arial,sans-serif" }}>
-      <div style={{ background: `linear-gradient(160deg, #1e1208, #241508)`, padding: '80px 24px 56px', borderBottom: `1px solid ${S.border}`, textAlign: 'center' }}>
-        <div style={{ display: 'inline-block', background: 'rgba(196,125,10,0.1)', border: `1px solid rgba(196,125,10,0.3)`, color: S.elec, fontSize: 11, fontWeight: 700, letterSpacing: '1.5px', textTransform: 'uppercase', padding: '5px 14px', borderRadius: 20, marginBottom: 20 }}>
+      <div style={{ background: `linear-gradient(160deg, #0a0a0a, #111111)`, padding: '80px 24px 56px', borderBottom: `1px solid ${S.border}`, textAlign: 'center' }}>
+        <div style={{ display: 'inline-block', background: 'rgba(255,106,0,0.1)', border: `1px solid rgba(255,106,0,0.3)`, color: S.elec, fontSize: 11, fontWeight: 700, letterSpacing: '1.5px', textTransform: 'uppercase', padding: '5px 14px', borderRadius: 20, marginBottom: 20 }}>
           The IndustryBossPro Blog
         </div>
         <h1 style={{ fontSize: 'clamp(28px,4vw,52px)', fontWeight: 900, color: '#fff', marginBottom: 16, lineHeight: 1.1 }}>
@@ -116,7 +116,7 @@ export default function BlogIndex() {
                   href={`/blog/${silo.industry}/${post.slug}`}
                   style={{ display: 'block', background: S.navy4, border: `1.5px solid ${S.border}`, borderRadius: 12, padding: '24px', textDecoration: 'none' }}
                 >
-                  <div style={{ fontSize: 11, color: 'rgba(245,236,224,0.35)', fontWeight: 600, marginBottom: 8, textTransform: 'uppercase', letterSpacing: 1 }}>
+                  <div style={{ fontSize: 11, color: 'rgba(245,245,245,0.35)', fontWeight: 600, marginBottom: 8, textTransform: 'uppercase', letterSpacing: 1 }}>
                     {silo.label} · {post.readTime} min
                   </div>
                   <h3 style={{ fontSize: 15, fontWeight: 700, color: '#fff', lineHeight: 1.4, marginBottom: 10 }}>

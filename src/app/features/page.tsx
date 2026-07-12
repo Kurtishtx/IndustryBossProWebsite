@@ -6,11 +6,11 @@ import SiteFooter from '../../components/SiteFooter';
 import TrialModal from '../../components/TrialModal';
 
 const S = {
-  navy1: '#1e1208', navy2: '#1e1208', navy4: '#2a1a0a',
-  elec: '#c47d0a', text: '#f5ece0', muted: 'rgba(245,236,224,0.65)',
-  border: 'rgba(196,125,10,0.15)',
+  navy1: '#0a0a0a', navy2: '#0a0a0a', navy4: '#1a1a1a',
+  elec: '#ff6a00', text: '#f5f5f5', muted: 'rgba(245,245,245,0.65)',
+  border: 'rgba(255,106,0,0.15)',
 };
-const e = (a: string) => `rgba(196,125,10,${a})`;
+const e = (a: string) => `rgba(255,106,0,${a})`;
 
 const FEATURES = [
   {
@@ -79,7 +79,7 @@ export default function FeaturesPage() {
 
       <div style={{ paddingTop: 66 }}>
         {/* Hero */}
-        <div style={{ background: `linear-gradient(160deg, #1e1208, #241508)`, padding: '90px 24px 70px', textAlign: 'center', borderBottom: `1px solid ${S.border}` }}>
+        <div style={{ background: `linear-gradient(160deg, #0a0a0a, #111111)`, padding: '90px 24px 70px', textAlign: 'center', borderBottom: `1px solid ${S.border}` }}>
           <div style={{ display: 'inline-block', background: e('.1'), border: `1px solid ${e('.3')}`, color: S.elec, fontSize: 11, fontWeight: 700, letterSpacing: '1.5px', textTransform: 'uppercase', padding: '5px 14px', borderRadius: 20, marginBottom: 20 }}>
             Every Feature Included
           </div>

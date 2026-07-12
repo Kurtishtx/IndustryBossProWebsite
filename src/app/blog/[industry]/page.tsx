@@ -130,9 +130,9 @@ export async function generateMetadata(
 }
 
 const S = {
-  navy1: '#1e1208', navy2: '#1e1208', navy4: '#2a1a0a',
-  elec: '#c47d0a', text: '#f5ece0', muted: 'rgba(245,236,224,0.65)',
-  border: 'rgba(196,125,10,0.15)',
+  navy1: '#0a0a0a', navy2: '#0a0a0a', navy4: '#1a1a1a',
+  elec: '#ff6a00', text: '#f5f5f5', muted: 'rgba(245,245,245,0.65)',
+  border: 'rgba(255,106,0,0.15)',
 };
 
 export default async function SiloIndexPage(
@@ -147,9 +147,9 @@ export default async function SiloIndexPage(
 
   return (
     <div style={{ background: S.navy1, minHeight: '100vh', color: S.text, fontFamily: "'Inter','Segoe UI',Arial,sans-serif" }}>
-      <div style={{ background: `linear-gradient(160deg, #1e1208, #241508)`, padding: '72px 24px 48px', borderBottom: `1px solid ${S.border}` }}>
+      <div style={{ background: `linear-gradient(160deg, #0a0a0a, #111111)`, padding: '72px 24px 48px', borderBottom: `1px solid ${S.border}` }}>
         <div style={{ maxWidth: 900, margin: '0 auto' }}>
-          <div style={{ display: 'inline-block', background: 'rgba(196,125,10,0.1)', border: `1px solid rgba(196,125,10,0.3)`, color: S.elec, fontSize: 11, fontWeight: 700, letterSpacing: '1.5px', textTransform: 'uppercase', padding: '5px 14px', borderRadius: 20, marginBottom: 20 }}>
+          <div style={{ display: 'inline-block', background: 'rgba(255,106,0,0.1)', border: `1px solid rgba(255,106,0,0.3)`, color: S.elec, fontSize: 11, fontWeight: 700, letterSpacing: '1.5px', textTransform: 'uppercase', padding: '5px 14px', borderRadius: 20, marginBottom: 20 }}>
             {label}
           </div>
           <h1 style={{ fontSize: 'clamp(28px,4vw,48px)', fontWeight: 900, color: '#fff', marginBottom: 16, lineHeight: 1.1 }}>
@@ -168,7 +168,7 @@ export default async function SiloIndexPage(
               style={{ display: 'block', background: S.navy4, border: `1.5px solid ${S.border}`, borderRadius: 14, padding: '28px 28px', textDecoration: 'none', transition: 'border-color .2s' }}
             >
               <div style={{ display: 'flex', gap: 16, alignItems: 'flex-start' }}>
-                <div style={{ background: 'rgba(196,125,10,0.12)', border: `1px solid rgba(196,125,10,0.25)`, borderRadius: 8, width: 40, height: 40, display: 'flex', alignItems: 'center', justifyContent: 'center', color: S.elec, fontSize: 14, fontWeight: 800, flexShrink: 0 }}>
+                <div style={{ background: 'rgba(255,106,0,0.12)', border: `1px solid rgba(255,106,0,0.25)`, borderRadius: 8, width: 40, height: 40, display: 'flex', alignItems: 'center', justifyContent: 'center', color: S.elec, fontSize: 14, fontWeight: 800, flexShrink: 0 }}>
                   {String(i + 1).padStart(2, '0')}
                 </div>
                 <div style={{ flex: 1 }}>
@@ -177,10 +177,10 @@ export default async function SiloIndexPage(
                   </h2>
                   <p style={{ color: S.muted, fontSize: 14, lineHeight: 1.6, marginBottom: 12 }}>{post.description}</p>
                   <div style={{ display: 'flex', gap: 16, alignItems: 'center' }}>
-                    <span style={{ color: 'rgba(245,236,224,0.35)', fontSize: 12 }}>
+                    <span style={{ color: 'rgba(245,245,245,0.35)', fontSize: 12 }}>
                       {new Date(post.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}
                     </span>
-                    <span style={{ color: 'rgba(245,236,224,0.35)', fontSize: 12 }}>{post.readTime} min read</span>
+                    <span style={{ color: 'rgba(245,245,245,0.35)', fontSize: 12 }}>{post.readTime} min read</span>
                     <span style={{ color: S.elec, fontSize: 13, fontWeight: 600, marginLeft: 'auto' }}>Read →</span>
                   </div>
                 </div>

@@ -55,8 +55,8 @@ export default function SiteHeader({ onOpenModal }: { onOpenModal: () => void })
               <svg width="28" height="28" viewBox="0 0 32 32" fill="none" style={{ flexShrink: 0 }}>
                 <defs>
                   <linearGradient id="hcg" x1="0" y1="0" x2="1" y2="1">
-                    <stop offset="0%" stopColor="#c47d0a"/>
-                    <stop offset="100%" stopColor="#8a5a08"/>
+                    <stop offset="0%" stopColor="#ff6a00"/>
+                    <stop offset="100%" stopColor="#e63000"/>
                   </linearGradient>
                 </defs>
                 <rect width="32" height="32" rx="8" fill="url(#hcg)"/>
