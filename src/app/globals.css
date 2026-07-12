@@ -43,7 +43,7 @@ body {
 .nav-mobile-group-trigger { color: rgba(245,245,245,0.65); font-size: 15px; font-weight: 500; padding: 13px 0; cursor: pointer; display: flex; justify-content: space-between; border-bottom: 1px solid #e63000; }
 .nav-mobile-group-trigger:hover { color: #fff; }
 .nav-mobile-item { display: block; color: rgba(245,245,245,0.70); font-size: 13px; padding: 10px 16px; text-decoration: none; border-bottom: 1px solid #e63000; }
-.nav-mobile-item:hover { color: #fff; background: rgba(255,106,0,0.05); }
+.nav-mobile-item:hover { color: #fff; background: rgba(255,255,255,0.05); }
 .nav-mobile-link { display: block; color: rgba(245,245,245,0.65); font-size: 15px; font-weight: 500; padding: 13px 0; text-decoration: none; border-bottom: 1px solid #e63000; }
 .nav-mobile-link:hover { color: #fff; }
 .nav-mobile-cta { display: block; width: 100%; margin-top: 16px; background: var(--electric); color: #fff; border: none; border-radius: 10px; padding: 15px; font-size: 16px; font-weight: 700; cursor: pointer; font-family: inherit; }
@@ -54,7 +54,7 @@ body {
 .nav-dropdown:hover .nav-dropdown-menu { display: block; }
 .nav-dropdown-inner { background: #111111; border: 1px solid #e63000; border-radius: 12px; padding: 8px; box-shadow: 0 12px 40px rgba(0,0,0,.6); }
 .nav-dropdown-item { display: block; color: rgba(245,245,245,0.65); font-size: 13px; padding: 9px 14px; border-radius: 7px; text-decoration: none; transition: background .15s, color .15s; white-space: nowrap; }
-.nav-dropdown-item:hover { background: rgba(255,106,0,0.1); color: #fff; }
+.nav-dropdown-item:hover { background: rgba(255,255,255,0.1); color: #fff; }
 
 @media (max-width: 900px) {
   .navbar-links { display: none !important; }
@@ -65,7 +65,7 @@ body {
 /* ── HOMEPAGE ── */
 
 .hero { background: linear-gradient(135deg, #0a0a0a 0%, #111111 55%, #1a1a1a 100%); padding: 110px 40px 90px; text-align: center; position: relative; overflow: hidden; }
-.hero-badge { display: inline-block; background: rgba(255,106,0,.1); border: 1px solid #e63000; color: #ff6a00; font-size: 12px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; padding: 6px 18px; border-radius: 20px; margin-bottom: 28px; }
+.hero-badge { display: inline-block; background: rgba(255,255,255,.1); border: 1px solid #e63000; color: #ff6a00; font-size: 12px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; padding: 6px 18px; border-radius: 20px; margin-bottom: 28px; }
 .hero h1 { color: #fff; font-size: clamp(34px, 5.5vw, 64px); font-weight: 900; line-height: 1.1; max-width: 920px; margin: 0 auto 24px; letter-spacing: -1px; }
 .hero h1 span { color: #ff6a00; }
 .hero-sub { color: rgba(245,245,245,.72); font-size: clamp(16px, 2vw, 20px); max-width: 660px; margin: 0 auto 44px; line-height: 1.7; }
@@ -121,7 +121,7 @@ section { padding: 96px 40px; }
 
 .simple-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px; max-width: 1100px; margin: 0 auto; }
 .simple-card { background: rgba(255,255,255,.04); border: 1.5px solid #e63000; border-radius: 12px; padding: 30px 26px; }
-.simple-num { font-size: 40px; font-weight: 900; color: #ff6a00; opacity: .2; line-height: 1; margin-bottom: 12px; }
+.simple-num { font-size: 40px; font-weight: 900; color: #ff6a00; opacity: 1; line-height: 1; margin-bottom: 12px; }
 .simple-card h3 { font-size: 17px; font-weight: 700; color: #fff; margin-bottom: 8px; }
 .simple-card p { color: rgba(245,245,245,.70); font-size: 14px; line-height: 1.6; }
 
@@ -139,7 +139,7 @@ section { padding: 96px 40px; }
 .vs-table th.ibp-col { background: #0a0a0a; color: #ff6a00; border-radius: 10px 10px 0 0; }
 .vs-table td { padding: 13px 20px; border-bottom: 1px solid #e63000; font-size: 14px; text-align: center; color: #f5f5f5; }
 .vs-table td:first-child { text-align: left; font-weight: 600; }
-.vs-table td.ibp-col { font-weight: 700; color: #ff6a00; font-size: 15px; background: rgba(255,106,0,.04) !important; }
+.vs-table td.ibp-col { font-weight: 700; color: #ff6a00; font-size: 15px; background: rgba(255,255,255,.04) !important; }
 .vs-table td.other-col { color: rgba(245,245,245,.55); }
 
 .price-card { background: #1a1a1a; border: 3px solid #ff6a00; border-radius: 18px; padding: 48px 44px; max-width: 580px; margin: 0 auto; position: relative; box-shadow: 0 0 0 6px rgba(255,106,0,.08), 0 20px 60px rgba(0,0,0,.3); }

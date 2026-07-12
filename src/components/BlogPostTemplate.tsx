@@ -62,7 +62,7 @@ export default function BlogPostTemplate({ post, industry }: Props) {
             <span style={{ color: S.muted, fontSize: 13 }}>›</span>
             <span style={{ color: S.elec, fontSize: 13, fontWeight: 600 }}>{post.title}</span>
           </div>
-          <div style={{ display: 'inline-block', background: 'rgba(255,106,0,0.1)', border: `1px solid #e63000`, color: S.elec, fontSize: 11, fontWeight: 700, letterSpacing: '1.5px', textTransform: 'uppercase', padding: '5px 14px', borderRadius: 20, marginBottom: 20 }}>
+          <div style={{ display: 'inline-block', background: 'rgba(255,255,255,0.1)', border: `1px solid #e63000`, color: S.elec, fontSize: 11, fontWeight: 700, letterSpacing: '1.5px', textTransform: 'uppercase', padding: '5px 14px', borderRadius: 20, marginBottom: 20 }}>
             {industryLabel}
           </div>
           <h1 style={{ fontSize: 'clamp(26px,4vw,44px)', fontWeight: 900, lineHeight: 1.1, color: '#fff', marginBottom: 20, letterSpacing: '-0.5px' }}>

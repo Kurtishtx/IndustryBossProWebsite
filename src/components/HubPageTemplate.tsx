@@ -37,7 +37,7 @@ export default function HubPageTemplate({ page }: { page: HubPageData }) {
       {/* HERO */}
       <section style={{ paddingTop: 120, paddingBottom: 80, background: `linear-gradient(180deg, #0a0a0a 0%, #111111 100%)` }}>
         <div style={{ maxWidth: 900, margin: '0 auto', padding: '0 24px', textAlign: 'center' }}>
-          <div style={{ display: 'inline-block', background: 'rgba(255,106,0,0.12)', border: `1px solid #e63000`, borderRadius: 20, padding: '4px 14px', fontSize: 13, color: S.elec, fontWeight: 600, marginBottom: 20 }}>
+          <div style={{ display: 'inline-block', background: 'rgba(255,255,255,0.12)', border: `1px solid #e63000`, borderRadius: 20, padding: '4px 14px', fontSize: 13, color: S.elec, fontWeight: 600, marginBottom: 20 }}>
             {page.industry}
           </div>
           <h1 style={{ fontSize: 'clamp(28px, 5vw, 52px)', fontWeight: 900, color: S.text, lineHeight: 1.1, marginBottom: 20, letterSpacing: '-1px' }}>
@@ -98,7 +98,7 @@ export default function HubPageTemplate({ page }: { page: HubPageData }) {
       <section style={{ padding: '80px 24px', background: S.navy1 }}>
         <div style={{ maxWidth: 1100, margin: '0 auto', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 48, alignItems: 'center' }}>
           <div>
-            <div style={{ display: 'inline-block', background: 'rgba(255,106,0,0.12)', border: `1px solid #e63000`, borderRadius: 20, padding: '4px 14px', fontSize: 12, color: S.elec, fontWeight: 700, letterSpacing: 1, textTransform: 'uppercase', marginBottom: 16 }}>
+            <div style={{ display: 'inline-block', background: 'rgba(255,255,255,0.12)', border: `1px solid #e63000`, borderRadius: 20, padding: '4px 14px', fontSize: 12, color: S.elec, fontWeight: 700, letterSpacing: 1, textTransform: 'uppercase', marginBottom: 16 }}>
               The Killer Feature
             </div>
             <h2 style={{ fontSize: 'clamp(24px, 3vw, 36px)', fontWeight: 800, color: S.text, marginBottom: 16, lineHeight: 1.2 }}>
@@ -128,7 +128,7 @@ export default function HubPageTemplate({ page }: { page: HubPageData }) {
               <div style={{ padding: '16px' }}>
                 <div style={{ fontSize: 11, fontWeight: 700, color: S.elec, letterSpacing: 1, textTransform: 'uppercase', marginBottom: 12 }}>Waiting List — No Date</div>
                 {['Client A', 'Client B', 'Client C'].map((c, i) => (
-                  <div key={i} style={{ background: 'rgba(255,106,0,0.08)', border: '1px solid #e63000', borderRadius: 6, padding: '8px 10px', marginBottom: 8, fontSize: 12 }}>
+                  <div key={i} style={{ background: 'rgba(255,255,255,0.08)', border: '1px solid #e63000', borderRadius: 6, padding: '8px 10px', marginBottom: 8, fontSize: 12 }}>
                     <div style={{ color: S.elec, fontWeight: 600 }}>{c}</div>
                     <div style={{ color: S.muted }}>Awaiting scheduling</div>
                   </div>
@@ -169,7 +169,7 @@ export default function HubPageTemplate({ page }: { page: HubPageData }) {
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: 32 }}>
             {HOW_STEPS.map(s => (
               <div key={s.n} style={{ textAlign: 'center' }}>
-                <div style={{ width: 52, height: 52, borderRadius: '50%', background: 'rgba(255,106,0,0.12)', border: `2px solid ${S.elec}`, display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 16px', fontSize: 20, fontWeight: 800, color: S.elec }}>
+                <div style={{ width: 52, height: 52, borderRadius: '50%', background: 'rgba(255,255,255,0.12)', border: `2px solid ${S.elec}`, display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 16px', fontSize: 20, fontWeight: 800, color: S.elec }}>
                   {s.n}
                 </div>
                 <div style={{ fontSize: 16, fontWeight: 700, color: S.text, marginBottom: 8 }}>{s.title}</div>
@@ -184,7 +184,7 @@ export default function HubPageTemplate({ page }: { page: HubPageData }) {
       <section style={{ padding: '80px 24px', background: S.navy1 }}>
         <div style={{ maxWidth: 1100, margin: '0 auto' }}>
           <div style={{ textAlign: 'center', marginBottom: 48 }}>
-            <div style={{ display: 'inline-block', background: 'rgba(255,106,0,0.12)', border: `1px solid #e63000`, borderRadius: 20, padding: '4px 14px', fontSize: 12, color: S.elec, fontWeight: 700, letterSpacing: 1, textTransform: 'uppercase', marginBottom: 16 }}>
+            <div style={{ display: 'inline-block', background: 'rgba(255,255,255,0.12)', border: `1px solid #e63000`, borderRadius: 20, padding: '4px 14px', fontSize: 12, color: S.elec, fontWeight: 700, letterSpacing: 1, textTransform: 'uppercase', marginBottom: 16 }}>
               Platform Power
             </div>
             <h2 style={{ fontSize: 'clamp(24px,3vw,36px)', fontWeight: 800, color: S.text, marginBottom: 12 }}>
@@ -231,7 +231,7 @@ export default function HubPageTemplate({ page }: { page: HubPageData }) {
           <div style={{ fontSize: 14, fontWeight: 600, color: S.muted, marginBottom: 20 }}>BUILT FOR ALL 9 FIELD SERVICE INDUSTRIES</div>
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: 10, justifyContent: 'center' }}>
             {INDUSTRIES.map(ind => (
-              <span key={ind} style={{ background: ind === page.industry ? 'rgba(255,106,0,0.15)' : 'rgba(255,255,255,0.04)', border: `1px solid ${ind === page.industry ? '#ff6a00' : S.border}`, borderRadius: 20, padding: '6px 14px', fontSize: 13, color: ind === page.industry ? S.elec : S.muted, fontWeight: ind === page.industry ? 700 : 400 }}>
+              <span key={ind} style={{ background: ind === page.industry ? 'rgba(255,255,255,0.15)' : 'rgba(255,255,255,0.04)', border: `1px solid ${ind === page.industry ? '#ff6a00' : S.border}`, borderRadius: 20, padding: '6px 14px', fontSize: 13, color: ind === page.industry ? S.elec : S.muted, fontWeight: ind === page.industry ? 700 : 400 }}>
                 {ind}
               </span>
             ))}

@@ -24,7 +24,7 @@ export default function FamilyPageTemplate() {
       <div style={{ paddingTop: 66 }}>
         {/* Hero */}
         <div style={{ background: `linear-gradient(160deg, #0a0a0a, #111111)`, padding: '90px 24px 70px', textAlign: 'center', borderBottom: `1px solid ${S.border}` }}>
-          <div style={{ display: 'inline-block', background: e('.1'), border: `1px solid ${e('.3')}`, color: S.elec, fontSize: 11, fontWeight: 700, letterSpacing: '1.5px', textTransform: 'uppercase', padding: '5px 14px', borderRadius: 20, marginBottom: 20 }}>
+          <div style={{ display: 'inline-block', background: 'rgba(255,255,255,0.08)', border: `1px solid #e63000`, color: S.elec, fontSize: 11, fontWeight: 700, letterSpacing: '1.5px', textTransform: 'uppercase', padding: '5px 14px', borderRadius: 20, marginBottom: 20 }}>
             The BossPro Family
           </div>
           <h1 style={{ fontSize: 'clamp(30px,5vw,58px)', fontWeight: 900, color: '#fff', marginBottom: 16, lineHeight: 1.1, letterSpacing: '-1px' }}>

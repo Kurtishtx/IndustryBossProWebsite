@@ -90,7 +90,7 @@ export default function Home() {
                 <div className={`mock-badge ${item.cls}`}>{item.badge}</div>
               </div>
             ))}
-            <div style={{ marginTop:14, background:'rgba(255,106,0,.06)', borderRadius:8, padding:'14px', textAlign:'center' }}>
+            <div style={{ marginTop:14, background:'rgba(255,255,255,.06)', borderRadius:8, padding:'14px', textAlign:'center' }}>
               <div style={{ color:'#ff6a00', fontSize:15, fontWeight:700 }}>Know before you dial. Know before you mix.</div>
               <div style={{ color:'rgba(245,245,245,.65)', fontSize:12, marginTop:4 }}>No other software shows you this.</div>
             </div>
@@ -179,7 +179,7 @@ export default function Home() {
                 <div className="mock-badge green">{item.badge}</div>
               </div>
             ))}
-            <div style={{ marginTop:14, background:'rgba(255,106,0,.06)', borderRadius:8, padding:'14px', textAlign:'center' }}>
+            <div style={{ marginTop:14, background:'rgba(255,255,255,.06)', borderRadius:8, padding:'14px', textAlign:'center' }}>
               <div style={{ color:'#ff6a00', fontSize:14, fontWeight:700 }}>Every crew. Every industry. One board.</div>
             </div>
           </div>

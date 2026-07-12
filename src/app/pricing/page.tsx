@@ -51,7 +51,7 @@ export default function PricingPage() {
       {/* Hero */}
       <div style={{ paddingTop: 66 }}>
         <div style={{ background: `linear-gradient(160deg, #0a0a0a, #111111)`, padding: '90px 24px 70px', textAlign: 'center', borderBottom: `1px solid ${S.border}` }}>
-          <div style={{ display: 'inline-block', background: e('.1'), border: `1px solid ${e('.3')}`, color: S.elec, fontSize: 11, fontWeight: 700, letterSpacing: '1.5px', textTransform: 'uppercase', padding: '5px 14px', borderRadius: 20, marginBottom: 20 }}>
+          <div style={{ display: 'inline-block', background: 'rgba(255,255,255,0.08)', border: `1px solid #e63000`, color: S.elec, fontSize: 11, fontWeight: 700, letterSpacing: '1.5px', textTransform: 'uppercase', padding: '5px 14px', borderRadius: 20, marginBottom: 20 }}>
             Simple Pricing
           </div>
           <h1 style={{ fontSize: 'clamp(32px,5vw,60px)', fontWeight: 900, color: '#fff', marginBottom: 16, lineHeight: 1.1, letterSpacing: '-1.5px' }}>
@@ -102,7 +102,7 @@ export default function PricingPage() {
             <span style={{ color: S.muted }}>Other Platforms</span>
           </div>
           {COMPARE.map((row, i) => (
-            <div key={row.feature} style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', padding: '14px 24px', borderTop: `1px solid ${S.border}`, background: i % 2 === 0 ? 'transparent' : 'rgba(255,106,0,0.02)' }}>
+            <div key={row.feature} style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', padding: '14px 24px', borderTop: `1px solid ${S.border}`, background: i % 2 === 0 ? 'transparent' : 'rgba(255,255,255,0.02)' }}>
               <span style={{ color: S.muted, fontSize: 14, fontWeight: 600 }}>{row.feature}</span>
               <span style={{ color: S.elec, fontSize: 14, fontWeight: 700 }}>{row.us}</span>
               <span style={{ color: 'rgba(245,245,245,0.35)', fontSize: 14 }}>{row.them}</span>

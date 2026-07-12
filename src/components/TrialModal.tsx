@@ -73,7 +73,7 @@ export default function TrialModal({ open, onClose }: { open: boolean; onClose: 
   if (!open) return null;
 
   const inp: React.CSSProperties = {
-    width: '100%', background: 'rgba(255,106,0,0.06)', border: `1px solid ${S.border}`,
+    width: '100%', background: 'rgba(255,255,255,0.06)', border: `1px solid ${S.border}`,
     borderRadius: 8, padding: '12px 14px', color: S.text, fontSize: 15, outline: 'none', boxSizing: 'border-box',
   };
 
@@ -111,7 +111,7 @@ export default function TrialModal({ open, onClose }: { open: boolean; onClose: 
               I agree to the <Link href="/terms" style={{ color: S.elec }}>Terms</Link> and <Link href="/privacy" style={{ color: S.elec }}>Privacy Policy</Link>
             </label>
             {err && <div style={{ color: '#ff6b6b', fontSize: 13, marginBottom: 12 }}>{err}</div>}
-            <button type="submit" disabled={loading} style={{ width: '100%', background: loading ? 'rgba(255,106,0,0.4)' : S.elec, color: '#fff', border: 'none', borderRadius: 10, padding: '14px', fontSize: 16, fontWeight: 800, cursor: loading ? 'default' : 'pointer' }}>
+            <button type="submit" disabled={loading} style={{ width: '100%', background: loading ? 'rgba(255,255,255,0.4)' : S.elec, color: '#fff', border: 'none', borderRadius: 10, padding: '14px', fontSize: 16, fontWeight: 800, cursor: loading ? 'default' : 'pointer' }}>
               {loading ? 'Creating Account...' : 'Start Free Trial'}
             </button>
           </form>

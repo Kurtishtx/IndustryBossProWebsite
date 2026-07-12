@@ -86,7 +86,7 @@ export default function BlogIndex() {
   return (
     <div style={{ background: S.navy1, minHeight: '100vh', color: S.text, fontFamily: "'Inter','Segoe UI',Arial,sans-serif" }}>
       <div style={{ background: `linear-gradient(160deg, #0a0a0a, #111111)`, padding: '80px 24px 56px', borderBottom: `1px solid ${S.border}`, textAlign: 'center' }}>
-        <div style={{ display: 'inline-block', background: 'rgba(255,106,0,0.1)', border: `1px solid #e63000`, color: S.elec, fontSize: 11, fontWeight: 700, letterSpacing: '1.5px', textTransform: 'uppercase', padding: '5px 14px', borderRadius: 20, marginBottom: 20 }}>
+        <div style={{ display: 'inline-block', background: 'rgba(255,255,255,0.1)', border: `1px solid #e63000`, color: S.elec, fontSize: 11, fontWeight: 700, letterSpacing: '1.5px', textTransform: 'uppercase', padding: '5px 14px', borderRadius: 20, marginBottom: 20 }}>
           The IndustryBossPro Blog
         </div>
         <h1 style={{ fontSize: 'clamp(28px,4vw,52px)', fontWeight: 900, color: '#fff', marginBottom: 16, lineHeight: 1.1 }}>
