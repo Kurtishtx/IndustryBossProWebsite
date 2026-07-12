@@ -23,6 +23,7 @@ import { mosquitoControlPosts, mosquitoSprayPosts, mosquitoTreatmentPosts, mosqu
 import { fenceCompanyPosts, fenceInstallationPosts, fenceBusinessPosts } from '../../lib/blog-fence-data';
 import { lawnMowingPosts, mowingBusinessPosts, grassCuttingPosts, lawnMowingSchedulingPosts } from '../../lib/blog-mowing-data';
 import { carpetCleaningPosts } from '../../lib/blog-carpet-cleaning-data';
+import { garageDoorPosts } from '../../lib/blog-garage-door-data';
 
 export const metadata: Metadata = {
   title: 'Field Service Business Blog | IndustryBossPro',
@@ -74,6 +75,7 @@ const silos = [
   { industry: 'grass-cutting', label: 'Grass Cutting Software', posts: grassCuttingPosts, hubSlug: 'grass-cutting-software' },
   { industry: 'lawn-mowing-scheduling', label: 'Lawn Mowing Scheduling', posts: lawnMowingSchedulingPosts, hubSlug: 'lawn-mowing-scheduling-software' },
   { industry: 'carpet-cleaning', label: 'Carpet Cleaning Software', posts: carpetCleaningPosts, hubSlug: 'carpet-cleaning-software' },
+  { industry: 'garage-door', label: 'Garage Door Service Software', posts: garageDoorPosts, hubSlug: 'garage-door-service-software' },
 ];
 
 export default function BlogIndex() {

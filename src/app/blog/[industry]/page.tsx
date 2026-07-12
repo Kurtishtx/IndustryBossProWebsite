@@ -24,6 +24,7 @@ import { mosquitoControlPosts, mosquitoSprayPosts, mosquitoTreatmentPosts, mosqu
 import { fenceCompanyPosts, fenceInstallationPosts, fenceBusinessPosts } from '../../../lib/blog-fence-data';
 import { lawnMowingPosts, mowingBusinessPosts, grassCuttingPosts, lawnMowingSchedulingPosts } from '../../../lib/blog-mowing-data';
 import { carpetCleaningPosts } from '../../../lib/blog-carpet-cleaning-data';
+import { garageDoorPosts } from '../../../lib/blog-garage-door-data';
 
 const SILO_DATA: Record<string, typeof poolServicePosts> = {
   'pool-service': poolServicePosts,
@@ -64,6 +65,7 @@ const SILO_DATA: Record<string, typeof poolServicePosts> = {
   'grass-cutting': grassCuttingPosts,
   'lawn-mowing-scheduling': lawnMowingSchedulingPosts,
   'carpet-cleaning': carpetCleaningPosts,
+  'garage-door': garageDoorPosts,
 };
 
 const SILO_META: Record<string, { title: string; description: string; hubSlug: string }> = {
@@ -105,6 +107,7 @@ const SILO_META: Record<string, { title: string; description: string; hubSlug: s
   'grass-cutting': { title: 'Grass Cutting Business Tips & Guides', description: 'Guides for grass cutting operators on routes, scheduling, and software.', hubSlug: 'grass-cutting-software' },
   'lawn-mowing-scheduling': { title: 'Lawn Mowing Scheduling Tips & Guides', description: 'Guides on scheduling mowing routes, recurring visits, and crew dispatch.', hubSlug: 'lawn-mowing-scheduling-software' },
   'carpet-cleaning': { title: 'Carpet Cleaning Software Tips & Guides', description: 'Guides for carpet cleaning businesses on scheduling, routing, quoting, billing, and software.', hubSlug: 'carpet-cleaning-software' },
+  'garage-door': { title: 'Garage Door Service Software Tips & Guides', description: 'Guides for garage door repair and install businesses on dispatch, estimating, parts, billing, and software.', hubSlug: 'garage-door-service-software' },
 };
 
 export async function generateStaticParams() {

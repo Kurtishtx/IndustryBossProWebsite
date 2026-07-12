@@ -1247,7 +1247,8 @@ export const hubPages: HubPageData[] = [
       { icon: '📱', title: 'Tech Mobile App', desc: 'Techs check in, log parts used, snap before/after photos, and mark the job done from the driveway.' },
     ],
     pendingBoard: 'The scheduled panel shows service calls and installs with assigned dates and techs. The waiting list holds repairs waiting on a part, callbacks, and maintenance-plan visits that need a date assigned. You always know what\'s confirmed versus pending.',
-    // blogSiloIndustry/blog1Slug added once the garage-door blog silo is built
+    blogSiloIndustry: 'garage-door',
+    blog1Slug: 'garage-door-service-software-complete-guide',
   },
 
   // ─── CARPET CLEANING ──────────────────────────────────────────────────────
