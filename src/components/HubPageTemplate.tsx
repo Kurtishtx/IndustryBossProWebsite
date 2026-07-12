@@ -20,12 +20,9 @@ const HOW_STEPS = [
   { n: '4', title: 'Get Paid Automatically', body: 'Invoices fire on job completion. Clients pay by card on file. Money moves without you touching it.' },
 ];
 
-export default function HubPageTemplate({ page, stateName }: { page: HubPageData; stateName?: string }) {
+export default function HubPageTemplate({ page }: { page: HubPageData }) {
   const [modal, setModal] = useState(false);
-  const geoSuffix = stateName ? ` in ${stateName}` : '';
-  const h1 = stateName
-    ? `${page.industry} Software${geoSuffix} — Run Your Routes, Get Paid, Grow Faster`
-    : page.h1;
+  const h1 = page.h1;
   const keyword = page.slug
     .replace(/-software$/, '')
     .split('-')
@@ -40,23 +37,14 @@ export default function HubPageTemplate({ page, stateName }: { page: HubPageData
       {/* HERO */}
       <section style={{ paddingTop: 120, paddingBottom: 80, background: `linear-gradient(180deg, #1e1208 0%, #241508 100%)` }}>
         <div style={{ maxWidth: 900, margin: '0 auto', padding: '0 24px', textAlign: 'center' }}>
-          {stateName && (
-            <div style={{ display: 'inline-block', background: 'rgba(196,125,10,0.12)', border: `1px solid rgba(196,125,10,0.3)`, borderRadius: 20, padding: '4px 14px', fontSize: 13, color: S.elec, fontWeight: 600, marginBottom: 20 }}>
-              {page.industry} · {stateName}
-            </div>
-          )}
-          {!stateName && (
-            <div style={{ display: 'inline-block', background: 'rgba(196,125,10,0.12)', border: `1px solid rgba(196,125,10,0.3)`, borderRadius: 20, padding: '4px 14px', fontSize: 13, color: S.elec, fontWeight: 600, marginBottom: 20 }}>
-              {page.industry}
-            </div>
-          )}
+          <div style={{ display: 'inline-block', background: 'rgba(196,125,10,0.12)', border: `1px solid rgba(196,125,10,0.3)`, borderRadius: 20, padding: '4px 14px', fontSize: 13, color: S.elec, fontWeight: 600, marginBottom: 20 }}>
+            {page.industry}
+          </div>
           <h1 style={{ fontSize: 'clamp(28px, 5vw, 52px)', fontWeight: 900, color: S.text, lineHeight: 1.1, marginBottom: 20, letterSpacing: '-1px' }}>
             {h1}
           </h1>
           <p style={{ fontSize: 18, color: S.muted, lineHeight: 1.6, marginBottom: 36, maxWidth: 700, margin: '0 auto 36px' }}>
-            {stateName
-              ? `IndustryBossPro gives ${page.industry.toLowerCase()} businesses${geoSuffix} the tools to manage schedules, track work, invoice clients, and grow — all for $199/month.`
-              : page.subtitle}
+            {page.subtitle}
           </p>
           <ul style={{ listStyle: 'none', padding: 0, margin: '0 auto 40px', maxWidth: 600, display: 'flex', flexDirection: 'column', gap: 10 }}>
             {page.heroPoints.map((pt, i) => (

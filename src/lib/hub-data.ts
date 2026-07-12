@@ -10,75 +10,10 @@
   painPoints: { problem: string; solution: string }[];
   features: { icon: string; title: string; desc: string }[];
   pendingBoard: string;
-  states?: { name: string; slug: string }[];
   blogSiloIndustry?: string;
   blog1Slug?: string;
   blog1Title?: string;
 }
-
-const SNOW_STATES = [
-  { name: 'Michigan', slug: 'michigan' }, { name: 'Illinois', slug: 'illinois' },
-  { name: 'Ohio', slug: 'ohio' }, { name: 'Pennsylvania', slug: 'pennsylvania' },
-  { name: 'New York', slug: 'new-york' }, { name: 'Wisconsin', slug: 'wisconsin' },
-  { name: 'Minnesota', slug: 'minnesota' }, { name: 'Colorado', slug: 'colorado' },
-  { name: 'Indiana', slug: 'indiana' }, { name: 'Missouri', slug: 'missouri' },
-];
-const POOL_STATES = [
-  { name: 'Florida', slug: 'florida' }, { name: 'Texas', slug: 'texas' },
-  { name: 'Arizona', slug: 'arizona' }, { name: 'California', slug: 'california' },
-  { name: 'Georgia', slug: 'georgia' }, { name: 'North Carolina', slug: 'north-carolina' },
-  { name: 'Nevada', slug: 'nevada' }, { name: 'Tennessee', slug: 'tennessee' },
-  { name: 'South Carolina', slug: 'south-carolina' }, { name: 'Alabama', slug: 'alabama' },
-];
-const LANDSCAPE_STATES = [
-  { name: 'Texas', slug: 'texas' }, { name: 'Florida', slug: 'florida' },
-  { name: 'California', slug: 'california' }, { name: 'Georgia', slug: 'georgia' },
-  { name: 'North Carolina', slug: 'north-carolina' }, { name: 'Ohio', slug: 'ohio' },
-  { name: 'Pennsylvania', slug: 'pennsylvania' }, { name: 'Illinois', slug: 'illinois' },
-  { name: 'Virginia', slug: 'virginia' }, { name: 'Michigan', slug: 'michigan' },
-];
-const IRRIGATION_STATES = [
-  { name: 'Texas', slug: 'texas' }, { name: 'Florida', slug: 'florida' },
-  { name: 'California', slug: 'california' }, { name: 'Arizona', slug: 'arizona' },
-  { name: 'Georgia', slug: 'georgia' }, { name: 'Colorado', slug: 'colorado' },
-  { name: 'Nevada', slug: 'nevada' }, { name: 'Utah', slug: 'utah' },
-  { name: 'Idaho', slug: 'idaho' }, { name: 'Washington', slug: 'washington' },
-];
-const LAWN_STATES = [
-  { name: 'Texas', slug: 'texas' }, { name: 'Florida', slug: 'florida' },
-  { name: 'Ohio', slug: 'ohio' }, { name: 'Georgia', slug: 'georgia' },
-  { name: 'North Carolina', slug: 'north-carolina' }, { name: 'Virginia', slug: 'virginia' },
-  { name: 'Tennessee', slug: 'tennessee' }, { name: 'Missouri', slug: 'missouri' },
-  { name: 'Indiana', slug: 'indiana' }, { name: 'Kentucky', slug: 'kentucky' },
-];
-const PEST_STATES = [
-  { name: 'Florida', slug: 'florida' }, { name: 'Texas', slug: 'texas' },
-  { name: 'Georgia', slug: 'georgia' }, { name: 'North Carolina', slug: 'north-carolina' },
-  { name: 'South Carolina', slug: 'south-carolina' }, { name: 'Louisiana', slug: 'louisiana' },
-  { name: 'Alabama', slug: 'alabama' }, { name: 'Mississippi', slug: 'mississippi' },
-  { name: 'Arkansas', slug: 'arkansas' }, { name: 'Tennessee', slug: 'tennessee' },
-];
-const MOSQUITO_STATES = [
-  { name: 'Texas', slug: 'texas' }, { name: 'Florida', slug: 'florida' },
-  { name: 'Georgia', slug: 'georgia' }, { name: 'Louisiana', slug: 'louisiana' },
-  { name: 'North Carolina', slug: 'north-carolina' }, { name: 'South Carolina', slug: 'south-carolina' },
-  { name: 'Alabama', slug: 'alabama' }, { name: 'Mississippi', slug: 'mississippi' },
-  { name: 'Tennessee', slug: 'tennessee' }, { name: 'Virginia', slug: 'virginia' },
-];
-const FENCE_STATES = [
-  { name: 'Texas', slug: 'texas' }, { name: 'Florida', slug: 'florida' },
-  { name: 'California', slug: 'california' }, { name: 'Georgia', slug: 'georgia' },
-  { name: 'Ohio', slug: 'ohio' }, { name: 'Pennsylvania', slug: 'pennsylvania' },
-  { name: 'North Carolina', slug: 'north-carolina' }, { name: 'Illinois', slug: 'illinois' },
-  { name: 'Michigan', slug: 'michigan' }, { name: 'Virginia', slug: 'virginia' },
-];
-const MOWING_STATES = [
-  { name: 'Texas', slug: 'texas' }, { name: 'Florida', slug: 'florida' },
-  { name: 'Georgia', slug: 'georgia' }, { name: 'Ohio', slug: 'ohio' },
-  { name: 'North Carolina', slug: 'north-carolina' }, { name: 'Virginia', slug: 'virginia' },
-  { name: 'Tennessee', slug: 'tennessee' }, { name: 'Missouri', slug: 'missouri' },
-  { name: 'Indiana', slug: 'indiana' }, { name: 'Kentucky', slug: 'kentucky' },
-];
 
 export const hubPages: HubPageData[] = [
   // â”€â”€â”€ SNOW & ICE MANAGEMENT â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
@@ -109,7 +44,6 @@ export const hubPages: HubPageData[] = [
       { icon: '📊', title: 'Season P&L Reports', desc: 'Revenue, labor, chemical cost, and profit broken down per property, route, and crew for the full season.' },
     ],
     pendingBoard: 'In snow removal, the left panel shows properties with a scheduled storm date (your committed routes). The right panel shows your waiting-list properties â€” maintenance work, seasonal prep, or overflow that needs a date assigned before the next event.',
-    states: SNOW_STATES,
     blogSiloIndustry: 'snow-removal',
     blog1Slug: 'snow-removal-software-complete-guide',
     blog1Title: 'Snow Removal Software: The Complete Guide for Plow Business Owners',
@@ -235,7 +169,6 @@ export const hubPages: HubPageData[] = [
     pendingBoard: 'The scheduled panel shows all pool stops with assigned service dates on your recurring route. The waiting list holds one-time service calls, equipment repairs, and green pool treatments waiting for a scheduled date.',
     blogSiloIndustry: 'pool-service',
     blog1Slug: 'pool-service-software-complete-guide',
-    states: POOL_STATES,
   },
   {
     slug: 'pool-cleaning-software',
@@ -358,7 +291,6 @@ export const hubPages: HubPageData[] = [
     pendingBoard: 'The scheduled panel shows landscape jobs with confirmed dates â€” recurring maintenance visits, scheduled installations, and seasonal cleanups. The waiting list holds approved estimates waiting for scheduling, pending client decisions, and seasonal work queued for the right time.',
     blogSiloIndustry: 'landscaping',
     blog1Slug: 'landscaping-software-complete-guide',
-    states: LANDSCAPE_STATES,
   },
   {
     slug: 'landscape-business-software',
@@ -511,7 +443,6 @@ export const hubPages: HubPageData[] = [
     pendingBoard: 'The waiting list fills up in spring (startups) and fall (winterizations) as clients request service. Techs pull from the waiting list to fill open slots on their schedule. The system tracks how many are pending so you know if you\'re keeping up.',
     blogSiloIndustry: 'irrigation',
     blog1Slug: 'irrigation-software-complete-guide',
-    states: IRRIGATION_STATES,
   },
   {
     slug: 'sprinkler-system-software',
@@ -634,7 +565,6 @@ export const hubPages: HubPageData[] = [
     pendingBoard: 'After each treatment round, properties automatically appear on the waiting list when they\'re due for their next application. Techs pull from the waiting list to fill route days. You always know how many applications are pending for the current round.',
     blogSiloIndustry: 'lawn-care',
     blog1Slug: 'lawn-care-software-complete-guide',
-    states: LAWN_STATES,
   },
   {
     slug: 'lawn-chemical-application-software',
@@ -787,7 +717,6 @@ export const hubPages: HubPageData[] = [
     pendingBoard: 'As each pest control visit is completed, the property automatically queues in the waiting list for its next scheduled service interval â€” whether that\'s 30, 60, or 90 days out. Techs and schedulers pull from the waiting list to build route days.',
     blogSiloIndustry: 'pest-control',
     blog1Slug: 'pest-control-software-complete-guide',
-    states: PEST_STATES,
   },
   {
     slug: 'exterminator-software',
@@ -910,7 +839,6 @@ export const hubPages: HubPageData[] = [
     pendingBoard: 'After each mosquito treatment, properties automatically return to the waiting list when their 21-day interval is reached. Techs and schedulers build each route day by assigning properties from the waiting list to available slots.',
     blogSiloIndustry: 'mosquito-control',
     blog1Slug: 'complete-guide-to-mosquito-control-software',
-    states: MOSQUITO_STATES,
   },
   {
     slug: 'mosquito-spray-software',
@@ -1033,7 +961,6 @@ export const hubPages: HubPageData[] = [
     pendingBoard: 'Signed fence contracts waiting for installation crew availability and material delivery sit in the waiting list. Jobs with confirmed start dates and assigned crews move to the scheduled panel so you always know your installation calendar.',
     blogSiloIndustry: 'fence-company',
     blog1Slug: 'fence-company-software-complete-guide',
-    states: FENCE_STATES,
   },
   {
     slug: 'fence-installation-software',
@@ -1126,7 +1053,6 @@ export const hubPages: HubPageData[] = [
     pendingBoard: 'New mowing clients and one-time cut requests sit in the waiting list until assigned to a crew\'s route. The scheduled panel shows all recurring mowing visits confirmed for the current week.',
     blogSiloIndustry: 'lawn-mowing',
     blog1Slug: 'lawn-mowing-software-complete-guide',
-    states: MOWING_STATES,
   },
   {
     slug: 'mowing-business-software',
@@ -1355,20 +1281,3 @@ export function getHubPage(slug: string): HubPageData | undefined {
 export function getAllHubSlugs(): string[] {
   return hubPages.map(p => p.slug);
 }
-
-export function getMainHubs(): HubPageData[] {
-  return hubPages.filter(p => p.isMain && p.states);
-}
-
-export const STATE_DISPLAY: Record<string, string> = {
-  'michigan': 'Michigan', 'illinois': 'Illinois', 'ohio': 'Ohio',
-  'pennsylvania': 'Pennsylvania', 'new-york': 'New York', 'wisconsin': 'Wisconsin',
-  'minnesota': 'Minnesota', 'colorado': 'Colorado', 'indiana': 'Indiana',
-  'missouri': 'Missouri', 'florida': 'Florida', 'texas': 'Texas',
-  'arizona': 'Arizona', 'california': 'California', 'georgia': 'Georgia',
-  'north-carolina': 'North Carolina', 'nevada': 'Nevada', 'tennessee': 'Tennessee',
-  'south-carolina': 'South Carolina', 'alabama': 'Alabama', 'virginia': 'Virginia',
-  'louisiana': 'Louisiana', 'mississippi': 'Mississippi', 'arkansas': 'Arkansas',
-  'utah': 'Utah', 'idaho': 'Idaho', 'washington': 'Washington',
-  'kentucky': 'Kentucky',
-};
