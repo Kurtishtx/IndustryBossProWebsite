@@ -26,6 +26,8 @@ import { fenceCompanyPosts, fenceInstallationPosts, fenceBusinessPosts } from '.
 import { lawnMowingPosts, mowingBusinessPosts, grassCuttingPosts, lawnMowingSchedulingPosts } from '../../../../lib/blog-mowing-data';
 import { carpetCleaningPosts } from '../../../../lib/blog-carpet-cleaning-data';
 import { garageDoorPosts } from '../../../../lib/blog-garage-door-data';
+import { fireInspectionPosts } from '../../../../lib/blog-fire-inspection-data';
+import { hoodCleaningPosts } from '../../../../lib/blog-hood-cleaning-data';
 
 const SILO_DATA: Record<string, typeof poolServicePosts> = {
   'pool-service': poolServicePosts,
@@ -67,6 +69,8 @@ const SILO_DATA: Record<string, typeof poolServicePosts> = {
   'lawn-mowing-scheduling': lawnMowingSchedulingPosts,
   'carpet-cleaning': carpetCleaningPosts,
   'garage-door': garageDoorPosts,
+  'fire-inspection': fireInspectionPosts,
+  'hood-cleaning': hoodCleaningPosts,
 };
 
 export async function generateStaticParams() {

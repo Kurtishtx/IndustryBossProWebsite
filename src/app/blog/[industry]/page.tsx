@@ -25,6 +25,8 @@ import { fenceCompanyPosts, fenceInstallationPosts, fenceBusinessPosts } from '.
 import { lawnMowingPosts, mowingBusinessPosts, grassCuttingPosts, lawnMowingSchedulingPosts } from '../../../lib/blog-mowing-data';
 import { carpetCleaningPosts } from '../../../lib/blog-carpet-cleaning-data';
 import { garageDoorPosts } from '../../../lib/blog-garage-door-data';
+import { fireInspectionPosts } from '../../../lib/blog-fire-inspection-data';
+import { hoodCleaningPosts } from '../../../lib/blog-hood-cleaning-data';
 
 const SILO_DATA: Record<string, typeof poolServicePosts> = {
   'pool-service': poolServicePosts,
@@ -66,6 +68,8 @@ const SILO_DATA: Record<string, typeof poolServicePosts> = {
   'lawn-mowing-scheduling': lawnMowingSchedulingPosts,
   'carpet-cleaning': carpetCleaningPosts,
   'garage-door': garageDoorPosts,
+  'fire-inspection': fireInspectionPosts,
+  'hood-cleaning': hoodCleaningPosts,
 };
 
 const SILO_META: Record<string, { title: string; description: string; hubSlug: string }> = {
@@ -108,6 +112,8 @@ const SILO_META: Record<string, { title: string; description: string; hubSlug: s
   'lawn-mowing-scheduling': { title: 'Lawn Mowing Scheduling Tips & Guides', description: 'Guides on scheduling mowing routes, recurring visits, and crew dispatch.', hubSlug: 'lawn-mowing-scheduling-software' },
   'carpet-cleaning': { title: 'Carpet Cleaning Software Tips & Guides', description: 'Guides for carpet cleaning businesses on scheduling, routing, quoting, billing, and software.', hubSlug: 'carpet-cleaning-software' },
   'garage-door': { title: 'Garage Door Service Software Tips & Guides', description: 'Guides for garage door repair and install businesses on dispatch, estimating, parts, billing, and software.', hubSlug: 'garage-door-service-software' },
+  'fire-inspection': { title: 'Fire Inspection Software Tips & Guides', description: 'Guides for fire protection and life-safety inspection companies on scheduling, deficiencies, compliance, billing, and software.', hubSlug: 'fire-inspection-software' },
+  'hood-cleaning': { title: 'Hood Cleaning Software Tips & Guides', description: 'Guides for commercial kitchen hood cleaning businesses on recurring accounts, routing, NFPA 96 compliance, billing, and software.', hubSlug: 'hood-cleaning-software' },
 };
 
 export async function generateStaticParams() {

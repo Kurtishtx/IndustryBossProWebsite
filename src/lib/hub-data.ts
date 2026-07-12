@@ -1282,6 +1282,70 @@ export const hubPages: HubPageData[] = [
     blogSiloIndustry: 'carpet-cleaning',
     blog1Slug: 'carpet-cleaning-software-complete-guide',
   },
+
+  // ─── FIRE INSPECTION ──────────────────────────────────────────────────────
+  {
+    slug: 'fire-inspection-software',
+    industry: 'Fire Inspection',
+    isMain: true,
+    h1: 'Fire Inspection Software for Extinguisher, Sprinkler, and Alarm Companies',
+    subtitle: 'Schedule recurring inspections, log deficiencies, generate compliant reports, and auto-bill every account — built for fire protection and life-safety businesses.',
+    metaTitle: 'Fire Inspection Software | IndustryBossPro',
+    metaDesc: 'Fire inspection software for scheduling recurring inspections, tracking deficiencies, generating compliance reports, and auto-invoicing. $199/mo flat. 14-day free trial.',
+    heroPoints: [
+      'Auto-schedule recurring inspections so no account ever lapses',
+      'Log deficiencies on-site and turn them into follow-up work and quotes',
+      'Generate clean inspection reports and invoices the moment work is done',
+    ],
+    painPoints: [
+      { problem: 'Recurring inspection dates slip through the cracks', solution: 'Every account has its inspection frequency stored. The system surfaces what is due so no contract ever lapses unnoticed.' },
+      { problem: 'Deficiencies get found but never followed up on', solution: 'Log failed items on-site with photos. They become tracked follow-up work and quotes instead of a note that gets lost.' },
+      { problem: 'Reports and invoices take hours of office work after the route', solution: 'Field checklists become client-ready inspection reports and invoices automatically. Get paid the day the work is done.' },
+    ],
+    features: [
+      { icon: '🧯', title: 'Recurring Inspection Scheduling', desc: 'Store each account\'s inspection frequency. Due inspections surface automatically so nothing lapses.' },
+      { icon: '📋', title: 'Deficiency Tracking', desc: 'Log failed items on-site with photos. Convert them into follow-up work orders and repair quotes.' },
+      { icon: '📄', title: 'Compliance Reports', desc: 'Turn field checklists into audit-ready inspection reports clients and authorities accept.' },
+      { icon: '🗺️', title: 'Route & Dispatch', desc: 'Build inspection routes and push them to technician phones with account history and access notes.' },
+      { icon: '💵', title: 'Auto-Invoicing', desc: 'Inspections and repairs bill automatically on completion. Recurring accounts invoice on schedule.' },
+      { icon: '📱', title: 'Technician Mobile App', desc: 'Techs run the inspection checklist, log deficiencies, capture photos, and close the job from their phone.' },
+    ],
+    pendingBoard: 'The scheduled panel shows inspections and service calls with assigned dates and technicians. The waiting list holds accounts due for their next recurring inspection and open deficiencies waiting on a repair date. You always know what is coming due versus confirmed.',
+    blogSiloIndustry: 'fire-inspection',
+    blog1Slug: 'fire-inspection-software-complete-guide',
+  },
+
+  // ─── HOOD CLEANING ────────────────────────────────────────────────────────
+  {
+    slug: 'hood-cleaning-software',
+    industry: 'Hood Cleaning',
+    isMain: true,
+    h1: 'Hood Cleaning Software for Commercial Kitchen Exhaust Companies',
+    subtitle: 'Schedule recurring restaurant accounts, route your crews, capture NFPA 96 compliance records, and auto-bill every kitchen — built for hood cleaning businesses.',
+    metaTitle: 'Hood Cleaning Software | IndustryBossPro',
+    metaDesc: 'Hood cleaning software for scheduling recurring restaurant accounts, routing night crews, NFPA 96 compliance records, before/after photos, and auto-invoicing. $199/mo flat.',
+    heroPoints: [
+      'Auto-schedule recurring kitchen accounts on monthly, quarterly, or semi-annual cycles',
+      'Capture before/after photos and NFPA 96 compliance records on every job',
+      'Route night crews efficiently and auto-bill each kitchen on completion',
+    ],
+    painPoints: [
+      { problem: 'Recurring restaurant accounts fall off the schedule', solution: 'Each kitchen stores its cleaning frequency. The system surfaces what is due so accounts stay on cycle automatically.' },
+      { problem: 'Compliance documentation is done on paper and hard to find', solution: 'Crews capture before/after photos and service records on-site. Full NFPA 96 documentation is stored per kitchen, always available.' },
+      { problem: 'Billing a full night of kitchens takes all the next day', solution: 'Each completed job auto-generates its invoice. Recurring accounts bill on schedule. Collect by card, check, or cash.' },
+    ],
+    features: [
+      { icon: '🍳', title: 'Recurring Account Scheduling', desc: 'Store each kitchen\'s cleaning frequency. Due jobs surface automatically so accounts never fall off cycle.' },
+      { icon: '📸', title: 'Before/After Documentation', desc: 'Crews capture photos at every job. Clients see proof of service and you build a visual compliance record.' },
+      { icon: '📄', title: 'NFPA 96 Compliance Records', desc: 'Service reports and compliance certificates generate automatically and store per kitchen, audit-ready.' },
+      { icon: '🗺️', title: 'Night Route Optimization', desc: 'Group kitchens geographically so crews hit more stops per night with less windshield time.' },
+      { icon: '💵', title: 'Auto-Invoicing', desc: 'Every completed kitchen bills automatically. Recurring accounts invoice on schedule with no manual entry.' },
+      { icon: '📱', title: 'Crew Mobile App', desc: 'Crews see the route, log the service, capture before/after photos, and close the job from the field.' },
+    ],
+    pendingBoard: 'The scheduled panel shows kitchens with assigned service dates and crews. The waiting list holds accounts due for their next recurring cleaning and one-time requests waiting for a date. You always know what is coming due versus confirmed.',
+    blogSiloIndustry: 'hood-cleaning',
+    blog1Slug: 'hood-cleaning-software-complete-guide',
+  },
 ];
 
 export function getHubPage(slug: string): HubPageData | undefined {

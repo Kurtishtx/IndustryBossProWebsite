@@ -15,6 +15,8 @@ const INDUSTRIES = [
   { label: 'Pet Waste Removal Software', href: '/pet-waste-removal-software' },
   { label: 'Garage Door Service Software', href: '/garage-door-service-software' },
   { label: 'Carpet Cleaning Software', href: '/carpet-cleaning-software' },
+  { label: 'Fire Inspection Software', href: '/fire-inspection-software' },
+  { label: 'Hood Cleaning Software', href: '/hood-cleaning-software' },
 ];
 
 const FEATURES = [
