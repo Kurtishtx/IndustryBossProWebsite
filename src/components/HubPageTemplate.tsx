@@ -11,7 +11,7 @@ const S = {
   border: '#e63000', text: '#f5f5f5',
 };
 
-const INDUSTRIES = ['Snow & Ice Management','Pool Service','Landscaping','Irrigation','Lawn Care Chemicals','Pest Control','Mosquito Control','Fence','Mowing','Pet Waste Removal'];
+const INDUSTRIES = ['Snow & Ice Management','Pool Service','Landscaping','Irrigation','Lawn Care Chemicals','Pest Control','Mosquito Control','Fence','Mowing','Pet Waste Removal','Garage Door','Carpet Cleaning','Fire Inspection','Hood Cleaning'];
 
 const HOW_STEPS = [
   { n: '1', title: 'Add Your Clients & Properties', body: 'Import or add your client list with property details, notes, and service history. Up and running in under an hour.' },
@@ -69,7 +69,7 @@ export default function HubPageTemplate({ page }: { page: HubPageData }) {
       {/* TRUST BAR */}
       <section style={{ background: S.navy3, borderTop: `1px solid ${S.border}`, borderBottom: `1px solid ${S.border}`, padding: '18px 24px' }}>
         <div style={{ maxWidth: 1100, margin: '0 auto', display: 'flex', justifyContent: 'center', flexWrap: 'wrap', gap: 32 }}>
-          {['9 Industries', '$199/Month — 300 Auto Routes Included', 'Calendar & Dispatch Views', 'Live Crew Tracking', '14-Day Free Trial', 'Unlimited Users', 'No Contracts'].map(t => (
+          {['14 Industries', '$199/Month — 300 Auto Routes Included', 'Calendar & Dispatch Views', 'Live Crew Tracking', '14-Day Free Trial', 'Unlimited Users', 'No Contracts'].map(t => (
             <span key={t} style={{ color: S.elec, fontWeight: 700, fontSize: 13 }}>✓ {t}</span>
           ))}
         </div>
@@ -228,7 +228,7 @@ export default function HubPageTemplate({ page }: { page: HubPageData }) {
       {/* INDUSTRIES TRUST */}
       <section style={{ padding: '60px 24px', background: S.navy3, borderTop: `1px solid ${S.border}` }}>
         <div style={{ maxWidth: 1100, margin: '0 auto', textAlign: 'center' }}>
-          <div style={{ fontSize: 14, fontWeight: 600, color: S.muted, marginBottom: 20 }}>BUILT FOR ALL 9 FIELD SERVICE INDUSTRIES</div>
+          <div style={{ fontSize: 14, fontWeight: 600, color: S.muted, marginBottom: 20 }}>BUILT FOR ALL 14 FIELD SERVICE INDUSTRIES</div>
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: 10, justifyContent: 'center' }}>
             {INDUSTRIES.map(ind => (
               <span key={ind} style={{ background: ind === page.industry ? 'rgba(255,255,255,0.15)' : 'rgba(255,255,255,0.04)', border: `1px solid ${ind === page.industry ? '#ff6a00' : S.border}`, borderRadius: 20, padding: '6px 14px', fontSize: 13, color: ind === page.industry ? S.elec : S.muted, fontWeight: ind === page.industry ? 700 : 400 }}>
@@ -249,7 +249,7 @@ export default function HubPageTemplate({ page }: { page: HubPageData }) {
             <div style={{ fontSize: 60, fontWeight: 900, color: S.text, lineHeight: 1 }}>$199</div>
             <div style={{ color: S.muted, fontSize: 16, marginBottom: 12 }}>/month · everything included</div>
 
-            {['Unlimited Users', '14-Day Free Trial', 'All 9 Industries', 'Pending Job Board', 'Chemical Compliance Logging', 'Mobile App for Crews', 'Card Payments (Stripe)', 'Calendar & Dispatch Views', 'Live Crew Tracking', 'Waiting List (Spray Applications)', '300 Auto Routes Included', '500 SMS/month Included', '+$10 per 300 more', '+$10 per 250 more SMS', 'No Contracts'].map(item => (
+            {['Unlimited Users', '14-Day Free Trial', 'All 14 Industries', 'Pending Job Board', 'Chemical Compliance Logging', 'Mobile App for Crews', 'Card Payments (Stripe)', 'Calendar & Dispatch Views', 'Live Crew Tracking', 'Waiting List (Spray Applications)', '300 Auto Routes Included', '500 SMS/month Included', '+$10 per 300 more', '+$10 per 250 more SMS', 'No Contracts'].map(item => (
               <div key={item} style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 10, textAlign: 'left' }}>
                 <span style={{ color: S.elec }}>✓</span>
                 <span style={{ color: S.text, fontSize: 14 }}>{item}</span>

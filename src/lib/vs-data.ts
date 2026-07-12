@@ -36,13 +36,13 @@ export const vsPages: VsPageData[] = [
       { feature: 'Users included', us: 'Unlimited', them: 'Limited by plan', usBetter: true },
       { feature: 'Pending Job Board', us: 'Built-in (scheduled + waiting list)', them: 'Basic job list', usBetter: true },
       { feature: 'Chemical application logging', us: 'Yes — EPA compliant', them: 'No', usBetter: true },
-      { feature: 'Industry-specific workflows', us: '9 industries', them: 'Generic', usBetter: true },
+      { feature: 'Industry-specific workflows', us: '14 industries', them: 'Generic', usBetter: true },
       { feature: 'Mobile app', us: 'Yes', them: 'Yes', usBetter: false },
       { feature: 'Invoicing & payments', us: 'Yes', them: 'Yes', usBetter: false },
       { feature: 'Third-party integrations', us: 'Core integrations', them: 'Larger marketplace', usBetter: false },
       { feature: 'Free trial', us: '14 days', them: '14 days', usBetter: false },
     ],
-    bottomLine: 'If you\'re running a single general service business and want a platform with a long track record and large integration library, Jobber is worth considering. If you\'re in one of the 9 industries we serve and want purpose-built workflows, a flat rate, and a pending job board that actually works for your operation — IndustryBossPro is the better fit.',
+    bottomLine: 'If you\'re running a single general service business and want a platform with a long track record and large integration library, Jobber is worth considering. If you\'re in one of the 14 industries we serve and want purpose-built workflows, a flat rate, and a pending job board that actually works for your operation — IndustryBossPro is the better fit.',
   },
   {
     slug: 'servicetitan',
@@ -65,14 +65,14 @@ export const vsPages: VsPageData[] = [
     tableRows: [
       { feature: 'Pricing', us: '$199/mo flat', them: 'Enterprise contract (undisclosed)', usBetter: true },
       { feature: 'Setup time', us: 'Same day', them: 'Weeks to months', usBetter: true },
-      { feature: 'Target market', us: 'Outdoor field service (9 industries)', them: 'HVAC, plumbing, electrical', usBetter: true },
+      { feature: 'Target market', us: 'Outdoor field service (14 industries)', them: 'HVAC, plumbing, electrical', usBetter: true },
       { feature: 'Pending Job Board', us: 'Yes — purpose-built', them: 'Dispatch board', usBetter: true },
       { feature: 'Chemical logging', us: 'Yes', them: 'No', usBetter: true },
       { feature: 'Enterprise reporting', us: 'Standard', them: 'Advanced', usBetter: false },
       { feature: 'Accounting integrations', us: 'QuickBooks', them: 'Multiple deep integrations', usBetter: false },
       { feature: 'Call center features', us: 'Basic', them: 'Enterprise-grade', usBetter: false },
     ],
-    bottomLine: 'ServiceTitan makes sense for large HVAC or plumbing operations that need enterprise-grade tooling and have an IT team to manage implementation. For outdoor field service operators in our 9 industries, IndustryBossPro gives you more relevant functionality at a fraction of the cost.',
+    bottomLine: 'ServiceTitan makes sense for large HVAC or plumbing operations that need enterprise-grade tooling and have an IT team to manage implementation. For outdoor field service operators in our 14 industries, IndustryBossPro gives you more relevant functionality at a fraction of the cost.',
   },
   {
     slug: 'housecall-pro',
@@ -153,7 +153,7 @@ export const vsPages: VsPageData[] = [
     tableRows: [
       { feature: 'Pending Job Board', us: 'Yes — scheduled + waiting list', them: 'Standard job list', usBetter: true },
       { feature: 'Chemical logging', us: 'Yes', them: 'No', usBetter: true },
-      { feature: 'Industry-specific workflows', us: '9 industries', them: 'Generic', usBetter: true },
+      { feature: 'Industry-specific workflows', us: '14 industries', them: 'Generic', usBetter: true },
       { feature: 'Pricing', us: '$199/mo flat', them: 'Per-user tiered', usBetter: true },
       { feature: 'Built-in VoIP', us: 'No', them: 'Yes', usBetter: false },
       { feature: 'Call tracking', us: 'Basic', them: 'Advanced', usBetter: false },
@@ -224,7 +224,7 @@ export const vsPages: VsPageData[] = [
     metaTitle: 'IndustryBossPro vs Service Autopilot | Field Service Software Comparison',
     metaDesc: 'Compare IndustryBossPro vs Service Autopilot for lawn care, pest control, and field service automation.',
     h1: 'IndustryBossPro vs Service Autopilot: Which Does More for Your Field Service Business?',
-    subtitle: 'Service Autopilot has deep automation. IndustryBossPro brings that power to 9 industries at a simpler price.',
+    subtitle: 'Service Autopilot has deep automation. IndustryBossPro brings that power to 14 industries at a simpler price.',
     competitorDesc: 'Service Autopilot is a feature-rich field service platform with strong automation features for lawn care and snow removal companies. It has a passionate user base and deep workflow automation.',
     ourWins: [
       { title: 'Simpler pricing structure', desc: 'Service Autopilot has multiple tiers and add-ons. IndustryBossPro is $199/month — everything included.' },
@@ -256,7 +256,7 @@ export const vsPages: VsPageData[] = [
     competitorDesc: 'SingleOps is an outdoor service platform targeting landscaping, tree care, and grounds maintenance companies. It offers strong proposal and job management features.',
     ourWins: [
       { title: '$199 flat vs SingleOps tiered pricing', desc: 'SingleOps prices by feature tier. IndustryBossPro is flat $199 — unlimited users, all features.' },
-      { title: 'Broader industry coverage', desc: 'IndustryBossPro covers 9 industries including snow, pool, pest, mosquito, and irrigation — beyond SingleOps\' landscape focus.' },
+      { title: 'Broader industry coverage', desc: 'IndustryBossPro covers 14 industries including snow, pool, pest, mosquito, and irrigation — beyond SingleOps\' landscape focus.' },
       { title: 'Pending Job Board with waiting list', desc: 'Our split-panel waiting-list board is purpose-built for high-volume routing and seasonal demand management.' },
       { title: 'Chemical compliance logging', desc: 'Lawn care, pest, and mosquito operators get EPA-compliant application logging built in.' },
     ],
@@ -272,7 +272,7 @@ export const vsPages: VsPageData[] = [
       { feature: 'Tree care features', us: 'Basic', them: 'Purpose-built', usBetter: false },
       { feature: 'Proposal tools', us: 'Standard', them: 'Advanced', usBetter: false },
     ],
-    bottomLine: 'SingleOps is the better choice for tree care and arborist companies who need specialized features. For landscapers, lawn chemical, pest, pool, snow, or mowing operators who want one platform for all 9 industries — IndustryBossPro covers more ground.',
+    bottomLine: 'SingleOps is the better choice for tree care and arborist companies who need specialized features. For landscapers, lawn chemical, pest, pool, snow, or mowing operators who want one platform for all 14 industries — IndustryBossPro covers more ground.',
   },
   {
     slug: 'aspire',
@@ -308,7 +308,7 @@ export const vsPages: VsPageData[] = [
     metaTitle: 'IndustryBossPro vs LMN | Landscape Management Software Comparison',
     metaDesc: 'Compare IndustryBossPro vs LMN for landscape business management, estimating, and scheduling.',
     h1: 'IndustryBossPro vs LMN: Landscape Software for Different Stages of Growth',
-    subtitle: 'LMN excels at estimating and budgeting for landscape businesses. IndustryBossPro covers 9 industries end-to-end.',
+    subtitle: 'LMN excels at estimating and budgeting for landscape businesses. IndustryBossPro covers 14 industries end-to-end.',
     competitorDesc: 'LMN (Landscape Management Network) is a landscape-focused platform with strong budgeting, estimating, and time-tracking features. Popular with Canadian and US landscape companies.',
     ourWins: [
       { title: 'Multi-industry from day one', desc: 'LMN is landscape-only. IndustryBossPro covers snow, pest, pool, irrigation, mosquito, fence, and mowing — all in one platform.' },
@@ -355,7 +355,7 @@ export const vsPages: VsPageData[] = [
       { feature: 'Unlimited users at flat price', us: 'Yes', them: 'Per-user pricing', usBetter: true },
       { feature: 'Entry price point', us: '$199/mo', them: 'Lower for solo ops', usBetter: false },
     ],
-    bottomLine: 'For solo operators just getting started who need the simplest possible tool at the lowest price — Kickserv is worth looking at. For any operation in our 9 industries that needs industry-specific workflows, compliance logging, and a pending job board — IndustryBossPro is the better long-term platform.',
+    bottomLine: 'For solo operators just getting started who need the simplest possible tool at the lowest price — Kickserv is worth looking at. For any operation in our 14 industries that needs industry-specific workflows, compliance logging, and a pending job board — IndustryBossPro is the better long-term platform.',
   },
   {
     slug: 'mhelp-desk',

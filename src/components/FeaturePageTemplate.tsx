@@ -57,7 +57,7 @@ export default function FeaturePageTemplate({ page }: { page: FeaturePageData })
       {/* INDUSTRIES */}
       <section style={{ padding: '60px 24px', background: S.navy2, borderTop: `1px solid ${S.border}` }}>
         <div style={{ maxWidth: 1100, margin: '0 auto', textAlign: 'center' }}>
-          <h2 style={{ fontSize: 24, fontWeight: 800, color: S.text, marginBottom: 8 }}>Available for All 9 Field Service Industries</h2>
+          <h2 style={{ fontSize: 24, fontWeight: 800, color: S.text, marginBottom: 8 }}>Available for All 14 Field Service Industries</h2>
           <p style={{ color: S.muted, marginBottom: 28, fontSize: 15 }}>One platform. One price. Every industry.</p>
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: 10, justifyContent: 'center' }}>
             {page.industries.map(ind => (
