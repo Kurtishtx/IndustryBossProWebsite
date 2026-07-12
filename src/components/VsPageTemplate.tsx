@@ -7,7 +7,7 @@ import type { VsPageData } from '../lib/vs-data';
 
 const S = {
   navy1: '#0a0a0a', navy2: '#0a0a0a', navy3: '#111111', navy4: '#1a1a1a',
-  elec: '#ff6a00', muted: 'rgba(245,245,245,0.55)', border: 'rgba(255,106,0,0.18)', text: '#f5f5f5',
+  elec: '#ff6a00', muted: 'rgba(245,245,245,0.55)', border: '#e63000', text: '#f5f5f5',
 };
 
 export default function VsPageTemplate({ page }: { page: VsPageData }) {
@@ -20,7 +20,7 @@ export default function VsPageTemplate({ page }: { page: VsPageData }) {
       {/* HERO */}
       <section style={{ paddingTop: 120, paddingBottom: 72, background: S.navy1, textAlign: 'center' }}>
         <div style={{ maxWidth: 800, margin: '0 auto', padding: '0 24px' }}>
-          <div style={{ display: 'inline-block', background: 'rgba(255,106,0,0.1)', border: '1px solid rgba(255,106,0,0.3)', borderRadius: 20, padding: '4px 14px', fontSize: 13, color: S.elec, fontWeight: 600, marginBottom: 20 }}>
+          <div style={{ display: 'inline-block', background: 'rgba(255,106,0,0.1)', border: '1px solid #e63000', borderRadius: 20, padding: '4px 14px', fontSize: 13, color: S.elec, fontWeight: 600, marginBottom: 20 }}>
             Comparison
           </div>
           <h1 style={{ fontSize: 'clamp(26px, 4vw, 46px)', fontWeight: 900, color: S.text, lineHeight: 1.1, marginBottom: 16, letterSpacing: '-1px' }}>{page.h1}</h1>

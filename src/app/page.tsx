@@ -339,7 +339,7 @@ export default function Home() {
               </div>
             ))}
           </div>
-          <div style={{ borderTop:'1px solid rgba(255,106,0,.08)', paddingTop:24, display:'flex', justifyContent:'space-between', flexWrap:'wrap', gap:12 }}>
+          <div style={{ borderTop:'1px solid #e63000', paddingTop:24, display:'flex', justifyContent:'space-between', flexWrap:'wrap', gap:12 }}>
             <p style={{ color:'rgba(245,245,245,.70)', fontSize:13 }}>© {new Date().getFullYear()} IndustryBossPro. All rights reserved.</p>
           </div>
         </div>

@@ -7,7 +7,7 @@ import TrialModal from '../../components/TrialModal';
 const S = {
   navy1: '#0a0a0a', navy2: '#0a0a0a', navy3: '#111111', navy4: '#1a1a1a',
   elec: '#ff6a00', text: '#f5f5f5', muted: 'rgba(245,245,245,0.65)',
-  border: 'rgba(255,106,0,0.15)',
+  border: '#e63000',
 };
 const e = (a: string) => `rgba(255,106,0,${a})`;
 

@@ -64,7 +64,7 @@ export default function HomeTrialModal({ onClose }: { onClose: () => void }) {
     <>
       <div onClick={onClose} style={{ position:'fixed', top:0, left:0, width:'100%', height:'100%', background:'rgba(0,0,0,.6)', zIndex:99990 }} />
       <div style={{ position:'fixed', top:'50%', left:'50%', transform:'translate(-50%,-50%)', zIndex:99999, width:440, maxWidth:'calc(100vw - 24px)', background:'#111111', borderRadius:14, border:'3px solid #ff6a00', boxShadow:'0 0 0 4px rgba(255,106,0,.2), 0 16px 60px rgba(0,0,0,.6)', maxHeight:'calc(100vh - 40px)', overflowY:'auto' }}>
-        <div style={{ background:'linear-gradient(135deg,#0a0a0a,#111111)', padding:'28px 28px 22px', position:'relative', borderBottom:'1px solid rgba(255,106,0,.15)' }}>
+        <div style={{ background:'linear-gradient(135deg,#0a0a0a,#111111)', padding:'28px 28px 22px', position:'relative', borderBottom:'1px solid #e63000' }}>
           <div style={{ color:'#fff', fontSize:20, fontWeight:800, paddingRight:36 }}>Start Your 14-Day Free Trial</div>
           <div style={{ color:'rgba(245,245,245,.72)', fontSize:13, marginTop:5 }}>No credit card required. Full access. Cancel anytime.</div>
           <button onClick={onClose} style={{ position:'absolute', top:16, right:16, background:'rgba(255,255,255,.1)', border:'none', color:'#fff', width:32, height:32, borderRadius:'50%', cursor:'pointer', fontSize:20, display:'flex', alignItems:'center', justifyContent:'center' }}>×</button>
@@ -77,17 +77,17 @@ export default function HomeTrialModal({ onClose }: { onClose: () => void }) {
               {(['first','last'] as const).map((k,i) => (
                 <div key={k} style={{ flex:1 }}>
                   <label style={{ fontSize:11, fontWeight:700, color:'rgba(245,245,245,.70)', textTransform:'uppercase', letterSpacing:'.5px', display:'block', marginBottom:5 }}>{i===0?'First Name':'Last Name'}</label>
-                  <input type="text" value={form[k]} onChange={f(k)} placeholder={i===0?'John':'Smith'} style={{ width:'100%', background:'#1a1a1a', border:'1px solid rgba(255,106,0,.2)', borderRadius:6, padding:'10px 12px', fontSize:14, color:'#f5f5f5', fontFamily:'inherit' }} />
+                  <input type="text" value={form[k]} onChange={f(k)} placeholder={i===0?'John':'Smith'} style={{ width:'100%', background:'#1a1a1a', border:'1px solid #e63000', borderRadius:6, padding:'10px 12px', fontSize:14, color:'#f5f5f5', fontFamily:'inherit' }} />
                 </div>
               ))}
             </div>
             <div style={{ marginBottom:14 }}>
               <label style={{ fontSize:11, fontWeight:700, color:'rgba(245,245,245,.70)', textTransform:'uppercase', letterSpacing:'.5px', display:'block', marginBottom:5 }}>Company Name</label>
-              <input type="text" value={form.company} onChange={f('company')} placeholder="Smith Landscaping Co." style={{ width:'100%', background:'#1a1a1a', border:'1px solid rgba(255,106,0,.2)', borderRadius:6, padding:'10px 12px', fontSize:14, color:'#f5f5f5', fontFamily:'inherit' }} />
+              <input type="text" value={form.company} onChange={f('company')} placeholder="Smith Landscaping Co." style={{ width:'100%', background:'#1a1a1a', border:'1px solid #e63000', borderRadius:6, padding:'10px 12px', fontSize:14, color:'#f5f5f5', fontFamily:'inherit' }} />
             </div>
             <div style={{ marginBottom:22 }}>
               <label style={{ fontSize:11, fontWeight:700, color:'rgba(245,245,245,.70)', textTransform:'uppercase', letterSpacing:'.5px', display:'block', marginBottom:5 }}>Email Address</label>
-              <input type="email" value={form.email} onChange={f('email')} placeholder="you@yourcompany.com" style={{ width:'100%', background:'#1a1a1a', border:'1px solid rgba(255,106,0,.2)', borderRadius:6, padding:'10px 12px', fontSize:14, color:'#f5f5f5', fontFamily:'inherit' }} />
+              <input type="email" value={form.email} onChange={f('email')} placeholder="you@yourcompany.com" style={{ width:'100%', background:'#1a1a1a', border:'1px solid #e63000', borderRadius:6, padding:'10px 12px', fontSize:14, color:'#f5f5f5', fontFamily:'inherit' }} />
             </div>
             <button onClick={nextStep} className="btn-primary" style={{ width:'100%', fontSize:15, padding:13 }}>Next: Create Password →</button>
           </div>
@@ -102,12 +102,12 @@ export default function HomeTrialModal({ onClose }: { onClose: () => void }) {
             </div>
             <div style={{ marginBottom:14 }}>
               <label style={{ fontSize:11, fontWeight:700, color:'rgba(245,245,245,.70)', textTransform:'uppercase', letterSpacing:'.5px', display:'block', marginBottom:5 }}>Login Email</label>
-              <input type="email" value={form.email} readOnly style={{ width:'100%', background:'rgba(255,255,255,.05)', border:'1px solid rgba(255,106,0,.15)', borderRadius:6, padding:'10px 12px', fontSize:14, color:'rgba(245,245,245,.70)', fontFamily:'inherit' }} />
+              <input type="email" value={form.email} readOnly style={{ width:'100%', background:'rgba(255,255,255,.05)', border:'1px solid #e63000', borderRadius:6, padding:'10px 12px', fontSize:14, color:'rgba(245,245,245,.70)', fontFamily:'inherit' }} />
             </div>
             {(['password','confirm'] as const).map((k,i) => (
               <div key={k} style={{ marginBottom:14 }}>
                 <label style={{ fontSize:11, fontWeight:700, color:'rgba(245,245,245,.70)', textTransform:'uppercase', letterSpacing:'.5px', display:'block', marginBottom:5 }}>{i===0?'Password':'Confirm Password'}</label>
-                <input type="password" value={form[k]} onChange={f(k)} placeholder={i===0?'At least 8 characters':'Repeat password'} style={{ width:'100%', background:'#1a1a1a', border:'1px solid rgba(255,106,0,.2)', borderRadius:6, padding:'10px 12px', fontSize:14, color:'#f5f5f5', fontFamily:'inherit' }} />
+                <input type="password" value={form[k]} onChange={f(k)} placeholder={i===0?'At least 8 characters':'Repeat password'} style={{ width:'100%', background:'#1a1a1a', border:'1px solid #e63000', borderRadius:6, padding:'10px 12px', fontSize:14, color:'#f5f5f5', fontFamily:'inherit' }} />
               </div>
             ))}
             <div style={{ marginBottom:20, display:'flex', alignItems:'flex-start', gap:10 }}>

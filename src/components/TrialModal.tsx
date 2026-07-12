@@ -8,7 +8,7 @@ const APP_URL = process.env.NEXT_PUBLIC_APP_URL || 'https://my.industrybosspro.c
 
 const S = {
   navy1: '#0a0a0a', navy4: '#1a1a1a', navy5: '#1a1a1a',
-  elec: '#ff6a00', border: 'rgba(255,106,0,0.2)', text: '#f5f5f5',
+  elec: '#ff6a00', border: '#e63000', text: '#f5f5f5',
   muted: 'rgba(245,245,245,0.55)',
 };
 
