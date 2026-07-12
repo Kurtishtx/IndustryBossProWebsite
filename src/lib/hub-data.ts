@@ -1218,6 +1218,69 @@ export const hubPages: HubPageData[] = [
     blogSiloIndustry: 'lawn-mowing-scheduling',
     blog1Slug: 'lawn-mowing-scheduling-software-complete-guide',
   },
+
+  // ─── GARAGE DOOR SERVICE ──────────────────────────────────────────────────
+  {
+    slug: 'garage-door-service-software',
+    industry: 'Garage Door Service',
+    isMain: true,
+    h1: 'Garage Door Service Software for Repair, Install, and Maintenance Businesses',
+    subtitle: 'Dispatch techs, quote repairs on-site, track every door and opener by property, and auto-invoice the moment a job is done — all from one platform.',
+    metaTitle: 'Garage Door Service Software | IndustryBossPro',
+    metaDesc: 'Garage door service software for scheduling techs, quoting repairs, tracking doors and openers, and auto-invoicing. $199/mo flat. 14-day free trial.',
+    heroPoints: [
+      'Dispatch service calls and installs to tech phones with full property history',
+      'Quote spring, opener, and panel repairs on-site and collect approval instantly',
+      'Auto-generate invoices the second a job is marked complete',
+    ],
+    painPoints: [
+      { problem: 'Techs show up not knowing what door or opener is on site', solution: 'Every property stores door type, spring specs, opener brand, and full repair history — on the tech\'s phone before they arrive.' },
+      { problem: 'Same-day repair quotes get lost between the truck and the office', solution: 'Techs build and send a branded repair estimate on-site. The customer approves from their phone and the job books itself.' },
+      { problem: 'Invoices sit open for weeks after the door is fixed', solution: 'Invoices fire on job completion. Customers pay by card, check, or cash before the truck leaves the driveway.' },
+    ],
+    features: [
+      { icon: '🚪', title: 'Door & Opener Records', desc: 'Store door type, spring size, opener brand, and full service history per property. Any tech services any door correctly.' },
+      { icon: '📝', title: 'On-Site Repair Estimates', desc: 'Build spring, cable, panel, and opener quotes on the truck. Send them branded and collect digital approval same-visit.' },
+      { icon: '📅', title: 'Dispatch & Scheduling', desc: 'Assign service calls and installs to techs with drag-and-drop. Techs get the route, address, and job notes on their phone.' },
+      { icon: '📋', title: 'Pending Job Board', desc: 'Scheduled service calls on the left, waiting-list repairs and part-backorder jobs on the right. Nothing gets dropped.' },
+      { icon: '💵', title: 'Auto-Invoicing', desc: 'Per-job or flat-rate billing. Invoices generate on completion — not at the end of the month. Get paid faster.' },
+      { icon: '📱', title: 'Tech Mobile App', desc: 'Techs check in, log parts used, snap before/after photos, and mark the job done from the driveway.' },
+    ],
+    pendingBoard: 'The scheduled panel shows service calls and installs with assigned dates and techs. The waiting list holds repairs waiting on a part, callbacks, and maintenance-plan visits that need a date assigned. You always know what\'s confirmed versus pending.',
+    // blogSiloIndustry/blog1Slug added once the garage-door blog silo is built
+  },
+
+  // ─── CARPET CLEANING ──────────────────────────────────────────────────────
+  {
+    slug: 'carpet-cleaning-software',
+    industry: 'Carpet Cleaning',
+    isMain: true,
+    h1: 'Carpet Cleaning Software That Runs Your Jobs, Routes, and Billing',
+    subtitle: 'Book jobs, route your vans, send professional quotes, and auto-invoice every clean — built for carpet and upholstery cleaning businesses.',
+    metaTitle: 'Carpet Cleaning Software | IndustryBossPro',
+    metaDesc: 'Carpet cleaning software for scheduling jobs, routing vans, quoting rooms, and auto-invoicing. Residential and commercial. $199/mo flat. 14-day free trial.',
+    heroPoints: [
+      'Book residential and commercial jobs on a drag-and-drop calendar',
+      'Quote by room, square footage, or package and collect approval online',
+      'Auto-invoice and collect payment the moment the clean is done',
+    ],
+    painPoints: [
+      { problem: 'Booking jobs over the phone leads to double-bookings and gaps', solution: 'Every job lands on one visual calendar with tech and van capacity built in. Overbooking flags before it happens.' },
+      { problem: 'Quoting a whole-house clean takes a callback and a spreadsheet', solution: 'Build a room-by-room or square-footage quote in minutes. Send it branded and let the customer approve from their phone.' },
+      { problem: 'Chasing payment after the clean eats your evenings', solution: 'Invoices auto-send on completion. Customers pay by card on file — no more mailing statements or calling for checks.' },
+    ],
+    features: [
+      { icon: '🧼', title: 'Job Scheduling', desc: 'Book one-time cleans, recurring commercial contracts, and add-on services on a drag-and-drop calendar.' },
+      { icon: '📝', title: 'Room & Package Quoting', desc: 'Quote by room, square footage, or flat package. Send branded estimates customers approve and sign online.' },
+      { icon: '🗺️', title: 'Van Route Optimization', desc: 'Group jobs geographically to cut windshield time. More cleans per van per day, less fuel burned.' },
+      { icon: '📋', title: 'Pending Job Board', desc: 'Scheduled cleans on the left, quote-approved and follow-up jobs on the right waiting for a date. Nothing slips.' },
+      { icon: '💵', title: 'Auto-Invoicing & Payments', desc: 'Invoices fire on completion. Collect by card, check, or cash. Recurring commercial accounts bill automatically.' },
+      { icon: '📱', title: 'Tech Mobile App', desc: 'Techs see their route, log services performed, snap before/after photos, and mark jobs done from the field.' },
+    ],
+    pendingBoard: 'The scheduled panel shows all cleans with confirmed dates — one-time residential jobs and recurring commercial contracts. The waiting list holds approved quotes waiting to be scheduled, re-clean callbacks, and seasonal deep-clean requests. You always know what\'s booked versus pending.',
+    blogSiloIndustry: 'carpet-cleaning',
+    blog1Slug: 'carpet-cleaning-software-complete-guide',
+  },
 ];
 
 export function getHubPage(slug: string): HubPageData | undefined {

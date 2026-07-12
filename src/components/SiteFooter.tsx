@@ -13,6 +13,8 @@ const INDUSTRIES = [
   { label: 'Fence Company Software', href: '/fence-company-software' },
   { label: 'Lawn Mowing Software', href: '/lawn-mowing-software' },
   { label: 'Pet Waste Removal Software', href: '/pet-waste-removal-software' },
+  { label: 'Garage Door Service Software', href: '/garage-door-service-software' },
+  { label: 'Carpet Cleaning Software', href: '/carpet-cleaning-software' },
 ];
 
 const FEATURES = [

@@ -25,6 +25,7 @@ import { pestControlPosts, exterminatorPosts, pestManagementPosts, pestSchedulin
 import { mosquitoControlPosts, mosquitoSprayPosts, mosquitoTreatmentPosts, mosquitoBusinessPosts } from '../lib/blog-mosquito-data';
 import { fenceCompanyPosts, fenceInstallationPosts, fenceBusinessPosts } from '../lib/blog-fence-data';
 import { lawnMowingPosts, mowingBusinessPosts, grassCuttingPosts, lawnMowingSchedulingPosts } from '../lib/blog-mowing-data';
+import { carpetCleaningPosts } from '../lib/blog-carpet-cleaning-data';
 
 const BASE = 'https://industrybosspro.com';
 
@@ -66,6 +67,7 @@ const SILOS: { industry: string; posts: { slug: string; date: string }[] }[] = [
   { industry: 'mowing-business', posts: mowingBusinessPosts },
   { industry: 'grass-cutting', posts: grassCuttingPosts },
   { industry: 'lawn-mowing-scheduling', posts: lawnMowingSchedulingPosts },
+  { industry: 'carpet-cleaning', posts: carpetCleaningPosts },
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
