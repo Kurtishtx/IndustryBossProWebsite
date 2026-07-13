@@ -173,4 +173,13 @@ section { padding: 96px 40px; }
   .vs-table th.other-col, .vs-table td.other-col { display: none; }
   .site-footer { padding: 48px 20px 32px; }
   .footer-cols { flex-direction: column; gap: 32px; }
+  /* Comparison table: tighten cells so the two visible columns line up cleanly */
+  .vs-table th, .vs-table td { padding: 12px 10px; }
+  .vs-table td:first-child { font-size: 13px; padding-right: 6px; line-height: 1.35; }
+  .vs-table th.ibp-col, .vs-table td.ibp-col { font-size: 14px; white-space: nowrap; }
+}
+
+/* ── SMALL PHONES ── */
+@media (max-width: 520px) {
+  .feat-grid { grid-template-columns: 1fr; }
 }
