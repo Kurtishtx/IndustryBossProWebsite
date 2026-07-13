@@ -68,6 +68,7 @@ export default function SiteHeader({ onOpenModal }: { onOpenModal: () => void })
           </div>
 
           <div className="navbar-links">
+            <Link href="/">Home</Link>
             <div className="nav-dropdown">
               <span className="nav-dropdown-trigger">Industries ▾</span>
               <div className="nav-dropdown-menu">
@@ -107,6 +108,7 @@ export default function SiteHeader({ onOpenModal }: { onOpenModal: () => void })
 
       {open && (
         <div className="nav-mobile-menu">
+          <Link href="/" className="nav-mobile-link" onClick={() => toggleMenu(false)}>Home</Link>
           <div className="nav-mobile-section">
             <div className="nav-mobile-group-trigger" onClick={() => setIndustriesOpen(!industriesOpen)}>
               Industries {industriesOpen ? '▴' : '▾'}
