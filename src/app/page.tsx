@@ -17,7 +17,7 @@ export default function Home() {
       {/* MOCKUP IMAGE */}
       <div style={{ background: 'linear-gradient(135deg, #0a0a0a 0%, #111111 55%, #1a1a1a 100%)', padding: '96px 24px 0', textAlign: 'center' }}>
         <div style={{ maxWidth: 1080, margin: '0 auto' }}>
-          <img src="/dashboard-mockup.webp" width={1400} height={933} fetchPriority="high" decoding="async" alt="IndustryBossPro field service software on a laptop and phone — the Waiting List with map-based route building on desktop and the crew mobile app" style={{ width: '100%', height: 'auto', borderRadius: '16px', boxShadow: '0 32px 80px rgba(0,0,0,.5)', display: 'block' }} />
+          <img src="/industrybosspro-cover.webp" width={1400} height={933} fetchPriority="high" decoding="async" alt="IndustryBossPro field service software on a laptop and phone — the Waiting List with map-based route building on desktop and the crew mobile app" style={{ width: '100%', height: 'auto', borderRadius: '16px', boxShadow: '0 32px 80px rgba(0,0,0,.5)', display: 'block' }} />
         </div>
       </div>
 
