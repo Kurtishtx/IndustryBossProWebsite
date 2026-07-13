@@ -91,7 +91,6 @@ export default function SiteHeader({ onOpenModal }: { onOpenModal: () => void })
             </div>
             <Link href="/features">Features</Link>
             <Link href="/pricing">Pricing</Link>
-            <Link href="/bosspro-family">Family</Link>
             <a href="https://my.industrybosspro.com" target="_blank" rel="noreferrer">Log In</a>
             <button className="navbar-cta" onClick={onOpenModal}>
               Start Free Trial
@@ -127,7 +126,6 @@ export default function SiteHeader({ onOpenModal }: { onOpenModal: () => void })
           </div>
           <Link href="/features" className="nav-mobile-link" onClick={() => toggleMenu(false)}>Features</Link>
           <Link href="/pricing" className="nav-mobile-link" onClick={() => toggleMenu(false)}>Pricing</Link>
-          <Link href="/bosspro-family" className="nav-mobile-link" onClick={() => toggleMenu(false)}>Family</Link>
           <a href="https://my.industrybosspro.com" target="_blank" rel="noreferrer" className="nav-mobile-link" onClick={() => toggleMenu(false)}>Log In</a>
           <button className="nav-mobile-cta" onClick={() => { toggleMenu(false); onOpenModal(); }}>
             Start Free Trial
