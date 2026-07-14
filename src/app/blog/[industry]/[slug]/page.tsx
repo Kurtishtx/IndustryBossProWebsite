@@ -9,6 +9,7 @@ import { landscapeBusinessPosts } from '../../../../lib/blog-landscaping-data';
 import { landscapingPosts } from '../../../../lib/blog-landscaping-data';
 import { landscapeSchedulingPosts } from '../../../../lib/blog-landscaping-data';
 import { iceManagementPosts } from '../../../../lib/blog-snow-sub-data';
+import { petWastePosts } from '../../../../lib/blog-pet-waste-data';
 import { weedControlPosts } from '../../../../lib/blog-lawn-care-data';
 import { poolCleaningPosts } from '../../../../lib/blog-pool-data';
 import { poolMaintenancePosts } from '../../../../lib/blog-pool-data';
@@ -38,6 +39,7 @@ const SILO_DATA: Record<string, typeof poolServicePosts> = {
   'landscaping': landscapingPosts,
   'landscape-scheduling': landscapeSchedulingPosts,
   'ice-management': iceManagementPosts,
+  'pet-waste': petWastePosts,
   'weed-control': weedControlPosts,
   'pool-cleaning': poolCleaningPosts,
   'pool-maintenance': poolMaintenancePosts,

@@ -8,6 +8,7 @@ import { landscapeBusinessPosts } from '../../../lib/blog-landscaping-data';
 import { landscapingPosts } from '../../../lib/blog-landscaping-data';
 import { landscapeSchedulingPosts } from '../../../lib/blog-landscaping-data';
 import { iceManagementPosts } from '../../../lib/blog-snow-sub-data';
+import { petWastePosts } from '../../../lib/blog-pet-waste-data';
 import { weedControlPosts } from '../../../lib/blog-lawn-care-data';
 import { poolCleaningPosts } from '../../../lib/blog-pool-data';
 import { poolMaintenancePosts } from '../../../lib/blog-pool-data';
@@ -37,6 +38,7 @@ const SILO_DATA: Record<string, typeof poolServicePosts> = {
   'landscaping': landscapingPosts,
   'landscape-scheduling': landscapeSchedulingPosts,
   'ice-management': iceManagementPosts,
+  'pet-waste': petWastePosts,
   'weed-control': weedControlPosts,
   'pool-cleaning': poolCleaningPosts,
   'pool-maintenance': poolMaintenancePosts,
@@ -81,6 +83,7 @@ const SILO_META: Record<string, { title: string; description: string; hubSlug: s
   'landscaping': { title: 'Landscaping Software Tips & Guides', description: 'Guides for landscaping businesses on estimating, scheduling, crews, job costing, billing, and software.', hubSlug: 'landscaping-software' },
   'landscape-scheduling': { title: 'Landscape Scheduling Software Tips & Guides', description: 'Guides for landscape companies on crew scheduling, recurring visits, dispatch, and software.', hubSlug: 'landscape-scheduling-software' },
   'ice-management': { title: 'Ice Management Software Tips & Guides', description: 'Guides for ice management companies on deicing logs, anti-icing scheduling, liability records, and software.', hubSlug: 'ice-management-software' },
+  'pet-waste': { title: 'Pet Waste Removal Software Tips & Guides', description: 'Guides for dog waste removal businesses on routing, subscription billing, photo proof of service, and software.', hubSlug: 'pet-waste-removal-software' },
   'weed-control': { title: 'Weed Control Software Tips & Guides', description: 'Guides for weed control businesses on treatment scheduling, application records, billing, and software.', hubSlug: 'weed-control-software' },
   'pool-cleaning': { title: 'Pool Cleaning Software Tips & Guides', description: 'Guides for pool cleaning businesses on routes, chemical logging, scheduling, billing, and software.', hubSlug: 'pool-cleaning-software' },
   'pool-maintenance': { title: 'Pool Maintenance Software Tips & Guides', description: 'Guides for pool maintenance companies on seasonal scheduling, repairs, contracts, and software.', hubSlug: 'pool-maintenance-software' },

@@ -7,6 +7,7 @@ import { landscapeBusinessPosts } from '../../lib/blog-landscaping-data';
 import { landscapingPosts } from '../../lib/blog-landscaping-data';
 import { landscapeSchedulingPosts } from '../../lib/blog-landscaping-data';
 import { iceManagementPosts } from '../../lib/blog-snow-sub-data';
+import { petWastePosts } from '../../lib/blog-pet-waste-data';
 import { weedControlPosts } from '../../lib/blog-lawn-care-data';
 import { poolCleaningPosts } from '../../lib/blog-pool-data';
 import { poolMaintenancePosts } from '../../lib/blog-pool-data';
@@ -47,6 +48,7 @@ const silos = [
   { industry: 'landscaping', label: 'Landscaping Software', posts: landscapingPosts, hubSlug: 'landscaping-software' },
   { industry: 'landscape-scheduling', label: 'Landscape Scheduling', posts: landscapeSchedulingPosts, hubSlug: 'landscape-scheduling-software' },
   { industry: 'ice-management', label: 'Ice Management', posts: iceManagementPosts, hubSlug: 'ice-management-software' },
+  { industry: 'pet-waste', label: 'Pet Waste Removal', posts: petWastePosts, hubSlug: 'pet-waste-removal-software' },
   { industry: 'weed-control', label: 'Weed Control', posts: weedControlPosts, hubSlug: 'weed-control-software' },
   { industry: 'pool-cleaning', label: 'Pool Cleaning', posts: poolCleaningPosts, hubSlug: 'pool-cleaning-software' },
   { industry: 'pool-maintenance', label: 'Pool Maintenance', posts: poolMaintenancePosts, hubSlug: 'pool-maintenance-software' },

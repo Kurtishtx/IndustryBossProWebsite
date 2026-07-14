@@ -1209,6 +1209,38 @@ export const hubPages: HubPageData[] = [
     blog1Slug: 'carpet-cleaning-software-complete-guide',
   },
 
+  // ─── PET WASTE REMOVAL ────────────────────────────────────────────────────
+  {
+    slug: 'pet-waste-removal-software',
+    industry: 'Pet Waste Removal',
+    isMain: true,
+    h1: 'Pet Waste Removal Software That Runs Your Scooping Routes on Autopilot',
+    subtitle: 'Build weekly scooping routes, let crews mark yards done with a photo, and auto-bill every subscription — built for dog waste removal businesses.',
+    metaTitle: 'Pet Waste Removal Software | IndustryBossPro',
+    metaDesc: 'Pet waste removal software for building scooping routes, managing weekly subscriptions, auto-billing customers, and proving service with photos. $199/mo flat. 14-day free trial.',
+    heroPoints: [
+      'Build efficient weekly scooping routes and slot new yards into the nearest one',
+      'Crews mark each yard done with a gate-closed photo from their phone',
+      'Auto-bill monthly subscriptions — no invoices to chase',
+    ],
+    painPoints: [
+      { problem: 'Routing new dog-waste customers by hand wastes hours and windshield time', solution: 'Add a new yard and the system slots it into the nearest existing route automatically. Tighter routes, more yards per day.' },
+      { problem: 'Billing weekly subscriptions manually is a monthly headache', solution: 'Every customer is on an auto-billing plan. Cards on file charge on schedule — no statements, no chasing checks.' },
+      { problem: 'Customers claim the yard was skipped', solution: 'Crews snap a photo of the cleaned yard and closed gate on every visit. Proof of service attaches to the stop automatically.' },
+    ],
+    features: [
+      { icon: '🐕', title: 'Route-Based Scheduling', desc: 'Build weekly and biweekly scooping routes. New yards drop into the nearest route so drive time stays low.' },
+      { icon: '📸', title: 'Photo Proof of Service', desc: 'Crews mark each yard done with a photo of the cleaned area and closed gate. Disputes end instantly.' },
+      { icon: '💳', title: 'Subscription Auto-Billing', desc: 'Weekly and monthly plans bill automatically to a card on file. Recurring revenue with zero manual invoicing.' },
+      { icon: '🗺️', title: 'Route Optimization', desc: 'Sequence each day\'s yards by geography so crews scoop more homes in less time and burn less fuel.' },
+      { icon: '📋', title: 'Pending Job Board', desc: 'Scheduled routes on one side, new sign-ups and one-time cleanups waiting to be slotted on the other. Nothing forgotten.' },
+      { icon: '📱', title: 'Crew Mobile App', desc: 'Crews see the day\'s yards, get directions, log each one done with a photo, and flag gate or dog issues from the field.' },
+    ],
+    pendingBoard: 'The scheduled panel shows every yard on its weekly or biweekly route with a confirmed day. The waiting list holds new subscribers waiting to be slotted into a route and one-time initial-cleanup requests. You always know who is on a route versus who still needs one.',
+    blogSiloIndustry: 'pet-waste',
+    blog1Slug: 'pet-waste-removal-software-complete-guide',
+  },
+
   // ─── FIRE INSPECTION ──────────────────────────────────────────────────────
   {
     slug: 'fire-inspection-software',

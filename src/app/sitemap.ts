@@ -10,6 +10,7 @@ import { landscapeBusinessPosts } from '../lib/blog-landscaping-data';
 import { landscapingPosts } from '../lib/blog-landscaping-data';
 import { landscapeSchedulingPosts } from '../lib/blog-landscaping-data';
 import { iceManagementPosts } from '../lib/blog-snow-sub-data';
+import { petWastePosts } from '../lib/blog-pet-waste-data';
 import { weedControlPosts } from '../lib/blog-lawn-care-data';
 import { poolCleaningPosts } from '../lib/blog-pool-data';
 import { poolMaintenancePosts } from '../lib/blog-pool-data';
@@ -41,6 +42,7 @@ const SILOS: { industry: string; posts: { slug: string; date: string }[] }[] = [
   { industry: 'landscaping', posts: landscapingPosts },
   { industry: 'landscape-scheduling', posts: landscapeSchedulingPosts },
   { industry: 'ice-management', posts: iceManagementPosts },
+  { industry: 'pet-waste', posts: petWastePosts },
   { industry: 'weed-control', posts: weedControlPosts },
   { industry: 'pool-cleaning', posts: poolCleaningPosts },
   { industry: 'pool-maintenance', posts: poolMaintenancePosts },
