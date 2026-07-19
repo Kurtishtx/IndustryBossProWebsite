@@ -32,6 +32,7 @@ export default function Home() {
           <button onClick={openModal} className="btn-primary">Start Free — 14 Days, No Card</button>
           <a href="#features" className="btn-ghost">See All Features →</a>
         </div>
+        <p style={{ textAlign:'center', color:'rgba(245,245,245,.72)', fontSize:15, fontWeight:600, marginTop:18 }}>No credit card required &middot; 14-day free trial &middot; <b style={{ color:'#ff6a00' }}>$199/mo</b> after</p>
         <div className="hero-proof">
           <div className="proof-item"><div className="proof-val">$199</div><div className="proof-lbl">Flat Monthly</div></div>
           <div className="proof-item"><div className="proof-val">Unlimited</div><div className="proof-lbl">Users, Clients &amp; Properties</div></div>

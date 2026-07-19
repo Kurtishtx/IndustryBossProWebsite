@@ -86,7 +86,7 @@ export default function TrialModal({ open, onClose }: { open: boolean; onClose: 
         {step === 'info' && (
           <form onSubmit={submitInfo}>
             <div style={{ fontSize: 22, fontWeight: 800, color: S.text, marginBottom: 4 }}>Start Your 14-Day Free Trial</div>
-            <div style={{ color: S.muted, fontSize: 14, marginBottom: 24 }}>No credit card required. Cancel anytime.</div>
+            <div style={{ color: S.muted, fontSize: 14, marginBottom: 24 }}>No credit card required &middot; <b style={{ color: S.elec }}>$199/mo</b> after your 14-day trial &middot; Cancel anytime.</div>
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12, marginBottom: 12 }}>
               <input style={inp} placeholder="First name" value={form.first} onChange={f('first')} />
               <input style={inp} placeholder="Last name" value={form.last} onChange={f('last')} />

@@ -66,7 +66,7 @@ export default function HomeTrialModal({ onClose }: { onClose: () => void }) {
       <div style={{ position:'fixed', top:'50%', left:'50%', transform:'translate(-50%,-50%)', zIndex:99999, width:440, maxWidth:'calc(100vw - 24px)', background:'#111111', borderRadius:14, border:'3px solid #ff6a00', boxShadow:'0 0 0 4px rgba(255,106,0,.2), 0 16px 60px rgba(0,0,0,.6)', maxHeight:'calc(100vh - 40px)', overflowY:'auto' }}>
         <div style={{ background:'linear-gradient(135deg,#0a0a0a,#111111)', padding:'28px 28px 22px', position:'relative', borderBottom:'1px solid #e63000' }}>
           <div style={{ color:'#fff', fontSize:20, fontWeight:800, paddingRight:36 }}>Start Your 14-Day Free Trial</div>
-          <div style={{ color:'rgba(245,245,245,.72)', fontSize:13, marginTop:5 }}>No credit card required. Full access. Cancel anytime.</div>
+          <div style={{ color:'rgba(245,245,245,.72)', fontSize:13, marginTop:5 }}>No credit card required &middot; Full access &middot; <b style={{ color:'#ff6a00' }}>$199/mo</b> after your 14-day trial</div>
           <button onClick={onClose} style={{ position:'absolute', top:16, right:16, background:'rgba(255,255,255,.1)', border:'none', color:'#fff', width:32, height:32, borderRadius:'50%', cursor:'pointer', fontSize:20, display:'flex', alignItems:'center', justifyContent:'center' }}>×</button>
         </div>
 
