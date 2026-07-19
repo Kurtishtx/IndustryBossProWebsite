@@ -258,6 +258,7 @@ export default function HubPageTemplate({ page }: { page: HubPageData }) {
             <button onClick={() => setModal(true)} style={{ width: '100%', background: S.elec, color: '#fff', border: 'none', borderRadius: 10, padding: '16px', fontSize: 17, fontWeight: 800, cursor: 'pointer', marginTop: 24 }}>
               Start Free Trial — No Card Required
             </button>
+            <div style={{ textAlign: 'center', color: S.muted, fontSize: 13, fontWeight: 600, marginTop: 12 }}>No credit card required &middot; 14-day free trial &middot; <b style={{ color: S.elec }}>$199/mo</b> after</div>
           </div>
         </div>
       </section>

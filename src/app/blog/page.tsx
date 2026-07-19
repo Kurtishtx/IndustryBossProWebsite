@@ -27,6 +27,10 @@ import { carpetCleaningPosts } from '../../lib/blog-carpet-cleaning-data';
 import { garageDoorPosts } from '../../lib/blog-garage-door-data';
 import { fireInspectionPosts } from '../../lib/blog-fire-inspection-data';
 import { hoodCleaningPosts } from '../../lib/blog-hood-cleaning-data';
+import { softWashingPosts } from '../../lib/blog-soft-washing-data';
+import { pressureWashingPosts } from '../../lib/blog-pressure-washing-data';
+import { windowCleaningPosts } from '../../lib/blog-window-cleaning-data';
+import { junkRemovalPosts } from '../../lib/blog-junk-removal-data';
 
 export const metadata: Metadata = {
   title: 'Field Service Business Blog | IndustryBossPro',
@@ -49,6 +53,10 @@ const silos = [
   { industry: 'landscape-scheduling', label: 'Landscape Scheduling', posts: landscapeSchedulingPosts, hubSlug: 'landscape-scheduling-software' },
   { industry: 'ice-management', label: 'Ice Management', posts: iceManagementPosts, hubSlug: 'ice-management-software' },
   { industry: 'pet-waste', label: 'Pet Waste Removal', posts: petWastePosts, hubSlug: 'pet-waste-removal-software' },
+  { industry: 'soft-washing', label: "Soft Washing", posts: softWashingPosts, hubSlug: 'soft-washing-software' },
+  { industry: 'pressure-washing', label: "Pressure Washing", posts: pressureWashingPosts, hubSlug: 'pressure-washing-software' },
+  { industry: 'window-cleaning', label: "Window Cleaning", posts: windowCleaningPosts, hubSlug: 'window-cleaning-software' },
+  { industry: 'junk-removal', label: "Junk Removal", posts: junkRemovalPosts, hubSlug: 'junk-removal-software' },
   { industry: 'weed-control', label: 'Weed Control', posts: weedControlPosts, hubSlug: 'weed-control-software' },
   { industry: 'pool-cleaning', label: 'Pool Cleaning', posts: poolCleaningPosts, hubSlug: 'pool-cleaning-software' },
   { industry: 'pool-maintenance', label: 'Pool Maintenance', posts: poolMaintenancePosts, hubSlug: 'pool-maintenance-software' },

@@ -30,6 +30,10 @@ import { carpetCleaningPosts } from '../lib/blog-carpet-cleaning-data';
 import { garageDoorPosts } from '../lib/blog-garage-door-data';
 import { fireInspectionPosts } from '../lib/blog-fire-inspection-data';
 import { hoodCleaningPosts } from '../lib/blog-hood-cleaning-data';
+import { softWashingPosts } from '../lib/blog-soft-washing-data';
+import { pressureWashingPosts } from '../lib/blog-pressure-washing-data';
+import { windowCleaningPosts } from '../lib/blog-window-cleaning-data';
+import { junkRemovalPosts } from '../lib/blog-junk-removal-data';
 
 const BASE = 'https://industrybosspro.com';
 
@@ -43,6 +47,10 @@ const SILOS: { industry: string; posts: { slug: string; date: string }[] }[] = [
   { industry: 'landscape-scheduling', posts: landscapeSchedulingPosts },
   { industry: 'ice-management', posts: iceManagementPosts },
   { industry: 'pet-waste', posts: petWastePosts },
+  { industry: 'soft-washing', posts: softWashingPosts },
+  { industry: 'pressure-washing', posts: pressureWashingPosts },
+  { industry: 'window-cleaning', posts: windowCleaningPosts },
+  { industry: 'junk-removal', posts: junkRemovalPosts },
   { industry: 'weed-control', posts: weedControlPosts },
   { industry: 'pool-cleaning', posts: poolCleaningPosts },
   { industry: 'pool-maintenance', posts: poolMaintenancePosts },

@@ -28,6 +28,10 @@ import { carpetCleaningPosts } from '../../../lib/blog-carpet-cleaning-data';
 import { garageDoorPosts } from '../../../lib/blog-garage-door-data';
 import { fireInspectionPosts } from '../../../lib/blog-fire-inspection-data';
 import { hoodCleaningPosts } from '../../../lib/blog-hood-cleaning-data';
+import { softWashingPosts } from '../../../lib/blog-soft-washing-data';
+import { pressureWashingPosts } from '../../../lib/blog-pressure-washing-data';
+import { windowCleaningPosts } from '../../../lib/blog-window-cleaning-data';
+import { junkRemovalPosts } from '../../../lib/blog-junk-removal-data';
 
 const SILO_DATA: Record<string, typeof poolServicePosts> = {
   'pool-service': poolServicePosts,
@@ -39,6 +43,10 @@ const SILO_DATA: Record<string, typeof poolServicePosts> = {
   'landscape-scheduling': landscapeSchedulingPosts,
   'ice-management': iceManagementPosts,
   'pet-waste': petWastePosts,
+  'soft-washing': softWashingPosts,
+  'pressure-washing': pressureWashingPosts,
+  'window-cleaning': windowCleaningPosts,
+  'junk-removal': junkRemovalPosts,
   'weed-control': weedControlPosts,
   'pool-cleaning': poolCleaningPosts,
   'pool-maintenance': poolMaintenancePosts,
@@ -84,6 +92,10 @@ const SILO_META: Record<string, { title: string; description: string; hubSlug: s
   'landscape-scheduling': { title: 'Landscape Scheduling Software Tips & Guides', description: 'Guides for landscape companies on crew scheduling, recurring visits, dispatch, and software.', hubSlug: 'landscape-scheduling-software' },
   'ice-management': { title: 'Ice Management Software Tips & Guides', description: 'Guides for ice management companies on deicing logs, anti-icing scheduling, liability records, and software.', hubSlug: 'ice-management-software' },
   'pet-waste': { title: 'Pet Waste Removal Software Tips & Guides', description: 'Guides for dog waste removal businesses on routing, subscription billing, photo proof of service, and software.', hubSlug: 'pet-waste-removal-software' },
+  'soft-washing': { title: "Soft Washing Software Tips & Guides", description: "Guides for soft washing and house washing businesses on scheduling, routing, estimating, photo proof, billing, and software.", hubSlug: 'soft-washing-software' },
+  'pressure-washing': { title: "Pressure Washing Software Tips & Guides", description: "Guides for pressure washing businesses on scheduling, routing, estimating, photo proof, billing, and software.", hubSlug: 'pressure-washing-software' },
+  'window-cleaning': { title: "Window Cleaning Software Tips & Guides", description: "Guides for window cleaning businesses on recurring routes, scheduling, booking, photo proof, billing, and software.", hubSlug: 'window-cleaning-software' },
+  'junk-removal': { title: "Junk Removal Software Tips & Guides", description: "Guides for junk removal and hauling businesses on booking, dispatch, routing, photo proof, billing, and software.", hubSlug: 'junk-removal-software' },
   'weed-control': { title: 'Weed Control Software Tips & Guides', description: 'Guides for weed control businesses on treatment scheduling, application records, billing, and software.', hubSlug: 'weed-control-software' },
   'pool-cleaning': { title: 'Pool Cleaning Software Tips & Guides', description: 'Guides for pool cleaning businesses on routes, chemical logging, scheduling, billing, and software.', hubSlug: 'pool-cleaning-software' },
   'pool-maintenance': { title: 'Pool Maintenance Software Tips & Guides', description: 'Guides for pool maintenance companies on seasonal scheduling, repairs, contracts, and software.', hubSlug: 'pool-maintenance-software' },

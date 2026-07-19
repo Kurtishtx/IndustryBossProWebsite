@@ -1241,6 +1241,134 @@ export const hubPages: HubPageData[] = [
     blog1Slug: 'pet-waste-removal-software-complete-guide',
   },
 
+  // ─── JUNK REMOVAL ─────────────────────────────────────────────────────────
+  {
+    slug: 'junk-removal-software',
+    industry: 'Junk Removal',
+    isMain: true,
+    h1: 'Junk Removal Software That Runs Every Pickup, Route, and Invoice in One System',
+    subtitle: 'Book pickups, dispatch crews by map, capture before-and-after photos, and auto-bill cards — built for junk removal and hauling businesses.',
+    metaTitle: 'Junk Removal Software | IndustryBossPro',
+    metaDesc: 'Junk removal software for booking pickups, dispatching crews, optimizing routes, capturing before-and-after photo proof, and auto-billing customers. $199/mo flat. 14-day free trial.',
+    heroPoints: [
+      'Book same-day and recurring pickups and slot each onto the nearest route',
+      'Crews get the day’s stops, capture before-and-after photos, and close jobs from their phone',
+      'Auto-bill cards on file the moment the truck leaves — no invoices to chase',
+    ],
+    painPoints: [
+      { problem: 'Requests get lost between the phone, texts, and a spreadsheet', solution: 'Every booking lands on the Pending Job Board and flows straight to the schedule and the crew app. Nothing slips through the cracks.' },
+      { problem: 'Dispatching trucks by hand wastes miles and windshield time', solution: 'Assign jobs on a live map and route them so each crew drives less and completes more pickups per day.' },
+      { problem: 'Finishing the haul but waiting weeks to get paid', solution: 'Crews charge a card on file or take payment on-site through Stripe the moment the job is done. Cash lands the same day.' },
+    ],
+    features: [
+      { icon: '🚛', title: 'Map & Route Scheduling', desc: 'Book pickups and sequence each truck’s stops by geography so crews cut drive time and fit more jobs in a day.' },
+      { icon: '📸', title: 'Before & After Photo Proof', desc: 'Crews snap timestamped before-and-after photos on every job. Disputes and damage claims end instantly.' },
+      { icon: '💳', title: 'Card-on-File Auto-Billing', desc: 'Store a card and charge it automatically when the job closes. Perfect for recurring commercial accounts.' },
+      { icon: '📋', title: 'Pending Job Board', desc: 'Scheduled hauls on one side, new leads and quotes waiting to be booked on the other. Nothing forgotten.' },
+      { icon: '📱', title: 'Crew Mobile App', desc: 'Crews see the day’s stops, get directions, build on-site estimates, capture photos, and collect payment from the field.' },
+      { icon: '📍', title: 'Live Crew GPS', desc: 'See every truck on one map, give customers accurate ETAs, and dispatch the closest crew to the next pickup.' },
+    ],
+    pendingBoard: 'The scheduled panel shows every pickup booked onto a truck and a day. The waiting list holds new leads, quotes still open, and recurring accounts waiting to be slotted. You always know what is on a truck versus what still needs one.',
+    blogSiloIndustry: 'junk-removal',
+    blog1Slug: 'junk-removal-software-complete-guide',
+  },
+
+  // ─── WINDOW CLEANING ──────────────────────────────────────────────────────
+  {
+    slug: 'window-cleaning-software',
+    industry: 'Window Cleaning',
+    isMain: true,
+    h1: 'Window Cleaning Software That Runs Your Routes, Recurring Jobs, and Billing in One System',
+    subtitle: 'Build recurring routes, let crews close jobs with before-and-after photos, and auto-bill every stop — built for residential and storefront window cleaning businesses.',
+    metaTitle: 'Window Cleaning Software | IndustryBossPro',
+    metaDesc: 'Window cleaning software for recurring routes, scheduling, online booking, estimating, photo proof, and auto-billing customers. $199/mo flat. 14-day free trial.',
+    heroPoints: [
+      'Build recurring residential and storefront routes and slot new jobs into the nearest one',
+      'Crews get the day’s stops, capture before-and-after photos, and close jobs from their phone',
+      'Auto-bill cards on file the moment the route runs — no invoices to chase',
+    ],
+    painPoints: [
+      { problem: 'Rebuilding recurring routes by hand every week wastes hours', solution: 'Set a frequency once and each route regenerates automatically. New jobs drop onto the nearest existing route.' },
+      { problem: 'Billing weekly and monthly customers manually is a headache', solution: 'Every customer is on an auto-billing plan. Cards on file charge on schedule — no statements, no chasing checks.' },
+      { problem: 'Customers claim windows were missed', solution: 'Crews snap before-and-after photos on every job. Proof of service attaches to the stop automatically.' },
+    ],
+    features: [
+      { icon: '🪟', title: 'Recurring Route Scheduling', desc: 'Build weekly, monthly, and quarterly routes. New jobs slot into the nearest route so drive time stays low.' },
+      { icon: '📸', title: 'Before & After Photo Proof', desc: 'Crews mark each job done with before-and-after photos. Disputes and callbacks end instantly.' },
+      { icon: '💳', title: 'Card-on-File Auto-Billing', desc: 'Recurring and storefront accounts bill automatically to a card on file. Recurring revenue, zero manual invoicing.' },
+      { icon: '🗺️', title: 'Route Optimization', desc: 'Sequence each day’s stops by geography so crews clean more homes and storefronts in less time.' },
+      { icon: '📋', title: 'Pending Job Board', desc: 'Scheduled routes on one side, new bookings and quotes waiting to be slotted on the other. Nothing forgotten.' },
+      { icon: '📱', title: 'Crew Mobile App', desc: 'Crews see the day’s stops, get directions, build on-site estimates, capture photos, and collect payment from the field.' },
+    ],
+    pendingBoard: 'The scheduled panel shows every job on its recurring route with a confirmed day. The waiting list holds new bookings, open quotes, and one-time jobs waiting to be slotted into a route. You always know what is on a route versus what still needs one.',
+    blogSiloIndustry: 'window-cleaning',
+    blog1Slug: 'window-cleaning-software-complete-guide',
+  },
+
+  // ─── PRESSURE WASHING ─────────────────────────────────────────────────────
+  {
+    slug: 'pressure-washing-software',
+    industry: 'Pressure Washing',
+    isMain: true,
+    h1: 'Pressure Washing Software That Runs Your Jobs, Routes, and Billing in One System',
+    subtitle: 'Book jobs, dispatch crews by map, capture before-and-after photos, and auto-bill cards — built for pressure washing and exterior cleaning businesses.',
+    metaTitle: 'Pressure Washing Software | IndustryBossPro',
+    metaDesc: 'Pressure washing software for scheduling, routing, square-footage estimating, online booking, photo proof, and auto-billing customers. $199/mo flat. 14-day free trial.',
+    heroPoints: [
+      'Book jobs and recurring routes and slot each onto the nearest crew',
+      'Crews get the day’s stops, capture before-and-after photos, and close jobs from their phone',
+      'Auto-bill cards on file the moment the job is done — no invoices to chase',
+    ],
+    painPoints: [
+      { problem: 'Quoting big surfaces by hand is slow and inconsistent', solution: 'Build square-footage estimates on-site from a phone and send them in seconds. Every crew quotes the same way.' },
+      { problem: 'Dispatching crews across town wastes fuel and hours', solution: 'Assign jobs on a live map and route them so each crew drives less and completes more per day.' },
+      { problem: 'Customers dispute the result', solution: 'Crews snap before-and-after photos on every job. Proof of service attaches to the job automatically.' },
+    ],
+    features: [
+      { icon: '💦', title: 'Map & Route Scheduling', desc: 'Book jobs and sequence each crew’s stops by geography so they clean more surfaces in less time.' },
+      { icon: '📸', title: 'Before & After Photo Proof', desc: 'Crews capture before-and-after photos on every job. Disputes and callbacks end instantly.' },
+      { icon: '💳', title: 'Card-on-File Auto-Billing', desc: 'Recurring and commercial accounts bill automatically to a card on file. Recurring revenue, zero manual invoicing.' },
+      { icon: '📐', title: 'Square-Footage Estimating', desc: 'Build consistent quotes by square foot and surface on-site. Every crew prices the same job the same way.' },
+      { icon: '📋', title: 'Pending Job Board', desc: 'Scheduled jobs on one side, new bookings and quotes waiting to be slotted on the other. Nothing forgotten.' },
+      { icon: '📍', title: 'Live Crew GPS', desc: 'See every rig on one map, give customers accurate ETAs, and dispatch the closest crew to the next job.' },
+    ],
+    pendingBoard: 'The scheduled panel shows every job booked onto a crew and a day. The waiting list holds new leads, open quotes, and recurring accounts waiting to be slotted. You always know what is on a crew versus what still needs one.',
+    blogSiloIndustry: 'pressure-washing',
+    blog1Slug: 'pressure-washing-software-complete-guide',
+  },
+
+  // ─── SOFT WASHING ─────────────────────────────────────────────────────────
+  {
+    slug: 'soft-washing-software',
+    industry: 'Soft Washing',
+    isMain: true,
+    h1: 'Soft Washing Software That Runs Your House and Roof Washes in One System',
+    subtitle: 'Book jobs, build recurring routes, capture before-and-after photos, and auto-bill cards — built for soft washing, house washing, and roof cleaning businesses.',
+    metaTitle: 'Soft Washing Software | IndustryBossPro',
+    metaDesc: 'Soft washing software for scheduling, routing, estimating, online booking, photo proof, and auto-billing customers. $199/mo flat. 14-day free trial.',
+    heroPoints: [
+      'Book house and roof washes and slot each onto the nearest route',
+      'Crews get the day’s stops, capture before-and-after photos, and close jobs from their phone',
+      'Auto-bill cards on file the moment the job is done — no invoices to chase',
+    ],
+    painPoints: [
+      { problem: 'Quoting house and roof washes by hand is slow and inconsistent', solution: 'Build estimates on-site from a phone and send them in seconds. Every crew quotes the same way.' },
+      { problem: 'Dispatching crews across town wastes fuel and hours', solution: 'Assign jobs on a live map and route them so each crew drives less and completes more per day.' },
+      { problem: 'Customers dispute the result', solution: 'Crews snap before-and-after photos on every job. Proof of service attaches to the job automatically.' },
+    ],
+    features: [
+      { icon: '🏠', title: 'Map & Route Scheduling', desc: 'Book jobs and sequence each crew’s stops by geography so they wash more homes in less time.' },
+      { icon: '📸', title: 'Before & After Photo Proof', desc: 'Crews capture before-and-after photos on every house and roof wash. Disputes and callbacks end instantly.' },
+      { icon: '💳', title: 'Card-on-File Auto-Billing', desc: 'Recurring and commercial accounts bill automatically to a card on file. Recurring revenue, zero manual invoicing.' },
+      { icon: '🗺️', title: 'Route Optimization', desc: 'Sequence each day’s stops by geography so crews cut drive time and burn less fuel.' },
+      { icon: '📋', title: 'Pending Job Board', desc: 'Scheduled jobs on one side, new bookings and quotes waiting to be slotted on the other. Nothing forgotten.' },
+      { icon: '📱', title: 'Crew Mobile App', desc: 'Crews see the day’s stops, get directions, build on-site estimates, capture photos, and collect payment from the field.' },
+    ],
+    pendingBoard: 'The scheduled panel shows every job booked onto a crew and a day. The waiting list holds new leads, open quotes, and recurring accounts waiting to be slotted. You always know what is on a crew versus what still needs one.',
+    blogSiloIndustry: 'soft-washing',
+    blog1Slug: 'soft-washing-software-complete-guide',
+  },
+
   // ─── FIRE INSPECTION ──────────────────────────────────────────────────────
   {
     slug: 'fire-inspection-software',

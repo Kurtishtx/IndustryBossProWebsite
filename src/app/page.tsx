@@ -15,7 +15,7 @@ export default function Home() {
 
       <main>
       {/* MOCKUP IMAGE */}
-      <div style={{ background: 'linear-gradient(135deg, #0a0a0a 0%, #111111 55%, #1a1a1a 100%)', padding: '96px 24px 0', textAlign: 'center' }}>
+      <div style={{ background: 'linear-gradient(135deg, #0a0a0a 0%, #111111 55%, #1a1a1a 100%)', padding: 'clamp(80px,8vw,96px) clamp(14px,4vw,24px) 0', textAlign: 'center' }}>
         <div style={{ maxWidth: 1080, margin: '0 auto' }}>
           <img src="/industrybosspro-cover.webp" width={1400} height={933} fetchPriority="high" decoding="async" alt="IndustryBossPro field service software on a laptop and phone — the Waiting List with map-based route building on desktop and the crew mobile app" style={{ width: '100%', height: 'auto', borderRadius: '16px', boxShadow: '0 32px 80px rgba(0,0,0,.5)', display: 'block' }} />
         </div>
@@ -298,7 +298,7 @@ export default function Home() {
           <button onClick={openModal} className="btn-primary" style={{ width:'100%', fontSize:16, padding:16 }}>
             Start Your 14-Day Free Trial
           </button>
-          <p style={{ textAlign:'center', color:'rgba(245,245,245,.65)', fontSize:13, marginTop:14 }}>No credit card required. No contracts.</p>
+          <p style={{ textAlign:'center', color:'rgba(245,245,245,.65)', fontSize:13, marginTop:14 }}>No credit card required &middot; 14-day free trial &middot; <b style={{ color:'#fff' }}>$199/mo</b> after &middot; No contracts.</p>
         </div>
       </section>
 

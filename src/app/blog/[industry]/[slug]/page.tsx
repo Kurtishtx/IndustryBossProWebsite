@@ -29,6 +29,10 @@ import { carpetCleaningPosts } from '../../../../lib/blog-carpet-cleaning-data';
 import { garageDoorPosts } from '../../../../lib/blog-garage-door-data';
 import { fireInspectionPosts } from '../../../../lib/blog-fire-inspection-data';
 import { hoodCleaningPosts } from '../../../../lib/blog-hood-cleaning-data';
+import { softWashingPosts } from '../../../../lib/blog-soft-washing-data';
+import { pressureWashingPosts } from '../../../../lib/blog-pressure-washing-data';
+import { windowCleaningPosts } from '../../../../lib/blog-window-cleaning-data';
+import { junkRemovalPosts } from '../../../../lib/blog-junk-removal-data';
 
 const SILO_DATA: Record<string, typeof poolServicePosts> = {
   'pool-service': poolServicePosts,
@@ -40,6 +44,10 @@ const SILO_DATA: Record<string, typeof poolServicePosts> = {
   'landscape-scheduling': landscapeSchedulingPosts,
   'ice-management': iceManagementPosts,
   'pet-waste': petWastePosts,
+  'soft-washing': softWashingPosts,
+  'pressure-washing': pressureWashingPosts,
+  'window-cleaning': windowCleaningPosts,
+  'junk-removal': junkRemovalPosts,
   'weed-control': weedControlPosts,
   'pool-cleaning': poolCleaningPosts,
   'pool-maintenance': poolMaintenancePosts,
