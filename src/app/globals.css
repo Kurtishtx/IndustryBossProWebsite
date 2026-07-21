@@ -38,7 +38,7 @@ body {
 .navbar-cta { background: var(--electric) !important; color: #fff !important; border: none; border-radius: 10px; padding: 10px 22px; font-size: 14px; font-weight: 700; cursor: pointer; font-family: inherit; white-space: nowrap; transition: opacity .15s; }
 .navbar-cta:hover { opacity: 0.88 !important; }
 .nav-hamburger { display: none; background: none; border: none; cursor: pointer; padding: 4px; flex-shrink: 0; }
-.nav-demo-mobile { display: none; }
+.nav-demo-mobile { display: none; align-items: center; gap: 6px; margin-left: auto; border: 1.5px solid rgba(255,255,255,.35); background: rgba(255,255,255,.06); border-radius: 999px; padding: 7px 13px; font-size: 13px; font-weight: 700; color: #fff; text-decoration: none; white-space: nowrap; }
 .nav-mobile-menu { position: fixed; top: 66px; left: 0; right: 0; bottom: 0; background: #0a0a0a; border-top: 1px solid var(--border); padding: 8px 20px 24px; overflow-y: auto; z-index: 9999; }
 .nav-mobile-section { margin-bottom: 4px; }
 .nav-mobile-group-trigger { color: rgba(245,245,245,0.65); font-size: 15px; font-weight: 500; padding: 13px 0; cursor: pointer; display: flex; justify-content: space-between; border-bottom: 1px solid #e63000; }
@@ -60,12 +60,8 @@ body {
 @media (max-width: 900px) {
   .navbar-links { display: none !important; }
   .nav-hamburger { display: block; }
-  .nav-demo-mobile { display: inline-flex !important; }
+  .nav-demo-mobile { display: inline-flex; }
   .navbar-inner { padding: 0 20px; }
-}
-@media (max-width: 380px) {
-  .nav-demo-mobile { font-size: 12px; padding: 6px 10px; margin-right: 8px; }
-  .navbar-name { font-size: 16px; }
 }
 
 /* ── HOMEPAGE ── */
@@ -188,4 +184,27 @@ section { padding: 96px 40px; }
 /* ── SMALL PHONES ── */
 @media (max-width: 520px) {
   .feat-grid { grid-template-columns: 1fr; }
+}
+
+/* Mobile header: brand | Live Demo | hamburger have to share one 375px row.
+   The brand is the only flexible piece, so it truncates instead of pushing
+   the hamburger off the edge. */
+@media (max-width: 900px) {
+  .navbar-inner { gap: 10px; padding: 0 14px; }
+  .navbar-brand { flex: 1 1 auto; min-width: 0; overflow: hidden; }
+  .navbar-brand a { min-width: 0; flex-shrink: 1; overflow: hidden; }
+  .navbar-name { font-size: 16px; min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .nav-demo-mobile { flex-shrink: 0; padding: 7px 12px; font-size: 12.5px; }
+  .nav-hamburger { flex-shrink: 0; padding: 4px 0 4px 2px; }
+}
+@media (max-width: 400px) {
+  .nav-demo-mobile { padding: 6px 10px; font-size: 12px; gap: 5px; }
+  .navbar-name { font-size: 15px; }
+  .navbar-icon { font-size: 22px; }
+}
+
+@media (max-width: 340px) {
+  .navbar-name { font-size: 13.5px; }
+  .navbar-icon { font-size: 20px; }
+  .nav-demo-mobile { padding: 5px 9px; font-size: 11px; }
 }
