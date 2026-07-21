@@ -30,9 +30,13 @@ export default function Home() {
         </div>
         <div className="hero-btns">
           <button onClick={openModal} className="btn-primary">Start Free — 14 Days, No Card</button>
+          <a href="https://my.industrybosspro.com/demo.html" className="btn-ghost" style={{ display:'inline-flex', alignItems:'center', gap:9 }}>
+            <span style={{ width:8, height:8, borderRadius:'50%', background:'#4ade80', boxShadow:'0 0 0 3px rgba(74,222,128,.22)' }} />
+            Try the Live Demo
+          </a>
           <a href="#features" className="btn-ghost">See All Features →</a>
         </div>
-        <p style={{ textAlign:'center', color:'rgba(245,245,245,.72)', fontSize:15, fontWeight:600, marginTop:18 }}>No credit card required &middot; 14-day free trial &middot; <b style={{ color:'#ff6a00' }}>$199/mo</b> after</p>
+        <p style={{ textAlign:'center', color:'rgba(245,245,245,.72)', fontSize:15, fontWeight:600, marginTop:18 }}>No credit card required &middot; 14-day free trial &middot; <b style={{ color:'#ff6a00' }}>$199/mo</b> after &middot; <b style={{ color:'#ff6a00' }}>demo needs no signup</b></p>
         <div className="hero-proof">
           <div className="proof-item"><div className="proof-val">$199</div><div className="proof-lbl">Flat Monthly</div></div>
           <div className="proof-item"><div className="proof-val">Unlimited</div><div className="proof-lbl">Users, Clients &amp; Properties</div></div>
