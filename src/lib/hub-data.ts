@@ -1241,6 +1241,134 @@ export const hubPages: HubPageData[] = [
     blog1Slug: 'pet-waste-removal-software-complete-guide',
   },
 
+  // ─── SEPTIC PUMPING ───────────────────────────────────────────────────────
+  {
+    slug: 'septic-pumping-software',
+    industry: 'Septic Pumping',
+    isMain: true,
+    h1: 'Septic Pumping Software That Runs Every Tank, Truck, and 3-Year Reminder',
+    subtitle: 'Schedule pump-outs, track tank locations and disposal manifests, and bring every customer back on their pump-out cycle automatically — built for septic pumping and grease trap businesses.',
+    metaTitle: 'Septic Pumping Software | IndustryBossPro',
+    metaDesc: 'Septic pumping software for scheduling pump-outs, tracking tank records and disposal manifests, invoicing at the tank, and automatic 3-year service reminders. $199/mo flat. 14-day free trial.',
+    heroPoints: [
+      'Automatic service reminders bring every tank back on its 3-to-5-year pump-out cycle',
+      'Drivers see tank size, lid location, and dig notes on their phone before they leave the truck',
+      'Invoice and collect payment at the tank — gallons pumped feed the disposal manifest automatically',
+    ],
+    painPoints: [
+      { problem: 'Customers pumped 3 years ago call your competitor because nobody reminded them', solution: 'Every completed job sets its next-due date automatically. When the tank comes due, the customer gets a text and email with your name on it — repeat work books itself.' },
+      { problem: 'Drivers waste an hour probing yards for buried lids at properties you already serviced', solution: 'Lid locations, depths, hose-pull distances, and photos save to the property record at close-out. Every repeat visit starts where the last one ended.' },
+      { problem: 'County manifest reporting means a weekend of adding up carbon tickets', solution: 'Gallons pumped and disposal sites log at close-out on every load. Quarterly reports assemble themselves — audit-ready in minutes, not weekends.' },
+    ],
+    features: [
+      { icon: '🚛', title: 'Pump-Out Scheduling & Routing', desc: 'Book jobs onto area days so trucks fill close to capacity before each dump run. Fewer miles, fewer half-empty loads.' },
+      { icon: '🔔', title: '3-Year Service Reminders', desc: 'Every tank carries its own pump-out interval. Reminders text and email automatically when service comes due.' },
+      { icon: '🗺️', title: 'Tank Location Records', desc: 'Lid positions, depths, riser status, and dig notes on every property record. Never probe the same yard twice.' },
+      { icon: '📋', title: 'Disposal Manifests', desc: 'Gallons, source addresses, and disposal sites tracked per load. County reports print in minutes.' },
+      { icon: '💳', title: 'Invoice At The Tank', desc: 'Itemized invoices with dig fees and hose charges, paid by card in the driveway before the truck leaves.' },
+      { icon: '📱', title: 'Driver Mobile App', desc: 'Drivers see the route, tank notes, and gate codes, then close out with gallons and photos in under a minute.' },
+    ],
+    pendingBoard: 'The scheduled panel shows every pump-out, inspection, and grease trap on its confirmed day and truck. The waiting list holds reminder responses waiting to be routed, approved repair estimates, and emergency calls to slot in. You always know what\'s booked versus pending.',
+    blogSiloIndustry: 'septic',
+    blog1Slug: 'septic-pumping-software-complete-guide',
+  },
+
+  // ─── PORTA-POTTY RENTAL ───────────────────────────────────────────────────
+  {
+    slug: 'porta-potty-rental-software',
+    industry: 'Porta-Potty Rental',
+    isMain: true,
+    h1: 'Porta Potty Rental Software That Tracks Every Unit, Route, and Rental in One System',
+    subtitle: 'Track unit inventory, build weekly service routes, dispatch deliveries and pickups, and auto-rebill 28-day rentals — built for portable toilet rental businesses.',
+    metaTitle: 'Porta Potty Rental Software | IndustryBossPro',
+    metaDesc: 'Porta potty rental software for tracking unit inventory, building weekly service routes, dispatching deliveries and pickups, and auto-billing rentals. $199/mo flat. 14-day free trial.',
+    heroPoints: [
+      'Track every numbered unit — in the yard, on a jobsite, or at a weekend event',
+      'Drivers run service routes, log every pump-out, and flag damage from their phone',
+      'Auto-rebill construction long-terms every 28 days — no forgotten invoices',
+    ],
+    painPoints: [
+      { problem: 'Units get lost on finished jobsites and nobody notices for months', solution: 'Every unit is numbered and tracked to a site or the yard. Deliveries, weekly services, and pickups update its location automatically.' },
+      { problem: 'Forgetting a 28-day rebill means weeks of free rent and service', solution: 'Long-term rentals rebill automatically on their cycle date, prorated to delivery and pickup. Nothing on rent slips out of billing.' },
+      { problem: 'Event weekends overbook the fleet and bury the office in calls', solution: 'The calendar checks real unit availability by type before you promise a date. Friday delivery waves and Monday pickups run as dispatched routes.' },
+    ],
+    features: [
+      { icon: '🚻', title: 'Unit Inventory Tracking', desc: 'Every numbered unit tracked by type and location — standard, ADA, handwash, trailer. Know what\'s in the yard versus on rent, always.' },
+      { icon: '🗺️', title: 'Service Route Builder', desc: 'Weekly and twice-weekly service routes build themselves from each rental\'s frequency. Drivers see the day\'s stops in driving order.' },
+      { icon: '🚚', title: 'Delivery & Pickup Dispatch', desc: 'Drop-offs and pickups run as dispatched jobs with placement photos. A pickup stops the rebill and returns units to inventory.' },
+      { icon: '💵', title: '28-Day Auto-Rebilling', desc: 'Construction long-terms rebill every cycle automatically. Event rentals bill against the quote, with damage charges and photos attached.' },
+      { icon: '📋', title: 'Pending Job Board', desc: 'Scheduled deliveries, routes, and pickups on one side, new rental requests and event quotes waiting for dates on the other. Nothing slips.' },
+      { icon: '📱', title: 'Driver Mobile App', desc: 'Drivers log every pump-out with a photo, flag damaged or missing units, and update site locations from the field — even in dead zones.' },
+    ],
+    pendingBoard: 'The scheduled panel shows every delivery, weekly service route, and pickup with a confirmed date. The waiting list holds new rental requests waiting on delivery, event quotes waiting to be confirmed, and pickup calls waiting for a truck. You always know what\'s booked versus pending.',
+    blogSiloIndustry: 'porta-potty',
+    blog1Slug: 'porta-potty-rental-software-complete-guide',
+  },
+
+  // ─── DUMPSTER RENTAL ──────────────────────────────────────────────────────
+  {
+    slug: 'dumpster-rental-software',
+    industry: 'Dumpster Rental',
+    isMain: true,
+    h1: 'Dumpster Rental Software That Tracks Every Can, Swap, and Tonnage Ticket',
+    subtitle: 'Dispatch drops, swaps, and pickups, track every can by number, and bill rental periods, overage days, and tonnage automatically — built for roll-off dumpster businesses.',
+    metaTitle: 'Dumpster Rental Software | IndustryBossPro',
+    metaDesc: 'Dumpster rental software for roll-off dispatch, can inventory tracking, rental periods, tonnage overages, and online booking. $199/mo flat. 14-day free trial.',
+    heroPoints: [
+      'Track every 10 to 40-yard can by number — on rent, in the yard, or down for repair',
+      'Dispatch drops, swap-outs, and pickups to driver phones with placement notes attached',
+      'Auto-bill rental days, overage days, and tonnage from scale tickets — no revenue leaks',
+    ],
+    painPoints: [
+      { problem: 'Cans disappear onto job sites and nobody knows what\'s available', solution: 'Every can carries a number, size, and live status tied to its rental. One screen shows what\'s on rent, where, and what\'s free to book.' },
+      { problem: 'Overage days and tonnage overages go unbilled', solution: 'The rental clock starts at the drop and scale tickets attach to every haul. Extra days and extra tons land on the invoice automatically.' },
+      { problem: 'Swap requests and dispatch changes run on phone calls and memory', solution: 'Same-day swaps drop straight into the nearest driver\'s stop list. Drivers see changes on their phone — no calls, no missed mornings.' },
+    ],
+    features: [
+      { icon: '🗑️', title: 'Can Inventory Tracking', desc: 'Every dumpster tracked by number, size, and status. Know your utilization rate and never lose a can on a job site again.' },
+      { icon: '🚛', title: 'Roll-Off Dispatch', desc: 'Drops, swap-outs, pickups, and dry runs organized into ordered driver days. Same-day changes update driver phones instantly.' },
+      { icon: '⏱️', title: 'Rental Period Clocks', desc: 'Day counters start at the drop and flag rentals past their period. Overage days bill automatically at your daily rate.' },
+      { icon: '⚖️', title: 'Tonnage & Scale Tickets', desc: 'Drivers capture scale tickets at the landfill. Weights compare to included caps and tonnage overages bill with the ticket attached.' },
+      { icon: '📋', title: 'Pending Job Board', desc: 'Scheduled drops and pickups on one side, swap requests and new bookings waiting for a can on the other. Nothing forgotten.' },
+      { icon: '📱', title: 'Driver Mobile App', desc: 'Drivers see stops in order with can numbers and placement notes, snap drop photos, and flag blocked cans from the field.' },
+    ],
+    pendingBoard: 'The scheduled panel shows every drop, swap-out, and pickup with a confirmed date and an assigned can. The waiting list holds new bookings waiting for a can to free up, swap requests to slot into driver days, and overdue rentals that need a pickup scheduled. You always know what\'s dispatched versus pending.',
+    blogSiloIndustry: 'dumpster-rental',
+    blog1Slug: 'dumpster-rental-software-complete-guide',
+  },
+
+  // ─── GUTTER CLEANING ──────────────────────────────────────────────────────
+  {
+    slug: 'gutter-cleaning-software',
+    industry: 'Gutter Cleaning',
+    isMain: true,
+    h1: 'Gutter Cleaning Software That Books the Rush, Runs the Routes, and Bills Every Job',
+    subtitle: 'Quote by linear foot in minutes, schedule spring and fall routes, capture before/after photos, and auto-bill semi-annual plans — built for gutter cleaning businesses.',
+    metaTitle: 'Gutter Cleaning Software | IndustryBossPro',
+    metaDesc: 'Gutter cleaning software for linear-foot quoting, seasonal route scheduling, before/after photo proof, recurring semi-annual plans, and auto-invoicing. $199/mo flat. 14-day free trial.',
+    heroPoints: [
+      'Quote by linear foot with two-story surcharges and send estimates customers approve online',
+      'Crews see the day\'s route, pitch and ladder notes, and close jobs with before/after photos',
+      'Semi-annual maintenance plans schedule and bill themselves every spring and fall',
+    ],
+    painPoints: [
+      { problem: 'The spring and fall rush buries the notebook schedule', solution: 'Every booking lands on a capacity-aware calendar sized to real footage and story counts. Rain days reshuffle in two clicks with automatic customer texts.' },
+      { problem: 'Quotes take days while faster competitors win the job', solution: 'Store your per-foot rate card with story and pitch surcharges. Build an itemized estimate in minutes and let customers approve it online the same day.' },
+      { problem: 'Customers can\'t see work done twenty feet up', solution: 'Crews snap before and after photos from the ladder on every job. Proof attaches to the invoice, ends disputes, and sells gutter guard upsells.' },
+    ],
+    features: [
+      { icon: '📏', title: 'Linear-Foot Quoting', desc: 'Price from stored footage with two-story surcharges, pitch adders, and gutter guard options. Every quote consistent, approvable online.' },
+      { icon: '🍂', title: 'Seasonal Scheduling', desc: 'Book the spring and fall waves into route-shaped days with real capacity. Push rained-out days forward and notify everyone at once.' },
+      { icon: '📸', title: 'Before/After Photo Proof', desc: 'Crews document packed gutters and clean runs on every visit. Photos attach to the job, the invoice, and next season\'s reminder.' },
+      { icon: '🔁', title: 'Semi-Annual Plans', desc: 'Spring and fall cleanings schedule themselves and bill the card on file. Recurring revenue that pre-books your rush season.' },
+      { icon: '📋', title: 'Pending Job Board', desc: 'Scheduled cleanings on the left, approved quotes and rush overflow waiting for a date on the right. Nothing slips in the busy weeks.' },
+      { icon: '🗺️', title: 'Route Optimization', desc: 'Sequence each day\'s houses by geography so short gutter stops don\'t drown in windshield time. More houses per truck per day.' },
+    ],
+    pendingBoard: 'The scheduled panel shows every cleaning with a confirmed date — one-time jobs, semi-annual plan visits, and gutter guard installs. The waiting list holds approved quotes waiting for a route slot, rush-season overflow, and rain-day reshuffles. You always know what\'s booked versus pending.',
+    blogSiloIndustry: 'gutter-cleaning',
+    blog1Slug: 'gutter-cleaning-software-complete-guide',
+  },
+
   // ─── JUNK REMOVAL ─────────────────────────────────────────────────────────
   {
     slug: 'junk-removal-software',

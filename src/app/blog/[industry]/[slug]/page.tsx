@@ -33,6 +33,10 @@ import { softWashingPosts } from '../../../../lib/blog-soft-washing-data';
 import { pressureWashingPosts } from '../../../../lib/blog-pressure-washing-data';
 import { windowCleaningPosts } from '../../../../lib/blog-window-cleaning-data';
 import { junkRemovalPosts } from '../../../../lib/blog-junk-removal-data';
+import { septicPumpingPosts } from '../../../../lib/blog-septic-data';
+import { portaPottyPosts } from '../../../../lib/blog-porta-potty-data';
+import { dumpsterRentalPosts } from '../../../../lib/blog-dumpster-data';
+import { gutterCleaningPosts } from '../../../../lib/blog-gutter-data';
 
 const SILO_DATA: Record<string, typeof poolServicePosts> = {
   'pool-service': poolServicePosts,
@@ -48,6 +52,10 @@ const SILO_DATA: Record<string, typeof poolServicePosts> = {
   'pressure-washing': pressureWashingPosts,
   'window-cleaning': windowCleaningPosts,
   'junk-removal': junkRemovalPosts,
+  'septic': septicPumpingPosts,
+  'porta-potty': portaPottyPosts,
+  'dumpster-rental': dumpsterRentalPosts,
+  'gutter-cleaning': gutterCleaningPosts,
   'weed-control': weedControlPosts,
   'pool-cleaning': poolCleaningPosts,
   'pool-maintenance': poolMaintenancePosts,

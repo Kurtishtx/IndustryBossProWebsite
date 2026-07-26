@@ -32,6 +32,10 @@ import { softWashingPosts } from '../../../lib/blog-soft-washing-data';
 import { pressureWashingPosts } from '../../../lib/blog-pressure-washing-data';
 import { windowCleaningPosts } from '../../../lib/blog-window-cleaning-data';
 import { junkRemovalPosts } from '../../../lib/blog-junk-removal-data';
+import { septicPumpingPosts } from '../../../lib/blog-septic-data';
+import { portaPottyPosts } from '../../../lib/blog-porta-potty-data';
+import { dumpsterRentalPosts } from '../../../lib/blog-dumpster-data';
+import { gutterCleaningPosts } from '../../../lib/blog-gutter-data';
 
 const SILO_DATA: Record<string, typeof poolServicePosts> = {
   'pool-service': poolServicePosts,
@@ -47,6 +51,10 @@ const SILO_DATA: Record<string, typeof poolServicePosts> = {
   'pressure-washing': pressureWashingPosts,
   'window-cleaning': windowCleaningPosts,
   'junk-removal': junkRemovalPosts,
+  'septic': septicPumpingPosts,
+  'porta-potty': portaPottyPosts,
+  'dumpster-rental': dumpsterRentalPosts,
+  'gutter-cleaning': gutterCleaningPosts,
   'weed-control': weedControlPosts,
   'pool-cleaning': poolCleaningPosts,
   'pool-maintenance': poolMaintenancePosts,
@@ -96,6 +104,10 @@ const SILO_META: Record<string, { title: string; description: string; hubSlug: s
   'pressure-washing': { title: "Pressure Washing Software Tips & Guides", description: "Guides for pressure washing businesses on scheduling, routing, estimating, photo proof, billing, and software.", hubSlug: 'pressure-washing-software' },
   'window-cleaning': { title: "Window Cleaning Software Tips & Guides", description: "Guides for window cleaning businesses on recurring routes, scheduling, booking, photo proof, billing, and software.", hubSlug: 'window-cleaning-software' },
   'junk-removal': { title: "Junk Removal Software Tips & Guides", description: "Guides for junk removal and hauling businesses on booking, dispatch, routing, photo proof, billing, and software.", hubSlug: 'junk-removal-software' },
+  'septic': { title: "Septic Pumping Software Tips & Guides", description: "Guides for septic pumping companies on scheduling, service reminders, routing, disposal manifests, billing, and software.", hubSlug: 'septic-pumping-software' },
+  'porta-potty': { title: "Porta-Potty Rental Software Tips & Guides", description: "Guides for portable toilet rental businesses on unit inventory, service routes, event rentals, billing, and software.", hubSlug: 'porta-potty-rental-software' },
+  'dumpster-rental': { title: "Dumpster Rental Software Tips & Guides", description: "Guides for roll-off dumpster businesses on dispatch, can inventory, rental periods, tonnage billing, and software.", hubSlug: 'dumpster-rental-software' },
+  'gutter-cleaning': { title: "Gutter Cleaning Software Tips & Guides", description: "Guides for gutter cleaning businesses on seasonal scheduling, estimating, routes, photo proof, billing, and software.", hubSlug: 'gutter-cleaning-software' },
   'weed-control': { title: 'Weed Control Software Tips & Guides', description: 'Guides for weed control businesses on treatment scheduling, application records, billing, and software.', hubSlug: 'weed-control-software' },
   'pool-cleaning': { title: 'Pool Cleaning Software Tips & Guides', description: 'Guides for pool cleaning businesses on routes, chemical logging, scheduling, billing, and software.', hubSlug: 'pool-cleaning-software' },
   'pool-maintenance': { title: 'Pool Maintenance Software Tips & Guides', description: 'Guides for pool maintenance companies on seasonal scheduling, repairs, contracts, and software.', hubSlug: 'pool-maintenance-software' },

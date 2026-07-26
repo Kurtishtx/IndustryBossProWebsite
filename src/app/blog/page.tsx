@@ -31,6 +31,10 @@ import { softWashingPosts } from '../../lib/blog-soft-washing-data';
 import { pressureWashingPosts } from '../../lib/blog-pressure-washing-data';
 import { windowCleaningPosts } from '../../lib/blog-window-cleaning-data';
 import { junkRemovalPosts } from '../../lib/blog-junk-removal-data';
+import { septicPumpingPosts } from '../../lib/blog-septic-data';
+import { portaPottyPosts } from '../../lib/blog-porta-potty-data';
+import { dumpsterRentalPosts } from '../../lib/blog-dumpster-data';
+import { gutterCleaningPosts } from '../../lib/blog-gutter-data';
 
 export const metadata: Metadata = {
   title: 'Field Service Business Blog | IndustryBossPro',
@@ -57,6 +61,10 @@ const silos = [
   { industry: 'pressure-washing', label: "Pressure Washing", posts: pressureWashingPosts, hubSlug: 'pressure-washing-software' },
   { industry: 'window-cleaning', label: "Window Cleaning", posts: windowCleaningPosts, hubSlug: 'window-cleaning-software' },
   { industry: 'junk-removal', label: "Junk Removal", posts: junkRemovalPosts, hubSlug: 'junk-removal-software' },
+  { industry: 'septic', label: "Septic Pumping", posts: septicPumpingPosts, hubSlug: 'septic-pumping-software' },
+  { industry: 'porta-potty', label: "Porta-Potty Rental", posts: portaPottyPosts, hubSlug: 'porta-potty-rental-software' },
+  { industry: 'dumpster-rental', label: "Dumpster Rental", posts: dumpsterRentalPosts, hubSlug: 'dumpster-rental-software' },
+  { industry: 'gutter-cleaning', label: "Gutter Cleaning", posts: gutterCleaningPosts, hubSlug: 'gutter-cleaning-software' },
   { industry: 'weed-control', label: 'Weed Control', posts: weedControlPosts, hubSlug: 'weed-control-software' },
   { industry: 'pool-cleaning', label: 'Pool Cleaning', posts: poolCleaningPosts, hubSlug: 'pool-cleaning-software' },
   { industry: 'pool-maintenance', label: 'Pool Maintenance', posts: poolMaintenancePosts, hubSlug: 'pool-maintenance-software' },
