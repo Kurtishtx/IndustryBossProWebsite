@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import type { Viewport } from "next";
+import Script from "next/script";
 import { Inter } from "next/font/google";
 import DemoPopup from "../components/DemoPopup";
 import "./globals.css";
@@ -73,6 +74,15 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
         {children}
         <DemoPopup />
+        {/* Google tag (gtag.js) — GA4 + Google Ads conversion tracking (account AW-994175437) */}
+        <Script src="https://www.googletagmanager.com/gtag/js?id=G-97QJVSZQ1M" strategy="afterInteractive" />
+        <Script id="gtag-init" strategy="afterInteractive">
+          {`window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-97QJVSZQ1M');
+            gtag('config', 'AW-994175437');`}
+        </Script>
       </body>
     </html>
   );
