@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import dynamic from 'next/dynamic';
 import SiteHeader from '../components/SiteHeader';
+import HeroDemo from '../components/HeroDemo';
 
 const HomeTrialModal = dynamic(() => import('../components/HomeTrialModal'), { ssr: false });
 
@@ -14,10 +15,10 @@ export default function Home() {
       <SiteHeader onOpenModal={openModal} />
 
       <main>
-      {/* MOCKUP IMAGE */}
+      {/* LIVE INTERACTIVE DEMO — replaces the static cover image. Pick Desktop / Client / Crew and use the real apps. */}
       <div style={{ background: 'linear-gradient(135deg, #0a0a0a 0%, #111111 55%, #1a1a1a 100%)', padding: 'clamp(80px,8vw,96px) clamp(14px,4vw,24px) 0', textAlign: 'center' }}>
         <div style={{ maxWidth: 1080, margin: '0 auto' }}>
-          <img src="/industrybosspro-cover.webp" width={1400} height={933} fetchPriority="high" decoding="async" alt="IndustryBossPro field service software on a laptop and phone — the Waiting List with map-based route building on desktop and the crew mobile app" style={{ width: '100%', height: 'auto', borderRadius: '16px', boxShadow: '0 32px 80px rgba(0,0,0,.5)', display: 'block' }} />
+          <HeroDemo />
         </div>
       </div>
 
@@ -30,10 +31,6 @@ export default function Home() {
         </div>
         <div className="hero-btns">
           <button onClick={openModal} className="btn-primary">Start Free — 14 Days, No Card</button>
-          <a href="https://my.industrybosspro.com/demo.html" className="btn-ghost" style={{ display:'inline-flex', alignItems:'center', gap:9 }}>
-            <span style={{ width:8, height:8, borderRadius:'50%', background:'#4ade80', boxShadow:'0 0 0 3px rgba(74,222,128,.22)' }} />
-            Try the Live Demo
-          </a>
           <a href="#features" className="btn-ghost">See All Features →</a>
         </div>
         <p style={{ textAlign:'center', color:'rgba(245,245,245,.72)', fontSize:15, fontWeight:600, marginTop:18 }}>No credit card required &middot; 14-day free trial &middot; <b style={{ color:'#ff6a00' }}>$199/mo</b> after &middot; <b style={{ color:'#ff6a00' }}>demo needs no signup</b></p>

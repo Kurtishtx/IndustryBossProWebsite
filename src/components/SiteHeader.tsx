@@ -96,27 +96,10 @@ export default function SiteHeader({ onOpenModal }: { onOpenModal: () => void })
             <Link href="/features">Features</Link>
             <Link href="/pricing">Pricing</Link>
             <a href="https://my.industrybosspro.com" target="_blank" rel="noreferrer">Log In</a>
-            <a
-              href="https://my.industrybosspro.com/demo.html"
-              className="navbar-demo"
-              style={{display:'inline-flex', alignItems:'center', gap:'7px', border:'1.5px solid rgba(255,255,255,.35)', borderRadius:'6px', padding:'9px 16px', fontSize:'14px', fontWeight:700, color:'#fff', textDecoration:'none', whiteSpace:'nowrap'}}
-            >
-              <span style={{width:'7px', height:'7px', borderRadius:'50%', background:'#4ade80', boxShadow:'0 0 0 3px rgba(74,222,128,.22)'}} />
-              Live Demo
-            </a>
             <button className="navbar-cta" onClick={onOpenModal}>
               Start Free Trial
             </button>
           </div>
-
-          {/* Live Demo — mobile only, sits in the bar next to the hamburger */}
-          <a
-            href="https://my.industrybosspro.com/demo.html"
-            className="nav-demo-mobile"
-          >
-            <span style={{ width: '6px', height: '6px', borderRadius: '50%', background: '#4ade80', boxShadow: '0 0 0 3px rgba(74,222,128,.22)', flexShrink: 0 }} />
-            Live Demo
-          </a>
 
           <button className="nav-hamburger" onClick={() => toggleMenu(!open)} aria-label="Menu">
             <span style={{ display: 'block', width: '22px', height: '2px', background: '#fff', marginBottom: '5px', transition: 'transform .2s', transform: open ? 'rotate(45deg) translate(5px,5px)' : 'none' }}></span>
@@ -148,7 +131,6 @@ export default function SiteHeader({ onOpenModal }: { onOpenModal: () => void })
           <Link href="/features" className="nav-mobile-link" onClick={() => toggleMenu(false)}>Features</Link>
           <Link href="/pricing" className="nav-mobile-link" onClick={() => toggleMenu(false)}>Pricing</Link>
           <a href="https://my.industrybosspro.com" target="_blank" rel="noreferrer" className="nav-mobile-link" onClick={() => toggleMenu(false)}>Log In</a>
-          <a href="https://my.industrybosspro.com/demo.html" className="nav-mobile-link" onClick={() => toggleMenu(false)}>▶ Try the Live Demo — no signup</a>
           <button className="nav-mobile-cta" onClick={() => { toggleMenu(false); onOpenModal(); }}>
             Start Free Trial
           </button>
