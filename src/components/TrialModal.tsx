@@ -2,8 +2,12 @@
 import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 
-const SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL || '';
-const SUPABASE_ANON = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || '';
+// Fall back to the project's public values. NEXT_PUBLIC_SUPABASE_ANON_KEY was never set on this
+// Vercel project, so this component bailed with "Account creation not configured" and EVERY trial
+// signup on this site failed silently. The anon key is public by design — it ships in every page of
+// the app itself — so relying on an env var that can go missing buys nothing and costs signups.
+const SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL || 'https://knjdbgroiyhvqwrpqzcx.supabase.co';
+const SUPABASE_ANON = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtuamRiZ3JvaXlodnF3cnBxemN4Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzk0OTczMDMsImV4cCI6MjA5NTA3MzMwM30.zoExtkem-XZqU86S4yJjA_xOOaS1G0IPU2M9OAAza2g';
 const APP_URL = process.env.NEXT_PUBLIC_APP_URL || 'https://my.industrybosspro.com/dashboard.html';
 
 const S = {
