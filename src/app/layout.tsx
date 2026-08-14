@@ -45,7 +45,7 @@ const orgLd = {
       '@id': 'https://industrybosspro.com/#organization',
       name: 'IndustryBossPro',
       url: 'https://industrybosspro.com',
-      logo: 'https://industrybosspro.com/icon.svg',
+      logo: 'https://industrybosspro.com/icon.png',
       description: 'All-in-one field service management software for the trades — scheduling, routing, invoicing, payments, CRM, and a crew mobile app. $199/month, everything included.',
       contactPoint: {
         '@type': 'ContactPoint',
