@@ -65,14 +65,14 @@ export default function SiteHeader({ onOpenModal }: { onOpenModal: () => void })
                     <stop offset="0%" stopColor="#1c1a18"/><stop offset="100%" stopColor="#000000"/>
                   </linearGradient>
                   <linearGradient id="hcm" x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="0%" stopColor="#fde68a"/><stop offset="100%" stopColor="#c79a09"/>
+                    <stop offset="0%" stopColor="#fec96a"/><stop offset="100%" stopColor="#c47a09"/>
                   </linearGradient>
                   <linearGradient id="hcb" x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="0%" stopColor="#e2b508"/><stop offset="100%" stopColor="#917005"/>
+                    <stop offset="0%" stopColor="#e39008"/><stop offset="100%" stopColor="#8f5a05"/>
                   </linearGradient>
                 </defs>
                 <rect width="100" height="100" rx="24" fill="url(#hcg)"/>
-                <rect x="2.5" y="2.5" width="95" height="95" rx="21.5" fill="none" stroke="#facc15" strokeWidth="5"/>
+                <rect x="2.5" y="2.5" width="95" height="95" rx="21.5" fill="none" stroke="#ff6a00" strokeWidth="5"/>
                 <path d="M19 50 L34 63 L50 39 L66 63 L81 50 L81 74 L19 74 Z" fill="url(#hcm)"/>
                 <rect x="17" y="74" width="66" height="10" rx="3" fill="url(#hcb)"/>
                 <circle cx="19" cy="46.4" r="4" fill="#fffaf0"/>
