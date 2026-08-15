@@ -56,16 +56,31 @@ export default function SiteHeader({ onOpenModal }: { onOpenModal: () => void })
         <div className="navbar-inner">
           <div className="navbar-brand">
             <Link href="/" onClick={() => toggleMenu(false)}>
-              <svg width="28" height="28" viewBox="0 0 32 32" fill="none" style={{ flexShrink: 0 }}>
+              {/* The same mark as the tab icon and the app: black tile, gold ring, jewelled crown.
+                  The header was still a flat white crown on orange, so the logo at the top of the
+                  page and the icon in the browser tab were two different marks. */}
+              <svg width="30" height="30" viewBox="0 0 100 100" style={{ flexShrink: 0 }} aria-hidden="true">
                 <defs>
-                  <linearGradient id="hcg" x1="0" y1="0" x2="1" y2="1">
-                    <stop offset="0%" stopColor="#ff6a00"/>
-                    <stop offset="100%" stopColor="#e63000"/>
+                  <linearGradient id="hcg" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stopColor="#1c1a18"/><stop offset="100%" stopColor="#000000"/>
+                  </linearGradient>
+                  <linearGradient id="hcm" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stopColor="#fde68a"/><stop offset="100%" stopColor="#c79a09"/>
+                  </linearGradient>
+                  <linearGradient id="hcb" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stopColor="#e2b508"/><stop offset="100%" stopColor="#917005"/>
                   </linearGradient>
                 </defs>
-                <rect width="32" height="32" rx="8" fill="url(#hcg)"/>
-                <path d="M6 22 L8 12 L13 18 L16 9 L19 18 L24 12 L26 22 Z" fill="white"/>
-                <rect x="6" y="22" width="20" height="3" rx="1.5" fill="white"/>
+                <rect width="100" height="100" rx="24" fill="url(#hcg)"/>
+                <rect x="2.5" y="2.5" width="95" height="95" rx="21.5" fill="none" stroke="#facc15" strokeWidth="5"/>
+                <path d="M19 50 L34 63 L50 39 L66 63 L81 50 L81 74 L19 74 Z" fill="url(#hcm)"/>
+                <rect x="17" y="74" width="66" height="10" rx="3" fill="url(#hcb)"/>
+                <circle cx="19" cy="46.4" r="4" fill="#fffaf0"/>
+                <circle cx="50" cy="35.4" r="4.6" fill="#fffaf0"/>
+                <circle cx="81" cy="46.4" r="4" fill="#fffaf0"/>
+                <circle cx="50" cy="56" r="6" fill="#e11d48"/>
+                <circle cx="31" cy="63.5" r="4" fill="#22c55e"/>
+                <circle cx="69" cy="63.5" r="4" fill="#38bdf8"/>
               </svg>
               <span className="navbar-name">IndustryBoss<span>Pro</span></span>
             </Link>
