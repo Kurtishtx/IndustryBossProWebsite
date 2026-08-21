@@ -3,6 +3,7 @@ import type { Viewport } from "next";
 import Script from "next/script";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import MetaPixel from '@/components/MetaPixel';
 
 const inter = Inter({
   subsets: ["latin"],
@@ -87,6 +88,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           dangerouslySetInnerHTML={{ __html: JSON.stringify(orgLd) }}
         />
         {children}
+        {/* Meta Pixel — builds the retargeting audience. Inert until
+            NEXT_PUBLIC_META_PIXEL_ID is set on the Vercel project. */}
+        <MetaPixel />
         {/* Google tag (gtag.js) — GA4 + Google Ads conversion tracking (account AW-994175437) */}
         <Script src="https://www.googletagmanager.com/gtag/js?id=G-97QJVSZQ1M" strategy="afterInteractive" />
         <Script id="gtag-init" strategy="afterInteractive">
