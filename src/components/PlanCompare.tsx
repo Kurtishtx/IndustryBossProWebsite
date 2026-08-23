@@ -48,7 +48,7 @@ const ROWS: { label: string; note?: string; cells: [Cell, Cell, Cell] }[] = [
                                                      cells: ['2', '3', 'Unlimited'] },
   { label: 'Trucks',                                 cells: ['2', '3', 'Unlimited'] },
   { label: 'Clients & properties',                   cells: ['Unlimited', 'Unlimited', 'Unlimited'] },
-  { label: 'Outbound texts included', note: 'Need more? [[500 outbound texts for $15]] on any plan. Inbound replies are free and never counted.',
+  { label: 'Outbound texts included', note: '[[500 extra outbound texts for $15]] on any plan. Inbound replies are free and never counted.',
                                                      cells: ['100 / month', '500 / month', '1,000 / month'] },
   { label: 'Smart Lasso map selections',             cells: ['10 / month', '50 / month', 'Unlimited'] },
   { label: 'Auto-routing',                           cells: ['10 / month', '50 / month', 'Unlimited'] },
@@ -185,7 +185,7 @@ export default function PlanCompare() {
         <p style={{ textAlign: 'center', color: 'rgba(245,245,245,.60)', fontSize: 13, marginTop: 18, lineHeight: 1.7 }}>
           14-day free trial on every plan &middot; no card to start &middot; cancel anytime &middot; move up or down whenever you like.
           <br />
-          Need more texts? <b style={{ color: '#ff6a00' }}>500 outbound texts for $15</b> on any plan &middot; inbound replies are always free.
+          Need more? <b style={{ color: '#ff6a00' }}>500 extra outbound texts for $15</b> on any plan &middot; inbound replies are always free.
         </p>
       </div>
     </section>
