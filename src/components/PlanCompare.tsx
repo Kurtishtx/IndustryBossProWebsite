@@ -46,6 +46,11 @@ const ROWS: { label: string; note?: string; cells: [Cell, Cell, Cell] }[] = [
   { label: 'Card on file & customer payments',       cells: [true, true, true] },
   { label: 'Client app', note: 'Your customer signs in by text — sees their schedule, invoices, pays, and sets their own alert preferences',
                                                      cells: [true, true, true] },
+  /* On Start the operator IS the crew, so the field app is the half they use most — routing the
+     day, starting and finishing jobs from the truck. Holding it back would leave the cheapest
+     plan as an office tool for someone who is not in an office. */
+  { label: 'Crew app', note: 'Route the day, start and complete jobs, before/after photos, area treated',
+                                                     cells: [true, true, true] },
   { label: 'Schedule alerts',                        cells: [true, true, true] },
   { label: 'Estimate alerts',                        cells: [true, true, true] },
   { label: 'Receive customer replies',               cells: [true, true, true] },
@@ -62,8 +67,6 @@ const ROWS: { label: string; note?: string; cells: [Cell, Cell, Cell] }[] = [
   { label: 'Automated invoice sending',              cells: [false, true, true] },
   { label: 'Automatic card charging',                cells: [false, true, true] },
   { label: 'Chemical tracking & compliance reports', note: 'Pesticide application records that satisfy a state request',
-                                                     cells: [false, true, true] },
-  { label: 'Crew app', note: 'Route, start and complete jobs, before/after photos, area treated',
                                                      cells: [false, true, true] },
   { label: 'Employee time clock & hours',            cells: [false, true, true] },
 
