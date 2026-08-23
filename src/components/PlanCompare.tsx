@@ -21,7 +21,10 @@ type Cell = string | boolean;
 
 const PLANS = [
   { key: 'start', name: 'Start', price: 49,  tag: 'Just getting going' },
-  { key: 'solo',  name: 'Solo',  price: 89,  tag: 'Small shop, fully equipped', featured: true },
+  /* Named Pro, not Solo, for the same reason Crew is not called Unlimited: the plan carries
+     3 users, 3 employees and 3 trucks, which is not one person however you read it. A name the
+     table contradicts costs more trust than a plain one ever earns. */
+  { key: 'solo',  name: 'Pro',   price: 89,  tag: 'Small shop, fully equipped', featured: true },
   /* Named Crew, not Unlimited. Outbound texts are capped on every plan, and a plan called
      Unlimited that stops sending in week three reads as a bait-and-switch however fair the
      cap is. Users, employees and trucks ARE unlimited here - that belongs in the table as a
