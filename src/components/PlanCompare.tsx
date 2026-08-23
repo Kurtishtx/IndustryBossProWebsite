@@ -7,16 +7,26 @@
  * comparing wants to know what they give up, and a feature list that only ever says "yes" reads
  * as marketing.
  *
- * Extra texts are the same on every plan: blocks of 500 for $15. They do NOT roll over -
- * the block price comes from pricing.html, which still claims they do and needs correcting.
+ * Only OUTBOUND is metered. Inbound replies cost us a fraction of a cent and are the whole
+ * point of the product - charging for them would train people not to use it. Extra blocks are
+ * 500 for $15 on every plan and do NOT roll over; the block price comes from pricing.html,
+ * which still claims they roll over and needs correcting.
+ *
+ * NOT collapsed behind a "compare features" toggle, deliberately. The owner - who is the buyer
+ * this page is written for - wants every line visible at a glance so a reader can see what the
+ * software does without clicking. Left open on purpose; do not "tidy" it into an accordion.
  */
 
 type Cell = string | boolean;
 
 const PLANS = [
-  { key: 'start', name: 'Start',     price: 49,  tag: 'Solo, getting going' },
-  { key: 'solo',  name: 'Solo',      price: 89,  tag: 'One person, fully equipped', featured: true },
-  { key: 'unl',   name: 'Unlimited', price: 199, tag: 'Crews and trucks' },
+  { key: 'start', name: 'Start', price: 49,  tag: 'Just getting going' },
+  { key: 'solo',  name: 'Solo',  price: 89,  tag: 'Small shop, fully equipped', featured: true },
+  /* Named Crew, not Unlimited. Outbound texts are capped on every plan, and a plan called
+     Unlimited that stops sending in week three reads as a bait-and-switch however fair the
+     cap is. Users, employees and trucks ARE unlimited here - that belongs in the table as a
+     line you can check, not in the name as a promise the texting row contradicts. */
+  { key: 'unl',   name: 'Crew',  price: 199, tag: 'Crews and trucks' },
 ];
 
 /* Ordered so the ticks stack into solid blocks rather than scattering.
@@ -29,13 +39,15 @@ const PLANS = [
  * checkerboard down twenty rows. */
 const ROWS: { label: string; note?: string; cells: [Cell, Cell, Cell] }[] = [
   /* ── What each plan lets you have ── */
-  { label: 'Users',                                  cells: ['1', '1', 'Unlimited'] },
-  { label: 'Employees',                              cells: ['1', '1', 'Unlimited'] },
-  { label: 'Trucks',                                 cells: ['1', '1', 'Unlimited'] },
+  { label: 'Users', note: 'Office logins - the people who schedule, invoice and see the money',
+                                                     cells: ['2', '3', 'Unlimited'] },
+  { label: 'Employees', note: 'Crew-app seats - they run the route and complete jobs, they never see the money',
+                                                     cells: ['2', '3', 'Unlimited'] },
+  { label: 'Trucks',                                 cells: ['2', '3', 'Unlimited'] },
   { label: 'Clients & properties',                   cells: ['Unlimited', 'Unlimited', 'Unlimited'] },
-  { label: 'Text messages included', note: 'Extra blocks of 500 for $15 on every plan',
-                                                     cells: ['100 outbound alerts', '500 two-way', 'Unlimited two-way'] },
-  { label: 'Smart Lasso map selections',             cells: ['10 / month', 'Unlimited', 'Unlimited'] },
+  { label: 'Outbound texts included', note: 'Replies from your customers are free and never counted against it. Extra blocks of 500 for $15 on every plan',
+                                                     cells: ['100 / month', '500 / month', '1,000 / month'] },
+  { label: 'Smart Lasso map selections',             cells: ['10 / month', '50 / month', 'Unlimited'] },
   { label: 'Auto-routing',                           cells: ['10 / month', '50 / month', 'Unlimited'] },
 
   /* ── On every plan ── */
@@ -153,7 +165,7 @@ export default function PlanCompare() {
         <p style={{ textAlign: 'center', color: 'rgba(245,245,245,.60)', fontSize: 13, marginTop: 18, lineHeight: 1.7 }}>
           14-day free trial on every plan &middot; no card to start &middot; cancel anytime &middot; move up or down whenever you like.
           <br />
-          Need more texts? Blocks of 500 for <b style={{ color: '#fff' }}>$15</b> on any plan.
+          Need more texts? Blocks of 500 for <b style={{ color: '#fff' }}>$15</b> on any plan &middot; replies from your customers are always free.
         </p>
       </div>
     </section>
