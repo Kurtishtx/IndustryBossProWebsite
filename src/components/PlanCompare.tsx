@@ -19,46 +19,54 @@ const PLANS = [
   { key: 'unl',   name: 'Unlimited', price: 199, tag: 'Crews and trucks' },
 ];
 
+/* Ordered so the ticks stack into solid blocks rather than scattering.
+ *
+ *   1. the numbers — what each plan lets you have
+ *   2. everything on ALL THREE plans — Start's column is an unbroken run of ticks
+ *   3. everything Solo and up — an unbroken run of dashes beneath it
+ *
+ * A reader can then see where Start stops by looking for the line, instead of tracking a
+ * checkerboard down twenty rows. */
 const ROWS: { label: string; note?: string; cells: [Cell, Cell, Cell] }[] = [
-  { label: 'Users',                                        cells: ['1', '1', 'Unlimited'] },
-  { label: 'Employees',                                    cells: ['1', '1', 'Unlimited'] },
-  { label: 'Trucks',                                       cells: ['1', '1', 'Unlimited'] },
-  { label: 'Clients & properties',                         cells: ['Unlimited', 'Unlimited', 'Unlimited'] },
-  /* Start gets 100 automated ALERTS a month and can receive whatever customers text back —
-     it just cannot reply. "Inbound only" said the opposite of the truth: the 100 are outbound. */
+  /* ── What each plan lets you have ── */
+  { label: 'Users',                                  cells: ['1', '1', 'Unlimited'] },
+  { label: 'Employees',                              cells: ['1', '1', 'Unlimited'] },
+  { label: 'Trucks',                                 cells: ['1', '1', 'Unlimited'] },
+  { label: 'Clients & properties',                   cells: ['Unlimited', 'Unlimited', 'Unlimited'] },
   { label: 'Text messages included', note: 'Extra blocks of 500 for $15 on every plan',
-                                                           cells: ['100 outbound alerts', '500 two-way', 'Unlimited two-way'] },
-  /* Start receives whatever customers text back — it simply cannot answer. Worth stating as two
-     rows: "no two-way texting" reads as "their replies vanish", and they do not. */
-  { label: 'Receive customer replies',                     cells: [true, true, true] },
-  { label: 'Reply back to customers',                      cells: [false, true, true] },
-  { label: 'Smart Lasso map selections',                   cells: ['10 / month', 'Unlimited', 'Unlimited'] },
-  { label: 'Auto-routing',                                 cells: ['10 / month', '50 / month', 'Unlimited'] },
-  { label: 'Scheduling & job board',                       cells: [true, true, true] },
-  { label: 'Estimates & invoicing',                        cells: [true, true, true] },
-  { label: 'Schedule alerts',                              cells: [true, true, true] },
-  { label: 'Estimate alerts',                              cells: [true, true, true] },
-  { label: 'All other automated alerts', note: 'On the way, arrived, completed, follow-up, review request and the rest',
-                                                           cells: [false, true, true] },
-  { label: 'Automated invoice sending',                    cells: [false, true, true] },
-  { label: 'Automatic card charging',                      cells: [false, true, true] },
-  { label: 'Chemical tracking & compliance reports', note: 'Pesticide application records that satisfy a state request',
-                                                           cells: [false, true, true] },
+                                                     cells: ['100 outbound alerts', '500 two-way', 'Unlimited two-way'] },
+  { label: 'Smart Lasso map selections',             cells: ['10 / month', 'Unlimited', 'Unlimited'] },
+  { label: 'Auto-routing',                           cells: ['10 / month', '50 / month', 'Unlimited'] },
+
+  /* ── On every plan ── */
+  { label: 'Scheduling, waiting list & job board',   cells: [true, true, true] },
+  { label: 'Package plans & recurring services',     cells: [true, true, true] },
+  { label: 'Estimates, templates & follow-ups',      cells: [true, true, true] },
+  { label: 'Invoicing',                              cells: [true, true, true] },
+  { label: 'Card on file & customer payments',       cells: [true, true, true] },
   { label: 'Client app', note: 'Your customer signs in by text — sees their schedule, invoices, pays, and sets their own alert preferences',
-                                                           cells: [true, true, true] },
-  { label: 'Crew app', note: 'Route, start and complete jobs, before/after photos, area treated',
-                                                           cells: [false, true, true] },
-  { label: 'Live crew GPS on the map',                     cells: [false, true, true] },
-  { label: 'Employee time clock & hours',                  cells: [false, true, true] },
-  { label: 'Waiting list & job board',                     cells: [true, true, true] },
-  { label: 'Package plans & recurring services',           cells: [true, true, true] },
-  { label: 'Estimates, templates & follow-ups',            cells: [true, true, true] },
-  { label: 'Card on file & customer payments',             cells: [true, true, true] },
-  { label: 'Web lead forms',                               cells: [true, true, true] },
-  { label: 'Sales tax & reporting',                        cells: [true, true, true] },
-  { label: 'QuickBooks export',                            cells: [true, true, true] },
+                                                     cells: [true, true, true] },
+  { label: 'Schedule alerts',                        cells: [true, true, true] },
+  { label: 'Estimate alerts',                        cells: [true, true, true] },
+  { label: 'Receive customer replies',               cells: [true, true, true] },
+  { label: 'Web lead forms',                         cells: [true, true, true] },
+  { label: 'Sales tax & reporting',                  cells: [true, true, true] },
+  { label: 'QuickBooks export',                      cells: [true, true, true] },
   { label: 'Import your existing customers', note: 'Including Real Green and Service Autopilot exports',
-                                                           cells: [true, true, true] },
+                                                     cells: [true, true, true] },
+
+  /* ── Solo and up ── */
+  { label: 'Reply back to customers',                cells: [false, true, true] },
+  { label: 'All other automated alerts', note: 'On the way, arrived, completed, follow-up, review request and the rest',
+                                                     cells: [false, true, true] },
+  { label: 'Automated invoice sending',              cells: [false, true, true] },
+  { label: 'Automatic card charging',                cells: [false, true, true] },
+  { label: 'Chemical tracking & compliance reports', note: 'Pesticide application records that satisfy a state request',
+                                                     cells: [false, true, true] },
+  { label: 'Crew app', note: 'Route, start and complete jobs, before/after photos, area treated',
+                                                     cells: [false, true, true] },
+  { label: 'Employee time clock & hours',            cells: [false, true, true] },
+
 ];
 
 function Mark({ v }: { v: Cell }) {
