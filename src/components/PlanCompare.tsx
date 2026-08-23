@@ -48,7 +48,7 @@ const ROWS: { label: string; note?: string; cells: [Cell, Cell, Cell] }[] = [
                                                      cells: ['2', '3', 'Unlimited'] },
   { label: 'Trucks',                                 cells: ['2', '3', 'Unlimited'] },
   { label: 'Clients & properties',                   cells: ['Unlimited', 'Unlimited', 'Unlimited'] },
-  { label: 'Outbound texts included', note: 'Replies from your customers are free and never counted against it. Extra blocks of 500 for $15 on every plan',
+  { label: 'Outbound texts included', note: 'Need more? [[500 outbound texts for $15]] on any plan. Inbound replies are free and never counted.',
                                                      cells: ['100 / month', '500 / month', '1,000 / month'] },
   { label: 'Smart Lasso map selections',             cells: ['10 / month', '50 / month', 'Unlimited'] },
   { label: 'Auto-routing',                           cells: ['10 / month', '50 / month', 'Unlimited'] },
@@ -87,21 +87,22 @@ const ROWS: { label: string; note?: string; cells: [Cell, Cell, Cell] }[] = [
 
 ];
 
-/* Money inside a note is the part people hunt for - the price of a text block should not be
-   the same grey as the sentence explaining it. Brand orange rather than yellow: orange already
-   means "look here" on this page (the badge, the featured column), while yellow reads as a
-   warning about a charge rather than a plain fact about one. */
+/* A note can mark the part that matters with [[double brackets]] and it renders in brand
+   orange. Orange rather than yellow: orange already means "look here" on this page (the badge,
+   the featured column), while yellow reads as a warning about a charge rather than a plain
+   fact about one. */
 function NoteText({ text }: { text: string }) {
   return (
     <>
-      {text.split(/(\$[\d,]+)/).map((part, i) =>
-        /^\$[\d,]+$/.test(part)
-          ? <b key={i} style={{ color: '#ff6a00' }}>{part}</b>
-          : <span key={i}>{part}</span>
+      {text.split(/\[\[(.+?)\]\]/).map((part, k) =>
+        k % 2
+          ? <b key={k} style={{ color: '#ff6a00' }}>{part}</b>
+          : <span key={k}>{part}</span>
       )}
     </>
   );
 }
+
 
 function Mark({ v }: { v: Cell }) {
   if (v === true)  return <span style={{ color: '#27a567', fontWeight: 800, fontSize: 17 }}>✓</span>;
@@ -184,7 +185,7 @@ export default function PlanCompare() {
         <p style={{ textAlign: 'center', color: 'rgba(245,245,245,.60)', fontSize: 13, marginTop: 18, lineHeight: 1.7 }}>
           14-day free trial on every plan &middot; no card to start &middot; cancel anytime &middot; move up or down whenever you like.
           <br />
-          Need more texts? Blocks of 500 for <b style={{ color: '#fff' }}>$15</b> on any plan &middot; replies from your customers are always free.
+          Need more texts? <b style={{ color: '#ff6a00' }}>500 outbound texts for $15</b> on any plan &middot; inbound replies are always free.
         </p>
       </div>
     </section>
