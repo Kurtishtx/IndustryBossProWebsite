@@ -313,7 +313,7 @@ export default function Home() {
       <section id="pricing" style={{ background:'#0a0a0a' }}>
         <div className="centered" style={{ maxWidth:580, margin:'0 auto 48px' }}>
           <span className="section-label">Pricing</span>
-          <h2 className="section-title">One Price. Everything.</h2>
+          <h2 className="section-title">Pick the size you actually are.</h2>
           <p className="section-sub" style={{ marginLeft:'auto', marginRight:'auto' }}>We were paying $600/month for software that covered one trade and still didn&apos;t fit the way we worked. We built the pricing we always wished existed.</p>
         </div>
         <div className="price-card">

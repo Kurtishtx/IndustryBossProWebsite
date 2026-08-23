@@ -23,7 +23,7 @@ const INCLUDED = [
 ];
 
 const COMPARE = [
-  { feature: 'Monthly Price', us: '$199 flat', them: '$400–$800+' },
+  { feature: 'Monthly Price', us: '$49 – $199', them: '$400–$800+' },
   { feature: 'Users Included', us: 'Unlimited', them: 'Limited by plan' },
   { feature: 'Industries Covered', us: '9 specific trades', them: 'Generic / 1–2 trades' },
   { feature: 'Pending Job Board (Two-Tier)', us: 'Built-in', them: 'Not available' },
@@ -55,10 +55,10 @@ export default function PricingPage() {
             Simple Pricing
           </div>
           <h1 style={{ fontSize: 'clamp(32px,5vw,60px)', fontWeight: 900, color: '#fff', marginBottom: 16, lineHeight: 1.1, letterSpacing: '-1.5px' }}>
-            One Price. Everything.
+            Pick the size you actually are.
           </h1>
           <p style={{ color: S.muted, fontSize: 18, maxWidth: 560, margin: '0 auto' }}>
-            No tiers. No add-ons. No per-user fees. $199/month gets you every feature, every industry, unlimited everything.
+            Three plans, same software. Start at $49 for a one-person operation, up to $199 for unlimited crews and trucks. No per-user fees inside your plan.
           </p>
         </div>
       </div>
@@ -67,7 +67,7 @@ export default function PricingPage() {
       <div style={{ maxWidth: 620, margin: '0 auto', padding: '80px 24px 0' }}>
         <div style={{ background: S.navy4, border: `3px solid ${S.elec}`, borderRadius: 20, padding: '52px 48px', position: 'relative', boxShadow: `0 0 60px ${e('.2')}, 0 0 0 8px ${e('.06')}` }}>
           <div style={{ position: 'absolute', top: -16, left: '50%', transform: 'translateX(-50%)', background: S.elec, color: '#fff', fontSize: 11, fontWeight: 700, letterSpacing: '1px', textTransform: 'uppercase', padding: '6px 22px', borderRadius: 20, whiteSpace: 'nowrap', boxShadow: `0 0 20px ${e('.5')}` }}>
-            Everything Included — No Tiers
+            Crew — Everything Unlimited
           </div>
           <div style={{ fontSize: 12, fontWeight: 700, color: S.muted, textTransform: 'uppercase', letterSpacing: '1px', marginBottom: 10 }}>IndustryBossPro</div>
           <div style={{ fontSize: 72, fontWeight: 900, color: '#fff', lineHeight: 1, letterSpacing: '-2px' }}>

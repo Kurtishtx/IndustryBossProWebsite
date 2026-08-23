@@ -87,7 +87,7 @@ export default function FeaturesPage() {
             Everything Your Field Service<br />Business Needs. Built In.
           </h1>
           <p style={{ color: S.muted, fontSize: 18, maxWidth: 580, margin: '0 auto 36px' }}>
-            Scheduling, routing, invoicing, payments, CRM, mobile app, SMS, chemical compliance — all included at $199/month. No add-ons.
+            Scheduling, routing, invoicing, payments, CRM, mobile app, SMS, chemical compliance. From $49/month, with every feature on the $199 Crew plan.
           </p>
           <button onClick={() => setModalOpen(true)} style={{ background: S.elec, color: '#fff', border: 'none', borderRadius: 10, padding: '14px 36px', fontSize: 16, fontWeight: 700, cursor: 'pointer' }}>
             Start Free Trial
@@ -120,7 +120,7 @@ export default function FeaturesPage() {
             <div style={{ textAlign: 'center', marginBottom: 36 }}>
               <div style={{ fontSize: 11, fontWeight: 700, color: S.elec, letterSpacing: '1.5px', textTransform: 'uppercase', marginBottom: 10 }}>Also Included</div>
               <h2 style={{ fontSize: 28, fontWeight: 800, color: '#fff' }}>Everything Else You Need</h2>
-              <p style={{ color: S.muted, fontSize: 15, marginTop: 8 }}>These aren&apos;t add-ons — they&apos;re all part of your $199/month.</p>
+              <p style={{ color: S.muted, fontSize: 15, marginTop: 8 }}>These aren&apos;t add-ons — they come with your plan.</p>
             </div>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))', gap: '12px 24px' }}>
               {ALL_INCLUDED.map(item => (
@@ -135,7 +135,7 @@ export default function FeaturesPage() {
         {/* CTA */}
         <div style={{ textAlign: 'center', padding: '20px 24px 100px' }}>
           <h2 style={{ color: '#fff', fontSize: 'clamp(24px,3.5vw,40px)', fontWeight: 900, marginBottom: 16 }}>
-            All of This for $199/Month
+            All of This from $49/Month
           </h2>
           <p style={{ color: S.muted, fontSize: 17, marginBottom: 32 }}>No credit card. No contracts. 14-day free trial.</p>
           <button onClick={() => setModalOpen(true)} style={{ background: S.elec, color: '#fff', padding: '16px 48px', borderRadius: 10, fontSize: 17, fontWeight: 700, border: 'none', cursor: 'pointer' }}>
