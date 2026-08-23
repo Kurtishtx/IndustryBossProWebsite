@@ -3,6 +3,7 @@ import { useState } from 'react';
 import dynamic from 'next/dynamic';
 import SiteHeader from '../components/SiteHeader';
 import HeroDemo from '../components/HeroDemo';
+import PlanCompare from '../components/PlanCompare';
 
 const HomeTrialModal = dynamic(() => import('../components/HomeTrialModal'), { ssr: false });
 
@@ -21,6 +22,10 @@ export default function Home() {
           <HeroDemo />
         </div>
       </div>
+
+      {/* Plans, directly under the demo. Someone who has just used the software asks what it
+          costs next, and the answer should not be a scroll away. */}
+      <PlanCompare />
 
       {/* HERO */}
       <div className="hero" style={{ paddingTop: 52 }}>
