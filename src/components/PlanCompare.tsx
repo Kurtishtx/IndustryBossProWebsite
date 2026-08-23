@@ -91,6 +91,37 @@ const ROWS: { label: string; note?: string; cells: [Cell, Cell, Cell] }[] = [
    orange. Orange rather than yellow: orange already means "look here" on this page (the badge,
    the featured column), while yellow reads as a warning about a charge rather than a plain
    fact about one. */
+/* On a phone the table has to FIT, not scroll - a comparison you have to drag sideways stops
+   being a comparison, because you can never see the column you are comparing against. Three
+   things make it fit at 360px: the label column narrows, the notes drop away, and the wide
+   values abbreviate.
+
+   Both forms are rendered and CSS picks one, rather than measuring the viewport in JS: the table
+   is server-rendered, and a JS-chosen variant would flash the wrong one on first paint. */
+function abbreviate(v: string): string {
+  if (v === 'Unlimited') return '\u221e';
+  return v.replace(/\s*\/\s*month$/, '').replace(/^(\d[\d,]*)\s.*$/, '$1');
+}
+
+const RESPONSIVE_CSS = `
+  .pc-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  .pc-table { width: 100%; border-collapse: collapse; color: #f5f5f5; min-width: 560px; }
+  .pc-abbr { display: none; }
+  @media (max-width: 600px) {
+    .pc-wrap  { overflow-x: visible; }
+    .pc-table { min-width: 0; }
+    .pc-label { width: 46% !important; padding: 8px 6px !important; font-size: 12px !important; }
+    .pc-note  { display: none; }
+    .pc-cell  { padding: 8px 2px !important; font-size: 12px !important; }
+    .pc-head  { padding: 10px 2px 12px !important; }
+    .pc-name  { font-size: 12px !important; }
+    .pc-price { font-size: 19px !important; }
+    .pc-per, .pc-tag { display: none; }
+    .pc-full  { display: none; }
+    .pc-abbr  { display: inline; }
+  }
+`;
+
 function NoteText({ text }: { text: string }) {
   return (
     <>
@@ -107,7 +138,14 @@ function NoteText({ text }: { text: string }) {
 function Mark({ v }: { v: Cell }) {
   if (v === true)  return <span style={{ color: '#27a567', fontWeight: 800, fontSize: 17 }}>✓</span>;
   if (v === false) return <span style={{ color: 'rgba(245,245,245,.28)', fontWeight: 700, fontSize: 15 }} title="Not on this plan">—</span>;
-  return <span style={{ fontWeight: 700 }}>{v}</span>;
+  const short = abbreviate(v);
+  if (short === v) return <span style={{ fontWeight: 700 }}>{v}</span>;
+  return (
+    <span style={{ fontWeight: 700 }}>
+      <span className="pc-full">{v}</span>
+      <span className="pc-abbr">{short}</span>
+    </span>
+  );
 }
 
 export default function PlanCompare() {
@@ -128,13 +166,14 @@ export default function PlanCompare() {
 
         {/* The table scrolls sideways on a phone rather than squeezing three price columns
             into 360px, which is how comparison tables normally become unreadable. */}
-        <div style={{ overflowX: 'auto', WebkitOverflowScrolling: 'touch' }}>
-          <table style={{ width: '100%', minWidth: 680, borderCollapse: 'collapse', color: '#f5f5f5' }}>
+        <style>{RESPONSIVE_CSS}</style>
+        <div className="pc-wrap">
+          <table className="pc-table">
             <thead>
               <tr>
-                <th style={{ textAlign: 'left', padding: '0 12px 16px', width: '34%' }} />
+                <th className="pc-label" style={{ textAlign: 'left', padding: '0 12px 16px', width: '34%' }} />
                 {PLANS.map(p => (
-                  <th key={p.key} style={{
+                  <th key={p.key} className="pc-head" style={{
                     padding: '18px 12px 16px', textAlign: 'center', verticalAlign: 'bottom',
                     background: p.featured ? 'rgba(255,106,0,.10)' : 'transparent',
                     borderTop: p.featured ? '2px solid #ff6a00' : '2px solid transparent',
@@ -146,12 +185,12 @@ export default function PlanCompare() {
                         MOST POPULAR
                       </div>
                     )}
-                    <div style={{ fontSize: 15, fontWeight: 800, letterSpacing: '.04em' }}>{p.name}</div>
-                    <div style={{ fontSize: 'clamp(28px,3.2vw,38px)', fontWeight: 900, lineHeight: 1.1, marginTop: 4 }}>
+                    <div className="pc-name" style={{ fontSize: 15, fontWeight: 800, letterSpacing: '.04em' }}>{p.name}</div>
+                    <div className="pc-price" style={{ fontSize: 'clamp(28px,3.2vw,38px)', fontWeight: 900, lineHeight: 1.1, marginTop: 4 }}>
                       <sup style={{ fontSize: '.5em', verticalAlign: 'super' }}>$</sup>{p.price}
                     </div>
-                    <div style={{ fontSize: 12, color: 'rgba(245,245,245,.60)' }}>per month</div>
-                    <div style={{ fontSize: 12, color: 'rgba(245,245,245,.75)', marginTop: 6, minHeight: 32 }}>{p.tag}</div>
+                    <div className="pc-per" style={{ fontSize: 12, color: 'rgba(245,245,245,.60)' }}>per month</div>
+                    <div className="pc-tag" style={{ fontSize: 12, color: 'rgba(245,245,245,.75)', marginTop: 6, minHeight: 32 }}>{p.tag}</div>
                   </th>
                 ))}
               </tr>
@@ -159,14 +198,14 @@ export default function PlanCompare() {
             <tbody>
               {ROWS.map((r, i) => (
                 <tr key={r.label} style={{ background: i % 2 ? 'rgba(255,255,255,.02)' : 'transparent' }}>
-                  <td style={{ padding: '11px 12px', fontSize: 14, borderTop: '1px solid rgba(255,255,255,.06)' }}>
+                  <td className="pc-label" style={{ padding: '11px 12px', fontSize: 14, borderTop: '1px solid rgba(255,255,255,.06)' }}>
                     <div style={{ fontWeight: 600 }}>{r.label}</div>
                     {r.note && (
-                      <div style={{ fontSize: 11.5, color: 'rgba(245,245,245,.50)', marginTop: 2, lineHeight: 1.45 }}><NoteText text={r.note} /></div>
+                      <div className="pc-note" style={{ fontSize: 11.5, color: 'rgba(245,245,245,.50)', marginTop: 2, lineHeight: 1.45 }}><NoteText text={r.note} /></div>
                     )}
                   </td>
                   {r.cells.map((c, ci) => (
-                    <td key={ci} style={{
+                    <td key={ci} className="pc-cell" style={{
                       padding: '11px 12px', textAlign: 'center', fontSize: 13.5,
                       borderTop: '1px solid rgba(255,255,255,.06)',
                       borderLeft: '1px solid rgba(255,255,255,.07)', borderRight: '1px solid rgba(255,255,255,.07)',
