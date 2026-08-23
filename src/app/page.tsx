@@ -38,9 +38,9 @@ export default function Home() {
           <button onClick={openModal} className="btn-primary">Start Free — 14 Days, No Card</button>
           <a href="#features" className="btn-ghost">See All Features →</a>
         </div>
-        <p style={{ textAlign:'center', color:'rgba(245,245,245,.72)', fontSize:15, fontWeight:600, marginTop:18 }}>No credit card required &middot; 14-day free trial &middot; <b style={{ color:'#ff6a00' }}>$199/mo</b> after &middot; <b style={{ color:'#ff6a00' }}>demo needs no signup</b></p>
+        <p style={{ textAlign:'center', color:'rgba(245,245,245,.72)', fontSize:15, fontWeight:600, marginTop:18 }}>No credit card required &middot; 14-day free trial &middot; <b style={{ color:'#ff6a00' }}>from $49/mo</b> after &middot; <b style={{ color:'#ff6a00' }}>demo needs no signup</b></p>
         <div className="hero-proof">
-          <div className="proof-item"><div className="proof-val">$199</div><div className="proof-lbl">Flat Monthly</div></div>
+          <div className="proof-item"><div className="proof-val">$49</div><div className="proof-lbl">To Start</div></div>
           <div className="proof-item"><div className="proof-val">Unlimited</div><div className="proof-lbl">Users, Clients &amp; Properties</div></div>
           <div className="proof-item"><div className="proof-val">14</div><div className="proof-lbl">Industries. One Platform.</div></div>
           <div className="proof-item"><div className="proof-val">14 Days</div><div className="proof-lbl">Free Trial, No Card Required</div></div>
@@ -215,7 +215,7 @@ export default function Home() {
             </thead>
             <tbody>
               {[
-                ['Monthly Price','$199 flat','$400–$800+'],
+                ['Monthly Price','$49 – $199','$400–$800+'],
                 ['Per-User Fees','✓ None','$50–$150/user'],
                 ['Covers All Field Service Trades','✓ Yes','No — one trade'],
                 ['Pending Job Board (Two-Tier)','✓ Yes','No'],
@@ -250,7 +250,7 @@ export default function Home() {
         <div className="centered" style={{ maxWidth:1200, margin:'0 auto' }}>
           <span className="section-label">Full Platform</span>
           <h2 className="section-title">Everything You Need. Nothing You Don&apos;t.</h2>
-          <p className="section-sub" style={{ marginLeft:'auto', marginRight:'auto' }}>Every feature below is included in your $199/month. 300 Auto Routes Included, +$10 per 300 more. No tiers, no surprises.</p>
+          <p className="section-sub" style={{ marginLeft:'auto', marginRight:'auto' }}>Three plans, same software - the bigger ones lift the limits and turn on the automation. Every feature below is on the $199 Crew plan; most are on all three.</p>
         </div>
         <div className="feat-grid">
           {[
@@ -317,7 +317,7 @@ export default function Home() {
           <p className="section-sub" style={{ marginLeft:'auto', marginRight:'auto' }}>We were paying $600/month for software that covered one trade and still didn&apos;t fit the way we worked. We built the pricing we always wished existed.</p>
         </div>
         <div className="price-card">
-          <div className="price-badge">Everything Included — No Tiers</div>
+          <div className="price-badge">Three Plans — Pick Your Size</div>
           <div style={{ fontSize:13, fontWeight:700, color:'rgba(245,245,245,.70)', textTransform:'uppercase', letterSpacing:1, marginBottom:10 }}>IndustryBossPro</div>
           <div className="price-amount"><sup>$</sup>199</div>
           <div className="price-period">per month · cancel anytime · no contracts</div>
@@ -330,7 +330,7 @@ export default function Home() {
           <button onClick={openModal} className="btn-primary" style={{ width:'100%', fontSize:16, padding:16 }}>
             Start Your 14-Day Free Trial
           </button>
-          <p style={{ textAlign:'center', color:'rgba(245,245,245,.65)', fontSize:13, marginTop:14 }}>No credit card required &middot; 14-day free trial &middot; <b style={{ color:'#fff' }}>$199/mo</b> after &middot; No contracts.</p>
+          <p style={{ textAlign:'center', color:'rgba(245,245,245,.65)', fontSize:13, marginTop:14 }}>No credit card required &middot; 14-day free trial &middot; <b style={{ color:'#fff' }}>from $49/mo</b> after &middot; No contracts.</p>
         </div>
       </section>
 
