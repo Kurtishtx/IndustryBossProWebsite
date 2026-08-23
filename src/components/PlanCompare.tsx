@@ -46,7 +46,9 @@ const ROWS: { label: string; note?: string; cells: [Cell, Cell, Cell] }[] = [
                                                      cells: ['2', '3', 'Unlimited'] },
   { label: 'Employees', note: 'Crew-app seats - they run the route and complete jobs, they never see the money',
                                                      cells: ['2', '3', 'Unlimited'] },
-  { label: 'Trucks',                                 cells: ['2', '3', 'Unlimited'] },
+  /* Trucks move separately from users: a second user on Start is the spouse doing the books,
+     not a second truck in the field. Pricing them together priced the wrong thing. */
+  { label: 'Trucks',                                 cells: ['1', '2', 'Unlimited'] },
   { label: 'Clients & properties',                   cells: ['Unlimited', 'Unlimited', 'Unlimited'] },
   { label: 'Outbound texts included', note: '[[500 extra outbound texts for $15]] on any plan. Inbound replies are free and never counted.',
                                                      cells: ['100 / month', '500 / month', '1,000 / month'] },
