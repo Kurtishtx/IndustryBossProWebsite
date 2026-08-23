@@ -24,9 +24,14 @@ const ROWS: { label: string; note?: string; cells: [Cell, Cell, Cell] }[] = [
   { label: 'Employees',                                    cells: ['1', '1', 'Unlimited'] },
   { label: 'Trucks',                                       cells: ['1', '1', 'Unlimited'] },
   { label: 'Clients & properties',                         cells: ['Unlimited', 'Unlimited', 'Unlimited'] },
+  /* Start gets 100 automated ALERTS a month and can receive whatever customers text back —
+     it just cannot reply. "Inbound only" said the opposite of the truth: the 100 are outbound. */
   { label: 'Text messages included', note: 'Extra blocks of 500 for $15 on every plan',
-                                                           cells: ['100 inbound only', '500 two-way', 'Unlimited two-way'] },
-  { label: 'Reply to customer texts',                      cells: [false, true, true] },
+                                                           cells: ['100 outbound alerts', '500 two-way', 'Unlimited two-way'] },
+  /* Start receives whatever customers text back — it simply cannot answer. Worth stating as two
+     rows: "no two-way texting" reads as "their replies vanish", and they do not. */
+  { label: 'Receive customer replies',                     cells: [true, true, true] },
+  { label: 'Reply back to customers',                      cells: [false, true, true] },
   { label: 'Smart Lasso map selections',                   cells: ['10 / month', 'Unlimited', 'Unlimited'] },
   { label: 'Auto-routing',                                 cells: ['10 / month', '50 / month', 'Unlimited'] },
   { label: 'Scheduling & job board',                       cells: [true, true, true] },
