@@ -44,8 +44,21 @@ const ROWS: { label: string; note?: string; cells: [Cell, Cell, Cell] }[] = [
   { label: 'Automatic card charging',                      cells: [false, true, true] },
   { label: 'Chemical tracking & compliance reports', note: 'Pesticide application records that satisfy a state request',
                                                            cells: [false, true, true] },
-  { label: 'Crew mobile app',                              cells: [false, true, true] },
-  { label: 'Customer portal',                              cells: [true, true, true] },
+  { label: 'Client app', note: 'Your customer signs in by text — sees their schedule, invoices, pays, and sets their own alert preferences',
+                                                           cells: [true, true, true] },
+  { label: 'Crew app', note: 'Route, start and complete jobs, before/after photos, area treated',
+                                                           cells: [false, true, true] },
+  { label: 'Live crew GPS on the map',                     cells: [false, true, true] },
+  { label: 'Employee time clock & hours',                  cells: [false, true, true] },
+  { label: 'Waiting list & job board',                     cells: [true, true, true] },
+  { label: 'Package plans & recurring services',           cells: [true, true, true] },
+  { label: 'Estimates, templates & follow-ups',            cells: [true, true, true] },
+  { label: 'Card on file & customer payments',             cells: [true, true, true] },
+  { label: 'Web lead forms',                               cells: [true, true, true] },
+  { label: 'Sales tax & reporting',                        cells: [true, true, true] },
+  { label: 'QuickBooks export',                            cells: [true, true, true] },
+  { label: 'Import your existing customers', note: 'Including Real Green and Service Autopilot exports',
+                                                           cells: [true, true, true] },
 ];
 
 function Mark({ v }: { v: Cell }) {
