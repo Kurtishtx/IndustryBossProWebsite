@@ -87,6 +87,22 @@ const ROWS: { label: string; note?: string; cells: [Cell, Cell, Cell] }[] = [
 
 ];
 
+/* Money inside a note is the part people hunt for - the price of a text block should not be
+   the same grey as the sentence explaining it. Brand orange rather than yellow: orange already
+   means "look here" on this page (the badge, the featured column), while yellow reads as a
+   warning about a charge rather than a plain fact about one. */
+function NoteText({ text }: { text: string }) {
+  return (
+    <>
+      {text.split(/(\$[\d,]+)/).map((part, i) =>
+        /^\$[\d,]+$/.test(part)
+          ? <b key={i} style={{ color: '#ff6a00' }}>{part}</b>
+          : <span key={i}>{part}</span>
+      )}
+    </>
+  );
+}
+
 function Mark({ v }: { v: Cell }) {
   if (v === true)  return <span style={{ color: '#27a567', fontWeight: 800, fontSize: 17 }}>✓</span>;
   if (v === false) return <span style={{ color: 'rgba(245,245,245,.28)', fontWeight: 700, fontSize: 15 }} title="Not on this plan">—</span>;
@@ -145,7 +161,7 @@ export default function PlanCompare() {
                   <td style={{ padding: '11px 12px', fontSize: 14, borderTop: '1px solid rgba(255,255,255,.06)' }}>
                     <div style={{ fontWeight: 600 }}>{r.label}</div>
                     {r.note && (
-                      <div style={{ fontSize: 11.5, color: 'rgba(245,245,245,.50)', marginTop: 2, lineHeight: 1.45 }}>{r.note}</div>
+                      <div style={{ fontSize: 11.5, color: 'rgba(245,245,245,.50)', marginTop: 2, lineHeight: 1.45 }}><NoteText text={r.note} /></div>
                     )}
                   </td>
                   {r.cells.map((c, ci) => (
