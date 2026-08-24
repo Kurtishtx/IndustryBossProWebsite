@@ -18,7 +18,7 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   title: "IndustryBossPro | All-In-One Field Service Software",
-  description: "The only software built for every field service industry — Snow, Landscaping, Irrigation, Lawn Care, Pest Control and more. From $49/month, everything included, 14-day free trial.",
+  description: "The only software built for every field service industry — Snow, Landscaping, Irrigation, Lawn Care, Pest Control and more. Three plans from $49/month. 14-day free trial.",
   /* Google's search results still show Vercel's default triangle for this domain, cached from
      before the crown existed. The files themselves have been correct for a month — /favicon.ico
      contains the crown at 16, 32 and 48px — but Google has no reason to refetch a URL it already
@@ -47,7 +47,7 @@ const orgLd = {
       name: 'IndustryBossPro',
       url: 'https://industrybosspro.com',
       logo: 'https://industrybosspro.com/icon.png',
-      description: 'All-in-one field service management software for the trades — scheduling, routing, invoicing, payments, CRM, and a crew mobile app. From $49/month, everything included.',
+      description: 'All-in-one field service management software for the trades — scheduling, routing, invoicing, payments, CRM, and a crew mobile app. Three plans from $49/month.',
       contactPoint: {
         '@type': 'ContactPoint',
         telephone: '+1-682-899-7304',

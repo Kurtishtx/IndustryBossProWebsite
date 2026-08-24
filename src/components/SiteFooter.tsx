@@ -49,7 +49,7 @@ export default function SiteFooter({ onOpenModal }: { onOpenModal: () => void })
               IndustryBoss<span style={{ color: S.elec }}>Pro</span>
             </div>
             <p style={{ color: S.muted, fontSize: 14, lineHeight: 1.6, marginBottom: 20 }}>
-              All-in-one field service software for snow, landscaping, irrigation, lawn care, pest control, mosquito, pool, fence, mowing, and pet waste removal. $199/month, everything included.
+              All-in-one field service software for snow, landscaping, irrigation, lawn care, pest control, mosquito, pool, fence, mowing, and pet waste removal. Three plans from $49/month.
             </p>
             <button onClick={onOpenModal} style={{
               background: S.elec, color: '#fff', border: 'none', borderRadius: 8,

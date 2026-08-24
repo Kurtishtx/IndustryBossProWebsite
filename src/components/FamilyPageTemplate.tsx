@@ -34,7 +34,7 @@ export default function FamilyPageTemplate() {
             <strong style={{ color: S.text }}>IndustryBossPro</strong> is the all-in-one field service platform that runs every trade on a single system. The BossPro Family is that same engine, focused and branded for one trade at a time — so you get software that speaks your industry&apos;s language out of the box.
           </p>
           <p style={{ color: S.muted, fontSize: 15, maxWidth: 620, margin: '0 auto 36px' }}>
-            Same scheduling, routing, invoicing, mobile app, and $199/month price. Pick the one built for what you do — or run everything from IndustryBossPro.
+            Same scheduling, routing, invoicing, mobile app, and the same three plans from $49/month. Pick the one built for what you do — or run everything from IndustryBossPro.
           </p>
           <button onClick={() => setModalOpen(true)} style={{ background: S.elec, color: '#fff', border: 'none', borderRadius: 10, padding: '14px 36px', fontSize: 16, fontWeight: 700, cursor: 'pointer' }}>
             Start Free Trial
@@ -92,7 +92,7 @@ export default function FamilyPageTemplate() {
           <h2 style={{ color: '#fff', fontSize: 'clamp(24px,3.5vw,40px)', fontWeight: 900, marginBottom: 16 }}>
             One Price Across the Whole Family
           </h2>
-          <p style={{ color: S.muted, fontSize: 17, marginBottom: 32 }}>$199/month, everything included. No credit card to start. 14-day free trial.</p>
+          <p style={{ color: S.muted, fontSize: 17, marginBottom: 32 }}>Three plans from $49/month. No credit card to start. 14-day free trial.</p>
           <button onClick={() => setModalOpen(true)} style={{ background: S.elec, color: '#fff', padding: '16px 48px', borderRadius: 10, fontSize: 17, fontWeight: 700, border: 'none', cursor: 'pointer' }}>
             Start Free Trial
           </button>

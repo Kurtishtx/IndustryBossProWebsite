@@ -35,7 +35,7 @@ export default function FeaturePageTemplate({ page }: { page: FeaturePageData })
           <button onClick={() => setModal(true)} style={{ background: S.elec, color: '#fff', border: 'none', borderRadius: 10, padding: '15px 40px', fontSize: 17, fontWeight: 800, cursor: 'pointer' }}>
             Start 14-Day Free Trial
           </button>
-          <p style={{ color: S.muted, fontSize: 13, marginTop: 14 }}>$199/month · Everything included · No credit card required</p>
+          <p style={{ color: S.muted, fontSize: 13, marginTop: 14 }}>From $49/month · Three plans · No credit card required</p>
         </div>
       </section>
 
@@ -70,7 +70,7 @@ export default function FeaturePageTemplate({ page }: { page: FeaturePageData })
       {/* PRICING */}
       <section style={{ padding: '80px 24px', background: S.navy1, textAlign: 'center' }}>
         <div style={{ maxWidth: 480, margin: '0 auto' }}>
-          <h2 style={{ fontSize: 30, fontWeight: 800, color: S.text, marginBottom: 8 }}>Everything Included at $199/Month</h2>
+          <h2 style={{ fontSize: 30, fontWeight: 800, color: S.text, marginBottom: 8 }}>One Platform, Three Plans</h2>
           <p style={{ color: S.muted, marginBottom: 36 }}>No feature tiers. No per-user fees. No surprises.</p>
           <div style={{ background: S.navy4, border: `2px solid ${S.elec}`, borderRadius: 20, padding: '36px 32px', boxShadow: '0 0 60px rgba(255,106,0,0.12)' }}>
             <div style={{ fontSize: 56, fontWeight: 900, color: S.text, lineHeight: 1 }}>$199</div>

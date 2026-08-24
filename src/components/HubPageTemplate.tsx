@@ -62,14 +62,14 @@ export default function HubPageTemplate({ page }: { page: HubPageData }) {
               See Pricing →
             </a>
           </div>
-          <p style={{ color: S.muted, fontSize: 13, marginTop: 16 }}>No credit card required · $199/month after trial · Cancel anytime</p>
+          <p style={{ color: S.muted, fontSize: 13, marginTop: 16 }}>No credit card required · From $49/month after trial · Cancel anytime</p>
         </div>
       </section>
 
       {/* TRUST BAR */}
       <section style={{ background: S.navy3, borderTop: `1px solid ${S.border}`, borderBottom: `1px solid ${S.border}`, padding: '18px 24px' }}>
         <div style={{ maxWidth: 1100, margin: '0 auto', display: 'flex', justifyContent: 'center', flexWrap: 'wrap', gap: 32 }}>
-          {['14 Industries', '$199/Month — 300 Auto Routes Included', 'Calendar & Dispatch Views', 'Live Crew Tracking', '14-Day Free Trial', 'Unlimited Users', 'No Contracts'].map(t => (
+          {['14 Industries', 'From $49/Month', 'Calendar & Dispatch Views', 'Live Crew Tracking', '14-Day Free Trial', 'Unlimited Clients & Properties', 'No Contracts'].map(t => (
             <span key={t} style={{ color: S.elec, fontWeight: 700, fontSize: 13 }}>✓ {t}</span>
           ))}
         </div>
@@ -146,7 +146,7 @@ export default function HubPageTemplate({ page }: { page: HubPageData }) {
             Everything You Need to Run Your {page.industry} Business
           </h2>
           <p style={{ color: S.muted, textAlign: 'center', fontSize: 16, marginBottom: 48 }}>
-            All features included at $199/month. No add-ons, no feature tiers.
+            Three plans from $49/month. Pick your size — no surprise add-ons on top.
           </p>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: 24 }}>
             {page.features.map((feat, i) => (
@@ -199,11 +199,11 @@ export default function HubPageTemplate({ page }: { page: HubPageData }) {
               { icon: '🗓️', title: 'Calendar View', desc: 'See every job across every crew and every service type on one calendar. Filter by crew, industry, or date. Your whole operation at a glance — no more digging through spreadsheets.' },
               { icon: '🚀', title: 'Dispatch View', desc: 'Live dispatch board showing every crew, their current stop, and real-time job status as they work through the day. Know who finished, who is behind, and who needs help — without making a single call.' },
               { icon: '📍', title: 'Live Crew Tracking', desc: 'Every tech and truck on a live map, all day long. Know exactly who is where, which stop they\'re on, and when they complete — from your phone or desk. No GPS hardware to buy.' },
-              { icon: '🤖', title: 'Auto Route (300 Included)', desc: '300 auto-optimized routes included every month. The system sequences stops by geography to cut drive time and fit more stops per crew per day. More stops = more revenue. +$10 per 300 more.' },
+              { icon: '🤖', title: 'Auto-Routing', desc: 'Auto-optimized routes that sequence stops by geography to cut drive time and fit more stops per crew per day. More stops = more revenue. 10 routes a month on Start, 50 on Pro, unlimited on Crew.' },
               { icon: '⭕', title: 'Lasso / Circle-to-Schedule', desc: 'Draw a circle on the map. See every property inside — with square footage totals by service type. Schedule them all in one click. No other software in the industry does this.' },
               { icon: '📋', title: 'Two-Tier Job Board', desc: 'Scheduled jobs with assigned dates on one side. Unassigned spray/chemical/maintenance waiting list on the other — grouped by service type with sq ft totals. Your entire backlog, always visible.' },
               { icon: '🧪', title: 'Chemical Compliance Engine', desc: 'EPA-compliant application logs built into every job. Track chemical name, rate, target pest, technician license, wind speed, and weather conditions. State-inspector-ready reports in one click.' },
-              { icon: '💬', title: 'Automated SMS Suite', desc: '10+ SMS alert types run automatically — appointment reminders, on-my-way notifications, job completion confirmations, estimate follow-ups, and payment reminders. Two-way texting inbox included. 500 SMS/month included, +$10 per 250 more.' },
+              { icon: '💬', title: 'Automated SMS Suite', desc: '10+ SMS alert types run automatically — appointment reminders, on-my-way notifications, job completion confirmations, estimate follow-ups, and payment reminders. Automated alerts and the two-way inbox are on Pro and up. Outbound texts included: 100 a month on Start, 500 on Pro, 1,000 on Crew. Inbound replies are always free, and 500 extra outbound texts are $15.' },
               { icon: '📱', title: 'Crew Mobile App', desc: 'Techs see their full day on their phone — stop list, property notes, gate codes, equipment details, and navigation. They check in, log materials, upload photos, and check out. No clipboard needed.' },
               { icon: '📸', title: 'Before & After Photos', desc: 'Crews upload photos at job start and completion. Build a visual record of every property over time. Protect yourself from disputes, prove the work was done, and wow clients with documentation.' },
               { icon: '💵', title: 'Auto-Invoicing', desc: 'Invoices fire automatically on job completion. Set payment terms, send by email or SMS, and collect by card on file. Money moves without you touching it. End-of-month billing runs are gone.' },
@@ -213,7 +213,7 @@ export default function HubPageTemplate({ page }: { page: HubPageData }) {
               { icon: '🔬', title: 'Inventory & Materials Tracking', desc: 'Track chemical inventory, salt, and supply stock across trucks and storage locations. Log what was used on each job. Get low-stock alerts before you run out mid-week.' },
               { icon: '📂', title: 'Full Service History', desc: 'Every job ever completed is logged per property — tech name, date, time in/out, materials used, photos, and notes. Pull the history for any client in seconds. Disputes are dead.' },
               { icon: '📅', title: 'Recurring & One-Time Scheduling', desc: 'Set up weekly, bi-weekly, monthly, or custom recurring schedules. Add one-time jobs. Mix service types per property. The schedule builds itself — you just approve and dispatch.' },
-              { icon: '👥', title: 'Unlimited Users — No Extra Cost', desc: 'Add every tech, manager, and office staff member at no extra charge. Everyone has a role with the right level of access. No per-seat pricing. Scale your crew without scaling your bill.' },
+              { icon: '👥', title: 'Users That Scale With You', desc: 'Start includes 2 office users and 2 crew-app seats, Pro includes 3 of each, and Crew is unlimited on both. Everyone has a role with the right level of access, and there is no per-seat billing inside your plan.' },
             ].map((f, i) => (
               <div key={i} style={{ background: S.navy4, border: `1.5px solid ${S.border}`, borderRadius: 14, padding: 28 }}>
                 <div style={{ fontSize: 32, marginBottom: 12 }}>{f.icon}</div>
@@ -242,14 +242,14 @@ export default function HubPageTemplate({ page }: { page: HubPageData }) {
       {/* PRICING */}
       <section id="pricing" style={{ padding: '80px 24px', background: S.navy1 }}>
         <div style={{ maxWidth: 480, margin: '0 auto' }}>
-          <h2 style={{ fontSize: 32, fontWeight: 800, color: S.text, textAlign: 'center', marginBottom: 8 }}>Simple, Flat Pricing</h2>
-          <p style={{ color: S.muted, textAlign: 'center', marginBottom: 40 }}>One price. Everything included. No surprises.</p>
+          <h2 style={{ fontSize: 32, fontWeight: 800, color: S.text, textAlign: 'center', marginBottom: 8 }}>Simple Pricing — Three Plans</h2>
+          <p style={{ color: S.muted, textAlign: 'center', marginBottom: 40 }}>Pick the size you actually are. No surprise add-ons on top.</p>
           <div style={{ background: S.navy4, border: `2px solid ${S.elec}`, borderRadius: 20, padding: '40px 36px', boxShadow: `0 0 60px rgba(255,106,0,0.15)`, textAlign: 'center' }}>
             <div style={{ fontSize: 15, color: S.elec, fontWeight: 700, marginBottom: 8 }}>IndustryBossPro</div>
-            <div style={{ fontSize: 60, fontWeight: 900, color: S.text, lineHeight: 1 }}>$199</div>
-            <div style={{ color: S.muted, fontSize: 16, marginBottom: 12 }}>/month · everything included</div>
+            <div style={{ fontSize: 60, fontWeight: 900, color: S.text, lineHeight: 1 }}>$49</div>
+            <div style={{ color: S.muted, fontSize: 16, marginBottom: 12 }}>/month to start · Pro $89 · Crew $199</div>
 
-            {['Unlimited Users', '14-Day Free Trial', 'All 14 Industries', 'Pending Job Board', 'Chemical Compliance Logging', 'Mobile App for Crews', 'Card Payments (Stripe)', 'Calendar & Dispatch Views', 'Live Crew Tracking', 'Waiting List (Spray Applications)', '300 Auto Routes Included', '500 SMS/month Included', '+$10 per 300 more', '+$10 per 250 more SMS', 'No Contracts'].map(item => (
+            {['Unlimited Clients & Properties', '14-Day Free Trial', 'All 14 Industries', 'Pending Job Board', 'Mobile App for Crews', 'Client App for Customers', 'Card Payments (Stripe)', 'Calendar & Dispatch Views', 'Live Crew Tracking', 'Waiting List (Spray Applications)', 'Estimates & Invoices', 'QuickBooks Export', 'No Contracts'].map(item => (
               <div key={item} style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 10, textAlign: 'left' }}>
                 <span style={{ color: S.elec }}>✓</span>
                 <span style={{ color: S.text, fontSize: 14 }}>{item}</span>
@@ -275,7 +275,7 @@ export default function HubPageTemplate({ page }: { page: HubPageData }) {
           <button onClick={() => setModal(true)} style={{ background: S.elec, color: '#fff', border: 'none', borderRadius: 12, padding: '18px 48px', fontSize: 18, fontWeight: 800, cursor: 'pointer' }}>
             Start Your Free Trial Today
           </button>
-          <p style={{ color: S.muted, fontSize: 13, marginTop: 16 }}>$199/month after trial · Cancel anytime · Unlimited users</p>
+          <p style={{ color: S.muted, fontSize: 13, marginTop: 16 }}>From $49/month after trial · Cancel anytime · No contracts</p>
         </div>
       </section>
 

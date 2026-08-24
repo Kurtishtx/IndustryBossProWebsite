@@ -103,7 +103,7 @@ export default function HomeTrialModal({ onClose }: { onClose: () => void }) {
             {err && <div style={{ background:'rgba(239,68,68,.1)', border:'1px solid rgba(239,68,68,.3)', color:'#fca5a5', borderRadius:6, padding:'10px 12px', fontSize:13, marginBottom:14 }}>{err}</div>}
             <div style={{ background:'rgba(74,222,128,.08)', border:'1px solid rgba(74,222,128,.25)', borderRadius:6, padding:'10px 14px', marginBottom:16 }}>
               <div style={{ fontSize:12, color:'#4ade80', fontWeight:700 }}>14-Day Free Trial — No Credit Card Required</div>
-              <div style={{ fontSize:12, color:'rgba(245,245,245,.70)', marginTop:2 }}>Full access to every feature. $199/month after trial.</div>
+              <div style={{ fontSize:12, color:'rgba(245,245,245,.70)', marginTop:2 }}>Full access to every feature during the trial. Plans from $49/month after.</div>
             </div>
             <div style={{ marginBottom:14 }}>
               <label style={{ fontSize:11, fontWeight:700, color:'rgba(245,245,245,.70)', textTransform:'uppercase', letterSpacing:'.5px', display:'block', marginBottom:5 }}>Login Email</label>

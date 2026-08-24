@@ -41,7 +41,7 @@ export default function Home() {
         <p style={{ textAlign:'center', color:'rgba(245,245,245,.72)', fontSize:15, fontWeight:600, marginTop:18 }}>No credit card required &middot; 14-day free trial &middot; <b style={{ color:'#ff6a00' }}>from $49/mo</b> after &middot; <b style={{ color:'#ff6a00' }}>demo needs no signup</b></p>
         <div className="hero-proof">
           <div className="proof-item"><div className="proof-val">$49</div><div className="proof-lbl">To Start</div></div>
-          <div className="proof-item"><div className="proof-val">Unlimited</div><div className="proof-lbl">Users, Clients &amp; Properties</div></div>
+          <div className="proof-item"><div className="proof-val">Unlimited</div><div className="proof-lbl">Clients &amp; Properties</div></div>
           <div className="proof-item"><div className="proof-val">14</div><div className="proof-lbl">Industries. One Platform.</div></div>
           <div className="proof-item"><div className="proof-val">14 Days</div><div className="proof-lbl">Free Trial, No Card Required</div></div>
         </div>
@@ -319,14 +319,18 @@ export default function Home() {
         <div className="price-card">
           <div className="price-badge">Three Plans — Pick Your Size</div>
           <div style={{ fontSize:13, fontWeight:700, color:'rgba(245,245,245,.70)', textTransform:'uppercase', letterSpacing:1, marginBottom:10 }}>IndustryBossPro</div>
-          <div className="price-amount"><sup>$</sup>199</div>
-          <div className="price-period">per month · cancel anytime · no contracts</div>
+          <div className="price-amount"><sup>$</sup>49</div>
+          <div className="price-period">per month to start · Pro $89 · Crew $199 · cancel anytime · no contracts</div>
 
+          {/* Only what is true on every plan. What scales by plan is spelled out below. */}
           <ul className="price-includes">
-            {['Unlimited Users','Unlimited Clients','Unlimited Properties','Waiting List (Spray Applications)','All 14 Industries Covered','Pending Job Board','Chemical Compliance','Estimates & Invoices','Card Payments (Stripe)','Two-Way SMS','Mobile App','Live Crew Tracking','300 Auto Routes Included','500 SMS/month Included','+$10 per 300 more','+$10 per 250 more SMS','Calendar & Dispatch Views','Free Onboarding'].map(li => (
+            {['Unlimited Clients & Properties','Waiting List (Spray Applications)','All 14 Industries Covered','Pending Job Board','Package Plans & Recurring Services','Estimates & Invoices','Card Payments (Stripe)','Mobile App','Client App for Customers','Live Crew Tracking','Calendar & Dispatch Views','Free Onboarding'].map(li => (
               <li key={li}>{li}</li>
             ))}
           </ul>
+          <p style={{ color:'rgba(245,245,245,.65)', fontSize:13, lineHeight:1.7, marginBottom:18 }}>
+            Scales by plan: <b style={{ color:'#fff' }}>users</b> 2 / 3 / Unlimited &middot; <b style={{ color:'#fff' }}>trucks</b> 1 / 2 / Unlimited &middot; <b style={{ color:'#fff' }}>outbound texts</b> 100 / 500 / 1,000 a month. Inbound replies are always free. <b style={{ color:'#ff6a00' }}>500 extra outbound texts for $15</b> on any plan.
+          </p>
           <button onClick={openModal} className="btn-primary" style={{ width:'100%', fontSize:16, padding:16 }}>
             Start Your 14-Day Free Trial
           </button>

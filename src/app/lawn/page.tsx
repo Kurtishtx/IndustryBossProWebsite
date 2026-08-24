@@ -38,7 +38,7 @@ export default function Lawn() {
           <p style={{ textAlign: 'center', color: 'rgba(245,245,245,.72)', fontSize: 15, fontWeight: 600, marginTop: 18 }}>No credit card required &middot; 14-day free trial &middot; <b style={{ color: '#ff6a00' }}>$199/mo</b> after &middot; <b style={{ color: '#ff6a00' }}>demo needs no signup</b></p>
           <div className="hero-proof">
             <div className="proof-item"><div className="proof-val">Spray + Mow + Fert</div><div className="proof-lbl">All in one login</div></div>
-            <div className="proof-item"><div className="proof-val">Unlimited</div><div className="proof-lbl">Users, Clients &amp; Properties</div></div>
+            <div className="proof-item"><div className="proof-val">Unlimited</div><div className="proof-lbl">Clients &amp; Properties</div></div>
             <div className="proof-item"><div className="proof-val">$49</div><div className="proof-lbl">To Start</div></div>
             <div className="proof-item"><div className="proof-val">14 Days</div><div className="proof-lbl">Free Trial, No Card</div></div>
           </div>

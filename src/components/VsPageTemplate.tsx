@@ -102,7 +102,7 @@ export default function VsPageTemplate({ page }: { page: VsPageData }) {
           <button onClick={() => setModal(true)} style={{ background: S.elec, color: '#fff', border: 'none', borderRadius: 10, padding: '16px 40px', fontSize: 17, fontWeight: 800, cursor: 'pointer' }}>
             Start Your Free 14-Day Trial
           </button>
-          <p style={{ color: S.muted, fontSize: 13, marginTop: 12 }}>$199/month after trial · No credit card required · Cancel anytime</p>
+          <p style={{ color: S.muted, fontSize: 13, marginTop: 12 }}>From $49/month after trial · No credit card required · Cancel anytime</p>
         </div>
       </section>
 
