@@ -76,16 +76,26 @@ const ROWS: { label: string; note?: string; cells: [Cell, Cell, Cell] }[] = [
   { label: 'QuickBooks export',                      cells: [true, true, true] },
   { label: 'Import your existing customers', note: 'Including Real Green and Service Autopilot exports',
                                                      cells: [true, true, true] },
+  /* Compliance is a legal obligation, not a convenience: a licensed applicator has to produce
+     records on a state request whatever they pay us, and the crew app was already recording the
+     applications on Start - the gate only withheld the report from the tenant's own data. */
+  { label: 'Chemical tracking & compliance reports', note: 'Pesticide application records that satisfy a state request',
+                                                     cells: [true, true, true] },
+  /* Start caps at 2 employees, so gating the clock never sold a Pro plan - it just left the
+     smallest shops keeping hours on paper. */
+  { label: 'Employee time clock & hours',            cells: [true, true, true] },
+  /* The one alert on every plan besides scheduling: on Start the owner IS the crew, and this is
+     the text that stops the "nobody told me you were coming" call. It spends the plan's own
+     text allowance, so a busy Start account pays for the volume through blocks. */
+  { label: '"On the way" text', note: 'Your crew sends it from the truck when the customer is next up',
+                                                     cells: [true, true, true] },
 
   /* ── Solo and up ── */
   { label: 'Reply back to customers',                cells: [false, true, true] },
-  { label: 'All other automated alerts', note: 'On the way, arrived, completed, follow-up, review request and the rest',
+  { label: 'All other automated alerts', note: 'Arrived, completed, follow-up, review request and the rest',
                                                      cells: [false, true, true] },
   { label: 'Automated invoice sending',              cells: [false, true, true] },
   { label: 'Automatic card charging',                cells: [false, true, true] },
-  { label: 'Chemical tracking & compliance reports', note: 'Pesticide application records that satisfy a state request',
-                                                     cells: [false, true, true] },
-  { label: 'Employee time clock & hours',            cells: [false, true, true] },
 
 ];
 
