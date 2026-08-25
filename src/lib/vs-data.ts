@@ -22,7 +22,7 @@ export const vsPages: VsPageData[] = [
     subtitle: 'Both are solid platforms. Here\'s the honest difference between them.',
     competitorDesc: 'Jobber is a well-established field service platform used by thousands of contractors. It handles scheduling, invoicing, and client management well. It\'s generalist software designed for a wide range of service businesses.',
     ourWins: [
-      { title: 'Three plans vs Jobber\'s tiered pricing', desc: 'Jobber charges $49–$349/month and gates core features behind the higher tiers. IndustryBossPro runs $49–$199 by crew size, every plan includes the job board, waiting list, client app and crew app, and Crew is unlimited users, employees and trucks.' },
+      { title: 'Three plans vs Jobber\'s tiered pricing', desc: 'Jobber charges $59–$349/month and gates core features behind the higher tiers. IndustryBossPro runs $59–$199 by crew size, every plan includes the job board, waiting list, client app and crew app, and Crew is unlimited users, employees and trucks.' },
       { title: 'Pending Job Board built for field service', desc: 'Our split-panel board (scheduled jobs vs waiting-list jobs) is purpose-built for operators running recurring routes with seasonal and on-demand work.' },
       { title: 'Built for 10 specific industries', desc: 'IndustryBossPro is tailored for snow, pool, landscaping, irrigation, lawn chemicals, pest control, mosquito, fence, mowing, and pet waste removal — with industry-specific workflows in each.' },
       { title: 'Chemical & compliance tracking included', desc: 'EPA-compliant application logging is built in for lawn chemical, pest, and mosquito companies. Jobber doesn\'t offer this.' },
@@ -32,7 +32,7 @@ export const vsPages: VsPageData[] = [
       { title: 'Broader app marketplace', desc: 'Jobber has more third-party integrations available through their marketplace.' },
     ],
     tableRows: [
-      { feature: 'Pricing', us: '$199/mo flat', them: '$49–$349/mo (tiered)', usBetter: true },
+      { feature: 'Pricing', us: '$199/mo flat', them: '$59–$349/mo (tiered)', usBetter: true },
       { feature: 'Users included', us: '2 / 3 / Unlimited by plan', them: 'Limited by plan', usBetter: true },
       { feature: 'Pending Job Board', us: 'Built-in (scheduled + waiting list)', them: 'Basic job list', usBetter: true },
       { feature: 'Chemical application logging', us: 'Yes — EPA compliant', them: 'No', usBetter: true },
@@ -83,7 +83,7 @@ export const vsPages: VsPageData[] = [
     subtitle: 'Both handle the basics. Here\'s where we\'re different.',
     competitorDesc: 'Housecall Pro is a popular field service platform targeting home service businesses. It offers solid scheduling, invoicing, and mobile features at accessible price points.',
     ourWins: [
-      { title: 'No per-seat billing vs Housecall Pro\'s per-user pricing', desc: 'Housecall Pro charges per user. IndustryBossPro never bills per seat inside a plan — Start is $49 with 2 users, Pro is $89 with 3, and Crew is $199 with unlimited users, employees and trucks.' },
+      { title: 'No per-seat billing vs Housecall Pro\'s per-user pricing', desc: 'Housecall Pro charges per user. IndustryBossPro never bills per seat inside a plan — Start is $59 with 2 users, Pro is $89 with 3, and Crew is $199 with unlimited users, employees and trucks.' },
       { title: 'Pending Job Board with waiting list', desc: 'Our waiting list feature is purpose-built for operators managing seasonal demand and recurring routes with variable scheduling.' },
       { title: 'Chemical application compliance', desc: 'Built-in EPA-compliant chemical logging for pest, lawn, and mosquito operators. Housecall Pro doesn\'t have this.' },
       { title: 'Industry-specific onboarding', desc: 'We know your industry. Setup guidance and workflows are built around how your specific business actually operates.' },
@@ -227,7 +227,7 @@ export const vsPages: VsPageData[] = [
     subtitle: 'Service Autopilot has deep automation. IndustryBossPro brings that power to 14 industries at a simpler price.',
     competitorDesc: 'Service Autopilot is a feature-rich field service platform with strong automation features for lawn care and snow removal companies. It has a passionate user base and deep workflow automation.',
     ourWins: [
-      { title: 'Simpler pricing structure', desc: 'Service Autopilot layers tiers on top of add-ons you buy separately. IndustryBossPro has three plans — $49, $89 and $199 — and what each one includes is published on the pricing page, not quoted.' },
+      { title: 'Simpler pricing structure', desc: 'Service Autopilot layers tiers on top of add-ons you buy separately. IndustryBossPro has three plans — $59, $89 and $199 — and what each one includes is published on the pricing page, not quoted.' },
       { title: '9 industry coverage', desc: 'Service Autopilot focuses on lawn care and snow. IndustryBossPro covers pest, pool, irrigation, mosquito, fence, and mowing too.' },
       { title: 'Pending Job Board waiting list', desc: 'Our waiting list feature is distinct from standard job boards and purpose-built for mixed scheduled/on-demand workflows.' },
       { title: 'Faster to learn', desc: 'Service Autopilot has a steep learning curve. IndustryBossPro is designed to be operational in hours, not weeks.' },
@@ -255,7 +255,7 @@ export const vsPages: VsPageData[] = [
     subtitle: 'Both target outdoor service. Here\'s where they differ.',
     competitorDesc: 'SingleOps is an outdoor service platform targeting landscaping, tree care, and grounds maintenance companies. It offers strong proposal and job management features.',
     ourWins: [
-      { title: 'Published pricing vs SingleOps tiered pricing', desc: 'SingleOps prices by feature tier and quotes on request. IndustryBossPro publishes all three prices — $49, $89 and $199 — and the $199 Crew plan is unlimited users, employees and trucks.' },
+      { title: 'Published pricing vs SingleOps tiered pricing', desc: 'SingleOps prices by feature tier and quotes on request. IndustryBossPro publishes all three prices — $59, $89 and $199 — and the $199 Crew plan is unlimited users, employees and trucks.' },
       { title: 'Broader industry coverage', desc: 'IndustryBossPro covers 14 industries including snow, pool, pest, mosquito, and irrigation — beyond SingleOps\' landscape focus.' },
       { title: 'Pending Job Board with waiting list', desc: 'Our split-panel waiting-list board is purpose-built for high-volume routing and seasonal demand management.' },
       { title: 'Chemical compliance logging', desc: 'Lawn care, pest, and mosquito operators get EPA-compliant application logging built in.' },

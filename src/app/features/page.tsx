@@ -87,7 +87,7 @@ export default function FeaturesPage() {
             Everything Your Field Service<br />Business Needs. Built In.
           </h1>
           <p style={{ color: S.muted, fontSize: 18, maxWidth: 580, margin: '0 auto 36px' }}>
-            Scheduling, routing, invoicing, payments, CRM, mobile app, SMS, chemical compliance. From $49/month, with every feature on the $199 Crew plan.
+            Scheduling, routing, invoicing, payments, CRM, mobile app, SMS, chemical compliance. From $59/month, with every feature on the $199 Crew plan.
           </p>
           <button onClick={() => setModalOpen(true)} style={{ background: S.elec, color: '#fff', border: 'none', borderRadius: 10, padding: '14px 36px', fontSize: 16, fontWeight: 700, cursor: 'pointer' }}>
             Start Free Trial
@@ -135,7 +135,7 @@ export default function FeaturesPage() {
         {/* CTA */}
         <div style={{ textAlign: 'center', padding: '20px 24px 100px' }}>
           <h2 style={{ color: '#fff', fontSize: 'clamp(24px,3.5vw,40px)', fontWeight: 900, marginBottom: 16 }}>
-            All of This from $49/Month
+            All of This from $59/Month
           </h2>
           <p style={{ color: S.muted, fontSize: 17, marginBottom: 32 }}>No credit card. No contracts. 14-day free trial.</p>
           <button onClick={() => setModalOpen(true)} style={{ background: S.elec, color: '#fff', padding: '16px 48px', borderRadius: 10, fontSize: 17, fontWeight: 700, border: 'none', cursor: 'pointer' }}>

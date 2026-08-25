@@ -259,7 +259,7 @@ export const featurePages: FeaturePageData[] = [
       { icon: '📋', title: 'Service-Specific Pending Boards', body: 'The pending job board can be filtered by service type. See your full mowing waiting list, or your full mosquito spray schedule, or everything across all industries at once — your choice.' },
       { icon: '💵', title: 'Bundled Service Billing', body: 'Bill multiple services on one invoice or separate by service type. Create service bundles that clients pay monthly — mowing + chemicals + pest all on one recurring invoice.' },
       { icon: '🔄', title: 'Cross-Sell Automation', body: 'Existing clients are your best growth opportunity. Automated cross-sell sequences offer pest control to lawn clients, irrigation to landscape clients, and mosquito to lawn chemical clients — all at the right time.' },
-      { icon: '💰', title: 'Three Plans, From $49/Month', body: 'Every plan covers all 14 industries and unlimited clients and properties. Start is $49, Pro is $89, and Crew is $199 with unlimited users, employees and trucks. You are never billed per seat inside your plan, so growing the crew does not grow the bill.' },
+      { icon: '💰', title: 'Three Plans, From $59/Month', body: 'Every plan covers all 14 industries and unlimited clients and properties. Start is $59, Pro is $89, and Crew is $199 with unlimited users, employees and trucks. You are never billed per seat inside your plan, so growing the crew does not grow the bill.' },
     ],
     industries: ['Snow & Ice Management', 'Pool Service', 'Landscaping', 'Irrigation', 'Lawn Care Chemicals', 'Pest Control', 'Mosquito Control', 'Fence', 'Mowing', 'Pet Waste Removal'],
   },

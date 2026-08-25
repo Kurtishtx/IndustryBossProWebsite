@@ -13,7 +13,7 @@ const S = {
 const e = (a: string) => `rgba(255,106,0,${a})`;
 
 const COMPARE = [
-  { feature: 'Monthly Price', us: '$49 – $199', them: '$400–$800+' },
+  { feature: 'Monthly Price', us: '$59 – $199', them: '$400–$800+' },
   { feature: 'Users Included', us: '2 / 3 / Unlimited', them: 'Limited by plan' },
   { feature: 'Industries Covered', us: 'All 14 trades', them: 'Generic / 1–2 trades' },
   { feature: 'Pending Job Board (Two-Tier)', us: 'Built-in', them: 'Not available' },
@@ -48,7 +48,7 @@ export default function PricingPage() {
             Pick the size you actually are.
           </h1>
           <p style={{ color: S.muted, fontSize: 18, maxWidth: 560, margin: '0 auto' }}>
-            Three plans, same software. Start at $49 for a one-person operation, up to $199 for unlimited crews and trucks. No per-user fees inside your plan.
+            Three plans, same software. Start at $59 for a one-person operation, up to $199 for unlimited crews and trucks. No per-user fees inside your plan.
           </p>
         </div>
       </div>
@@ -62,7 +62,7 @@ export default function PricingPage() {
         <div style={{ textAlign: 'center', marginBottom: 40 }}>
           <div style={{ fontSize: 11, fontWeight: 700, color: S.elec, letterSpacing: '1.5px', textTransform: 'uppercase', marginBottom: 10 }}>How We Compare</div>
           <h2 style={{ fontSize: 'clamp(24px,3.5vw,38px)', fontWeight: 800, color: '#fff', marginBottom: 12 }}>IndustryBossPro vs. The Rest</h2>
-          <p style={{ color: S.muted, fontSize: 16 }}>Most field service platforms charge enterprise rates for features we include from $49/month.</p>
+          <p style={{ color: S.muted, fontSize: 16 }}>Most field service platforms charge enterprise rates for features we include from $59/month.</p>
         </div>
         <div style={{ background: S.navy4, border: `1.5px solid ${S.border}`, borderRadius: 14, overflow: 'hidden' }}>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', background: S.navy2, padding: '14px 24px', fontSize: 12, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 1 }}>
@@ -85,7 +85,7 @@ export default function PricingPage() {
         <h2 style={{ fontSize: 28, fontWeight: 800, color: '#fff', marginBottom: 32, textAlign: 'center' }}>Common Questions</h2>
         {[
           { q: 'Is there really no setup fee?', a: 'None. Sign up, get access, and we\'ll do a free onboarding call to get you configured. No contracts, no implementation fees.' },
-          { q: 'What happens after the 14-day trial?', a: 'You\'re billed for the plan you pick — $49, $89 or $199 — month-to-month. Cancel anytime before the trial ends and you won\'t be charged.' },
+          { q: 'What happens after the 14-day trial?', a: 'You\'re billed for the plan you pick — $59, $89 or $199 — month-to-month. Cancel anytime before the trial ends and you won\'t be charged.' },
           { q: 'How many users can I add?', a: 'Start includes 2 office users and 2 crew-app seats, Pro includes 3 of each, and Crew is unlimited on both. Clients and properties are unlimited on every plan.' },
           { q: 'Do I need a credit card to start?', a: 'No. Enter your name, email, and company. You get full access for 14 days before any billing info is needed.' },
           { q: 'What industries are supported?', a: 'Snow removal, pool service, landscaping, irrigation, lawn care, pest control, mosquito control, fence, lawn mowing, pet waste removal, garage door, carpet cleaning, fire inspection, and hood cleaning — all 14 on one platform.' },

@@ -105,7 +105,7 @@ export default function BlogPostTemplate({ post, industry }: Props) {
               Ready to Run a Tighter {industryLabel} Operation?
             </h3>
             <p style={{ color: S.muted, fontSize: 15, marginBottom: 24, maxWidth: 480, margin: '0 auto 24px' }}>
-              IndustryBossPro gives you everything in this guide — and every other tool your business needs — from $49/month.
+              IndustryBossPro gives you everything in this guide — and every other tool your business needs — from $59/month.
             </p>
             <button
               onClick={() => setModal(true)}
@@ -122,7 +122,7 @@ export default function BlogPostTemplate({ post, industry }: Props) {
           <div style={{ background: S.navy4, border: `1px solid ${S.border}`, borderRadius: 14, padding: '28px 24px', marginBottom: 24 }}>
             <div style={{ fontSize: 13, fontWeight: 700, color: S.elec, letterSpacing: '1px', textTransform: 'uppercase', marginBottom: 10 }}>Start Free Today</div>
             <p style={{ color: S.text, fontSize: 15, fontWeight: 700, marginBottom: 8, lineHeight: 1.4 }}>
-              IndustryBossPro — from $49/month.
+              IndustryBossPro — from $59/month.
             </p>
             <p style={{ color: S.muted, fontSize: 13, lineHeight: 1.65, marginBottom: 20 }}>
               Unlimited clients and properties, all 14 industries. 14-day free trial, no card required.

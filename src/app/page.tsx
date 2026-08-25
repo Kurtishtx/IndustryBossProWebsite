@@ -38,9 +38,9 @@ export default function Home() {
           <button onClick={openModal} className="btn-primary">Start Free — 14 Days, No Card</button>
           <a href="#features" className="btn-ghost">See All Features →</a>
         </div>
-        <p style={{ textAlign:'center', color:'rgba(245,245,245,.72)', fontSize:15, fontWeight:600, marginTop:18 }}>No credit card required &middot; 14-day free trial &middot; <b style={{ color:'#ff6a00' }}>from $49/mo</b> after &middot; <b style={{ color:'#ff6a00' }}>demo needs no signup</b></p>
+        <p style={{ textAlign:'center', color:'rgba(245,245,245,.72)', fontSize:15, fontWeight:600, marginTop:18 }}>No credit card required &middot; 14-day free trial &middot; <b style={{ color:'#ff6a00' }}>from $59/mo</b> after &middot; <b style={{ color:'#ff6a00' }}>demo needs no signup</b></p>
         <div className="hero-proof">
-          <div className="proof-item"><div className="proof-val">$49</div><div className="proof-lbl">To Start</div></div>
+          <div className="proof-item"><div className="proof-val">$59</div><div className="proof-lbl">To Start</div></div>
           <div className="proof-item"><div className="proof-val">Unlimited</div><div className="proof-lbl">Clients &amp; Properties</div></div>
           <div className="proof-item"><div className="proof-val">14</div><div className="proof-lbl">Industries. One Platform.</div></div>
           <div className="proof-item"><div className="proof-val">14 Days</div><div className="proof-lbl">Free Trial, No Card Required</div></div>
@@ -215,7 +215,7 @@ export default function Home() {
             </thead>
             <tbody>
               {[
-                ['Monthly Price','$49 – $199','$400–$800+'],
+                ['Monthly Price','$59 – $199','$400–$800+'],
                 ['Per-User Fees','✓ None','$50–$150/user'],
                 ['Covers All Field Service Trades','✓ Yes','No — one trade'],
                 ['Pending Job Board (Two-Tier)','✓ Yes','No'],
@@ -334,7 +334,7 @@ export default function Home() {
           <button onClick={openModal} className="btn-primary" style={{ width:'100%', fontSize:16, padding:16 }}>
             Start Your 14-Day Free Trial
           </button>
-          <p style={{ textAlign:'center', color:'rgba(245,245,245,.65)', fontSize:13, marginTop:14 }}>No credit card required &middot; 14-day free trial &middot; <b style={{ color:'#fff' }}>from $49/mo</b> after &middot; No contracts.</p>
+          <p style={{ textAlign:'center', color:'rgba(245,245,245,.65)', fontSize:13, marginTop:14 }}>No credit card required &middot; 14-day free trial &middot; <b style={{ color:'#fff' }}>from $59/mo</b> after &middot; No contracts.</p>
         </div>
       </section>
 

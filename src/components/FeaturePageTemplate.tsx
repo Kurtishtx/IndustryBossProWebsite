@@ -35,7 +35,7 @@ export default function FeaturePageTemplate({ page }: { page: FeaturePageData })
           <button onClick={() => setModal(true)} style={{ background: S.elec, color: '#fff', border: 'none', borderRadius: 10, padding: '15px 40px', fontSize: 17, fontWeight: 800, cursor: 'pointer' }}>
             Start 14-Day Free Trial
           </button>
-          <p style={{ color: S.muted, fontSize: 13, marginTop: 14 }}>From $49/month · Three plans · No credit card required</p>
+          <p style={{ color: S.muted, fontSize: 13, marginTop: 14 }}>From $59/month · Three plans · No credit card required</p>
         </div>
       </section>
 

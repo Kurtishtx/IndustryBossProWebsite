@@ -39,7 +39,7 @@ export default function Lawn() {
           <div className="hero-proof">
             <div className="proof-item"><div className="proof-val">Spray + Mow + Fert</div><div className="proof-lbl">All in one login</div></div>
             <div className="proof-item"><div className="proof-val">Unlimited</div><div className="proof-lbl">Clients &amp; Properties</div></div>
-            <div className="proof-item"><div className="proof-val">$49</div><div className="proof-lbl">To Start</div></div>
+            <div className="proof-item"><div className="proof-val">$59</div><div className="proof-lbl">To Start</div></div>
             <div className="proof-item"><div className="proof-val">14 Days</div><div className="proof-lbl">Free Trial, No Card</div></div>
           </div>
         </div>

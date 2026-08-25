@@ -62,14 +62,14 @@ export default function HubPageTemplate({ page }: { page: HubPageData }) {
               See Pricing →
             </a>
           </div>
-          <p style={{ color: S.muted, fontSize: 13, marginTop: 16 }}>No credit card required · From $49/month after trial · Cancel anytime</p>
+          <p style={{ color: S.muted, fontSize: 13, marginTop: 16 }}>No credit card required · From $59/month after trial · Cancel anytime</p>
         </div>
       </section>
 
       {/* TRUST BAR */}
       <section style={{ background: S.navy3, borderTop: `1px solid ${S.border}`, borderBottom: `1px solid ${S.border}`, padding: '18px 24px' }}>
         <div style={{ maxWidth: 1100, margin: '0 auto', display: 'flex', justifyContent: 'center', flexWrap: 'wrap', gap: 32 }}>
-          {['14 Industries', 'From $49/Month', 'Calendar & Dispatch Views', 'Live Crew Tracking', '14-Day Free Trial', 'Unlimited Clients & Properties', 'No Contracts'].map(t => (
+          {['14 Industries', 'From $59/Month', 'Calendar & Dispatch Views', 'Live Crew Tracking', '14-Day Free Trial', 'Unlimited Clients & Properties', 'No Contracts'].map(t => (
             <span key={t} style={{ color: S.elec, fontWeight: 700, fontSize: 13 }}>✓ {t}</span>
           ))}
         </div>
@@ -146,7 +146,7 @@ export default function HubPageTemplate({ page }: { page: HubPageData }) {
             Everything You Need to Run Your {page.industry} Business
           </h2>
           <p style={{ color: S.muted, textAlign: 'center', fontSize: 16, marginBottom: 48 }}>
-            Three plans from $49/month. Pick your size — no surprise add-ons on top.
+            Three plans from $59/month. Pick your size — no surprise add-ons on top.
           </p>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: 24 }}>
             {page.features.map((feat, i) => (
@@ -246,7 +246,7 @@ export default function HubPageTemplate({ page }: { page: HubPageData }) {
           <p style={{ color: S.muted, textAlign: 'center', marginBottom: 40 }}>Pick the size you actually are. No surprise add-ons on top.</p>
           <div style={{ background: S.navy4, border: `2px solid ${S.elec}`, borderRadius: 20, padding: '40px 36px', boxShadow: `0 0 60px rgba(255,106,0,0.15)`, textAlign: 'center' }}>
             <div style={{ fontSize: 15, color: S.elec, fontWeight: 700, marginBottom: 8 }}>IndustryBossPro</div>
-            <div style={{ fontSize: 60, fontWeight: 900, color: S.text, lineHeight: 1 }}>$49</div>
+            <div style={{ fontSize: 60, fontWeight: 900, color: S.text, lineHeight: 1 }}>$59</div>
             <div style={{ color: S.muted, fontSize: 16, marginBottom: 12 }}>/month to start · Pro $89 · Crew $199</div>
 
             {['Unlimited Clients & Properties', '14-Day Free Trial', 'All 14 Industries', 'Pending Job Board', 'Mobile App for Crews', 'Client App for Customers', 'Card Payments (Stripe)', 'Calendar & Dispatch Views', 'Live Crew Tracking', 'Waiting List (Spray Applications)', 'Estimates & Invoices', 'QuickBooks Export', 'No Contracts'].map(item => (
@@ -275,7 +275,7 @@ export default function HubPageTemplate({ page }: { page: HubPageData }) {
           <button onClick={() => setModal(true)} style={{ background: S.elec, color: '#fff', border: 'none', borderRadius: 12, padding: '18px 48px', fontSize: 18, fontWeight: 800, cursor: 'pointer' }}>
             Start Your Free Trial Today
           </button>
-          <p style={{ color: S.muted, fontSize: 13, marginTop: 16 }}>From $49/month after trial · Cancel anytime · No contracts</p>
+          <p style={{ color: S.muted, fontSize: 13, marginTop: 16 }}>From $59/month after trial · Cancel anytime · No contracts</p>
         </div>
       </section>
 

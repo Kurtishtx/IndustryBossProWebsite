@@ -24,7 +24,7 @@ export const hubPages: HubPageData[] = [
     h1: 'Snow Removal Software Built for Operators Who Run Real Routes',
     subtitle: 'Manage routes, track chemical applications, auto-bill clients, and keep crews moving â€” all winter, all from one dashboard.',
     metaTitle: 'Snow Removal Software | IndustryBossPro',
-    metaDesc: 'Snow removal software with route management, chemical tracking, auto-invoicing, and crew scheduling. From $49/mo. 14-day free trial.',
+    metaDesc: 'Snow removal software with route management, chemical tracking, auto-invoicing, and crew scheduling. From $59/mo. 14-day free trial.',
     heroPoints: [
       'See every route, crew, and property on one live board',
       'Track salt and chemical applications per property per visit',
@@ -55,7 +55,7 @@ export const hubPages: HubPageData[] = [
     h1: 'Snow Plowing Software for Multi-Route Plow Operations',
     subtitle: 'Stop managing routes on paper. Build, assign, and track every plow route from one mobile-first platform.',
     metaTitle: 'Snow Plowing Software | IndustryBossPro',
-    metaDesc: 'Snow plowing software for managing routes, crews, and per-push billing. Built for operators running multiple trucks. From $49/mo.',
+    metaDesc: 'Snow plowing software for managing routes, crews, and per-push billing. Built for operators running multiple trucks. From $59/mo.',
     heroPoints: [
       'Build optimized plow routes and push them to driver phones',
       'Track per-push, per-inch, or seasonal contract billing',
@@ -85,7 +85,7 @@ export const hubPages: HubPageData[] = [
     h1: 'Ice Management Software for Chemical Application Tracking & Compliance',
     subtitle: 'Log every de-icing application, track chemical inventory, and stay compliant â€” property by property, event by event.',
     metaTitle: 'Ice Management Software | IndustryBossPro',
-    metaDesc: 'Ice management software for tracking salt, liquid de-icer, and chemical applications. Full compliance records, auto-billing. From $49/mo.',
+    metaDesc: 'Ice management software for tracking salt, liquid de-icer, and chemical applications. Full compliance records, auto-billing. From $59/mo.',
     heroPoints: [
       'Track salt, liquid, and granular applications per property',
       'Maintain full compliance logs with timestamps and quantities',
@@ -115,7 +115,7 @@ export const hubPages: HubPageData[] = [
     h1: 'Snow Removal Scheduling Software: Organize Before the Storm Hits',
     subtitle: 'Pre-build your storm response. Assign properties to routes, set trigger conditions, and activate your entire operation with one tap.',
     metaTitle: 'Snow Removal Scheduling Software | IndustryBossPro',
-    metaDesc: 'Snow removal scheduling software to pre-assign routes, set storm triggers, and activate crews instantly. From $49/mo.',
+    metaDesc: 'Snow removal scheduling software to pre-assign routes, set storm triggers, and activate crews instantly. From $59/mo.',
     heroPoints: [
       'Pre-assign every property to a crew and route before snow falls',
       'Activate your full operation with one tap when conditions hit',
@@ -147,7 +147,7 @@ export const hubPages: HubPageData[] = [
     h1: 'Pool Service Software That Runs Your Routes So You Can Run Your Business',
     subtitle: 'Route scheduling, chemical logging, equipment tracking, and automated billing â€” built for pool service professionals.',
     metaTitle: 'Pool Service Software | IndustryBossPro',
-    metaDesc: 'Pool service software with route management, chemical logging, equipment tracking, and auto-invoicing. From $49/mo. 14-day free trial.',
+    metaDesc: 'Pool service software with route management, chemical logging, equipment tracking, and auto-invoicing. From $59/mo. 14-day free trial.',
     heroPoints: [
       'Build optimized pool routes and push them to tech phones',
       'Log chemical readings and treatments for every pool, every visit',
@@ -177,7 +177,7 @@ export const hubPages: HubPageData[] = [
     h1: 'Pool Cleaning Software for Weekly Route Techs Who Service Dozens of Pools a Day',
     subtitle: 'Optimize your cleaning routes, log every service visit, and keep clients informed without a single phone call.',
     metaTitle: 'Pool Cleaning Software | IndustryBossPro',
-    metaDesc: 'Pool cleaning software with route optimization, service logging, client notifications, and automatic billing. From $49/mo.',
+    metaDesc: 'Pool cleaning software with route optimization, service logging, client notifications, and automatic billing. From $59/mo.',
     heroPoints: [
       'Optimize weekly cleaning routes to cut drive time by up to 30%',
       'Log every cleaning task and chemical treatment per pool per visit',
@@ -207,7 +207,7 @@ export const hubPages: HubPageData[] = [
     h1: 'Pool Maintenance Software for Equipment Repairs, Chemical Programs, and Service Contracts',
     subtitle: 'Manage repair work orders, recurring maintenance, and chemical programs from one platform built for pool pros.',
     metaTitle: 'Pool Maintenance Software | IndustryBossPro',
-    metaDesc: 'Pool maintenance software for managing repair work orders, equipment tracking, chemical programs, and service contracts. From $49/mo.',
+    metaDesc: 'Pool maintenance software for managing repair work orders, equipment tracking, chemical programs, and service contracts. From $59/mo.',
     heroPoints: [
       'Track all open repair jobs and equipment work orders in one place',
       'Manage recurring chemical programs alongside on-demand repairs',
@@ -237,7 +237,7 @@ export const hubPages: HubPageData[] = [
     h1: 'Pool Route Software to Build, Manage, and Scale Your Service Routes',
     subtitle: 'Add accounts, build routes, and run a growing pool route business without the scheduling headaches.',
     metaTitle: 'Pool Route Software | IndustryBossPro',
-    metaDesc: 'Pool route software to manage recurring service routes, add new accounts, and scale your pool business. From $49/mo.',
+    metaDesc: 'Pool route software to manage recurring service routes, add new accounts, and scale your pool business. From $59/mo.',
     heroPoints: [
       'Add new accounts and automatically slot them into existing routes',
       'Balance route workloads so no tech is overwhelmed',
@@ -269,7 +269,7 @@ export const hubPages: HubPageData[] = [
     h1: 'Landscaping Software That Handles the Office While You\'re in the Field',
     subtitle: 'Job scheduling, crew management, estimates, invoicing, and customer communication â€” built for landscape companies of every size.',
     metaTitle: 'Landscaping Software | IndustryBossPro',
-    metaDesc: 'Landscaping software for job scheduling, crew management, estimates, invoicing, and client communication. From $49/mo. 14-day free trial.',
+    metaDesc: 'Landscaping software for job scheduling, crew management, estimates, invoicing, and client communication. From $59/mo. 14-day free trial.',
     heroPoints: [
       'Schedule one-time and recurring landscape jobs in seconds',
       'Send professional estimates clients can approve from their phone',
@@ -299,7 +299,7 @@ export const hubPages: HubPageData[] = [
     h1: 'Landscape Business Software to Run Every Part of Your Operation',
     subtitle: 'From first estimate to final payment, manage your entire landscape business in one place â€” no spreadsheets, no chaos.',
     metaTitle: 'Landscape Business Software | IndustryBossPro',
-    metaDesc: 'Landscape business software for managing estimates, jobs, crews, invoicing, and clients. Built for growing landscape companies. From $49/mo.',
+    metaDesc: 'Landscape business software for managing estimates, jobs, crews, invoicing, and clients. Built for growing landscape companies. From $59/mo.',
     heroPoints: [
       'Win more jobs with fast, professional estimates that close faster',
       'Track job costs against estimates so you know your real margins',
@@ -329,7 +329,7 @@ export const hubPages: HubPageData[] = [
     h1: 'Landscape Scheduling Software for Crews, Jobs, and Recurring Maintenance',
     subtitle: 'Schedule one-time installs and recurring maintenance without double-booking crews or missing client appointments.',
     metaTitle: 'Landscape Scheduling Software | IndustryBossPro',
-    metaDesc: 'Landscape scheduling software for managing crew schedules, recurring maintenance, and one-time installs. From $49/mo.',
+    metaDesc: 'Landscape scheduling software for managing crew schedules, recurring maintenance, and one-time installs. From $59/mo.',
     heroPoints: [
       'Schedule recurring maintenance and one-time jobs on the same calendar',
       'Avoid double-booking crews with visual capacity management',
@@ -359,7 +359,7 @@ export const hubPages: HubPageData[] = [
     h1: 'Lawn and Landscape Software for Companies That Do It All',
     subtitle: 'Manage mowing, landscaping, chemical treatments, and seasonal services under one roof â€” without juggling multiple systems.',
     metaTitle: 'Lawn & Landscape Software | IndustryBossPro',
-    metaDesc: 'Lawn and landscape software for companies offering mowing, landscaping, chemicals, and seasonal services. From $49/mo.',
+    metaDesc: 'Lawn and landscape software for companies offering mowing, landscaping, chemicals, and seasonal services. From $59/mo.',
     heroPoints: [
       'One platform for mowing routes, landscape projects, and chemical programs',
       'Separate crews and billing for each service type',
@@ -389,7 +389,7 @@ export const hubPages: HubPageData[] = [
     h1: 'Landscape Maintenance Software for Recurring Service Contracts',
     subtitle: 'Manage weekly, bi-weekly, and monthly maintenance contracts without missed visits, billing errors, or unhappy clients.',
     metaTitle: 'Landscape Maintenance Software | IndustryBossPro',
-    metaDesc: 'Landscape maintenance software for managing recurring service contracts, visit tracking, and automatic billing. From $49/mo.',
+    metaDesc: 'Landscape maintenance software for managing recurring service contracts, visit tracking, and automatic billing. From $59/mo.',
     heroPoints: [
       'Never miss a maintenance visit with automated recurring scheduling',
       'Track what was done at every property on every visit',
@@ -421,7 +421,7 @@ export const hubPages: HubPageData[] = [
     h1: 'Irrigation Software for Spring Startups, Winterizations, and Everything Between',
     subtitle: 'Manage the full irrigation season â€” startups, repairs, winterizations, and system audits â€” from one platform built for irrigation pros.',
     metaTitle: 'Irrigation Software | IndustryBossPro',
-    metaDesc: 'Irrigation software for managing spring startups, repairs, winterizations, and system audits. From $49/mo. 14-day free trial.',
+    metaDesc: 'Irrigation software for managing spring startups, repairs, winterizations, and system audits. From $59/mo. 14-day free trial.',
     heroPoints: [
       'Schedule the full startup and winterization season without overbooking',
       'Track system details, zone counts, and repair history per property',
@@ -451,7 +451,7 @@ export const hubPages: HubPageData[] = [
     h1: 'Sprinkler System Software for Service, Repair, and Installation Businesses',
     subtitle: 'Manage sprinkler system installations, repairs, and seasonal service with a platform that knows the irrigation industry.',
     metaTitle: 'Sprinkler System Software | IndustryBossPro',
-    metaDesc: 'Sprinkler system software for managing installations, repairs, and seasonal service. From $49/mo.',
+    metaDesc: 'Sprinkler system software for managing installations, repairs, and seasonal service. From $59/mo.',
     heroPoints: [
       'Track every sprinkler system by zone, controller, and head type',
       'Quote repairs and installations with professional estimates',
@@ -481,7 +481,7 @@ export const hubPages: HubPageData[] = [
     h1: 'Irrigation Business Software to Manage Your Full Operation',
     subtitle: 'Run your irrigation company end-to-end â€” from lead to invoice â€” without juggling spreadsheets or losing jobs in the cracks.',
     metaTitle: 'Irrigation Business Software | IndustryBossPro',
-    metaDesc: 'Irrigation business software for managing your full operation from estimates to invoicing. From $49/mo.',
+    metaDesc: 'Irrigation business software for managing your full operation from estimates to invoicing. From $59/mo.',
     heroPoints: [
       'Win more installation bids with fast professional estimates',
       'Track job costs so you know which jobs made money',
@@ -511,7 +511,7 @@ export const hubPages: HubPageData[] = [
     h1: 'Irrigation Scheduling Software to Conquer Startup and Winterization Season',
     subtitle: 'Stop manually booking 200 startups in 3 weeks. Let the waiting list fill, then assign dates systematically as crew capacity opens.',
     metaTitle: 'Irrigation Scheduling Software | IndustryBossPro',
-    metaDesc: 'Irrigation scheduling software for managing spring startups, winterizations, and service calls without overbooking. From $49/mo.',
+    metaDesc: 'Irrigation scheduling software for managing spring startups, winterizations, and service calls without overbooking. From $59/mo.',
     heroPoints: [
       'Capture all startup and winterization requests on a waiting list',
       'Assign dates systematically as crew slots open up',
@@ -543,7 +543,7 @@ export const hubPages: HubPageData[] = [
     h1: 'Lawn Care Software for Chemical Programs, Fertilizer Routes, and Recurring Treatments',
     subtitle: 'Manage chemical applications, client programs, technician routes, and compliance records for your lawn care business.',
     metaTitle: 'Lawn Care Software | IndustryBossPro',
-    metaDesc: 'Lawn care software for chemical programs, fertilizer applications, technician routes, and compliance records. From $49/mo. 14-day free trial.',
+    metaDesc: 'Lawn care software for chemical programs, fertilizer applications, technician routes, and compliance records. From $59/mo. 14-day free trial.',
     heroPoints: [
       'Track every chemical application with full compliance documentation',
       'Manage recurring treatment programs across hundreds of properties',
@@ -573,7 +573,7 @@ export const hubPages: HubPageData[] = [
     h1: 'Lawn Chemical Application Software for Licensed Applicators',
     subtitle: 'Log chemical applications, track licenses, maintain compliance records, and invoice automatically â€” built for state-licensed lawn chemical businesses.',
     metaTitle: 'Lawn Chemical Application Software | IndustryBossPro',
-    metaDesc: 'Lawn chemical application software with compliance logging, license tracking, and auto-billing for licensed applicators. From $49/mo.',
+    metaDesc: 'Lawn chemical application software with compliance logging, license tracking, and auto-billing for licensed applicators. From $59/mo.',
     heroPoints: [
       'Maintain state-compliant chemical application records automatically',
       'Track applicator licenses and certification expiration dates',
@@ -603,7 +603,7 @@ export const hubPages: HubPageData[] = [
     h1: 'Fertilizer Software for Lawn Fertilization Programs and Route Management',
     subtitle: 'Schedule fertilizer rounds, track application rates, and manage recurring programs across your entire client base.',
     metaTitle: 'Fertilizer Software | IndustryBossPro',
-    metaDesc: 'Fertilizer software for managing lawn fertilization programs, application tracking, and technician routes. From $49/mo.',
+    metaDesc: 'Fertilizer software for managing lawn fertilization programs, application tracking, and technician routes. From $59/mo.',
     heroPoints: [
       'Manage multi-round fertilizer programs from first application to last',
       'Track fertilizer product, rate, and blend per property per round',
@@ -633,7 +633,7 @@ export const hubPages: HubPageData[] = [
     h1: 'Weed Control Software for Herbicide Programs and Service Management',
     subtitle: 'Manage pre-emergent and post-emergent weed control programs, track applications, and keep your clients\' lawns weed-free and documented.',
     metaTitle: 'Weed Control Software | IndustryBossPro',
-    metaDesc: 'Weed control software for managing herbicide programs, application tracking, and compliance records. From $49/mo.',
+    metaDesc: 'Weed control software for managing herbicide programs, application tracking, and compliance records. From $59/mo.',
     heroPoints: [
       'Track pre-emergent and post-emergent applications per property',
       'Log herbicide products, rates, and target weeds for compliance',
@@ -663,7 +663,7 @@ export const hubPages: HubPageData[] = [
     h1: 'Lawn Treatment Software for Full-Service Chemical Programs',
     subtitle: 'Manage every treatment your lawn care company offers â€” fertilization, weed control, grub prevention, aeration, and more â€” in one system.',
     metaTitle: 'Lawn Treatment Software | IndustryBossPro',
-    metaDesc: 'Lawn treatment software for managing fertilization, weed control, grub prevention, and full-service chemical programs. From $49/mo.',
+    metaDesc: 'Lawn treatment software for managing fertilization, weed control, grub prevention, and full-service chemical programs. From $59/mo.',
     heroPoints: [
       'Manage every treatment type in one program-based system',
       'Clients see all their treatments, not just the last one',
@@ -695,7 +695,7 @@ export const hubPages: HubPageData[] = [
     h1: 'Pest Control Software Built for Companies Who Treat Dozens of Properties a Day',
     subtitle: 'Manage recurring service programs, chemical applications, compliance records, and technician routes from one platform built for pest pros.',
     metaTitle: 'Pest Control Software | IndustryBossPro',
-    metaDesc: 'Pest control software for recurring programs, chemical tracking, compliance records, and technician routes. From $49/mo. 14-day free trial.',
+    metaDesc: 'Pest control software for recurring programs, chemical tracking, compliance records, and technician routes. From $59/mo. 14-day free trial.',
     heroPoints: [
       'Manage quarterly, monthly, and bi-monthly pest programs in one system',
       'Track every chemical application with state-compliant documentation',
@@ -725,7 +725,7 @@ export const hubPages: HubPageData[] = [
     h1: 'Exterminator Software for Scheduling, Chemical Logging, and Client Management',
     subtitle: 'Run your extermination business without the paperwork. Schedule jobs, log chemicals, and invoice clients from one mobile-first platform.',
     metaTitle: 'Exterminator Software | IndustryBossPro',
-    metaDesc: 'Exterminator software for scheduling, chemical logging, client management, and invoicing. From $49/mo.',
+    metaDesc: 'Exterminator software for scheduling, chemical logging, client management, and invoicing. From $59/mo.',
     heroPoints: [
       'Schedule one-time treatments and recurring service contracts in one system',
       'Log every chemical application with full compliance documentation',
@@ -755,7 +755,7 @@ export const hubPages: HubPageData[] = [
     h1: 'Pest Management Software for Commercial and Residential Service Companies',
     subtitle: 'Handle complex commercial contracts, multi-unit residential programs, and compliance documentation from one platform.',
     metaTitle: 'Pest Management Software | IndustryBossPro',
-    metaDesc: 'Pest management software for commercial and residential pest control with compliance records and program management. From $49/mo.',
+    metaDesc: 'Pest management software for commercial and residential pest control with compliance records and program management. From $59/mo.',
     heroPoints: [
       'Manage commercial contracts with multiple service locations',
       'Track pest activity trends across your client base',
@@ -785,7 +785,7 @@ export const hubPages: HubPageData[] = [
     h1: 'Pest Control Scheduling Software for High-Volume Service Operations',
     subtitle: 'Schedule dozens of technicians across hundreds of properties without overbooking, missed services, or angry clients.',
     metaTitle: 'Pest Control Scheduling Software | IndustryBossPro',
-    metaDesc: 'Pest control scheduling software for managing high-volume tech routes, recurring programs, and emergency call-ins. From $49/mo.',
+    metaDesc: 'Pest control scheduling software for managing high-volume tech routes, recurring programs, and emergency call-ins. From $59/mo.',
     heroPoints: [
       'Schedule recurring programs and emergency call-ins on the same calendar',
       'Balance workload across your full technician team',
@@ -817,7 +817,7 @@ export const hubPages: HubPageData[] = [
     h1: 'Mosquito Control Software for Spray Programs, Routes, and Recurring Clients',
     subtitle: 'Schedule mosquito spray treatments, manage recurring season programs, track chemical applications, and bill automatically.',
     metaTitle: 'Mosquito Control Software | IndustryBossPro',
-    metaDesc: 'Mosquito control software for spray programs, route management, chemical tracking, and recurring billing. From $49/mo. 14-day free trial.',
+    metaDesc: 'Mosquito control software for spray programs, route management, chemical tracking, and recurring billing. From $59/mo. 14-day free trial.',
     heroPoints: [
       'Manage seasonal mosquito programs with automatic recurring scheduling',
       'Track every spray application with product, rate, and coverage area',
@@ -847,7 +847,7 @@ export const hubPages: HubPageData[] = [
     h1: 'Mosquito Spray Software for High-Volume Treatment Operations',
     subtitle: 'Run more spray routes per day, track every application, and keep clients on their treatment program with automated scheduling.',
     metaTitle: 'Mosquito Spray Software | IndustryBossPro',
-    metaDesc: 'Mosquito spray software for managing spray routes, chemical applications, and recurring treatment programs. From $49/mo.',
+    metaDesc: 'Mosquito spray software for managing spray routes, chemical applications, and recurring treatment programs. From $59/mo.',
     heroPoints: [
       'Maximize properties per technician per day with optimized routes',
       'Track dilution rates and spray volumes per property per visit',
@@ -877,7 +877,7 @@ export const hubPages: HubPageData[] = [
     h1: 'Mosquito Treatment Software for In2Care, Barrier Spray, and Misting Systems',
     subtitle: 'Manage multiple mosquito treatment types â€” barrier spray, In2Care, and automated misting â€” from one unified platform.',
     metaTitle: 'Mosquito Treatment Software | IndustryBossPro',
-    metaDesc: 'Mosquito treatment software for managing barrier spray, In2Care, misting systems, and treatment compliance. From $49/mo.',
+    metaDesc: 'Mosquito treatment software for managing barrier spray, In2Care, misting systems, and treatment compliance. From $59/mo.',
     heroPoints: [
       'Track different treatment types for each property in one system',
       'Log In2Care station placements and service visits separately from spray routes',
@@ -907,7 +907,7 @@ export const hubPages: HubPageData[] = [
     h1: 'Mosquito Business Software to Run and Grow Your Mosquito Control Company',
     subtitle: 'Sell more programs, service more clients, and manage your team â€” without chaos â€” as your mosquito control business grows.',
     metaTitle: 'Mosquito Business Software | IndustryBossPro',
-    metaDesc: 'Mosquito business software for selling programs, managing techs, and growing your mosquito control company. From $49/mo.',
+    metaDesc: 'Mosquito business software for selling programs, managing techs, and growing your mosquito control company. From $59/mo.',
     heroPoints: [
       'Sell seasonal programs with automatic recurring billing from day one',
       'Onboard new clients in minutes and get them on the schedule same day',
@@ -939,7 +939,7 @@ export const hubPages: HubPageData[] = [
     h1: 'Fence Company Software for Estimates, Installations, and Project Management',
     subtitle: 'Quote fence jobs faster, manage installation crews, track material costs, and invoice clients from one platform built for fence contractors.',
     metaTitle: 'Fence Company Software | IndustryBossPro',
-    metaDesc: 'Fence company software for estimates, crew scheduling, material tracking, and project invoicing. From $49/mo. 14-day free trial.',
+    metaDesc: 'Fence company software for estimates, crew scheduling, material tracking, and project invoicing. From $59/mo. 14-day free trial.',
     heroPoints: [
       'Build detailed fence estimates with materials, labor, and gate specs',
       'Schedule installation crews across multiple jobs simultaneously',
@@ -969,7 +969,7 @@ export const hubPages: HubPageData[] = [
     h1: 'Fence Installation Software to Manage Jobs from Signed Contract to Final Post',
     subtitle: 'Track every fence installation from material order through crew scheduling, job progress, and final punch-out.',
     metaTitle: 'Fence Installation Software | IndustryBossPro',
-    metaDesc: 'Fence installation software for managing materials, crew scheduling, job progress, and billing. From $49/mo.',
+    metaDesc: 'Fence installation software for managing materials, crew scheduling, job progress, and billing. From $59/mo.',
     heroPoints: [
       'Track material orders and delivery status per installation job',
       'Crew sees the full job package â€” drawings, specs, and notes â€” on their phone',
@@ -999,7 +999,7 @@ export const hubPages: HubPageData[] = [
     h1: 'Fence Business Management Software to Scale Without the Chaos',
     subtitle: 'Manage leads, estimates, installations, and invoicing so you can grow your fence company without growing your stress.',
     metaTitle: 'Fence Business Management Software | IndustryBossPro',
-    metaDesc: 'Fence business management software for managing leads, estimates, installations, and invoicing. From $49/mo.',
+    metaDesc: 'Fence business management software for managing leads, estimates, installations, and invoicing. From $59/mo.',
     heroPoints: [
       'Track leads from first call to signed contract without losing any',
       'Know your estimate close rate and where leads are coming from',
@@ -1031,7 +1031,7 @@ export const hubPages: HubPageData[] = [
     h1: 'Lawn Mowing Software for Route-Based Mowing Businesses',
     subtitle: 'Build efficient mowing routes, manage recurring clients, track crew performance, and invoice automatically â€” built for mowing companies.',
     metaTitle: 'Lawn Mowing Software | IndustryBossPro',
-    metaDesc: 'Lawn mowing software for route management, recurring scheduling, crew tracking, and auto-invoicing. From $49/mo. 14-day free trial.',
+    metaDesc: 'Lawn mowing software for route management, recurring scheduling, crew tracking, and auto-invoicing. From $59/mo. 14-day free trial.',
     heroPoints: [
       'Build optimized mowing routes that maximize stops per crew per day',
       'Manage recurring weekly and bi-weekly clients without weekly rescheduling',
@@ -1061,7 +1061,7 @@ export const hubPages: HubPageData[] = [
     h1: 'Mowing Business Software to Run Your Company from Your Mower Seat',
     subtitle: 'Manage clients, schedule routes, invoice faster, and track your profit â€” all from your phone between jobs.',
     metaTitle: 'Mowing Business Software | IndustryBossPro',
-    metaDesc: 'Mowing business software for managing clients, routes, billing, and business growth. From $49/mo.',
+    metaDesc: 'Mowing business software for managing clients, routes, billing, and business growth. From $59/mo.',
     heroPoints: [
       'Run your entire mowing business from your smartphone',
       'See your real profit margin after crew costs and fuel',
@@ -1091,7 +1091,7 @@ export const hubPages: HubPageData[] = [
     h1: 'Grass Cutting Software for Lawn Crews That Cut 20+ Yards a Day',
     subtitle: 'Maximize cuts per day, track crew performance, and get paid fast â€” built for high-volume grass cutting operations.',
     metaTitle: 'Grass Cutting Software | IndustryBossPro',
-    metaDesc: 'Grass cutting software for high-volume lawn crews with route optimization, time tracking, and auto-invoicing. From $49/mo.',
+    metaDesc: 'Grass cutting software for high-volume lawn crews with route optimization, time tracking, and auto-invoicing. From $59/mo.',
     heroPoints: [
       'Fit more cuts per crew per day with optimized geographic routes',
       'Track time on site per property to spot inefficiencies',
@@ -1121,7 +1121,7 @@ export const hubPages: HubPageData[] = [
     h1: 'Lawn Mowing Scheduling Software for Recurring Routes and Rain Delays',
     subtitle: 'Keep recurring mowing clients on schedule, manage rain delays without chaos, and fill every available crew day to capacity.',
     metaTitle: 'Lawn Mowing Scheduling Software | IndustryBossPro',
-    metaDesc: 'Lawn mowing scheduling software for managing recurring routes, rain delays, and crew capacity. From $49/mo.',
+    metaDesc: 'Lawn mowing scheduling software for managing recurring routes, rain delays, and crew capacity. From $59/mo.',
     heroPoints: [
       'Set and forget recurring mowing schedules that run all season',
       'Handle rain delays with one tap â€” clients notified automatically',
@@ -1153,7 +1153,7 @@ export const hubPages: HubPageData[] = [
     h1: 'Garage Door Service Software for Repair, Install, and Maintenance Businesses',
     subtitle: 'Dispatch techs, quote repairs on-site, track every door and opener by property, and auto-invoice the moment a job is done — all from one platform.',
     metaTitle: 'Garage Door Service Software | IndustryBossPro',
-    metaDesc: 'Garage door service software for scheduling techs, quoting repairs, tracking doors and openers, and auto-invoicing. From $49/mo. 14-day free trial.',
+    metaDesc: 'Garage door service software for scheduling techs, quoting repairs, tracking doors and openers, and auto-invoicing. From $59/mo. 14-day free trial.',
     heroPoints: [
       'Dispatch service calls and installs to tech phones with full property history',
       'Quote spring, opener, and panel repairs on-site and collect approval instantly',
@@ -1185,7 +1185,7 @@ export const hubPages: HubPageData[] = [
     h1: 'Carpet Cleaning Software That Runs Your Jobs, Routes, and Billing',
     subtitle: 'Book jobs, route your vans, send professional quotes, and auto-invoice every clean — built for carpet and upholstery cleaning businesses.',
     metaTitle: 'Carpet Cleaning Software | IndustryBossPro',
-    metaDesc: 'Carpet cleaning software for scheduling jobs, routing vans, quoting rooms, and auto-invoicing. Residential and commercial. From $49/mo. 14-day free trial.',
+    metaDesc: 'Carpet cleaning software for scheduling jobs, routing vans, quoting rooms, and auto-invoicing. Residential and commercial. From $59/mo. 14-day free trial.',
     heroPoints: [
       'Book residential and commercial jobs on a drag-and-drop calendar',
       'Quote by room, square footage, or package and collect approval online',
@@ -1217,7 +1217,7 @@ export const hubPages: HubPageData[] = [
     h1: 'Pet Waste Removal Software That Runs Your Scooping Routes on Autopilot',
     subtitle: 'Build weekly scooping routes, let crews mark yards done with a photo, and auto-bill every subscription — built for dog waste removal businesses.',
     metaTitle: 'Pet Waste Removal Software | IndustryBossPro',
-    metaDesc: 'Pet waste removal software for building scooping routes, managing weekly subscriptions, auto-billing customers, and proving service with photos. From $49/mo. 14-day free trial.',
+    metaDesc: 'Pet waste removal software for building scooping routes, managing weekly subscriptions, auto-billing customers, and proving service with photos. From $59/mo. 14-day free trial.',
     heroPoints: [
       'Build efficient weekly scooping routes and slot new yards into the nearest one',
       'Crews mark each yard done with a gate-closed photo from their phone',
@@ -1249,7 +1249,7 @@ export const hubPages: HubPageData[] = [
     h1: 'Septic Pumping Software That Runs Every Tank, Truck, and 3-Year Reminder',
     subtitle: 'Schedule pump-outs, track tank locations and disposal manifests, and bring every customer back on their pump-out cycle automatically — built for septic pumping and grease trap businesses.',
     metaTitle: 'Septic Pumping Software | IndustryBossPro',
-    metaDesc: 'Septic pumping software for scheduling pump-outs, tracking tank records and disposal manifests, invoicing at the tank, and automatic 3-year service reminders. From $49/mo. 14-day free trial.',
+    metaDesc: 'Septic pumping software for scheduling pump-outs, tracking tank records and disposal manifests, invoicing at the tank, and automatic 3-year service reminders. From $59/mo. 14-day free trial.',
     heroPoints: [
       'Automatic service reminders bring every tank back on its 3-to-5-year pump-out cycle',
       'Drivers see tank size, lid location, and dig notes on their phone before they leave the truck',
@@ -1281,7 +1281,7 @@ export const hubPages: HubPageData[] = [
     h1: 'Porta Potty Rental Software That Tracks Every Unit, Route, and Rental in One System',
     subtitle: 'Track unit inventory, build weekly service routes, dispatch deliveries and pickups, and auto-rebill 28-day rentals — built for portable toilet rental businesses.',
     metaTitle: 'Porta Potty Rental Software | IndustryBossPro',
-    metaDesc: 'Porta potty rental software for tracking unit inventory, building weekly service routes, dispatching deliveries and pickups, and auto-billing rentals. From $49/mo. 14-day free trial.',
+    metaDesc: 'Porta potty rental software for tracking unit inventory, building weekly service routes, dispatching deliveries and pickups, and auto-billing rentals. From $59/mo. 14-day free trial.',
     heroPoints: [
       'Track every numbered unit — in the yard, on a jobsite, or at a weekend event',
       'Drivers run service routes, log every pump-out, and flag damage from their phone',
@@ -1313,7 +1313,7 @@ export const hubPages: HubPageData[] = [
     h1: 'Dumpster Rental Software That Tracks Every Can, Swap, and Tonnage Ticket',
     subtitle: 'Dispatch drops, swaps, and pickups, track every can by number, and bill rental periods, overage days, and tonnage automatically — built for roll-off dumpster businesses.',
     metaTitle: 'Dumpster Rental Software | IndustryBossPro',
-    metaDesc: 'Dumpster rental software for roll-off dispatch, can inventory tracking, rental periods, tonnage overages, and online booking. From $49/mo. 14-day free trial.',
+    metaDesc: 'Dumpster rental software for roll-off dispatch, can inventory tracking, rental periods, tonnage overages, and online booking. From $59/mo. 14-day free trial.',
     heroPoints: [
       'Track every 10 to 40-yard can by number — on rent, in the yard, or down for repair',
       'Dispatch drops, swap-outs, and pickups to driver phones with placement notes attached',
@@ -1345,7 +1345,7 @@ export const hubPages: HubPageData[] = [
     h1: 'Gutter Cleaning Software That Books the Rush, Runs the Routes, and Bills Every Job',
     subtitle: 'Quote by linear foot in minutes, schedule spring and fall routes, capture before/after photos, and auto-bill semi-annual plans — built for gutter cleaning businesses.',
     metaTitle: 'Gutter Cleaning Software | IndustryBossPro',
-    metaDesc: 'Gutter cleaning software for linear-foot quoting, seasonal route scheduling, before/after photo proof, recurring semi-annual plans, and auto-invoicing. From $49/mo. 14-day free trial.',
+    metaDesc: 'Gutter cleaning software for linear-foot quoting, seasonal route scheduling, before/after photo proof, recurring semi-annual plans, and auto-invoicing. From $59/mo. 14-day free trial.',
     heroPoints: [
       'Quote by linear foot with two-story surcharges and send estimates customers approve online',
       'Crews see the day\'s route, pitch and ladder notes, and close jobs with before/after photos',
@@ -1377,7 +1377,7 @@ export const hubPages: HubPageData[] = [
     h1: 'Junk Removal Software That Runs Every Pickup, Route, and Invoice in One System',
     subtitle: 'Book pickups, dispatch crews by map, capture before-and-after photos, and auto-bill cards — built for junk removal and hauling businesses.',
     metaTitle: 'Junk Removal Software | IndustryBossPro',
-    metaDesc: 'Junk removal software for booking pickups, dispatching crews, optimizing routes, capturing before-and-after photo proof, and auto-billing customers. From $49/mo. 14-day free trial.',
+    metaDesc: 'Junk removal software for booking pickups, dispatching crews, optimizing routes, capturing before-and-after photo proof, and auto-billing customers. From $59/mo. 14-day free trial.',
     heroPoints: [
       'Book same-day and recurring pickups and slot each onto the nearest route',
       'Crews get the day’s stops, capture before-and-after photos, and close jobs from their phone',
@@ -1409,7 +1409,7 @@ export const hubPages: HubPageData[] = [
     h1: 'Window Cleaning Software That Runs Your Routes, Recurring Jobs, and Billing in One System',
     subtitle: 'Build recurring routes, let crews close jobs with before-and-after photos, and auto-bill every stop — built for residential and storefront window cleaning businesses.',
     metaTitle: 'Window Cleaning Software | IndustryBossPro',
-    metaDesc: 'Window cleaning software for recurring routes, scheduling, online booking, estimating, photo proof, and auto-billing customers. From $49/mo. 14-day free trial.',
+    metaDesc: 'Window cleaning software for recurring routes, scheduling, online booking, estimating, photo proof, and auto-billing customers. From $59/mo. 14-day free trial.',
     heroPoints: [
       'Build recurring residential and storefront routes and slot new jobs into the nearest one',
       'Crews get the day’s stops, capture before-and-after photos, and close jobs from their phone',
@@ -1441,7 +1441,7 @@ export const hubPages: HubPageData[] = [
     h1: 'Pressure Washing Software That Runs Your Jobs, Routes, and Billing in One System',
     subtitle: 'Book jobs, dispatch crews by map, capture before-and-after photos, and auto-bill cards — built for pressure washing and exterior cleaning businesses.',
     metaTitle: 'Pressure Washing Software | IndustryBossPro',
-    metaDesc: 'Pressure washing software for scheduling, routing, square-footage estimating, online booking, photo proof, and auto-billing customers. From $49/mo. 14-day free trial.',
+    metaDesc: 'Pressure washing software for scheduling, routing, square-footage estimating, online booking, photo proof, and auto-billing customers. From $59/mo. 14-day free trial.',
     heroPoints: [
       'Book jobs and recurring routes and slot each onto the nearest crew',
       'Crews get the day’s stops, capture before-and-after photos, and close jobs from their phone',
@@ -1473,7 +1473,7 @@ export const hubPages: HubPageData[] = [
     h1: 'Soft Washing Software That Runs Your House and Roof Washes in One System',
     subtitle: 'Book jobs, build recurring routes, capture before-and-after photos, and auto-bill cards — built for soft washing, house washing, and roof cleaning businesses.',
     metaTitle: 'Soft Washing Software | IndustryBossPro',
-    metaDesc: 'Soft washing software for scheduling, routing, estimating, online booking, photo proof, and auto-billing customers. From $49/mo. 14-day free trial.',
+    metaDesc: 'Soft washing software for scheduling, routing, estimating, online booking, photo proof, and auto-billing customers. From $59/mo. 14-day free trial.',
     heroPoints: [
       'Book house and roof washes and slot each onto the nearest route',
       'Crews get the day’s stops, capture before-and-after photos, and close jobs from their phone',
@@ -1505,7 +1505,7 @@ export const hubPages: HubPageData[] = [
     h1: 'Fire Inspection Software for Extinguisher, Sprinkler, and Alarm Companies',
     subtitle: 'Schedule recurring inspections, log deficiencies, generate compliant reports, and auto-bill every account — built for fire protection and life-safety businesses.',
     metaTitle: 'Fire Inspection Software | IndustryBossPro',
-    metaDesc: 'Fire inspection software for scheduling recurring inspections, tracking deficiencies, generating compliance reports, and auto-invoicing. From $49/mo. 14-day free trial.',
+    metaDesc: 'Fire inspection software for scheduling recurring inspections, tracking deficiencies, generating compliance reports, and auto-invoicing. From $59/mo. 14-day free trial.',
     heroPoints: [
       'Auto-schedule recurring inspections so no account ever lapses',
       'Log deficiencies on-site and turn them into follow-up work and quotes',
@@ -1537,7 +1537,7 @@ export const hubPages: HubPageData[] = [
     h1: 'Hood Cleaning Software for Commercial Kitchen Exhaust Companies',
     subtitle: 'Schedule recurring restaurant accounts, route your crews, capture NFPA 96 compliance records, and auto-bill every kitchen — built for hood cleaning businesses.',
     metaTitle: 'Hood Cleaning Software | IndustryBossPro',
-    metaDesc: 'Hood cleaning software for scheduling recurring restaurant accounts, routing night crews, NFPA 96 compliance records, before/after photos, and auto-invoicing. From $49/mo.',
+    metaDesc: 'Hood cleaning software for scheduling recurring restaurant accounts, routing night crews, NFPA 96 compliance records, before/after photos, and auto-invoicing. From $59/mo.',
     heroPoints: [
       'Auto-schedule recurring kitchen accounts on monthly, quarterly, or semi-annual cycles',
       'Capture before/after photos and NFPA 96 compliance records on every job',

@@ -2,7 +2,7 @@
 
 /* Three plans, compared side by side.
  *
- * The point of the table is that a solo operator can see a door in at $49 without the $199 plan
+ * The point of the table is that a solo operator can see a door in at $59 without the $199 plan
  * looking padded — so what Start LACKS is shown, greyed and struck, rather than hidden. Someone
  * comparing wants to know what they give up, and a feature list that only ever says "yes" reads
  * as marketing.
@@ -20,7 +20,7 @@
 type Cell = string | boolean;
 
 const PLANS = [
-  { key: 'start', name: 'Start', price: 49,  tag: 'Just getting going' },
+  { key: 'start', name: 'Start', price: 59,  tag: 'Just getting going' },
   /* Named Pro, not Solo, for the same reason Crew is not called Unlimited: the plan carries
      3 users, 3 employees and 3 trucks, which is not one person however you read it. A name the
      table contradicts costs more trust than a plain one ever earns. */
