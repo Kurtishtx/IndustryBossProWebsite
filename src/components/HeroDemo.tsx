@@ -80,11 +80,33 @@ export default function HeroDemo() {
         }),
       });
     } catch (e) { /* analytics only — never block the page */ }
-
-    /* Tell Meta this visitor opened the demo, not merely landed. Optimising toward this
-       instead of a page load points the spend at people who try the software. */
-    if (!nt) pixelDemoStarted();
   }, []);
+
+  /* Meta's Lead event, fired on the visitor's FIRST REAL INTERACTION with the demo - a click,
+     keypress, touch or scroll inside it - not on page load.
+     It used to fire in the mount effect above, which meant every bounce counted as a lead. Meta
+     optimises toward whatever you tell it to count, so that was pointing the spend at people who
+     land and leave. The demo runs on a different origin, so the interaction cannot be observed
+     from here; demo-mode.js posts a message out when it records its own "engaged" ping. */
+  useEffect(() => {
+    if (noTrk) return;
+    let fired = false;
+    const ALLOWED = [
+      'https://my.industrybosspro.com',
+      'https://boss-pro-client-mobile.vercel.app',
+      'https://boss-pro-mobile.vercel.app',
+    ];
+    function onMessage(e: MessageEvent) {
+      if (fired) return;
+      if (!ALLOWED.includes(e.origin)) return;          // never trust an unvetted sender
+      const d = e.data as { type?: string } | null;
+      if (!d || d.type !== 'bp-demo-engaged') return;
+      fired = true;
+      pixelDemoStarted();
+    }
+    window.addEventListener('message', onMessage);
+    return () => window.removeEventListener('message', onMessage);
+  }, [noTrk]);
 
   // Scale the desktop dashboard (rendered at a real 1300px width) down to fit its frame.
   useEffect(() => {
