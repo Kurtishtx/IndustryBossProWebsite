@@ -11,7 +11,7 @@ const S = {
   border: '#e63000', text: '#f5f5f5',
 };
 
-const INDUSTRIES = ['Snow & Ice Management','Pool Service','Landscaping','Irrigation','Lawn Care Chemicals','Pest Control','Mosquito Control','Fence','Mowing','Pet Waste Removal','Garage Door','Carpet Cleaning','Fire Inspection','Hood Cleaning'];
+const INDUSTRIES = ['Snow & Ice Management','Pool Service','Landscaping','Irrigation','Lawn Care Chemicals','Pest Control','Mosquito Control','Fence','Mowing'];
 
 const HOW_STEPS = [
   { n: '1', title: 'Add Your Clients & Properties', body: 'Import or add your client list with property details, notes, and service history. Up and running in under an hour.' },
@@ -228,7 +228,7 @@ export default function HubPageTemplate({ page }: { page: HubPageData }) {
       {/* INDUSTRIES TRUST */}
       <section style={{ padding: '60px 24px', background: S.navy3, borderTop: `1px solid ${S.border}` }}>
         <div style={{ maxWidth: 1100, margin: '0 auto', textAlign: 'center' }}>
-          <div style={{ fontSize: 14, fontWeight: 600, color: S.muted, marginBottom: 20 }}>BUILT FOR ALL 14 FIELD SERVICE INDUSTRIES</div>
+          <div style={{ fontSize: 14, fontWeight: 600, color: S.muted, marginBottom: 20 }}>BUILT FOR ALL 9 FIELD SERVICE INDUSTRIES</div>
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: 10, justifyContent: 'center' }}>
             {INDUSTRIES.map(ind => (
               <span key={ind} style={{ background: ind === page.industry ? 'rgba(255,255,255,0.15)' : 'rgba(255,255,255,0.04)', border: `1px solid ${ind === page.industry ? '#ff6a00' : S.border}`, borderRadius: 20, padding: '6px 14px', fontSize: 13, color: ind === page.industry ? S.elec : S.muted, fontWeight: ind === page.industry ? 700 : 400 }}>

@@ -12,10 +12,6 @@ const INDUSTRIES = [
   { label: 'Mosquito Control Software', href: '/mosquito-control-software' },
   { label: 'Fence Company Software', href: '/fence-company-software' },
   { label: 'Lawn Mowing Software', href: '/lawn-mowing-software' },
-  { label: "Soft Washing Software", href: '/soft-washing-software' },
-  { label: "Pressure Washing Software", href: '/pressure-washing-software' },
-  { label: "Window Cleaning Software", href: '/window-cleaning-software' },
-  { label: "Junk Removal Software", href: '/junk-removal-software' },
 ];
 
 const FEATURES = [

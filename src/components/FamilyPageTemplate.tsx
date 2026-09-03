@@ -59,9 +59,11 @@ export default function FamilyPageTemplate() {
                 <a href={app.url} style={{ display: 'inline-block', background: S.elec, color: '#fff', textDecoration: 'none', borderRadius: 8, padding: '11px 20px', fontSize: 14, fontWeight: 700, textAlign: 'center', marginBottom: 12 }}>
                   Visit {app.domain} →
                 </a>
-                <Link href={app.hubHref} style={{ color: S.elec, fontSize: 13, fontWeight: 600, textDecoration: 'none' }}>
-                  Or see {app.hubLabel} →
-                </Link>
+                {app.hubHref && (
+                  <Link href={app.hubHref} style={{ color: S.elec, fontSize: 13, fontWeight: 600, textDecoration: 'none' }}>
+                    Or see {app.hubLabel} →
+                  </Link>
+                )}
               </div>
             ))}
           </div>
@@ -78,9 +80,9 @@ export default function FamilyPageTemplate() {
               </p>
             </div>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(240px, 1fr))', gap: 14 }}>
-              {familyApps.map(app => (
-                <Link key={app.hubHref} href={app.hubHref} style={{ display: 'flex', alignItems: 'center', gap: 10, color: S.text, fontSize: 14, textDecoration: 'none', background: S.navy4, border: `1px solid ${S.border}`, borderRadius: 10, padding: '12px 16px' }}>
-                  <span style={{ color: S.elec, fontWeight: 700 }}>→</span>{app.hubLabel.replace(' on IndustryBossPro', '')}
+              {familyApps.filter(app => app.hubHref && app.hubLabel).map(app => (
+                <Link key={app.name} href={app.hubHref!} style={{ display: 'flex', alignItems: 'center', gap: 10, color: S.text, fontSize: 14, textDecoration: 'none', background: S.navy4, border: `1px solid ${S.border}`, borderRadius: 10, padding: '12px 16px' }}>
+                  <span style={{ color: S.elec, fontWeight: 700 }}>→</span>{app.hubLabel!.replace(' on IndustryBossPro', '')}
                 </Link>
               ))}
             </div>

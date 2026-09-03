@@ -5,8 +5,8 @@ export interface FamilyApp {
   trade: string;       // short trade label, e.g. "Spray & Lawn Treatment"
   tagline: string;     // one-line positioning
   desc: string;        // 2–3 sentence contextual description (real copy, not boilerplate)
-  hubHref: string;     // matching IndustryBossPro industry hub page (internal contextual link)
-  hubLabel: string;    // label for that internal link
+  hubHref?: string;    // matching IndustryBossPro industry hub page (internal contextual link), when Industry covers that trade
+  hubLabel?: string;   // label for that internal link
   accent: string;      // brand accent color for the card chip
 }
 
@@ -87,8 +87,6 @@ export const familyApps: FamilyApp[] = [
     trade: 'Pet Waste Removal',
     tagline: 'Software for dog waste removal routes that run themselves.',
     desc: 'Build weekly scooping routes, let crews mark yards done with a photo from their phone, and bill subscriptions automatically every month. Add and slot new accounts into the nearest route instantly as you grow.',
-    hubHref: '/pet-waste-removal-software',
-    hubLabel: 'Pet Waste Removal Software on IndustryBossPro',
     accent: '#9b59b6',
   },
   {
