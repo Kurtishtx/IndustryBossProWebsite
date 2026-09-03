@@ -12,15 +12,10 @@ const INDUSTRIES = [
   { label: 'Mosquito Control Software', href: '/mosquito-control-software' },
   { label: 'Fence Company Software', href: '/fence-company-software' },
   { label: 'Lawn Mowing Software', href: '/lawn-mowing-software' },
-  { label: 'Pet Waste Removal Software', href: '/pet-waste-removal-software' },
   { label: "Soft Washing Software", href: '/soft-washing-software' },
   { label: "Pressure Washing Software", href: '/pressure-washing-software' },
   { label: "Window Cleaning Software", href: '/window-cleaning-software' },
   { label: "Junk Removal Software", href: '/junk-removal-software' },
-  { label: 'Garage Door Service Software', href: '/garage-door-service-software' },
-  { label: 'Carpet Cleaning Software', href: '/carpet-cleaning-software' },
-  { label: 'Fire Inspection Software', href: '/fire-inspection-software' },
-  { label: 'Hood Cleaning Software', href: '/hood-cleaning-software' },
 ];
 
 const FEATURES = [

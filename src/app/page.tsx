@@ -56,7 +56,7 @@ export default function Home() {
       <div className="trust-bar">
         <div className="trust-inner">
           <span className="trust-label">All Industries Covered</span>
-          {[['❄️','Snow & Ice'],['🏊','Pool Service'],['🌿','Landscaping'],['💧','Irrigation'],['🌱','Lawn Care'],['🐛','Pest Control'],['🦟','Mosquito Control'],['🏗️','Fence'],['🌾','Mowing'],['💩','Pet Waste'],['🚪','Garage Door'],['🧽','Carpet Cleaning'],['🧯','Fire Inspection'],['🍳','Hood Cleaning']].map(([icon,name]) => (
+          {[['❄️','Snow & Ice'],['🏊','Pool Service'],['🌿','Landscaping'],['💧','Irrigation'],['🌱','Lawn Care'],['🐛','Pest Control'],['🦟','Mosquito Control'],['🏗️','Fence'],['🌾','Mowing']].map(([icon,name]) => (
             <div key={name} className="trust-item"><span>{icon}</span><span>{name}</span></div>
           ))}
         </div>
@@ -128,11 +128,6 @@ export default function Home() {
             ['🦟','Mosquito Control','Barrier spray route management, season-long subscription billing, re-treatment scheduling, and automated reminders.'],
             ['🏗️','Fence Installation','Estimate-to-install workflows, material tracking, job phase management, permit documentation, and follow-up programs.'],
             ['🌾','Lawn Mowing','Recurring mowing routes, cut frequency management, seasonal start/stop, rain-delay rescheduling, and automated billing.'],
-            ['💩','Pet Waste Removal','Weekly and bi-weekly recurring routes, auto-billing, on-property arrival alerts, night-before reminders, and customer communication — all automated.'],
-            ['🚪','Garage Door Service','Estimate-to-install scheduling, spring & opener repair tracking, parts inventory, service agreements, and automated maintenance reminders.'],
-            ['🧽','Carpet Cleaning','Route-based job scheduling, room & sq-ft job details, before/after photos, recurring cleaning plans, and automated invoicing.'],
-            ['🧯','Fire Inspection','Recurring inspection scheduling, code-compliance reporting, deficiency tracking, certificate management, and automated renewal reminders.'],
-            ['🍳','Hood Cleaning','NFPA-compliant cleaning schedules, before/after photos, certificate & sticker tracking, frequency management, and automated reminders.'],
           ].map(([icon,name,desc]) => (
             <div key={name} className="industry-card">
               <div style={{ fontSize:36, marginBottom:14 }}>{icon}</div>
@@ -329,7 +324,7 @@ export default function Home() {
 
           {/* Only what is true on every plan. What scales by plan is spelled out below. */}
           <ul className="price-includes">
-            {['Unlimited Clients & Properties','Waiting List (Spray Applications)','All 14 Industries Covered','Pending Job Board','Package Plans & Recurring Services','Estimates & Invoices','Card Payments (Stripe)','Mobile App','Client App for Customers','Live Crew Tracking','Calendar & Dispatch Views','Free Onboarding'].map(li => (
+            {['Unlimited Clients & Properties','Waiting List (Spray Applications)','All 9 Industries Covered','Pending Job Board','Package Plans & Recurring Services','Estimates & Invoices','Card Payments (Stripe)','Mobile App','Client App for Customers','Live Crew Tracking','Calendar & Dispatch Views','Free Onboarding'].map(li => (
               <li key={li}>{li}</li>
             ))}
           </ul>
