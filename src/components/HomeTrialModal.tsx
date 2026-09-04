@@ -50,7 +50,7 @@ export default function HomeTrialModal({ onClose }: { onClose: () => void }) {
       await sb.auth.updateUser({ data: { full_name: form.first + ' ' + form.last, product: 'fieldbosspro' } });
       await sb.from('user_profiles').upsert({ id: uid, email: form.email, role: 'full_access', is_primary_owner: true, tenant_id: null, trial_ends_at: trialEnd, product: 'fieldbosspro' }, { onConflict: 'id' });
       await sb.from('company_info').insert({ user_id: uid, company_name: form.company, display_name: form.company });
-      await sb.from('platform_accounts').insert({ user_id: uid, email: form.email, plan: 'Monthly Subscription', monthly_amount: 199, trial_ends_at: trialEnd, active: false });
+      await sb.from('platform_accounts').insert({ user_id: uid, email: form.email, plan: 'Monthly Subscription', plan_key: 'start', monthly_amount: 199, trial_ends_at: trialEnd, active: false });
       /* Google Ads conversion: IndustryBossPro trial sign-up (account AW-994175437) */
       try { (window as any).gtag?.('event', 'conversion', { send_to: 'AW-994175437/866BCK6h19gcEM3Th9oD', value: 199.0, currency: 'USD' }); } catch {}
       const _ho = signInData.session ? ('#access_token=' + encodeURIComponent(signInData.session.access_token) + '&refresh_token=' + encodeURIComponent(signInData.session.refresh_token)) : '';
