@@ -319,7 +319,7 @@ export default function Home() {
         <div className="price-card">
           <div className="price-badge">Three Plans — Pick Your Size</div>
           <div style={{ fontSize:13, fontWeight:700, color:'rgba(245,245,245,.70)', textTransform:'uppercase', letterSpacing:1, marginBottom:10 }}>IndustryBossPro</div>
-          <div className="price-amount"><sup>$</sup>49</div>
+          <div className="price-amount"><sup>$</sup>59</div>
           <div className="price-period">per month to start · Pro $89 · Crew $199 · cancel anytime · no contracts</div>
 
           {/* Only what is true on every plan. What scales by plan is spelled out below. */}
