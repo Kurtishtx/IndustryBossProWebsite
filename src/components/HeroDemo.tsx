@@ -60,26 +60,11 @@ export default function HeroDemo() {
 
   function choose(k: Key) { if (k !== active) { setActive(k); if (k !== 'business') setPhoneReady(false); } }
 
-  // One-time pageview beacon carrying the REAL referrer (facebook, google, direct, …) so we can see
-  // where visitors actually come from. The demo iframe below only sees our own domain, not the source.
+  /* The pageview beacon used to fire here. It now lives in PageBeacon, mounted in the root layout,
+     so every page reports its source instead of only the ones that happen to render a demo.
+     This effect keeps reading the internal-traffic flag, which the rest of this component needs. */
   useEffect(() => {
-    const nt = readNoTrack();
-    setNoTrk(nt);
-    try {
-      fetch('https://knjdbgroiyhvqwrpqzcx.supabase.co/functions/v1/demo-session', {
-        method: 'POST', keepalive: true,
-        headers: { 'Content-Type': 'application/json', apikey: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtuamRiZ3JvaXlodnF3cnBxemN4Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzk0OTczMDMsImV4cCI6MjA5NTA3MzMwM30.zoExtkem-XZqU86S4yJjA_xOOaS1G0IPU2M9OAAza2g' },
-        // landing_url carries ?fbclid= / ?utm_* — a click from the Facebook or Instagram APP sends
-        // no referrer at all, so without this those visits are indistinguishable from "direct".
-        body: JSON.stringify({
-          product: 'fieldbosspro',
-          event: 'pageview',
-          referrer: (typeof document !== 'undefined' ? document.referrer : '') || 'direct',
-          landing_url: (typeof window !== 'undefined' ? window.location.href : ''),
-          notrack: nt,
-        }),
-      });
-    } catch (e) { /* analytics only — never block the page */ }
+    setNoTrk(readNoTrack());
   }, []);
 
   /* Meta's Lead event, fired on the visitor's FIRST REAL INTERACTION with the demo - a click,
