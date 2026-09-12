@@ -329,7 +329,7 @@ export default function Home() {
             ))}
           </ul>
           <p style={{ color:'rgba(245,245,245,.65)', fontSize:13, lineHeight:1.7, marginBottom:18 }}>
-            Scales by plan: <b style={{ color:'#fff' }}>users</b> 2 / 3 / Unlimited &middot; <b style={{ color:'#fff' }}>trucks</b> 1 / 2 / Unlimited &middot; <b style={{ color:'#fff' }}>outbound texts</b> 100 / 500 / 1,000 a month. Inbound replies are always free. <b style={{ color:'#ff6a00' }}>500 extra outbound texts for $15</b> on any plan.
+            Scales by plan: <b style={{ color:'#fff' }}>users</b> 2 / 3 / Unlimited &middot; <b style={{ color:'#fff' }}>trucks</b> 1 / 2 / Unlimited &middot; <b style={{ color:'#fff' }}>texts</b> 500 / 1,000 / 2,000 a month, sent and received. <b style={{ color:'#ff6a00' }}>500 extra texts for $15</b> on any plan.
           </p>
           <button onClick={openModal} className="btn-primary" style={{ width:'100%', fontSize:16, padding:16 }}>
             Start Your 14-Day Free Trial
