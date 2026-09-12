@@ -21,7 +21,7 @@ const COMPARE = [
   { feature: 'Calendar View', us: 'Yes', them: 'Yes' },
   { feature: 'Dispatch View', us: 'Yes', them: 'Limited' },
   { feature: 'Live Crew Tracking', us: 'Yes', them: 'Add-on / Extra' },
-  { feature: 'Auto-routing', us: '10 / 50 / Unlimited', them: 'Add-on' },
+  { feature: 'Auto-routing', us: '50 / 100 / 1,000', them: 'Add-on' },
   { feature: 'Lasso / Circle-to-Schedule', us: 'Yes', them: 'No' },
   { feature: 'Chemical Compliance', us: 'Yes — EPA compliant', them: 'No' },
   { feature: 'Mobile App', us: 'Yes', them: 'Yes (some)' },
