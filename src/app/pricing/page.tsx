@@ -48,8 +48,9 @@ export default function PricingPage() {
             Pick the size you actually are.
           </h1>
           <p style={{ color: S.muted, fontSize: 18, maxWidth: 560, margin: '0 auto' }}>
-            Three plans, same software. Start at $59 for a one-person operation, up to $199 for unlimited crews and trucks. No per-user fees inside your plan.
+            Three plans, same software. Start at $59 for a one-person operation, up to $199 for unlimited crews and trucks. No per-user fees inside your plan.
           </p>
+        <p style={{ color: S.muted, fontSize: 15, maxWidth: 560, margin: '12px auto 0' }}>Works in the US, Canada, Australia, New Zealand and the UK — bills your customers in your own currency.</p>
         </div>
       </div>
 
@@ -84,6 +85,7 @@ export default function PricingPage() {
       <div style={{ maxWidth: 700, margin: '0 auto 80px', padding: '0 24px' }}>
         <h2 style={{ fontSize: 28, fontWeight: 800, color: '#fff', marginBottom: 32, textAlign: 'center' }}>Common Questions</h2>
         {[
+          { q: 'Does it work outside the US?', a: 'Yes. It runs in the US, Canada, Australia, New Zealand and the UK. Set your country once and your invoices and card charges run in your own currency — USD, CAD, AUD, NZD or GBP — through your own Stripe account.' },
           { q: 'Is there really no setup fee?', a: 'None. Sign up, get access, and we\'ll do a free onboarding call to get you configured. No contracts, no implementation fees.' },
           { q: 'What happens after the 14-day trial?', a: 'You\'re billed for the plan you pick — $59, $89 or $199 — month-to-month. Cancel anytime before the trial ends and you won\'t be charged.' },
           { q: 'How many users can I add?', a: 'Start includes 2 office users and 2 crew-app seats, Pro includes 3 of each, and Crew is unlimited on both. Clients and properties are unlimited on every plan.' },

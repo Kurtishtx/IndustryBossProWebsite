@@ -44,6 +44,7 @@ export default function Home() {
           <a href="#features" className="btn-ghost">See All Features →</a>
         </div>
         <p style={{ textAlign:'center', color:'rgba(245,245,245,.72)', fontSize:15, fontWeight:600, marginTop:18 }}>No credit card required &middot; 14-day free trial &middot; <b style={{ color:'#ff6a00' }}>from $59/mo</b> after &middot; <b style={{ color:'#ff6a00' }}>demo needs no signup</b></p>
+        <p style={{ textAlign:'center', color:'rgba(245,245,245,.72)', fontSize:14, marginTop:8 }}>Works in the US, Canada, Australia, New Zealand and the UK — bills your customers in your own currency.</p>
         <div className="hero-proof">
           <div className="proof-item"><div className="proof-val">$59</div><div className="proof-lbl">To Start</div></div>
           <div className="proof-item"><div className="proof-val">Unlimited</div><div className="proof-lbl">Clients &amp; Properties</div></div>
