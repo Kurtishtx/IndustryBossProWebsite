@@ -69,10 +69,15 @@ const orgLd = {
       applicationCategory: 'BusinessApplication',
       operatingSystem: 'Web, iOS, Android',
       description: 'Field service software for scheduling, route optimization, estimates, auto-invoicing, card payments, two-way SMS, chemical compliance logging, and a crew mobile app.',
+      /* A single Offer at 199 told Google the price WAS 199, so search results quoted the top plan
+         while the page itself leads with "$59 To Start". AggregateOffer is the shape for a product
+         sold at a range, and it is the low price that gets shown. */
       offers: {
-        '@type': 'Offer',
-        price: '199',
+        '@type': 'AggregateOffer',
+        lowPrice: '59',
+        highPrice: '199',
         priceCurrency: 'USD',
+        offerCount: '3',
         description: 'From $59/month — three plans, 14-day free trial, no contracts.',
       },
       publisher: { '@id': 'https://industrybosspro.com/#organization' },
@@ -91,7 +96,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         {children}
         {/* Meta Pixel — builds the retargeting audience. Inert until
             NEXT_PUBLIC_META_PIXEL_ID is set on the Vercel project. */}
-        <MetaPixel />
+        <MetaPixel />
         {/* Pageview beacon on EVERY page, not just the ones with a demo on them. */}
         <PageBeacon />
         {/* Google tag (gtag.js) — GA4 + Google Ads conversion tracking (account AW-994175437) */}
