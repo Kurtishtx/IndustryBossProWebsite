@@ -18,6 +18,12 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
+  /* Every route resolves its own canonical against this base, so a page reached as www vs non-www,
+     with a trailing slash, or carrying ?fbclid=/?utm_source= all point at one URL instead of
+     competing with each other. Most arrivals here carry exactly those parameters. */
+  metadataBase: new URL('https://industrybosspro.com'),
+  alternates: { canonical: './' },
+
   title: "IndustryBossPro | All-In-One Field Service Software",
   description: "The only software built for every field service industry — Snow, Landscaping, Irrigation, Lawn Care, Pest Control and more. Three plans from $59/month. 14-day free trial.",
   /* Google's search results still show Vercel's default triangle for this domain, cached from
