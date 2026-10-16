@@ -99,7 +99,7 @@ export default function SiteFooter({ onOpenModal }: { onOpenModal: () => void })
             <a href="https://hvacbosspro.com" style={{ display: 'block', color: S.muted, fontSize: 13, textDecoration: 'none', marginBottom: 8, lineHeight: 1.4 }}>HVACBossPro — HVAC Software</a>
             <a href="https://plumbingbosspro.com" style={{ display: 'block', color: S.muted, fontSize: 13, textDecoration: 'none', marginBottom: 8, lineHeight: 1.4 }}>PlumbingBossPro — Plumbing Software</a>
             <a href="https://pressurewashingbosspro.com" style={{ display: 'block', color: S.muted, fontSize: 13, textDecoration: 'none', marginBottom: 8, lineHeight: 1.4 }}>PressureWashingBossPro — Pressure Washing Software</a>
-            <a href="https://maidbosspro-website.vercel.app" style={{ display: 'block', color: S.muted, fontSize: 13, textDecoration: 'none', marginBottom: 8, lineHeight: 1.4 }}>MaidBossPro — House Cleaning Software</a>
+            <a href="https://maidbosspro.com" style={{ display: 'block', color: S.muted, fontSize: 13, textDecoration: 'none', marginBottom: 8, lineHeight: 1.4 }}>MaidBossPro — House Cleaning Software</a>
             <a href="https://pestbosspro.com" style={{ display: 'block', color: S.muted, fontSize: 13, textDecoration: 'none', marginBottom: 8, lineHeight: 1.4 }}>PestBossPro — Pest Control Software</a>
           </div>
         </div>
