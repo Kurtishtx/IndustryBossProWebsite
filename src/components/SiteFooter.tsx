@@ -101,6 +101,7 @@ export default function SiteFooter({ onOpenModal }: { onOpenModal: () => void })
             <a href="https://pressurewashingbosspro.com" style={{ display: 'block', color: S.muted, fontSize: 13, textDecoration: 'none', marginBottom: 8, lineHeight: 1.4 }}>PressureWashingBossPro — Pressure Washing Software</a>
             <a href="https://maidbosspro.com" style={{ display: 'block', color: S.muted, fontSize: 13, textDecoration: 'none', marginBottom: 8, lineHeight: 1.4 }}>MaidBossPro — House Cleaning Software</a>
             <a href="https://pestbosspro.com" style={{ display: 'block', color: S.muted, fontSize: 13, textDecoration: 'none', marginBottom: 8, lineHeight: 1.4 }}>PestBossPro — Pest Control Software</a>
+            <a href="https://electricalbosspro-website.vercel.app" style={{ display: 'block', color: S.muted, fontSize: 13, textDecoration: 'none', marginBottom: 8, lineHeight: 1.4 }}>ElectricalBossPro — Electrical Contractor Software</a>
           </div>
         </div>
         <div style={{ borderTop: `1px solid ${S.border}`, paddingTop: 24, display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: 12 }}>
