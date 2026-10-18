@@ -125,7 +125,7 @@ export default function BlogPostTemplate({ post, industry }: Props) {
               IndustryBossPro — from $59/month.
             </p>
             <p style={{ color: S.muted, fontSize: 13, lineHeight: 1.65, marginBottom: 20 }}>
-              Unlimited clients and properties, all 14 industries. 14-day free trial, no card required.
+              Unlimited clients and properties, all 15 lawn &amp; outdoor services. 14-day free trial, no card required.
             </p>
             <button
               onClick={() => setModal(true)}

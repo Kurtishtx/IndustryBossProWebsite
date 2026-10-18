@@ -48,7 +48,7 @@ export default function Home() {
         <div className="hero-proof">
           <div className="proof-item"><div className="proof-val">$59</div><div className="proof-lbl">To Start</div></div>
           <div className="proof-item"><div className="proof-val">Unlimited</div><div className="proof-lbl">Clients &amp; Properties</div></div>
-          <div className="proof-item"><div className="proof-val">14</div><div className="proof-lbl">Industries. One Platform.</div></div>
+          <div className="proof-item"><div className="proof-val">15</div><div className="proof-lbl">Lawn &amp; Outdoor Services. One Account.</div></div>
           <div className="proof-item"><div className="proof-val">14 Days</div><div className="proof-lbl">Free Trial, No Card Required</div></div>
         </div>
       </div>
@@ -56,8 +56,8 @@ export default function Home() {
       {/* TRUST BAR */}
       <div className="trust-bar">
         <div className="trust-inner">
-          <span className="trust-label">All Industries Covered</span>
-          {[['❄️','Snow & Ice'],['🏊','Pool Service'],['🌿','Landscaping'],['💧','Irrigation'],['🌱','Lawn Care'],['🐛','Pest Control'],['🦟','Mosquito Control'],['🏗️','Fence'],['🌾','Mowing']].map(([icon,name]) => (
+          <span className="trust-label">Lawn Companies Run</span>
+          {[["🌱","Lawn Care"],["🌾","Mowing"],["🌿","Landscaping"],["🐛","Pest & Mosquito Control"],["💧","Irrigation"],["🌳","Tree Service"],["🐕","Pet Waste Removal"],["🏊","Pool Service"],["🍂","Cleanups"],["🏠","Gutter Cleaning"],["💦","Pressure Washing"],["💡","Landscape Lighting"],["🗑️","Junk Removal"],["❄️","Snow & Ice"],["🎄","Christmas Lights"]].map(([icon,name]) => (
             <div key={name} className="trust-item"><span>{icon}</span><span>{name}</span></div>
           ))}
         </div>
@@ -70,7 +70,7 @@ export default function Home() {
           Affordable Doesn&apos;t Mean Cheap.<br /><span style={{ color:'#ff6a00' }}>This Is Enterprise-Grade Software.</span>
         </h2>
         <p style={{ color:'rgba(245,245,245,.65)', fontSize:17, maxWidth:700, margin:'0 auto 0', lineHeight:1.8 }}>
-          We built what the enterprise platforms couldn&apos;t — one platform for every field service trade. Route intelligence, chemical compliance, automated billing, role-based access, and a mobile app — priced for real businesses.
+          We built what the enterprise platforms couldn&apos;t — one platform for a lawn company and every service its customers ask for. Route intelligence, chemical compliance, automated billing, role-based access, and a mobile app — priced for real businesses.
         </p>
       </div>
 
@@ -114,26 +114,31 @@ export default function Home() {
       {/* INDUSTRIES */}
       <section id="industries" style={{ background:'#0a0a0a' }}>
         <div className="centered" style={{ maxWidth:1200, margin:'0 auto' }}>
-          <span className="section-label">Built for Your Industry</span>
-          <h2 className="section-title">One Software. Every Season. Every Service.</h2>
-          <p className="section-sub">Every industry below is fully supported — not just partially. Scheduling, billing, compliance, and mobile app built for each trade.</p>
+          <span className="section-label">Built for Lawn Companies</span>
+          <h2 className="section-title">Your Lawn Customers Buy More Than Lawn Care.</h2>
+          <p className="section-sub">Run every service below from one account — scheduling, routes, repeat programs, estimates, billing, the crew app and the customer app. Only do one of these? It has its own dedicated BossPro app, linked on its card.</p>
         </div>
         <div className="industry-grid">
-          {[
-            ['❄️','Snow & Ice Management','Route scheduling, per-push vs seasonal contracts, salt tracking, trigger alerts, event logging, and client snow reports.'],
-            ['🏊','Pool Service','Route-based pool maintenance, chemical dose tracking, equipment service history, filter logs, and seasonal opening/closing.'],
-            ['🌿','Landscaping','Crew scheduling, job site notes, photo documentation, package programs, estimate follow-ups, and automated billing.'],
-            ['💧','Irrigation','Startup and winterization waiting lists, zone documentation, backflow tracking, service history, and seasonal scheduling.'],
-            ['🌱','Lawn Care & Treatments','Sq ft waiting lists, chemical application logs, pesticide compliance reports, round tracking, and treatment follow-up.'],
-            ['🐛','Pest Control','Service frequency management, chemical logs, technician license tracking, completion alerts, and customer service reports.'],
-            ['🦟','Mosquito Control','Barrier spray route management, season-long subscription billing, re-treatment scheduling, and automated reminders.'],
-            ['🏗️','Fence Installation','Estimate-to-install workflows, material tracking, job phase management, permit documentation, and follow-up programs.'],
-            ['🌾','Lawn Mowing','Recurring mowing routes, cut frequency management, seasonal start/stop, rain-delay rescheduling, and automated billing.'],
-          ].map(([icon,name,desc]) => (
-            <div key={name} className="industry-card">
+          {([["🌱","Lawn Care & Treatments","Fertilizer and weed control rounds that come due on their own, aeration and overseeding, chemical application records, and round-by-round billing.","SprayBossPro","https://spraybosspro.com"],
+            ["🌾","Mowing","Weekly and every-other-week routes, auto-routing by closeness, season start and stop, rescheduling, and billing per cut or monthly.","MowBossPro","https://mowbosspro.com"],
+            ["🌿","Landscaping","Mulch, beds, shrub trimming and sod quoted on estimates customers approve online, then scheduled to the right crew with photos and notes.","LandscapeBossPro","https://landscapebosspro.com"],
+            ["🐛","Pest & Mosquito Control","Repeat treatments on a set number of days, barrier spray routes, chemical records, and season-long programs billed per visit or monthly.","PestBossPro","https://pestbosspro.com"],
+            ["💧","Irrigation","Spring startups and fall winterizations on a waiting list, repair calls from estimates, and service notes kept on every property.","IrrigationBossPro","https://irrigationbosspro.com"],
+            ["🌳","Tree Service","Trimming and removal quoted on estimates, approved online, then scheduled with crew notes and before/after photos.","TreeBossPro","https://treebosspro.com"],
+            ["🐕","Pet Waste Removal","Weekly yard cleanups on fixed routes, auto-charged to the card on file, with on-the-way texts so the gate is open.","PoopBossPro","https://poopbosspro.com"],
+            ["🏊","Pool Service","Weekly pool routes, openings and closings on a waiting list, service notes on each property, and monthly billing.","PoolBossPro","https://poolbosspro.com"],
+            ["🍂","Leaf Removal & Cleanups","Fall and spring cleanups booked onto the same customers you already mow and treat, quoted on estimates and billed when done.",null,null],
+            ["🏠","Gutter Cleaning","Gutter cleanings added to lawn customers each fall or spring, routed with the rest of the day and billed on completion.",null,null],
+            ["💦","Pressure Washing","Driveways, walks and house washes sold to your lawn customers, quoted on estimates and scheduled into your routes.","PressureWashingBossPro","https://pressurewashingbosspro.com"],
+            ["💡","Landscape Lighting","Lighting installs from approved estimates, plus yearly check-ups that come due on their own.",null,null],
+            ["🗑️","Junk Removal","Yard debris and junk haul-offs booked from estimates and billed when the truck leaves.","JunkBossPro","https://junkbosspro.com"],
+            ["❄️","Snow & Ice","Winter routes for the same customers, per-visit or seasonal billing, and on-the-way texts when the crew heads out.","SnowBossPro","https://snowbosspro.com"],
+            ["🎄","Christmas Lights","Holiday light installs in the fall and takedowns in January, booked onto lawn customers and billed once or per visit.",null,null]] as (string | null)[][]).map(([icon,name,desc,app,url]) => (
+            <div key={name as string} className="industry-card">
               <div style={{ fontSize:36, marginBottom:14 }}>{icon}</div>
               <h3>{name}</h3>
               <p>{desc}</p>
+              {app && url ? <a href={url as string} target="_blank" rel="noopener" style={{ display:'inline-block', marginTop:10, color:'#ff6a00', fontSize:13, fontWeight:700, textDecoration:'none' }}>Only do this? See {app} &rarr;</a> : null}
             </div>
           ))}
         </div>
@@ -204,7 +209,7 @@ export default function Home() {
           <div className="centered" style={{ marginBottom:48 }}>
             <span className="section-label">How We Compare</span>
             <h2 className="section-title">Everything the Big Platforms Have.<br />None of the Price.</h2>
-            <p className="section-sub" style={{ marginLeft:'auto', marginRight:'auto' }}>IndustryBossPro does everything ServiceTitan and Jobber do — and adds features they don&apos;t have — at a fraction of the cost. And it covers every field service trade, not just one.</p>
+            <p className="section-sub" style={{ marginLeft:'auto', marginRight:'auto' }}>IndustryBossPro covers what lawn and outdoor companies use ServiceTitan and Jobber for — and adds features they don&apos;t have — at a fraction of the cost. And it runs a lawn company plus every service its customers buy, not just one.</p>
           </div>
           <table className="vs-table">
             <thead>
@@ -358,7 +363,7 @@ export default function Home() {
               <div style={{ display:'flex', alignItems:'center', gap:10, marginBottom:14 }}>
                 <span style={{ fontSize:17, fontWeight:800, color:'#f5f5f5' }}>IndustryBoss<span style={{ color:'#ff6a00' }}>Pro</span></span>
               </div>
-              <p style={{ color:'rgba(245,245,245,.70)', fontSize:13, lineHeight:1.7 }}>The all-in-one field service platform built for businesses that run every trade. Snow, landscape, irrigation, lawn care, pest control — one dashboard, one price.</p>
+              <p style={{ color:'rgba(245,245,245,.70)', fontSize:13, lineHeight:1.7 }}>The all-in-one platform for lawn companies and every service their customers buy — treatments, mowing, landscaping, pest, irrigation, snow and more. One dashboard, one price.</p>
               <a href="tel:+16828997304" style={{ display:'inline-block', marginTop:16, color:'#ff6a00', fontSize:16, fontWeight:800, textDecoration:'none' }}>&#9742;&nbsp;(682) 899-7304</a>
             </div>
             {[

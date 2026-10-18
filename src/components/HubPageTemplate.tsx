@@ -69,7 +69,7 @@ export default function HubPageTemplate({ page }: { page: HubPageData }) {
       {/* TRUST BAR */}
       <section style={{ background: S.navy3, borderTop: `1px solid ${S.border}`, borderBottom: `1px solid ${S.border}`, padding: '18px 24px' }}>
         <div style={{ maxWidth: 1100, margin: '0 auto', display: 'flex', justifyContent: 'center', flexWrap: 'wrap', gap: 32 }}>
-          {['14 Industries', 'From $59/Month', 'Calendar & Dispatch Views', 'Live Crew Tracking', '14-Day Free Trial', 'Unlimited Clients & Properties', 'No Contracts'].map(t => (
+          {['15 Lawn & Outdoor Services', 'From $59/Month', 'Calendar & Dispatch Views', 'Live Crew Tracking', '14-Day Free Trial', 'Unlimited Clients & Properties', 'No Contracts'].map(t => (
             <span key={t} style={{ color: S.elec, fontWeight: 700, fontSize: 13 }}>✓ {t}</span>
           ))}
         </div>
@@ -249,7 +249,7 @@ export default function HubPageTemplate({ page }: { page: HubPageData }) {
             <div style={{ fontSize: 60, fontWeight: 900, color: S.text, lineHeight: 1 }}>$59</div>
             <div style={{ color: S.muted, fontSize: 16, marginBottom: 12 }}>/month to start · Pro $89 · Crew $199</div>
 
-            {['Unlimited Clients & Properties', '14-Day Free Trial', 'All 14 Industries', 'Pending Job Board', 'Mobile App for Crews', 'Client App for Customers', 'Card Payments (Stripe)', 'Calendar & Dispatch Views', 'Live Crew Tracking', 'Waiting List (Spray Applications)', 'Estimates & Invoices', 'QuickBooks Export', 'No Contracts'].map(item => (
+            {['Unlimited Clients & Properties', '14-Day Free Trial', '15 Lawn & Outdoor Services', 'Pending Job Board', 'Mobile App for Crews', 'Client App for Customers', 'Card Payments (Stripe)', 'Calendar & Dispatch Views', 'Live Crew Tracking', 'Waiting List (Spray Applications)', 'Estimates & Invoices', 'QuickBooks Export', 'No Contracts'].map(item => (
               <div key={item} style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 10, textAlign: 'left' }}>
                 <span style={{ color: S.elec }}>✓</span>
                 <span style={{ color: S.text, fontSize: 14 }}>{item}</span>

@@ -31,7 +31,7 @@ export default function FamilyPageTemplate() {
             One Platform. Built for Your Trade.
           </h1>
           <p style={{ color: S.muted, fontSize: 18, maxWidth: 640, margin: '0 auto 16px', lineHeight: 1.6 }}>
-            <strong style={{ color: S.text }}>IndustryBossPro</strong> is the all-in-one field service platform that runs every trade on a single system. The BossPro Family is that same engine, focused and branded for one trade at a time — so you get software that speaks your industry&apos;s language out of the box.
+            <strong style={{ color: S.text }}>IndustryBossPro</strong> is the all-in-one platform for lawn companies and the services their customers buy, on a single system. The BossPro Family is that same engine, focused and branded for one trade at a time — so you get software that speaks your industry&apos;s language out of the box.
           </p>
           <p style={{ color: S.muted, fontSize: 15, maxWidth: 620, margin: '0 auto 36px' }}>
             Same scheduling, routing, invoicing, mobile app, and the same three plans from $59/month. Pick the one built for what you do — or run everything from IndustryBossPro.
