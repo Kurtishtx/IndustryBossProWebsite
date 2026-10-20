@@ -3,15 +3,18 @@ import Link from 'next/link';
 const S = { navy2: '#0a0a0a', elec: '#ff6a00', muted: 'rgba(245,245,245,0.5)', border: '#e63000', text: '#f5f5f5' };
 
 const INDUSTRIES = [
-  { label: 'Snow Removal Software', href: '/snow-removal-software' },
-  { label: 'Pool Service Software', href: '/pool-service-software' },
-  { label: 'Landscaping Software', href: '/landscaping-software' },
-  { label: 'Irrigation Software', href: '/irrigation-software' },
   { label: 'Lawn Care Software', href: '/lawn-care-software' },
+  { label: 'Lawn Mowing Software', href: '/lawn-mowing-software' },
+  { label: 'Landscaping Software', href: '/landscaping-software' },
   { label: 'Pest Control Software', href: '/pest-control-software' },
   { label: 'Mosquito Control Software', href: '/mosquito-control-software' },
-  { label: 'Fence Company Software', href: '/fence-company-software' },
-  { label: 'Lawn Mowing Software', href: '/lawn-mowing-software' },
+  { label: 'Irrigation Software', href: '/irrigation-software' },
+  { label: 'Pool Service Software', href: '/pool-service-software' },
+  { label: 'Snow Removal Software', href: '/snow-removal-software' },
+  { label: 'Pressure Washing Software', href: '/pressure-washing-software' },
+  { label: 'Pet Waste Removal Software', href: '/pet-waste-removal-software' },
+  { label: 'Gutter Cleaning Software', href: '/gutter-cleaning-software' },
+  { label: 'Junk Removal Software', href: '/junk-removal-software' },
 ];
 
 const FEATURES = [

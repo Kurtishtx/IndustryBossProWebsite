@@ -1,44 +1,9 @@
 import type { Metadata } from 'next';
-import { poolServicePosts } from '../../lib/blog-pool-data';
-import { lawnLandscapePosts } from '../../lib/blog-landscaping-data';
-import { snowSchedulingPosts } from '../../lib/blog-snow-sub-data';
-import { poolRoutePosts } from '../../lib/blog-pool-data';
-import { landscapeBusinessPosts } from '../../lib/blog-landscaping-data';
-import { landscapingPosts } from '../../lib/blog-landscaping-data';
-import { landscapeSchedulingPosts } from '../../lib/blog-landscaping-data';
-import { iceManagementPosts } from '../../lib/blog-snow-sub-data';
-import { petWastePosts } from '../../lib/blog-pet-waste-data';
-import { weedControlPosts } from '../../lib/blog-lawn-care-data';
-import { poolCleaningPosts } from '../../lib/blog-pool-data';
-import { poolMaintenancePosts } from '../../lib/blog-pool-data';
-import { landscapeMaintenancePosts } from '../../lib/blog-landscaping-data';
-import { fertilizerPosts } from '../../lib/blog-lawn-care-data';
-import { snowPlowingPosts } from '../../lib/blog-snow-sub-data';
-import { lawnChemicalPosts } from '../../lib/blog-lawn-care-data';
-import { lawnTreatmentPosts } from '../../lib/blog-lawn-care-data';
-import { snowPosts } from '../../lib/blog-snow-data';
-import { lawnCarePosts } from '../../lib/blog-lawn-care-data';
-import { irrigationPosts, sprinklerSystemPosts, irrigationBusinessPosts, irrigationSchedulingPosts } from '../../lib/blog-irrigation-data';
-import { pestControlPosts, exterminatorPosts, pestManagementPosts, pestSchedulingPosts } from '../../lib/blog-pest-data';
-import { mosquitoControlPosts, mosquitoSprayPosts, mosquitoTreatmentPosts, mosquitoBusinessPosts } from '../../lib/blog-mosquito-data';
-import { fenceCompanyPosts, fenceInstallationPosts, fenceBusinessPosts } from '../../lib/blog-fence-data';
-import { lawnMowingPosts, mowingBusinessPosts, grassCuttingPosts, lawnMowingSchedulingPosts } from '../../lib/blog-mowing-data';
-import { carpetCleaningPosts } from '../../lib/blog-carpet-cleaning-data';
-import { garageDoorPosts } from '../../lib/blog-garage-door-data';
-import { fireInspectionPosts } from '../../lib/blog-fire-inspection-data';
-import { hoodCleaningPosts } from '../../lib/blog-hood-cleaning-data';
-import { softWashingPosts } from '../../lib/blog-soft-washing-data';
-import { pressureWashingPosts } from '../../lib/blog-pressure-washing-data';
-import { windowCleaningPosts } from '../../lib/blog-window-cleaning-data';
-import { junkRemovalPosts } from '../../lib/blog-junk-removal-data';
-import { septicPumpingPosts } from '../../lib/blog-septic-data';
-import { portaPottyPosts } from '../../lib/blog-porta-potty-data';
-import { dumpsterRentalPosts } from '../../lib/blog-dumpster-data';
-import { gutterCleaningPosts } from '../../lib/blog-gutter-data';
+import { CATEGORIES } from '../../lib/blog';
 
 export const metadata: Metadata = {
-  title: 'Field Service Business Blog | IndustryBossPro',
-  description: 'In-depth guides for field service business owners covering snow removal, landscaping, pest control, irrigation, lawn care, and more.',
+  title: 'Lawn & Outdoor Service Business Blog | IndustryBossPro',
+  description: 'Guides for lawn companies and the services that go with lawn work: treatments, mowing, landscaping, pest and mosquito, irrigation, pools, snow, pressure washing and more.',
 };
 
 const S = {
@@ -47,58 +12,7 @@ const S = {
   border: '#e63000',
 };
 
-const silos = [
-  { industry: 'pool-service', label: 'Pool Service', posts: poolServicePosts, hubSlug: 'pool-service-software' },
-  { industry: 'lawn-landscape', label: 'Lawn & Landscape', posts: lawnLandscapePosts, hubSlug: 'lawn-and-landscape-software' },
-  { industry: 'snow-removal-scheduling', label: 'Snow Removal Scheduling', posts: snowSchedulingPosts, hubSlug: 'snow-removal-scheduling-software' },
-  { industry: 'pool-route', label: 'Pool Route', posts: poolRoutePosts, hubSlug: 'pool-route-software' },
-  { industry: 'landscape-business', label: 'Landscape Business', posts: landscapeBusinessPosts, hubSlug: 'landscape-business-software' },
-  { industry: 'landscaping', label: 'Landscaping Software', posts: landscapingPosts, hubSlug: 'landscaping-software' },
-  { industry: 'landscape-scheduling', label: 'Landscape Scheduling', posts: landscapeSchedulingPosts, hubSlug: 'landscape-scheduling-software' },
-  { industry: 'ice-management', label: 'Ice Management', posts: iceManagementPosts, hubSlug: 'ice-management-software' },
-  { industry: 'pet-waste', label: 'Pet Waste Removal', posts: petWastePosts, hubSlug: 'pet-waste-removal-software' },
-  { industry: 'soft-washing', label: "Soft Washing", posts: softWashingPosts, hubSlug: 'soft-washing-software' },
-  { industry: 'pressure-washing', label: "Pressure Washing", posts: pressureWashingPosts, hubSlug: 'pressure-washing-software' },
-  { industry: 'window-cleaning', label: "Window Cleaning", posts: windowCleaningPosts, hubSlug: 'window-cleaning-software' },
-  { industry: 'junk-removal', label: "Junk Removal", posts: junkRemovalPosts, hubSlug: 'junk-removal-software' },
-  { industry: 'septic', label: "Septic Pumping", posts: septicPumpingPosts, hubSlug: 'septic-pumping-software' },
-  { industry: 'porta-potty', label: "Porta-Potty Rental", posts: portaPottyPosts, hubSlug: 'porta-potty-rental-software' },
-  { industry: 'dumpster-rental', label: "Dumpster Rental", posts: dumpsterRentalPosts, hubSlug: 'dumpster-rental-software' },
-  { industry: 'gutter-cleaning', label: "Gutter Cleaning", posts: gutterCleaningPosts, hubSlug: 'gutter-cleaning-software' },
-  { industry: 'weed-control', label: 'Weed Control', posts: weedControlPosts, hubSlug: 'weed-control-software' },
-  { industry: 'pool-cleaning', label: 'Pool Cleaning', posts: poolCleaningPosts, hubSlug: 'pool-cleaning-software' },
-  { industry: 'pool-maintenance', label: 'Pool Maintenance', posts: poolMaintenancePosts, hubSlug: 'pool-maintenance-software' },
-  { industry: 'landscape-maintenance', label: 'Landscape Maintenance', posts: landscapeMaintenancePosts, hubSlug: 'landscape-maintenance-software' },
-  { industry: 'fertilizer', label: 'Fertilizer Programs', posts: fertilizerPosts, hubSlug: 'fertilizer-software' },
-  { industry: 'snow-plowing', label: 'Snow Plowing', posts: snowPlowingPosts, hubSlug: 'snow-plowing-software' },
-  { industry: 'lawn-chemical-application', label: 'Lawn Chemical Application', posts: lawnChemicalPosts, hubSlug: 'lawn-chemical-application-software' },
-  { industry: 'lawn-treatment', label: 'Lawn Treatment', posts: lawnTreatmentPosts, hubSlug: 'lawn-treatment-software' },
-  { industry: 'snow-removal', label: 'Snow Removal', posts: snowPosts, hubSlug: 'snow-removal-software' },
-  { industry: 'lawn-care', label: 'Lawn Care Software', posts: lawnCarePosts, hubSlug: 'lawn-care-software' },
-  { industry: 'irrigation', label: 'Irrigation Software', posts: irrigationPosts, hubSlug: 'irrigation-software' },
-  { industry: 'sprinkler-system', label: 'Sprinkler System Software', posts: sprinklerSystemPosts, hubSlug: 'sprinkler-system-software' },
-  { industry: 'irrigation-business', label: 'Irrigation Business', posts: irrigationBusinessPosts, hubSlug: 'irrigation-business-software' },
-  { industry: 'irrigation-scheduling', label: 'Irrigation Scheduling', posts: irrigationSchedulingPosts, hubSlug: 'irrigation-scheduling-software' },
-  { industry: 'pest-control', label: 'Pest Control Software', posts: pestControlPosts, hubSlug: 'pest-control-software' },
-  { industry: 'exterminator', label: 'Exterminator Software', posts: exterminatorPosts, hubSlug: 'exterminator-software' },
-  { industry: 'pest-management', label: 'Pest Management', posts: pestManagementPosts, hubSlug: 'pest-management-software' },
-  { industry: 'pest-control-scheduling', label: 'Pest Control Scheduling', posts: pestSchedulingPosts, hubSlug: 'pest-control-scheduling-software' },
-  { industry: 'mosquito-control', label: 'Mosquito Control Software', posts: mosquitoControlPosts, hubSlug: 'mosquito-control-software' },
-  { industry: 'mosquito-spray', label: 'Mosquito Spray Software', posts: mosquitoSprayPosts, hubSlug: 'mosquito-spray-software' },
-  { industry: 'mosquito-treatment', label: 'Mosquito Treatment', posts: mosquitoTreatmentPosts, hubSlug: 'mosquito-treatment-software' },
-  { industry: 'mosquito-business', label: 'Mosquito Business', posts: mosquitoBusinessPosts, hubSlug: 'mosquito-business-software' },
-  { industry: 'fence-company', label: 'Fence Company Software', posts: fenceCompanyPosts, hubSlug: 'fence-company-software' },
-  { industry: 'fence-installation', label: 'Fence Installation', posts: fenceInstallationPosts, hubSlug: 'fence-installation-software' },
-  { industry: 'fence-business', label: 'Fence Business Management', posts: fenceBusinessPosts, hubSlug: 'fence-business-management-software' },
-  { industry: 'lawn-mowing', label: 'Lawn Mowing Software', posts: lawnMowingPosts, hubSlug: 'lawn-mowing-software' },
-  { industry: 'mowing-business', label: 'Mowing Business Software', posts: mowingBusinessPosts, hubSlug: 'mowing-business-software' },
-  { industry: 'grass-cutting', label: 'Grass Cutting Software', posts: grassCuttingPosts, hubSlug: 'grass-cutting-software' },
-  { industry: 'lawn-mowing-scheduling', label: 'Lawn Mowing Scheduling', posts: lawnMowingSchedulingPosts, hubSlug: 'lawn-mowing-scheduling-software' },
-  { industry: 'carpet-cleaning', label: 'Carpet Cleaning Software', posts: carpetCleaningPosts, hubSlug: 'carpet-cleaning-software' },
-  { industry: 'garage-door', label: 'Garage Door Service Software', posts: garageDoorPosts, hubSlug: 'garage-door-service-software' },
-  { industry: 'fire-inspection', label: 'Fire Inspection Software', posts: fireInspectionPosts, hubSlug: 'fire-inspection-software' },
-  { industry: 'hood-cleaning', label: 'Hood Cleaning Software', posts: hoodCleaningPosts, hubSlug: 'hood-cleaning-software' },
-];
+const silos = CATEGORIES.map(c => ({ industry: c.slug, label: c.label, posts: c.posts, hubSlug: c.hub.slug }));
 
 export default function BlogIndex() {
   return (
@@ -108,10 +22,10 @@ export default function BlogIndex() {
           The IndustryBossPro Blog
         </div>
         <h1 style={{ fontSize: 'clamp(28px,4vw,52px)', fontWeight: 900, color: '#fff', marginBottom: 16, lineHeight: 1.1 }}>
-          Field Service Business Guides
+          Lawn &amp; Outdoor Service Guides
         </h1>
         <p style={{ color: S.muted, fontSize: 18, maxWidth: 640, margin: '0 auto' }}>
-          In-depth articles for business owners running snow removal, landscaping, pest control, irrigation, lawn care, and every other field service trade.
+          Guides for lawn companies and the services their customers buy alongside lawn work: treatments, mowing, landscaping, pest and mosquito, irrigation, pools, snow and more.
         </p>
       </div>
 

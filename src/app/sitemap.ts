@@ -2,97 +2,11 @@ import { MetadataRoute } from 'next';
 import { hubPages } from '../lib/hub-data';
 import { vsPages } from '../lib/vs-data';
 import { featurePages } from '../lib/feature-data';
-import { poolServicePosts } from '../lib/blog-pool-data';
-import { lawnLandscapePosts } from '../lib/blog-landscaping-data';
-import { snowSchedulingPosts } from '../lib/blog-snow-sub-data';
-import { poolRoutePosts } from '../lib/blog-pool-data';
-import { landscapeBusinessPosts } from '../lib/blog-landscaping-data';
-import { landscapingPosts } from '../lib/blog-landscaping-data';
-import { landscapeSchedulingPosts } from '../lib/blog-landscaping-data';
-import { iceManagementPosts } from '../lib/blog-snow-sub-data';
-import { petWastePosts } from '../lib/blog-pet-waste-data';
-import { weedControlPosts } from '../lib/blog-lawn-care-data';
-import { poolCleaningPosts } from '../lib/blog-pool-data';
-import { poolMaintenancePosts } from '../lib/blog-pool-data';
-import { landscapeMaintenancePosts } from '../lib/blog-landscaping-data';
-import { fertilizerPosts } from '../lib/blog-lawn-care-data';
-import { snowPlowingPosts } from '../lib/blog-snow-sub-data';
-import { lawnChemicalPosts } from '../lib/blog-lawn-care-data';
-import { lawnTreatmentPosts } from '../lib/blog-lawn-care-data';
-import { snowPosts } from '../lib/blog-snow-data';
-import { lawnCarePosts } from '../lib/blog-lawn-care-data';
-import { irrigationPosts, sprinklerSystemPosts, irrigationBusinessPosts, irrigationSchedulingPosts } from '../lib/blog-irrigation-data';
-import { pestControlPosts, exterminatorPosts, pestManagementPosts, pestSchedulingPosts } from '../lib/blog-pest-data';
-import { mosquitoControlPosts, mosquitoSprayPosts, mosquitoTreatmentPosts, mosquitoBusinessPosts } from '../lib/blog-mosquito-data';
-import { fenceCompanyPosts, fenceInstallationPosts, fenceBusinessPosts } from '../lib/blog-fence-data';
-import { lawnMowingPosts, mowingBusinessPosts, grassCuttingPosts, lawnMowingSchedulingPosts } from '../lib/blog-mowing-data';
-import { carpetCleaningPosts } from '../lib/blog-carpet-cleaning-data';
-import { garageDoorPosts } from '../lib/blog-garage-door-data';
-import { fireInspectionPosts } from '../lib/blog-fire-inspection-data';
-import { hoodCleaningPosts } from '../lib/blog-hood-cleaning-data';
-import { softWashingPosts } from '../lib/blog-soft-washing-data';
-import { pressureWashingPosts } from '../lib/blog-pressure-washing-data';
-import { windowCleaningPosts } from '../lib/blog-window-cleaning-data';
-import { junkRemovalPosts } from '../lib/blog-junk-removal-data';
-import { septicPumpingPosts } from '../lib/blog-septic-data';
-import { portaPottyPosts } from '../lib/blog-porta-potty-data';
-import { dumpsterRentalPosts } from '../lib/blog-dumpster-data';
-import { gutterCleaningPosts } from '../lib/blog-gutter-data';
+import { CATEGORIES } from '../lib/blog';
 
 const BASE = 'https://industrybosspro.com';
 
-const SILOS: { industry: string; posts: { slug: string; date: string }[] }[] = [
-  { industry: 'pool-service', posts: poolServicePosts },
-  { industry: 'lawn-landscape', posts: lawnLandscapePosts },
-  { industry: 'snow-removal-scheduling', posts: snowSchedulingPosts },
-  { industry: 'pool-route', posts: poolRoutePosts },
-  { industry: 'landscape-business', posts: landscapeBusinessPosts },
-  { industry: 'landscaping', posts: landscapingPosts },
-  { industry: 'landscape-scheduling', posts: landscapeSchedulingPosts },
-  { industry: 'ice-management', posts: iceManagementPosts },
-  { industry: 'pet-waste', posts: petWastePosts },
-  { industry: 'soft-washing', posts: softWashingPosts },
-  { industry: 'pressure-washing', posts: pressureWashingPosts },
-  { industry: 'window-cleaning', posts: windowCleaningPosts },
-  { industry: 'junk-removal', posts: junkRemovalPosts },
-  { industry: 'septic', posts: septicPumpingPosts },
-  { industry: 'porta-potty', posts: portaPottyPosts },
-  { industry: 'dumpster-rental', posts: dumpsterRentalPosts },
-  { industry: 'gutter-cleaning', posts: gutterCleaningPosts },
-  { industry: 'weed-control', posts: weedControlPosts },
-  { industry: 'pool-cleaning', posts: poolCleaningPosts },
-  { industry: 'pool-maintenance', posts: poolMaintenancePosts },
-  { industry: 'landscape-maintenance', posts: landscapeMaintenancePosts },
-  { industry: 'fertilizer', posts: fertilizerPosts },
-  { industry: 'snow-plowing', posts: snowPlowingPosts },
-  { industry: 'lawn-chemical-application', posts: lawnChemicalPosts },
-  { industry: 'lawn-treatment', posts: lawnTreatmentPosts },
-  { industry: 'snow-removal', posts: snowPosts },
-  { industry: 'lawn-care', posts: lawnCarePosts },
-  { industry: 'irrigation', posts: irrigationPosts },
-  { industry: 'sprinkler-system', posts: sprinklerSystemPosts },
-  { industry: 'irrigation-business', posts: irrigationBusinessPosts },
-  { industry: 'irrigation-scheduling', posts: irrigationSchedulingPosts },
-  { industry: 'pest-control', posts: pestControlPosts },
-  { industry: 'exterminator', posts: exterminatorPosts },
-  { industry: 'pest-management', posts: pestManagementPosts },
-  { industry: 'pest-control-scheduling', posts: pestSchedulingPosts },
-  { industry: 'mosquito-control', posts: mosquitoControlPosts },
-  { industry: 'mosquito-spray', posts: mosquitoSprayPosts },
-  { industry: 'mosquito-treatment', posts: mosquitoTreatmentPosts },
-  { industry: 'mosquito-business', posts: mosquitoBusinessPosts },
-  { industry: 'fence-company', posts: fenceCompanyPosts },
-  { industry: 'fence-installation', posts: fenceInstallationPosts },
-  { industry: 'fence-business', posts: fenceBusinessPosts },
-  { industry: 'lawn-mowing', posts: lawnMowingPosts },
-  { industry: 'mowing-business', posts: mowingBusinessPosts },
-  { industry: 'grass-cutting', posts: grassCuttingPosts },
-  { industry: 'lawn-mowing-scheduling', posts: lawnMowingSchedulingPosts },
-  { industry: 'carpet-cleaning', posts: carpetCleaningPosts },
-  { industry: 'garage-door', posts: garageDoorPosts },
-  { industry: 'fire-inspection', posts: fireInspectionPosts },
-  { industry: 'hood-cleaning', posts: hoodCleaningPosts },
-];
+const SILOS = CATEGORIES.map(c => ({ industry: c.slug, posts: c.posts }));
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const urls: MetadataRoute.Sitemap = [

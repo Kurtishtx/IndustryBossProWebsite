@@ -1,6 +1,6 @@
 'use client';
 import { useState } from 'react';
-import type { BlogPost } from '../lib/blog-snow-data';
+import type { BlogPost } from '../lib/blog/types';
 import SiteHeader from './SiteHeader';
 import SiteFooter from './SiteFooter';
 import TrialModal from './TrialModal';

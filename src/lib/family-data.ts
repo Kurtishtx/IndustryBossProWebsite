@@ -65,9 +65,7 @@ export const familyApps: FamilyApp[] = [
     trade: 'Fence Contractors',
     tagline: 'Software for fence companies from first bid to final payment.',
     desc: 'Quote installs with materials and labor, send professional estimates clients sign digitally, and schedule crews by job phase. Track every project from lead to invoice so nothing sits half-finished and nothing goes unbilled.',
-    hubHref: '/fence-company-software',
-    hubLabel: 'Fence Company Software on IndustryBossPro',
-    accent: '#ff6a00',
+        accent: '#ff6a00',
   },
   {
     name: 'IrrigationBossPro',
@@ -96,8 +94,8 @@ export const familyApps: FamilyApp[] = [
     trade: 'Snow Removal & Plowing',
     tagline: 'Software for snow removal and plowing crews that live storm to storm.',
     desc: 'Start a storm and circle the map to queue every account for that event, dispatch plow and salt crews with GPS proof and photos on each push, and bill per-push, per-inch, or seasonal the moment the storm ends. De-icing logs and site records hold up when a slip-and-fall claim lands.',
-    hubHref: '/',
-    hubLabel: 'IndustryBossPro — All-in-One Field Service Software',
+    hubHref: '/snow-removal-software',
+    hubLabel: 'Snow Removal Software on IndustryBossPro',
     accent: '#2b8fd6',
   },
   {
@@ -107,8 +105,6 @@ export const familyApps: FamilyApp[] = [
     trade: 'Ice Delivery & Distribution',
     tagline: 'Software for packaged ice delivery and distribution routes.',
     desc: 'Built for ice distributors running restock routes to stores, bars, and events. Build routes by circling a map, track every customer freezer and par-level, and let drivers capture proof-of-delivery on their phone. Per-delivery, recurring, and consignment billing invoice each stop automatically.',
-    hubHref: '/',
-    hubLabel: 'IndustryBossPro — All-in-One Field Service Software',
     accent: '#12aacb',
   },
 ];
