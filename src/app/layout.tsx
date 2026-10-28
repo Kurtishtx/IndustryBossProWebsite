@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://industrybosspro.com'),
   alternates: { canonical: './' },
 
-  title: "Lawn Care Business Software | IndustryBossPro",
+  title: "Lawn Care & Landscaping Business Software | IndustryBossPro",
   description: "Lawn care business software for lawn companies and the services they add on — mowing, landscaping, pest and mosquito control, irrigation, snow removal and more. Scheduling, routing, invoicing, payments and a crew app. From $59/month, 14-day free trial.",
   /* Google's search results still show Vercel's default triangle for this domain, cached from
      before the crown existed. The files themselves have been correct for a month — /favicon.ico
