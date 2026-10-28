@@ -193,10 +193,10 @@ export default function Home() {
 
       {/* HERO */}
       <div className="hero" style={{ paddingTop: 52 }}>
-        <div className="hero-badge">Built for Every Field Service Industry · Since Day One</div>
-        <h1>One Platform.<br /><span>Every Industry.</span><br />Zero Compromises.</h1>
+        <div className="hero-badge">Lawn Care Business Software · Plus Every Service You Add On</div>
+        <h1>Lawn Care Software.<br /><span>Plus Everything You Add On.</span><br />One Login.</h1>
         <div className="hero-sub">
-          Snow removal, pool service, landscaping, irrigation, lawn care, pest control, mosquito control, fence, mowing, pet waste removal, garage door, carpet cleaning, fire inspection, and hood cleaning — IndustryBossPro runs them all from a single dashboard. The most powerful pending job board in field service.
+          Built for lawn care companies — and the services lawn companies add on: mowing, landscaping, pest and mosquito control, irrigation, pool service, snow removal, pressure washing, pet waste, gutter cleaning and junk removal. Run all of it from one dashboard, with the most powerful pending job board in the business.
         </div>
         <div className="hero-btns">
           <button onClick={openModal} className="btn-primary">Start Free — 14 Days, No Card</button>

@@ -25,8 +25,8 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://industrybosspro.com'),
   alternates: { canonical: './' },
 
-  title: "IndustryBossPro | All-In-One Field Service Software",
-  description: "The only software built for every field service industry — Snow, Landscaping, Irrigation, Lawn Care, Pest Control and more. Three plans from $59/month. 14-day free trial.",
+  title: "Lawn Care Business Software | IndustryBossPro",
+  description: "Lawn care business software for lawn companies and the services they add on — mowing, landscaping, pest and mosquito control, irrigation, snow removal and more. Scheduling, routing, invoicing, payments and a crew app. From $59/month, 14-day free trial.",
   /* Google's search results still show Vercel's default triangle for this domain, cached from
      before the crown existed. The files themselves have been correct for a month — /favicon.ico
      contains the crown at 16, 32 and 48px — but Google has no reason to refetch a URL it already
@@ -55,7 +55,7 @@ const orgLd = {
       name: 'IndustryBossPro',
       url: 'https://industrybosspro.com',
       logo: 'https://industrybosspro.com/icon.png',
-      description: 'All-in-one field service management software for the trades — scheduling, routing, invoicing, payments, CRM, and a crew mobile app. Three plans from $59/month.',
+      description: 'Lawn care business software — scheduling, routing, invoicing, payments, CRM and a crew mobile app for lawn companies and the services they add on. Three plans from $59/month.',
       contactPoint: {
         '@type': 'ContactPoint',
         telephone: '+1-682-899-7304',
@@ -75,7 +75,7 @@ const orgLd = {
       name: 'IndustryBossPro',
       applicationCategory: 'BusinessApplication',
       operatingSystem: 'Web, iOS, Android',
-      description: 'Field service software for scheduling, route optimization, estimates, auto-invoicing, card payments, two-way SMS, chemical compliance logging, and a crew mobile app.',
+      description: 'Lawn care business software for scheduling, route optimization, estimates, auto-invoicing, card payments, two-way SMS, chemical compliance logging, and a crew mobile app.',
       /* A single Offer at 199 told Google the price WAS 199, so search results quoted the top plan
          while the page itself leads with "$59 To Start". AggregateOffer is the shape for a product
          sold at a range, and it is the low price that gets shown. */
