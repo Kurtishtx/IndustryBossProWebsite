@@ -207,7 +207,7 @@ export default function HubPageTemplate({ page }: { page: HubPageData }) {
               { icon: '📱', title: 'Crew Mobile App', desc: 'Techs see their full day on their phone — stop list, property notes, gate codes, equipment details, and navigation. They check in, log materials, upload photos, and check out. No clipboard needed.' },
               { icon: '📸', title: 'Before & After Photos', desc: 'Crews upload photos at job start and completion. Build a visual record of every property over time. Protect yourself from disputes, prove the work was done, and wow clients with documentation.' },
               { icon: '💵', title: 'Auto-Invoicing', desc: 'Invoices fire automatically on job completion. Set payment terms, send by email or SMS, and collect by card on file. Money moves without you touching it. End-of-month billing runs are gone.' },
-              { icon: '💳', title: 'Card Payments Built In', desc: 'Clients pay online by card through Stripe — no third-party app needed. Store cards on file for automatic billing. Accept check or cash and log it manually. Every payment tracked in one place.' },
+              { icon: '💳', title: 'Card Payments Built In', desc: 'Clients pay online by card — no third-party app needed. Store cards on file for automatic billing. Accept check or cash and log it manually. Every payment tracked in one place.' },
               { icon: '📊', title: 'Estimates & Proposals', desc: 'Build and send professional estimates from your phone or desk. Clients approve online. Approved estimates convert to jobs automatically — no re-entry, no lost paperwork.' },
               { icon: '🗺️', title: 'Driver Route App', desc: 'Push optimized routes to driver phones with one tap. They follow turn-by-turn navigation stop to stop. You see their progress live. No more printed route sheets or missed stops.' },
               { icon: '🔬', title: 'Inventory & Materials Tracking', desc: 'Track chemical inventory, salt, and supply stock across trucks and storage locations. Log what was used on each job. Get low-stock alerts before you run out mid-week.' },
@@ -249,7 +249,7 @@ export default function HubPageTemplate({ page }: { page: HubPageData }) {
             <div style={{ fontSize: 60, fontWeight: 900, color: S.text, lineHeight: 1 }}>$59</div>
             <div style={{ color: S.muted, fontSize: 16, marginBottom: 12 }}>/month to start · Pro $89 · Crew $199</div>
 
-            {['Unlimited Clients & Properties', '14-Day Free Trial', '15 Lawn & Outdoor Services', 'Pending Job Board', 'Mobile App for Crews', 'Client App for Customers', 'Card Payments (Stripe)', 'Calendar & Dispatch Views', 'Live Crew Tracking', 'Waiting List (Spray Applications)', 'Estimates & Invoices', 'QuickBooks Export', 'No Contracts'].map(item => (
+            {['Unlimited Clients & Properties', '14-Day Free Trial', '15 Lawn & Outdoor Services', 'Pending Job Board', 'Mobile App for Crews', 'Client App for Customers', 'Built-In Card Payments', 'Calendar & Dispatch Views', 'Live Crew Tracking', 'Waiting List (Spray Applications)', 'Estimates & Invoices', 'QuickBooks Export', 'No Contracts'].map(item => (
               <div key={item} style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 10, textAlign: 'left' }}>
                 <span style={{ color: S.elec }}>✓</span>
                 <span style={{ color: S.text, fontSize: 14 }}>{item}</span>

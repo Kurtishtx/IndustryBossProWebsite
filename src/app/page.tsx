@@ -2,9 +2,10 @@
 import { useState } from 'react';
 import dynamic from 'next/dynamic';
 import SiteHeader from '../components/SiteHeader';
-import HeroDemo from '../components/HeroDemo';
 import PlanCompare from '../components/PlanCompare';
 import SeeItInAction from '../components/SeeItInAction';
+import SiteScore from '@/components/SiteScore';
+import { pixelDemoStarted } from '../components/MetaPixel';
 
 const HomeTrialModal = dynamic(() => import('../components/HomeTrialModal'), { ssr: false });
 
@@ -19,14 +20,172 @@ export default function Home() {
       <main>
       {/* LIVE INTERACTIVE DEMO — replaces the static cover image. Pick Desktop / Client / Crew and use the real apps. */}
       <div style={{ background: 'linear-gradient(135deg, #0a0a0a 0%, #111111 55%, #1a1a1a 100%)', padding: 'clamp(80px,8vw,96px) clamp(14px,4vw,24px) 0', textAlign: 'center' }}>
-        <div style={{ maxWidth: 1080, margin: '0 auto' }}>
-          <HeroDemo />
+        {/* ═══ AI ANSWERING — headline feature ═══ */}
+        <style>{`
+          @keyframes aiGlow { 0%,100% { box-shadow: 0 0 0 1px rgba(255,106,0,.55), 0 12px 40px rgba(255,106,0,.25); } 50% { box-shadow: 0 0 0 1px rgba(255,190,90,.9), 0 14px 56px rgba(255,106,0,.45); } }
+          @keyframes aiStar { 0%,100% { transform: rotate(0deg) scale(1); } 50% { transform: rotate(18deg) scale(1.15); } }
+          .ai-card { max-width: 900px; margin: 0 auto clamp(28px,4vw,40px); text-align: left; border-radius: 18px; padding: clamp(20px,3vw,30px) clamp(18px,3.4vw,34px); background: linear-gradient(135deg, rgba(255,106,0,.16) 0%, rgba(30,10,53,.9) 55%, rgba(255,106,0,.10) 100%); animation: aiGlow 3.2s ease-in-out infinite; position: relative; }
+          .ai-top { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-bottom: 10px; }
+          .ai-star { font-size: 26px; display: inline-block; animation: aiStar 2.4s ease-in-out infinite; filter: drop-shadow(0 0 8px rgba(255,190,90,.8)); }
+          .ai-tag { font-size: 11px; font-weight: 800; letter-spacing: 1.4px; text-transform: uppercase; color: #fff; background: #c75300; border-radius: 20px; padding: 4px 11px; }
+          .ai-soon { font-size: 11px; font-weight: 800; letter-spacing: 1.2px; text-transform: uppercase; color: #ffd28a; border: 1px solid rgba(255,210,138,.5); border-radius: 20px; padding: 3px 10px; }
+          .ai-h { color: #fff; font-size: clamp(24px,3.6vw,38px); font-weight: 800; line-height: 1.15; margin: 0 0 8px; }
+          .ai-h b { color: #ff6a00; }
+          .ai-p { color: rgba(255,255,255,.82); font-size: clamp(15px,1.8vw,17px); line-height: 1.55; margin: 0 0 16px; max-width: 760px; }
+          .ai-chips { display: flex; flex-wrap: wrap; gap: 8px; }
+          .ai-chip { color: #fff; font-size: 13px; font-weight: 700; background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.16); border-radius: 20px; padding: 6px 12px; }
+          .top-h { color: #fff; font-size: clamp(24px,3.6vw,40px); font-weight: 800; line-height: 1.15; margin: 0 auto clamp(14px,2vw,20px); max-width: 900px; }
+          .top-h span { color: #ff6a00; }
+          .addons-label { color: rgba(255,255,255,.55); font-size: 12px; font-weight: 800; letter-spacing: 2px; text-transform: uppercase; margin: 6px 0 12px; }
+          .top-cta { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin: 4px 0 clamp(26px,4vw,40px); }
+          .cta-demo { background: #c75300; color: #fff; font-weight: 800; font-size: 17px; padding: 15px 28px; border-radius: 10px; text-decoration: none; box-shadow: 0 10px 30px rgba(255,106,0,.45); }
+          .cta-trial { background: transparent; color: #fff; font-weight: 800; font-size: 17px; padding: 14px 26px; border-radius: 10px; text-decoration: none; border: 2px solid rgba(255,255,255,.5); }
+          /* Add-ons sit last in the dark band here (the picture is above them), so the grid carries the band's bottom padding. */
+          .addons { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; max-width: 1200px; margin: 0 auto; padding-bottom: clamp(40px,6vw,80px); align-items: stretch; }
+          .addons .ai-card { margin: 0; max-width: none; }
+          .addons .ai-h { font-size: clamp(22px,2.4vw,28px); }
+          @media (max-width: 900px) { .addons { grid-template-columns: 1fr; } }
+          .ss-btn { margin-top: 4px; background: #c75300; color: #fff; border: none; border-radius: 10px; padding: 12px 18px; font-weight: 800; font-size: 15px; cursor: pointer; box-shadow: 0 8px 24px rgba(0,0,0,.35); }
+          .ss-go { background: #c75300; }
+          .hero-mock { display: block; width: 100%; max-width: 1200px; height: auto; margin: 0 auto; }
+          .ai-pill { display: inline-flex; align-items: center; gap: 10px; flex-wrap: wrap; justify-content: center; max-width: 900px; margin: 0 auto clamp(18px,3vw,26px); padding: 8px 16px 8px 12px; border-radius: 30px; background: rgba(255,255,255,.06); color: rgba(255,255,255,.9); font-size: clamp(13px,1.6vw,15px); line-height: 1.35; animation: aiGlow 3.2s ease-in-out infinite; }
+          .ai-pill .ai-star { font-size: 18px; }
+          .ai-pill b { color: #fff; } .ai-pill .ai-price { color: #ff6a00; }
+        `}</style>
+        <h2 className="top-h">CRM &amp; Scheduling Software for <span>Lawn Care &amp; Home Service Companies</span></h2>
+
+        {/* Price, up top — same order sprayboss-website uses. */}
+        <div style={{textAlign:'center', marginBottom:'clamp(22px,3vw,32px)'}}>
+          <div style={{display:'inline-flex', alignItems:'baseline', gap:'12px', flexWrap:'wrap', justifyContent:'center', color:'#fff'}}>
+            <span style={{fontSize:'clamp(30px,4.6vw,46px)', fontWeight:800, lineHeight:1}}><span style={{fontSize:'.46em', fontWeight:700, color:'rgba(255,255,255,.6)'}}>CRM Software starting at </span>$59<span style={{fontSize:'.46em', fontWeight:700, color:'rgba(255,255,255,.6)'}}>/month</span></span>
+            <span style={{fontSize:'clamp(16px,2.2vw,22px)', fontWeight:800, color:'#ff6a00'}}>&middot; 14-Day Free Trial</span>
+          </div>
+          <div style={{color:'rgba(255,255,255,.6)', fontSize:'13px', fontWeight:600, marginTop:'7px', letterSpacing:'.3px'}}>No credit card required &middot; Cancel anytime</div>
+        </div>
+        <div className="top-cta"><a href="https://my.industrybosspro.com/demo.html" target="_blank" rel="noopener" className="cta-demo" onClick={(e) => { if (typeof window !== 'undefined' && screen.availWidth > 900) { e.preventDefault(); window.open((e.currentTarget as HTMLAnchorElement).href, 'bossprodemo', 'width=' + screen.availWidth + ',height=' + screen.availHeight + ',left=0,top=0,resizable=yes,scrollbars=yes'); }  try { if (localStorage.getItem('bp_notrack') !== '1') pixelDemoStarted(); } catch (e) { pixelDemoStarted(); } }}>&#9654; Try the Live Demo</a><a href="#" onClick={(e) => { e.preventDefault(); openModal(); }} className="cta-trial">Start Free Trial</a></div>
+        <link rel="preload" as="image" href="/hero-mockup.webp" fetchPriority="high" />
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <div className="integ-strip" style={{display:'flex', flexWrap:'wrap', alignItems:'center', justifyContent:'center', gap:'10px 14px', maxWidth:1000, margin:'0 auto clamp(26px,4vw,40px)', color:'rgba(255,255,255,.82)', fontSize:'clamp(14px,1.7vw,16px)', textAlign:'center'}}>
+          <span style={{fontWeight:800, color:'#fff'}}>Integrates with</span>
+          <span style={{display:'inline-flex', alignItems:'center', gap:7, background:'#fff', color:'#1f1f1f', borderRadius:20, padding:'6px 14px', fontWeight:800}}><span aria-hidden="true" style={{width:10, height:10, borderRadius:'50%', background:'#ff4f00'}}></span>Zapier</span>
+          <span style={{display:'inline-flex', alignItems:'center', gap:7, background:'#fff', color:'#1f1f1f', borderRadius:20, padding:'6px 14px', fontWeight:800}}><span aria-hidden="true" style={{width:10, height:10, borderRadius:'50%', background:'#6d00cc'}}></span>Make</span>
+          <span style={{fontWeight:800, color:'#fff', marginLeft:6}}>Payroll</span>
+          <span style={{display:'inline-flex', alignItems:'center', gap:7, background:'#fff', color:'#1f1f1f', borderRadius:20, padding:'6px 14px', fontWeight:800}}><span aria-hidden="true" style={{width:10, height:10, borderRadius:'50%', background:'#f45d48'}}></span>Gusto</span>
+          <span style={{display:'inline-flex', alignItems:'center', gap:7, background:'#fff', color:'#1f1f1f', borderRadius:20, padding:'6px 14px', fontWeight:800}}><span aria-hidden="true" style={{width:10, height:10, borderRadius:'50%', background:'#2ca01c'}}></span>QuickBooks</span>
+          <span style={{display:'inline-flex', alignItems:'center', gap:7, background:'#fff', color:'#1f1f1f', borderRadius:20, padding:'6px 14px', fontWeight:800}}><span aria-hidden="true" style={{width:10, height:10, borderRadius:'50%', background:'#d0271d'}}></span>ADP</span>
+          <span style={{display:'inline-flex', alignItems:'center', gap:7, background:'#fff', color:'#1f1f1f', borderRadius:20, padding:'6px 14px', fontWeight:800}}><span aria-hidden="true" style={{width:10, height:10, borderRadius:'50%', background:'#004b8d'}}></span>Paychex</span>
+          <span>Connect to thousands of apps, and run payroll: hours, overtime, tips &amp; bonuses</span>
+        </div>
+        <img src="/hero-mockup.webp" srcSet="/hero-mockup-640.webp 640w, /hero-mockup.webp 1200w" sizes="(max-width: 700px) 100vw, 1200px" fetchPriority="high" decoding="async" alt="IndustryBossPro software on a laptop with the client app and crew app on phones" className="hero-mock" width={1600} height={880} />
+        <div className="addons-label" style={{marginTop:'clamp(28px,4vw,44px)'}}>Add-ons</div>
+        <div className="addons">
+        <div className="ai-card">
+          <div className="ai-top">
+            <span className="ai-star" aria-hidden="true">&#11088;</span>
+            <span className="ai-tag">AI Answering</span>
+            <span className="ai-soon">New Add-On</span>
+          </div>
+          <h2 className="ai-h">An AI receptionist for only <b>49&cent; a minute</b></h2>
+          <p className="ai-p">The most real, human-sounding AI on the market &mdash; and it&apos;s built into IndustryBossPro, so it doesn&apos;t just take messages. It knows your customers and your CRM, tells them when you&apos;re coming, skips and reschedules services, tells existing customers your pricing and adds new services, sends a secure form to update their card, and takes down new customers for you. 24/7. You only pay when it answers.</p>
+          <div className="ai-chips">
+            <span className="ai-chip">&#128222; Answers every call, 24/7</span>
+            <span className="ai-chip">&#129504; Knows your customers &amp; CRM</span>
+            <span className="ai-chip">&#128197; Skips &amp; reschedules</span>
+            <span className="ai-chip">&#128178; Quotes &amp; adds services</span>
+            <span className="ai-chip">&#128179; Sends card-update form</span>
+            <span className="ai-chip">&#128221; Takes new leads</span>
+            <span className="ai-chip">&#9989; No monthly fee</span>
+          </div>
+        </div>
+        <div className="ai-card">
+          <div className="ai-top">
+            <span className="ai-star" aria-hidden="true">&#127760;</span>
+            <span className="ai-tag">Free Website</span>
+            <span className="ai-soon">Included</span>
+          </div>
+          <h2 className="ai-h">A professional website, <b>free</b> with any paid plan</h2>
+          <p className="ai-p">We build it for you &mdash; a perfectly built 200&ndash;300 page website with a free domain, or use your own. Built to score 90+ on Google, and 100 on SEO, and we send you the score report once it&apos;s built. Fast on every phone, and every form on it goes straight into IndustryBossPro as a new lead.</p>
+          <div className="ai-chips">
+            <span className="ai-chip">&#127760; Free domain (or use yours)</span>
+            <span className="ai-chip">&#128196; 200&ndash;300 pages</span>
+            <span className="ai-chip">&#128200; 90+ and 100 on SEO</span>
+            <span className="ai-chip">&#128221; Forms flow into your CRM</span>
+            <span className="ai-chip">&#128241; Mobile-perfect</span>
+            <span className="ai-chip">&#128736; We build it for you</span>
+          </div>
+          <p className="ai-p" style={{margin:'14px 0 10px'}}>Compare our score to any other website you&apos;ve been quoted &mdash; or the one you have now.</p>
+          <SiteScore />
+        </div>
         </div>
       </div>
 
       {/* Plans, directly under the demo. Someone who has just used the software asks what it
           costs next, and the answer should not be a scroll away. */}
+      <section aria-label="Our promise" style={{ background: '#0b0b12', padding: 'clamp(40px,6vw,64px) 20px', textAlign: 'center' }}>
+        <h2 style={{ color: '#fff', fontSize: 'clamp(24px,3.4vw,38px)', fontWeight: 800, lineHeight: 1.2, margin: '0 auto 12px', maxWidth: 900 }}>We give you everything you need to succeed, <span style={{ color: 'var(--orange)' }}>because we want you to win.</span></h2>
+        <p style={{ color: 'rgba(255,255,255,.82)', fontSize: 'clamp(15px,1.8vw,18px)', lineHeight: 1.6, margin: '0 auto', maxWidth: 760 }}>Software, a free website, AI answering, and a real owner who&apos;ll move your data and pick up the phone.</p>
+      </section>
+      <section aria-label="Your data is yours" style={{ background: '#f6f7f9', padding: 'clamp(40px,6vw,70px) 20px' }}>
+        <div style={{ maxWidth: 1100, margin: '0 auto', textAlign: 'center' }}>
+          <h2 style={{ color: '#111827', fontSize: 'clamp(26px,3.6vw,40px)', fontWeight: 800, lineHeight: 1.15, margin: '0 0 10px' }}>Your data is yours. Period.</h2>
+          <p style={{ color: '#4b5563', fontSize: 'clamp(15px,1.8vw,18px)', lineHeight: 1.6, margin: '0 auto 28px', maxWidth: 720 }}>Moving your business into new software is a big deal. Here is our promise, in writing.</p>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: 14, textAlign: 'left' }}>
+            {[
+              ['\u{1F512}', 'We never sell your data', 'Not your info, not your customers\u2019. Not ever, to anyone.'],
+              ['\u{1F91D}', 'Your customers are yours', 'We never contact, market to, or sell to your customers.'],
+              ['\u{1F6AB}', 'Never used against you', 'We won\u2019t use your data to compete with you or hand it to anyone in your industry.'],
+              ['\u{1F4E4}', 'Take it with you anytime', 'Export your customers, properties, invoices and history whenever you want.'],
+              ['\u{1F5D1}\uFE0F', 'Leave and it\u2019s deleted', 'Cancel and we delete it within 90 days, or sooner if you ask.'],
+              ['\u{1F440}', 'Nobody snoops', 'We only open your account when you ask us for help. Your data never trains AI.'],
+            ].map(([ic, h, t]) => (
+              <div key={h} style={{ background: '#fff', borderRadius: 12, padding: '18px 18px 16px', boxShadow: '0 1px 3px rgba(0,0,0,.07)' }}>
+                <div aria-hidden="true" style={{ fontSize: 24, marginBottom: 6 }}>{ic}</div>
+                <div style={{ fontWeight: 800, fontSize: 16, color: '#111827', marginBottom: 4 }}>{h}</div>
+                <div style={{ fontSize: 14.5, color: '#4b5563', lineHeight: 1.5 }}>{t}</div>
+              </div>
+            ))}
+          </div>
+          <p style={{ color: '#374151', fontSize: 15, margin: '24px 0 0', lineHeight: 1.6 }}>
+            <b>Larger company?</b> We&apos;ll sign a Data Protection Agreement with you, already signed on our side. <a href="mailto:Support@bossprohq.com?subject=Data%20Protection%20Agreement%20request" style={{ color: '#1d4ed8', fontWeight: 700 }}>Request it</a>
+            <span style={{ color: '#6b7280' }}> &middot; <a href="/privacy-policy" style={{ color: '#4b5563' }}>Privacy Policy</a> &middot; <a href="/terms" style={{ color: '#4b5563' }}>Terms</a></span>
+          </p>
+        </div>
+      </section>
       <PlanCompare />
+      <section aria-label="Tech reviews, tips and bonuses" style={{ background: '#ffffff', padding: 'clamp(44px,7vw,80px) 20px' }}>
+        <div style={{ maxWidth: 1100, margin: '0 auto' }}>
+          <div style={{ textAlign: 'center', marginBottom: 'clamp(22px,3.5vw,36px)' }}>
+            <span style={{ display: 'inline-block', background: '#16a34a', color: '#fff', fontWeight: 900, fontSize: 12, letterSpacing: 1.5, borderRadius: 20, padding: '5px 12px', marginBottom: 12 }}>NEW</span>
+            <h2 style={{ color: '#111827', fontSize: 'clamp(26px,3.8vw,42px)', fontWeight: 900, lineHeight: 1.12, margin: '0 0 12px' }}>Tech reviews, tips &amp; crew bonuses</h2>
+            <p style={{ color: '#4b5563', fontSize: 'clamp(15px,1.9vw,19px)', lineHeight: 1.6, margin: '0 auto', maxWidth: 780 }}>Your customers rate the tech who did the job and can leave a tip. Your crew sees their stars, their tips and exactly how close they are to their next bonus. Included on every IndustryBossPro plan.</p>
+          </div>
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: 'clamp(20px,3vw,36px)', alignItems: 'center', justifyContent: 'center' }}>
+          <figure style={{ flex: '0 0 auto', width: 'min(290px, 82vw)', margin: 0, textAlign: 'center' }}>
+            <div style={{ background: '#0b0b0f', borderRadius: 38, padding: 10, boxShadow: '0 24px 60px rgba(15,23,42,.28), 0 0 0 2px #26262c' }}>
+              <img src="/crew-bonus.webp" width={600} height={1055} loading="lazy" decoding="async" alt="Crew app Bonus &amp; Tips screen: the tech's star rating, tips owed, how close they are to their bonus, and what customers said" style={{ display: 'block', width: '100%', height: 'auto', borderRadius: 29 }} />
+            </div>
+            <figcaption style={{ color: '#4b5563', fontSize: 13.5, fontWeight: 600, marginTop: 10 }}>What your tech sees in the crew app</figcaption>
+          </figure>
+          <div style={{ flex: '1 1 520px', minWidth: 0, display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: 14 }}>
+            {[
+              ['\u2B50', 'Customers rate their tech', 'After every job, a text, email or app alert asks \u201cHow did Jake do?\u201d One tap for stars and a comment.'],
+              ['\u{1F49A}', 'Tips go to the crew', 'Customers tip on their card on file or a new card. Every tip is tracked per employee, minus processing.'],
+              ['\u{1F69A}', 'Fair crew splits', 'Set the split per truck, give drivers a bigger share, or change any single job. Drag your crew between trucks.'],
+              ['\u{1F3AF}', 'Bonuses they can see', 'Set goals by gross, jobs or rating. Techs see \u201cYou\u2019re $200 away from your bonus\u201d in the crew app.'],
+              ['\u{1F44B}', 'Meet your tech', 'Customers see who\u2019s coming, with a photo, rating, reviews and an \u201cabout me\u201d before the visit.'],
+              ['\u{1F4B8}', 'Run payroll in one click', 'Hours and overtime from the crew time clock, plus tips and bonuses, ready for Gusto, QuickBooks, ADP or Paychex. By hand or automatically.'],
+            ].map(([ic, h, t]) => (
+              <div key={h} style={{ background: '#f8fafc', border: '1px solid #e5e7eb', borderRadius: 14, padding: '18px 18px 16px' }}>
+                <div aria-hidden="true" style={{ fontSize: 26, marginBottom: 6 }}>{ic}</div>
+                <div style={{ fontWeight: 800, fontSize: 16.5, color: '#111827', marginBottom: 4 }}>{h}</div>
+                <div style={{ fontSize: 14.5, color: '#4b5563', lineHeight: 1.5 }}>{t}</div>
+              </div>
+            ))}
+          </div>
+          </div>
+          <p style={{ textAlign: 'center', color: '#374151', fontSize: 15, margin: '22px 0 0', lineHeight: 1.6 }}>Happy customers can share it on Google or Facebook too, and private feedback comes straight to you.</p>
+        </div>
+      </section>
 
       {/* Video sits BELOW the demo and plans - for the visitor who scrolled past without
           clicking. Renders nothing until the YouTube IDs are filled in. */}
@@ -43,7 +202,7 @@ export default function Home() {
           <button onClick={openModal} className="btn-primary">Start Free — 14 Days, No Card</button>
           <a href="#features" className="btn-ghost">See All Features →</a>
         </div>
-        <p style={{ textAlign:'center', color:'rgba(245,245,245,.72)', fontSize:15, fontWeight:600, marginTop:18 }}>No credit card required &middot; 14-day free trial &middot; <b style={{ color:'#ff6a00' }}>from $59/mo</b> after &middot; <b style={{ color:'#ff6a00' }}>demo needs no signup</b></p>
+        <p style={{ textAlign:'center', color:'rgba(245,245,245,.72)', fontSize:15, fontWeight:600, marginTop:18 }}>No credit card required &middot; 14-day free trial &middot; <b style={{ color:'#ff6a00' }}>CRM Software starting at $59/mo</b> after &middot; <b style={{ color:'#ff6a00' }}>demo needs no signup</b></p>
         <p style={{ textAlign:'center', color:'rgba(245,245,245,.72)', fontSize:14, marginTop:8 }}>Works in the US, Canada, Australia, New Zealand and the UK — bills your customers in your own currency.</p>
         <div className="hero-proof">
           <div className="proof-item"><div className="proof-val">$59</div><div className="proof-lbl">To Start</div></div>
@@ -214,7 +373,7 @@ export default function Home() {
           <table className="vs-table">
             <thead>
               <tr>
-                <th></th>
+                <th><span style={{ position:'absolute', width:1, height:1, overflow:'hidden', clip:'rect(0 0 0 0)', whiteSpace:'nowrap' }}>Feature</span></th>
                 <th className="ibp-col">IndustryBossPro</th>
                 <th className="other-col">ServiceTitan / Jobber</th>
               </tr>
@@ -281,6 +440,18 @@ export default function Home() {
             ['🔧','Custom Fields','Add any field to any record — fully customizable for your operation.'],
             ['👑','Role-Based Access','Owner, Manager, Office, Tech, and Mobile roles with granular permissions across every module.'],
             ['📊','Admin Dashboard','Full business overview — revenue, jobs, staff, and performance at a glance.'],
+            ['📞','AI Receptionist','A human-sounding AI answers your phone 24/7, knows your customers, books and reschedules, and takes new leads. 49¢ a minute, only when it answers.'],
+            ['⭐','Tech Reviews & Tips','After every job, customers rate the tech who did it and can leave a tip. Every tip is tracked per employee.'],
+            ['🎯','Crew Bonuses & Splits','Set bonus goals by gross, jobs or rating. Give drivers a bigger share. Techs see “You’re $200 away from your bonus” in the crew app.'],
+            ['💸','One-Click Payroll','Hours and overtime from the time clock, plus tips and bonuses, ready for Gusto, QuickBooks, ADP or Paychex. By hand or on a schedule.'],
+            ['👋','Meet Your Tech','Customers see who is coming before the visit, with a photo, star rating, reviews and an “about me.”'],
+            ['🔗','Zapier & Make','Connect IndustryBossPro to thousands of apps like Google Sheets, Mailchimp and Slack with instant webhooks and an API key.'],
+            ['📱','Social Inbox (Soon)','Facebook and Instagram messages, comments and lead forms plus Google reviews in one inbox, and post to all of them plus TikTok. Launching soon.'],
+            ['⚡','Fast Setup','Trucks, crew, products, services, pricing and packages in about 10 minutes. Upload what you already have.'],
+            ['🌐','Free Website','A 200–300 page website built for Google, with a free domain. Every form goes straight into IndustryBossPro as a new lead.'],
+            ['🎨','Make It Yours','Pick any colors for your software and choose exactly what shows in your sidebar, in any order.'],
+            ['📝','Estimates from the Field','Techs write and send estimates from the crew app on the spot, even with no signal.'],
+            ['🔒','Your Data Is Yours','Never sold, never shared. Export anytime. Bigger companies get a signed data protection agreement.'],
           ].map(([icon,title,desc]) => (
             <div key={title} className="feat-card">
               <span className="feat-icon">{icon}</span>
@@ -330,7 +501,7 @@ export default function Home() {
 
           {/* Only what is true on every plan. What scales by plan is spelled out below. */}
           <ul className="price-includes">
-            {['Unlimited Clients & Properties','Waiting List (Spray Applications)','All 9 Industries Covered','Pending Job Board','Package Plans & Recurring Services','Estimates & Invoices','Card Payments (Stripe)','Mobile App','Client App for Customers','Live Crew Tracking','Calendar & Dispatch Views','Free Onboarding'].map(li => (
+            {['Unlimited Clients & Properties','Waiting List (Spray Applications)','All 9 Industries Covered','Pending Job Board','Package Plans & Recurring Services','Estimates & Invoices','Built-In Card Payments','Mobile App','Client App for Customers','Live Crew Tracking','Calendar & Dispatch Views','Free Onboarding'].map(li => (
               <li key={li}>{li}</li>
             ))}
           </ul>

@@ -9,7 +9,7 @@ export const CANADA_FEATURES: CanadaFeature[] = [
   {
     icon: '🇨🇦',
     title: 'CAD invoicing, out of the box',
-    body: 'Flip Country to Canada in Company Info and CAD becomes the default everywhere your customers see money — invoices, card-on-file charges, and Pay Now links, all running through a Canadian Stripe account you own. Their statements read in plain Canadian dollars.',
+    body: 'Flip Country to Canada in Company Info and CAD becomes the default everywhere your customers see money — invoices, card-on-file charges, and Pay Now links, all running through a Canadian merchant account you own. Their statements read in plain Canadian dollars.',
   },
   {
     icon: '🔁',
@@ -41,7 +41,7 @@ export const CANADA_FEATURES: CanadaFeature[] = [
 export const CANADA_FAQS: CanadaFaq[] = [
   {
     q: 'Does IndustryBossPro work for field service companies in Canada?',
-    a: 'Yes. Scheduling, routing, estimates, customer records, invoicing in Canadian dollars, the crew app and the customer app all work in Canada today. You connect your own Canadian Stripe account, and your customers pay in CAD.',
+    a: 'Yes. Scheduling, routing, estimates, customer records, invoicing in Canadian dollars, the crew app and the customer app all work in Canada today. You connect your own Canadian merchant account, and your customers pay in CAD.',
   },
   {
     q: 'Will my customers be billed in Canadian dollars?',

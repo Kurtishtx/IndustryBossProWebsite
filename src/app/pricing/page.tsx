@@ -85,7 +85,7 @@ export default function PricingPage() {
       <div style={{ maxWidth: 700, margin: '0 auto 80px', padding: '0 24px' }}>
         <h2 style={{ fontSize: 28, fontWeight: 800, color: '#fff', marginBottom: 32, textAlign: 'center' }}>Common Questions</h2>
         {[
-          { q: 'Does it work outside the US?', a: 'Yes. It runs in the US, Canada, Australia, New Zealand and the UK. Set your country once and your invoices and card charges run in your own currency — USD, CAD, AUD, NZD or GBP — through your own Stripe account.' },
+          { q: 'Does it work outside the US?', a: 'Yes. It runs in the US, Canada, Australia, New Zealand and the UK. Set your country once and your invoices and card charges run in your own currency — USD, CAD, AUD, NZD or GBP — through your own merchant account.' },
           { q: 'Where do the included texts apply?', a: 'The US and Canada. Carriers in Australia, New Zealand and the UK charge several times more to deliver a text, so texting there is set up on request and priced by country — everything else works the same, and email alerts are included everywhere.' },
           { q: 'Is there really no setup fee?', a: 'None. Sign up, get access, and we\'ll do a free onboarding call to get you configured. No contracts, no implementation fees.' },
           { q: 'What happens after the 14-day trial?', a: 'You\'re billed for the plan you pick — $59, $89 or $199 — month-to-month. Cancel anytime before the trial ends and you won\'t be charged.' },

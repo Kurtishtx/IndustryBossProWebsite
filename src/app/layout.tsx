@@ -4,6 +4,7 @@ import Script from "next/script";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import MetaPixel from '@/components/MetaPixel';
+import AfterInteraction from '@/components/AfterInteraction';
 import PageBeacon from '@/components/PageBeacon';
 
 const inter = Inter({
@@ -102,18 +103,20 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         {children}
         {/* Meta Pixel — builds the retargeting audience. Inert until
             NEXT_PUBLIC_META_PIXEL_ID is set on the Vercel project. */}
-        <MetaPixel />
+        <AfterInteraction><MetaPixel /></AfterInteraction>
         {/* Pageview beacon on EVERY page, not just the ones with a demo on them. */}
         <PageBeacon />
         {/* Google tag (gtag.js) — GA4 + Google Ads conversion tracking (account AW-994175437) */}
-        <Script src="https://www.googletagmanager.com/gtag/js?id=G-97QJVSZQ1M" strategy="afterInteractive" />
-        <Script id="gtag-init" strategy="afterInteractive">
-          {`window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-97QJVSZQ1M');
-            gtag('config', 'AW-994175437');`}
-        </Script>
+        <AfterInteraction>
+          <Script src="https://www.googletagmanager.com/gtag/js?id=G-97QJVSZQ1M" strategy="afterInteractive" />
+          <Script id="gtag-init" strategy="afterInteractive">
+            {`window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-97QJVSZQ1M');
+              gtag('config', 'AW-994175437');`}
+          </Script>
+        </AfterInteraction>
       </body>
     </html>
   );

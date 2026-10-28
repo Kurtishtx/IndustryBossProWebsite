@@ -72,7 +72,7 @@ body {
 .hero h1 span { color: #ff6a00; }
 .hero-sub { color: rgba(245,245,245,.72); font-size: clamp(16px, 2vw, 20px); max-width: 660px; margin: 0 auto 44px; line-height: 1.7; }
 .hero-btns { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin-bottom: 60px; }
-.btn-primary { background: #ff6a00; color: #fff; padding: 17px 40px; border-radius: 7px; font-size: 16px; font-weight: 700; text-decoration: none; display: inline-block; border: none; cursor: pointer; font-family: inherit; transition: opacity .15s; }
+.btn-primary { background: #ff6a00; color: #0a0a0a; padding: 17px 40px; border-radius: 7px; font-size: 16px; font-weight: 700; text-decoration: none; display: inline-block; border: none; cursor: pointer; font-family: inherit; transition: opacity .15s; }
 .btn-primary:hover { opacity: .88; }
 .btn-ghost { background: transparent; color: rgba(255,255,255,.75); border: 2px solid rgba(255,255,255,.25); padding: 15px 36px; border-radius: 7px; font-size: 16px; font-weight: 600; text-decoration: none; display: inline-block; transition: border-color .2s, color .2s; }
 .btn-ghost:hover { border-color: rgba(255,255,255,.6); color: #fff; }
@@ -105,15 +105,15 @@ section { padding: 96px 40px; }
 .mock-item { background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.1); border-radius: 8px; padding: 12px 14px; margin-bottom: 10px; display: flex; align-items: center; gap: 12px; }
 .mock-label { color: rgba(245,245,245,.9); font-size: 13px; font-weight: 600; }
 .mock-sub { color: rgba(245,245,245,.65); font-size: 11px; margin-top: 1px; }
-.mock-badge { margin-left: auto; background: #ff6a00; color: #fff; font-size: 11px; font-weight: 700; padding: 3px 9px; border-radius: 10px; flex-shrink: 0; white-space: nowrap; }
-.mock-badge.green { background: #16a34a; }
-.mock-badge.purple { background: #7c3aed; }
+.mock-badge { margin-left: auto; background: #ff6a00; color: #0a0a0a; font-size: 11px; font-weight: 700; padding: 3px 9px; border-radius: 10px; flex-shrink: 0; white-space: nowrap; }
+.mock-badge.green { background: #15803d; color: #fff; }
+.mock-badge.purple { background: #7c3aed; color: #fff; }
 
 .premium-band { background: #0a0a0a; padding: 96px 40px; text-align: center; }
 .premium-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; max-width: 1100px; margin: 0 auto; }
 .premium-card { background: rgba(255,255,255,.04); border: 1px solid #e63000; border-radius: 12px; padding: 28px 24px; text-align: left; }
 .premium-card-icon { font-size: 28px; margin-bottom: 14px; }
-.premium-card h4 { color: #fff; font-size: 16px; font-weight: 700; margin-bottom: 8px; }
+.premium-card h4, .premium-card h3 { color: #fff; font-size: 16px; font-weight: 700; margin-bottom: 8px; }
 .premium-card p { color: rgba(245,245,245,.70); font-size: 13px; line-height: 1.6; }
 
 .industry-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 20px; max-width: 1200px; margin: 0 auto; }
@@ -145,7 +145,7 @@ section { padding: 96px 40px; }
 .vs-table td.other-col { color: rgba(245,245,245,.55); }
 
 .price-card { background: #1a1a1a; border: 3px solid #ff6a00; border-radius: 18px; padding: 48px 44px; max-width: 580px; margin: 0 auto; position: relative; box-shadow: 0 0 0 6px rgba(255,106,0,.08), 0 20px 60px rgba(0,0,0,.3); }
-.price-badge { position: absolute; top: -15px; left: 50%; transform: translateX(-50%); background: #ff6a00; color: #fff; font-size: 11px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; padding: 5px 18px; border-radius: 20px; white-space: nowrap; }
+.price-badge { position: absolute; top: -15px; left: 50%; transform: translateX(-50%); background: #ff6a00; color: #0a0a0a; font-size: 11px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; padding: 5px 18px; border-radius: 20px; white-space: nowrap; }
 .price-amount { font-size: 68px; font-weight: 900; color: #fff; line-height: 1; }
 .price-amount sup { font-size: 28px; vertical-align: super; }
 .price-period { color: rgba(245,245,245,.70); font-size: 14px; margin-top: 4px; margin-bottom: 28px; }

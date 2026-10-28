@@ -46,7 +46,7 @@ const FEATURES = [
   {
     icon: '💳',
     title: 'Payment Processing',
-    desc: 'Collect payments via Stripe — card on file, online portal, or manual entry. Auto-charge recurring clients after job completion. Built-in decline handling.',
+    desc: 'Collect payments — card on file, online portal, or manual entry. Auto-charge recurring clients after job completion. Built-in decline handling.',
     href: '/features/field-service-payment-processing',
   },
   {
