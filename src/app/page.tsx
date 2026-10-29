@@ -469,6 +469,7 @@ export default function Home() {
             <span style={{ display: 'inline-block', color: '#ff6a00', fontWeight: 900, fontSize: 12, letterSpacing: 1.5, textTransform: 'uppercase', marginBottom: 10 }}>Billing</span>
             <h2 style={{ color: '#111827', fontSize: 'clamp(26px,3.8vw,42px)', fontWeight: 900, lineHeight: 1.12, margin: '0 0 14px' }}>Get Paid Faster. Chase Less.</h2>
             <p style={{ color: '#4b5563', fontSize: 'clamp(15px,1.9vw,18px)', lineHeight: 1.7, margin: '0 0 18px' }}>Send estimates and invoices that look like they came from a big company &mdash; your logo, your colors, your photo. Customers approve the estimate and add a card in one click, and invoices charge the card on file when the job is marked complete.</p>
+            <p style={{ color: '#4b5563', fontSize: 'clamp(15px,1.9vw,18px)', lineHeight: 1.7, margin: '0 0 18px' }}><strong>Fully customizable, top to bottom.</strong> Change every color, choose exactly what shows and what doesn&apos;t, and pick from over 100 preloaded header photos &mdash; or upload your own photos and logos.</p>
             <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'grid', gap: 10 }}>
               {[
                 'Branded or classic email, picked when you send',
