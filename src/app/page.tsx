@@ -462,6 +462,41 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ═══ BILLING: the owner's real branded estimate + invoice (10/29) ═══ */}
+      <section id="billing" aria-label="Branded estimates and invoices" style={{ background: '#ffffff', padding: 'clamp(44px,7vw,80px) 20px' }}>
+        <div style={{ maxWidth: 1100, margin: '0 auto', display: 'flex', flexWrap: 'wrap', gap: 'clamp(24px,4vw,56px)', alignItems: 'center' }}>
+          <div style={{ flex: '1 1 380px', minWidth: 0 }}>
+            <span style={{ display: 'inline-block', color: '#ff6a00', fontWeight: 900, fontSize: 12, letterSpacing: 1.5, textTransform: 'uppercase', marginBottom: 10 }}>Billing</span>
+            <h2 style={{ color: '#111827', fontSize: 'clamp(26px,3.8vw,42px)', fontWeight: 900, lineHeight: 1.12, margin: '0 0 14px' }}>Get Paid Faster. Chase Less.</h2>
+            <p style={{ color: '#4b5563', fontSize: 'clamp(15px,1.9vw,18px)', lineHeight: 1.7, margin: '0 0 18px' }}>Send estimates and invoices that look like they came from a big company &mdash; your logo, your colors, your photo. Customers approve the estimate and add a card in one click, and invoices charge the card on file when the job is marked complete.</p>
+            <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'grid', gap: 10 }}>
+              {[
+                'Branded or classic email, picked when you send',
+                'Approve online and add a card in one click',
+                'Approved estimates become scheduled jobs',
+                'Invoices with line items, sales tax and Pay Now',
+                'Card-on-file auto-billing when the job is done',
+                'Past-due follow-up on unpaid invoices',
+              ].map((t) => (
+                <li key={t} style={{ display: 'flex', gap: 10, color: '#374151', fontSize: 15.5, lineHeight: 1.5 }}><span style={{ color: '#16a34a', fontWeight: 900 }}>✓</span>{t}</li>
+              ))}
+            </ul>
+          </div>
+          <div style={{ flex: '1 1 440px', minWidth: 0, background: '#0b0b12', borderRadius: 16, padding: 24, display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16, alignItems: 'start' }}>
+            <figure style={{ margin: 0 }}>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/branded-estimate.webp" width={900} height={2399} loading="lazy" decoding="async" alt="Branded estimate email with the company logo, a header photo, service badges and an Approve Estimate button" style={{ display: 'block', width: '100%', height: 'auto', borderRadius: 8, boxShadow: '0 10px 30px rgba(0,0,0,.35)' }} />
+              <figcaption style={{ color: 'rgba(255,255,255,.7)', fontSize: 12, textAlign: 'center', marginTop: 10, textTransform: 'uppercase', letterSpacing: 1 }}>Branded Estimate</figcaption>
+            </figure>
+            <figure style={{ margin: 0, paddingTop: 48 }}>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/branded-invoice.webp" width={900} height={1683} loading="lazy" decoding="async" alt="Branded invoice email with line items, sales tax, amount due and a Pay Now button" style={{ display: 'block', width: '100%', height: 'auto', borderRadius: 8, boxShadow: '0 10px 30px rgba(0,0,0,.35)' }} />
+              <figcaption style={{ color: 'rgba(255,255,255,.7)', fontSize: 12, textAlign: 'center', marginTop: 10, textTransform: 'uppercase', letterSpacing: 1 }}>Branded Invoice</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
       {/* ═══ CUSTOMER APP ═══ */}
       <section style={{background:'linear-gradient(135deg,#1c0a33,#12061f)'}}>
         <div className="centered" style={{maxWidth:'1100px', margin:'0 auto'}}>
