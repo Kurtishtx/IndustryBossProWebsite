@@ -498,6 +498,44 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ═══ MEETINGS: real screenshots of the Meetings page and Meeting Alerts (10/29) ═══ */}
+      <section id="meetings" aria-label="Meetings and booking link" style={{ background: '#f6f7f9', padding: 'clamp(44px,7vw,80px) 20px' }}>
+        <div style={{ maxWidth: 1100, margin: '0 auto' }}>
+          <div style={{ textAlign: 'center', maxWidth: 800, margin: '0 auto clamp(22px,3.5vw,36px)' }}>
+            <span style={{ display: 'inline-block', color: '#ff6a00', fontWeight: 900, fontSize: 12, letterSpacing: 1.5, textTransform: 'uppercase', marginBottom: 10 }}>Meetings</span>
+            <h2 style={{ color: '#111827', fontSize: 'clamp(26px,3.8vw,42px)', fontWeight: 900, lineHeight: 1.12, margin: '0 0 12px' }}>Book Meetings. Get a YES Back by Text.</h2>
+            <p style={{ color: '#4b5563', fontSize: 'clamp(15px,1.9vw,18px)', lineHeight: 1.7, margin: 0 }}>Estimate walkthroughs, phone calls or video meetings &mdash; your customers pick a day and time from your booking link, or you and your staff set it up for them. IndustryBossPro texts them right away and sends reminders before, and when they reply YES or NO the meeting marks itself Confirmed or Can&apos;t make it.</p>
+          </div>
+          <div style={{ background: '#7d838c', borderRadius: 16, padding: 'clamp(14px,2.5vw,24px)', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 420px), 1fr))', gap: 18, alignItems: 'start' }}>
+            <figure style={{ margin: 0 }}>
+              <figcaption style={{ color: '#ffffff', fontWeight: 700, fontSize: 12, textAlign: 'center', marginBottom: 10, textTransform: 'uppercase', letterSpacing: 1 }}>Your Meetings Page</figcaption>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/meetings-list.webp" width={1200} height={617} loading="lazy" decoding="async" alt="Meetings page: upcoming meetings by day with Confirmed, Waiting on reply and Booked online tags, a Copy booking link button and New Meeting" style={{ display: 'block', width: '100%', height: 'auto', borderRadius: 8, boxShadow: '0 10px 30px rgba(0,0,0,.35)', border: '3px solid #ffffff' }} />
+            </figure>
+            <figure style={{ margin: 0 }}>
+              <figcaption style={{ color: '#ffffff', fontWeight: 700, fontSize: 12, textAlign: 'center', marginBottom: 10, textTransform: 'uppercase', letterSpacing: 1 }}>The Texts They Get</figcaption>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/meetings-alerts.webp" width={1000} height={921} loading="lazy" decoding="async" alt="Meeting Alerts: reminders 1 day and 1 hour before, a Reply YES to confirm option, and the booked text with a live preview" style={{ display: 'block', width: '100%', height: 'auto', borderRadius: 8, boxShadow: '0 10px 30px rgba(0,0,0,.35)', border: '3px solid #ffffff' }} />
+            </figure>
+          </div>
+          <ul style={{ listStyle: 'none', padding: 0, margin: 'clamp(20px,3vw,30px) auto 0', maxWidth: 1000, display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '10px 28px' }}>
+            {[
+              'Customers book themselves from your link',
+              'Or you and your staff book it for them',
+              'In person, phone or video',
+              'Booked, moved and canceled texts',
+              'Reminders whenever you want them',
+              'YES / NO replies confirm on their own',
+              'Assign each meeting to someone on your team',
+              'Turn it on any time in Settings › Add-ons',
+            ].map((t) => (
+              <li key={t} style={{ display: 'flex', gap: 10, color: '#374151', fontSize: 15.5, lineHeight: 1.5 }}><span style={{ color: '#16a34a', fontWeight: 900 }}>✓</span>{t}</li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
+
       {/* ═══ CUSTOMER APP ═══ */}
       <section style={{background:'linear-gradient(135deg,#1c0a33,#12061f)'}}>
         <div className="centered" style={{maxWidth:'1100px', margin:'0 auto'}}>
