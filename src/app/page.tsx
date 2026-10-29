@@ -484,14 +484,14 @@ export default function Home() {
           </div>
           <div style={{ flex: '1 1 440px', minWidth: 0, background: '#7d838c', borderRadius: 16, padding: 24, display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16, alignItems: 'start' }}>
             <figure style={{ margin: 0 }}>
+              <figcaption style={{ color: '#ffffff', fontWeight: 700, fontSize: 12, textAlign: 'center', marginBottom: 10, textTransform: 'uppercase', letterSpacing: 1 }}>Branded Estimate</figcaption>
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img src="/branded-estimate-v4.webp" width={900} height={2399} loading="lazy" decoding="async" alt="Branded estimate email with the company logo, a header photo, service badges and an Approve Estimate button" style={{ display: 'block', width: '100%', height: 'auto', borderRadius: 8, boxShadow: '0 10px 30px rgba(0,0,0,.35)', border: '3px solid #ffffff' }} />
-              <figcaption style={{ color: '#ffffff', fontWeight: 700, fontSize: 12, textAlign: 'center', marginTop: 10, textTransform: 'uppercase', letterSpacing: 1 }}>Branded Estimate</figcaption>
             </figure>
-            <figure style={{ margin: 0, paddingTop: 48 }}>
+            <figure style={{ margin: 0 }}>
+              <figcaption style={{ color: '#ffffff', fontWeight: 700, fontSize: 12, textAlign: 'center', marginBottom: 10, textTransform: 'uppercase', letterSpacing: 1 }}>Branded Invoice</figcaption>
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img src="/branded-invoice-v4.webp" width={900} height={1683} loading="lazy" decoding="async" alt="Branded invoice email with line items, sales tax, amount due and a Pay Now button" style={{ display: 'block', width: '100%', height: 'auto', borderRadius: 8, boxShadow: '0 10px 30px rgba(0,0,0,.35)', border: '3px solid #ffffff' }} />
-              <figcaption style={{ color: '#ffffff', fontWeight: 700, fontSize: 12, textAlign: 'center', marginTop: 10, textTransform: 'uppercase', letterSpacing: 1 }}>Branded Invoice</figcaption>
             </figure>
           </div>
         </div>
