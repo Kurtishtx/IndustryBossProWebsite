@@ -517,6 +517,11 @@ export default function Home() {
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img src="/meetings-alerts.webp" width={1000} height={921} loading="lazy" decoding="async" alt="Meeting Alerts: reminders 1 day and 1 hour before, a Reply YES to confirm option, and the booked text with a live preview" style={{ display: 'block', width: '100%', height: 'auto', borderRadius: 8, boxShadow: '0 10px 30px rgba(0,0,0,.35)', border: '3px solid #ffffff' }} />
             </figure>
+            <figure style={{ margin: 0, gridColumn: '1 / -1' }}>
+              <figcaption style={{ color: '#ffffff', fontWeight: 700, fontSize: 12, textAlign: 'center', marginBottom: 10, textTransform: 'uppercase', letterSpacing: 1 }}>Turn Each One On or Off Under Alerts</figcaption>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/meetings-toggles.webp" width={1400} height={439} loading="lazy" decoding="async" alt="Alerts page, Client Meeting Alerts: Meeting Booked, Reminder, Moved and Canceled, each with its own Text and Email switch" style={{ display: 'block', width: '100%', height: 'auto', borderRadius: 8, boxShadow: '0 10px 30px rgba(0,0,0,.35)', border: '3px solid #ffffff' }} />
+            </figure>
           </div>
           <ul style={{ listStyle: 'none', padding: 0, margin: 'clamp(20px,3vw,30px) auto 0', maxWidth: 1000, display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '10px 28px' }}>
             {[
