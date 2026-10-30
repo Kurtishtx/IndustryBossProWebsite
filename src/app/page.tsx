@@ -121,6 +121,84 @@ export default function Home() {
 
       {/* Plans, directly under the demo. Someone who has just used the software asks what it
           costs next, and the answer should not be a scroll away. */}
+      {/* ═══ BILLING: the owner's real branded estimate + invoice (10/29) ═══ */}
+      <section id="billing" aria-label="Branded estimates and invoices" style={{ background: '#ffffff', padding: 'clamp(44px,7vw,80px) 20px' }}>
+        <div style={{ maxWidth: 1100, margin: '0 auto', display: 'flex', flexWrap: 'wrap', gap: 'clamp(24px,4vw,56px)', alignItems: 'center' }}>
+          <div style={{ flex: '1 1 380px', minWidth: 0 }}>
+            <span style={{ display: 'inline-block', color: '#ff6a00', fontWeight: 900, fontSize: 12, letterSpacing: 1.5, textTransform: 'uppercase', marginBottom: 10 }}>Billing</span>
+            <h2 style={{ color: '#111827', fontSize: 'clamp(26px,3.8vw,42px)', fontWeight: 900, lineHeight: 1.12, margin: '0 0 14px' }}>Get Paid Faster. Chase Less.</h2>
+            <p style={{ color: '#4b5563', fontSize: 'clamp(15px,1.9vw,18px)', lineHeight: 1.7, margin: '0 0 18px' }}>Send estimates and invoices that look like they came from a big company &mdash; your logo, your colors, your photo. Customers approve the estimate and add a card in one click, and invoices charge the card on file when the job is marked complete.</p>
+            <p style={{ color: '#4b5563', fontSize: 'clamp(15px,1.9vw,18px)', lineHeight: 1.7, margin: '0 0 18px' }}><strong>Fully customizable, top to bottom.</strong> Change every color, choose exactly what shows and what doesn&apos;t, and pick from over 100 preloaded header photos &mdash; or upload your own photos and logos.</p>
+            <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'grid', gap: 10 }}>
+              {[
+                'Branded or classic email, picked when you send',
+                'Approve online and add a card in one click',
+                'Approved estimates become scheduled jobs',
+                'Invoices with line items, sales tax and Pay Now',
+                'Card-on-file auto-billing when the job is done',
+                'Past-due follow-up on unpaid invoices',
+              ].map((t) => (
+                <li key={t} style={{ display: 'flex', gap: 10, color: '#374151', fontSize: 15.5, lineHeight: 1.5 }}><span style={{ color: '#16a34a', fontWeight: 900 }}>✓</span>{t}</li>
+              ))}
+            </ul>
+          </div>
+          <div style={{ flex: '1 1 440px', minWidth: 0, background: '#7d838c', borderRadius: 16, padding: 24, display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16, alignItems: 'start' }}>
+            <figure style={{ margin: 0 }}>
+              <figcaption style={{ color: '#ffffff', fontWeight: 700, fontSize: 12, textAlign: 'center', marginBottom: 10, textTransform: 'uppercase', letterSpacing: 1 }}>Branded Estimate</figcaption>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/branded-estimate-v4.webp" width={900} height={2399} loading="lazy" decoding="async" alt="Branded estimate email with the company logo, a header photo, service badges and an Approve Estimate button" style={{ display: 'block', width: '100%', height: 'auto', borderRadius: 8, boxShadow: '0 10px 30px rgba(0,0,0,.35)', border: '3px solid #ffffff' }} />
+            </figure>
+            <figure style={{ margin: 0 }}>
+              <figcaption style={{ color: '#ffffff', fontWeight: 700, fontSize: 12, textAlign: 'center', marginBottom: 10, textTransform: 'uppercase', letterSpacing: 1 }}>Branded Invoice</figcaption>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/branded-invoice-v4.webp" width={900} height={1683} loading="lazy" decoding="async" alt="Branded invoice email with line items, sales tax, amount due and a Pay Now button" style={{ display: 'block', width: '100%', height: 'auto', borderRadius: 8, boxShadow: '0 10px 30px rgba(0,0,0,.35)', border: '3px solid #ffffff' }} />
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      {/* ═══ MEETINGS: real screenshots of the Meetings page and Meeting Alerts (10/29) ═══ */}
+      <section id="meetings" aria-label="Meetings and booking link" style={{ background: '#f6f7f9', padding: 'clamp(44px,7vw,80px) 20px' }}>
+        <div style={{ maxWidth: 1100, margin: '0 auto' }}>
+          <div style={{ textAlign: 'center', maxWidth: 800, margin: '0 auto clamp(22px,3.5vw,36px)' }}>
+            <span style={{ display: 'inline-block', color: '#ff6a00', fontWeight: 900, fontSize: 12, letterSpacing: 1.5, textTransform: 'uppercase', marginBottom: 10 }}>Meetings</span>
+            <h2 style={{ color: '#111827', fontSize: 'clamp(26px,3.8vw,42px)', fontWeight: 900, lineHeight: 1.12, margin: '0 0 12px' }}>Book Meetings. Get a YES Back by Text.</h2>
+            <p style={{ color: '#4b5563', fontSize: 'clamp(15px,1.9vw,18px)', lineHeight: 1.7, margin: 0 }}>Estimate walkthroughs, phone calls or video meetings &mdash; your customers pick a day and time from your booking link, or you and your staff set it up for them. IndustryBossPro texts them right away and sends reminders before, and when they reply YES or NO the meeting marks itself Confirmed or Can&apos;t make it.</p>
+          </div>
+          <div style={{ background: '#7d838c', borderRadius: 16, padding: 'clamp(14px,2.5vw,24px)', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 420px), 1fr))', gap: 18, alignItems: 'start' }}>
+            <figure style={{ margin: 0 }}>
+              <figcaption style={{ color: '#ffffff', fontWeight: 700, fontSize: 12, textAlign: 'center', marginBottom: 10, textTransform: 'uppercase', letterSpacing: 1 }}>Your Meetings Page</figcaption>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/meetings-list.webp" width={1200} height={617} loading="lazy" decoding="async" alt="Meetings page: upcoming meetings by day with Confirmed, Waiting on reply and Booked online tags, a Copy booking link button and New Meeting" style={{ display: 'block', width: '100%', height: 'auto', borderRadius: 8, boxShadow: '0 10px 30px rgba(0,0,0,.35)', border: '3px solid #ffffff' }} />
+            </figure>
+            <figure style={{ margin: 0 }}>
+              <figcaption style={{ color: '#ffffff', fontWeight: 700, fontSize: 12, textAlign: 'center', marginBottom: 10, textTransform: 'uppercase', letterSpacing: 1 }}>The Texts They Get</figcaption>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/meetings-alerts.webp" width={1000} height={921} loading="lazy" decoding="async" alt="Meeting Alerts: reminders 1 day and 1 hour before, a Reply YES to confirm option, and the booked text with a live preview" style={{ display: 'block', width: '100%', height: 'auto', borderRadius: 8, boxShadow: '0 10px 30px rgba(0,0,0,.35)', border: '3px solid #ffffff' }} />
+            </figure>
+            <figure style={{ margin: 0, gridColumn: '1 / -1' }}>
+              <figcaption style={{ color: '#ffffff', fontWeight: 700, fontSize: 12, textAlign: 'center', marginBottom: 10, textTransform: 'uppercase', letterSpacing: 1 }}>Turn Each One On or Off Under Alerts</figcaption>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/meetings-toggles.webp" width={1400} height={439} loading="lazy" decoding="async" alt="Alerts page, Client Meeting Alerts: Meeting Booked, Reminder, Moved and Canceled, each with its own Text and Email switch" style={{ display: 'block', width: '100%', height: 'auto', borderRadius: 8, boxShadow: '0 10px 30px rgba(0,0,0,.35)', border: '3px solid #ffffff' }} />
+            </figure>
+          </div>
+          <ul style={{ listStyle: 'none', padding: 0, margin: 'clamp(20px,3vw,30px) auto 0', maxWidth: 1000, display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '10px 28px' }}>
+            {[
+              'Customers book themselves from your link',
+              'Or you and your staff book it for them',
+              'In person, phone or video',
+              'Booked, moved and canceled texts',
+              'Reminders whenever you want them',
+              'YES / NO replies confirm on their own',
+              'Assign each meeting to someone on your team',
+              'Turn it on any time in Settings › Add-ons',
+            ].map((t) => (
+              <li key={t} style={{ display: 'flex', gap: 10, color: '#374151', fontSize: 15.5, lineHeight: 1.5 }}><span style={{ color: '#16a34a', fontWeight: 900 }}>✓</span>{t}</li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
       <section aria-label="Our promise" style={{ background: '#0b0b12', padding: 'clamp(40px,6vw,64px) 20px', textAlign: 'center' }}>
         <h2 style={{ color: '#fff', fontSize: 'clamp(24px,3.4vw,38px)', fontWeight: 800, lineHeight: 1.2, margin: '0 auto 12px', maxWidth: 900 }}>We give you everything you need to succeed, <span style={{ color: 'var(--orange)' }}>because we want you to win.</span></h2>
         <p style={{ color: 'rgba(255,255,255,.82)', fontSize: 'clamp(15px,1.8vw,18px)', lineHeight: 1.6, margin: '0 auto', maxWidth: 760 }}>Software, a free website, AI answering, and a real owner who&apos;ll move your data and pick up the phone.</p>
@@ -461,85 +539,6 @@ export default function Home() {
           ))}
         </div>
       </section>
-
-      {/* ═══ BILLING: the owner's real branded estimate + invoice (10/29) ═══ */}
-      <section id="billing" aria-label="Branded estimates and invoices" style={{ background: '#ffffff', padding: 'clamp(44px,7vw,80px) 20px' }}>
-        <div style={{ maxWidth: 1100, margin: '0 auto', display: 'flex', flexWrap: 'wrap', gap: 'clamp(24px,4vw,56px)', alignItems: 'center' }}>
-          <div style={{ flex: '1 1 380px', minWidth: 0 }}>
-            <span style={{ display: 'inline-block', color: '#ff6a00', fontWeight: 900, fontSize: 12, letterSpacing: 1.5, textTransform: 'uppercase', marginBottom: 10 }}>Billing</span>
-            <h2 style={{ color: '#111827', fontSize: 'clamp(26px,3.8vw,42px)', fontWeight: 900, lineHeight: 1.12, margin: '0 0 14px' }}>Get Paid Faster. Chase Less.</h2>
-            <p style={{ color: '#4b5563', fontSize: 'clamp(15px,1.9vw,18px)', lineHeight: 1.7, margin: '0 0 18px' }}>Send estimates and invoices that look like they came from a big company &mdash; your logo, your colors, your photo. Customers approve the estimate and add a card in one click, and invoices charge the card on file when the job is marked complete.</p>
-            <p style={{ color: '#4b5563', fontSize: 'clamp(15px,1.9vw,18px)', lineHeight: 1.7, margin: '0 0 18px' }}><strong>Fully customizable, top to bottom.</strong> Change every color, choose exactly what shows and what doesn&apos;t, and pick from over 100 preloaded header photos &mdash; or upload your own photos and logos.</p>
-            <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'grid', gap: 10 }}>
-              {[
-                'Branded or classic email, picked when you send',
-                'Approve online and add a card in one click',
-                'Approved estimates become scheduled jobs',
-                'Invoices with line items, sales tax and Pay Now',
-                'Card-on-file auto-billing when the job is done',
-                'Past-due follow-up on unpaid invoices',
-              ].map((t) => (
-                <li key={t} style={{ display: 'flex', gap: 10, color: '#374151', fontSize: 15.5, lineHeight: 1.5 }}><span style={{ color: '#16a34a', fontWeight: 900 }}>✓</span>{t}</li>
-              ))}
-            </ul>
-          </div>
-          <div style={{ flex: '1 1 440px', minWidth: 0, background: '#7d838c', borderRadius: 16, padding: 24, display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16, alignItems: 'start' }}>
-            <figure style={{ margin: 0 }}>
-              <figcaption style={{ color: '#ffffff', fontWeight: 700, fontSize: 12, textAlign: 'center', marginBottom: 10, textTransform: 'uppercase', letterSpacing: 1 }}>Branded Estimate</figcaption>
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/branded-estimate-v4.webp" width={900} height={2399} loading="lazy" decoding="async" alt="Branded estimate email with the company logo, a header photo, service badges and an Approve Estimate button" style={{ display: 'block', width: '100%', height: 'auto', borderRadius: 8, boxShadow: '0 10px 30px rgba(0,0,0,.35)', border: '3px solid #ffffff' }} />
-            </figure>
-            <figure style={{ margin: 0 }}>
-              <figcaption style={{ color: '#ffffff', fontWeight: 700, fontSize: 12, textAlign: 'center', marginBottom: 10, textTransform: 'uppercase', letterSpacing: 1 }}>Branded Invoice</figcaption>
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/branded-invoice-v4.webp" width={900} height={1683} loading="lazy" decoding="async" alt="Branded invoice email with line items, sales tax, amount due and a Pay Now button" style={{ display: 'block', width: '100%', height: 'auto', borderRadius: 8, boxShadow: '0 10px 30px rgba(0,0,0,.35)', border: '3px solid #ffffff' }} />
-            </figure>
-          </div>
-        </div>
-      </section>
-
-      {/* ═══ MEETINGS: real screenshots of the Meetings page and Meeting Alerts (10/29) ═══ */}
-      <section id="meetings" aria-label="Meetings and booking link" style={{ background: '#f6f7f9', padding: 'clamp(44px,7vw,80px) 20px' }}>
-        <div style={{ maxWidth: 1100, margin: '0 auto' }}>
-          <div style={{ textAlign: 'center', maxWidth: 800, margin: '0 auto clamp(22px,3.5vw,36px)' }}>
-            <span style={{ display: 'inline-block', color: '#ff6a00', fontWeight: 900, fontSize: 12, letterSpacing: 1.5, textTransform: 'uppercase', marginBottom: 10 }}>Meetings</span>
-            <h2 style={{ color: '#111827', fontSize: 'clamp(26px,3.8vw,42px)', fontWeight: 900, lineHeight: 1.12, margin: '0 0 12px' }}>Book Meetings. Get a YES Back by Text.</h2>
-            <p style={{ color: '#4b5563', fontSize: 'clamp(15px,1.9vw,18px)', lineHeight: 1.7, margin: 0 }}>Estimate walkthroughs, phone calls or video meetings &mdash; your customers pick a day and time from your booking link, or you and your staff set it up for them. IndustryBossPro texts them right away and sends reminders before, and when they reply YES or NO the meeting marks itself Confirmed or Can&apos;t make it.</p>
-          </div>
-          <div style={{ background: '#7d838c', borderRadius: 16, padding: 'clamp(14px,2.5vw,24px)', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 420px), 1fr))', gap: 18, alignItems: 'start' }}>
-            <figure style={{ margin: 0 }}>
-              <figcaption style={{ color: '#ffffff', fontWeight: 700, fontSize: 12, textAlign: 'center', marginBottom: 10, textTransform: 'uppercase', letterSpacing: 1 }}>Your Meetings Page</figcaption>
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/meetings-list.webp" width={1200} height={617} loading="lazy" decoding="async" alt="Meetings page: upcoming meetings by day with Confirmed, Waiting on reply and Booked online tags, a Copy booking link button and New Meeting" style={{ display: 'block', width: '100%', height: 'auto', borderRadius: 8, boxShadow: '0 10px 30px rgba(0,0,0,.35)', border: '3px solid #ffffff' }} />
-            </figure>
-            <figure style={{ margin: 0 }}>
-              <figcaption style={{ color: '#ffffff', fontWeight: 700, fontSize: 12, textAlign: 'center', marginBottom: 10, textTransform: 'uppercase', letterSpacing: 1 }}>The Texts They Get</figcaption>
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/meetings-alerts.webp" width={1000} height={921} loading="lazy" decoding="async" alt="Meeting Alerts: reminders 1 day and 1 hour before, a Reply YES to confirm option, and the booked text with a live preview" style={{ display: 'block', width: '100%', height: 'auto', borderRadius: 8, boxShadow: '0 10px 30px rgba(0,0,0,.35)', border: '3px solid #ffffff' }} />
-            </figure>
-            <figure style={{ margin: 0, gridColumn: '1 / -1' }}>
-              <figcaption style={{ color: '#ffffff', fontWeight: 700, fontSize: 12, textAlign: 'center', marginBottom: 10, textTransform: 'uppercase', letterSpacing: 1 }}>Turn Each One On or Off Under Alerts</figcaption>
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/meetings-toggles.webp" width={1400} height={439} loading="lazy" decoding="async" alt="Alerts page, Client Meeting Alerts: Meeting Booked, Reminder, Moved and Canceled, each with its own Text and Email switch" style={{ display: 'block', width: '100%', height: 'auto', borderRadius: 8, boxShadow: '0 10px 30px rgba(0,0,0,.35)', border: '3px solid #ffffff' }} />
-            </figure>
-          </div>
-          <ul style={{ listStyle: 'none', padding: 0, margin: 'clamp(20px,3vw,30px) auto 0', maxWidth: 1000, display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '10px 28px' }}>
-            {[
-              'Customers book themselves from your link',
-              'Or you and your staff book it for them',
-              'In person, phone or video',
-              'Booked, moved and canceled texts',
-              'Reminders whenever you want them',
-              'YES / NO replies confirm on their own',
-              'Assign each meeting to someone on your team',
-              'Turn it on any time in Settings › Add-ons',
-            ].map((t) => (
-              <li key={t} style={{ display: 'flex', gap: 10, color: '#374151', fontSize: 15.5, lineHeight: 1.5 }}><span style={{ color: '#16a34a', fontWeight: 900 }}>✓</span>{t}</li>
-            ))}
-          </ul>
-        </div>
-      </section>
-
 
       {/* ═══ CUSTOMER APP ═══ */}
       <section style={{background:'linear-gradient(135deg,#1c0a33,#12061f)'}}>
