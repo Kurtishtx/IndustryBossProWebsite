@@ -85,7 +85,8 @@ export default function Home() {
             <span className="ai-tag">AI Answering</span>
             <span className="ai-soon">New Add-On</span>
           </div>
-          <h2 className="ai-h">An AI receptionist for only <b>49&cent; a minute</b></h2>
+          <h2 className="ai-h">An AI receptionist for only <b>29&cent; a minute</b></h2>
+          <p className="ai-p ai-vol" style={{ fontWeight: 700, marginTop: 4 }}>Answering 100+ calls a day? Email <a href="mailto:Support@bossprohq.com" style={{ color: 'inherit', textDecoration: 'underline' }}>Support@bossprohq.com</a> for a volume rate.</p>
           <p className="ai-p">The most real, human-sounding AI on the market &mdash; and it&apos;s built into IndustryBossPro, so it doesn&apos;t just take messages. It knows your customers and your CRM, tells them when you&apos;re coming, skips and reschedules services, tells existing customers your pricing and adds new services, sends a secure form to update their card, and takes down new customers for you. 24/7. You only pay when it answers.</p>
           <div className="ai-chips">
             <span className="ai-chip">&#128222; Answers every call, 24/7</span>
@@ -520,7 +521,7 @@ export default function Home() {
             ['🔧','Custom Fields','Add any field to any record — fully customizable for your operation.'],
             ['👑','Role-Based Access','Owner, Manager, Office, Tech, and Mobile roles with granular permissions across every module.'],
             ['📊','Admin Dashboard','Full business overview — revenue, jobs, staff, and performance at a glance.'],
-            ['📞','AI Receptionist','A human-sounding AI answers your phone 24/7, knows your customers, books and reschedules, and takes new leads. 49¢ a minute, only when it answers.'],
+            ['📞','AI Receptionist','A human-sounding AI answers your phone 24/7, knows your customers, books and reschedules, and takes new leads. 29¢ a minute, only when it answers.'],
             ['⭐','Tech Reviews & Tips','After every job, customers rate the tech who did it and can leave a tip. Every tip is tracked per employee.'],
             ['🎯','Crew Bonuses & Splits','Set bonus goals by gross, jobs or rating. Give drivers a bigger share. Techs see “You’re $200 away from your bonus” in the crew app.'],
             ['💸','One-Click Payroll','Hours and overtime from the time clock, plus tips and bonuses, ready for Gusto, QuickBooks, ADP or Paychex. By hand or on a schedule.'],
