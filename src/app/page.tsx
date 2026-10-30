@@ -121,6 +121,9 @@ export default function Home() {
 
       {/* Plans, directly under the demo. Someone who has just used the software asks what it
           costs next, and the answer should not be a scroll away. */}
+      {/* The 3 plans, right after the top picture and before the real-picture sections (owner, 10/30). */}
+      <PlanCompare />
+
       {/* ═══ BILLING: the owner's real branded estimate + invoice (10/29) ═══ */}
       <section id="billing" aria-label="Branded estimates and invoices" style={{ background: '#ffffff', padding: 'clamp(44px,7vw,80px) 20px' }}>
         <div style={{ maxWidth: 1100, margin: '0 auto', display: 'flex', flexWrap: 'wrap', gap: 'clamp(24px,4vw,56px)', alignItems: 'center' }}>
@@ -229,7 +232,6 @@ export default function Home() {
           </p>
         </div>
       </section>
-      <PlanCompare />
       <section aria-label="Tech reviews, tips and bonuses" style={{ background: '#ffffff', padding: 'clamp(44px,7vw,80px) 20px' }}>
         <div style={{ maxWidth: 1100, margin: '0 auto' }}>
           <div style={{ textAlign: 'center', marginBottom: 'clamp(22px,3.5vw,36px)' }}>
