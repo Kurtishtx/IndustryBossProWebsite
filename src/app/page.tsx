@@ -36,7 +36,7 @@ export default function Home() {
           .ai-chip { color: #fff; font-size: 13px; font-weight: 700; background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.16); border-radius: 20px; padding: 6px 12px; }
           .top-h { color: #fff; font-size: clamp(24px,3.6vw,40px); font-weight: 800; line-height: 1.15; margin: 0 auto clamp(14px,2vw,20px); max-width: 900px; }
           .top-h span { color: #ff6a00; }
-          .addons-label { color: rgba(255,255,255,.55); font-size: 12px; font-weight: 800; letter-spacing: 2px; text-transform: uppercase; margin: 6px 0 12px; }
+          .addons-label { color: #ffffff; font-size: clamp(26px,3.6vw,40px); font-weight: 900; letter-spacing: 3px; text-transform: uppercase; text-align: center; margin: 8px 0 14px; }
           .top-cta { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin: 4px 0 clamp(26px,4vw,40px); }
           .cta-demo { background: #c75300; color: #fff; font-weight: 800; font-size: 17px; padding: 15px 28px; border-radius: 10px; text-decoration: none; box-shadow: 0 10px 30px rgba(255,106,0,.45); }
           .cta-trial { background: transparent; color: #fff; font-weight: 800; font-size: 17px; padding: 14px 26px; border-radius: 10px; text-decoration: none; border: 2px solid rgba(255,255,255,.5); }
