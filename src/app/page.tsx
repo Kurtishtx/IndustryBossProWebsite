@@ -173,18 +173,23 @@ export default function Home() {
             <span style={{ display: 'inline-block', color: '#ff6a00', fontWeight: 900, fontSize: 12, letterSpacing: 1.5, textTransform: 'uppercase', marginBottom: 10 }}>AI Assistant</span>
             <h2 style={{ color: '#111827', fontSize: 'clamp(26px,3.8vw,42px)', fontWeight: 900, lineHeight: 1.12, margin: '0 0 12px' }}>Your AI Office Assistant. Just Tell It What To Do.</h2>
             <p style={{ color: '#4b5563', fontSize: 'clamp(15px,1.9vw,18px)', lineHeight: 1.7, margin: '0 0 14px' }}>It&apos;s built right into IndustryBossPro and knows your customers, your schedule and your money. Type "Schedule Mary Jones&apos;s Mosquito Control for this Tuesday" and it finds the job, picks the date and shows you a card. Nothing changes until you press Confirm.</p>
+            <p style={{ color: '#111827', fontSize: 15.5, fontWeight: 800, margin: '0 0 10px' }}>Talk to it like you&apos;d talk to your office manager:</p>
             <ul style={{ listStyle: 'none', padding: 0, margin: '0 0 16px', display: 'grid', gap: '8px' }}>
               {[
-                'Ask anything: who owes you, tomorrow\'s route, last month\'s revenue',
-                'Reports in seconds, like your sales tax for any month',
-                'Schedule, move or skip visits',
-                'Add plans and customers, at your price-table prices',
-                'Text customers, send invoices and card-update forms',
-                'Knows every page of the app, so it answers how-to questions too',
-              ].map((t) => (
-                <li key={t} style={{ display: 'flex', gap: 10, color: '#374151', fontSize: 15.5, lineHeight: 1.5 }}><span style={{ color: '#16a34a', fontWeight: 900 }}>✓</span>{t}</li>
+                ['"Schedule the Smiths for Tuesday"', 'Done'],
+                ['"Add a plan for Dirk at $50 a visit"', 'Done'],
+                ['"Text Mary we\'re running late"', 'Sent'],
+                ['"Take me to unpaid invoices"', 'Opens the page'],
+                ['"How much sales tax did I collect last month?"', 'Answered in seconds'],
+                ['"How do I set up auto-billing?"', 'Explains it, with an Open button'],
+              ].map(([say, did]) => (
+                <li key={say} style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'baseline', gap: '4px 10px', background: '#f3f4f6', borderRadius: 10, padding: '9px 12px', fontSize: 15, lineHeight: 1.45 }}>
+                  <span style={{ color: '#111827', fontStyle: 'italic', fontWeight: 600 }}>{say}</span>
+                  <span style={{ color: '#16a34a', fontWeight: 900, whiteSpace: 'nowrap' }}>&rarr; {did}</span>
+                </li>
               ))}
             </ul>
+            <p style={{ color: '#4b5563', fontSize: 15, lineHeight: 1.6, margin: '0 0 12px' }}>It shows you every change first. Nothing happens until you press <b>Confirm</b>.</p>
             <p style={{ color: '#111827', fontSize: 15.5, lineHeight: 1.6, margin: 0, fontWeight: 700 }}>Included on every plan: 50, 100 or 250 questions a month. Need more? 250 more for $15.</p>
           </div>
         </div>
