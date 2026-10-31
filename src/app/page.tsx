@@ -125,7 +125,7 @@ export default function Home() {
             <span className="ai-soon">Included</span>
           </div>
           <h2 className="ai-h">A professional website, <b>free</b> with any paid plan</h2>
-          <p className="ai-p ai-vol" style={{ fontWeight: 700, marginTop: 4 }}>Websites like this often cost ,000&ndash;5,000 to have built. Yours is free.</p>
+          <p className="ai-p ai-vol" style={{ fontWeight: 700, marginTop: 4 }}>Websites like this often cost $5,000&ndash;$15,000 to have built. Yours is free.</p>
           <p className="ai-p">We build it for you &mdash; a perfectly built 200&ndash;300 page website with a free domain, or use your own. Built to score 90+ on Google, and 100 on SEO, and we send you the score report once it&apos;s built. Fast on every phone, and every form on it goes straight into IndustryBossPro as a new lead.</p>
           <div className="ai-chips">
             <span className="ai-chip">&#127760; Free domain (or use yours)</span>
