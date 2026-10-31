@@ -76,7 +76,7 @@ export default function Home() {
           <span style={{display:'inline-flex', alignItems:'center', gap:7, background:'#fff', color:'#1f1f1f', borderRadius:20, padding:'6px 14px', fontWeight:800}}><span aria-hidden="true" style={{width:10, height:10, borderRadius:'50%', background:'#004b8d'}}></span>Paychex</span>
           <span>Connect to thousands of apps, and run payroll: hours, overtime, tips &amp; bonuses</span>
         </div>
-        <img src="/hero-mockup.webp" srcSet="/hero-mockup-640.webp 640w, /hero-mockup.webp 1200w" sizes="(max-width: 700px) 100vw, 1200px" fetchPriority="high" decoding="async" alt="IndustryBossPro software on a laptop with the AI Assistant scheduling a job and a hand-drawn map lasso, plus the client app and crew app on phones" className="hero-mock" width={1600} height={880} />
+        <img src="/hero-mockup.webp" srcSet="/hero-mockup-640.webp 640w, /hero-mockup.webp 1200w" sizes="(max-width: 700px) 100vw, 1200px" fetchPriority="high" decoding="async" alt="IndustryBossPro software on a laptop with the AI Assistant button and a hand-drawn map lasso, plus the client app and crew app on phones" className="hero-mock" width={1600} height={880} />
         <div className="addons-label" style={{marginTop:'clamp(28px,4vw,44px)'}}>Add-ons</div>
         <p style={{ textAlign: 'center', color: 'rgba(255,255,255,.82)', fontSize: 'clamp(14px,1.7vw,16px)', lineHeight: 1.55, margin: '-6px auto 18px', maxWidth: 720 }}>All optional &mdash; use the ones you want, skip the ones you don&apos;t. Everything else in IndustryBossPro works the same either way, and you can turn any of them on or off anytime.</p>
         <div className="addons">
@@ -125,6 +125,7 @@ export default function Home() {
             <span className="ai-soon">Included</span>
           </div>
           <h2 className="ai-h">A professional website, <b>free</b> with any paid plan</h2>
+          <p className="ai-p ai-vol" style={{ fontWeight: 700, marginTop: 4 }}>Websites like this often cost ,000&ndash;5,000 to have built. Yours is free.</p>
           <p className="ai-p">We build it for you &mdash; a perfectly built 200&ndash;300 page website with a free domain, or use your own. Built to score 90+ on Google, and 100 on SEO, and we send you the score report once it&apos;s built. Fast on every phone, and every form on it goes straight into IndustryBossPro as a new lead.</p>
           <div className="ai-chips">
             <span className="ai-chip">&#127760; Free domain (or use yours)</span>
