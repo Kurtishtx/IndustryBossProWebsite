@@ -118,7 +118,7 @@ export default function Home() {
             <a className="ai-chip" href="#ai-assistant" style={{ textDecoration: 'none' }}>&#128064; See it work &rarr;</a>
           </div>
         </div>
-        <div className="ai-card">
+        <div className="ai-card" style={{ gridColumn: '1 / -1' }}>
           <div className="ai-top">
             <span className="ai-star" aria-hidden="true">&#127760;</span>
             <span className="ai-tag">Free Website</span>
