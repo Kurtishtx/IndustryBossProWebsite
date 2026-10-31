@@ -76,8 +76,9 @@ export default function Home() {
           <span style={{display:'inline-flex', alignItems:'center', gap:7, background:'#fff', color:'#1f1f1f', borderRadius:20, padding:'6px 14px', fontWeight:800}}><span aria-hidden="true" style={{width:10, height:10, borderRadius:'50%', background:'#004b8d'}}></span>Paychex</span>
           <span>Connect to thousands of apps, and run payroll: hours, overtime, tips &amp; bonuses</span>
         </div>
-        <img src="/hero-mockup.webp" srcSet="/hero-mockup-640.webp 640w, /hero-mockup.webp 1200w" sizes="(max-width: 700px) 100vw, 1200px" fetchPriority="high" decoding="async" alt="IndustryBossPro software on a laptop with the client app and crew app on phones" className="hero-mock" width={1600} height={880} />
+        <img src="/hero-mockup.webp" srcSet="/hero-mockup-640.webp 640w, /hero-mockup.webp 1200w" sizes="(max-width: 700px) 100vw, 1200px" fetchPriority="high" decoding="async" alt="IndustryBossPro software on a laptop with the AI Assistant scheduling a job and a hand-drawn map lasso, plus the client app and crew app on phones" className="hero-mock" width={1600} height={880} />
         <div className="addons-label" style={{marginTop:'clamp(28px,4vw,44px)'}}>Add-ons</div>
+        <p style={{ textAlign: 'center', color: 'rgba(255,255,255,.82)', fontSize: 'clamp(14px,1.7vw,16px)', lineHeight: 1.55, margin: '-6px auto 18px', maxWidth: 720 }}>All optional &mdash; use the ones you want, skip the ones you don&apos;t. Everything else in IndustryBossPro works the same either way, and you can turn any of them on or off anytime.</p>
         <div className="addons">
         <div className="ai-card">
           <div className="ai-top">
@@ -96,6 +97,25 @@ export default function Home() {
             <span className="ai-chip">&#128179; Sends card-update form</span>
             <span className="ai-chip">&#128221; Takes new leads</span>
             <span className="ai-chip">&#9989; No monthly fee</span>
+          </div>
+        </div>
+        <div className="ai-card">
+          <div className="ai-top">
+            <span className="ai-star" aria-hidden="true">&#10024;</span>
+            <span className="ai-tag">AI Assistant</span>
+            <span className="ai-soon">Included on every plan</span>
+          </div>
+          <h2 className="ai-h">An AI office assistant that <b>does the work</b></h2>
+          <p className="ai-p ai-vol" style={{ fontWeight: 700, marginTop: 4 }}>50, 100 or 250 questions a month included by plan. Need more? 250 more for just $15.</p>
+          <p className="ai-p">Just tell it what to do &mdash; like you&apos;d tell your office manager. It&apos;s built into IndustryBossPro, so it knows your customers, your schedule and your money. It schedules and moves visits, adds plans at your price-table prices, texts customers, sends invoices and card forms, runs reports like your sales tax, and opens any page you ask for. It shows you every change first, and nothing happens until you press Confirm.</p>
+          <div className="ai-chips">
+            <span className="ai-chip">&#128197; Schedules &amp; moves visits</span>
+            <span className="ai-chip">&#10133; Adds plans &amp; customers</span>
+            <span className="ai-chip">&#128172; Texts customers</span>
+            <span className="ai-chip">&#128196; Sends invoices</span>
+            <span className="ai-chip">&#128202; Reports in seconds</span>
+            <span className="ai-chip">&#129517; Opens any page</span>
+            <a className="ai-chip" href="#ai-assistant" style={{ textDecoration: 'none' }}>&#128064; See it work &rarr;</a>
           </div>
         </div>
         <div className="ai-card">
