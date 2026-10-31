@@ -85,8 +85,8 @@ export default function Home() {
             <span className="ai-tag">AI Answering</span>
             <span className="ai-soon">New Add-On</span>
           </div>
-          <h2 className="ai-h">An AI receptionist for only <b>29&cent; a minute</b></h2>
-          <p className="ai-p ai-vol" style={{ fontWeight: 700, marginTop: 4 }}>Answering 100+ calls a day? Email <a href="mailto:Support@bossprohq.com" style={{ color: 'inherit', textDecoration: 'underline' }}>Support@bossprohq.com</a> for a volume rate.</p>
+          <h2 className="ai-h">An AI receptionist for only <b>49&cent; a minute</b></h2>
+          <p className="ai-p ai-vol" style={{ fontWeight: 700, marginTop: 4 }}>Answering 100+ calls a day? Email <a href="mailto:Support@bossprohq.com" style={{ color: 'inherit', textDecoration: 'underline' }}>Support@bossprohq.com</a> for our 29&cent; volume rate.</p>
           <p className="ai-p">The most real, human-sounding AI on the market &mdash; and it&apos;s built into IndustryBossPro, so it doesn&apos;t just take messages. It knows your customers and your CRM, tells them when you&apos;re coming, skips and reschedules services, tells existing customers your pricing and adds new services, sends a secure form to update their card, and takes down new customers for you. 24/7. You only pay when it answers.</p>
           <div className="ai-chips">
             <span className="ai-chip">&#128222; Answers every call, 24/7</span>
@@ -162,6 +162,34 @@ export default function Home() {
       </section>
 
       {/* ═══ MEETINGS: real screenshots of the Meetings page and Meeting Alerts (10/29) ═══ */}
+      <section id="ai-assistant" aria-label="AI office assistant" style={{ background: '#ffffff', padding: 'clamp(44px,7vw,80px) 20px' }}>
+        <div style={{ maxWidth: 1100, margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 380px), 1fr))', gap: 'clamp(24px,4vw,48px)', alignItems: 'center' }}>
+          <figure style={{ margin: 0, background: '#7d838c', borderRadius: 16, padding: 'clamp(14px,2.5vw,24px)' }}>
+            <figcaption style={{ color: '#ffffff', fontWeight: 700, fontSize: 12, textAlign: 'center', marginBottom: 10, textTransform: 'uppercase', letterSpacing: 1 }}>A Real Task, Start to Finish</figcaption>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/ai-assistant.webp" width={720} height={938} loading="lazy" decoding="async" alt="AI Assistant scheduling a Mosquito Control visit for Tuesday, with a Confirm card" style={{ display: 'block', width: '100%', maxWidth: 420, margin: '0 auto', height: 'auto', borderRadius: 10, boxShadow: '0 10px 30px rgba(0,0,0,.35)', border: '3px solid #ffffff' }} />
+          </figure>
+          <div>
+            <span style={{ display: 'inline-block', color: '#ff6a00', fontWeight: 900, fontSize: 12, letterSpacing: 1.5, textTransform: 'uppercase', marginBottom: 10 }}>AI Assistant</span>
+            <h2 style={{ color: '#111827', fontSize: 'clamp(26px,3.8vw,42px)', fontWeight: 900, lineHeight: 1.12, margin: '0 0 12px' }}>Your AI Office Assistant. Just Tell It What To Do.</h2>
+            <p style={{ color: '#4b5563', fontSize: 'clamp(15px,1.9vw,18px)', lineHeight: 1.7, margin: '0 0 14px' }}>It&apos;s built right into IndustryBossPro and knows your customers, your schedule and your money. Type "Schedule Mary Jones&apos;s Mosquito Control for this Tuesday" and it finds the job, picks the date and shows you a card. Nothing changes until you press Confirm.</p>
+            <ul style={{ listStyle: 'none', padding: 0, margin: '0 0 16px', display: 'grid', gap: '8px' }}>
+              {[
+                'Ask anything: who owes you, tomorrow\'s route, last month\'s revenue',
+                'Reports in seconds, like your sales tax for any month',
+                'Schedule, move or skip visits',
+                'Add plans and customers, at your price-table prices',
+                'Text customers, send invoices and card-update forms',
+                'Knows every page of the app, so it answers how-to questions too',
+              ].map((t) => (
+                <li key={t} style={{ display: 'flex', gap: 10, color: '#374151', fontSize: 15.5, lineHeight: 1.5 }}><span style={{ color: '#16a34a', fontWeight: 900 }}>✓</span>{t}</li>
+              ))}
+            </ul>
+            <p style={{ color: '#111827', fontSize: 15.5, lineHeight: 1.6, margin: 0, fontWeight: 700 }}>Included on every plan: 50, 100 or 250 questions a month. Need more? 250 more for $15.</p>
+          </div>
+        </div>
+      </section>
+
       <section id="meetings" aria-label="Meetings and booking link" style={{ background: '#f6f7f9', padding: 'clamp(44px,7vw,80px) 20px' }}>
         <div style={{ maxWidth: 1100, margin: '0 auto' }}>
           <div style={{ textAlign: 'center', maxWidth: 800, margin: '0 auto clamp(22px,3.5vw,36px)' }}>
@@ -521,7 +549,7 @@ export default function Home() {
             ['🔧','Custom Fields','Add any field to any record — fully customizable for your operation.'],
             ['👑','Role-Based Access','Owner, Manager, Office, Tech, and Mobile roles with granular permissions across every module.'],
             ['📊','Admin Dashboard','Full business overview — revenue, jobs, staff, and performance at a glance.'],
-            ['📞','AI Receptionist','A human-sounding AI answers your phone 24/7, knows your customers, books and reschedules, and takes new leads. 29¢ a minute, only when it answers.'],
+            ['📞','AI Receptionist','A human-sounding AI answers your phone 24/7, knows your customers, books and reschedules, and takes new leads. 49¢ a minute, only when it answers.'],
             ['⭐','Tech Reviews & Tips','After every job, customers rate the tech who did it and can leave a tip. Every tip is tracked per employee.'],
             ['🎯','Crew Bonuses & Splits','Set bonus goals by gross, jobs or rating. Give drivers a bigger share. Techs see “You’re $200 away from your bonus” in the crew app.'],
             ['💸','One-Click Payroll','Hours and overtime from the time clock, plus tips and bonuses, ready for Gusto, QuickBooks, ADP or Paychex. By hand or on a schedule.'],
