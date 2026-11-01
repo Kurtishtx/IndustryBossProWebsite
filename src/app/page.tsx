@@ -65,6 +65,17 @@ export default function Home() {
         <div className="top-cta"><a href="https://my.industrybosspro.com/demo.html" target="_blank" rel="noopener" className="cta-demo" onClick={(e) => { if (typeof window !== 'undefined' && screen.availWidth > 900) { e.preventDefault(); window.open((e.currentTarget as HTMLAnchorElement).href, 'bossprodemo', 'width=' + screen.availWidth + ',height=' + screen.availHeight + ',left=0,top=0,resizable=yes,scrollbars=yes'); }  try { if (localStorage.getItem('bp_notrack') !== '1') pixelDemoStarted(); } catch (e) { pixelDemoStarted(); } }}>&#9654; Try the Live Demo</a><a href="#" onClick={(e) => { e.preventDefault(); openModal(); }} className="cta-trial">Start Free Trial</a></div>
         <link rel="preload" as="image" href="/hero-mockup.webp" fetchPriority="high" />
         {/* eslint-disable-next-line @next/next/no-img-element */}
+        {/* 10/31 owner: highlight offline crew app + QuickBooks auto-sync */}
+        <div className="hl-band" style={{display:'flex', flexWrap:'wrap', justifyContent:'center', gap:16, maxWidth:1000, margin:'0 auto 22px', padding:'0 16px'}}>
+          <div style={{flex:'1 1 300px', maxWidth:480, background:'rgba(255,255,255,.07)', border:'2px solid #facc15', borderRadius:14, padding:'16px 18px', boxShadow:'0 0 24px rgba(250,204,21,.18)'}}>
+            <div style={{display:'flex', alignItems:'center', gap:10, fontWeight:900, fontSize:19, color:'#fff', marginBottom:6}}><span style={{fontSize:26}}>&#128246;</span>Works even when you&apos;re offline</div>
+            <p style={{margin:0, color:'#e5e7eb', fontSize:15, lineHeight:1.55}}>No signal? No problem. The crew app keeps working: jobs, notes, photos and estimates save on the phone and sync the moment you&apos;re back online.</p>
+          </div>
+          <div style={{flex:'1 1 300px', maxWidth:480, background:'rgba(255,255,255,.07)', border:'2px solid #facc15', borderRadius:14, padding:'16px 18px', boxShadow:'0 0 24px rgba(250,204,21,.18)'}}>
+            <div style={{display:'flex', alignItems:'center', gap:10, fontWeight:900, fontSize:19, color:'#fff', marginBottom:6}}><span style={{fontSize:26}}>&#128260;</span>QuickBooks syncs automatically every 5 minutes</div>
+            <p style={{margin:0, color:'#e5e7eb', fontSize:15, lineHeight:1.55}}>Connect QuickBooks Online with one click. Your customers, invoices and payments sync to QuickBooks every 5 minutes, so there&apos;s no double entry.</p>
+          </div>
+        </div>
         <div className="integ-strip" style={{display:'flex', flexWrap:'wrap', alignItems:'center', justifyContent:'center', gap:'10px 14px', maxWidth:1000, margin:'0 auto clamp(26px,4vw,40px)', color:'rgba(255,255,255,.82)', fontSize:'clamp(14px,1.7vw,16px)', textAlign:'center'}}>
           <span style={{fontWeight:800, color:'#fff'}}>Integrates with</span>
           <span style={{display:'inline-flex', alignItems:'center', gap:7, background:'#fff', color:'#1f1f1f', borderRadius:20, padding:'6px 14px', fontWeight:800}}><span aria-hidden="true" style={{width:10, height:10, borderRadius:'50%', background:'#ff4f00'}}></span>Zapier</span>
