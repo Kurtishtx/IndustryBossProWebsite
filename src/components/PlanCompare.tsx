@@ -80,7 +80,7 @@ const ROWS: { label: string; note?: string; cells: [Cell, Cell, Cell] }[] = [
   { label: 'Free website + domain', note: 'Or use your own domain. Built for Google SEO, with forms that go straight into IndustryBossPro.',
                                                      cells: [true, true, true] },
   { label: 'Card processing rate', note: 'Already getting a better rate from another processor? [[We’ll meet or beat it.]]',
-                                                     cells: ['2.85% + 20¢', '2.85% + 20¢', '2.85% + 20¢'] },
+                                                     cells: ['2.85% + 25¢', '2.85% + 25¢', '2.85% + 25¢'] },
   { label: 'Zapier & Make integrations', note: 'Send new leads, jobs, invoices and payments to thousands of apps like Google Sheets, Mailchimp and Slack, or bring leads in. Instant webhooks and an API key.',
                                                      cells: [true, true, true] },
   { label: 'Facebook & Instagram', note: 'Messages, comments and lead forms in one inbox, plus posting. [[Launching soon]]',
