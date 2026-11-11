@@ -9,6 +9,9 @@ const MAP = REDIRECTS as Record<string, string>;
 
 export function proxy(request: NextRequest) {
   const path = request.nextUrl.pathname.replace(/\/+$/, '') || '/';
+  /* 11/11 cold-email link: industrybosspro.com/try lands on the home page tagged ?src=email, so the visitor
+     log (landing_url) shows exactly who came from the Instantly campaign. 302 so search engines ignore it. */
+  if (path.toLowerCase() === '/try') return NextResponse.redirect(new URL('/?src=email', request.nextUrl.origin).toString(), 302);
   const dest = MAP[path];
   if (!dest) return NextResponse.next();
   const url = /^https?:\/\//.test(dest) ? dest : new URL(dest, request.nextUrl.origin).toString();
