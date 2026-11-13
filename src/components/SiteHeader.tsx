@@ -104,6 +104,7 @@ export default function SiteHeader({ onOpenModal }: { onOpenModal: () => void })
             </div>
             <Link href="/features">Features</Link>
             <Link href="/pricing">Pricing</Link>
+            <a href="tel:+16827273802" style={{display:'inline-flex', alignItems:'center', gap:'6px', color:'#fff', textDecoration:'none', fontWeight:800, fontSize:'14px', whiteSpace:'nowrap'}} title="Call us">📞 (682) 727-3802</a>
             <a href="https://my.industrybosspro.com" target="_blank" rel="noreferrer">Log In</a>
             <a href="https://my.industrybosspro.com/demo.html" className="navbar-demo" style={{display:'inline-flex', alignItems:'center', gap:'7px', border:'1.5px solid rgba(255,255,255,.35)', borderRadius:'6px', padding:'9px 16px', fontSize:'14px', fontWeight:700, color:'#fff', textDecoration:'none', whiteSpace:'nowrap'}}>
               <span style={{width:'7px', height:'7px', borderRadius:'50%', background:'#4ade80', boxShadow:'0 0 0 3px rgba(74,222,128,.22)'}} />
@@ -129,6 +130,7 @@ export default function SiteHeader({ onOpenModal }: { onOpenModal: () => void })
 
       {open && (
         <div className="nav-mobile-menu">
+          <a href="tel:+16827273802" className="nav-mobile-link" style={{fontWeight:800}} onClick={() => toggleMenu(false)}>📞 Call: (682) 727-3802</a>
           <Link href="/" className="nav-mobile-link" onClick={() => toggleMenu(false)}>Home</Link>
           <div className="nav-mobile-section">
             <div className="nav-mobile-group-trigger" onClick={() => setIndustriesOpen(!industriesOpen)}>
