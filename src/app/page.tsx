@@ -131,6 +131,24 @@ export default function Home() {
         </div>
         <div className="ai-card" style={{ gridColumn: '1 / -1' }}>
           <div className="ai-top">
+            <span className="ai-star" aria-hidden="true">&#128236;</span>
+            <span className="ai-tag">Neighbor Postcards</span>
+            <span className="ai-soon">New Add-On</span>
+          </div>
+          <h2 className="ai-h">Every finished job mails <b>your neighbors</b></h2>
+          <p className="ai-p ai-vol" style={{ fontWeight: 700, marginTop: 4 }}>$1.59 a postcard, printing and postage included. No monthly fee.</p>
+          <p className="ai-p">When your crew finishes a job, IndustryBossPro automatically mails your postcard to the closest homes on that street &mdash; 5, 10, 20 or as many as you want &mdash; and skips anyone who&apos;s already your customer. Pick a template or make it 100% your own with the drag-and-drop designer, set a monthly budget, and see every card that went out. Or pick properties on your list and mail around all of them at once.</p>
+          <div className="ai-chips">
+            <span className="ai-chip">&#128236; Mails after every job</span>
+            <span className="ai-chip">&#127969; Closest neighbors, not random</span>
+            <span className="ai-chip">&#128683; Skips current customers</span>
+            <span className="ai-chip">&#127912; Templates or fully custom</span>
+            <span className="ai-chip">&#128207; QR code to book</span>
+            <span className="ai-chip">&#128176; Monthly budget cap</span>
+          </div>
+        </div>
+        <div className="ai-card" style={{ gridColumn: '1 / -1' }}>
+          <div className="ai-top">
             <span className="ai-star" aria-hidden="true">&#127760;</span>
             <span className="ai-tag">Free Website</span>
             <span className="ai-soon">Included</span>
@@ -349,7 +367,6 @@ export default function Home() {
           <a href="#features" className="btn-ghost">See All Features →</a>
         </div>
         <p style={{ textAlign:'center', color:'rgba(245,245,245,.72)', fontSize:15, fontWeight:600, marginTop:18 }}>No credit card required &middot; 14-day free trial &middot; <b style={{ color:'#ff6a00' }}>CRM Software starting at $59/mo</b> after &middot; <b style={{ color:'#ff6a00' }}>demo needs no signup</b></p>
-        <p style={{ textAlign:'center', color:'rgba(245,245,245,.72)', fontSize:14, marginTop:8 }}>Works in the US, Canada, Australia, New Zealand and the UK — bills your customers in your own currency.</p>
         <div className="hero-proof">
           <div className="proof-item"><div className="proof-val">$59</div><div className="proof-lbl">To Start</div></div>
           <div className="proof-item"><div className="proof-val">Unlimited</div><div className="proof-lbl">Clients &amp; Properties</div></div>
@@ -587,6 +604,7 @@ export default function Home() {
             ['👑','Role-Based Access','Owner, Manager, Office, Tech, and Mobile roles with granular permissions across every module.'],
             ['📊','Admin Dashboard','Full business overview — revenue, jobs, staff, and performance at a glance.'],
             ['📞','AI Receptionist','A human-sounding AI answers your phone 24/7, knows your customers, books and reschedules, and takes new leads. 49¢ a minute, only when it answers.'],
+            ['📬','Neighbor Postcards','Every finished job mails your postcard to the closest neighbors, skipping current customers. Design it yourself, set a budget. $1.59 a card, postage included.'],
             ['⭐','Tech Reviews & Tips','After every job, customers rate the tech who did it and can leave a tip. Every tip is tracked per employee.'],
             ['🎯','Crew Bonuses & Splits','Set bonus goals by gross, jobs or rating. Give drivers a bigger share. Techs see “You’re $200 away from your bonus” in the crew app.'],
             ['💸','One-Click Payroll','Hours and overtime from the time clock, plus tips and bonuses, ready for Gusto, QuickBooks, ADP or Paychex. By hand or on a schedule.'],
