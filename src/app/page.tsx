@@ -137,6 +137,7 @@ export default function Home() {
           </div>
           <h2 className="ai-h">Every finished job mails <b>your neighbors</b></h2>
           <p className="ai-p ai-vol" style={{ fontWeight: 700, marginTop: 4 }}>$1.59 a postcard, printing and postage included. No monthly fee.</p>
+          <p className="ai-p" style={{ marginTop: -6 }}>Mailed within 1&ndash;2 business days of the job, First Class. Usually arrives 5&ndash;10 business days after that.</p>
           <p className="ai-p">When your crew finishes a job, IndustryBossPro automatically mails your postcard to the closest homes on that street &mdash; 5, 10, 20 or as many as you want &mdash; and skips anyone who&apos;s already your customer. Pick a template or make it 100% your own with the drag-and-drop designer, set a monthly budget, and see every card that went out. Or pick properties on your list and mail around all of them at once.</p>
           <div className="ai-chips">
             <span className="ai-chip">&#128236; Mails after every job</span>
@@ -604,7 +605,7 @@ export default function Home() {
             ['👑','Role-Based Access','Owner, Manager, Office, Tech, and Mobile roles with granular permissions across every module.'],
             ['📊','Admin Dashboard','Full business overview — revenue, jobs, staff, and performance at a glance.'],
             ['📞','AI Receptionist','A human-sounding AI answers your phone 24/7, knows your customers, books and reschedules, and takes new leads. 49¢ a minute, only when it answers.'],
-            ['📬','Neighbor Postcards','Every finished job mails your postcard to the closest neighbors, skipping current customers. Design it yourself, set a budget. $1.59 a card, postage included.'],
+            ['📬','Neighbor Postcards','Every finished job mails your postcard to the closest neighbors, skipping current customers. Design it yourself, set a budget. $1.59 a card, First Class postage included.'],
             ['⭐','Tech Reviews & Tips','After every job, customers rate the tech who did it and can leave a tip. Every tip is tracked per employee.'],
             ['🎯','Crew Bonuses & Splits','Set bonus goals by gross, jobs or rating. Give drivers a bigger share. Techs see “You’re $200 away from your bonus” in the crew app.'],
             ['💸','One-Click Payroll','Hours and overtime from the time clock, plus tips and bonuses, ready for Gusto, QuickBooks, ADP or Paychex. By hand or on a schedule.'],
