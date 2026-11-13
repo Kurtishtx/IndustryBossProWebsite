@@ -22,13 +22,13 @@ export default function Home() {
       <div style={{ background: 'linear-gradient(135deg, #0a0a0a 0%, #111111 55%, #1a1a1a 100%)', padding: 'clamp(80px,8vw,96px) clamp(14px,4vw,24px) 0', textAlign: 'center' }}>
         {/* ═══ AI ANSWERING — headline feature ═══ */}
         <style>{`
-          @keyframes aiGlow { 0%,100% { box-shadow: 0 0 0 1px rgba(255,106,0,.55), 0 12px 40px rgba(255,106,0,.25); } 50% { box-shadow: 0 0 0 1px rgba(255,190,90,.9), 0 14px 56px rgba(255,106,0,.45); } }
+          @keyframes aiGlow { 0%,100% { box-shadow: 0 0 0 1px rgba(255,106,0,.55), 0 12px 40px rgba(255,106,0,.25); } 50% { box-shadow: 0 0 0 1px rgba(255,166,102,.9), 0 14px 56px rgba(255,106,0,.45); } }
           @keyframes aiStar { 0%,100% { transform: rotate(0deg) scale(1); } 50% { transform: rotate(18deg) scale(1.15); } }
-          .ai-card { max-width: 900px; margin: 0 auto clamp(28px,4vw,40px); text-align: left; border-radius: 18px; padding: clamp(20px,3vw,30px) clamp(18px,3.4vw,34px); background: linear-gradient(135deg, rgba(255,106,0,.16) 0%, rgba(17,17,17,.92) 55%, rgba(255,106,0,.10) 100%); animation: aiGlow 3.2s ease-in-out infinite; position: relative; }
+          .ai-card { max-width: 900px; margin: 0 auto clamp(28px,4vw,40px); text-align: left; border-radius: 18px; padding: clamp(20px,3vw,30px) clamp(18px,3.4vw,34px); background: linear-gradient(135deg, rgba(255,106,0,.16) 0%, rgba(42,42,42,.96) 55%, rgba(255,106,0,.10) 100%); animation: aiGlow 3.2s ease-in-out infinite; position: relative; }
           .ai-top { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-bottom: 10px; }
           .ai-star { font-size: 26px; display: inline-block; animation: aiStar 2.4s ease-in-out infinite; filter: drop-shadow(0 0 8px rgba(255,190,90,.8)); }
           .ai-tag { font-size: 11px; font-weight: 800; letter-spacing: 1.4px; text-transform: uppercase; color: #fff; background: #c75300; border-radius: 20px; padding: 4px 11px; }
-          .ai-soon { font-size: 11px; font-weight: 800; letter-spacing: 1.2px; text-transform: uppercase; color: #ffd28a; border: 1px solid rgba(255,210,138,.5); border-radius: 20px; padding: 3px 10px; }
+          .ai-soon { font-size: 11px; font-weight: 800; letter-spacing: 1.2px; text-transform: uppercase; color: rgb(255,166,102); border: 1px solid rgba(255,166,102,.5); border-radius: 20px; padding: 3px 10px; }
           .ai-h { color: #fff; font-size: clamp(24px,3.6vw,38px); font-weight: 800; line-height: 1.15; margin: 0 0 8px; }
           .ai-h b { color: #ff6a00; }
           .ai-p { color: rgba(255,255,255,.82); font-size: clamp(15px,1.8vw,17px); line-height: 1.55; margin: 0 0 16px; max-width: 760px; }
