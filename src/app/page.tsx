@@ -313,7 +313,7 @@ export default function Home() {
           </div>
           <p style={{ color: '#374151', fontSize: 15, margin: '24px 0 0', lineHeight: 1.6 }}>
             <b>Larger company?</b> We&apos;ll sign a Data Protection Agreement with you, already signed on our side. <a href="mailto:Support@bossprohq.com?subject=Data%20Protection%20Agreement%20request" style={{ color: '#1d4ed8', fontWeight: 700 }}>Request it</a>
-            <span style={{ color: '#6b7280' }}> &middot; <a href="/privacy-policy" style={{ color: '#4b5563' }}>Privacy Policy</a> &middot; <a href="/terms" style={{ color: '#4b5563' }}>Terms</a></span>
+            <span style={{ color: '#6b7280' }}> &middot; <a href="/privacy" style={{ color: '#4b5563' }}>Privacy Policy</a> &middot; <a href="/terms" style={{ color: '#4b5563' }}>Terms</a></span>
           </p>
         </div>
       </section>
@@ -611,7 +611,7 @@ export default function Home() {
             ['💸','One-Click Payroll','Hours and overtime from the time clock, plus tips and bonuses, ready for Gusto, QuickBooks, ADP or Paychex. By hand or on a schedule.'],
             ['👋','Meet Your Tech','Customers see who is coming before the visit, with a photo, star rating, reviews and an “about me.”'],
             ['🔗','Zapier & Make','Connect IndustryBossPro to thousands of apps like Google Sheets, Mailchimp and Slack with instant webhooks and an API key.'],
-            ['📱','Social Inbox (Soon)','Facebook and Instagram messages, comments and lead forms plus Google reviews in one inbox, and post to all of them plus TikTok. Launching soon.'],
+            ['📱','Google Reviews & Social Inbox','Connect your Google Business Profile to see every Google review in IndustryBossPro, reply to them, and let AI write the replies for you to approve. Facebook and Instagram messages, comments and lead forms are coming soon.'],
             ['⚡','Fast Setup','Trucks, crew, products, services, pricing and packages in about 10 minutes. Upload what you already have.'],
             ['🌐','Free Website','A 200–300 page website built for Google, with a free domain. Every form goes straight into IndustryBossPro as a new lead.'],
             ['🎨','Make It Yours','Pick any colors for your software and choose exactly what shows in your sidebar, in any order.'],

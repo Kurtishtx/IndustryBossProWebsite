@@ -32,7 +32,7 @@ const SECTIONS: [string, string][] = [
   ],
   [
     "6. Who we share it with",
-    "Only the service providers we need to run the Service, and only for that purpose: hosting and database, text messaging, email delivery, maps and address lookup, payment processing, and AI voice (for the optional AI answering add-on). Each is bound to protect the data and use it only to provide its service to us. We may also disclose information if the law requires it, and we would tell you first unless the law forbids it."
+    "Only the service providers we need to run the Service, and only for that purpose: hosting and database, text messaging, email delivery, maps and address lookup, payment processing, AI voice (for the optional AI answering add-on), and AI text (for the optional AI assistant and AI review replies). Each is bound to protect the data and use it only to provide its service to us. We may also disclose information if the law requires it, and we would tell you first unless the law forbids it."
   ],
   [
     "7. Who at BossPro can see your account",
@@ -51,39 +51,43 @@ const SECTIONS: [string, string][] = [
     "If you connect your Facebook page, Instagram account, Google Business Profile or TikTok account, we access only what is needed to show your messages, comments, lead forms and reviews in the Service, let you reply, and publish posts you create. From TikTok we receive only your basic profile (display name and username) and permission to publish the videos and photos you choose to post. We use this information only to provide those features to you, never sell it or use it for advertising, and delete it when you disconnect the account. You can disconnect at any time in Settings > Integrations, or remove IndustryBossPro from your Facebook, Google or TikTok account settings. To ask us to delete data received from Facebook, Google or TikTok, email Support@bossprohq.com; we will confirm the deletion. Our use of information received from Google APIs follows the Google API Services User Data Policy, including its Limited Use requirements."
   ],
   [
-    "11. Integrations you turn on",
+    "11. Google user data (Google Business Profile)",
+    "This section explains exactly how IndustryBossPro uses data it receives from Google when you click Connect Google Business in Settings > Integrations and sign in with Google. What we access: using the Google Business Profile permission (business.manage) you grant, we read the names and IDs of the business locations you manage, the reviews left on those locations (reviewer display name, star rating, review text and date) and any replies already posted, and we can post replies to reviews and publish the posts you create. We do not access your Gmail, contacts, calendar, Drive or any other Google data. How we use it: only to show your Google reviews inside the Service, let you reply to them, optionally write a suggested reply with AI that you can turn on or off and approve, post replies and posts you create or approve, and alert you when a new review arrives. AI replies: if you turn on AI review replies, the text of a review, the reviewer's display name, the star rating and your business name are sent to our AI provider (Anthropic) solely to write the suggested reply; the provider does not keep it or use it to train models. How we store and protect it: review data is stored encrypted in our database, scoped to your account, and the Google access token is kept server-side only and never shown in a browser. Sharing: we do not sell, rent or share Google user data with anyone, do not use it for advertising, and do not use it to train AI models; it is passed only to the service providers needed to run these features (our database host and, if you turn on AI replies, our AI provider). Retention and deletion: when you disconnect the Google listing in Settings > Integrations, we delete its reviews, replies and access token from our systems right away. You can also revoke access at any time at myaccount.google.com/permissions, or email Support@bossprohq.com to have Google data deleted. Our use and transfer of information received from Google APIs adheres to the Google API Services User Data Policy, including the Limited Use requirements."
+  ],
+  [
+    "12. Integrations you turn on",
     "If you connect Zapier, Make or another tool, the Service sends the events you choose to the address you provide. You control what is sent and can turn it off at any time."
   ],
   [
-    "12. Location (crew and customer apps)",
+    "13. Location (crew and customer apps)",
     "The crew app can collect device location while an employee is clocked in, so the business can see where its crews are and which stops were visited. It stops when the last employee clocks out, and it can be declined. The customer app does not collect customers' location; on a service day a customer may see an anonymous marker for the crew serving them. Location is never sold or used for advertising, and crew location records are deleted after 90 days."
   ],
   [
-    "13. Security",
+    "14. Security",
     "Data is encrypted in transit and at rest, stored with a SOC 2 compliant database provider, and protected by access controls. Access keys for connected accounts are kept server-side and are never shown in the browser. We keep regular backups so your data can be recovered. If we learn of a breach affecting your data, we will notify you without undue delay."
   ],
   [
-    "14. Export and deletion",
+    "15. Export and deletion",
     "You can export your data at any time. If you cancel, your data stays available for 90 days so you can export it, then it is deleted from our live systems; backup copies are deleted as backups age out. You can ask us to delete it sooner by emailing Support@bossprohq.com."
   ],
   [
-    "15. Your rights",
+    "16. Your rights",
     "You can access, correct, export or delete your information. Depending on where you live, you may have additional rights under laws such as the CCPA or GDPR; we honor them. Email Support@bossprohq.com and we will respond promptly. If your customer asks you about their data, we will help you respond."
   ],
   [
-    "16. Cookies",
+    "17. Cookies",
     "We use cookies and local storage to keep you signed in and remember your settings. Our websites may use advertising and analytics tags (for example Google and Meta) to measure our own ads; these never receive your business data or your customers' data."
   ],
   [
-    "17. Children",
+    "18. Children",
     "The Service is for businesses and is not directed at anyone under 18."
   ],
   [
-    "18. Changes",
+    "19. Changes",
     "If we make a material change to this policy we will tell you by email or in the Service before it takes effect. We will never change it to allow selling your data."
   ],
   [
-    "19. Contact",
+    "20. Contact",
     "BossPro Enterprises, Support@bossprohq.com. Larger companies can request a Data Protection Agreement signed by us."
   ]
 ];
@@ -93,7 +97,7 @@ export default function Page() {
     <main style={{ background: '#f6f7f9', padding: 'clamp(40px,7vw,80px) 16px', color: '#1f2937', fontFamily: "'Inter','Segoe UI',Arial,sans-serif" }}>
       <div style={{ maxWidth: 820, margin: '0 auto', background: '#fff', borderRadius: 14, padding: 'clamp(22px,4vw,44px)', boxShadow: '0 1px 3px rgba(0,0,0,.08)' }}>
         <h1 style={{ fontSize: 'clamp(28px,4vw,38px)', fontWeight: 800, margin: '0 0 6px', color: '#111827' }}>Privacy Policy</h1>
-        <p style={{ color: '#6b7280', margin: '0 0 28px', fontSize: 14 }}>IndustryBossPro by BossPro Enterprises &middot; Last updated October 23, 2026</p>
+        <p style={{ color: '#6b7280', margin: '0 0 28px', fontSize: 14 }}>IndustryBossPro by BossPro Enterprises &middot; Last updated November 13, 2026</p>
         {SECTIONS.map(([h, b], i) => (
           <div key={i} style={i === 0 ? { background: '#f0fdf4', border: '1px solid #bbf7d0', borderRadius: 10, padding: '16px 18px', marginBottom: 26 } : { marginBottom: 24 }}>
             <h2 style={{ fontSize: 19, fontWeight: 700, margin: '0 0 8px', color: i === 0 ? '#166534' : '#111827' }}>{h}</h2>
