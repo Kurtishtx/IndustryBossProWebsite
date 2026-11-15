@@ -29,6 +29,26 @@ body {
 /* ── NAVBAR ── */
 .navbar { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; background: rgba(10,10,10,0.97); backdrop-filter: blur(16px); border-bottom: 1px solid var(--border); height: 66px; }
 .navbar-inner { max-width: 1200px; margin: 0 auto; padding: 0 24px; height: 66px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+/* Two-row desktop bar (owner 11/15, same as SprayBossPro): row 1 = name + Log In + phone, row 2 = pages + demo/trial */
+.navbar-inner { height: auto; flex-direction: column; align-items: stretch; justify-content: flex-start; }
+.navbar-top { height: 56px; display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.navbar-row2 { height: 46px; display: flex; align-items: center; justify-content: space-between; border-top: 1px solid rgba(255,255,255,.07); }
+.navbar-actions { gap: 18px; }
+.navbar-util { display: flex; align-items: center; gap: 26px; }
+.navbar-login { color: rgba(255,255,255,.7); text-decoration: none; font-size: 14px; font-weight: 600; }
+.navbar-login:hover { color: #fff; }
+.navbar-phone { display: inline-flex; align-items: center; gap: 7px; color: #fff; text-decoration: none; font-weight: 800; font-size: 17px; white-space: nowrap; }
+.navbar-phone:hover { color: var(--electric); }
+/* Pages were laid out for a 66px bar; the 2-row bar is 102px, so shift every page down 36px on desktop */
+@media (min-width: 901px) {
+  .navbar { height: auto; }
+  .navbar-inner { gap: 0; }
+  body { padding-top: 36px; }
+}
+@media (max-width: 900px) {
+  .navbar-top { height: 66px; gap: inherit; }
+  .navbar-row2, .navbar-util { display: none !important; }
+}
 .navbar-brand a { text-decoration: none; display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
 .navbar-name { font-size: 18px; font-weight: 800; color: var(--text); letter-spacing: -0.4px; }
 .navbar-name span { color: var(--electric); }
