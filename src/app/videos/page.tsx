@@ -25,6 +25,7 @@ const GROUPS: { name: string; videos: V[] }[] = [
     { id: '06_invoicing', title: 'Automatic invoicing and card charging', text: 'Finished work becomes invoices, and Billing Automation sends them and charges cards on file.', secs: 66 },
     { id: '07_estimates', title: 'Estimates customers approve online', text: 'Send a branded estimate and the customer picks the services they want.', secs: 69 },
     { id: '25_job_costing', title: 'Know what every job really made', text: 'Revenue, labor from your crew’s real times, and materials, for profit on every job.', secs: 38 },
+    { id: '27_costs_receipts', title: 'Track every cost, receipt by receipt', text: 'Your crew snaps a receipt, AI fills it in, and receipts on a job count toward its real profit.', secs: 92 },
     { id: '20_reports', title: 'Reports that add themselves up', text: 'Sales, chemical totals, hours and each crew member’s jobs and pay.', secs: 58 },
     { id: '19_integrations', title: 'QuickBooks, Zapier and Make', text: 'Connect your books and the rest of your tools.', secs: 39 },
   ] },
