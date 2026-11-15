@@ -104,6 +104,7 @@ export default function SiteHeader({ onOpenModal }: { onOpenModal: () => void })
             </div>
             <Link href="/features">Features</Link>
             <Link href="/pricing">Pricing</Link>
+            <Link href="/videos">Videos</Link>
             <a href="tel:+16827273802" style={{display:'inline-flex', alignItems:'center', gap:'6px', color:'#fff', textDecoration:'none', fontWeight:800, fontSize:'14px', whiteSpace:'nowrap'}} title="Call us">📞 Call (682) 727-3802</a>
             <a href="https://my.industrybosspro.com" target="_blank" rel="noreferrer">Log In</a>
             <a href="https://my.industrybosspro.com/demo.html" className="navbar-demo" style={{display:'inline-flex', alignItems:'center', gap:'7px', border:'1.5px solid rgba(255,255,255,.35)', borderRadius:'6px', padding:'9px 16px', fontSize:'14px', fontWeight:700, color:'#fff', textDecoration:'none', whiteSpace:'nowrap'}}>
@@ -150,6 +151,7 @@ export default function SiteHeader({ onOpenModal }: { onOpenModal: () => void })
           </div>
           <Link href="/features" className="nav-mobile-link" onClick={() => toggleMenu(false)}>Features</Link>
           <Link href="/pricing" className="nav-mobile-link" onClick={() => toggleMenu(false)}>Pricing</Link>
+          <Link href="/videos" className="nav-mobile-link" onClick={() => toggleMenu(false)}>Videos</Link>
           <a href="https://my.industrybosspro.com" target="_blank" rel="noreferrer" className="nav-mobile-link" onClick={() => toggleMenu(false)}>Log In</a>
           <button className="nav-mobile-cta" onClick={() => { toggleMenu(false); onOpenModal(); }}>
             Start Free Trial
