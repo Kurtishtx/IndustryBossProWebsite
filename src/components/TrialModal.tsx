@@ -1,6 +1,7 @@
 'use client';
 import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
+import { PromoCodeField, promoAfterSignup } from './promo';
 
 // Fall back to the project's public values. NEXT_PUBLIC_SUPABASE_ANON_KEY was never set on this
 // Vercel project, so this component bailed with "Account creation not configured" and EVERY trial
@@ -17,18 +18,19 @@ const S = {
 };
 
 type Step = 'info' | 'pass' | 'done';
-interface FormData { first: string; last: string; company: string; email: string; password: string; confirm: string; agree: boolean }
+interface FormData { first: string; last: string; company: string; email: string; password: string; confirm: string; agree: boolean; promo: string }
 
 export default function TrialModal({ open, onClose }: { open: boolean; onClose: () => void }) {
   const [step, setStep] = useState<Step>('info');
-  const [form, setForm] = useState<FormData>({ first: '', last: '', company: '', email: '', password: '', confirm: '', agree: false });
+  const [form, setForm] = useState<FormData>({ first: '', last: '', company: '', email: '', password: '', confirm: '', agree: false, promo: '' });
   const [err, setErr] = useState('');
   const [loading, setLoading] = useState(false);
   const [countdown, setCountdown] = useState(4);
   const hoRef = useRef('');
+  const [promoMsg, setPromoMsg] = useState<{ text: string; ok: boolean } | null>(null);
 
   useEffect(() => {
-    if (!open) { setStep('info'); setErr(''); setForm({ first: '', last: '', company: '', email: '', password: '', confirm: '', agree: false }); }
+    if (!open) { setStep('info'); setErr(''); setForm({ first: '', last: '', company: '', email: '', password: '', confirm: '', agree: false, promo: '' }); }
   }, [open]);
 
   useEffect(() => {
@@ -55,8 +57,8 @@ export default function TrialModal({ open, onClose }: { open: boolean; onClose: 
     if (!SUPABASE_URL || !SUPABASE_ANON) { setErr('Account creation not configured. Contact support.'); return; }
     setLoading(true);
     try {
-      const res = await fetch(SUPABASE_URL + '/functions/v1/manage-users', { method: 'POST', headers: { 'Content-Type': 'application/json', 'Authorization': 'Bearer ' + SUPABASE_ANON, 'apikey': SUPABASE_ANON }, body: JSON.stringify({ action: 'create', email: form.email, password: form.password }) });
-      const result = await res.json();
+      const res = await fetch(SUPABASE_URL + '/functions/v1/manage-users', { method: 'POST', headers: { 'Content-Type': 'application/json', 'Authorization': 'Bearer ' + SUPABASE_ANON, 'apikey': SUPABASE_ANON }, body: JSON.stringify({ action: 'create', email: form.email, password: form.password, promo_code: form.promo.trim() }) });
+      const result = await res.json(); setPromoMsg(promoAfterSignup(result));
       if (result.error) { setErr(result.error); setLoading(false); return; }
       const { createClient } = await import('@supabase/supabase-js');
       const sb = createClient(SUPABASE_URL, SUPABASE_ANON);
@@ -112,6 +114,7 @@ export default function TrialModal({ open, onClose }: { open: boolean; onClose: 
             <div style={{ color: S.muted, fontSize: 14, marginBottom: 24 }}>Setting up account for <strong style={{ color: S.elec }}>{form.email}</strong></div>
             <input style={{ ...inp, marginBottom: 12 }} placeholder="Password (min 8 chars)" type="password" value={form.password} onChange={f('password')} />
             <input style={{ ...inp, marginBottom: 16 }} placeholder="Confirm password" type="password" value={form.confirm} onChange={f('confirm')} />
+            <PromoCodeField value={form.promo} onChange={(v) => setForm((p) => ({ ...p, promo: v }))} inputStyle={{ ...inp, textTransform: 'uppercase' }} />
             <label style={{ display: 'flex', gap: 10, alignItems: 'flex-start', color: S.muted, fontSize: 13, marginBottom: 20, cursor: 'pointer' }}>
               <input type="checkbox" checked={form.agree} onChange={f('agree')} style={{ marginTop: 2, accentColor: S.elec }} />
               I agree to the <Link href="/terms" style={{ color: S.elec }}>Terms</Link> and <Link href="/privacy" style={{ color: S.elec }}>Privacy Policy</Link>
@@ -128,6 +131,7 @@ export default function TrialModal({ open, onClose }: { open: boolean; onClose: 
             <div style={{ fontSize: 48, marginBottom: 16 }}>🎉</div>
             <div style={{ fontSize: 22, fontWeight: 800, color: S.text, marginBottom: 8 }}>You're in, {form.first}!</div>
             <div style={{ color: S.muted, fontSize: 15, marginBottom: 24 }}>Your 14-day free trial is active. Redirecting to your dashboard in <strong style={{ color: S.elec }}>{countdown}s</strong>…</div>
+            {promoMsg && <div role="status" style={{ fontSize: 13, fontWeight: 600, color: promoMsg.ok ? '#4ade80' : '#fdba74', marginTop: -12, marginBottom: 20, lineHeight: 1.5 }}>{promoMsg.text}</div>}
             <button onClick={() => { window.location.href = APP_URL + hoRef.current; }} style={{ background: S.elec, color: '#fff', border: 'none', borderRadius: 10, padding: '14px 32px', fontSize: 16, fontWeight: 800, cursor: 'pointer' }}>
               Go to Dashboard Now
             </button>

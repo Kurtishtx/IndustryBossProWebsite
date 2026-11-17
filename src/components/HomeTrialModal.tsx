@@ -1,5 +1,6 @@
 'use client';
 import { useState } from 'react';
+import { PromoCodeField, promoAfterSignup } from './promo';
 
 // Same fix as TrialModal: NEXT_PUBLIC_SUPABASE_ANON_KEY was never set on this Vercel project, so
 // this modal sent an empty key and every signup from the home page failed. The anon key is public
@@ -9,11 +10,12 @@ const SUPABASE_ANON = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || 'eyJhbGciOiJI
 const APP_URL       = process.env.NEXT_PUBLIC_APP_URL || 'https://my.industrybosspro.com/dashboard.html';
 
 type Step = 'info' | 'pass' | 'done';
-interface FormData { first: string; last: string; company: string; email: string; password: string; confirm: string; agree: boolean; }
+interface FormData { first: string; last: string; company: string; email: string; password: string; confirm: string; agree: boolean; promo: string; }
 
 export default function HomeTrialModal({ onClose }: { onClose: () => void }) {
   const [step, setStep]   = useState<Step>('info');
-  const [form, setForm]   = useState<FormData>({ first:'', last:'', company:'', email:'', password:'', confirm:'', agree:false });
+  const [form, setForm]   = useState<FormData>({ first:'', last:'', company:'', email:'', password:'', confirm:'', agree:false, promo:'' });
+  const [promoMsg, setPromoMsg] = useState<{ text: string; ok: boolean } | null>(null);
   const [err, setErr]     = useState('');
   const [loading, setLoading] = useState(false);
   const [countdown, setCountdown] = useState(4);
@@ -37,9 +39,9 @@ export default function HomeTrialModal({ onClose }: { onClose: () => void }) {
       const res = await fetch(SUPABASE_URL + '/functions/v1/manage-users', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', 'Authorization': 'Bearer ' + SUPABASE_ANON, 'apikey': SUPABASE_ANON },
-        body: JSON.stringify({ action: 'create', email: form.email, password: form.password }),
+        body: JSON.stringify({ action: 'create', email: form.email, password: form.password, promo_code: form.promo.trim() }),
       });
-      const result = await res.json();
+      const result = await res.json(); setPromoMsg(promoAfterSignup(result));
       if (result.error) throw new Error(result.error);
       const { createClient } = await import('@supabase/supabase-js');
       const sb = createClient(SUPABASE_URL, SUPABASE_ANON);
@@ -115,6 +117,7 @@ export default function HomeTrialModal({ onClose }: { onClose: () => void }) {
                 <input type="password" value={form[k]} onChange={f(k)} placeholder={i===0?'At least 8 characters':'Repeat password'} style={{ width:'100%', background:'#1a1a1a', border:'1px solid #e63000', borderRadius:6, padding:'10px 12px', fontSize:14, color:'#f5f5f5', fontFamily:'inherit' }} />
               </div>
             ))}
+            <PromoCodeField value={form.promo} onChange={(v) => setForm((p) => ({ ...p, promo: v }))} labelStyle={{ fontSize:11, fontWeight:700, color:'rgba(245,245,245,.70)', textTransform:'uppercase', letterSpacing:'.5px', display:'block', marginBottom:5 }} inputStyle={{ width:'100%', background:'#1a1a1a', border:'1px solid #e63000', borderRadius:6, padding:'10px 12px', fontSize:14, color:'#f5f5f5', fontFamily:'inherit', textTransform:'uppercase' }} />
             <div style={{ marginBottom:20, display:'flex', alignItems:'flex-start', gap:10 }}>
               <input type="checkbox" id="ibp-agree" checked={form.agree} onChange={f('agree')} style={{ width:16, height:16, accentColor:'#ff6a00', cursor:'pointer', flexShrink:0, marginTop:3 }} />
               <label htmlFor="ibp-agree" style={{ fontSize:13, color:'rgba(245,245,245,.70)', cursor:'pointer', lineHeight:1.5 }}>
@@ -133,6 +136,7 @@ export default function HomeTrialModal({ onClose }: { onClose: () => void }) {
             <div style={{ width:70, height:70, background:'#16a34a', borderRadius:'50%', display:'inline-flex', alignItems:'center', justifyContent:'center', fontSize:32, color:'#fff', marginBottom:18 }}>✓</div>
             <div style={{ fontSize:24, fontWeight:800, color:'#fff', marginBottom:12 }}>You&apos;re In!</div>
             <div style={{ fontSize:15, color:'rgba(245,245,245,.72)', lineHeight:1.7 }}>Your 14-day free trial has started.<br />Taking you to your dashboard…</div>
+            {promoMsg && <div role="status" style={{ fontSize:13, fontWeight:600, color: promoMsg.ok ? '#4ade80' : '#fdba74', marginTop:12, lineHeight:1.5 }}>{promoMsg.text}</div>}
             <div style={{ fontSize:12, color:'rgba(245,245,245,.70)', marginTop:10 }}>Redirecting in {countdown} second{countdown !== 1 ? 's' : ''}…</div>
           </div>
         )}
