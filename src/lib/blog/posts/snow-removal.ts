@@ -233,7 +233,7 @@ export const posts: BlogPost[] = [
       },
       {
         "h2": "Two-way texting and replies",
-        "content": "Customers will reply to storm texts. Some will say thanks, some will ask when you are coming, and some will report a problem, like a car blocking the plow or an icy patch by the door. On Pro and Crew, two-way texting lets those replies come into your office so someone can answer them, rather than going to a number nobody watches.\n\nHave a plan for replies on storm nights. Someone should check them every hour or so, answer quick questions, and pass real problems to the operator on that route. A reply about an icy entrance at a commercial property is worth a quick return trip, because that is exactly the kind of spot where someone falls."
+        "content": "Customers will reply to storm texts. Some will say thanks, some will ask when you are coming, and some will report a problem, like a car blocking the plow or an icy patch by the door. On every plan, two-way texting lets those replies come into your office so someone can answer them, rather than going to a number nobody watches.\n\nHave a plan for replies on storm nights. Someone should check them every hour or so, answer quick questions, and pass real problems to the operator on that route. A reply about an icy entrance at a commercial property is worth a quick return trip, because that is exactly the kind of spot where someone falls."
       },
       {
         "h2": "Delays and reschedules",

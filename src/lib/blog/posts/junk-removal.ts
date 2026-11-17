@@ -57,7 +57,7 @@ export const posts: BlogPost[] = [
       },
       {
         "h2": "Getting the photos in",
-        "content": "The easiest way for most customers to send photos is a text. On the Pro and Crew plans, IndustryBossPro includes two-way texting, so the customer can reply to your text with pictures and the conversation stays in the software, attached to their record, instead of on someone's personal phone.\n\nWhen a request comes in through your website form, it lands as a lead with the customer's description. Reply with a short text asking for photos and the few questions above. Most people will send them within minutes, especially if the reply comes fast.\n\nKeep the photos with the job. The crew should see the same pictures you quoted from, so they know what they are walking into and can spot the difference if the pile grew."
+        "content": "The easiest way for most customers to send photos is a text. Every IndustryBossPro plan includes two-way texting, so the customer can reply to your text with pictures and the conversation stays in the software, attached to their record, instead of on someone's personal phone.\n\nWhen a request comes in through your website form, it lands as a lead with the customer's description. Reply with a short text asking for photos and the few questions above. Most people will send them within minutes, especially if the reply comes fast.\n\nKeep the photos with the job. The crew should see the same pictures you quoted from, so they know what they are walking into and can spot the difference if the pile grew."
       },
       {
         "h2": "Reading volume from a picture",
@@ -336,7 +336,7 @@ export const posts: BlogPost[] = [
       },
       {
         "h2": "Two-way texting for photo quotes and questions",
-        "content": "One-way alerts handle the routine updates. Two-way texting handles the conversations: the customer sending photos of the pile for a quote, asking if you take a piano, or saying the side gate is locked and to use the back.\n\nOn the Pro and Crew plans, IndustryBossPro includes two-way texting, so those replies come into the software attached to the customer's record, not to someone's personal cell. The office can see the whole thread, answer it, and pass details to the crew.\n\nTwo-way texting is especially useful for photo estimates. Ask for pictures by text, get them back in minutes, and send the estimate link in the same thread. The [photo estimating](/blog/junk-removal/junk-removal-estimating-software) post covers how to price from them."
+        "content": "One-way alerts handle the routine updates. Two-way texting handles the conversations: the customer sending photos of the pile for a quote, asking if you take a piano, or saying the side gate is locked and to use the back.\n\nEvery IndustryBossPro plan includes two-way texting, so those replies come into the software attached to the customer's record, not to someone's personal cell. The office can see the whole thread, answer it, and pass details to the crew.\n\nTwo-way texting is especially useful for photo estimates. Ask for pictures by text, get them back in minutes, and send the estimate link in the same thread. The [photo estimating](/blog/junk-removal/junk-removal-estimating-software) post covers how to price from them."
       },
       {
         "h2": "Keep texts short and plain",

@@ -599,7 +599,7 @@ export default function Home() {
         <div className="centered" style={{ maxWidth:1200, margin:'0 auto' }}>
           <span className="section-label">Full Platform</span>
           <h2 className="section-title">Everything You Need. Nothing You Don&apos;t.</h2>
-          <p className="section-sub" style={{ marginLeft:'auto', marginRight:'auto' }}>Three plans, same software - the bigger ones lift the limits and turn on the automation. Every feature below is on the $199 Crew plan; most are on all three.</p>
+          <p className="section-sub" style={{ marginLeft:'auto', marginRight:'auto' }}>Three plans, every feature on all three. Pick the size that fits: the plans differ only in office users, trucks, and monthly texts and auto-routes.</p>
         </div>
         <div className="feat-grid">
           {[

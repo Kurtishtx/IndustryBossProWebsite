@@ -89,7 +89,7 @@ export default function PricingPage() {
           { q: 'Where do the included texts apply?', a: 'The US and Canada. Carriers in Australia, New Zealand and the UK charge several times more to deliver a text, so texting there is set up on request and priced by country — everything else works the same, and email alerts are included everywhere.' },
           { q: 'Is there really no setup fee?', a: 'None. Sign up, get access, and we\'ll do a free onboarding call to get you configured. No contracts, no implementation fees.' },
           { q: 'What happens after the 14-day trial?', a: 'You\'re billed for the plan you pick — $59, $89 or $199 — month-to-month. Cancel anytime before the trial ends and you won\'t be charged.' },
-          { q: 'How many users can I add?', a: 'Start includes 2 office users and 2 crew-app seats, Pro includes 3 of each, and Crew is unlimited on both. Clients and properties are unlimited on every plan.' },
+          { q: 'How many users can I add?', a: 'Office users: 2 on Start, 3 on Pro, unlimited on Crew. Crew-app seats are unlimited on every plan. Clients and properties are unlimited on every plan.' },
           { q: 'Do I need a credit card to start?', a: 'No. Enter your name, email, and company. You get full access for 14 days before any billing info is needed.' },
           { q: 'What industries are supported?', a: 'Snow removal, pool service, landscaping, irrigation, lawn care, pest control, mosquito control, fence, lawn mowing, pet waste removal, garage door, carpet cleaning, fire inspection, and hood cleaning — all 14 on one platform.' },
         ].map(item => (

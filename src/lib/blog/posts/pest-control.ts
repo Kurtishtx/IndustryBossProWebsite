@@ -506,7 +506,7 @@ export const hub: HubPageData = {
     {
       "icon": "📲",
       "title": "Customer Alerts",
-      "desc": "Night-before, on-the-way, completed alerts with notes and photos, skipped alerts, and two-way texting on Pro and Crew."
+      "desc": "Night-before, on-the-way, completed alerts with notes and photos, skipped alerts, and two-way texting on every plan."
     },
     {
       "icon": "💳",
