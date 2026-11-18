@@ -20,7 +20,7 @@ const COMPARE = [
   { feature: 'Spray / Chemical Waiting List', us: 'Yes', them: 'No' },
   { feature: 'Calendar View', us: 'Yes', them: 'Yes' },
   { feature: 'Dispatch View', us: 'Yes', them: 'Limited' },
-  { feature: 'Live Crew Tracking', us: 'Yes', them: 'Add-on / Extra' },
+  { feature: 'Live Crew Tracking', us: 'Coming soon', them: 'Add-on / Extra' },
   { feature: 'Auto-routing', us: '50 / 100 / 1,000 (+250 for $5)', them: 'Add-on' },
   { feature: 'Lasso / Circle-to-Schedule', us: 'Yes', them: 'No' },
   { feature: 'Chemical Compliance', us: 'Yes — EPA compliant', them: 'No' },
@@ -48,9 +48,8 @@ export default function PricingPage() {
             Pick the size you actually are.
           </h1>
           <p style={{ color: S.muted, fontSize: 18, maxWidth: 560, margin: '0 auto' }}>
-            Three plans, same software. Start at $59 for a one-person operation, up to $199 for unlimited crews and trucks. No per-user fees inside your plan.
+            Three plans, same software. Start at $59 for a one-person operation, up to $199 for unlimited crews and trucks. No per-user fees inside your plan.
           </p>
-        <p style={{ color: S.muted, fontSize: 15, maxWidth: 560, margin: '12px auto 0' }}>Works in the US, Canada, Australia, New Zealand and the UK — bills your customers in your own currency.</p>
         </div>
       </div>
 

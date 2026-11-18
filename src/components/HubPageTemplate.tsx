@@ -69,7 +69,7 @@ export default function HubPageTemplate({ page }: { page: HubPageData }) {
       {/* TRUST BAR */}
       <section style={{ background: S.navy3, borderTop: `1px solid ${S.border}`, borderBottom: `1px solid ${S.border}`, padding: '18px 24px' }}>
         <div style={{ maxWidth: 1100, margin: '0 auto', display: 'flex', justifyContent: 'center', flexWrap: 'wrap', gap: 32 }}>
-          {['15 Lawn & Outdoor Services', 'From $59/Month', 'Calendar & Dispatch Views', 'Live Crew Tracking', '14-Day Free Trial', 'Unlimited Clients & Properties', 'No Contracts'].map(t => (
+          {['15 Lawn & Outdoor Services', 'From $59/Month', 'Calendar & Dispatch Views', 'Live Crew Tracking (coming soon)', '14-Day Free Trial', 'Unlimited Clients & Properties', 'No Contracts'].map(t => (
             <span key={t} style={{ color: S.elec, fontWeight: 700, fontSize: 13 }}>✓ {t}</span>
           ))}
         </div>
@@ -198,7 +198,7 @@ export default function HubPageTemplate({ page }: { page: HubPageData }) {
             {[
               { icon: '🗓️', title: 'Calendar View', desc: 'See every job across every crew and every service type on one calendar. Filter by crew, industry, or date. Your whole operation at a glance — no more digging through spreadsheets.' },
               { icon: '🚀', title: 'Dispatch View', desc: 'Live dispatch board showing every crew, their current stop, and real-time job status as they work through the day. Know who finished, who is behind, and who needs help — without making a single call.' },
-              { icon: '📍', title: 'Live Crew Tracking', desc: 'Every tech and truck on a live map, all day long. Know exactly who is where, which stop they\'re on, and when they complete — from your phone or desk. No GPS hardware to buy.' },
+              { icon: '📍', title: 'Live Crew Tracking (coming soon)', desc: 'Every tech and truck on a live map, all day long. Know exactly who is where, which stop they\'re on, and when they complete — from your phone or desk. No GPS hardware to buy.' },
               { icon: '🤖', title: 'Auto-Routing', desc: 'Auto-optimized routes that sequence stops by geography to cut drive time and fit more stops per crew per day. More stops = more revenue. 10 routes a month on Start, 50 on Pro, unlimited on Crew.' },
               { icon: '⭕', title: 'Lasso / Circle-to-Schedule', desc: 'Draw a circle on the map. See every property inside — with square footage totals by service type. Schedule them all in one click. No other software in the industry does this.' },
               { icon: '📋', title: 'Two-Tier Job Board', desc: 'Scheduled jobs with assigned dates on one side. Unassigned spray/chemical/maintenance waiting list on the other — grouped by service type with sq ft totals. Your entire backlog, always visible.' },
