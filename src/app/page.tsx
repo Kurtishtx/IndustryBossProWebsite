@@ -721,7 +721,7 @@ export default function Home() {
                 <span style={{ fontSize:17, fontWeight:800, color:'#f5f5f5' }}>IndustryBoss<span style={{ color:'#ff6a00' }}>Pro</span></span>
               </div>
               <p style={{ color:'rgba(245,245,245,.70)', fontSize:13, lineHeight:1.7 }}>The all-in-one platform for lawn companies and every service their customers buy — treatments, mowing, landscaping, pest, irrigation, snow and more. One dashboard, one price.</p>
-              <a href="tel:+16828997304" style={{ display:'inline-block', marginTop:16, color:'#ff6a00', fontSize:16, fontWeight:800, textDecoration:'none' }}>&#9742;&nbsp;(682) 899-7304</a>
+              <a href="tel:+16827273802" style={{ display:'inline-block', marginTop:16, color:'#ff6a00', fontSize:16, fontWeight:800, textDecoration:'none' }}>&#9742;&nbsp;(682) 727-3802</a>
             </div>
             {[
               { title:'Product', links:[{label:'Features',href:'/features'},{label:'BossPro Family',href:'/bosspro-family'},{label:'Pricing',href:'/pricing'},{label:'Login',href:'https://my.industrybosspro.com'},{label:'Start Free Trial',href:'/pricing'}] },

@@ -58,7 +58,7 @@ const orgLd = {
       description: 'Lawn care business software — scheduling, routing, invoicing, payments, CRM and a crew mobile app for lawn companies and the services they add on. Three plans from $59/month.',
       contactPoint: {
         '@type': 'ContactPoint',
-        telephone: '+1-682-899-7304',
+        telephone: '+1-682-727-3802',
         email: 'Support@bossprohq.com',
         contactType: 'customer support',
       },
